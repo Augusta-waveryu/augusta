@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-06-26</title>
+<style>
+:root{
+  --bg:#fff7f3;--card:#ffffff;--text:#2d1810;--text-sec:#6b5544;--text-mute:#a08878;
+  --accent:#ff5722;--accent-2:#ff8a50;--accent-3:#ffab40;--grad-start:#ff512f;
+  --grad-end:#ff8a50;--shadow:0 2px 12px rgba(255,87,34,.1);--shadow-hover:0 8px 28px rgba(255,87,34,.18);
+  --radius:14px;--radius-sm:8px;--border:rgba(255,87,34,.12);
+  --cat-model:#7c4dff;--cat-product:#00bcd4;--cat-industry:#ff5722;--cat-paper:#4caf50;--cat-tip:#ffa726;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--grad-start),var(--grad-end));color:#fff;padding:48px 24px 40px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40%;right:-20%;width:60%;height:200%;background:radial-gradient(ellipse,rgba(255,255,255,.1) 0%,transparent 70%);pointer-events:none}
+.hero h1{font-size:2rem;font-weight:800;margin-bottom:6px;letter-spacing:-.02em;position:relative}
+.hero .date{font-size:1rem;opacity:.9;margin-bottom:20px;position:relative}
+.hero .total-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.22);padding:6px 18px;border-radius:20px;font-size:.95rem;font-weight:600;backdrop-filter:blur(4px);position:relative}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-width:680px;margin:24px auto 0;position:relative}
+.stat-chip{background:rgba(255,255,255,.15);border-radius:var(--radius-sm);padding:12px 6px;text-align:center;backdrop-filter:blur(4px);transition:transform .2s}
+.stat-chip:hover{transform:translateY(-2px)}
+.stat-chip .num{font-size:1.6rem;font-weight:800;display:block}
+.stat-chip .label{font-size:.72rem;opacity:.85;display:block;margin-top:2px}
+.stat-chip.s1{border-top:3px solid var(--cat-model)}
+.stat-chip.s2{border-top:3px solid var(--cat-product)}
+.stat-chip.s3{border-top:3px solid var(--cat-industry)}
+.stat-chip.s4{border-top:3px solid var(--cat-paper)}
+.stat-chip.s5{border-top:3px solid var(--cat-tip)}
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,247,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;justify-content:center;gap:6px;flex-wrap:wrap;transition:box-shadow .2s}
+.nav.scrolled{box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.nav a{padding:6px 14px;border-radius:20px;font-size:.85rem;font-weight:600;color:var(--text-sec);transition:all .2s;cursor:pointer}
+.nav a:hover{background:var(--accent);color:#fff}
+.nav a.active{background:var(--accent);color:#fff}
+/* Section */
+.section{max-width:1100px;margin:0 auto;padding:32px 20px 8px}
+.section-header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.section-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#fff;flex-shrink:0}
+.section-title{font-size:1.25rem;font-weight:700}
+.section-count{font-size:.8rem;color:var(--text-mute);background:var(--border);padding:2px 10px;border-radius:10px}
+/* Cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);border:1px solid var(--border);transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;opacity:0;transform:translateY(24px)}
+.card.visible{opacity:1;transform:translateY(0)}
+.card:hover{box-shadow:var(--shadow-hover);transform:translateY(-4px);border-color:var(--accent-2)}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px}
+.card.c-model::before{background:var(--cat-model)}
+.card.c-product::before{background:var(--cat-product)}
+.card.c-industry::before{background:var(--cat-industry)}
+.card.c-paper::before{background:var(--cat-paper)}
+.card.c-tip::before{background:var(--cat-tip)}
+.card-num{position:absolute;top:14px;right:16px;font-size:2rem;font-weight:800;color:rgba(255,87,34,.08);line-height:1}
+.card-source{display:inline-flex;align-items:center;gap:4px;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:4px;margin-bottom:8px}
+.card-source.s-model{background:rgba(124,77,255,.1);color:var(--cat-model)}
+.card-source.s-product{background:rgba(0,188,212,.1);color:var(--cat-product)}
+.card-source.s-industry{background:rgba(255,87,34,.1);color:var(--cat-industry)}
+.card-source.s-paper{background:rgba(76,175,80,.1);color:var(--cat-paper)}
+.card-source.s-tip{background:rgba(255,167,38,.1);color:var(--cat-tip)}
+.card-title{font-size:1rem;font-weight:700;margin-bottom:8px;line-height:1.4;color:var(--text)}
+.card-summary{font-size:.86rem;color:var(--text-sec);line-height:1.6;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-time{font-size:.75rem;color:var(--text-mute);margin-bottom:10px}
+.card-link{display:inline-flex;align-items:center;gap:4px;font-size:.82rem;font-weight:600;color:var(--accent);transition:gap .2s}
+.card-link:hover{gap:8px}
+/* Footer */
+.footer{text-align:center;padding:32px 20px 48px;color:var(--text-mute);font-size:.8rem;line-height:1.8}
+.footer .divider{width:60px;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-3));margin:0 auto 16px;border-radius:2px}
+/* Responsive */
+@media(max-width:680px){
+  .hero{padding:32px 16px 28px}
+  .hero h1{font-size:1.5rem}
+  .stats-grid{grid-template-columns:repeat(5,1fr);gap:4px}
+  .stat-chip{padding:8px 2px}
+  .stat-chip .num{font-size:1.1rem}
+  .stat-chip .label{font-size:.62rem}
+  .nav{gap:4px;padding:8px 10px}
+  .nav a{padding:5px 10px;font-size:.78rem}
+  .section{padding:24px 14px 4px}
+  .card-grid{grid-template-columns:1fr;gap:12px}
+  .card{padding:16px}
+}
+</style>
+</head>
+<body>
+<!-- Hero -->
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 6 月 26 日 · 星期五</div>
+  <div class="total-badge">📋 今日精选 <strong>25</strong> 条</div>
+  <div class="stats-grid">
+    <div class="stat-chip s1"><span class="num">1</span><span class="label">模型发布</span></div>
+    <div class="stat-chip s2"><span class="num">8</span><span class="label">产品更新</span></div>
+    <div class="stat-chip s3"><span class="num">6</span><span class="label">行业动态</span></div>
+    <div class="stat-chip s4"><span class="num">4</span><span class="label">论文研究</span></div>
+    <div class="stat-chip s5"><span class="num">6</span><span class="label">技巧观点</span></div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <a data-target="sec-model" class="active">模型发布</a>
+  <a data-target="sec-product">产品更新</a>
+  <a data-target="sec-industry">行业动态</a>
+  <a data-target="sec-paper">论文研究</a>
+  <a data-target="sec-tip">技巧观点</a>
+</nav>
+
+<!-- 模型发布/更新 -->
+<section class="section" id="sec-model">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--cat-model)">🧠</div>
+    <span class="section-title">模型发布 / 更新</span>
+    <span class="section-count">1 条</span>
+  </div>
+  <div class="card-grid">
+    <div class="card c-model">
+      <span class="card-num">01</span>
+      <span class="card-source s-model">模型发布</span>
+      <div class="card-title">Ornith-1.0 开源模型家族发布，专注 Agentic Coding 全参数规模</div>
+      <div class="card-summary">覆盖9B到397B MoE全尺寸，SWE-Bench Verified 82.4达开源顶尖。基于RL联合优化任务脚手架与最终方案，全系列MIT开源支持Ollama本地运行。</div>
+      <div class="card-time">昨天深夜 23:30</div>
+      <a class="card-link" href="https://x.com/berryxia/status/2070167806700908957" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 产品发布/更新 -->
+<section class="section" id="sec-product">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--cat-product)">🚀</div>
+    <span class="section-title">产品发布 / 更新</span>
+    <span class="section-count">8 条</span>
+  </div>
+  <div class="card-grid">
+    <div class="card c-product">
+      <span class="card-num">02</span>
+      <span class="card-source s-product">Claude Code</span>
+      <div class="card-title">Claude Code v2.1.193 发布</div>
+      <div class="card-summary">新增autoMode.classifyAllShell全命令分类、Bash路径自动补全、空闲后台shell内存回收。修复/model UI滞后、后台任务误取消等问题，改进MCP认证重连。</div>
+      <div class="card-time">今天凌晨 05:45</div>
+      <a class="card-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.193" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">03</span>
+      <span class="card-source s-product">OpenAI</span>
+      <div class="card-title">Codex 在 ChatGPT 移动 App 正式可用</div>
+      <div class="card-summary">新增一对一设备配对、通知、目标、侧边聊天、文件预览及内联审阅评论。移动端可启动任务并审批，Codex在电脑后台持续运行。</div>
+      <div class="card-time">今天凌晨 05:15</div>
+      <a class="card-link" href="https://x.com/OpenAIDevs/status/2070254532911882707" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">04</span>
+      <span class="card-source s-product">Midjourney</span>
+      <div class="card-title">Midjourney 预览 V8.2 并加速草稿模式</div>
+      <div class="card-summary">新增--preview参数提前体验V8.2美学效果。草稿模式24张低分辨率图价格仅标准4张一半，现支持搭配--sref random探索风格，速度快24倍。</div>
+      <div class="card-time">今天凌晨 03:11</div>
+      <a class="card-link" href="https://x.com/midjourney/status/2070223272072065228" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">05</span>
+      <span class="card-source s-product">Midjourney</span>
+      <div class="card-title">Midjourney V8.1 草稿模式新增随机风格功能</div>
+      <div class="card-summary">提示词加入--sref random即可一键生成24张不同风格图片，配合草稿模式（⚡图标或--draft参数）快速探索风格空间。</div>
+      <div class="card-time">今天凌晨 02:50</div>
+      <a class="card-link" href="https://updates.midjourney.com/random-styles-in-draft-mode" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">06</span>
+      <span class="card-source s-product">Runway</span>
+      <div class="card-title">Runway 发布 Agent 2.0</div>
+      <div class="card-summary">帮助营销人员创建、测试和优化广告及营销活动。支持品牌概念开发、绩效广告数据导入分析、一周社媒内容批量生成及自动裁切多格式。</div>
+      <div class="card-time">今天凌晨 02:41</div>
+      <a class="card-link" href="https://runwayml.com/news/introducing-agent-2" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">07</span>
+      <span class="card-source s-product">Google</span>
+      <div class="card-title">Google Finance 全新 Android 应用与投资组合功能上线</div>
+      <div class="card-summary">正式版Android应用上线，支持截图/CSV上传创建组合，AI研究工具可提问资产配置。新增市场情报简报自动推送，未来数月迁移更多web功能至移动端。</div>
+      <div class="card-time">今天凌晨 00:00</div>
+      <a class="card-link" href="https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">08</span>
+      <span class="card-source s-product">美团 LongCat</span>
+      <div class="card-title">美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准</div>
+      <div class="card-summary">含56名拟真用户、819个复杂任务、超2000个动态偏好。最强Claude-Opus-4.6开卷模式均分刚过0.5，所有模型在需主动提问任务上得分断崖下跌。</div>
+      <div class="card-time">昨天傍晚 19:58</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/HoiUxYnyJuh2_xdxmg8s8Q" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-product">
+      <span class="card-num">09</span>
+      <span class="card-source s-product">GitHub Trending</span>
+      <div class="card-title">OpenMontage：52 工具 + 500+ Agent Skills，AI 编程助手变视频工作室</div>
+      <div class="card-summary">全球首个开源Agentic视频生产系统，内置12条流水线、52个工具、500+ Skills，接入Claude Code等助手，自然语言描述直接生成完整视频。</div>
+      <div class="card-time">今天 · Jason Zhu 快讯</div>
+      <a class="card-link" href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 行业动态 -->
+<section class="section" id="sec-industry">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--cat-industry)">📰</div>
+    <span class="section-title">行业动态</span>
+    <span class="section-count">6 条</span>
+  </div>
+  <div class="card-grid">
+    <div class="card c-industry">
+      <span class="card-num">10</span>
+      <span class="card-source s-industry">IT之家</span>
+      <div class="card-title">近 400 家美国报纸起诉微软和 OpenAI：未经授权抓取新闻训练 AI</div>
+      <div class="card-summary">出版商联盟指控其系统性爬取网站复制文章并删除版权信息，称AI产品基于其内容创造数十亿美元价值但出版商分文未得，或成地方新闻业"丧钟"。</div>
+      <div class="card-time">30 分钟前</div>
+      <a class="card-link" href="https://www.ithome.com/0/968/872.htm" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-industry">
+      <span class="card-num">11</span>
+      <span class="card-source s-industry">The Information</span>
+      <div class="card-title">美国政府要求 OpenAI 暂缓 GPT-5.6，Claude Fable 5 同遭延迟</div>
+      <div class="card-summary">因安全顾虑要求改为受控预览版，逐客户审批准入。主要担忧模型自动化网络攻防能力。Claude Fable 5同样受波及暂停，后两者均恢复上线计划。</div>
+      <div class="card-time">今天凌晨 05:06</div>
+      <a class="card-link" href="https://x.com/rohanpaul_ai/status/2070252433109049466" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-industry">
+      <span class="card-num">12</span>
+      <span class="card-source s-industry">TechCrunch</span>
+      <div class="card-title">General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体</div>
+      <div class="card-summary">23亿美元估值，从Medal平台获取数亿小时游戏操作数据训练单一模型驾驭虚拟环境和四足机器人。AI在游戏中连续运行100小时，机器人8分钟真实数据微调即自主探索。</div>
+      <div class="card-time">今天凌晨 00:00</div>
+      <a class="card-link" href="https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-industry">
+      <span class="card-num">13</span>
+      <span class="card-source s-industry">The Decoder</span>
+      <div class="card-title">Meta 员工警告 AI 内容审核部署过快</div>
+      <div class="card-summary">Meta已用LLM替换约一半人工审核，计划年底部分类型AI审核达90%以上。员工指出模型仍误删无害内容、缺乏监督，已导致外包裁员。Meta已转向自家Muse Spark模型。</div>
+      <div class="card-time">昨天下午 18:07</div>
+      <a class="card-link" href="https://the-decoder.com/meta-employees-warn-ai-moderation-rollout-is-too-fast" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-industry">
+      <span class="card-num">14</span>
+      <span class="card-source s-industry">TechCrunch</span>
+      <div class="card-title">付费用户正在「背叛」ChatGPT：Claude 在高价值用户群加速抢市</div>
+      <div class="card-summary">数据显示愿意为AI付费的用户群中Claude选择比例持续上升，正在切割ChatGPT长期把持的付费消费者市场。Anthropic从开发者选择向更广大付费主流用户渗透。</div>
+      <div class="card-time">今天 · Jason Zhu 快讯</div>
+      <a class="card-link" href="https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-industry">
+      <span class="card-num">15</span>
+      <span class="card-source s-industry">TechCrunch</span>
+      <div class="card-title">Patronus AI 获 5000 万美元：专造「数字压力场」暴力测试 AI Agent</div>
+      <div class="card-summary">前Meta AI研究员创立，为AI Agent构建仿真数字世界进行极端压力测试。投资人称需求"几乎无法满足"，专业Eval/测试基础设施成下一刚需赛道。</div>
+      <div class="card-time">今天 · Jason Zhu 快讯</div>
+      <a class="card-link" href="https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 论文研究 -->
+<section class="section" id="sec-paper">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--cat-paper)">📄</div>
+    <span class="section-title">论文研究</span>
+    <span class="section-count">4 条</span>
+  </div>
+  <div class="card-grid">
+    <div class="card c-paper">
+      <span class="card-num">16</span>
+      <span class="card-source s-paper">IBM Research</span>
+      <div class="card-title">IBM 首度推出亚纳米级芯片技术</div>
+      <div class="card-summary">0.7nm节点+三维纳米堆叠架构，指甲盖大小集成近1000亿晶体管，密度为2nm芯片两倍。性能提升50%、能效提升70%，已在VLSI 2026验证，预计5年内量产。</div>
+      <div class="card-time">今天凌晨 02:52</div>
+      <a class="card-link" href="https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-paper">
+      <span class="card-num">17</span>
+      <span class="card-source s-paper">Scroll Prize</span>
+      <div class="card-title">赫库兰尼姆古卷首次被完整虚拟解读</div>
+      <div class="card-summary">利用高分辨率X射线显微断层扫描和机器学习，未物理展开即完整读取PHerc.1667卷轴，内容为斯多葛哲学论著。所有数据与代码已公开。</div>
+      <div class="card-time">今天凌晨 02:03</div>
+      <a class="card-link" href="https://scrollprize.org/firstscroll" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-paper">
+      <span class="card-num">18</span>
+      <span class="card-source s-paper">HuggingFace Papers</span>
+      <div class="card-title">「思维链让模型更安全」是误解：Thinking Tokens 并不改善对齐</div>
+      <div class="card-summary">覆盖GPT-OSS、Qwen、OLMo、Phi等推理模型的研究发现，Thinking Tokens并不总能阻止有害输出，某些情况下甚至更易被越狱。别把CoT当安全护栏。</div>
+      <div class="card-time">今天 · Jason Zhu 快讯</div>
+      <a class="card-link" href="https://huggingface.co/papers/2606.25013" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-paper">
+      <span class="card-num">19</span>
+      <span class="card-source s-paper">HuggingFace Papers</span>
+      <div class="card-title">Agent 上下文管理是「承重墙」：计划最先被压缩，也最致命</div>
+      <div class="card-summary">长程Agent上下文压缩时「计划」最早被丢弃，导致后续步骤隐性失效。论文提出replay pairing诊断法量化损失，建议优先保护计划节点。</div>
+      <div class="card-time">今天 · Jason Zhu 快讯</div>
+      <a class="card-link" href="https://huggingface.co/papers/2606.22953" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 技巧与观点 -->
+<section class="section" id="sec-tip">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--cat-tip)">💡</div>
+    <span class="section-title">技巧与观点</span>
+    <span class="section-count">6 条</span>
+  </div>
+  <div class="card-grid">
+    <div class="card c-tip">
+      <span class="card-num">20</span>
+      <span class="card-source s-tip">数字生命卡兹克</span>
+      <div class="card-title">Claude Code 6 个实用 Hook 玩法</div>
+      <div class="card-summary">内置近30个Hook事件不消耗token：权限弹窗提醒、开机日程播报、上下文预压缩摘要卡片、自动整理下载文件夹、久坐提醒、Bark手机推送任务完成通知。</div>
+      <div class="card-time">今天上午 10:02</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/LVj2foSXi_hBRKxjuYaUyw" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-tip">
+      <span class="card-num">21</span>
+      <span class="card-source s-tip">小互 @xiaohu</span>
+      <div class="card-title">小互开源个人 IP 配图技能「小互IP Studio」，含 31 个原创角色</div>
+      <div class="card-summary">15个手绘线稿角色+16个谐音梗meme形象，Agent自动读取文章规划配图类型并生成自查返工。支持Claude Code等工具，仅需Python3和图像API key。</div>
+      <div class="card-time">今天上午 09:26</div>
+      <a class="card-link" href="https://x.com/xiaohu/status/2070317717811540149" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-tip">
+      <span class="card-num">22</span>
+      <span class="card-source s-tip">exponentialview</span>
+      <div class="card-title">《State of the AI Economy》报告：AI 经济年化收入超 1750 亿美元</div>
+      <div class="card-summary">过去12个月实际AI营收1100亿美元，增长速度约为移动/互联网浪潮3倍。新增10亿美元收入从180天缩短至不足2天。Token降价每10%刺激12-18%用量增长。</div>
+      <div class="card-time">今天清晨 07:29</div>
+      <a class="card-link" href="https://x.com/rohanpaul_ai/status/2070288396644491317" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-tip">
+      <span class="card-num">23</span>
+      <span class="card-source s-tip">AllenAI / HF Blog</span>
+      <div class="card-title">OLMo Hybrid vs Transformer：混合模型在实义词上优势明显</div>
+      <div class="card-summary">7B对比实验显示混合模型对名词动词形容词loss更低，功能词也有优势。但重复n-gram和闭合括号上优势消失，Transformer注意力更擅长精确信息检索。</div>
+      <div class="card-time">今天凌晨 00:11</div>
+      <a class="card-link" href="https://huggingface.co/blog/allenai/hybrid-token-prediction" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-tip">
+      <span class="card-num">24</span>
+      <span class="card-source s-tip">The Decoder</span>
+      <div class="card-title">多数主流 AI 聊天机器人政治立场偏左，"反觉醒"模型也不例外</div>
+      <div class="card-summary">GPT-5.5在80%回答中仅呈现左派论据，DeepSeek V4 Pro为70%。右翼平台Gab的Arya左倾回答是右倾12倍。Gemini 3.1 Pro是例外，93%同时呈现双方立场。</div>
+      <div class="card-time">今天凌晨 00:04</div>
+      <a class="card-link" href="https://the-decoder.com/most-major-ai-chatbots-still-lean-left-on-political-questions-even-anti-woke-models-are-no-exception" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+    <div class="card c-tip">
+      <span class="card-num">25</span>
+      <span class="card-source s-tip">Puremint / Jason Zhu</span>
+      <div class="card-title">Claude Code 内存文件会「腐烂」：这个 Skill 用差分法逐条剪掉废话</div>
+      <div class="card-summary">Claude Code memory文件随使用积累大量冗余，导致AI遗忘指令甚至产生负向干扰。开发者做出专用Skill用diff逐条对比剪除垃圾内容，兼容Codex等工具。</div>
+      <div class="card-time">今天 · Jason Zhu 快讯</div>
+      <a class="card-link" href="https://puremint.co.uk/blog/stop-your-ai-memory-file-rotting/" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="divider"></div>
+  <div>共 <strong>25</strong> 条精选资讯 · 覆盖过去 24-48 小时动态</div>
+  <div>数据源：AI HOT 精选 · Jason Zhu 每日快讯</div>
+  <div>Generated by WorkBuddy · 2026-06-26</div>
+</div>
+
+<script>
+// Scroll animation
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){
+      setTimeout(()=>e.target.classList.add('visible'),i*60);
+      observer.unobserve(e.target);
+    }
+  });
+},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.card').forEach(c=>observer.observe(c));
+
+// Nav scroll shadow
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>10);
+});
+
+// Nav active section
+const navLinks=nav.querySelectorAll('a');
+const sections=document.querySelectorAll('.section');
+const sectionObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id=e.target.id;
+      navLinks.forEach(l=>{
+        l.classList.toggle('active',l.dataset.target===id);
+      });
+    }
+  });
+},{threshold:0.15});
+sections.forEach(s=>sectionObserver.observe(s));
+
+// Nav click scroll
+navLinks.forEach(l=>{
+  l.addEventListener('click',()=>{
+    const target=document.getElementById(l.dataset.target);
+    if(target){
+      const offset=target.offsetTop-56;
+      window.scrollTo({top:offset,behavior:'smooth'});
+    }
+  });
+});
+</script>
+</body>
+</html>

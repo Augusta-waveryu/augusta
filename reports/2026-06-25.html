@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-06-25</title>
+<style>
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  --font-mono: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+  --hero-start: #FF6B35;
+  --hero-end: #F7931E;
+  --card-bg: #FFFFFF;
+  --bg: #FDF6F0;
+  --text-primary: #2C2C2A;
+  --text-secondary: #5F5E5A;
+  --text-tertiary: #888780;
+  --border: #E8D5C4;
+  --border-hover: #D4B896;
+  --chip-ai-models: #E6F1FB;
+  --chip-ai-products: #E1F5EE;
+  --chip-industry: #FAEEDA;
+  --chip-paper: #FAECE7;
+  --chip-tip: #EEEDFE;
+  --chip-text-models: #185FA5;
+  --chip-text-products: #0F6E56;
+  --chip-text-industry: #854F0B;
+  --chip-text-paper: #993C1D;
+  --chip-text-tip: #534AB7;
+  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-hover: 0 4px 20px rgba(0,0,0,0.10);
+  --radius: 12px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--font-sans); background:var(--bg); color:var(--text-primary); line-height:1.6; min-height:100vh; }
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--hero-start) 0%, var(--hero-end) 50%, #FF8C42 100%);
+  color: #fff;
+  padding: 48px 24px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.08) 0%, transparent 60%),
+              radial-gradient(circle at 70% 60%, rgba(255,255,255,0.05) 0%, transparent 60%);
+  animation: heroPulse 8s ease-in-out infinite;
+}
+@keyframes heroPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.hero-inner { position:relative; z-index:1; max-width:900px; margin:0 auto; }
+.hero h1 { font-size:36px; font-weight:700; letter-spacing:-0.5px; margin-bottom:8px; }
+.hero .date { font-size:16px; opacity:0.85; margin-bottom:24px; }
+.hero .stats { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:24px; }
+.hero .stat-item {
+  background:rgba(255,255,255,0.18); backdrop-filter:blur(8px);
+  border-radius:10px; padding:10px 16px; min-width:90px;
+}
+.hero .stat-num { font-size:28px; font-weight:700; line-height:1.2; }
+.hero .stat-label { font-size:12px; opacity:0.8; }
+.hero .total-badge {
+  display:inline-block; background:rgba(255,255,255,0.22);
+  border-radius:24px; padding:8px 24px; font-size:14px; font-weight:600;
+  margin-bottom:8px;
+}
+/* Nav */
+.nav-wrap { position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.95); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
+.nav { max-width:900px; margin:0 auto; display:flex; gap:4px; padding:8px 16px; overflow-x:auto; scrollbar-width:none; }
+.nav::-webkit-scrollbar { display:none; }
+.nav a {
+  flex-shrink:0; text-decoration:none; padding:6px 14px; border-radius:20px;
+  font-size:13px; color:var(--text-secondary); transition:all 0.2s; white-space:nowrap;
+}
+.nav a:hover, .nav a.active { background:var(--hero-start); color:#fff; font-weight:600; }
+/* Main */
+.main { max-width:900px; margin:0 auto; padding:24px 16px 48px; }
+.section { margin-bottom:32px; }
+.section-title {
+  font-size:20px; font-weight:700; margin-bottom:4px; padding-bottom:8px;
+  border-bottom:2px solid var(--border); display:flex; align-items:center; gap:8px;
+}
+.section-title .count { font-size:14px; color:var(--text-tertiary); font-weight:400; }
+/* Cards */
+.cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:16px; margin-top:16px; }
+.card {
+  background:var(--card-bg); border-radius:var(--radius); padding:18px;
+  border:1px solid var(--border); box-shadow:var(--shadow);
+  transition:all 0.25s; position:relative; display:flex; flex-direction:column;
+  opacity:0; transform:translateY(16px);
+}
+.card.visible { opacity:1; transform:translateY(0); }
+.card:hover { box-shadow:var(--shadow-hover); border-color:var(--border-hover); transform:translateY(-2px); }
+.card .seq { position:absolute; top:12px; right:14px; font-size:12px; color:var(--text-tertiary); font-family:var(--font-mono); }
+.card .chips { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px; }
+.card .chip {
+  font-size:11px; padding:2px 10px; border-radius:12px; font-weight:500;
+}
+.chip.ai-models { background:var(--chip-ai-models); color:var(--chip-text-models); }
+.chip.ai-products { background:var(--chip-ai-products); color:var(--chip-text-products); }
+.chip.industry { background:var(--chip-industry); color:var(--chip-text-industry); }
+.chip.paper { background:var(--chip-paper); color:var(--chip-text-paper); }
+.chip.tip { background:var(--chip-tip); color:var(--chip-text-tip); }
+.card .title { font-size:15px; font-weight:600; line-height:1.4; margin-bottom:8px; }
+.card .summary { font-size:13px; color:var(--text-secondary); line-height:1.5; margin-bottom:12px; flex:1; }
+.card .footer { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.card .time { font-size:12px; color:var(--text-tertiary); white-space:nowrap; }
+.card .source { font-size:11px; color:var(--text-tertiary); max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.card .link-btn {
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:500;
+  color:var(--hero-start); text-decoration:none; padding:4px 10px; border:1px solid var(--hero-start);
+  border-radius:16px; transition:all 0.2s; white-space:nowrap; flex-shrink:0;
+}
+.card .link-btn:hover { background:var(--hero-start); color:#fff; }
+/* Footer */
+.footer { text-align:center; padding:32px 16px; color:var(--text-tertiary); font-size:12px; }
+.footer a { color:var(--hero-start); text-decoration:none; }
+/* Responsive */
+@media (max-width:640px) {
+  .hero h1 { font-size:26px; }
+  .hero .stats { gap:8px; }
+  .hero .stat-item { padding:8px 12px; min-width:70px; }
+  .hero .stat-num { font-size:22px; }
+  .cards { grid-template-columns:1fr; }
+}
+/* Print */
+@media print { .nav-wrap { display:none; } }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>AI 晨报仪表盘</h1>
+    <div class="date">2026 年 6 月 25 日 · 星期四</div>
+    <div class="total-badge">本期共收录 27 条精选资讯</div>
+    <div class="stats">
+      <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">模型发布/更新</div></div>
+      <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">产品发布/更新</div></div>
+      <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">行业动态</div></div>
+      <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">论文研究</div></div>
+      <div class="stat-item"><div class="stat-num">11</div><div class="stat-label">技巧与观点</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav-wrap" id="nav">
+  <div class="nav">
+    <a href="#models" data-section="models">模型发布/更新 (3)</a>
+    <a href="#products" data-section="products">产品发布/更新 (8)</a>
+    <a href="#industry" data-section="industry">行业动态 (2)</a>
+    <a href="#paper" data-section="paper">论文研究 (3)</a>
+    <a href="#tip" data-section="tip">技巧与观点 (11)</a>
+  </div>
+</nav>
+
+<main class="main">
+
+<!-- ===== 模型发布/更新 ===== -->
+<section class="section" id="models">
+  <h2 class="section-title">模型发布/更新 <span class="count">3 条</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="seq">#1</div>
+      <div class="chips"><span class="chip ai-models">模型发布</span></div>
+      <div class="title">Gemini 3.5 Flash 原生集成 Computer Use 工具</div>
+      <div class="summary">Google 将 Computer Use 作为内置工具集成至 Gemini 3.5 Flash，支持跨浏览器、移动端和桌面环境构建智能体，此前仅为独立模型。</div>
+      <div class="footer"><span class="source">Google Blog</span><span class="time">昨天 21:16</span></div>
+      <a class="link-btn" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#2</div>
+      <div class="chips"><span class="chip ai-models">模型更新</span></div>
+      <div class="title">GPT-5.5 Instant 新版本：理解意图，对话更有趣</div>
+      <div class="summary">OpenAI 发布新版 GPT-5.5 Instant，能更好地理解问题背后意图并调整回应，复杂约束处理更可靠，先推付费用户。</div>
+      <div class="footer"><span class="source">OpenAI @X</span><span class="time">昨天 18:00</span></div>
+      <a class="link-btn" href="https://x.com/OpenAI/status/2069843083701915755" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#3</div>
+      <div class="chips"><span class="chip ai-models">模型发布</span></div>
+      <div class="title">OpenAI ChatGPT 上线双向语音模型 Bidi 1</div>
+      <div class="summary">部分用户发现 ChatGPT 已上线双向 AI 语音模型 Bidi 1，支持边说话边监听并可中途打断切换指令。</div>
+      <div class="footer"><span class="source">IT之家</span><span class="time">昨天 04:34</span></div>
+      <a class="link-btn" href="https://www.ithome.com/0/967/852.htm" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 产品发布/更新 ===== -->
+<section class="section" id="products">
+  <h2 class="section-title">产品发布/更新 <span class="count">8 条</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="seq">#4</div>
+      <div class="chips"><span class="chip ai-products">产品发布</span></div>
+      <div class="title">盈透证券与 Grok 集成：自然语言驱动实时交易</div>
+      <div class="summary">盈透证券与 Grok 集成，用户可用自然语言完成组合分析、情景建模和实时交易指令生成，从数据洞察到执行决策一体化。</div>
+      <div class="footer"><span class="source">xAI News</span><span class="time">今天 00:00</span></div>
+      <a class="link-btn" href="https://x.ai/news/grok-interactive-brokers" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#5</div>
+      <div class="chips"><span class="chip ai-products">产品集成</span></div>
+      <div class="title">Notion 使用 Cursor SDK 嵌入编码智能体</div>
+      <div class="summary">Notion 数周内通过 Cursor SDK 将编码智能体嵌入产品，可在文档中@Cursor、讨论串中指派任务，端到端构建PR。</div>
+      <div class="footer"><span class="source">Cursor Blog</span><span class="time">昨天 20:55</span></div>
+      <a class="link-btn" href="https://cursor.com/blog/notion" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#6</div>
+      <div class="chips"><span class="chip ai-products">产品发布</span></div>
+      <div class="title">Perplexity 推出 Computer for Counsel 法律助手</div>
+      <div class="summary">Perplexity Computer 连接法律研究数据库、文档工具和案件管理系统，面向律师场景提供可引用来源检索。</div>
+      <div class="footer"><span class="source">Perplexity @X</span><span class="time">昨天 19:34</span></div>
+      <a class="link-btn" href="https://x.com/perplexity_ai/status/2069866668671766804" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#7</div>
+      <div class="chips"><span class="chip ai-products">产品更新</span></div>
+      <div class="title">Figma Config 2026：画布扩展至代码/动画/3D</div>
+      <div class="summary">Figma 将画布扩展至代码层、动画、3D 深度和着色器，新增 Code Layers 和 Generative Plugins，但 AI 能力依赖外部模型。</div>
+      <div class="footer"><span class="source">The Decoder</span><span class="time">昨天 16:49</span></div>
+      <a class="link-btn" href="https://the-decoder.com/figma-bets-on-human-judgment-at-config-2026-while-the-ai-powering-its-canvas-belongs-to-someone-else" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#8</div>
+      <div class="chips"><span class="chip ai-products">产品发布</span></div>
+      <div class="title">Mistral AI 为 Connectors 推出多项安全可控新能力</div>
+      <div class="summary">Mistral AI 发布 Connectors 权限管控、API Key 范围限定、多账户绑定和调试器等新能力，增强企业级安全。</div>
+      <div class="footer"><span class="source">Mistral AI</span><span class="time">昨天 15:59</span></div>
+      <a class="link-btn" href="https://mistral.ai/news/more-control-over-connectors" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#9</div>
+      <div class="chips"><span class="chip ai-products">产品发布</span></div>
+      <div class="title">火山引擎推出 Agent Ready 基础设施及 ArkClaw 企业版</div>
+      <div class="summary">火山引擎发布 AgentKit（Identity/Runtime/Sandbox）和 ArkClaw 企业版，海底捞门店巡检满意度提升50%。</div>
+      <div class="footer"><span class="source">火山引擎</span><span class="time">昨天 10:17</span></div>
+      <a class="link-btn" href="https://mp.weixin.qq.com/s/83mrPAPgQRKhxLkoSvRgBQ" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#10</div>
+      <div class="chips"><span class="chip ai-products">硬件发布</span></div>
+      <div class="title">OpenAI 联合博通发布 Jalapeño 推理芯片</div>
+      <div class="summary">OpenAI 与 Broadcom 推出首款自研 LLM 推理芯片 Jalapeño，标志着从模型公司向算力垂直整合的关键一步。</div>
+      <div class="footer"><span class="source">OpenAI Blog</span><span class="time">昨天 06:00</span></div>
+      <a class="link-btn" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#11</div>
+      <div class="chips"><span class="chip ai-products">开源工具</span></div>
+      <div class="title">Drawbar：Claude Code 线性工作流插件治「Agent 过跑」</div>
+      <div class="summary">开发者自制 Drawbar 插件，融合知识库积累和 Linear 集成，理念是「慢速可控可预期」，解决高吞吐 Agent 跑飞问题。</div>
+      <div class="footer"><span class="source">GitHub</span><span class="time">今天</span></div>
+      <a class="link-btn" href="https://github.com/mjn298/drawbar" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 行业动态 ===== -->
+<section class="section" id="industry">
+  <h2 class="section-title">行业动态 <span class="count">2 条</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="seq">#12</div>
+      <div class="chips"><span class="chip industry">行业动态</span></div>
+      <div class="title">NSA 因与 Anthropic 纠纷失去 Mythos 系统访问权</div>
+      <div class="summary">美国国家安全局与 Anthropic 发生纠纷，失去对 AI 系统 Mythos 的访问权限，引发政府 AI 合作的治理讨论。</div>
+      <div class="footer"><span class="source">NYTimes / HN</span><span class="time">昨天 19:08</span></div>
+      <a class="link-btn" href="https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#13</div>
+      <div class="chips"><span class="chip industry">行业动态</span></div>
+      <div class="title">DeepMind 两位核心科学家离职加入 Anthropic</div>
+      <div class="summary">Jonas Adler 和 Alexander Pritzel 宣布加入 Anthropic，延续 Noam Shazeer 等人出走浪潮，折射 DeepMind 人才流失。</div>
+      <div class="footer"><span class="source">TechCrunch</span><span class="time">昨天</span></div>
+      <a class="link-btn" href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 论文研究 ===== -->
+<section class="section" id="paper">
+  <h2 class="section-title">论文研究 <span class="count">3 条</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="seq">#14</div>
+      <div class="chips"><span class="chip paper">论文</span></div>
+      <div class="title">Google Research：推理能解锁 LLM 中的参数化知识</div>
+      <div class="summary">研究发现 Chain-of-Thought 推理能帮助 LLM 回忆简单事实，通过计算缓冲和事实启动效应激活正确答案。</div>
+      <div class="footer"><span class="source">Google Research</span><span class="time">昨天 17:05</span></div>
+      <a class="link-btn" href="https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#15</div>
+      <div class="chips"><span class="chip paper">论文</span></div>
+      <div class="title">DFlash：块扩散草稿模型实现最高 15 倍吞吐量提升</div>
+      <div class="summary">UC San Diego 提出 DFlash 投机解码方案，一次前向推理生成整块 token，在 Blackwell 上实现最高 15 倍吞吐量。</div>
+      <div class="footer"><span class="source">MarkTechPost</span><span class="time">昨天 07:21</span></div>
+      <a class="link-btn" href="https://www.marktechpost.com/2026/06/24/dflash-speculative-decoding-drafts-whole-token-blocks-in-parallel-for-up-to-15x-higher-throughput-on-nvidia-blackwell" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#16</div>
+      <div class="chips"><span class="chip paper">论文</span></div>
+      <div class="title">AGORA 基准：测试 Agent 在真实杂乱职场文档中的推理</div>
+      <div class="summary">AGORA 基准模拟 Agent 在大量杂乱文件中定位稀疏证据、跨文档计算的真实职场场景，防止「实验室好、实战翻车」。</div>
+      <div class="footer"><span class="source">HuggingFace</span><span class="time">今天</span></div>
+      <a class="link-btn" href="https://huggingface.co/papers/2606.24526" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 技巧与观点 ===== -->
+<section class="section" id="tip">
+  <h2 class="section-title">技巧与观点 <span class="count">11 条</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="seq">#17</div>
+      <div class="chips"><span class="chip tip">观点</span></div>
+      <div class="title">SignalFire 数据：工程是 2025 年最具韧性的岗位</div>
+      <div class="summary">AI 并未消灭工程岗位——大型科技公司工程岗占新招 55%，早期初创工程师招聘增长 7%，AI 让工程师更忙而非更少。</div>
+      <div class="footer"><span class="source">TechCrunch</span><span class="time">昨天 21:56</span></div>
+      <a class="link-btn" href="https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#18</div>
+      <div class="chips"><span class="chip tip">观点</span></div>
+      <div class="title">Reid Hoffman 批评 xAI「彻底灾难」，SpaceX「不是 AI 公司」</div>
+      <div class="summary">LinkedIn 联合创始人公开批评 xAI 11 位联合创始人全部离职、SpaceX 收购 Cursor 属「花钱买相关性」。</div>
+      <div class="footer"><span class="source">Fortune / HN</span><span class="time">昨天 14:20</span></div>
+      <a class="link-btn" href="https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#19</div>
+      <div class="chips"><span class="chip tip">实践</span></div>
+      <div class="title">字节跳动洪定坤：AI Coding 代码贡献率增 6 倍但可交付性仅 40-60 分</div>
+      <div class="summary">字节过去一年 AI 代码贡献率增长 6 倍，但主流模型组合代码可交付性仅 40-60 分，需结合基建才能达到 80 分。</div>
+      <div class="footer"><span class="source">火山引擎</span><span class="time">昨天 14:02</span></div>
+      <a class="link-btn" href="https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#20</div>
+      <div class="chips"><span class="chip tip">工具</span></div>
+      <div class="title">NVIDIA NeMo AutoModel：一行代码加速 MoE 微调 3.4-3.7 倍</div>
+      <div class="summary">NVIDIA 开源 NeMo AutoModel，MoE 模型微调吞吐量提升 3.4-3.7 倍，GPU 内存减少 29-32%，仅需改一行 import。</div>
+      <div class="footer"><span class="source">HuggingFace Blog</span><span class="time">昨天 16:00</span></div>
+      <a class="link-btn" href="https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#21</div>
+      <div class="chips"><span class="chip tip">安全</span></div>
+      <div class="title">OpenRouter 零数据留存覆盖 97 款新模型，流量占近半</div>
+      <div class="summary">OpenRouter ZDR 保证用户数据不存储，月度 token 量增长 4.3 倍，支持账户级、护栏级、请求级三层粒度控制。</div>
+      <div class="footer"><span class="source">OpenRouter</span><span class="time">昨天 16:00</span></div>
+      <a class="link-btn" href="https://openrouter.ai/blog/insights/when-zero-means-zero" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#22</div>
+      <div class="chips"><span class="chip tip">观点</span><span class="chip ai-products">开源</span></div>
+      <div class="title">Garry Tan 开源 Claude Code 全套配置：23 工具模拟 CEO 到 QA</div>
+      <div class="summary">Y Combinator 总裁将 Claude Code 工作流开源，23 个工具覆盖 CEO/设计师/工程经理/QA 等全角色，单人模拟团队运作。</div>
+      <div class="footer"><span class="source">GitHub</span><span class="time">今天</span></div>
+      <a class="link-btn" href="https://github.com/garrytan/gstack" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#23</div>
+      <div class="chips"><span class="chip tip">安全</span><span class="chip tip">观点</span></div>
+      <div class="title">Jason Zhu：11.7 万 Agent Skill 安全评级，每 32 个 1 个不安全</div>
+      <div class="summary">Jason Zhu 用规则引擎扫描 117,854 个 AI Agent Skill，发现 82% 未经审计，被评级的每 32 个就有 1 个不安全。</div>
+      <div class="footer"><span class="source">Jason Zhu</span><span class="time">2 天前</span></div>
+      <a class="link-btn" href="https://agentskillshub.top/blog/securing-117k-ai-skills/zh/" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#24</div>
+      <div class="chips"><span class="chip tip">观点</span></div>
+      <div class="title">企业 AI 预算「烧光危机」：公司开始强制限流</div>
+      <div class="summary">员工用琐碎任务耗尽 AI token 配额，企业从「鼓励使用」转向「精细管控」，实施 token 配额和分级权限管理。</div>
+      <div class="footer"><span class="source">TechCrunch</span><span class="time">昨天</span></div>
+      <a class="link-btn" href="https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#25</div>
+      <div class="chips"><span class="chip tip">观点</span></div>
+      <div class="title">Jason Zhu 点评 Jalapeño：OpenAI 开始对 Nvidia 下手</div>
+      <div class="summary">模型公司自己造芯片意味着 API 定价权将彻底重构，所有依赖推理成本建模的 SaaS 产品都需重新算账。</div>
+      <div class="footer"><span class="source">Jason Zhu</span><span class="time">今天</span></div>
+      <a class="link-btn" href="https://jasonzhu.ai/zh/news/2026-06-25" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#26</div>
+      <div class="chips"><span class="chip tip">工具</span></div>
+      <div class="title">Qwen-AgentWorld 开源：让 Agent 学会「先预测，再行动」</div>
+      <div class="summary">通义千问推出原生语言世界模型，覆盖 7 大领域，在 AgentWorldBench 上超越 GPT-5.4 和 Claude Opus 4.8。</div>
+      <div class="footer"><span class="source">通义实验室</span><span class="time">昨天 03:32</span></div>
+      <a class="link-btn" href="https://mp.weixin.qq.com/s/NV9WGpGsfFz35jww5agM9g" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+    <div class="card">
+      <div class="seq">#27</div>
+      <div class="chips"><span class="chip tip">观点</span></div>
+      <div class="title">MiniCPM-V 4.6 在 Apple Core AI 上以不到 2B 参数高速运行</div>
+      <div class="summary">面壁智能 MiniCPM-V 4.6 在 Apple Core AI 上高效运行，不到 2B 参数实现令人印象深刻的多模态推理速度。</div>
+      <div class="footer"><span class="source">OpenBMB @X</span><span class="time">昨天 06:57</span></div>
+      <a class="link-btn" href="https://x.com/OpenBMB/status/2069676334381728106" target="_blank" rel="noopener noreferrer">原文</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>本晨报共收录 <strong>27 条</strong> 精选资讯，覆盖过去 48 小时 AI 领域动态</p>
+  <p>数据源：<a href="https://aihot.virxact.com" target="_blank" rel="noopener noreferrer">AI HOT 精选</a> · <a href="https://jasonzhu.ai/zh/news" target="_blank" rel="noopener noreferrer">Jason Zhu 快讯</a> · 网页搜索补充</p>
+  <p>超级个体动态收录：Jason Zhu、Garry Tan、字节洪定坤、NVIDIA、OpenBMB</p>
+  <p style="margin-top:12px;opacity:0.6">Generated by WorkBuddy · 2026-06-25 11:12 CST</p>
+</footer>
+
+<script>
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.card').forEach(function(c) { observer.observe(c); });
+
+  var nav = document.getElementById('nav');
+  var links = nav.querySelectorAll('a');
+  var sections = {};
+  links.forEach(function(a) { var id = a.getAttribute('data-section'); sections[id] = document.getElementById(id); });
+
+  var sectionObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        links.forEach(function(l) { l.classList.remove('active'); });
+        var active = nav.querySelector('a[data-section="' + e.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-80px 0px -60% 0px' });
+  Object.values(sections).forEach(function(s) { if (s) sectionObserver.observe(s); });
+
+  links.forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = sections[this.getAttribute('data-section')];
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+})();
+</script>
+</body>
+</html>

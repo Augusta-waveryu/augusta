@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-02</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 2 日 · 星期四</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">18</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">🤖 模型发布</a>
+  <a href="#products">🚀 产品更新</a>
+  <a href="#industry">🏭 行业动态</a>
+  <a href="#paper">📄 论文研究</a>
+  <a href="#tips">💡 技巧观点</a>
+</nav>
+
+<main>
+
+<section class="section" id="models">
+  <h2 class="section-title">模型发布/更新</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">01</div>
+      <h3 class="card-title"><a href="https://www.marktechpost.com/2026/07/01/nvidia-releases-nemotron-labs-twotower" target="_blank" rel="noopener noreferrer">NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型</a></h3>
+      <div class="card-meta">
+        <span class="card-source">MarkTechPost</span>
+        <span class="card-time">13 小时前</span>
+      </div>
+      <p class="card-summary">双塔架构扩散模型，基于冻结 AR 骨干，3B/塔活跃参数，生成吞吐量提升 2.42 倍，保留 98.7% 基线质量。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/01/nvidia-releases-nemotron-labs-twotower" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <h2 class="section-title">产品发布/更新</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">02</div>
+      <h3 class="card-title"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.198" target="_blank" rel="noopener noreferrer">Claude Code v2.1.198 发布</a></h3>
+      <div class="card-meta">
+        <span class="card-source">GitHub Releases</span>
+        <span class="card-time">17 小时前</span>
+      </div>
+      <p class="card-summary">Claude in Chrome 全面可用，新增 /dataviz 技能、后台 Agent 通知、Gateway 支持 AWS Claude Platform。</p>
+      <a class="card-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.198" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">03</div>
+      <h3 class="card-title"><a href="https://x.com/Zai_org/status/2072349453361557898" target="_blank" rel="noopener noreferrer">智谱推出 GLM-5.2 官方开发环境 ZCode</a></h3>
+      <div class="card-meta">
+        <span class="card-source">智谱 Z.ai</span>
+        <span class="card-time">20 小时前</span>
+      </div>
+      <p class="card-summary">GLM Coding Plan 订阅用户获 1.5 倍配额，支持 BYOK，覆盖 macOS/Windows/Linux。</p>
+      <a class="card-link" href="https://x.com/Zai_org/status/2072349453361557898" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">04</div>
+      <h3 class="card-title"><a href="https://x.com/bindureddy" target="_blank" rel="noopener noreferrer">Claude Fable 5 正式回归 Abacus AI</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">Fable 5.0 全面回归 Abacus AI Agent 和 ChatLLM，复杂编程任务自动路由，此前因输出争议被封禁。</p>
+      <a class="card-link" href="https://x.com/bindureddy" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">05</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/" target="_blank" rel="noopener noreferrer">Gemini Spark 登陆 Mac：24/7 Agent 助手</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">Google 的 Agent 助手支持实时任务跟踪与多 App 集成，直接对标 Cursor、Claude Desktop。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">06</div>
+      <h3 class="card-title"><a href="https://developers.googleblog.com/ml-development-in-vs-code-with-google-cloud-power-workbench-extension-now-available" target="_blank" rel="noopener noreferrer">Google Cloud Workbench Notebooks 扩展发布</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Google Dev Blog</span>
+        <span class="card-time">18 小时前</span>
+      </div>
+      <p class="card-summary">VS Code 中直接连接云端 Jupyter 环境，无需切换上下文即可使用 Google Cloud 高性能基础设施。</p>
+      <a class="card-link" href="https://developers.googleblog.com/ml-development-in-vs-code-with-google-cloud-power-workbench-extension-now-available" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">07</div>
+      <h3 class="card-title"><a href="https://blog.cloudflare.com/content-independence-day-ai-options" target="_blank" rel="noopener noreferrer">Cloudflare 推出全新 AI 流量管理选项</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Cloudflare Blog</span>
+        <span class="card-time">22 小时前</span>
+      </div>
+      <p class="card-summary">区分搜索爬虫、AI Agent 爬虫与训练爬虫，新增广告页面保护，替换一刀切屏蔽策略。</p>
+      <a class="card-link" href="https://blog.cloudflare.com/content-independence-day-ai-options" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">08</div>
+      <h3 class="card-title"><a href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener noreferrer">OmniRoute：236 个 AI 提供商统一接入网关</a></h3>
+      <div class="card-meta">
+        <span class="card-source">GitHub Trending</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">开源 AI 网关，支持 236 个提供商（含 50+ 免费），RTK+Caveman 压缩省 15-95% token，Claude Code/Cursor 可用。</p>
+      <a class="card-link" href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="industry">
+  <h2 class="section-title">行业动态</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">09</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash" target="_blank" rel="noopener noreferrer">Meta 效仿 SpaceX，将过剩 AI 算力变现</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch</span>
+        <span class="card-time">22 小时前</span>
+      </div>
+      <p class="card-summary">Meta Compute 云业务计划曝光，拟出售 AI 算力与模型访问权，已承诺 1829 亿美元建设基础设施。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">10</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy" target="_blank" rel="noopener noreferrer">OpenAI 论文揭示 GPT-5.6 三个 Pro 变体</a></h3>
+      <div class="card-meta">
+        <span class="card-source">The Decoder</span>
+        <span class="card-time">一天前</span>
+      </div>
+      <p class="card-summary">Luna/Terra/Sol Pro 三版本，Sol Pro 基因组学通过率 31.5% 居首，Pro 相对标准提升逐级递减。</p>
+      <a class="card-link" href="https://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">11</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/971/071.htm" target="_blank" rel="noopener noreferrer">亚马逊 AWS 砸 10 亿美元派工程师进驻客户公司</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家</span>
+        <span class="card-time">昨天</span>
+      </div>
+      <p class="card-summary">新设前驻工程师部门，每批 5-6 组驻场 45 天，协助落地 AI 应用，首批客户 NBA 与理光，规模将达数千人。</p>
+      <a class="card-link" href="https://www.ithome.com/0/971/071.htm" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">12</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/" target="_blank" rel="noopener noreferrer">Cloudflare 向 AI 公司发最后通牒：9月前须区分爬虫用途</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">AI 公司须在 9 月 15 日前将搜索爬虫与训练爬虫分开标识，否则大量站点默认封锁，影响 RAG 数据获取。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">13</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/" target="_blank" rel="noopener noreferrer">Venice AI 完成 6500 万美元 A 轮，年收入破 7000 万</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">隐私优先 AI 平台估值破 10 亿美元，已盈利，精准切入隐私焦虑细分赛道变现路径。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="paper">
+  <h2 class="section-title">论文研究</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">14</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2606.32017" target="_blank" rel="noopener noreferrer">TRIAGE：Agent 强化学习精准信用分配框架</a></h3>
+      <div class="card-meta">
+        <span class="card-source">HuggingFace Papers</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">解决 GRPO 统一奖励导致的「有用探索被惩罚」问题，按角色类型为每个动作差异化分配信用。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2606.32017" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tips">
+  <h2 class="section-title">技巧与观点</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">15</div>
+      <h3 class="card-title"><a href="https://x.com/shao__meng/status/2072484635955900792" target="_blank" rel="noopener noreferrer">Emil Kowalski 发布设计工程师 Skills</a></h3>
+      <div class="card-meta">
+        <span class="card-source">邵猛 X</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">将 UI/动画原则沉淀为三 Skill，让 Coding Agent 具备设计审美：动画须有理由、高频率禁用、300ms 内。</p>
+      <a class="card-link" href="https://x.com/shao__meng/status/2072484635955900792" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">16</div>
+      <h3 class="card-title"><a href="https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale" target="_blank" rel="noopener noreferrer">Meta 大规模 AI 存储蓝图</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Meta Engineering</span>
+        <span class="card-time">20 小时前</span>
+      </div>
+      <p class="card-summary">数百 EB 级存储架构揭秘：BLOB 存储分层降低 I/O 延迟，避免单 GPU 慢速拖垮整批训练任务。</p>
+      <a class="card-link" href="https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">17</div>
+      <h3 class="card-title"><a href="https://www.latent.space/p/cursor-forward-deployed-engineers" target="_blank" rel="noopener noreferrer">Cursor 企业部署深度拆解：「前驻工程师」搭建 AI 软件工厂</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Latent Space</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">Cursor FDE 团队帮企业落地 Agent 工作流，揭示 Agent 从工具走向企业服务的商业逻辑。</p>
+      <a class="card-link" href="https://www.latent.space/p/cursor-forward-deployed-engineers" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">18</div>
+      <h3 class="card-title"><a href="https://openai.com/index/introducing-genebench-pro" target="_blank" rel="noopener noreferrer">OpenAI 推出基因组 AI 基准 GeneBench-Pro</a></h3>
+      <div class="card-meta">
+        <span class="card-source">OpenAI Blog</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">使用真实科研数据集测试 AI 基因组学能力，评测从通用推理向高价值垂直领域深化。</p>
+      <a class="card-link" href="https://openai.com/index/introducing-genebench-pro" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>共 18 条精选 · 数据源：<a href="https://aihot.virxact.com" target="_blank">AI HOT</a> · <a href="https://jasonzhu.ai" target="_blank">Jason Zhu 每日快讯</a> · 时效窗口：过去 24-48 小时</p>
+  <p style="margin-top:4px;">由 WorkBuddy 自动生成 · <a href="https://augusta-ai.vercel.app">augusta-ai.vercel.app</a></p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.card').forEach(c => observer.observe(c));
+
+// Nav active state
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-bar a');
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const link = document.querySelector(`.nav-bar a[href="#${e.target.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-80px 0px -60% 0px' });
+sections.forEach(s => navObserver.observe(s));
+</script>
+</body>
+</html>

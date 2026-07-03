@@ -1,140 +1,267 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 晨报</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-      color: #1a1a1a;
-      background: #fff;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-    a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #ddd; }
-    a:hover { color: #0066cc; border-bottom-color: #0066cc; }
-    .site-header {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 60px 24px 40px;
-      border-bottom: 1px solid #eee;
-    }
-    .site-title {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-    .site-desc {
-      color: #888;
-      font-size: 15px;
-    }
-    .nav {
-      margin-top: 16px;
-      font-size: 14px;
-      color: #888;
-    }
-    .nav a { color: #888; border: none; margin-right: 16px; }
-    .nav a:hover { color: #0066cc; }
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-    }
-    article {
-      margin-bottom: 36px;
-      padding-bottom: 36px;
-      border-bottom: 1px solid #f0f0f0;
-    }
-    article:last-child { border-bottom: none; }
-    .post-date {
-      font-size: 13px;
-      color: #aaa;
-      margin-bottom: 6px;
-      font-variant-numeric: tabular-nums;
-    }
-    .post-title {
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 8px;
-    }
-    .post-title a { border: none; }
-    .post-title a:hover { color: #0066cc; }
-    .post-excerpt {
-      color: #555;
-      font-size: 15px;
-      line-height: 1.6;
-    }
-    .post-link {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 14px;
-      color: #0066cc;
-      border: none;
-    }
-    .post-link:hover { text-decoration: underline; }
-    .site-footer {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 40px 24px;
-      border-top: 1px solid #eee;
-      color: #aaa;
-      font-size: 13px;
-      text-align: center;
-    }
-    .site-footer a { color: #aaa; border: none; }
-    .site-footer a:hover { color: #0066cc; }
-    @media (prefers-color-scheme: dark) {
-      body { background: #0a0a0a; color: #e0e0e0; }
-      a { color: #e0e0e0; border-bottom-color: #333; }
-      a:hover { color: #5aadff; border-bottom-color: #5aadff; }
-      .site-header, .site-footer { border-color: #222; }
-      .site-desc, .nav, .nav a, .post-date, .site-footer, .site-footer a { color: #666; }
-      .post-excerpt { color: #999; }
-      .post-link { color: #5aadff; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Augusta</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+a:hover { color: #0066cc; }
+
+/* Header */
+.site-header {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 24px 40px;
+  border-bottom: 1px solid #eee;
+}
+.site-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.site-desc {
+  color: #888;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.nav {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav a { color: #888; }
+.nav a:hover { color: #0066cc; }
+.nav a.active { color: #1a1a1a; font-weight: 600; }
+
+/* Filter tabs */
+.filter-bar {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filter-tab {
+  font-size: 13px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+  font-family: inherit;
+}
+.filter-tab:hover { color: #555; }
+.filter-tab.active { background: #1a1a1a; color: #fff; }
+
+/* Main */
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 24px 80px;
+}
+article {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f0f0f0;
+}
+article:last-child { border-bottom: none; }
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+.post-date { color: #aaa; font-variant-numeric: tabular-nums; }
+.post-tag {
+  font-size: 11px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.tag-report { background: #fff3e0; color: #e65100; }
+.tag-blog { background: #e3f2fd; color: #1565c0; }
+.tag-workbuddy { background: #e8f5e9; color: #2e7d32; }
+.post-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.post-title a:hover { color: #0066cc; }
+.post-excerpt {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.post-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #0066cc;
+}
+.post-link:hover { text-decoration: underline; }
+
+/* Footer */
+.site-footer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  border-top: 1px solid #eee;
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+}
+.site-footer a { color: #aaa; }
+.site-footer a:hover { color: #0066cc; }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body { background: #0a0a0a; color: #e0e0e0; }
+  a:hover { color: #5aadff; }
+  .site-header, .site-footer { border-color: #222; }
+  .site-desc, .nav a, .post-date, .site-footer, .site-footer a { color: #666; }
+  .nav a.active { color: #e0e0e0; }
+  .post-excerpt { color: #999; }
+  .post-link { color: #5aadff; }
+  .filter-tab { background: #1a1a1a; color: #666; }
+  .filter-tab:hover { color: #999; }
+  .filter-tab.active { background: #e0e0e0; color: #0a0a0a; }
+  .tag-report { background: #3e2723; color: #ffab40; }
+  .tag-blog { background: #0d2538; color: #64b5f6; }
+  .tag-workbuddy { background: #1b3621; color: #66bb6a; }
+  article { border-bottom-color: #1a1a1a; }
+}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="site-title">AI 晨报</h1>
-    <p class="site-desc">每日精选 AI 资讯 · 模型 · 产品 · 行业 · 研究 · 观点</p>
-    <nav class="nav">
-      <a href="/">首页</a>
-      <a href="/about.html">关于</a>
-      <a href="https://github.com/Augusta-waveryu/augusta">GitHub</a>
-      <a href="/rss.xml">RSS</a>
-    </nav>
-  </header>
 
-  <main>
-    <article>
-      <div class="post-date">2026 年 7 月 1 日 · 星期三</div>
-      <h2 class="post-title"><a href="/reports/2026-07-01.html">AI 晨报 · 2026-07-01</a></h2>
-      <p class="post-excerpt">今日精选 XX 条资讯，覆盖模型发布、产品更新、行业动态、论文研究与技巧观点五大版块。</p>
-      <a class="post-link" href="/reports/2026-07-01.html">阅读全文 →</a>
-    </article>
+<header class="site-header">
+  <h1 class="site-title">Augusta</h1>
+  <p class="site-desc">AI 实践者 · 记录与分享 AI 时代的所思所行</p>
+  <nav class="nav">
+    <a href="/" class="active">首页</a>
+    <a href="/reports/">晨报</a>
+    <a href="/blog/">文章</a>
+    <a href="/workbuddy/">WorkBuddy</a>
+    <a href="/about.html">关于</a>
+  </nav>
+</header>
 
-    <article>
-      <div class="post-date">2026 年 6 月 26 日 · 星期四</div>
-      <h2 class="post-title"><a href="/reports/2026-06-26.html">AI 晨报 · 2026-06-26</a></h2>
-      <p class="post-excerpt">Ornith-1.0 开源 · Claude Code v2.1.193 · 400家报纸起诉OpenAI · 思维链≠安全护栏 · 共 25 条精选。</p>
-      <a class="post-link" href="/reports/2026-06-26.html">阅读全文 →</a>
-    </article>
+<div class="filter-bar">
+  <button class="filter-tab active" onclick="filterPosts('all')">全部</button>
+  <button class="filter-tab" onclick="filterPosts('report')">🌅 晨报</button>
+  <button class="filter-tab" onclick="filterPosts('blog')">✍️ 文章</button>
+  <button class="filter-tab" onclick="filterPosts('workbuddy')">🧭 WorkBuddy</button>
+</div>
 
-    <article>
-      <div class="post-date">2026 年 6 月 25 日 · 星期三</div>
-      <h2 class="post-title"><a href="/reports/2026-06-25.html">AI 晨报 · 2026-06-25</a></h2>
-      <p class="post-excerpt">Gemini 3.5 Flash 原生 Computer Use · GPT-5.5 Instant 新版本 · NSA 失 Mythos 访问权 · Jason Zhu 11.7万 Skill 安全评级 · 共 27 条精选。</p>
-      <a class="post-link" href="/reports/2026-06-25.html">阅读全文 →</a>
-    </article>
-  </main>
+<main id="post-list">
 
-  <footer class="site-footer">
-    <p>由 WorkBuddy 自动生成 · 数据源 <a href="https://aihot.virxact.com" target="_blank">AI HOT</a> · <a href="https://github.com/Augusta-waveryu/augusta">GitHub</a></p>
-  </footer>
+  <!-- 晨报 -->
+  <article data-tag="report">
+    <div class="post-meta">
+      <span class="post-date">2026 年 7 月 4 日</span>
+      <span class="post-tag tag-report">晨报</span>
+    </div>
+    <h2 class="post-title"><a href="/reports/2026-07-04.html">AI 晨报 · 2026-07-04</a></h2>
+    <p class="post-excerpt">全球首例 AI Agent 勒索攻击 · 网信办首设智能信息服务专章 · Safari MCP 服务器 · Vidu S1 实时视频模型 · 硅基流动 IPO 毛利率 -24% · 共 24 条精选。</p>
+    <a class="post-link" href="/reports/2026-07-04.html">阅读全文 →</a>
+  </article>
+
+  <article data-tag="report">
+    <div class="post-meta">
+      <span class="post-date">2026 年 7 月 3 日</span>
+      <span class="post-tag tag-report">晨报</span>
+    </div>
+    <h2 class="post-title"><a href="/reports/2026-07-03.html">AI 晨报 · 2026-07-03</a></h2>
+    <p class="post-excerpt">GPT-6 最快下周开放 · Page Agent 开源 · Microsoft 25 亿派驻 AI 工程师 · Anthropic 三星定制芯片 · 花旗 Adobe 限制旗舰模型成本 · 共 29 条精选。</p>
+    <a class="post-link" href="/reports/2026-07-03.html">阅读全文 →</a>
+  </article>
+
+  <article data-tag="report">
+    <div class="post-meta">
+      <span class="post-date">2026 年 7 月 2 日</span>
+      <span class="post-tag tag-report">晨报</span>
+    </div>
+    <h2 class="post-title"><a href="/reports/2026-07-02.html">AI 晨报 · 2026-07-02</a></h2>
+    <p class="post-excerpt">NVIDIA Nemotron-Labs-TwoTower · Claude Code v2.1.198 · Meta 算力变现 · GPT-5.6 三 Pro 变体 · 共 18 条精选。</p>
+    <a class="post-link" href="/reports/2026-07-02.html">阅读全文 →</a>
+  </article>
+
+  <article data-tag="report">
+    <div class="post-meta">
+      <span class="post-date">2026 年 6 月 26 日</span>
+      <span class="post-tag tag-report">晨报</span>
+    </div>
+    <h2 class="post-title"><a href="/reports/2026-06-26.html">AI 晨报 · 2026-06-26</a></h2>
+    <p class="post-excerpt">Ornith-1.0 开源 · Claude Code v2.1.193 · 400家报纸起诉OpenAI · 思维链≠安全护栏 · 共 25 条精选。</p>
+    <a class="post-link" href="/reports/2026-06-26.html">阅读全文 →</a>
+  </article>
+
+  <article data-tag="report">
+    <div class="post-meta">
+      <span class="post-date">2026 年 6 月 25 日</span>
+      <span class="post-tag tag-report">晨报</span>
+    </div>
+    <h2 class="post-title"><a href="/reports/2026-06-25.html">AI 晨报 · 2026-06-25</a></h2>
+    <p class="post-excerpt">Gemini 3.5 Flash 原生 Computer Use · GPT-5.5 Instant · NSA 失 Mythos 访问权 · Jason Zhu 11.7万 Skill 安全评级 · 共 27 条精选。</p>
+    <a class="post-link" href="/reports/2026-06-25.html">阅读全文 →</a>
+  </article>
+
+  <!-- 文章 -->
+  <article data-tag="blog">
+    <div class="post-meta">
+      <span class="post-date">即将上线</span>
+      <span class="post-tag tag-blog">文章</span>
+    </div>
+    <h2 class="post-title">这里将有 Augusta 的原创文章</h2>
+    <p class="post-excerpt">关于 AI 实践、独立开发、跨境出海的深度思考。像宝玉一样，不只是搬运信息，而是输出观点。</p>
+  </article>
+
+  <!-- WorkBuddy -->
+  <article data-tag="workbuddy">
+    <div class="post-meta">
+      <span class="post-date">即将上线</span>
+      <span class="post-tag tag-workbuddy">WorkBuddy</span>
+    </div>
+    <h2 class="post-title">WorkBuddy 实战指南</h2>
+    <p class="post-excerpt">自动化任务配置、Connector 连接、Skill 开发、知识库管理、多 Agent 协作 —— 从入门到精通的实操经验。</p>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Augusta · <a href="https://github.com/Augusta-waveryu" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://augusta-ai.vercel.app">augusta-ai.vercel.app</a></p>
+</footer>
+
+<script>
+function filterPosts(tag) {
+  document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('#post-list article').forEach(a => {
+    if (tag === 'all' || a.dataset.tag === tag) {
+      a.style.display = '';
+    } else {
+      a.style.display = 'none';
+    }
+  });
+}
+</script>
+
 </body>
 </html>

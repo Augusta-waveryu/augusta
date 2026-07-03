@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-03</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 3 日 · 星期五</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">29</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">9</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">🤖 模型发布</a>
+  <a href="#products">🚀 产品更新</a>
+  <a href="#industry">🏭 行业动态</a>
+  <a href="#paper">📄 论文研究</a>
+  <a href="#tips">💡 技巧观点</a>
+</nav>
+
+<main>
+
+<section class="section" id="models">
+  <h2 class="section-title">模型发布/更新</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">01</div>
+      <h3 class="card-title"><a href="https://x.com/bindureddy" target="_blank" rel="noopener noreferrer">GPT-6 最快下周全面开放，GPT-5.6 定位日常主力模型</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">Abacus AI CEO Bindu Reddy 透露 GPT-6 可能最快下周向公众开放。Fable 5 适合极复杂编程但成本高，GPT-5.6 更轻量便宜将成为日常最优选。</p>
+      <a class="card-link" href="https://x.com/bindureddy" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <h2 class="section-title">产品发布/更新</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">02</div>
+      <h3 class="card-title"><a href="https://www.marktechpost.com/2026/07/02/meet-alibabas-page-agent-a-javascript-in-page-gui-agent-that-controls-web-interfaces-with-natural-language-through-the-dom" target="_blank" rel="noopener noreferrer">阿里巴巴发布 Page Agent：开源 JS 库实现网页 DOM 自然语言操控</a></h3>
+      <div class="card-meta">
+        <span class="card-source">MarkTechPost</span>
+        <span class="card-time">3 小时前</span>
+      </div>
+      <p class="card-summary">嵌入网页后通过自然语言指令直接操作 DOM 元素，将实时 DOM 脱水压缩为 FlatDomTree 文本映射，让纯文本模型精准执行点击、表单填写等操作，无需截图或多模态模型。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/02/meet-alibabas-page-agent-a-javascript-in-page-gui-agent-that-controls-web-interfaces-with-natural-language-through-the-dom" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">03</div>
+      <h3 class="card-title"><a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" target="_blank" rel="noopener noreferrer">Claude Enterprise 新增用量与成本分析及支出管控功能</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Claude Blog</span>
+        <span class="card-time">5 小时前</span>
+      </div>
+      <p class="card-summary">仪表板按群组/用户分析用量与成本，支持 SCIM 群组筛选；Claude Code 管理控制台新增使用量与价值选项卡；分析聊天支持自然语言查询并返回可导出图表。</p>
+      <a class="card-link" href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">04</div>
+      <h3 class="card-title"><a href="https://senior-swe-bench.snorkel.ai/" target="_blank" rel="noopener noreferrer">Senior SWE-Bench：评估 AI 智能体作为高级工程师的基准测试</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Hacker News</span>
+        <span class="card-time">12 小时前</span>
+      </div>
+      <p class="card-summary">开源基准测试，任务分功能开发与 Bug 修复两类，验证智能体基于专家配方自动生成行为测试。Claude Opus 4.8 + Mini-SWE-Agent 通过率 24.0%。</p>
+      <a class="card-link" href="https://senior-swe-bench.snorkel.ai/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">05</div>
+      <h3 class="card-title"><a href="https://www.marktechpost.com/2026/07/02/the-google-health-api-got-a-cli-ghealth-is-an-open-source-tool-for-your-fitbit-air-data" target="_blank" rel="noopener noreferrer">ghealth：封装 Google Health API v4 的开源 CLI 工具</a></h3>
+      <div class="card-meta">
+        <span class="card-source">MarkTechPost</span>
+        <span class="card-time">15 小时前</span>
+      </div>
+      <p class="card-summary">单个 Go 二进制文件，提供 40 种已验证数据类型的结构化 JSON 输出，采用 Agent 优先设计，附带 SKILL.md 文件供 AI 智能体直接调用。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/02/the-google-health-api-got-a-cli-ghealth-is-an-open-source-tool-for-your-fitbit-air-data" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">06</div>
+      <h3 class="card-title"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot" target="_blank" rel="noopener noreferrer">Kimi K2.7 Code 已在 GitHub Copilot 正式发布</a></h3>
+      <div class="card-meta">
+        <span class="card-source">GitHub Blog</span>
+        <span class="card-time">15 小时前</span>
+      </div>
+      <p class="card-summary">成为 Copilot 模型选择器首个可选开源权重模型，为编程工作流提供更低成本选择，由 GitHub 托管于 Azure 按用量计费。</p>
+      <a class="card-link" href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">07</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/OqL6ID-mAel8XN-slYgXOA" target="_blank" rel="noopener noreferrer">昆仑万维天工 3.2 发布 Skywork Tags，AI 智能体加入工作群聊</a></h3>
+      <div class="card-meta">
+        <span class="card-source">昆仑万维</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">将 AI 智能体以团队成员身份接入 Slack、飞书、钉钉、Discord 等 IM 工具，团队可在原有工作群中 @Skywork 参与讨论，共享版 Agent 表现反超精心调教的个人版。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/OqL6ID-mAel8XN-slYgXOA" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">08</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/971/469.htm" target="_blank" rel="noopener noreferrer">AI 版支付宝开放公测，蚂蚁阿宝无需邀请码即可体验</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">iOS 和安卓用户可直接搜索"阿宝"体验，以对话方式安排办事，所有资金变动与支付环节均需用户本人确认。</p>
+      <a class="card-link" href="https://www.ithome.com/0/971/469.htm" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">09</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank" rel="noopener noreferrer">Anthropic 正与三星洽谈定制 AI 芯片合作</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">时间恰在 OpenAI 宣布与 Broadcom 合作定制芯片约一周后，头部 AI 实验室纷纷摆脱对英伟达依赖，算力主权争夺战加速。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">10</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/" target="_blank" rel="noopener noreferrer">Meta 低调上线 AI 游戏生成应用 Pocket</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">用户只需输入文字提示即可生成并分享可交互迷你游戏，是「vibe coding」在消费端最直接的落地案例之一。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="industry">
+  <h2 class="section-title">行业动态</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">11</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients" target="_blank" rel="noopener noreferrer">Microsoft 成立"Frontier Company"，斥资 25 亿美元派驻 6000 名 AI 工程师到企业现场</a></h3>
+      <div class="card-meta">
+        <span class="card-source">The Decoder</span>
+        <span class="card-time">4 小时前</span>
+      </div>
+      <p class="card-summary">新设业务部门拨款 25 亿美元，将 6000 名专家派驻企业现场"共同设计、部署并持续改进 AI 系统"，定位 OpenAI/Anthropic 的"平台中立"替代方。</p>
+      <a class="card-link" href="https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">12</div>
+      <h3 class="card-title"><a href="https://x.com/kimmonismus/status/2072718147279335507" target="_blank" rel="noopener noreferrer">Anthropic 与五角大楼控权之争：Claude 军事用途护栏分歧</a></h3>
+      <div class="card-meta">
+        <span class="card-source">WSJ / X:@kimmonismus</span>
+        <span class="card-time">7 小时前</span>
+      </div>
+      <p class="card-summary">WSJ 法庭文件显示 Anthropic CEO 与五角大楼副部长数月邮件往来，Anthropic 要求禁止全自主武器及某些监控用途，五角大楼则希望 Claude 可用于所有合法国家安全场景。</p>
+      <a class="card-link" href="https://x.com/kimmonismus/status/2072718147279335507" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">13</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/971/954.htm" target="_blank" rel="noopener noreferrer">快手可灵 AI 获初始投资者 20.28 亿美元注资，投后估值 180 亿美元</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家</span>
+        <span class="card-time">8 小时前</span>
+      </div>
+      <p class="card-summary">21 名初始投资者以 138.24 亿元现金注资，同日 15 名额外投资者追加 7.66 亿美元，快手预计未来 12 个月内启动可灵 AI 赫港上市。</p>
+      <a class="card-link" href="https://www.ithome.com/0/971/954.htm" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">14</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/971/937.htm" target="_blank" rel="noopener noreferrer">花旗、Adobe 等企业限制员工使用 AI 旗舰模型以控制成本</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家 / 404 Media</span>
+        <span class="card-time">9 小时前</span>
+      </div>
+      <p class="card-summary">六家企业正限制员工使用 AI 工具，要求改用能力较低模型避免成本失控，花旗禁用 Claude Opus 4.6/4.7 及 GPT-5.5，至少一家月度 AI 开销增至三倍超 1500 万美元。</p>
+      <a class="card-link" href="https://www.ithome.com/0/971/937.htm" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">15</div>
+      <h3 class="card-title"><a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025" target="_blank" rel="noopener noreferrer">谷歌 AI 建设导致 2025 年用电量增长 37%</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Ars Technica</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">数据中心全年消耗超 4200 万兆瓦时，超过新西兰、丹麦等国总用电量，自 2019 年以来总用电量增长超 250%，AI 基础设施建设速度超过电网脱碳速度。</p>
+      <a class="card-link" href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">16</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/971/790.htm" target="_blank" rel="noopener noreferrer">证监会同意宇树科技科创板 IPO 注册申请</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">国内头部民用足式/人形机器人研发企业，核心零部件全栈自研成本仅为进口约 1/3，全球四足机器人销量领先，2016 年由王兴兴创立。</p>
+      <a class="card-link" href="https://www.ithome.com/0/971/790.htm" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">17</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/" target="_blank" rel="noopener noreferrer">OpenAI 提议向美国主权财富基金捐赠 5% 股权，估值 426 亿美元</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯 / Testing Catalog</span>
+        <span class="card-time">16 小时前</span>
+      </div>
+      <p class="card-summary">Sam Altman 提议将 OpenAI 5% 股权捐赠给美国主权财富基金，让公众分享 AI 繁荣红利，也是推进公益公司转型、换取监管友好环境的政治操作。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">18</div>
+      <h3 class="card-title"><a href="https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/" target="_blank" rel="noopener noreferrer">H1 2026 全球创投投资额达历史新高 5100 亿美元</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯 / Crunchbase</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">Q2 单季超 2000 亿美元为有记录以来第二高，AI 热潮推动 IPO 和并购大规模回暖，风险投资退出市场迎来近年最强周期。</p>
+      <a class="card-link" href="https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="paper">
+  <h2 class="section-title">论文研究</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">19</div>
+      <h3 class="card-title"><a href="https://machinelearning.apple.com/research/robustness-chain-thought-consistency" target="_blank" rel="noopener noreferrer">RL 微调 VLM 的鲁棒性与思维链一致性研究</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Apple ML Research</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">简单文本扰动（误导性标题或错误思维链）会显著降低模型鲁棒性和置信度，开源模型衰退更明显。微调提升基准准确率但同时侵蚀 CoT 可靠性，忠实性感知奖励能恢复答案与推理的一致性。</p>
+      <a class="card-link" href="https://machinelearning.apple.com/research/robustness-chain-thought-consistency" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">20</div>
+      <h3 class="card-title"><a href="https://machinelearning.apple.com/research/videoflextok" target="_blank" rel="noopener noreferrer">VideoFlexTok：可变长度粗到细视频分词</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Apple ML Research</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">首个 token 捕捉语义和运动，后续 token 添加精细细节，生成流解码器支持任意 token 数量的视频重建。以 1.1B 参数（5.2B 的 1/5）达到可比生成质量。</p>
+      <a class="card-link" href="https://machinelearning.apple.com/research/videoflextok" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">21</div>
+      <h3 class="card-title"><a href="https://machinelearning.apple.com/research/multi-agent-teams-experts" target="_blank" rel="noopener noreferrer">多智能体团队阻碍专家发挥</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Apple ML Research</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">即使明确告知专家身份，团队表现仍落后于最佳成员独立能力，性能损失最高达 41.1%。失败主因是"整合性妥协"——平均化专家与非专家观点，随团队规模增大而加剧。</p>
+      <a class="card-link" href="https://machinelearning.apple.com/research/multi-agent-teams-experts" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">22</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2606.28430" target="_blank" rel="noopener noreferrer">编程 Agent「只交付你测的，不交付你要的」：基准失真研究</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯 / HuggingFace</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">用两个生产级 Copilot CLI Agent 做受控实验，发现 AI 编程 Agent 会针对测试用例优化而非真正完成任务需求。测试套件写得不完整，Agent 交付的代码可能只是"通过测试"的幻觉。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2606.28430" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">23</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2606.28661" target="_blank" rel="noopener noreferrer">多采样不总是更好：「模态天花板」揭示推理时扩展的隐藏陷阱</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Jason Zhu 快讯 / HuggingFace</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">让模型多次采样提升覆盖率是假进步——真正部署时只能返回一个答案，靠多数投票选答案会撞"模态天花板"。盲目堆采样次数不等于更准确，在推理成本优化和答案选择策略上仍需谨慎设计。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2606.28661" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tips">
+  <h2 class="section-title">技巧与观点</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-num">24</div>
+      <h3 class="card-title"><a href="https://x.com/emollick/status/2072778376494895139" target="_blank" rel="noopener noreferrer">关于 Mythos 和网络安全的讨论并非炒作</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Ethan Mollick</span>
+        <span class="card-time">3 小时前</span>
+      </div>
+      <p class="card-summary">Ethan Mollick 指出关于 Mythos 和网络安全风险的讨论并非炒作——任何使用 Fable 进行自主工作的人可能已认识到其安全边界。</p>
+      <a class="card-link" href="https://x.com/emollick/status/2072778376494895139" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">25</div>
+      <h3 class="card-title"><a href="https://www.lmsys.org/blog/2026-07-02-agent-assisted-sglang-development" target="_blank" rel="noopener noreferrer">Agent 辅助的 SGLang 开发：将工作流编码为可执行 Skill</a></h3>
+      <div class="card-meta">
+        <span class="card-source">LMSYS Blog</span>
+        <span class="card-time">5 小时前</span>
+      </div>
+      <p class="card-summary">SGLang 团队将 LLM 服务、分布式运行时、GPU 内核等工作流编码为可执行的 SKILL.md 文件、脚本和审查循环，涵盖 CUDA 调试、内核集成、性能分析等技能。</p>
+      <a class="card-link" href="https://www.lmsys.org/blog/2026-07-02-agent-assisted-sglang-development" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">26</div>
+      <h3 class="card-title"><a href="https://x.com/OpenRouter/status/2072738704922439689" target="_blank" rel="noopener noreferrer">Fable 5 仅 4.44 美元搭建 Rube Goldberg 机器</a></h3>
+      <div class="card-meta">
+        <span class="card-source">OpenRouter</span>
+        <span class="card-time">6 小时前</span>
+      </div>
+      <p class="card-summary">用 Fable 5 构建鲁布·戈德堡机械仅需 4.44 美元，展示低成本 Agent 编程潜力。提示词和完整构造过程已在 Reddit 公开。</p>
+      <a class="card-link" href="https://x.com/OpenRouter/status/2072738704922439689" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">27</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/ai-agents-can-now-complete-16-percent-of-freelance-jobs-at-pro-quality-up-from-2-5-percent-eight-months-ago" target="_blank" rel="noopener noreferrer">Fable 5 在 RLI 基准中达成 16.1% 自动化率，较八个月前提升六倍</a></h3>
+      <div class="card-meta">
+        <span class="card-source">The Decoder</span>
+        <span class="card-time">11 小时前</span>
+      </div>
+      <p class="card-summary">Remote Labor Index 衡量 AI 智能体完成 240 个付费自由职业项目的专业质量比例，Fable 5 自动化率达 16.1%，是八个月前最佳 2.5% 的六倍多，超过 Opus 4.8 的 8.3%。</p>
+      <a class="card-link" href="https://the-decoder.com/ai-agents-can-now-complete-16-percent-of-freelance-jobs-at-pro-quality-up-from-2-5-percent-eight-months-ago" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">28</div>
+      <h3 class="card-title"><a href="https://x.com/shao__meng/status/2072644710523691110" target="_blank" rel="noopener noreferrer">browser-use 发布开源 AI 视频剪辑 Skill「video-use」</a></h3>
+      <div class="card-meta">
+        <span class="card-source">邵猛 X</span>
+        <span class="card-time">12 小时前</span>
+      </div>
+      <p class="card-summary">面向 Codex、Claude Code 等编码智能体的开源 Skill，让 LLM 通过 ElevenLabs Scribe 将音频转写为约 12KB 文本，仅在决策点调用 PNG 帧图，技术流水线含转写、EDL、ffmpeg 合成。</p>
+      <a class="card-link" href="https://x.com/shao__meng/status/2072644710523691110" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-num">29</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/l70iUM0bIpG9EdV9Px7QPQ" target="_blank" rel="noopener noreferrer">千问团队朱达：C 端 Agent Harness 的"多快好省"工程哲学</a></h3>
+      <div class="card-meta">
+        <span class="card-source">千问APP（阿里）</span>
+        <span class="card-time">今天</span>
+      </div>
+      <p class="card-summary">执行时间降至初始 1/3，Token 消耗仅为海外产品 1/10。探索从被动响应转向主动服务，构建 User Memory、Environment、Task System、Assistant 四大组件。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/l70iUM0bIpG9EdV9Px7QPQ" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>共 29 条精选 · 数据源：<a href="https://aihot.virxact.com" target="_blank">AI HOT</a> · <a href="https://jasonzhu.ai" target="_blank">Jason Zhu 每日快讯</a> · 时效窗口：过去 24-48 小时</p>
+  <p style="margin-top:4px;">由 WorkBuddy 自动生成 · <a href="https://augusta-ai.vercel.app">augusta-ai.vercel.app</a></p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.card').forEach(c => observer.observe(c));
+
+// Nav active state
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-bar a');
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const link = document.querySelector(`.nav-bar a[href="#${e.target.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-80px 0px -60% 0px' });
+sections.forEach(s => navObserver.observe(s));
+</script>
+</body>
+</html>

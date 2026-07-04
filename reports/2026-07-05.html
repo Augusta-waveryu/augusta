@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-05</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+  .nav-bar { gap: 6px; font-size: 12px; padding: 10px 12px; }
+  .nav-bar a { padding: 3px 8px; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <p><a href="../" style="color:rgba(255,255,255,.75);font-size:14px;">← 返回首页</a></p>
+  <h1>🌅 AI 晨报 · 2026-07-05</h1>
+  <p class="date">2026 年 7 月 5 日 星期日 · 基于 AI HOT + Jason Zhu 快讯 · 14 条精选</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">14</div><div class="stat-label">总条数</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">观点</div></div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <a href="#models">🧠 模型发布</a>
+  <a href="#products">🛠️ 产品更新</a>
+  <a href="#industry">📡 行业动态</a>
+  <a href="#papers">📄 论文研究</a>
+  <a href="#tips">💡 技巧与观点</a>
+</nav>
+
+<main>
+
+<!-- ====== 模型发布/更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://startdebugging.net/2026/07/claude-code-2-1-200-renames-default-permission-mode-to-manual/" target="_blank" rel="noopener noreferrer">Claude Code v2.1.200 发布：权限模式更名「Manual」，对话框不再自动继续</a></h3>
+      <div class="card-meta"><span class="card-source">Anthropic</span><span class="card-time">7 月 3 日</span></div>
+      <p class="card-summary">新版将默认权限模式重命名为 Manual，AskUserQuestion 对话框取消自动继续行为，可通过 /config 设置空闲超时。这是一次面向安全与用户体验的精细化迭代。</p>
+      <a class="card-link" href="https://startdebugging.net/2026/07/claude-code-2-1-200-renames-default-permission-mode-to-manual/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://aitoolsrecap.com/Blog/meta-watermelon-model-gpt-5-5-zuckerberg-agents-stalled-2026" target="_blank" rel="noopener noreferrer">Meta 内部 Watermelon 模型被称逼近 GPT-5.5，但扎克伯格承认 Agent 进展停滞</a></h3>
+      <div class="card-meta"><span class="card-source">AIToolsRecap / TechCrunch</span><span class="card-time">7 月 2 日·Meta 全员大会</span></div>
+      <p class="card-summary">AI 负责人 Alexandr Wang 声称 Watermelon（训练算力远超 Avocado）在内部基准接近 GPT-5.5，但未公开验证。同一场合扎克伯格坦言 Agent 开发 4 个月无实质加速，8000 人重组尚未见效。META 当日跌 4.9%。</p>
+      <a class="card-link" href="https://aitoolsrecap.com/Blog/meta-watermelon-model-gpt-5-5-zuckerberg-agents-stalled-2026" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title"><a href="https://x.com/bindureddy" target="_blank" rel="noopener noreferrer">传言 Gemini 3.5 性能或媲美 GPT-5.6，主流模型差距加速收窄</a></h3>
+      <div class="card-meta"><span class="card-source">X / bindureddy</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">AI 圈知名人士 bindureddy 透露新版 Gemini 3.5 性能表现出色，或已达 GPT-5.6 水平。结合 Fable 5、Opus 4.8 密集更新，前沿模型能力差距正在快速收窄，开发者选型策略需重新评估。</p>
+      <a class="card-link" href="https://x.com/bindureddy" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 产品发布/更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title"><a href="https://github.com/openai/codex-plugin-cc" target="_blank" rel="noopener noreferrer">OpenAI 官方发布 codex-plugin-cc：在 Claude Code 内直接调用 Codex 审查代码</a></h3>
+      <div class="card-meta"><span class="card-source">GitHub Trending</span><span class="card-time">7 月 4 日 · GitHub</span></div>
+      <p class="card-summary">OpenAI 官方发布 Claude Code 插件，支持在工作流内调用 Codex 进行代码审查、对抗性检查和任务移交。两大竞争对手首次实现官方级互操作，标志着 Skills 生态走向跨平台融合。</p>
+      <a class="card-link" href="https://github.com/openai/codex-plugin-cc" target="_blank" rel="noopener noreferrer">查看 GitHub →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener noreferrer">阿里宣布 7 月 10 日起全面禁用 Claude Code，推荐国产替代 Qoder</a></h3>
+      <div class="card-meta"><span class="card-source">TechCrunch / Reuters</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">阿里内部评估认为 Claude Code 存在植入后门风险，将其列入高风险软件名单，7 月 10 日起禁止员工办公使用。这是迄今最大规模科技巨头对 Claude Code 的明确封禁，可能引发其他大厂跟进评估。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title"><a href="https://aitoolsrecap.com/Blog/anthropic-closes-chinese-firm-claude-access-loopholes-2026" target="_blank" rel="noopener noreferrer">Anthropic 封堵中国企业 Claude 访问漏洞：中转站与云绕行路线逐一关闭</a></h3>
+      <div class="card-meta"><span class="card-source">Financial Times</span><span class="card-time">7 月 3 日</span></div>
+      <p class="card-summary">FT 报道 Anthropic 正封堵 Ant Group 等中国企业通过中转站和云服务绕行访问 Claude 的路径，系 Fable 5 禁令谈判中的正式承诺。此前 Anthropic 已向参议院指控阿里 Qwen 进行了 2880 万次欺诈性 Claude 交互。</p>
+      <a class="card-link" href="https://aitoolsrecap.com/Blog/anthropic-closes-chinese-firm-claude-access-loopholes-2026" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://aitoolsrecap.com/Blog/fable-5-ban-behind-the-scenes-full-story-2026" target="_blank" rel="noopener noreferrer">Fable 5 禁令幕后全貌：Amazon CEO 致电财长触发出口管制，NSA 驳回初版修复</a></h3>
+      <div class="card-meta"><span class="card-source">Axios</span><span class="card-time">7 月 3 日</span></div>
+      <p class="card-summary">Axios 披露 20 天禁令的完整决策链：Amazon CEO Jassy 致电财政部长 Bessent（非国安官员），白宫幕僚长 Wiles 推动出口管制令数小时内生效。NSA 审核初版修复后驳回，迫使多轮修改。网络安全专家其后指出其他领先模型存在同类漏洞却未被限制。</p>
+      <a class="card-link" href="https://aitoolsrecap.com/Blog/fable-5-ban-behind-the-scenes-full-story-2026" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/" target="_blank" rel="noopener noreferrer">Anthropic 聘请 Freshfields 任 IPO 顾问，全球 VC 上半年 $510B 创纪录</a></h3>
+      <div class="card-meta"><span class="card-source">Crunchbase / FT</span><span class="card-time">7 月 3 日</span></div>
+      <p class="card-summary">Crunchbase H1 报告：全球风投达 $510B 历史新高，OpenAI 与 Anthropic 合计占 43%（$217B），AI 吸收超 70%。Anthropic 已聘请曾服务 Google 收购 Wiz 的 Freshfields 律师事务所担任 IPO 顾问。</p>
+      <a class="card-link" href="https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title"><a href="https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/" target="_blank" rel="noopener noreferrer">Tesla 限制员工 AI 工具支出 $200/周，Grok 获豁免引发争议</a></h3>
+      <div class="card-meta"><span class="card-source">Electrek / TechTimes</span><span class="card-time">7 月 2 日</span></div>
+      <p class="card-summary">7 月 6 日起 Tesla 将员工第三方 AI 工具支出限制在 $200/周，超额需经理审批，xAI 旗下 Grok 免限。多名工程师称偏好 Claude 而非 Grok。继 Uber、Meta、Walmart 后又一家加入 AI 开支管控的科技公司。</p>
+      <a class="card-link" href="https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 论文研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📄 论文研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://arxiv.org/abs/2605.14460" target="_blank" rel="noopener noreferrer">LLM 供应链新攻击面：无恶意代码的 Skills 可操控 Agent 行为</a></h3>
+      <div class="card-meta"><span class="card-source">arXiv</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">研究揭示新型攻击方式：攻击者无需在 Skills 插件中植入恶意代码，仅凭描述文本的语义操控即可影响 Agent 决策。对 Claude Code、Cursor 等依赖第三方 Skills 生态的工具影响尤为直接——安装的「无害插件」可能在暗中操控行为。</p>
+      <a class="card-link" href="https://arxiv.org/abs/2605.14460" target="_blank" rel="noopener noreferrer">查看论文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.01686" target="_blank" rel="noopener noreferrer">WARP：从模型权重逆向推断训练数据域混合比例</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">WARP 框架通过分析模型权重空间推断训练数据的域混合比例（代码、新闻、书籍等占比），可用于审计黑盒基础模型的数据构成，识别潜在偏差来源，为模型选型提供客观依据。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.01686" target="_blank" rel="noopener noreferrer">查看论文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2606.29961" target="_blank" rel="noopener noreferrer">DuoMem：双空间蒸馏框架让端侧小模型具备大模型记忆能力</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">DuoMem 提出双空间蒸馏框架，将大模型的多步骤记忆增强推理能力迁移到资源受限设备的小模型。首次让端侧小模型具备媲美大模型的程序性任务解决能力，对移动端和 IoT Agent 部署有重要价值。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2606.29961" target="_blank" rel="noopener noreferrer">查看论文 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 技巧与观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧与观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title"><a href="https://ramp.com/data/heavy-ai-adopters-hire-more" target="_blank" rel="noopener noreferrer">Ramp 数据实证：重度 AI 用户企业反而招聘更多，就业增长 10%</a></h3>
+      <div class="card-meta"><span class="card-source">Ramp / EconLab</span><span class="card-time">6 月 30 日 · 7 月 4 日社区热议</span></div>
+      <p class="card-summary">Ramp 联合 Revelio Labs 分析 21,559 家美国企业支出与用工数据后发现：重度 AI 工具采用企业招聘数量显著高于同期其他企业，包括初级岗位。与「AI 替代人力」主流叙事相反——AI 是扩张杠杆而非裁员工具。</p>
+      <a class="card-link" href="https://ramp.com/data/heavy-ai-adopters-hire-more" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title"><a href="https://www.latent.space/p/aiewf-daily-dispatch-locomotives" target="_blank" rel="noopener noreferrer">AIE 压轴辩论：Loops 架构 vs Skills 架构，Agent 工程路线之争</a></h3>
+      <div class="card-meta"><span class="card-source">Latent Space</span><span class="card-time">7 月 3 日 · AI Engineer World's Fair</span></div>
+      <p class="card-summary">AI Engineer World's Fair 闭幕辩论聚焦 Agent 架构路线：「Loops 派」主张以持续循环推理为核心，「Skills 派」主张可组合技能层才是正确抽象。两种范式将直接影响 Claude Code、Cursor 等工具的下一步架构决策。</p>
+      <a class="card-link" href="https://www.latent.space/p/aiewf-daily-dispatch-locomotives" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>数据来源：AI HOT Daily · Jason Zhu 快讯 · AIToolsRecap · TechCrunch · Axios · Financial Times · Crunchbase · Electrek · arXiv · HuggingFace</p>
+  <p style="margin-top:8px;"><a href="../">← 返回 Augusta 首页</a> · <a href="../reports/">📋 晨报归档</a></p>
+  <p style="margin-top:8px;opacity:0.6;">AI 晨报 · 每日自动生成 · 覆盖全球 AI 动态</p>
+</footer>
+
+<script>
+(function() {
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(card => observer.observe(card));
+
+  // Active nav highlighting
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>

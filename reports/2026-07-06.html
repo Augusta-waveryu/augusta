@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-06</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+  .nav-bar { gap: 6px; font-size: 12px; padding: 10px 12px; }
+  .nav-bar a { padding: 3px 8px; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <p><a href="../" style="color:rgba(255,255,255,.75);font-size:14px;">← 返回首页</a></p>
+  <h1>🌅 AI 晨报 · 2026-07-06</h1>
+  <p class="date">2026 年 7 月 6 日 星期一 · 基于 AI HOT + Jason Zhu 快讯 + LLM Market Cap · 18 条精选</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">18</div><div class="stat-label">总条数</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">观点</div></div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <a href="#models">🧠 模型发布</a>
+  <a href="#products">🛠️ 产品更新</a>
+  <a href="#industry">📡 行业动态</a>
+  <a href="#papers">📄 论文研究</a>
+  <a href="#tips">💡 技巧与观点</a>
+</nav>
+
+<main>
+
+<!-- ====== 模型发布/更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://x.com/Meituan_LongCat/status/2073768940078317713" target="_blank" rel="noopener noreferrer">美团 LongCat-2.0 完全开源 MIT 许可：1.6T MoE，SWE-bench Pro 59.5 超越 GPT-5.5</a></h3>
+      <div class="card-meta"><span class="card-source">X / 美团 LongCat</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">美团宣布 LongCat-2.0 完全开源 MIT 许可，公开 1.6T MoE 权重与推理代码。每 token 激活约 48B，支持 1M 上下文。SWE-bench Pro 59.5 超越 GPT-5.5（58.6），原生集成 Claude Code、OpenClaw 等工具，支持 GPU 与 NPU 部署。</p>
+      <a class="card-link" href="https://x.com/Meituan_LongCat/status/2073768940078317713" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 产品发布/更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours/" target="_blank" rel="noopener noreferrer">Claude Code + Fable 5 将 2003 年 C&C 移植到原生 iOS，首版仅 40 分钟</a></h3>
+      <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">Google DeepMind 开发者用 Claude Code 和 Fable 5 将 RTS 游戏《命令与征服：将军零时刻》移植到 iPhone/iPad，首版仅 40 分钟，完整源码已开源。展示了 AI 编码工具在跨平台游戏移植中的实战能力。</p>
+      <a class="card-link" href="https://the-decoder.com/claude-code-and-fable-5-ported-the-2003-pc-game-command-conquer-to-native-ios-in-a-few-hours/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title"><a href="https://github.com/Trystan-SA/claude-design-system-prompt" target="_blank" rel="noopener noreferrer">Anthropic Claude Design 反向工程提示词开源 MIT 许可，20 章 + 14 项技能</a></h3>
+      <div class="card-meta"><span class="card-source">GitHub / Hacker News</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">Claude Design 反向工程系统提示词在 GitHub 以 MIT 许可开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍 WCAG 等。针对 Fable 5/Opus 4.7+ 校准，新增自主决策条款：小决定直接执行记录而不询问。</p>
+      <a class="card-link" href="https://github.com/Trystan-SA/claude-design-system-prompt" target="_blank" rel="noopener noreferrer">查看 GitHub →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70/" target="_blank" rel="noopener noreferrer">pxpipe 开源工具：文本藏入 PNG 削减 Claude Code token 成本最高 70%</a></h3>
+      <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">开源工具 pxpipe 将文本隐藏在 PNG 图片中，使 Claude Code 和 Fable 5 的 token 消耗降低最高 70%。通过图像编码绕过文本 token 计费机制，为高频 API 调用场景提供显著成本优化方案。</p>
+      <a class="card-link" href="https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title"><a href="https://x.com/SemiAnalysis_/status/2073874671498387899" target="_blank" rel="noopener noreferrer">NVIDIA Kyber NVL144 延迟超 12 个月延至 2028，NVL72x2 背靠背架构取消</a></h3>
+      <div class="card-meta"><span class="card-source">SemiAnalysis</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">Jensen 在 GTC 上展示的 Kyber NVL144 仅 3 个月后遭遇重大挫折，延迟超 12 个月延至 2028 年。NVL72x2 背靠背机架架构也被取消，导致 Rubin Ultra 的扩展域受限。对 NVIDIA 数据中心产品路线图产生深远影响。</p>
+      <a class="card-link" href="https://x.com/SemiAnalysis_/status/2073874671498387899" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2073834219659534816" target="_blank" rel="noopener noreferrer">扎克伯格宣布建设 Prometheus 千兆瓦级 AI 集群：数千亿美元资本投入</a></h3>
+      <div class="card-meta"><span class="card-source">X / Rohan Paul</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">扎克伯格宣布建设 Prometheus 集群——首个千兆瓦以上单一 AI 集群，涉及数千亿美元资本投入。他表示职责就是集中精英人才、资本和基础设施，标志着 Meta 从社交公司向 AI 基础设施巨头的战略转型。</p>
+      <a class="card-link" href="https://x.com/rohanpaul_ai/status/2073834219659534816" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html" target="_blank" rel="noopener noreferrer">欧盟理事会快速通道强制推行 Chat Control 2.0：加密通信无差别扫描</a></h3>
+      <div class="card-meta"><span class="card-source">Heise / Hacker News</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">欧盟理事会通过书面程序快速通过 Chat Control 2.0 法规，强制要求科技集团对加密通信进行无差别扫描。批评者指责该做法绕过民主监督，草案将在夏季休会前以紧急程序提交议会表决，反对需绝对多数几乎无法阻止。</p>
+      <a class="card-link" href="https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmr7z00up0065sl0472bil7hs" target="_blank" rel="noopener noreferrer">消息称 Anthropic 拟在澳大利亚布局 1.4GW 数据中心算力，建设成本 $150 亿</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">消息称 Anthropic 拟在澳大利亚布局 1.4GW 数据中心算力，建设成本达 150 亿美元。这是继美国大规模布局后 Anthropic 的又一重大基础设施扩张计划，凸显 AI 巨头对全球算力资源的争夺正在加速。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmr7z00up0065sl0472bil7hs" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">AI 数据中心耗水量远超企业披露，发电间接用水成隐形消耗</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">AI 数据中心实际耗水量远超企业披露数据，发电间间接用水成为巨大隐形消耗。随着 AI 算力需求激增，水资源压力正在成为 AI 扩张的新约束因素，可能影响数据中心选址和扩张战略。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">英国"星际之门"AI 项目被曝空头支票，OpenAI 从未实地考察选址</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT / Hacker News</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">英国"星际之门"AI 项目被曝光为空头支票——OpenAI 从未实地考察核心选址，项目承诺的基础设施投资缺乏实质进展。引发对政府 AI 投资承诺真实性的广泛质疑。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 论文研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📄 论文研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmr5zuihg0739slc7nv4mlc5r" target="_blank" rel="noopener noreferrer">CMU Gym-Anything：双智能体循环将任意软件转为 AI 训练环境</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT / MarkTechPost</span><span class="card-time">7 月 4 日</span></div>
+      <p class="card-summary">CMU 发布 Gym-Anything 双智能体循环框架，可将任意软件转化为 AI 训练环境，评估 Agent 是否随经验提升。字节跳动已发布 EdgeBench 基准验证。对 Agent 持续学习与适应能力评估有重要价值。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmr5zuihg0739slc7nv4mlc5r" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface" target="_blank" rel="noopener noreferrer">26000 学生 30 月追踪：AI 隐藏学习成本约两年才显现</a></h3>
+      <div class="card-meta"><span class="card-source">The Decoder / AI HOT</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">追踪 26000 名中学生 30 个月：使用 AI 后作业分数提升 18%，但闭卷考试下降 20%，升学考试下降 18-24%。隐藏学习成本约两年才显现，81% 长期用户作业完成时间低于 50 分钟（外包迹象）。</p>
+      <a class="card-link" href="https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 技巧与观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧与观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">vibecoded 前端设计半年即过时：AI 编码产出的可持续性反思</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">业界观察指出 vibecoded 前端设计半年即过时——AI 生成的 UI 代码迭代快但缺乏持久性，引发对 AI 编码产出可持续性的反思。Vibe Coding 的高产出速度背后可能隐藏着维护成本陷阱。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title"><a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/" target="_blank" rel="noopener noreferrer">sqlite-utils 4.0rc2 大部分由 Claude Fable 编写，总成本约 $149.25</a></h3>
+      <div class="card-meta"><span class="card-source">Simon Willison</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">Simon Willison 发布 sqlite-utils 4.0rc2，透露大部分代码由 Claude Fable 编写，总成本约 $149.25。展示了 AI 辅助开源项目维护的新范式——低成本、高效率的代码生成正在重塑软件工程流程。</p>
+      <a class="card-link" href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#15</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/mistral-ceo-mensch-says-proprietary-ai-models-give-labs-a-front-row-seat-to-your-business-processes/" target="_blank" rel="noopener noreferrer">Mistral CEO：proprietary models 让实验室前排观察你的业务流程</a></h3>
+      <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">Mistral CEO Mensch 指出闭源 AI 模型让实验室获得前排座位观察企业业务流程，提醒使用 proprietary models 的数据暴露风险。对选择模型部署策略的企业有重要警示意义。</p>
+      <a class="card-link" href="https://the-decoder.com/mistral-ceo-mensch-says-proprietary-ai-models-give-labs-a-front-row-seat-to-your-business-processes/" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#16</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">Qwen 前技术负责人：混合思考模式冲突，转向智能体思考范式</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">Qwen 前技术负责人 Lin 发文讨论混合思考模式的冲突问题，主张从混合推理转向智能体思考范式。这代表了国产大模型架构思路的新方向，从单一模型能力转向可组合的智能体系统设计。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmr7hn9y900cislxdd8du8smt" target="_blank" rel="noopener noreferrer">查看来源 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#17</div>
+      <h3 class="card-title"><a href="https://extelligence.substack.com/p/i-accidentally-started-a-small-business" target="_blank" rel="noopener noreferrer">三周前不小心创办了一家小公司：AI 为非语言儿童开发沟通 app</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News / Substack</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">一位父亲为患有自闭症的非语言儿子开发 AI 沟通应用，在言语治疗室展示时引发全场流泪，意外发现产品市场匹配决定创业。展示了 AI 在无障碍沟通领域的巨大潜力与人文价值。</p>
+      <a class="card-link" href="https://extelligence.substack.com/p/i-accidentally-started-a-small-business" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#18</div>
+      <h3 class="card-title"><a href="https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools" target="_blank" rel="noopener noreferrer">LlamaIndex legal-kb：基于 Index v2 的智能体检索参考应用</a></h3>
+      <div class="card-meta"><span class="card-source">MarkTechPost / AI HOT</span><span class="card-time">7 月 5 日</span></div>
+      <p class="card-summary">LlamaIndex 发布 legal-kb 法律文档知识库参考应用，采用 Retrieval Harness 模式赋予 Agent 四个文件系统风格工具：retrieve 混合语义检索、findFiles 文件名搜索、readFile 原始内容读取、grepFile 正则匹配。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools" target="_blank" rel="noopener noreferrer">阅读详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>数据来源：AI HOT Selected/Daily · Jason Zhu 快讯 · The Decoder · SemiAnalysis · Hacker News · Simon Willison · LLM Market Cap</p>
+  <p style="margin-top:8px;"><a href="../">← 返回 Augusta 首页</a> · <a href="../reports/">📋 晨报归档</a></p>
+  <p style="margin-top:8px;opacity:0.6;">AI 晨报 · 每日自动生成 · 覆盖全球 AI 动态</p>
+</footer>
+
+<script>
+(function() {
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(card => observer.observe(card));
+
+  // Active nav highlighting
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-09 | Augusta</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #666666;
+  --subtle: #f5f5f5;
+  --border: #eeeeee;
+  --accent: #ff5722;
+  --accent-soft: #fff3e0;
+  --link: #0066cc;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --radius: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0a0a;
+    --fg: #e0e0e0;
+    --muted: #999999;
+    --subtle: #1a1a1a;
+    --border: #222222;
+    --accent: #ff8a65;
+    --accent-soft: #3e2723;
+    --link: #5aadff;
+    --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font);
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff3d00 50%, #e65100 100%);
+  color: #fff;
+  padding: 80px 24px 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 50%),
+              radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 40%);
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.hero-date {
+  font-size: 18px;
+  opacity: 0.95;
+  font-weight: 400;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat .num {
+  font-size: 32px;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+.hero-stat .label {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Anchor nav */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+@media (prefers-color-scheme: dark) {
+  .nav-bar { background: rgba(10,10,10,0.92); }
+}
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+.nav-inner a {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-inner a:hover { background: var(--subtle); color: var(--fg); }
+.nav-inner a.active { background: var(--accent); color: #fff; }
+.nav-home {
+  margin-right: auto;
+  font-weight: 600;
+  color: var(--fg) !important;
+}
+
+/* Layout */
+main { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+.section { margin-bottom: 56px; scroll-margin-top: 72px; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border);
+}
+.section-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background: var(--accent-soft);
+}
+.section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  flex: 1;
+}
+.section-count {
+  font-size: 14px;
+  color: var(--muted);
+  background: var(--subtle);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.6s ease-out, translate 0.6s ease-out;
+  opacity: 0;
+  translate: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card.visible { opacity: 1; translate: 0 0; }
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.card-index {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.card-title {
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  color: var(--fg);
+}
+.card-title a:hover { color: var(--link); }
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.card-source {
+  background: var(--subtle);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.card-summary {
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.7;
+  flex: 1;
+}
+.card-link {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--link);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.card-link:hover { text-decoration: underline; }
+
+/* Footer */
+.report-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+.report-footer a { color: var(--link); }
+.report-footer a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 32px; }
+  .hero-stats { gap: 20px; }
+  .hero-stat .num { font-size: 24px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .section h2 { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🌅 每日精选 · 48h 时效</div>
+    <h1>AI 晨报</h1>
+    <p class="hero-date">2026 年 7 月 9 日 · 星期四</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">30</span><span class="label">总条数</span></div>
+      <div class="hero-stat"><span class="num">6</span><span class="label">模型</span></div>
+      <div class="hero-stat"><span class="num">6</span><span class="label">产品</span></div>
+      <div class="hero-stat"><span class="num">7</span><span class="label">行业</span></div>
+      <div class="hero-stat"><span class="num">5</span><span class="label">论文</span></div>
+      <div class="hero-stat"><span class="num">6</span><span class="label">观点</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="../" class="nav-home">← Augusta</a>
+    <a href="#models" class="active">模型</a>
+    <a href="#products">产品</a>
+    <a href="#industry">行业</a>
+    <a href="#papers">论文</a>
+    <a href="#insights">观点</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="section" id="models">
+    <div class="section-header">
+      <div class="section-icon">🧠</div>
+      <h2>模型发布/更新</h2>
+      <span class="section-count">6 条</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-index">#01</div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/973/820.htm" target="_blank" rel="noopener">Meta 发布 Muse Image 图像生成模型，免费接入 Instagram 与 WhatsApp</a></h3>
+        <div class="card-meta">
+          <span class="card-source">IT之家 / Meta</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">Meta 超级智能实验室首个自研图像生成模型上线，支持对话式生成、背景擦除、文字渲染、二维码生成，并可通过 @提及将 Instagram 公开照片融入创作。Muse Video 也在开发中。</p>
+        <a class="card-link" href="https://www.ithome.com/0/973/820.htm" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#02</div>
+        <h3 class="card-title"><a href="https://36kr.com/p/3885177884078083" target="_blank" rel="noopener">字节 Seedance 2.0 训练内幕披露，火山 MaaS 收入过半由其贡献</a></h3>
+        <div class="card-meta">
+          <span class="card-source">36氪深氪</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">36氪独家报道 Seedance 2.0 从 200B 参数豪赌到数据标注团队上千人的全过程。火山引擎负责人谭待称今年 MaaS 一半以上收入来自 Seedance，2.5 版本预计 7 月下旬发布。</p>
+        <a class="card-link" href="https://36kr.com/p/3885177884078083" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#03</div>
+        <h3 class="card-title"><a href="https://www.infoq.cn/article/mqY10ihiZ874id2JDeXu" target="_blank" rel="noopener">蚂蚁灵波发布 LingBot-Depth 2.0 空间感知模型</a></h3>
+        <div class="card-meta">
+          <span class="card-source">InfoQ / 量子位</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">基于 1.5 亿规模数据训练，在边缘清晰度、细小物体识别、远距离深度估计等 16 项基准测评中获得 12 项第一。重点解决透明、反光等复杂场景下的空间感知难题。</p>
+        <a class="card-link" href="https://www.infoq.cn/article/mqY10ihiZ874id2JDeXu" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#04</div>
+        <h3 class="card-title"><a href="https://x.com/OpenAI/status/2074907025537224840" target="_blank" rel="noopener">OpenAI 发布 GPT-Live 全双工语音模型</a></h3>
+        <div class="card-meta">
+          <span class="card-source">OpenAI / X</span>
+          <span>今天</span>
+        </div>
+        <p class="card-summary">GPT-Live 采用全双工架构，可同时听和说，支持实时翻译与自然对话。即日起向 ChatGPT iOS、Android 和 Web 端推送，API 版本 GPT-Live-1 / mini 已开放候补。</p>
+        <a class="card-link" href="https://x.com/OpenAI/status/2074907025537224840" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#05</div>
+        <h3 class="card-title"><a href="https://x.com/cognition/status/2074882968770728416" target="_blank" rel="noopener">Cognition 发布 SWE-1.7 编程 Agent 模型及 Lightning 高速版</a></h3>
+        <div class="card-meta">
+          <span class="card-source">Cognition / X</span>
+          <span>今天</span>
+        </div>
+        <p class="card-summary">SWE-1.7 在 Agent 任务上接近前沿水平，但成本远低于同类模型。Lightning 版本推理速度达 1000 token/s，已集成到 Devin 桌面/CLI/网页端，付费用户免费一个月。</p>
+        <a class="card-link" href="https://x.com/cognition/status/2074882968770728416" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#06</div>
+        <h3 class="card-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1uqnqsc/chinas_minimax_plans_to_launch_27trillion/" target="_blank" rel="noopener">MiniMax 计划发布 2.7 万亿参数 M3 P 大模型</a></h3>
+        <div class="card-meta">
+          <span class="card-source">The Information / Reddit</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">据 The Information 报道，MiniMax 正在开发新一代大语言模型 M3 P，参数规模达 2.7 万亿，属行业顶级水平。消息来自 Reddit 上引用的英文报道摘要。</p>
+        <a class="card-link" href="https://www.reddit.com/r/LocalLLaMA/comments/1uqnqsc/chinas_minimax_plans_to_launch_27trillion/" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="section-header">
+      <div class="section-icon">🛠️</div>
+      <h2>产品发布/更新</h2>
+      <span class="section-count">6 条</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-index">#07</div>
+        <h3 class="card-title"><a href="https://x.com/runwayml/status/2074855836417974708" target="_blank" rel="noopener">Runway 推出 Runway Dev 开发者平台</a></h3>
+        <div class="card-meta">
+          <span class="card-source">Runway / X</span>
+          <span>今天</span>
+        </div>
+        <p class="card-summary">面向专业开发者与企业团队的 AI 媒体平台，旨在降低 AI 媒体生成成本、提升用户参与度。标志 Runway 从创作者工具向企业级基础设施延伸。</p>
+        <a class="card-link" href="https://x.com/runwayml/status/2074855836417974708" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#08</div>
+        <h3 class="card-title"><a href="https://x.com/Ali_TongyiLab/status/2074764326498709860" target="_blank" rel="noopener">通义实验室预告 QwenPaw 2.0 TUI Agent</a></h3>
+        <div class="card-meta">
+          <span class="card-source">阿里通义 / X</span>
+          <span>今天</span>
+        </div>
+        <p class="card-summary">基于新基础架构的 TUI Agent，支持键盘优先的快速操作方式，可管理多个配置化的 agent。阿里在终端原生 Agent 形态上的新尝试。</p>
+        <a class="card-link" href="https://x.com/Ali_TongyiLab/status/2074764326498709860" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#09</div>
+        <h3 class="card-title"><a href="https://news.qq.com/rain/a/20260707A03U3V00" target="_blank" rel="noopener">支付宝 AI 开放平台正式上线</a></h3>
+        <div class="card-meta">
+          <span class="card-source">腾讯新闻 / 支付宝</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">商家、机构可通过「阿宝」接入手机、车机、AI 眼镜、IoT 等智能终端与大模型平台，实现一次接入、多端分发、统一管理。面向企业开发者开放邀测。</p>
+        <a class="card-link" href="https://news.qq.com/rain/a/20260707A03U3V00" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#10</div>
+        <h3 class="card-title"><a href="https://x.com/xiaohu/status/2074667192487174412" target="_blank" rel="noopener">Cloudflare 推出 Monetization Gateway，按次自动收费</a></h3>
+        <div class="card-meta">
+          <span class="card-source">Cloudflare / X</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">允许网站、API、工具对 AI Agent 自动收费。基于 x402 开放协议使用 USDC 按次结算，毫秒级到账。AI Agent 先收报价，付款后请求放行，适合 Agent 经济基础设施。</p>
+        <a class="card-link" href="https://x.com/xiaohu/status/2074667192487174412" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#11</div>
+        <h3 class="card-title"><a href="https://github.com/rowboatlabs/rowboat" target="_blank" rel="noopener">Rowboat 开源桌面 AI 同事，本地优先带记忆</a></h3>
+        <div class="card-meta">
+          <span class="card-source">GitHub / Hacker News</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">Rowboat Labs 开源的本地优先工作 AI，将工作内容索引成持续更新的知识图谱，本机调用模型执行任务。内置邮件、笔记、浏览器、代码、会议等模式，被定位为 Claude Desktop 开源替代。</p>
+        <a class="card-link" href="https://github.com/rowboatlabs/rowboat" target="_blank" rel="noopener">查看仓库 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#12</div>
+        <h3 class="card-title"><a href="https://x.com/ManusAI/status/2074871873683243465" target="_blank" rel="noopener">ManusAI 升级 Google Drive 连接器至 Workspace</a></h3>
+        <div class="card-meta">
+          <span class="card-source">ManusAI / X</span>
+          <span>今天</span>
+        </div>
+        <p class="card-summary">Google Drive 连接器升级为 Google Workspace，新增对 Drive、Docs、Sheets、Slides 等文档的读写控制能力。ManusAI 在企业办公集成上继续补全。</p>
+        <a class="card-link" href="https://x.com/ManusAI/status/2074871873683243465" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="industry">
+    <div class="section-header">
+      <div class="section-icon">📰</div>
+      <h2>行业动态</h2>
+      <span class="section-count">7 条</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-index">#13</div>
+        <h3 class="card-title"><a href="https://www.qbitai.com/2026/07/445883.html" target="_blank" rel="noopener">DeepSeek 被曝秘密自研推理芯片，降低对英伟达依赖</a></h3>
+        <div class="card-meta">
+          <span class="card-source">量子位 / 路透社</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">路透社报道称 DeepSeek 一年前启动推理芯片自研项目，已与设计公司和代工厂接触，专攻推理场景，旨在减少对外部高端 GPU 的依赖。</p>
+        <a class="card-link" href="https://www.qbitai.com/2026/07/445883.html" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#14</div>
+        <h3 class="card-title"><a href="https://x.com/xiaohu/status/2074736623284256881" target="_blank" rel="noopener">工信部发布 Claude Code 安全后门风险提示</a></h3>
+        <div class="card-meta">
+          <span class="card-source">工信部 / X</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">公告称 Claude Code 2.1.91 至 2.1.196 版本内置监控机制，可能在未经同意的情况下回传敏感信息，建议用户立即卸载或升级至安全版本。</p>
+        <a class="card-link" href="https://x.com/xiaohu/status/2074736623284256881" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#15</div>
+        <h3 class="card-title"><a href="https://news.qq.com/rain/a/20260708A047R200" target="_blank" rel="noopener">蚂蚁集团战略入股薄荷健康，持股超 28%</a></h3>
+        <div class="card-meta">
+          <span class="card-source">腾讯新闻</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">蚂蚁集团与薄荷健康达成战略投资合作，成为其最大外部股东。双方将围绕体重管理等场景共建专业级 AI 健康服务，加码蚂蚁「AI First」医疗赛道布局。</p>
+        <a class="card-link" href="https://news.qq.com/rain/a/20260708A047R200" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#16</div>
+        <h3 class="card-title"><a href="https://www.stcn.com/article/detail/4001797.html" target="_blank" rel="noopener">国家发改委：2026 年我国 AI 产业增速维持 30% 以上</a></h3>
+        <div class="card-meta">
+          <span class="card-source">证券时报 / 央视</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">在 2026 世界人工智能大会新闻发布会上，国家发改委相关负责人表示，2025 年我国人工智能相关产业规模已超万亿，初步预测 2026 年增速将维持在 30% 以上。</p>
+        <a class="card-link" href="https://www.stcn.com/article/detail/4001797.html" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#17</div>
+        <h3 class="card-title"><a href="https://baijiahao.baidu.com/s?id=1870111908639719365&wfr=spider&for=pc" target="_blank" rel="noopener">智谱解禁日股价低开高走，盘中一度涨近 15%</a></h3>
+        <div class="card-meta">
+          <span class="card-source">财联社 / 百度百家</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">智谱 02513.HK 迎来上市后首次限售股解禁，11 家基石投资者约 2568 万股解除限售。股价低开后大幅反弹，近七成基石投资者表态长期持有，摩根大通上调目标价至 2000 港元。</p>
+        <a class="card-link" href="https://baijiahao.baidu.com/s?id=1870111908639719365&wfr=spider&for=pc" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#18</div>
+        <h3 class="card-title"><a href="https://www.isc.org.cn/article/29625149093048320.html" target="_blank" rel="noopener">第二十五届中国互联网大会在北京开幕</a></h3>
+        <div class="card-meta">
+          <span class="card-source">中国互联网协会</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">7 月 8 日至 10 日，2026 中国互联网大会以「智启新程·融创未来」为主题在北京举办。大会聚焦智能体互联网、智能体安全、算力互联网、Token 经济等方向。</p>
+        <a class="card-link" href="https://www.isc.org.cn/article/29625149093048320.html" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#19</div>
+        <h3 class="card-title"><a href="https://36kr.com/newsflashes/3886179597463552" target="_blank" rel="noopener">法律 AI 公司 Norm Ai 获 1.2 亿美元 C 轮融资</a></h3>
+        <div class="card-meta">
+          <span class="card-source">36氪</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">由 Khosla Ventures 领投，投后估值 12 亿美元。Norm Ai 将生成式 AI 用于监管、合规与法律工作流自动化，资金将用于模型能力扩展与企业客户落地。</p>
+        <a class="card-link" href="https://36kr.com/newsflashes/3886179597463552" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="papers">
+    <div class="section-header">
+      <div class="section-icon">🔬</div>
+      <h2>论文研究</h2>
+      <span class="section-count">5 条</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-index">#20</div>
+        <h3 class="card-title"><a href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">Anthropic 发现 Claude 内部「类脑 J-space」全局工作空间</a></h3>
+        <div class="card-meta">
+          <span class="card-source">Anthropic Research</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">通过 Jacobian 透镜技术发现 Claude 内部存在类似人类意识可及思维的小型神经表征区域，占运算量不到十分之一，删除后模型明显变笨。为安全监控 AI 风险状态提供新思路。</p>
+        <a class="card-link" href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#21</div>
+        <h3 class="card-title"><a href="https://36kr.com/newsflashes/3886178922541318" target="_blank" rel="noopener">以色列团队推出蛋白质序列「翻译」系统 BetaDescribe</a></h3>
+        <div class="card-meta">
+          <span class="card-source">36氪 / PNAS</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">以色列理工学院与特拉维夫大学开发出可将蛋白质序列自动翻译成自然语言文字描述的 AI 系统，有望加速药物研发和新材料设计。成果发表于 PNAS。</p>
+        <a class="card-link" href="https://36kr.com/newsflashes/3886178922541318" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#22</div>
+        <h3 class="card-title"><a href="https://www.qbitai.com/2026/07/446363.html" target="_blank" rel="noopener">具身智能新基准 RoboDojo 发布：人类 100 分，最强模型仅 12.8 分</a></h3>
+        <div class="card-meta">
+          <span class="card-source">量子位</span>
+          <span>今天</span>
+        </div>
+        <p class="card-summary">新基准测试揭示当前具身智能模型与人类操作之间的巨大差距，凸显物理世界交互仍是 AI 落地的关键挑战，也为后续研究指明方向。</p>
+        <a class="card-link" href="https://www.qbitai.com/2026/07/446363.html" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#23</div>
+        <h3 class="card-title"><a href="https://blog.zksecurity.xyz/posts/circl-bugs/" target="_blank" rel="noopener">zkSecurity 用 AI 审计发现 Cloudflare CIRCL 7 个密码学 Bug</a></h3>
+        <div class="card-meta">
+          <span class="card-source">zkSecurity Blog</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">AI 审计流水线 zkao 发现 Cloudflare 密码学库 CIRCL 中 7 个真实漏洞，包括门限 RSA 精度丢失和属性加密访问控制绕过。所有漏洞已在上游修复。</p>
+        <a class="card-link" href="https://blog.zksecurity.xyz/posts/circl-bugs/" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#24</div>
+        <h3 class="card-title"><a href="https://www.qbitai.com/2026/07/446075.html" target="_blank" rel="noopener">智源悟界·Orca 模型登顶 Hugging Face 论文月榜</a></h3>
+        <div class="card-meta">
+          <span class="card-source">量子位 / Hugging Face</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">智源研究院「悟界·Orca」在 Hugging Face 论文月榜排名第一，该工作专注于教模型理解世界变化，体现国内机构在视觉语言理解方向的持续投入。</p>
+        <a class="card-link" href="https://www.qbitai.com/2026/07/446075.html" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="insights">
+    <div class="section-header">
+      <div class="section-icon">💡</div>
+      <h2>技巧与观点</h2>
+      <span class="section-count">6 条</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-index">#25</div>
+        <h3 class="card-title"><a href="https://x.com/xiaohu/status/2074793907070906767" target="_blank" rel="noopener">小互用 Claude Code 开发网站，上线 3 天即盈利</a></h3>
+        <div class="card-meta">
+          <span class="card-source">X / 小互</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">开发者分享其网站 100% 由 Claude Code 完成，无数据库、所有内容 AI 自动生成，上线 3 天已开始盈利。展现 AI 编程在独立开发场景中的快速变现潜力。</p>
+        <a class="card-link" href="https://x.com/xiaohu/status/2074793907070906767" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#26</div>
+        <h3 class="card-title"><a href="https://x.com/op7418/status/2074758348264833131" target="_blank" rel="noopener">歸藏开源 GPT-Image 3D 配图 Skill</a></h3>
+        <div class="card-meta">
+          <span class="card-source">X / 歸藏</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">歸藏开源一款文章配图 Skill，适配 GPT-Image-2.0，可将文档生成带标签的 3D 材质配图，风格干净漂亮。为 AI 写作工作流提供新的视觉表达工具。</p>
+        <a class="card-link" href="https://x.com/op7418/status/2074758348264833131" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#27</div>
+        <h3 class="card-title"><a href="https://www.qbitai.com/2026/07/445608.html" target="_blank" rel="noopener">前华为天才少年李博杰公开吐槽 DeepSeek 招聘流程</a></h3>
+        <div class="card-meta">
+          <span class="card-source">量子位</span>
+          <span>2 天前</span>
+        </div>
+        <p class="card-summary">李博杰质疑笔试通过后长时间不安排面试、面试官迟到态度轻佻、面试中质疑其作弊并威胁终止流程。事件引发 AI 圈与 HR 圈对头部公司雇主品牌的讨论。</p>
+        <a class="card-link" href="https://www.qbitai.com/2026/07/445608.html" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#28</div>
+        <h3 class="card-title"><a href="https://x.com/xiaohu/status/2074663108975693896" target="_blank" rel="noopener">用户吐槽 Fable 5 延长日期却不重置用量</a></h3>
+        <div class="card-meta">
+          <span class="card-source">X / 小互</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">Fable 5 用户反馈产品只延长订阅日期但不重置免费用量，引发社区对产品诚意与定价策略的争议。高端模型体验与用户预期之间的平衡仍是话题。</p>
+        <a class="card-link" href="https://x.com/xiaohu/status/2074663108975693896" target="_blank" rel="noopener">查看推文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#29</div>
+        <h3 class="card-title"><a href="https://txtmix.com/posts/news/ai-morning-news-2026-07-08/" target="_blank" rel="noopener">观点：AI 竞争重心从「模型大小」转向「分发广度」</a></h3>
+        <div class="card-meta">
+          <span class="card-source">Text Matrix</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">Meta 将 Muse Image 塞进 30 亿月活生态、SpaceXAI 与 Cursor 绑定代码工作流、蚂蚁打通支付健康 AI 入口，三件事共同指向：算力红利结束，应用红利开始，分发能力成为护城河。</p>
+        <a class="card-link" href="https://txtmix.com/posts/news/ai-morning-news-2026-07-08/" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-index">#30</div>
+        <h3 class="card-title"><a href="https://blog.csdn.net/haohaizi_liu/article/details/162692758" target="_blank" rel="noopener">观点：国家级 AI 监管框架细化已在路上</a></h3>
+        <div class="card-meta">
+          <span class="card-source">CSDN / 综合媒体</span>
+          <span>1 天前</span>
+        </div>
+        <p class="card-summary">WAIC 与中国互联网大会同步将「智能体安全」「算电协同」「Token 经济」列入核心议程。监管框架细化的背景下，创业者需在 8 月前完成备案、防护与合规上线准备。</p>
+        <a class="card-link" href="https://blog.csdn.net/haohaizi_liu/article/details/162692758" target="_blank" rel="noopener">阅读原文 →</a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="report-footer">
+  <p>© 2026 Augusta · 本晨报所有条目均选自 48 小时内公开信息源</p>
+  <p style="margin-top:8px;"><a href="../">← 返回首页</a> · <a href="./">往期晨报 →</a></p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+const navLinks = document.querySelectorAll('.nav-inner a[href^="#"]');
+const sections = document.querySelectorAll('.section');
+const navBar = document.querySelector('.nav-bar');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - navBar.offsetHeight - 20;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

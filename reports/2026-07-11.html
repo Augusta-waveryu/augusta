@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-11</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 11 日 · 星期六</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">33</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">🤖 模型发布</a>
+  <a href="#products">🚀 产品更新</a>
+  <a href="#industry">🏭 行业动态</a>
+  <a href="#paper">📄 论文研究</a>
+  <a href="#tips">💡 技巧观点</a>
+</nav>
+
+<main>
+
+<section class="section" id="models">
+  <h2 class="section-title">模型发布/更新</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">01</div>
+      <h3 class="card-title"><a href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot" target="_blank" rel="noopener noreferrer">GPT-5.6 成为 Microsoft 365 Copilot 默认模型</a></h3>
+      <div class="card-meta">
+        <span class="card-source">OpenAI Blog</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">OpenAI宣布GPT-5.6正式成为Microsoft 365 Copilot首选模型，覆盖Word、Excel、PowerPoint、Chat和Cowork全线产品。标志OpenAI与微软深度绑定持续强化，也是对外界关于双方关系破裂传言的有力回应。</div>
+      <a class="card-link" href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <h3 class="card-title"><a href="https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4" target="_blank" rel="noopener noreferrer">DeepSeek-V4 Flash RL 训练登陆 AMD Instinct MI355X GPU</a></h3>
+      <div class="card-meta">
+        <span class="card-source">LMSYS Blog</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">2840亿参数MoE模型（每token激活130亿参数）的RL训练现已在AMD GPU上通过Miles框架获得支持。团队解决了SGLang与Megatron间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，100+优化器步骤中奖励持续提升。</div>
+      <a class="card-link" href="https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/1eo7rrCAH-OA0TnXwwqJEg" target="_blank" rel="noopener noreferrer">小红书发布大模型新架构 PIPO</a></h3>
+      <div class="card-meta">
+        <span class="card-source">小红书技术</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">PIPO架构通过输入侧压缩器将两个token折叠为一个latent，输出侧MTP head将隐藏状态展开为额外token，实现输入长度减半、每步输出翻倍。基于Qwen3.5-4B/9B backbone，AIME 2025最高+7.15 pass@4，部署TTFT加速1.23×、TPOT加速1.86×。</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/1eo7rrCAH-OA0TnXwwqJEg" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <h3 class="card-title"><a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-11-2026-gpt-56-goes-public-gpt-live-voice-debuts-meta-muse-spark-bp6" target="_blank" rel="noopener noreferrer">Z.ai 发布 ZCode 免费 AI 编程 Agent (GLM-5.2)</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechTimes / dev.to</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">Z.ai推出免费Agentic开发环境，GLM-5.2（744B MoE）驱动。SWE-bench Pro 62.1超越GPT-5.5(58.6)，Terminal-Bench 2.1得分81.0。基础层免费，付费16.20/月。API定价仅为Claude Opus 4.8的零头，趁Fable 5停服窗口抢占编程Agent市场。</div>
+      <a class="card-link" href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-11-2026-gpt-56-goes-public-gpt-live-voice-debuts-meta-muse-spark-bp6" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <h3 class="card-title"><a href="https://mistral.ai/blog/leanstral-1-5" target="_blank" rel="noopener noreferrer">Mistral 发布 Leanstral 1.5 形式化验证模型</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Mistral AI</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">119B参数稀疏MoE（Apache-2.0开源），每token仅激活约6B参数。饱和miniF2F、解决587/672 PutnamBench问题，FATE-H 87%、FATE-X 34%新SOTA。在实际开源仓库中发现5个此前未知的代码bug，256K上下文窗口，Labs tier免费使用。</div>
+      <a class="card-link" href="https://mistral.ai/blog/leanstral-1-5" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">06</div>
+      <h3 class="card-title">Gemma 4 多模态模型：离线设备快速推理</h3>
+      <div class="card-meta">
+        <span class="card-source">Google / ainewsblitz</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">Google推出Gemma 4用于离线设备快速多模态和Agentic操作，在Hugging Face挑战中报告单A10G推理5倍加速。定位边缘端多模态Agent推理，降低云依赖。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">07</div>
+      <h3 class="card-title">阿里通义 Wan-Streamer 实时双向多模态模型</h3>
+      <div class="card-meta">
+        <span class="card-source">ainewsblitz / 阿里通义</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">音视频同步输出约550ms延迟，低延迟交互生成趋势中的代表。与Vidu S1等模型一起，推动实时多模态生成走向实用化，为Agent实时交互奠定基础。</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="products">
+  <h2 class="section-title">产品发布/更新</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">08</div>
+      <h3 class="card-title"><a href="https://x.com/ClaudeDevs/status/2075635283211772279" target="_blank" rel="noopener noreferrer">Claude Code 桌面版新增应用内浏览器</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Claude Devs</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">Claude Code桌面版新增应用内浏览器，可调出文档、设计稿或任何网站进行阅读、点击浏览和交互。采用沙盒机制且可配置，用户可选择会话是否持久保留。对开发者而言，无需切屏即可在线查文档改Bug。</div>
+      <a class="card-link" href="https://x.com/ClaudeDevs/status/2075635283211772279" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">09</div>
+      <h3 class="card-title"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.206" target="_blank" rel="noopener noreferrer">Claude Code v2.1.206 发布</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Claude Code GitHub</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">新增目录路径建议、/doctor检查修剪CLAUDE.md冗余内容、/commit-push-pr自动推送、后台智能体自动升级等多项更新。修复过期登录报错、resume/continue无键盘响应、MCP超时配置忽略、OAuth重认证、价格显示错误等多个问题。</div>
+      <a class="card-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.206" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">10</div>
+      <h3 class="card-title"><a href="https://www.bensbites.com/p/grok-x-cursor" target="_blank" rel="noopener noreferrer">Cursor 整合 Grok：AI 编程 IDE 模型多元化布局</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Ben's Bites</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">Grok正式接入Cursor编程IDE，加上同期GPT-5.6更新，AI编程工具的模型选择进入多元化时代。Abacus AI同步推出智能模型路由功能，支持在Fable、GPT-5.6、Grok 4.5等顶级模型间按任务类型自动切换。</div>
+      <a class="card-link" href="https://www.bensbites.com/p/grok-x-cursor" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">11</div>
+      <h3 class="card-title">Cursor 秘密开发 Sand 办公助手</h3>
+      <div class="card-meta">
+        <span class="card-source">格物之声</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">AI编程工具Cursor被曝秘密开发名为"Sand"的万能办公助手，正面叫板Anthropic的Claude Cowork。从编程IDE向通用办公场景延伸，AI Agent办公赛道竞争白热化。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">12</div>
+      <h3 class="card-title"><a href="https://x.com/perplexity_ai/status/2075599540640714863" target="_blank" rel="noopener noreferrer">Perplexity 推出跨模型信用额度分析功能</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Perplexity</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">推出Computer Analytics功能，允许用户跨模型跟踪信用额度支出。面向个人和企业用户开放，可在账户设置Analytics下使用。模型多元化时代下，成本追踪成为刚需。</div>
+      <a class="card-link" href="https://x.com/perplexity_ai/status/2075599540640714863" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">13</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/Haqbjim9YGmRu1XpxG_VvA" target="_blank" rel="noopener noreferrer">百度搭子成都 AI Day 四项更新</a></h3>
+      <div class="card-meta">
+        <span class="card-source">百度智能云</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">个人版新增浏览器调用、智能路由（平均任务耗时降20%，Token利用率提升25%）、多端共享记忆及强化PPT生成，上架"一镜"数字人和"灵医"报告解读Skill。行业首个自媒体专业套件支持选题到复盘全链路。上线三个月日均提问量增长20倍。</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/Haqbjim9YGmRu1XpxG_VvA" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">14</div>
+      <h3 class="card-title">ChatGPT Work 企业级 AI 智能体上线</h3>
+      <div class="card-meta">
+        <span class="card-source">OpenAI / 财联社</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">GPT-5.6与Codex驱动，可跨设备联动应用、文件，单条指令完成全流程办公。Codex周活超500万，超百万人用于非开发办公。企业实测中，销售流程、财务月末核算效率大幅提升，多日工作压缩至数小时。面向Pro、企业、教育用户开放。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">15</div>
+      <h3 class="card-title"><a href="https://github.com/iOfficeAI/OfficeCLI" target="_blank" rel="noopener noreferrer">OfficeCLI：为 AI Agent 设计的开源 Office 操作套件</a></h3>
+      <div class="card-meta">
+        <span class="card-source">GitHub Trending</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">专为AI Agent设计的开源Office操作工具，支持读写Word、Excel、PowerPoint，无需安装Office，单一二进制文件即可运行。直接解决了AI Agent处理企业文档的核心痛点——现有工具大多依赖Office本地安装。</div>
+      <a class="card-link" href="https://github.com/iOfficeAI/OfficeCLI" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="industry">
+  <h2 class="section-title">行业动态</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">16</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener noreferrer">Apple 起诉 OpenAI 窃取商业机密</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch / NYT / The Verge</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">苹果指控OpenAI前员工系统性窃取商业机密用于开发AI硬件，点名硬件主管Tang Tan（前苹果iPhone设计副总裁）和前工程师Chang Liu。超400名前苹果员工现任职OpenAI。苹果要求销毁机密材料并重新设计设备。这是AI行业迄今规模最大的知识产权诉讼之一。</div>
+      <a class="card-link" href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">17</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/975/078.htm" target="_blank" rel="noopener noreferrer">扎克伯格回应 Meta"算力过剩"：没人会嫌算力太多</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">扎克伯格首次正面回应公司筹划云基础设施业务，否认算力过剩。但他表示当前市场对算力出价极高，将部分AI基础设施对外出租财务上更划算。Meta制定"Meta Compute"云计算计划，2026资本支出指引1250-1450亿美元，9月量产自研AI芯片，目标2027年14吉瓦。</div>
+      <a class="card-link" href="https://www.ithome.com/0/975/078.htm" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">18</div>
+      <h3 class="card-title"><a href="https://x.com/OpenAIDevs/status/2075716750822551688" target="_blank" rel="noopener noreferrer">OpenAI Build Week 周一启动</a></h3>
+      <div class="card-meta">
+        <span class="card-source">OpenAI Developers</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">OpenAI宣布Build Week从7月13日开始，举办两场直播：黑客马拉松概览和Codex/GPT-5.6实际演示。开发者可选择构建方向，预计将有大量新项目涌现。</div>
+      <a class="card-link" href="https://x.com/OpenAIDevs/status/2075716750822551688" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">19</div>
+      <h3 class="card-title">特朗普政府打击州 AI 法，力推全国统一规则</a></h3>
+      <div class="card-meta">
+        <span class="card-source">X / cb_doge</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">特朗普政府加大力度打击各州AI法律，称一些州迫使AI公司构建带有政治偏见的模型。司法部将可在法庭上挑战这些法律，推动一套全国统一的AI规则，而非50套不同的规则。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">20</div>
+      <h3 class="card-title">MiniMax 完成 160 亿港元新一轮融资</a></h3>
+      <div class="card-meta">
+        <span class="card-source">IT之家 / 界面新闻</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">AI公司MiniMax公告拟融资约160亿港元，股份配售预计募资约95.41亿港元，可转换债券发行约64.16亿港元。港股AI板块当日智谱与MiniMax同步走低。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">21</div>
+      <h3 class="card-title">美光 2500 亿美元扩产应对 AI 存储需求</a></h3>
+      <div class="card-meta">
+        <span class="card-source">腾讯新闻</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">美光科技宣布计划2035年前对美国本土投资总额增至超过2500亿美元，应对AI时代内存需求激增。AI基础设施投资规模持续攀升。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">22</div>
+      <h3 class="card-title">Science：AI 智能体 40 分钟完成人类 60 小时实验</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Science / 光锥之外AI</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">Science期刊报道突破性研究：AI智能体已能自主进行科学实验，仅用40分钟即可完成人类需要60小时的实验工作。标志着AI在科研自动化领域取得重大飞跃，将极大提升科研效率。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">23</div>
+      <h3 class="card-title">中国 AI 大模型撬开美国市场：价格便宜 90%</a></h3>
+      <div class="card-meta">
+        <span class="card-source">腾讯新闻 / 梦派刘工</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">中国AI大模型以百倍性价比和开源策略正在打开美国市场，价格便宜约90%。高盛50页深度报告认为中国开源/开放权重大模型性能已逼近全球顶尖专有模型，数据飞轮效应将推动迭代升级。</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="paper">
+  <h2 class="section-title">论文研究</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">24</div>
+      <h3 class="card-title"><a href="https://x.com/thexpin/status/2075640168896516139" target="_blank" rel="noopener noreferrer">宇树 G1 人形机器人完成首例活体微创手术</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Nature / X.PIN</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">《自然》论文展示宇树G1人形机器人执行首例由人形机器人完成的活体标准微创手术。加州大学圣地亚哥团队使用G1完成两只活猪的腹腔镜胆囊切除术，第二次手术耗时32分钟。成本仅达芬奇系统约5%，尚无法满足手术无菌标准。</div>
+      <a class="card-link" href="https://x.com/thexpin/status/2075640168896516139" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">25</div>
+      <h3 class="card-title"><a href="https://casp.ac/reports/ai-enabled-terrorism" target="_blank" rel="noopener noreferrer">博科圣地系统性利用前沿 AI 技术</a></h3>
+      <div class="card-meta">
+        <span class="card-source">CASP / Hacker News</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">对27名前"博科圣地"成员的访谈揭示该组织在2024年系统性利用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek辅助作战。两大派系均使用AI进行袭击策划、武器故障排查及爆炸装置设计，AI应用已通过专门小组和内部培训实现制度化。</div>
+      <a class="card-link" href="https://casp.ac/reports/ai-enabled-terrorism" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">26</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.08716" target="_blank" rel="noopener noreferrer">记忆代理论文：解决长任务中"行为状态衰减"</a></h3>
+      <div class="card-meta">
+        <span class="card-source">HuggingFace Papers</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">提出"主动记忆Agent"机制，用于解决长任务中关键信息随上下文扩展而逐渐失效的问题（称为"行为状态衰减"）。区别于被动检索，该方法引入独立记忆模块主动干预决策。对开发者而言，未来构建需持续数天的复杂Agent时，记忆管理将有更系统化的方案。</div>
+      <a class="card-link" href="https://huggingface.co/papers/2607.08716" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="tips">
+  <h2 class="section-title">技巧与观点</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">27</div>
+      <h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2075480331600417141" target="_blank" rel="noopener noreferrer">马斯克承认 Anthropic 是当前 AI 领导者</a></h3>
+      <div class="card-meta">
+        <span class="card-source">X / Elon Musk</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">马斯克发文承认自己此前对Anthropic的判断有误，称其"显然是当前AI领域的领导者"。他表示没有公司发布过像Mythos/Fable这样优秀的模型，并强调即使作为竞争对手也不会以伤害对方的方式切断合作。</div>
+      <a class="card-link" href="https://x.com/rohanpaul_ai/status/2075480331600417141" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">28</div>
+      <h3 class="card-title">Grok Build 游戏开发体验：两轮提示词完成 3D 游戏</h3>
+      <div class="card-meta">
+        <span class="card-source">X / Elon Musk</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">用户称Grok Build是目前唯一集大成的coding agentic workflow，内建图像生成和图片生视频。结合Agent Sprite Forge工具，先产出6秒角色动作视频再反编译为game sprite，制作2D横版游戏耗时不到30分钟，而此前用Codex需1-2小时。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">29</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/" target="_blank" rel="noopener noreferrer">Hugging Face CEO：企业从"租用AI"转向自主掌控开源模型</a></h3>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch / Jason Zhu</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">Clem Delangue表示开源AI正迎来爆发期，Fortune 500中约半数公司已在使用HuggingFace。他观察到固定模式：企业先试用闭源API，最终转向开源自主部署。对独立开发者和出海SaaS团队意味着基于开源模型构建差异化产品的窗口正在打开。</div>
+      <a class="card-link" href="https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">30</div>
+      <h3 class="card-title"><a href="https://www.tryai.dev/blog/gpt-5.6-build-off-12-models" target="_blank" rel="noopener noreferrer">12 款模型应用开发对比：GPT-5.6 / Grok 4.5 / Claude 等</a></h3>
+      <div class="card-meta">
+        <span class="card-source">tryai.dev / Hacker News</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">12款模型参与4项任务各执行5次。Doom风格射线投射迷宫中GPT-5.6 Sol和Luna均5/5成功，Grok 4.5以$0.27和62秒实现5/5。3D魔方Claude Fable 5以5/5领先。物理演示暴露普通编码基准隐藏的弱点：模型可能用更多token描述场景却难维持跨帧力与碰撞时序。</div>
+      <a class="card-link" href="https://www.tryai.dev/blog/gpt-5.6-build-off-12-models" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">31</div>
+      <h3 class="card-title"><a href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer">awesome-design-md：一行 DESIGN.md 让 AI Agent 生成品牌级 UI</a></h3>
+      <div class="card-meta">
+        <span class="card-source">GitHub Trending</span>
+        <span class="card-time">7月11日</span>
+      </div>
+      <div class="card-summary">VoltAgent开源项目收录主流品牌设计系统的DESIGN.md文件，开发者只需将对应文件放入项目，AI Agent即可生成与目标品牌视觉高度一致的UI。将设计规范"技能化"，大幅降低AI生成界面的一致性成本，对独立开发者和出海产品尤具参考价值。</div>
+      <a class="card-link" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">32</div>
+      <h3 class="card-title">NotebookLM 对比 ChatGPT Work：流程与来源并重</h3>
+      <div class="card-meta">
+        <span class="card-source">Ethan Mollick / NotebookLM</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">Ethan Mollick用同样的70+文件对比NotebookLM和ChatGPT Work。NotebookLM注重流程与来源追踪，而不仅仅是输出。这一对比揭示了当前AI知识工作工具的核心分歧：追求效率还是追求可审计性。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">33</div>
+      <h3 class="card-title"><a href="https://thinkingmachines.ai/blog/the-future-worth-building-is-human" target="_blank" rel="noopener noreferrer">Thinking Machines Lab：构建延伸人类意志与判断的 AI</a></h3>
+      <div class="card-meta">
+        <span class="card-source">Thinking Machines Lab</span>
+        <span class="card-time">7月10日</span>
+      </div>
+      <div class="card-summary">阐述使命：构建能够延伸人类意志与判断的AI。文章指出当前多数AI在少数地方训练后便冻结，无法被使用者塑造。实验室正致力于训练具备多模态交互和可定制化能力的强模型，开发允许用户训练模型权重的工具，让每个组织都能利用自身独特知识微调模型。</div>
+      <a class="card-link" href="https://thinkingmachines.ai/blog/the-future-worth-building-is-human" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<div class="footer">
+  AI 晨报 · 由 Augusta 自动生成 · 数据来源：AI HOT、Jason Zhu、WebSearch<br>
+  时效性：所有条目均在过去 48 小时内发布 · 下次更新：每日自动推送
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(card => observer.observe(card));
+
+  // Nav active state
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  sections.forEach(sec => navObserver.observe(sec));
+});
+</script>
+</body>
+</html>

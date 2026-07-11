@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-12</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 12 日 · 星期日</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">31</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">12</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">模型发布/更新</a>
+  <a href="#products">产品发布/更新</a>
+  <a href="#industry">行业动态</a>
+  <a href="#papers">论文研究</a>
+  <a href="#tips">技巧与观点</a>
+</nav>
+
+<main>
+
+<!-- ====== 模型发布/更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrglvcki024uih2edvsk7pef" target="_blank" rel="noopener">OpenAI GPT-5.6 医疗评估结果：所有变体显著超越专科医生</a></h3>
+      <div class="card-meta"><span class="card-source">X：Sam Altman</span><span class="card-time">12 小时前</span></div>
+      <p class="card-summary">最小变体 GPT-5.6 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，成本低 25 倍。20000 次盲评中，医生发现 GPT-5.6 回答中的缺陷少于医生本人撰写的回答。最大变体 Sol 树立新标杆。</p>
+      <a class="card-link" href="https://x.com/sama/status/2075985056846451123" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrg3dsyt00g4iha7og0687tc" target="_blank" rel="noopener">蚂蚁灵波 LingBot-VA 2.0：首个原生具身基础模型</a></h3>
+      <div class="card-meta"><span class="card-source">MarkTechPost</span><span class="card-time">19 小时前</span></div>
+      <p class="card-summary">因果 DiT 架构，视频专家约 13B 参数，推理延迟仅 142ms/chunk。多块预测（MCP）训练加速 2.3 倍，RoboTwin 2.0 的 50 个任务平均成功率 93.8%。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title"><a href="https://x.com/bindureddy" target="_blank" rel="noopener">Gemini 3.5 延迟至月底：GPT-6 与 Fable 5.1 将同期竞争</a></h3>
+      <div class="card-meta"><span class="card-source">X：@bindureddy</span><span class="card-time">今天</span></div>
+      <p class="card-summary">据业内消息，Google Gemini 3.5 已推迟至月底发布以追赶 Fable 性能。但 Fable 5.1 和 GPT-6 预计同窗口发布，Google 的追赶窗口极为逼仄，AI 大模型竞争进入密集交火期。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title">Kimi K2.7 Code 高速版正式登陆 Kimi Code</h3>
+      <div class="card-meta"><span class="card-source">爱范儿</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Kimi K2.7 Code 高速版正式上线 Kimi Code，提供更强编程能力与更低延迟，在代码生成、调试和推理场景速度显著提升。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title">英伟达开源 ASPIRE 机器人技能库：打破一次性训练模式</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">英伟达正式开源 ASPIRE 机器人自主技能库，重塑机器人持续学习范式，实现设备运行中持续沉淀、迭代操作技能，打破传统一次性训练模式。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 产品发布/更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.207" target="_blank" rel="noopener">Claude Code v2.1.207 发布：Auto 模式全平台可用</a></h3>
+      <div class="card-meta"><span class="card-source">GitHub Releases</span><span class="card-time">23 小时前</span></div>
+      <p class="card-summary">Auto 模式在 Bedrock、Vertex AI 和 Foundry 上无需环境变量即可使用。修复了流式响应中超长内容致终端冻结和按键延迟的问题，默认模型切换为 Claude Opus 4.8，修复了自动更新覆盖自定义启动脚本的问题。</p>
+      <a class="card-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.207" target="_blank" rel="noopener">Release Notes →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">DesktopCommanderMCP：终端控制 MCP 服务器登 GitHub Trending</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu · GitHub</span><span class="card-time">今天</span></div>
+      <p class="card-summary">赋予 Claude 终端控制、文件系统搜索和差异化编辑能力的 MCP 服务器。不消耗 API Token 而是复用宿主客户端订阅，功能远超普通 AI 编辑器。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://mentedb.com" target="_blank" rel="noopener">MenteDB：Claude Code 上下文压缩后记忆持久化方案</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu · MenteDB</span><span class="card-time">今天</span></div>
+      <p class="card-summary">Claude Code 长任务中上下文压缩时重要项目知识常丢失。MenteDB 提供持久化记忆层，让 Claude Code 在上下文被压缩后依然保留关键信息，对重度用户极具实用价值。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title">微软 Teams AI 会议助手 Facilitator 8 月上线</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">Facilitator 可实时解析会议对话，自动识别未解答疑问并推送补充资料，联动 Planner、Word、Loop 同步会议纪要，企业管理员可统一管控功能权限。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://ainewscycle.com/" target="_blank" rel="noopener">Anthropic Claude Reflection Dashboard：模型透明度工具上线</a></h3>
+      <div class="card-meta"><span class="card-source">AI NewsCycle</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">用户可查看 Claude 模型的内部推理过程，为开发者提供更好的诊断数据以调试模型行为，提升生产环境的输出可靠性。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title">三星开发 AI PC 专用芯片 GAIA</h3>
+      <div class="card-meta"><span class="card-source">爱范儿</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">三星正在自研 AI PC 专用芯片 GAIA，目标是在即将到来的 AI PC 浪潮中摆脱对第三方芯片的依赖，对标 Apple Silicon 策略。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n" target="_blank" rel="noopener">GPT-5.6-Sol 误删 AI 创业者 Mac 全盘：Agent 安全暴露致命缺陷</a></h3>
+      <div class="card-meta"><span class="card-source">X：阿易 AI Notes</span><span class="card-time">22 小时前</span></div>
+      <p class="card-summary">知名 AI 创业者 Matt Shumer 的 Mac 被 GPT-5.6-Sol 彻底清空。Agent 执行文件清理时 $HOME 变量路径解析错误，执行 rm -rf 导致数年代码和文件丢失。Matt 表示「1000x 更信任 Fable」。事件暴露 Subagent + 长时自主运行 + 全权限的灾难性风险。</p>
+      <a class="card-link" href="https://x.com/AYi_AInotes/status/2075761215251312722" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62" target="_blank" rel="noopener">Claude Fable 5 11 天写 100 万行代码：Rust 重构 Bun</a></h3>
+      <div class="card-meta"><span class="card-source">IT之家</span><span class="card-time">20 小时前</span></div>
+      <p class="card-summary">开发者 Jarred Sumner 借助 Claude Fable 5，64 个实例并行编写超 100 万行代码，11 天将 Bun 从 Zig 重写为 Rust，API 费用约 16.5 万美元。修复 128 个错误，速度提高 2%~5%。</p>
+      <a class="card-link" href="https://www.ithome.com/0/975/469.htm" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrflz3sd00x5ihjlndy4k7rn" target="_blank" rel="noopener">Meta 紧急下线 Instagram AI 深度伪造功能</a></h3>
+      <div class="card-meta"><span class="card-source">The Verge</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Meta 因用户强烈反对，紧急关闭允许 @ 公开 Instagram 账户生成 AI 图片的功能。美国演员工会等机构强烈抗议肖像权侵犯风险，Meta 承认「未能达到预期效果」并全面下线。</p>
+      <a class="card-link" href="https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#15</div>
+      <h3 class="card-title"><a href="https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366" target="_blank" rel="noopener">Anthropic 秘密追踪代码事件：反监控立场与隐蔽代码矛盾引发争议</a></h3>
+      <div class="card-meta"><span class="card-source">The Register</span><span class="card-time">今天</span></div>
+      <p class="card-summary">The Register 报道 Anthropic 在 Claude 中植入秘密追踪代码识别中国竞对，与公司反监控立场形成鲜明矛盾。Anthropic 已表示正在移除代码，引发社区对 AI 公司透明度和用户信任的深层讨论。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#16</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrgmylg702eaih2e1e9hhfe4" target="_blank" rel="noopener">博科圣地使用 ChatGPT、Claude 等主流 AI 策划袭击</a></h3>
+      <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">7 小时前</span></div>
+      <p class="card-summary">剑桥大学研究显示，博科圣地已使用 ChatGPT、Claude、Gemini、Grok 等主流 AI 聊天机器人用于袭击策划和武器开发。该组织两个派系均设立专门 AI 部门。ISIS 自 2023 年起提供越狱培训，安全过滤器未能可靠防止滥用。</p>
+      <a class="card-link" href="https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#17</div>
+      <h3 class="card-title"><a href="https://36kr.com/p/3891132709206784" target="_blank" rel="noopener">智谱押注 Coding 赛道：市值半年翻 10 倍，跻身万亿港元俱乐部</a></h3>
+      <div class="card-meta"><span class="card-source">36氪 · Jason Zhu</span><span class="card-time">今天</span></div>
+      <p class="card-summary">智谱创始人唐杰发内部信《巨浪已来》：市值涨 10 倍超越百度近 3 倍。核心战略是 2025 年初押注 Coding 和 Reasoning，认为 Chat 范式已基本探索完毕，Coding 才是与 Agent 共生的下一个战场。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#18</div>
+      <h3 class="card-title">Anthropic 向免费用户误发 1660 万美元账单</h3>
+      <div class="card-meta"><span class="card-source">公众号</span><span class="card-time">今天</span></div>
+      <p class="card-summary">因系统错误，Anthropic 向免费用户发送高达 1660 万美元的账单通知，但仪表盘显示消费为 0。事件引发硅谷热议，Anthropic 已承认错误并取消所有误发账单，承诺加强计费系统监控。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#19</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank" rel="noopener">SK 海力士 265 亿美元美股 IPO：史上最大外资上市</a></h3>
+      <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">SK 海力士在纳斯达克完成史上最大外资 IPO，融资 265 亿美元，上市首日大涨近 13%。AI 对高带宽内存（HBM）的爆炸性需求是直接推手，美国政府同时施压要求其在美建厂。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#20</div>
+      <h3 class="card-title">可灵 AI 完成 30 亿美元融资，计划赴港 IPO</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">快手旗下 AI 视频生成业务可灵 AI 即将完成 30 亿美元新一轮融资，腾讯参投，投后估值达 180 亿美元。资金用于算力集群扩建与模型研发，同步规划 12 个月内启动港股 IPO。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#21</div>
+      <h3 class="card-title">Ollama 完成 6500 万美元 B 轮融资：月活 890 万开发者</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">开源 AI 模型运行工具 Ollama 完成 6500 万美元 B 轮融资（Theory Ventures 领投），累计 8800 万美元。月活 890 万开发者，覆盖 85% 财富 500 强，团队仅 14 人。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#22</div>
+      <h3 class="card-title">微软碳排放因 AI 数据中心激增 25%</h3>
+      <div class="card-meta"><span class="card-source">AI NewsCycle</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">微软报告温室气体排放大幅飙升，直接归因于训练和运行大规模生成式 AI 系统所需的数据中心极端能耗，AI 的环保代价再次引发关注。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#23</div>
+      <h3 class="card-title">腾讯拟买回 Manus，成为其最大股东</h3>
+      <div class="card-meta"><span class="card-source">爱范儿</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">曝腾讯拟回购 AI Agent 明星公司 Manus 的股权成为其最大股东。Manus 此前曾获腾讯早期投资，此次回购被视为腾讯加码 Agent 赛道的重要布局。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 论文研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📄 论文研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#24</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.07953" target="_blank" rel="noopener">线性注意力架构综述：DeltaNet 系列如何在长上下文中替代 Transformer</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">今天</span></div>
+      <p class="card-summary">系统对比 Softmax 注意力与四种线性注意力架构（DeltaNet、Gated DeltaNet、Kimi Delta Attention、Gated DeltaNet-2）。传统 Transformer 长上下文下计算成本二次方增长，线性注意力可突破瓶颈，直接影响长文档处理和代码库分析等 Agent 任务可行性。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#25</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.08404" target="_blank" rel="noopener">DrugGen 2：结合疾病本体的 AI 小分子药物设计模型</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">今天</span></div>
+      <p class="card-summary">DrugGen-2 在 GPT-2 基础上微调，以疾病本体和目标蛋白序列为条件生成小分子候选物，首次将疾病上下文纳入分子生成流程。可大幅缩短早期药物发现中的候选分子筛选周期。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#26</div>
+      <h3 class="card-title">清华 &amp; 腾讯联合提出 GPS 方法：降低大模型训练成本 69%</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">清华与腾讯联合提出 GPS（Gradient-Preserving Sparsification）方法，可在保持模型性能的前提下降低大模型训练成本约 69%，对 AI 训练基础设施的经济性产生直接影响。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#27</div>
+      <h3 class="card-title">Ben Bernanke 加入 Anthropic 长期信托：AI 治理制度化信号</h3>
+      <div class="card-meta"><span class="card-source">AI NewsCycle</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">前美联储主席、诺贝尔经济学奖得主 Ben Bernanke 加入 Anthropic 长期利益信托。此举标志着 AI 治理正在向以经济稳定和伦理安全为核心的制度化方向演进。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 技巧与观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧与观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#28</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrglsyla01zoih2enmsl2eu8" target="_blank" rel="noopener">Ghost Font：人类可读但 AI 无法识别的反 AI 字体</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">8 小时前</span></div>
+      <p class="card-summary">利用运动、视频、噪点和诱饵隐藏文字。字母由与背景相同的点组成，单帧截图无信息。Claude Fable 和 GPT-5.6 Sol Ultra 即使具备编程能力也无法解码。项目灵感来自 2013 年 ZXX 字体，但现代 AI 已能读取 ZXX。作者计划开源并探索用于 CAPTCHA 系统。</p>
+      <a class="card-link" href="https://www.mixfont.com/ghost-font" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#29</div>
+      <h3 class="card-title">马斯克态度大反转，盛赞 Anthropic Mythos/Fable 模型</h3>
+      <div class="card-meta"><span class="card-source">爱范儿</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">此前马斯克曾多次批评 OpenAI 和 Anthropic 的安全路线，最新表态却高度赞扬 Anthropic 的 Mythos 和 Fable 模型，称其在编程和安全方面的表现令人印象深刻。这一态度转变引发 AI 社区广泛讨论。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#30</div>
+      <h3 class="card-title">中国社会科学院严禁 10 类 AI 辅助科研行为</h3>
+      <div class="card-meta"><span class="card-source">中国青年报</span><span class="card-time">今天</span></div>
+      <p class="card-summary">《中国社会科学院人工智能辅助科研基本规范》印发，以 37 条实操条款划定 AI 应用边界。严禁向 AI 输入涉密数据，明确 11 类适用场景并增设开放式条款，为科研人员划定行为禁区。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#31</div>
+      <h3 class="card-title">曙光 8000：中国首个全国产十万卡 AI 超集群落成</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">中国首个全国产十万卡 AI 超集群「曙光 8000」正式落成，采用「原生超智融合」技术实现全类型计算的原生一体化融合，满足高精度科学计算和低精度智能计算的复合需求，标志着中国抢占下一代基础设施定义权。</p>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<div class="footer">
+  <p>AI 晨报 · 2026-07-12 · Augusta 出品</p>
+  <p style="margin-top:8px">数据来源：AI HOT、Jason Zhu 快讯、The Verge、The Decoder、IT之家、36氪、爱范儿、HuggingFace Papers 等</p>
+  <p style="margin-top:4px"><a href="../">← 返回首页</a> · <a href="index.html">查看归档 →</a></p>
+</div>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.card').forEach((card, i) => {
+    card.style.transitionDelay = (i % 4) * 0.05 + 's';
+    observer.observe(card);
+  });
+})();
+</script>
+</body>
+</html>

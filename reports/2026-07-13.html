@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-13</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 13 日 · 星期一</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">33</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">模型发布/更新</a>
+  <a href="#products">产品发布/更新</a>
+  <a href="#industry">行业动态</a>
+  <a href="#papers">论文研究</a>
+  <a href="#tips">技巧与观点</a>
+</nav>
+
+<main>
+
+<!-- ====== 模型发布/更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5" target="_blank" rel="noopener">腾讯混元发布 Hy3：295B MoE 架构，Agent 向 LLM 定位，已集成微信服务 10 亿+用户</a></h3>
+      <div class="card-meta"><span class="card-source">X：阿易 AI Notes</span><span class="card-time">7 小时前</span></div>
+      <p class="card-summary">Hy3 采用 295B 总参数、21B 激活参数的 MoE 架构，推理效率打平 2-5 倍参数旗舰模型。WorkBuddy 任务成功率从 72% 提升至 90%，耗时降低 34%。实测演示包括生成 HTML 网页、Agent 工作流和 PPT，模型具备自检能力，但纯视觉为短板。</p>
+      <a class="card-link" href="https://x.com/AYi_AInotes/status/2076341952023310580" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://www.163.com/dy/article/L1M2PN630511B8LM.html" target="_blank" rel="noopener">Meta 发布 Muse Spark 1.1：多模态推理模型，强化智能体多 Agent 协作</a></h3>
+      <div class="card-meta"><span class="card-source">IT之家</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Muse Spark 1.1 强化了多智能体协作机制，主智能体负责制定计划并拆分子任务并行执行。支持最高 100 万 token 上下文，可在多应用间持续执行长流程任务，Meta 内部开发人员已日常使用其辅助编程和模型评测。</p>
+      <a class="card-link" href="https://www.163.com/dy/article/L1M2PN630511B8LM.html" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title">Fable 5 访问权限延长至 7 月 19 日，Claude Code 速率限制提高 50%</h3>
+      <div class="card-meta"><span class="card-source">AGIHunt</span><span class="card-time">今天</span></div>
+      <p class="card-summary">Claude 官方宣布将 Fable 5 在所有付费计划上的访问权限延长至 7 月 19 日，这是第三次续命。同时 Claude Code 每周速率限制提高 50%，官方表示产能充足后将重新将 Fable 5 纳入订阅。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title">Gemini 3.5 Pro 定档 7 月 17 日发布：200 万 token 上下文，低价策略抢开发者</h3>
+      <div class="card-meta"><span class="card-source">AIGC 日报</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Google Gemini 3.5 Pro 确认于 7 月 17 日正式发布，支持 200 万 token 超长上下文窗口，定价策略激进以争夺开发者市场。此前因追赶 Fable 性能已推迟一次，与 GPT-6、Fable 5.1 的发布时间窗口高度重叠。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title">Databricks 默认采用智谱 GLM-5.2 作为编码引擎，性能持平 Opus 成本低三成</h3>
+      <div class="card-meta"><span class="card-source">The Decoder · gentic.news</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Databricks 在百万行级内部代码库基准测试中发现，智谱 GLM-5.2 与 Anthropic Opus 4.8 通过率统计持平（82%-90%），但每任务成本仅 $1.28 vs $1.94。61% 的日常编码任务将自动路由到 GLM-5.2。此前 Coinbase、Lindy 等企业已转向国产模型降本。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title">智谱发布「摸高计划」：未来两年放弃短期变现，死磕 AGI 四大方向</h3>
+      <div class="card-meta"><span class="card-source">澎湃新闻 · 每日经济新闻</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">智谱创始人唐杰发内部信《巨浪已来》，宣布启动「Touch High（摸高）计划」。未来两年不追求短期商业变现，集中资源投入长程任务能力、自治智能体系统、完全自我训练、极致安全治理四大方向。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 产品发布/更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd" target="_blank" rel="noopener">Codex 与 ChatGPT Work 取消 5 小时限制，活跃用户突破 600 万</a></h3>
+      <div class="card-meta"><span class="card-source">X：Tibo (@thsottiaux)</span><span class="card-time">6 小时前</span></div>
+      <p class="card-summary">OpenAI 暂时取消所有 Plus、Business 和 Pro 计划的 5 小时使用限制。GPT-5.6 Sol 将进行效率优化减少用量消耗，活跃用户已达 600 万并即将进行使用量重置。</p>
+      <a class="card-link" href="https://x.com/thsottiaux/status/2076365965915467978" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://github.com/cosmtrek/mindwalk" target="_blank" rel="noopener">Mindwalk 开源：在代码库 3D 地图上回放 Claude Code / Codex 编码 Agent 会话</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">10 小时前</span></div>
+      <p class="card-summary">将仓库绘制成夜间地图，Agent 搜索、读取和编辑过的文件会发光，未触及区域保持黑暗。单个 Go 二进制文件运行，数据完全本地处理。支持树状图/地形图两种视图，播放界面包含错误率、文件修改量等摩擦信号面板。</p>
+      <a class="card-link" href="https://github.com/cosmtrek/mindwalk" target="_blank" rel="noopener">GitHub →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title"><a href="https://www.iroh.computer/blog/mesh-llm" target="_blank" rel="noopener">Mesh LLM：通过 iroh P2P 网络实现分布式 AI 推理，支持 235B MoE 模型</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">21 小时前</span></div>
+      <p class="card-summary">开源项目可将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区流水线拆分。内置 40+ 模型，软件仅 18 MB，启动后以 localhost:9337/v1 提供服务。</p>
+      <a class="card-link" href="https://www.iroh.computer/blog/mesh-llm" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">DesktopCommanderMCP 登 GitHub Trending：赋予 Claude 终端控制与文件管理能力</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu · GitHub</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">MCP 服务器赋予 Claude 终端控制、文件系统搜索和差异化文件编辑能力，让 AI 直接操作本地桌面环境。不消耗 API Token 而是复用宿主客户端订阅，功能远超普通 AI 编辑器。</p>
+      <a class="card-link" href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener">GitHub →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title"><a href="https://mentedb.com" target="_blank" rel="noopener">MenteDB：解决 Claude Code 上下文压缩后记忆丢失的持久化方案</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu · Hacker News</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Claude Code 在长任务上下文压缩时，重要项目知识和对话记忆往往丢失。MenteDB 提供持久化记忆层，让 Claude Code 在上下文压缩后依然保留关键信息，对重度 Claude Code 长任务用户极具实用价值。</p>
+      <a class="card-link" href="https://mentedb.com" target="_blank" rel="noopener">查看工具 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title">Claude Code、Cursor、OpenClaw 集体登陆移动端，AI 编程工具进入手机时代</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">今天</span></div>
+      <p class="card-summary">三大 AI 编程工具同日宣布移动端版本，开发者可在手机上完成代码审查、调试和轻量编辑。此举标志着 AI 编程工具从桌面辅助向全场景接入的跃迁，进一步模糊了开发环境边界。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm" target="_blank" rel="noopener">苹果起诉 OpenAI 窃取商业机密：400+ 前员工被挖，65 亿美元收购 io Products</a></h3>
+      <div class="card-meta"><span class="card-source">IT之家 · 澎湃新闻</span><span class="card-time">21 小时前</span></div>
+      <p class="card-summary">苹果在美国加州北区联邦法院起诉 OpenAI 系统性窃取商业机密。超过 400 名前苹果员工目前在 OpenAI 工作，前 iPhone 产品设计副总裁 Tang Tan 创立的 io Products 被 OpenAI 以 65 亿美元收购。指控称前员工面试时携带 iPhone 实物零件和 CAD 文件，另一工程师利用未归还笔记本访问苹果内网下载机密。分析师称即使指控未证实，也可能重创 OpenAI 硬件计划。</p>
+      <a class="card-link" href="https://www.ithome.com/0/975/666.htm" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title">工信部发布 Claude Code 安全后门风险提示，阿里全面禁用 Claude Code 系列产品</h3>
+      <div class="card-meta"><span class="card-source">环球网 · 第一财经</span><span class="card-time">2 天前</span></div>
+      <p class="card-summary">工信部网络安全威胁和漏洞信息共享平台确认 Claude Code 存在安全后门隐患，受影响版本覆盖 2.1.91 至 2.1.196，建议立即卸载或升级。阿里 7 月初发布内部紧急通知，要求 7 月 10 日前全员卸载 Anthropic 全系产品，统一替换为自研 Qoder 平台。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#15</div>
+      <h3 class="card-title">软银完成对 OpenAI 第二笔 100 亿美元追加投资，距 300 亿美元总规划过半</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">软银集团正式落地第二笔 100 亿美元追加投资，全部注入 OpenAI。该笔资金属于此前公布的 300 亿美元总投资规划第二阶段，AI 赛道资本军备竞赛持续升温。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#16</div>
+      <h3 class="card-title">可灵 AI 将完成 30 亿美元融资，腾讯参投，估值 180 亿美元计划赴港 IPO</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">快手旗下 AI 视频生成业务可灵 AI 即将完成 30 亿美元新一轮融资，腾讯作为重要投资方参与本轮，投后估值达 180 亿美元。公司同时计划赴港 IPO，成为 AI 视频赛道最大体量玩家。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#17</div>
+      <h3 class="card-title"><a href="https://36kr.com/p/3891132709206784" target="_blank" rel="noopener">智谱押注 Coding 赛道：市值半年翻 10 倍，跻身万亿港元俱乐部</a></h3>
+      <div class="card-meta"><span class="card-source">36氪 · Jason Zhu</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">智谱创始人唐杰内部信透露过去半年市值涨 10 倍，跻身万亿港元俱乐部，超越百度市值近 3 倍。核心战略是 2025 年初押注 Coding 和 Reasoning 能力，认为 Chat 范式已基本探索完毕，Coding 才是与 Agent 共生的下一个战场。</p>
+      <a class="card-link" href="https://36kr.com/p/3891132709206784" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#18</div>
+      <h3 class="card-title">Coinbase 部署 1200 个 AI 代理用于内部运营，整体成本削减 50%</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">今天</span></div>
+      <p class="card-summary">加密货币交易所 Coinbase 宣布已部署 1200 个 AI 代理，覆盖客服、风控、合规等多个环节，整体运营成本较去年同期削减 50%。这是 AI Agent 在企业级场景中规模最大的公开落地案例之一。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#19</div>
+      <h3 class="card-title">加拿大 CAISI 联合全球四大机构发布 AI 评估「最高准则」，拒绝黑盒刷榜</h3>
+      <div class="card-meta"><span class="card-source">公众号</span><span class="card-time">今天</span></div>
+      <p class="card-summary">加拿大人工智能安全研究所（CAISI）联合全球四大机构发布 AI 评估新准则，明确拒绝「黑盒」与「刷榜」式评估，提出三类核心底牌不得公开披露。新准则旨在建立透明、可验证的 AI 系统评估框架，强化全球 AI 治理协同。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#20</div>
+      <h3 class="card-title">AI 热潮太费电：燃气轮机价格三年涨约 300%，微软采购 7 台超 17.5 亿美元</h3>
+      <div class="card-meta"><span class="card-source">央视财经</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">微软近期向 GE Vernova 采购 7 台大型燃气轮机为其得州数据中心供电，单台售价超 2.5 亿美元，需求仍远超供给。AI 算力基础设施的能源需求正以前所未有的速度推高发电设备价格。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#21</div>
+      <h3 class="card-title">Anthropic 年化收入 470 亿美元反超 OpenAI，Claude Code 月增长 10 倍</h3>
+      <div class="card-meta"><span class="card-source">AIGC 日报</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">最新数据显示 Anthropic 年化收入达 470 亿美元，首次反超 OpenAI。核心驱动力来自 Claude Code 月增长 10 倍。Ramp 2026 年 5 月 AI 指数显示 Anthropic 在企业 API 市场份额上首次反超 OpenAI：34.4% 对 32.3%。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#22</div>
+      <h3 class="card-title">OpenRouter 数据：国产大模型周 Token 调用量 23.45 万亿，连续六周领先美国</h3>
+      <div class="card-meta"><span class="card-source">AIGC 日报</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">OpenRouter 最新数据显示 6 月 29 日至 7 月 5 日全球 AI 大模型总调用量 46.7 万亿词元，中国 AI 大模型周调用量达 23.45 万亿词元，环比增长 15.01%，连续六周增长并持续大幅领先美国模型。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 论文研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📚 论文 / 研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#23</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q" target="_blank" rel="noopener">GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想「循环双覆盖猜想」</a></h3>
+      <div class="card-meta"><span class="card-source">IT之家</span><span class="card-time">23 小时前</span></div>
+      <p class="card-summary">OpenAI 宣布 GPT-5.6 Sol Ultra 在不到一小时内生成了 1970 年代提出的「循环双覆盖猜想」完整证明。模型通过调用 64 个并行子智能体及对抗智能体，在预留 8 小时计算时间内仅用约 1 小时完成。若通过同行评审，这将是 LLM 首次独立解决维基百科「未解决数学问题」列表中的难题。</p>
+      <a class="card-link" href="https://www.ithome.com/0/975/646.htm" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#24</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.07953" target="_blank" rel="noopener">线性注意力架构综述：DeltaNet 系列如何在长上下文中替代 Transformer</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers · Jason Zhu</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">论文系统对比标准 Softmax 注意力与四种线性注意力架构（DeltaNet、Gated DeltaNet、Kimi Delta Attention、Gated DeltaNet-2）。传统 Transformer 在长上下文下计算成本呈二次方增长，线性注意力可突破这一瓶颈，直接影响长文档处理和代码库分析等 Agent 任务的可行性与成本。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.07953" target="_blank" rel="noopener">论文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#25</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.08404" target="_blank" rel="noopener">DrugGen 2：结合疾病本体的 AI 小分子药物设计模型</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers · Jason Zhu</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">DrugGen-2 在 GPT-2 基础上微调，同时以疾病本体和目标蛋白序列为条件生成小分子药物候选物，首次将疾病上下文纳入分子生成流程。这类「条件生成」范式可大幅缩短早期药物发现中的候选分子筛选周期。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.08404" target="_blank" rel="noopener">论文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#26</div>
+      <h3 class="card-title">AI 设计出人类无法想象的射频芯片：强化学习 + 扩散模型突破传统对称布局</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">研究显示 AI 通过强化学习、扩散模型与逆向设计技术，能在物理规则约束下自主探索设计空间，生成完全跳出人类对称布局思维的非常规射频芯片电路结构，性能往往突破传统方案上限，为芯片设计开辟全新范式。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#27</div>
+      <h3 class="card-title">AI 学会像人脑一样遗忘：可编程遗忘机制为边缘 AI 减负</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">美国俄勒冈州立大学研发出新型成像传感器，可在探测光线同时进行图像存储，并实现信息按需「遗忘」。这一可编程遗忘机制对边缘 AI 设备的存储管理和隐私保护具有重要应用价值。</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 技巧与观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧 / 观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#28</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrhyer8a01q3biidlr8xr6rm" target="_blank" rel="noopener">纳德拉提出「反向信息悖论」：企业使用 AI 时需保护自身知识不外泄</a></h3>
+      <div class="card-meta"><span class="card-source">X：Satya Nadella</span><span class="card-time">8 小时前</span></div>
+      <p class="card-summary">微软 CEO 提出 AI 时代的核心矛盾：买家支付费用使用 AI，同时暴露专有知识（提示词、工具使用、纠正反馈），这些「智力废气」被模型学习，导致信息不对称向卖家倾斜。他呼吁企业拥有私有评估权、保留组织记忆所有权，并有权使用模型输出微调自有模型。</p>
+      <a class="card-link" href="https://x.com/satyanadella/status/2076323181154230284" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#29</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrhagju201pqbir7t0tnsgfy" target="_blank" rel="noopener">xAI Grok Build CLI 网络流量分析：默认上传仓库全部文件及 git 历史</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">19 小时前</span></div>
+      <p class="card-summary">安全分析显示 Grok Build CLI（0.2.93）在登录后默认向 xAI 发送三类数据：读取的文件内容（含 .env 密钥明文）、整个仓库全部文件及 git 历史（独立于 Agent 实际读取范围）、通过 POST /v1/storage 上传并获 HTTP 200 确认。关闭「改进模型」设置不会禁用传输。12 GB 仓库测试中传输 5.10 GiB，模型对话仅 192 KB，比例约 27,800 倍。</p>
+      <a class="card-link" href="https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547" target="_blank" rel="noopener">完整分析 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#30</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrh57xvj00gvbir7awab8dgb" target="_blank" rel="noopener">通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol：仅需 5 分钟</a></h3>
+      <div class="card-meta"><span class="card-source">X：Tibo (@thsottiaux)</span><span class="card-time">22 小时前</span></div>
+      <p class="card-summary">三步完成：安装 CLIProxyAPI、连接认证、设置 ccx 环境变量别名。别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。若已配置好代理，仅需约 2 条提示词即可完成设置，若被封锁可重置。</p>
+      <a class="card-link" href="https://x.com/thsottiaux/status/2076119366647894371" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#31</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrhlbx2v01a4bimnlcgw5m7y" target="_blank" rel="noopener">OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论</a></h3>
+      <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">14 小时前</span></div>
+      <p class="card-summary">Sam Altman 表示「相当确信」AI 迄今为止净创造了就业，承认「这并非我预期」。Dario Amodei 也将自动化重新描述为生产力倍增器而非岗位杀手。然而多项研究未发现 AI 对整体生产力产生显著影响，程序员和文案的就业危机始于 2022 年初，早于 ChatGPT 发布。</p>
+      <a class="card-link" href="https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#32</div>
+      <h3 class="card-title">Anthropic 向免费用户误发 1660 万美元账单，仪表盘显示消费却为 0</h3>
+      <div class="card-meta"><span class="card-source">公众号</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">Anthropic 因计费系统错误向免费用户发送高达 1660 万美元的账单通知，而仪表盘显示实际消费为 0。事件引发硅谷热议，Anthropic 已承认错误并取消所有误发账单，承诺加强计费系统监控。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#33</div>
+      <h3 class="card-title">清华 & 腾讯联合提出 GPS 方法：降低大模型训练成本 69%</h3>
+      <div class="card-meta"><span class="card-source">腾讯网</span><span class="card-time">1 天前</span></div>
+      <p class="card-summary">清华大学与腾讯联合团队提出 GPS（Gradient-Preserving Sparsification）方法，通过梯度保持稀疏化技术，在几乎不损失模型性能的前提下将大模型训练成本降低 69%。该方法已被多个国产大模型训练管线采纳验证。</p>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<div class="footer">
+  <p>AI 晨报 · 2026-07-13 · Augusta 出品</p>
+  <p style="margin-top:8px">数据来源：AI HOT、Jason Zhu 快讯、IT之家、36氪、澎湃新闻、The Decoder、HuggingFace Papers、AIGC 日报、Hacker News、腾讯网、央视财经等</p>
+  <p style="margin-top:4px"><a href="../">← 返回首页</a> · <a href="index.html">查看归档 →</a></p>
+</div>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.card').forEach((card, i) => {
+    card.style.transitionDelay = (i % 4) * 0.05 + 's';
+    observer.observe(card);
+  });
+
+  // Active nav highlighting
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -2,12 +2,25 @@
 
 本文件定义 Hermes agent 向 Augusta 站点推送香氛市场研究快讯时需遵循的格式和流程。
 
+## ⚠️ 推送检查清单（每次必须全部完成）
+
+每次推送快讯时，必须依次完成以下 5 步，缺一不可：
+
+1. [ ] **生成快讯 HTML** → 写入 `perfume/YYYY-MM-DD.html`
+2. [ ] **更新归档页** → 在 `perfume/index.html` 归档列表顶部插入新条目
+3. [ ] **更新首页** → 在 `index.html` 的 `<main id="post-list">` 中，找到 `data-tag="perfume"` 的 article，在其前方插入新条目（详见下方"首页更新"章节）
+4. [ ] **git commit + push** → 提交所有变更并推送到 GitHub
+5. [ ] **验证** → push 完成后确认 Vercel 部署成功
+
+> 如果只完成了第 1 步而没有更新首页，用户在首页将看不到新快讯。这是必须执行的步骤。
+
 ## 目录结构
 
 ```
-augusta-site/
+augusta/
+├── index.html                  # 首页（每次推送必须更新！）
 ├── perfume/
-│   ├── index.html              # 归档页（WorkBuddy/Hermes 每次推送时更新）
+│   ├── index.html              # 归档页（每次推送必须更新）
 │   ├── 2026-07-13.html         # 单期快讯（完整 HTML 文件）
 │   └── ...
 ```

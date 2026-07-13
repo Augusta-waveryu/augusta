@@ -95,9 +95,9 @@ augusta/
 
 ## 首页更新
 
-每次推送新快讯时，需同步更新 `augusta-site/index.html`：
+每次推送新快讯时，需同步更新 `index.html`：
 
-1. 在 `<main id="post-list">` 下第一个 `data-tag="perfume"` 的 article 前插入新条目
+1. **按日期倒序插入**：在 `<main id="post-list">` 中找到日期不晚于当天的第一条 article，在其前方插入新条目。如果当天已有晨报条目，香氛条目应紧随其后（不要放到页面底部）。
 2. 条目格式（data-tag="perfume"）：
    ```html
    <article data-tag="perfume">
@@ -110,6 +110,7 @@ augusta/
      <a class="post-link" href="/perfume/2026-07-13.html">阅读全文 →</a>
    </article>
    ```
+3. 首页条目按时间混排，不按栏目分组。最新的内容（不论晨报还是香氛）排在最前面。
 
 ## Git 推送
 

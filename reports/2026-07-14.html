@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-14</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 14 日 · 星期二</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">25</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">模型发布/更新</a>
+  <a href="#products">产品发布/更新</a>
+  <a href="#industry">行业动态</a>
+  <a href="#papers">论文研究</a>
+  <a href="#tips">技巧与观点</a>
+</nav>
+
+<main>
+
+<!-- ====== 模型发布/更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmri0lo1400irbixecx7cj2f5" target="_blank" rel="noopener">德国 Soofi S 30B 开源：31.6B 参数 MoE + Mamba-2 混合架构，3.2B 激活</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7/13 11:41 UTC</span></div>
+      <p class="card-summary">德国 Soofi S 采用 Mamba-2 与 Transformer 混合架构，31.6B 总参数仅 3.2B 激活，27T tokens 训练。部署于德国电信慕尼黑工业 AI 云，定位欧洲主权 AI 基座模型。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmri0lo1400irbixecx7cj2f5" target="_blank" rel="noopener">AI HOT →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmri0lo1b00irbixecx7cj2f5" target="_blank" rel="noopener">腾讯 HyOCR-1.5 OCR 大模型全栈开源：1B 参数，331 种语言，OmniDocBench 94.74 分第一</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7/13 11:12 UTC</span></div>
+      <p class="card-summary">1B 参数 OCR 专精模型，DFlash 投机解码实现 6.37x 加速。支持 331 种语言、4K+128K 输入，OmniDocBench 94.74 分登顶。全栈开源包括模型、训练代码与数据管线。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmri0lo1b00irbixecx7cj2f5" target="_blank" rel="noopener">AI HOT →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title">Ploy 切换至 GPT-5.6 Sol 作为默认编码模型，性能与成本再平衡</h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7/12 23:41 UTC</span></div>
+      <p class="card-summary">AI 编程平台 Ploy 将默认模型切换为 GPT-5.6 Sol，平衡推理能力与 API 成本。此前 Databricks 等企业也已转向国产模型降本，模型选型进入「性价比」竞争阶段。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title"><a href="https://x.com/karminski3/status/2076781896307261671" target="_blank" rel="noopener">Colibri 框架：25GB 内存运行 744B 参数 GLM-5.2 MoE，磁盘流式加载专家层</a></h3>
+      <div class="card-meta"><span class="card-source">X：karminski</span><span class="card-time">7/13 21:32 UTC</span></div>
+      <p class="card-summary">稠密部分常驻内存 9.9GB，路由专家放磁盘按需流式加载，配合 router-lookahead（71.6% 预测率）和 MTP 投机解码，实现 2.2-2.8 tok/s。为消费级硬件跑旗舰 MoE 模型开辟路径。</p>
+      <a class="card-link" href="https://x.com/karminski3/status/2076781896307261671" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 产品发布/更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title"><a href="https://x.com/ClaudeDevs/status/2076789349145092230" target="_blank" rel="noopener">Claude Code Artifacts 支持公开分享与多人协作编辑，Claude Tag 从 Slack 一键生成</a></h3>
+      <div class="card-meta"><span class="card-source">X：Claude Devs</span><span class="card-time">7/13 22:02 UTC</span></div>
+      <p class="card-summary">Artifacts 现可在 Claude Code 中公开分享和多人实时协作编辑。Anthropic 力推 Claude Tag，依托 Slack 提供最便捷的 AI 访问入口，可从对话直接生成内部 Artifacts。</p>
+      <a class="card-link" href="https://x.com/ClaudeDevs/status/2076789349145092230" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title">Seedream 5.0 Pro 测评：交互式精准编辑、图层分离、14+ 语言原生渲染</h3>
+      <div class="card-meta"><span class="card-source">AI HOT · WebSearch</span><span class="card-time">7/13</span></div>
+      <p class="card-summary">字节 Seedream 5.0 Pro 支持点选/圈选/草图/色彩替换四种精准编辑模式，图层分离可拆出 10+ 可编辑层，14+ 语言原生渲染文本，4K 分辨率输出。图像生成进入「可编辑」时代。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://x.com/OpenRouter/status/2076725925195153761" target="_blank" rel="noopener">OpenRouter 新增服务层级与路由功能：可查看各层级延迟和吞吐量</a></h3>
+      <div class="card-meta"><span class="card-source">X：OpenRouter</span><span class="card-time">7/13 17:50 UTC</span></div>
+      <p class="card-summary">服务层级成为一级功能，可在 /v1/models/endpoints 中查看各层级延迟和吞吐量。使用 openai/flex 和 xai/priority 等标识符进行路由，为不同任务场景选择最优性价比。</p>
+      <a class="card-link" href="https://x.com/OpenRouter/status/2076725925195153761" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://simonwillison.net/2026/Jul/13/doomql" target="_blank" rel="noopener">DOOMQL：GPT-5.6 Sol 构建的 SQLite Doom 游戏引擎，递归 CTE 完成光线追踪</a></h3>
+      <div class="card-meta"><span class="card-source">Simon Willison 博客</span><span class="card-time">7/13 22:34 UTC</span></div>
+      <p class="card-summary">Peter Gostev 基于 GPT-5.6 Sol 构建 DOOMQL，将 SQLite 作为游戏引擎。SQL 控制移动、碰撞、敌人、战斗及每个 RGB 像素，递归 CTE 完成完整光线追踪。运行后生成数据库可用 Datasette 探索。</p>
+      <a class="card-link" href="https://simonwillison.net/2026/Jul/13/doomql" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title"><a href="https://x.com/karminski3/status/2076803531718439375" target="_blank" rel="noopener">SpriteFusion Pixel Snapper：修复 AI 像素图边缘模糊与调色板溢出，纯本地运行</a></h3>
+      <div class="card-meta"><span class="card-source">X：karminski</span><span class="card-time">7/13 22:58 UTC</span></div>
+      <p class="card-summary">开源工具重新映射像素，解决 AI 生成像素图（nano-banana-2）的边缘模糊和调色板溢出问题。使用固定 32 色调色板修正后画面更锐利，纯本地运行无需 AI 或 GPU。</p>
+      <a class="card-link" href="https://x.com/karminski3/status/2076803531718439375" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://www.marktechpost.com/2026/07/13/building-a-videoagent-style-multi-agent-system" target="_blank" rel="noopener">VideoAgent 多智能体系统构建指南：意图解析、图规划与工具路由</a></h3>
+      <div class="card-meta"><span class="card-source">MarkTechPost</span><span class="card-time">7/13 18:30 UTC</span></div>
+      <p class="card-summary">构建可运行的 VideoAgent 工作流，包含意图解析器、图规划器、工具路由器和文本梯度优化器。集成 FFmpeg、Whisper 转录、场景检测等工具，支持 OpenAI/DeepSeek/Anthropic/Gemini 多后端。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/13/building-a-videoagent-style-multi-agent-system" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai" target="_blank" rel="noopener">苹果诉 OpenAI 窃密案深度追踪：41 页诉状六大惊人指控，"LOL" 邮件成关键证据</a></h3>
+      <div class="card-meta"><span class="card-source">TechCrunch · Ars Technica · The Verge</span><span class="card-time">7/13</span></div>
+      <p class="card-summary">新披露细节：前硬件主管 Tang Tan 要求面试者携带苹果实物零件和原型机；前员工发现可访问苹果网络后发"LOL，太搞笑了"并利用漏洞窃取数据；OpenAI 被控持有苹果内部离职流程文档并"指导"员工绕过安全审查。400+ 前苹果员工目前在 OpenAI 任职。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm" target="_blank" rel="noopener">Meta 路易斯安那 5GW 数据中心扩建：500 亿美元投资，2030 年达 2GW</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT</span><span class="card-time">7/13 09:58 UTC</span></div>
+      <p class="card-summary">Meta 宣布路易斯安那数据中心 5GW 扩建计划，总投资 500 亿美元。Hyperion 集群将部署下一代 AI 训练基础设施，创造 7500 个建设岗位，2030 年首期达 2GW 运行容量。</p>
+      <a class="card-link" href="https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm" target="_blank" rel="noopener">AI HOT →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title">黄仁勋季度收入逼近千亿美元：摩根士丹利路演，否认 Rubin Ultra 延期</h3>
+      <div class="card-meta"><span class="card-source">AI HOT · WebSearch</span><span class="card-time">7/13</span></div>
+      <p class="card-summary">黄仁勋摩根士丹利路演透露英伟达季度收入逼近千亿美元，Rubin Ultra 明年按时出货否认延期传闻。Kyber 机架调整为架构优化而非缩减，AI 算力需求持续超预期增长。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title"><a href="https://neow.in/cWsyMTV3" target="_blank" rel="noopener">三星强制用户同意健康数据用于 AI 训练，否则将删除数据</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News · Neowin</span><span class="card-time">7/13 21:50 UTC</span></div>
+      <p class="card-summary">Samsung Health 新增"同意将健康数据用于 AI 训练"开关，用户关闭则数据将被删除。计划收集睡眠、用药、医疗记录和周期追踪四类数据，部分可能由人工（含第三方承包商）审查。数据主权与 AI 训练的边界再引争议。</p>
+      <a class="card-link" href="https://neow.in/cWsyMTV3" target="_blank" rel="noopener">Neowin →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#15</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe" target="_blank" rel="noopener">Altman 与 Musk 就太空数据中心隔空交锋：专家认为短期内不会成为严肃业务</a></h3>
+      <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7/13 17:28 UTC</span></div>
+      <p class="card-summary">Altman 回应 Musk 诈骗指控，指出 Musk 正向投资者兜售短期太空数据中心概念。专家共识认为太空数据中心短期内不会成为严肃业务。SpaceX 在 IPO 路演中承认 Starship 短期内可能无法完全复用。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#16</div>
+      <h3 class="card-title">中国 AI 大模型 OpenRouter 调用量连续十周超越美国，DeepSeek V4 Flash 七周榜首</h3>
+      <div class="card-meta"><span class="card-source">AIGC 日报 · WebSearch</span><span class="card-time">7/13</span></div>
+      <p class="card-summary">OpenRouter 数据显示中国 AI 大模型调用量连续十周超越美国。DeepSeek V4 Flash 连续七周居榜首，GLM-5.2 冲进前五。美国企业使用中国模型 Token 占比从 4.5% 飙升至 46%，国产模型性价比优势持续扩大。</p>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#17</div>
+      <h3 class="card-title"><a href="https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on" target="_blank" rel="noopener">Siri AI iOS 27 公测版发布：开始改变 iPhone 使用方式，定位 Snow Leopard 式更新</a></h3>
+      <div class="card-meta"><span class="card-source">The Verge</span><span class="card-time">7/13 20:43 UTC</span></div>
+      <p class="card-summary">iOS 27 首个公开测试版发布，Siri AI 为核心亮点。被定位为 Snow Leopard 式更新，侧重系统修复与速度优化。Messages 新增行内回复和 RCS 端到端加密，Liquid Glass 界面进一步精炼。</p>
+      <a class="card-link" href="https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on" target="_blank" rel="noopener">The Verge →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 论文研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📚 论文 / 研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#18</div>
+      <h3 class="card-title"><a href="https://x.com/ArtificialAnlys/status/2076791491071295708" target="_blank" rel="noopener">AA-Briefcase 新基准：衡量模型在多周项目、数千文件的长期知识工作能力</a></h3>
+      <div class="card-meta"><span class="card-source">Artificial Analysis</span><span class="card-time">7/13 22:10 UTC</span></div>
+      <p class="card-summary">新基准 AA-Briefcase 衡量模型在长周期知识工作中的表现。揭示智能体任务成本四大因素：token 价格下降但智能与用量增长更快；多轮交互导致成本累积；不同模型 token 效率差异显著；提示词缓存命中率至关重要。</p>
+      <a class="card-link" href="https://x.com/ArtificialAnlys/status/2076791491071295708" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 技巧与观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧 / 观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#19</div>
+      <h3 class="card-title"><a href="https://playcode.io/blog/real-price-of-frontier-models" target="_blank" rel="noopener">前沿模型 tokenizer 隐性涨价：Claude 新 tokenizer 多产生约 30% token，标价不变</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · Hacker News</span><span class="card-time">7/13 21:50 UTC</span></div>
+      <p class="card-summary">同一 TypeScript 文件在 GPT-5.x 上为 681 个 token，Claude 最新 tokenizer 下为 1,178 个，相差 1.73 倍。Anthropic 新 tokenizer 比旧版多产生约 30% 的 token，标价不变构成隐性涨价。代码场景 Claude 比 GPT 多产生 1.50x-1.73x token。</p>
+      <a class="card-link" href="https://playcode.io/blog/real-price-of-frontier-models" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#20</div>
+      <h3 class="card-title"><a href="https://the-decoder.com/openais-new-prompting-guide" target="_blank" rel="noopener">OpenAI 提示词指南：从结果出发，少写步骤，用硬性规则替代逐步脚本</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · The Decoder</span><span class="card-time">7/13 17:47 UTC</span></div>
+      <p class="card-summary">OpenAI 整合提示词指南，涵盖目标、上下文、输出格式和边界四个模块。核心建议：以结果而非步骤开头，用硬性规则替代逐步脚本。Codex 新增 Steer、Queue 和沙盒模式，支持 /plan、/goal 和 /review 命令。</p>
+      <a class="card-link" href="https://the-decoder.com/openais-new-prompting-guide" target="_blank" rel="noopener">The Decoder →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#21</div>
+      <h3 class="card-title"><a href="https://x.com/dotey/status/2076371173244588135" target="_blank" rel="noopener">宝玉："电报体 Skill"是阶段性产物，真正节约靠上下文管理而非压缩输出</a></h3>
+      <div class="card-meta"><span class="card-source">X：宝玉 (@dotey)</span><span class="card-time">7/12 18:20 UTC</span></div>
+      <p class="card-summary">宝玉将省 Token 的 Skill 类比为"电报体 Skill"。JetBrains 实测 Caveman 项目强制开启仅省 8.5% 输出 token，日常更少。原因：智能体 token 大头是工具调用和系统提示词，过度精简反而丢失上下文导致追问，增加后续消耗。真正节约靠上下文管理和少走弯路。</p>
+      <a class="card-link" href="https://x.com/dotey/status/2076371173244588135" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#22</div>
+      <h3 class="card-title"><a href="https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode" target="_blank" rel="noopener">无需打开 Xcode 即可构建和发布 Mac / iOS 应用：XcodeGen + 命令行全流程</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">7/13 21:04 UTC</span></div>
+      <p class="card-summary">通过 XcodeGen 和命令行工具，开发者可在不打开 Xcode GUI 的情况下完成构建、签名、公证与分发。XcodeGen 用 project.yml 自动生成 .xcodeproj，避免 Git 冲突。对 AI 编程 Agent 尤其重要：无需 GUI 即可完成 iOS 开发全流程。</p>
+      <a class="card-link" href="https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#23</div>
+      <h3 class="card-title"><a href="https://simonwillison.net/2026/Jul/13/datasette-code-frequency" target="_blank" rel="noopener">Simon Willison 用代码频率图展示编码 Agent 对开源项目贡献的影响</a></h3>
+      <div class="card-meta"><span class="card-source">Simon Willison 博客</span><span class="card-time">7/13 21:45 UTC</span></div>
+      <p class="card-summary">通过 Datasette 开源项目的 GitHub 代码变更频率图表，直观展示编码智能体与 Opus 4.8、GPT-5.5、Fable 5 及 GPT-5.6 Sol 等模型对个人产出的影响，活跃度高峰与模型发布时间高度吻合。</p>
+      <a class="card-link" href="https://simonwillison.net/2026/Jul/13/datasette-code-frequency" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#24</div>
+      <h3 class="card-title"><a href="https://esologic.com/benchmarking-tesla-gpus" target="_blank" rel="noopener">15 款已停产 NVIDIA 企业级 GPU 在现代 AI 工作负载下的基准测试：$60 起</a></h3>
+      <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">7/13 23:10 UTC</span></div>
+      <p class="card-summary">对 K80（约 $60）、P100（约 $75）、V100（低于 $200）等 15 款停产 Tesla GPU 进行 ResNet50、Vision Transformer、llama.cpp 运行 Qwen2.5/Llama 3、Whisper 等现代 AI 任务基准测试。提出基于 X99 E5-2690 的低成本 4U GPU 节点方案。</p>
+      <a class="card-link" href="https://esologic.com/benchmarking-tesla-gpus" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#25</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai" target="_blank" rel="noopener">纳德拉警告企业使用专有 AI 模型会泄露专有知识，建议构建「编排层」避免锁定</a></h3>
+      <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7/13 20:59 UTC</span></div>
+      <p class="card-summary">纳德拉警告企业使用专有 AI 模型时不仅支付 token 费用，还无意中交出专有知识。模型通过提示词、工具使用及纠错反馈学习，这些"废气"数据提炼出的机构知识竞争对手无法买到。建议企业构建编排层避免单一厂商锁定。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<div class="footer">
+  <p>AI 晨报 · 2026-07-14 · Augusta 出品</p>
+  <p style="margin-top:8px">数据来源：AI HOT、宝玉 (@dotey)、Jason Zhu 快讯、TechCrunch、The Verge、Ars Technica、The Decoder、Hacker News、Simon Willison 博客、MarkTechPost、Artificial Analysis、Neowin、AIGC 日报等</p>
+  <p style="margin-top:4px"><a href="../">← 返回首页</a> · <a href="index.html">查看归档 →</a></p>
+</div>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.card').forEach((card, i) => {
+    card.style.transitionDelay = (i % 4) * 0.05 + 's';
+    observer.observe(card);
+  });
+
+  // Active nav highlighting
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>

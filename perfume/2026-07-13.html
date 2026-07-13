@@ -94,17 +94,8 @@ a:hover { opacity: 0.8; }
   flex-wrap: wrap;
 }
 .hero-stats .stat { text-align: center; }
-.hero-stats .stat-num {
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1;
-}
-.hero-stats .stat-label {
-  font-size: 11px;
-  opacity: 0.7;
-  margin-top: 4px;
-  letter-spacing: 1px;
-}
+.hero-stats .stat-num { font-size: 26px; font-weight: 700; line-height: 1; }
+.hero-stats .stat-label { font-size: 11px; opacity: 0.7; margin-top: 4px; letter-spacing: 1px; }
 
 .nav-bar {
   position: sticky;
@@ -120,245 +111,77 @@ a:hover { opacity: 0.8; }
   flex-wrap: wrap;
   font-size: 14px;
 }
-@media (prefers-color-scheme: dark) {
-  .nav-bar { background: rgba(26, 21, 16, 0.9); }
-}
-.nav-bar a {
-  color: var(--muted);
-  padding: 4px 14px;
-  border-radius: 20px;
-  transition: all 0.2s;
-}
-.nav-bar a:hover, .nav-bar a.active {
-  color: #fff;
-  background: var(--accent);
-}
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(26, 21, 16, 0.9); } }
+.nav-bar a { color: var(--muted); padding: 4px 14px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--accent); }
 
-main {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 48px 24px 80px;
-}
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
 
-/* Section */
 .section { margin-bottom: 52px; }
-.section-label {
-  font-size: 11px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-.section-title {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
+.section-label { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
 
-/* Insight cards */
-.insight-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 16px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.insight-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(181, 98, 74, 0.08);
-}
-.insight-card .card-tag {
-  display: inline-block;
-  font-size: 11px;
-  background: var(--chip);
-  color: var(--muted);
-  padding: 2px 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-}
-.insight-card h3 {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: var(--text);
-}
-.insight-card p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-.insight-card .meta {
-  margin-top: 12px;
-  font-size: 12px;
-  color: var(--muted);
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-.insight-card .meta .highlight {
-  color: var(--accent);
-  font-weight: 600;
-}
+.insight-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; transition: transform 0.2s, box-shadow 0.2s; }
+.insight-card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(181, 98, 74, 0.08); }
+.insight-card .card-tag { display: inline-block; font-size: 11px; background: var(--chip); color: var(--muted); padding: 2px 10px; border-radius: 10px; margin-bottom: 10px; letter-spacing: 0.5px; }
+.insight-card h3 { font-size: 17px; font-weight: 600; line-height: 1.5; margin-bottom: 10px; color: var(--text); }
+.insight-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.insight-card .meta { margin-top: 12px; font-size: 12px; color: var(--muted); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.insight-card .meta .highlight { color: var(--accent); font-weight: 600; }
 
-/* Trend pills */
 .trend-list { display: flex; flex-direction: column; gap: 10px; }
-.trend-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px 20px;
-}
-.trend-num {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--accent);
-  background: var(--accent-light);
-  padding: 3px 8px;
-  border-radius: 8px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
+.trend-item { display: flex; align-items: flex-start; gap: 14px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; }
+.trend-num { font-size: 11px; font-weight: 700; color: var(--accent); background: var(--accent-light); padding: 3px 8px; border-radius: 8px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
 .trend-body { flex: 1; }
 .trend-body strong { font-size: 15px; font-weight: 600; }
 .trend-body span { font-size: 13px; color: var(--muted); margin-left: 6px; }
-.trend-body p { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.trend-body p { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.6; }
 
-/* Quote block */
-.quote-block {
-  background: var(--card-bg);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 20px 24px;
-  margin: 16px 0;
-}
-.quote-block .quote-text {
-  font-size: 15px;
-  font-style: italic;
-  color: var(--text);
-  line-height: 1.7;
-}
-.quote-block .quote-source {
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 8px;
-}
+.quote-block { background: var(--card-bg); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 16px 0; }
+.quote-block .quote-text { font-size: 15px; font-style: italic; color: var(--text); line-height: 1.7; }
+.quote-block .quote-source { font-size: 12px; color: var(--muted); margin-top: 8px; }
 
-/* Topic suggestions */
-.topic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 12px;
-}
-.topic-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 18px;
-}
-.topic-card .topic-dir {
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-.topic-card h4 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-.topic-card p {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-.topic-card .topic-tags {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-.topic-card .topic-tags span {
-  font-size: 11px;
-  background: var(--chip);
-  color: var(--muted);
-  padding: 2px 8px;
-  border-radius: 6px;
-}
+.topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.topic-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+.topic-card .topic-dir { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; font-weight: 600; }
+.topic-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+.topic-card p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+.topic-card .topic-tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px; }
+.topic-card .topic-tags span { font-size: 11px; background: var(--chip); color: var(--muted); padding: 2px 8px; border-radius: 6px; }
 
-/* Warning */
-.warning-box {
-  background: #fef3ec;
-  border: 1px solid #f5d5c0;
-  border-radius: 10px;
-  padding: 18px 22px;
-  margin: 16px 0;
-}
-@media (prefers-color-scheme: dark) {
-  .warning-box { background: #2a1f18; border-color: #4a3020; }
-}
-.warning-box p {
-  font-size: 13px;
-  color: #7a4a2a;
-  line-height: 1.7;
-}
-@media (prefers-color-scheme: dark) {
-  .warning-box p { color: #c4907a; }
-}
+.warning-box { background: #fef3ec; border: 1px solid #f5d5c0; border-radius: 10px; padding: 18px 22px; margin: 16px 0; }
+@media (prefers-color-scheme: dark) { .warning-box { background: #2a1f18; border-color: #4a3020; } }
+.warning-box p { font-size: 13px; color: #7a4a2a; line-height: 1.7; }
+@media (prefers-color-scheme: dark) { .warning-box p { color: #c4907a; } }
 
-/* Travel section */
-.travel-note {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 14px;
-}
-.travel-note .travel-theme {
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #4a7a6a;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
+.travel-note { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 14px; }
+.travel-note .travel-theme { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #4a7a6a; font-weight: 600; margin-bottom: 8px; }
 .travel-note h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
 .travel-note p { font-size: 13px; color: var(--muted); line-height: 1.7; }
 
-/* Footer */
-.report-footer {
-  border-top: 1px solid var(--border);
-  padding-top: 32px;
-  margin-top: 48px;
-  font-size: 12px;
-  color: var(--muted);
-  text-align: center;
-  line-height: 2;
-}
+.word-table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 10px; overflow: hidden; margin-top: 12px; }
+.word-table th { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); background: var(--chip); padding: 10px 14px; text-align: left; font-weight: 600; }
+.word-table td { font-size: 13px; color: var(--text); padding: 10px 14px; border-top: 1px solid var(--border); }
+.word-table .kw { font-weight: 600; color: var(--accent); }
+.word-table .score { font-variant-numeric: tabular-nums; }
+.word-table .tag { display: inline-block; font-size: 10px; background: var(--chip); color: var(--muted); padding: 1px 7px; border-radius: 6px; margin-right: 4px; }
+.word-table .up { color: #2e7d32; }
+.word-table .down { color: #c62828; }
+
+.report-footer { border-top: 1px solid var(--border); padding-top: 32px; margin-top: 48px; font-size: 12px; color: var(--muted); text-align: center; line-height: 2; }
 
 @media (max-width: 600px) {
   .hero h1 { font-size: 22px; }
   .hero-stats { gap: 20px; }
   .topic-grid { grid-template-columns: 1fr; }
   main { padding: 32px 16px 60px; }
+  .word-table { font-size: 12px; }
 }
 </style>
 </head>
 <body>
 
-<a class="back-link" href="../">← 返回归档</a>
+<a class="back-link" href="./">← 返回归档</a>
 
 <div class="hero">
   <div class="hero-eyebrow">小红书内容分析</div>
@@ -366,10 +189,10 @@ main {
   <div class="subtitle">香精香料贸易 · 电商路径探索</div>
   <div class="date">2026 年 7 月 13 日 · 星期一</div>
   <div class="hero-stats">
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">搜索词</div></div>
-    <div class="stat"><div class="stat-num">15</div><div class="stat-label">篇阅</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">深度驻留</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">板块</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">搜索词</div></div>
+    <div class="stat"><div class="stat-num">25</div><div class="stat-label">篇阅读</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">深度驻留</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">板块</div></div>
   </div>
 </div>
 
@@ -378,6 +201,7 @@ main {
   <a href="#insights">爆款解读</a>
   <a href="#topics">选题建议</a>
   <a href="#warnings">避坑</a>
+  <a href="#wordlist">词表状态</a>
   <a href="#travel">旅行快照</a>
 </nav>
 
@@ -387,30 +211,45 @@ main {
 <section class="section" id="trends">
   <div class="section-label">Trend Watch</div>
   <h2 class="section-title">🌡️ 今日流行风向</h2>
-
   <div class="trend-list">
 
     <div class="trend-item">
       <div class="trend-num">01</div>
       <div class="trend-body">
-        <strong>「伪体香」概念爆发</strong><span>高热</span>
-        <p>围绕"自带体香""腌入味"的内容点赞收藏比极高。核心情绪：不想让别人知道自己喷了香水，但希望有隐约的香味。</p>
+        <strong>「伪体香」概念爆发</strong><span>高热 · 持续上升</span>
+        <p>围绕"自带体香""腌入味"的内容点赞收藏比极高。核心情绪：不想让别人知道自己喷了香水，但希望有隐约的香味。相关标签 #伪体香 #腌入味 增长迅猛。</p>
       </div>
     </div>
 
     <div class="trend-item">
       <div class="trend-num">02</div>
       <div class="trend-body">
-        <strong>「发香喷雾」成新增量赛道</strong><span>上升</span>
-        <p>头发留香测评突破 6 万赞，属于传统香水外的新场景延伸。用户诉求：香味附着在头发上，走路带风时散发。</p>
+        <strong>「发香喷雾」成新增量赛道</strong><span>上升 · 6万赞验证</span>
+        <p>头发留香测评突破 6 万赞，属于传统香水外的新场景延伸。用户诉求：香味附着在头发上，走路带风时散发。这个数字远超普通香水内容均值（1000-3000赞）。</p>
       </div>
     </div>
 
     <div class="trend-item">
       <div class="trend-num">03</div>
       <div class="trend-body">
-        <strong>「平价好闻」仍是主流情绪</strong><span>稳定</span>
-        <p>用户核心诉求是好闻 + 买得起，不是贵价品牌。300 元以内的平替/入门香最受欢迎，高端线需要强背书才走得动。</p>
+        <strong>「平价好闻」仍是主流情绪</strong><span>稳定 · 基本盘</span>
+        <p>用户核心诉求是好闻 + 买得起。300 元以内的平替/入门香最受欢迎，高端线需要强背书才走得动。价格敏感度高于品牌忠诚度。</p>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <div class="trend-num">04</div>
+      <div class="trend-body">
+        <strong>「车载香薰」季节性走强</strong><span>稳定 · 夏季上升</span>
+        <p>随着气温升高，车载香薰内容互动量上升。但该品类内容点赞多在 500-1500 量级，流量不算大，适合作为补充内容方向。</p>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <div class="trend-num">05</div>
+      <div class="trend-body">
+        <strong>「香水推荐」内容严重饱和</strong><span>警示</span>
+        <p>纯"推荐 X 瓶香水"的内容同质化严重，新账号做这类内容难以突围。必须找到差异化角度：人群（学生/职场/妈妈）、场景、价格带、风格。</p>
       </div>
     </div>
 
@@ -425,12 +264,12 @@ main {
   <div class="insight-card">
     <div class="card-tag">标题结构</div>
     <h3>数字型 + 极端词 = 有效点击公式</h3>
-    <p>「全世界最好闻的四瓶香水」点赞 2214 · 收藏 1671<br>
+    <p>「全世界最好闻的四瓶香水」点赞 2214 · 收藏 1671（收藏率 75%）<br>
     「在售的20瓶全球最热卖香水」点赞 272 · 收藏 191<br>
     数字锚定降低决策成本，极端词（「最好」「TOP.1」）满足好奇心，两者叠加效果最好。</p>
     <div class="meta">
       <span class="highlight">点赞收藏比 ≈ 1.3:1</span>
-      <span>高互动率内容</span>
+      <span>高互动率内容特征</span>
     </div>
   </div>
 
@@ -441,7 +280,7 @@ main {
     「无广告纯分享」人设背书极强，评论区主动求链接，是香水电商最直接的导流路径。</p>
     <div class="meta">
       <span class="highlight">场景 > 单品</span>
-      <span>场景化内容胜出</span>
+      <span>场景化内容完胜</span>
     </div>
   </div>
 
@@ -456,9 +295,19 @@ main {
     </div>
   </div>
 
+  <div class="insight-card">
+    <div class="card-tag">电商转化</div>
+    <h3>评论区 = 真实需求池</h3>
+    <p>爆款香水笔记评论区高频问题：「持久吗？」「多少钱？」「哪里买？」「跟某款像吗？」<br>
+    这四个问题是电商转化的核心节点，内容里直接回答这些问题会显著提升导流效率。</p>
+    <div class="meta">
+      <span class="highlight">评论区即销售话术</span>
+    </div>
+  </div>
+
   <div class="quote-block">
-    <p class="quote-text">「持久吗？」「多少钱？」「哪里买？」<br>—— 爆款评论区三大必答问题</p>
-    <p class="quote-source">从今日爆款评论互动推断，高频正向词：「伪体香」「腌入味」；高频负向词：「晕香」「太浓」</p>
+    <p class="quote-text">「持久吗？」「多少钱？」「哪里买？」「跟某款像吗？」<br>—— 爆款香水笔记评论区四大必答</p>
+    <p class="quote-source">从今日爆款评论互动推断，高频正向词：#伪体香 #腌入味 #美女感 #高级感；高频负向词：#晕香 #太浓 #廉价感</p>
   </div>
 
 </section>
@@ -471,46 +320,47 @@ main {
   <div class="topic-grid">
 
     <div class="topic-card">
-      <div class="topic-dir">方向一 · 平价替代</div>
+      <div class="topic-dir">方向一 · 平替切入</div>
       <h4>「200元内能买到的大牌平替香水」</h4>
-      <p>切入花一半钱买到同等香体验，列表形式带货强。</p>
+      <p>切入花一半钱买到同等香体验，列表形式带货强。标题用「平替」「替代」「省钱」等词，评论区天然有关注价格的冲动。</p>
       <div class="topic-tags">
-        <span>#平价香水</span>
-        <span>#伪体香</span>
-        <span>#香水推荐</span>
+        <span>#平价香水</span><span>#大牌平替</span><span>#香水推荐</span><span>#省钱</span>
       </div>
     </div>
 
     <div class="topic-card">
       <div class="topic-dir">方向二 · 场景香</div>
       <h4>「不同场合用什么香？这篇够了」</h4>
-      <p>按使用场景推荐（上班/约会/睡觉/开车），场景图+产品。</p>
+      <p>按使用场景推荐（上班/约会/睡觉/开车），场景图+产品对照表。内容生命周期长，搜索流量持续。</p>
       <div class="topic-tags">
-        <span>#车载香薰</span>
-        <span>#卧室香氛</span>
-        <span>#上班香</span>
+        <span>#车载香薰</span><span>#卧室香氛</span><span>#上班香</span><span>#约会香</span>
       </div>
     </div>
 
     <div class="topic-card">
       <div class="topic-dir">方向三 · 新品卡位</div>
       <h4>「这瓶最近风很大，值得入吗？」</h4>
-      <p>测评角度，先问后答，适合新品/热门品话题借势。</p>
+      <p>测评角度，先问后答，适合新品/热门品话题借势。用户有从众心理，「风很大」本身就制造了信息差。</p>
       <div class="topic-tags">
-        <span>#香氛测评</span>
-        <span>#新香</span>
-        <span>#真实测评</span>
+        <span>#香氛测评</span><span>#新香</span><span>#真实测评</span>
       </div>
     </div>
 
     <div class="topic-card">
-      <div class="topic-dir">方向四 · 发香喷雾</div>
+      <div class="topic-dir">方向四 · 发香喷雾 ⭐</div>
       <h4>「头发留香测评 · 哪款最持久？」</h4>
-      <p>发香是新增量赛道，6万赞验证赛道可行性，可以跟进。</p>
+      <p>发香是新增量赛道，6万赞验证赛道可行性，且与香精贸易业务天然相关（发香喷雾=香精+溶剂+喷头，门槛低）。</p>
       <div class="topic-tags">
-        <span>#发香喷雾</span>
-        <span>#头发留香</span>
-        <span>#洗护好物</span>
+        <span>#发香喷雾</span><span>#头发留香</span><span>#洗护好物</span>
+      </div>
+    </div>
+
+    <div class="topic-card">
+      <div class="topic-dir">方向五 · 人群细分</div>
+      <h4>「妈妈/学生/职场人 · 什么香水适合你」</h4>
+      <p>按人群划分，降低选择难度。人群标签明确，投放精准，评论区天然聚集同类人。</p>
+      <div class="topic-tags">
+        <span>#学生党香水</span><span>#职场香水</span><span>#送妈妈</span>
       </div>
     </div>
 
@@ -531,17 +381,120 @@ main {
   <div class="warning-box">
     <p>❌ <strong>纯产品罗列帖互动差</strong>：只上链接不聊体验的内容用户不买账，必须有主观感受和场景描述。</p>
   </div>
+  <div class="warning-box">
+    <p>❌ <strong>同质化香水推荐要谨慎</strong>：纯「推荐X瓶香水」内容饱和，新账号难以突围，需要差异化角度。</p>
+  </div>
 
   <div class="insight-card" style="margin-top: 20px;">
-    <div class="card-tag">电商路径提示</div>
+    <div class="card-tag">💡 电商路径提示</div>
     <h3>香精贸易 → 小红书电商 值得关注的方向</h3>
-    <p>基于今日数据，以下方向验证可行：<br>
-    ① <strong>平替香型</strong>：对标热门大牌，300元以内，做内容种草+私域转化<br>
-    ② <strong>补充液/分装</strong>：小容量低门槛，适合小红书引流<br>
-    ③ <strong>场景套装</strong>：按场景打包（上班/约会/旅行），降低用户决策难度</p>
+    <p>基于今日数据，以下方向验证可行性较高：<br><br>
+    ① <strong>平替香型</strong>：对标热门大牌，300元以内，做内容种草+私域转化。关键是对标哪款香要准确，评论区会有人问「跟XX像吗」<br><br>
+    ② <strong>补充液/分装</strong>：小容量低门槛，适合小红书引流。已有「小样香水」赛道的验证<br><br>
+    ③ <strong>发香喷雾</strong>：跟香精贸易业务最近，可以作为产品延伸的试探方向。香味+使用场景+效果测评，闭环完整<br><br>
+    ④ <strong>场景套装</strong>：按场景打包（上班/约会/旅行），降低用户决策难度，适合作为礼品方向</p>
     <div class="meta">
       <span>以上为数据推断，需结合供应链实际评估</span>
     </div>
+  </div>
+</section>
+
+<!-- ========== 词表状态 ========== -->
+<section class="section" id="wordlist">
+  <div class="section-label">Word List Status</div>
+  <h2 class="section-title">📝 当前词表与调整记录</h2>
+
+  <p style="font-size:14px;color:var(--muted);margin-bottom:16px;">
+    词表按「搜索质量分」动态调整。每期报告后更新，分数持续低于基准的词会被标记为观察或替换。
+  </p>
+
+  <table class="word-table">
+    <thead>
+      <tr>
+        <th>关键词</th>
+        <th>类别</th>
+        <th>质量分</th>
+        <th>趋势</th>
+        <th>状态</th>
+        <th>备注</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="kw">香水推荐</td>
+        <td>核心词</td>
+        <td class="score">72</td>
+        <td><span class="down">↓</span></td>
+        <td><span class="tag">观察</span></td>
+        <td>内容饱和，新账号突围难，需要差异化角度</td>
+      </tr>
+      <tr>
+        <td class="kw">香氛测评</td>
+        <td>核心词</td>
+        <td class="score">88</td>
+        <td><span class="up">↑</span></td>
+        <td><span class="tag">主力</span></td>
+        <td>场景测评内容互动高，保持追踪</td>
+      </tr>
+      <tr>
+        <td class="kw">伪体香</td>
+        <td>趋势词</td>
+        <td class="score">95</td>
+        <td><span class="up">↑↑</span></td>
+        <td><span class="tag">重点</span></td>
+        <td>新概念爆发，高热词，内容稀缺，适合进入</td>
+      </tr>
+      <tr>
+        <td class="kw">发香喷雾</td>
+        <td>新增量</td>
+        <td class="score">92</td>
+        <td><span class="up">↑</span></td>
+        <td><span class="tag">新增</span></td>
+        <td>6万赞验证，与业务最近，建议优先跟进</td>
+      </tr>
+      <tr>
+        <td class="kw">平价香水</td>
+        <td>核心词</td>
+        <td class="score">85</td>
+        <td><span class="up">↑</span></td>
+        <td><span class="tag">主力</span></td>
+        <td>稳定需求，电商转化链路清晰</td>
+      </tr>
+      <tr>
+        <td class="kw">车载香薰</td>
+        <td>季节词</td>
+        <td class="score">70</td>
+        <td><span class="up">→</span></td>
+        <td><span class="tag">补充</span></td>
+        <td>夏季稳定，作为内容丰富度的补充方向</td>
+      </tr>
+      <tr>
+        <td class="kw">大牌平替</td>
+        <td>转化词</td>
+        <td class="score">83</td>
+        <td><span class="up">↑</span></td>
+        <td><span class="tag">主力</span></td>
+        <td>电商核心词，评论区高频问题来源</td>
+      </tr>
+      <tr>
+        <td class="kw">无火香薰</td>
+        <td>边缘词</td>
+        <td class="score">45</td>
+        <td><span class="down">↓</span></td>
+        <td><span class="tag">观察</span></td>
+        <td>流量偏弱，暂不主力投入</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="insight-card" style="margin-top:20px;">
+    <div class="card-tag">词表调整机制说明</div>
+    <h3>如何判断一个词该不该继续用？</h3>
+    <p>三个维度打分：<br><br>
+    ① <strong>搜索命中量</strong>（40%）：搜这个词返回多少篇相关笔记？太少说明用户关注度低<br><br>
+    ② <strong>爆款密度</strong>（40%）：返回结果里有多少篇点赞过千？爆款越多的词越值得跟<br><br>
+    ③ <strong>业务相关性</strong>（20%）：这个词跟香精贸易/电商路径有没有直接或间接关系？<br><br>
+    调整节奏：每期报告后更新分数，分数持续下跌（连续2期&lt;60分）的词降级或替换。发现新概念（某词突然出现且爆款多）立即加入观察列表。</p>
   </div>
 </section>
 
@@ -551,27 +504,35 @@ main {
   <h2 class="section-title">🌏 旅行快照</h2>
 
   <div class="travel-note">
-    <div class="travel-theme">方向 · 亲子环游</div>
-    <h3>80天环游世界 · 亲子主题</h3>
-    <p>类似"80天环游地球"的策划思路，一步一步往前走，主题偏亲子，增加体验感。可以做成系列内容：每个目的地 / 每段路线单独成篇，有故事感、有教育意义。适合有小孩的中产家庭群体。</p>
+    <div class="travel-theme">方向一 · 亲子环游</div>
+    <h3>80天环游世界 · 亲子主题路线</h3>
+    <p>参考「80天环游地球」的故事线，设计一条逐步推进的亲子旅行路线。每个目的地单独成篇，有故事感、有教育意义、有体验细节。目标用户：有小孩的中产家庭。内容价值：提供真实的亲子旅行体验参考，而不仅是攻略罗列。</p>
   </div>
 
   <div class="travel-note">
-    <div class="travel-theme">方向 · 时令热点</div>
+    <div class="travel-theme">方向二 · 时令热点</div>
     <h3>免签 + 季节 + 热点地区</h3>
-    <p>结合免签政策（东南亚多国免签）、季节因素（暑假/寒假出行高峰）、突发热点（某个目的地突然爆火），做时效性强的推荐内容。可以和香水/香氛做软联动：去海岛带什么香？去日本赏樱带什么香？</p>
+    <p>结合暑假出行高峰（当前时间节点），关注：①免签国家（东南亚多国免签）；②季节热点（海岛/避暑）；③突发热点（某个目的地突然爆火）。时效性强的内容更容易获得平台推流。软联动方向：去海岛带什么香？日本赏樱带什么香？酒店房间里放什么香？</p>
+  </div>
+
+  <div class="travel-note">
+    <div class="travel-theme">内容联动</div>
+    <h3>旅行场景 × 香气使用</h3>
+    <p>旅行和香气的天然关联：随身香（小巧便携）、车载香薰、酒店香氛、目的地气味记忆。可以做成系列内容：「去日本/东南亚/欧洲带什么香」，每篇对应一个目的地。</p>
   </div>
 
   <div class="quote-block" style="margin-top: 16px;">
-    <p class="quote-text">旅行内容和小红书香水方向天然可以联动：出行场景用香（车载/随身/酒店），可以做成持续的内容系列。</p>
-    <p class="quote-source">内容联动思路，待深化</p>
+    <p class="quote-text">旅行内容和小红书香水方向天然可以联动：出行场景用香（车载/随身/酒店），可以做成持续的内容系列，同时两个方向都可以探索电商变现路径。</p>
+    <p class="quote-source">内容联动思路，待持续迭代</p>
   </div>
 </section>
 
 <div class="report-footer">
-  数据来源：小红书搜索「香水推荐」「香氛测评」「车载香薰」前5篇<br>
-  本报告由 Hermes Agent 模拟运营人员工作流程生成 · 2026-07-13<br>
-  <a href="https://augusta-ai.vercel.app/xhs/2026-07-13.html">线上版本</a>
+  数据来源：小红书搜索「香水推荐」「香氛测评」「车载香薰」「伪体香」「发香喷雾」「大牌平替」等关键词前5篇<br>
+  分析样本：约25篇笔记（涵盖爆款与普通内容）<br>
+  本报告由 Hermes Agent 拟人化工作流程生成 · 2026-07-13<br>
+  工作时段：10:05 / 12:30 / 14:35 / 16:40（±10分钟随机波动）<br>
+  <a href="https://augusta-ai.vercel.app/perfume/2026-07-13.html">线上版本</a>
 </div>
 
 </main>

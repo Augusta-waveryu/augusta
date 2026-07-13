@@ -97,6 +97,7 @@ article:last-child { border-bottom: none; }
 .tag-report { background: #fff3e0; color: #e65100; }
 .tag-blog { background: #e3f2fd; color: #1565c0; }
 .tag-workbuddy { background: #e8f5e9; color: #2e7d32; }
+.tag-perfume { background: #fce4ec; color: #c2185b; }
 .post-title {
   font-size: 20px;
   font-weight: 600;
@@ -145,6 +146,7 @@ article:last-child { border-bottom: none; }
   .tag-report { background: #3e2723; color: #ffab40; }
   .tag-blog { background: #0d2538; color: #64b5f6; }
   .tag-workbuddy { background: #1b3621; color: #66bb6a; }
+  .tag-perfume { background: #311b24; color: #f48fb1; }
   article { border-bottom-color: #1a1a1a; }
 }
 </style>
@@ -157,6 +159,7 @@ article:last-child { border-bottom: none; }
   <nav class="nav">
     <a href="/" class="active">首页</a>
     <a href="/reports/">晨报</a>
+    <a href="/perfume/">香氛研究</a>
     <a href="/blog/">文章</a>
     <a href="/workbuddy/">WorkBuddy</a>
     <a href="/about.html">关于</a>
@@ -166,6 +169,7 @@ article:last-child { border-bottom: none; }
 <div class="filter-bar">
   <button class="filter-tab active" onclick="filterPosts('all')">全部</button>
   <button class="filter-tab" onclick="filterPosts('report')">🌅 晨报</button>
+  <button class="filter-tab" onclick="filterPosts('perfume')">🌹 香氛研究</button>
   <button class="filter-tab" onclick="filterPosts('blog')">✍️ 文章</button>
   <button class="filter-tab" onclick="filterPosts('workbuddy')">🧭 WorkBuddy</button>
 </div>
@@ -301,6 +305,17 @@ article:last-child { border-bottom: none; }
     <h2 class="post-title"><a href="/reports/2026-06-25.html">AI 晨报 · 2026-06-25</a></h2>
     <p class="post-excerpt">Gemini 3.5 Flash 原生 Computer Use · GPT-5.5 Instant · NSA 失 Mythos 访问权 · Jason Zhu 11.7万 Skill 安全评级 · 共 27 条精选。</p>
     <a class="post-link" href="/reports/2026-06-25.html">阅读全文 →</a>
+  </article>
+
+  <!-- 香氛研究 -->
+  <article data-tag="perfume">
+    <div class="post-meta">
+      <span class="post-date">即将上线</span>
+      <span class="post-tag tag-perfume">香氛研究</span>
+    </div>
+    <h2 class="post-title">🌹 香氛市场研究快讯</h2>
+    <p class="post-excerpt">全球香氛香料行业动态 · 新品发布 · 法规更新 · 供应链变化 · 消费趋势 · 跨境出海机会。由 Hermes agent 自动采集并推送。</p>
+    <a class="post-link" href="/perfume/">查看归档 →</a>
   </article>
 
   <!-- 文章 -->

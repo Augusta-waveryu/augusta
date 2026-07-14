@@ -97,10 +97,11 @@ augusta/
 
 每次推送新快讯时，需同步更新 `index.html`：
 
-1. **按日期倒序插入**：在 `<main id="post-list">` 中找到日期不晚于当天的第一条 article，在其前方插入新条目。如果当天已有晨报条目，香氛条目应紧随其后（不要放到页面底部）。
-2. 条目格式（data-tag="perfume"）：
+1. **插入位置**：在 `<main id="post-list">` 中任意位置插入即可。页面有 JS 自动排序逻辑，会按 `data-date` 倒序排列，同日期按分类排序（report > perfume > workbuddy）。不需要手动找精确位置。
+2. **必须带 data-date 属性**：每个 article 必须包含 `data-date="YYYY-MM-DD"` 属性，否则排序无效。
+3. 条目格式：
    ```html
-   <article data-tag="perfume">
+   <article data-tag="perfume" data-date="2026-07-13">
      <div class="post-meta">
        <span class="post-date">2026 年 7 月 13 日</span>
        <span class="post-tag tag-perfume">香氛研究</span>
@@ -110,7 +111,7 @@ augusta/
      <a class="post-link" href="/perfume/2026-07-13.html">阅读全文 →</a>
    </article>
    ```
-3. 首页条目按时间混排，不按栏目分组。最新的内容（不论晨报还是香氛）排在最前面。
+4. **去重**：推送前检查 `<main id="post-list">` 中是否已有同日期同分类的条目。如果有，更新已有条目的摘要，不要插入重复条目。
 
 ## Git 推送
 

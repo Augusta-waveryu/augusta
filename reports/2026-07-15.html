@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-15</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 15 日 · 星期三</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">30</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">模型发布/更新</a>
+  <a href="#products">产品发布/更新</a>
+  <a href="#industry">行业动态</a>
+  <a href="#papers">论文研究</a>
+  <a href="#tips">技巧与观点</a>
+</nav>
+
+<main>
+
+<!-- ====== 模型发布/更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://x.com/ArtificialAnlys/status/2077140161335631957" target="_blank" rel="noopener">阿里 Qwen-Audio-3.0-TTS-Plus 登顶 Artificial Analysis 语音竞技场排行榜</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · X：Artificial Analysis</span><span class="card-time">7/14 21:10 UTC</span></div>
+      <p class="card-summary">阿里通义千问语音系列再下一城,Qwen-Audio-3.0-TTS-Plus 在 Artificial Analysis 语音竞技场综合榜单登顶,文本到语音的拟真度、韵律控制和多语种表现力全面领先,国产语音模型进入全球第一梯队。</p>
+      <a class="card-link" href="https://x.com/ArtificialAnlys/status/2077140161335631957" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://prismml.com/news/bonsai-27b" target="_blank" rel="noopener">PrismML Bonsai 27B：Qwen3.6-27B 的 1-bit 与 Ternary 版本，笔记本和手机可跑</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · PrismML · MarkTechPost</span><span class="card-time">7/14 22:50 UTC</span></div>
+      <p class="card-summary">PrismML 发布 Bonsai 27B,基于 Qwen3.6-27B 推出 1-bit 和 Ternary 两个极低比特量化版本。27B 级别多模态模型首次在笔记本和手机端流畅运行,为消费级硬件跑旗舰模型开辟新路径。</p>
+      <a class="card-link" href="https://prismml.com/news/bonsai-27b" target="_blank" rel="noopener">PrismML →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title"><a href="https://x.com/_akhaliq/status/2077163125560705207" target="_blank" rel="noopener">Ternary-Bonsai-27B 上线 Claude Code,1.58-bit 量化在端侧工程场景落地</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：AK (@_akhaliq)</span><span class="card-time">7/14 22:53 UTC</span></div>
+      <p class="card-summary">HuggingFace 联合 PrismML 把 Ternary-Bonsai-27B 接入 Claude Code 演示,1.58-bit 量化在端侧代码补全与对话场景首落地。低比特模型不再只是"演示",而是在 Anthropic 的旗舰产品中直接可用。</p>
+      <a class="card-link" href="https://x.com/_akhaliq/status/2077163125560705207" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/Kq30ftirASryPrUtjK2xSw" target="_blank" rel="noopener">腾讯混元 Hy3 量化版发布:1-bit 单卡可部署,4-bit 接近满血性能</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · 公众号：腾讯混元</span><span class="card-time">7/14 08:55 UTC</span></div>
+      <p class="card-summary">腾讯混元发布 Hy3 量化版本,1-bit 版本单卡即可部署,4-bit 版本性能接近原模型满血。Emad Mostaque 称赞"近前沿 300B 模型 1-bit 量化仅降 5% 性能,对 RAM 厂商利空",国产大模型端侧化进程加速。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/Kq30ftirASryPrUtjK2xSw" target="_blank" rel="noopener">腾讯混元 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title"><a href="https://x.com/SenseTime_AI/status/2076828658531262619" target="_blank" rel="noopener">商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型,Mixture-of-Tasks 架构</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · X：商汤 SenseTime</span><span class="card-time">7/14 00:37 UTC</span></div>
+      <p class="card-summary">商汤开源 SenseNova-Vision-7B-MoT,采用 Mixture-of-Tasks 架构同时处理检测、分割、识别、OCR 等多视觉任务,7B 规模下达到专用模型级精度,一个模型替代多条视觉流水线,部署成本大幅下降。</p>
+      <a class="card-link" href="https://x.com/SenseTime_AI/status/2076828658531262619" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 产品发布/更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title"><a href="https://x.com/OpenAIDevs/status/2077166520392970529" target="_blank" rel="noopener">Codex 周活超 700 万,两月累计更新 150+ 项</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · X：OpenAI Developers</span><span class="card-time">7/14 23:01 UTC</span></div>
+      <p class="card-summary">OpenAI 公布 Codex 增长数据:周活用户突破 700 万,两个月内累计更新 150+ 项功能。OpenAI 推理团队全力支撑需求,Sam Altman 称增长"惊人"。Codex 已从单一 CLI 工具演变为多平台编码生态。</p>
+      <a class="card-link" href="https://x.com/OpenAIDevs/status/2077166520392970529" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://x.com/dotey/status/2087092450259128752" target="_blank" rel="noopener">ChatGPT iOS 新增 Codex 可视化功能,宝玉第一时间报道</a></h3>
+      <div class="card-meta"><span class="card-source">X：宝玉 (@dotey)</span><span class="card-time">7/14 19:05 UTC</span></div>
+      <p class="card-summary">ChatGPT iOS 客户端更新,Codex 模块新增可视化功能,支持在手机端查看代码执行流程、文件变更和任务进度。移动端编码 Agent 体验改善,宝玉评价"可以真正在地铁上写代码了"。</p>
+      <a class="card-link" href="https://x.com/dotey/status/2087092450259128752" target="_blank" rel="noopener">宝玉 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://www.anthropic.com/news/claude-for-teachers" target="_blank" rel="noopener">Anthropic 推出 Claude for Teachers,免费 K-12 教师版,承诺不将学生数据用于训练</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · Anthropic Newsroom</span><span class="card-time">7/14 15:50 UTC</span></div>
+      <p class="card-summary">Anthropic 推出 Claude for Teachers,免费向美国 K-12 教师开放高级功能,承诺不将学生对话用于模型训练。Anthropic 持续在教育和合规市场发力,与 ChatGPT for Teachers 正面竞争。</p>
+      <a class="card-link" href="https://www.anthropic.com/news/claude-for-teachers" target="_blank" rel="noopener">Anthropic →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title"><a href="https://x.com/googleaidevs/status/2077049898059354565" target="_blank" rel="noopener">Google AI 发布 Gemini 3.5 Live Translate,支持 70+ 语言近实时语音到语音翻译</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · X：Google AI for Developers</span><span class="card-time">7/14 15:18 UTC</span></div>
+      <p class="card-summary">Google 发布 Gemini 3.5 Live Translate,支持 70+ 语言近实时语音到语音端到端翻译,延迟低于 500ms。结合 Gemini 多模态能力,会议、客服、出海应用场景的实时翻译门槛进一步降低。</p>
+      <a class="card-link" href="https://x.com/googleaidevs/status/2077049898059354565" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move-around" target="_blank" rel="noopener">OpenAI 首款硬件曝光:无屏幕可移动智能音箱,定位类人 AI 伴侣</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · TechCrunch · The Verge</span><span class="card-time">7/14 22:18 UTC</span></div>
+      <p class="card-summary">OpenAI 首款硬件设备曝光:无屏幕、可移动的智能音箱,定位类人 AI 伴侣。配备摄像头与传感器,具备自主移动能力,目标今年发布。Jony Ive 团队主导设计,对标 Humane AI Pin 和 Rabbit r1 的"全场景"尝试。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move-around" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/976/538.htm" target="_blank" rel="noopener">高德发布通用世界模型工坊 ABot-WorldStudio,已开放测试</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · IT之家</span><span class="card-time">7/14 07:43 UTC</span></div>
+      <p class="card-summary">高德地图发布通用世界模型工坊 ABot-WorldStudio,支持用户通过自然语言生成可交互的 3D 仿真环境,用于机器人训练、自动驾驶仿真和空间设计。LBS 数据 + 世界模型组合,地图厂商向具身 AI 基础设施延伸。</p>
+      <a class="card-link" href="https://www.ithome.com/0/976/538.htm" target="_blank" rel="noopener">IT之家 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title"><a href="https://x.com/ChatGPTapp/status/2077123809677906328" target="_blank" rel="noopener">ChatGPT 现已支持构建和发布完整网页应用,Canvas 全栈化</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：ChatGPT</span><span class="card-time">7/14 19:56 UTC</span></div>
+      <p class="card-summary">ChatGPT 升级 Canvas 功能,支持直接构建和发布完整网页应用,从前端到后端全栈生成。配合 Artifacts 分享能力,ChatGPT 正式从"对话"向"应用平台"演进,挑战 v0、Lovable、Bolt 等 AI 建站工具。</p>
+      <a class="card-link" href="https://x.com/ChatGPTapp/status/2077123809677906328" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title"><a href="https://x.com/testingcatalog/status/2077084629635407966" target="_blank" rel="noopener">Google Jules V2 即将发布,全新 Logo 重塑 AI 编程助手品牌</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：Testing Catalog</span><span class="card-time">7/14 17:27 UTC</span></div>
+      <p class="card-summary">Google AI 编程助手 Jules 即将发布 V2 版本,同步推出全新品牌 Logo。Jules 此前在异步编码任务和 PR 自动审查场景积累口碑,V2 预计将增强对 Gemini 3.5 的深度集成和 IDE 协作能力。</p>
+      <a class="card-link" href="https://x.com/testingcatalog/status/2077084629635407966" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit" target="_blank" rel="noopener">OpenAI 首度回应苹果诉讼:指控"缺乏依据",相信公平竞争</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · TechCrunch · IT之家</span><span class="card-time">7/14 22:15 UTC</span></div>
+      <p class="card-summary">苹果诉 OpenAI 窃密案出现新进展:OpenAI 首度正式回应,称苹果的指控"缺乏依据",表示"相信公平竞争,未发现任何证据"。两家在 AI 人才争夺上的法律战进入公开对峙阶段,后续进展值得持续关注。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#15</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta" target="_blank" rel="noopener">iOS 27 公测版向所有人开放全新 Siri AI,苹果语音助手全面重塑</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · TechCrunch · The Verge</span><span class="card-time">7/14 19:35 UTC</span></div>
+      <p class="card-summary">苹果发布 iOS 27 公测版,无需开发者账号即可体验全面重构的 Siri AI。集成深度 AI 理解和生成能力,Messages 新增行内回复和 RCS 端到端加密,Liquid Glass 界面进一步精炼。秋季正式版前的大规模公测启动。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#16</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers" target="_blank" rel="noopener">Hachette 等主流出版商集体起诉 Google:指控海量版权内容未授权训练 AI</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · TechCrunch</span><span class="card-time">7/14 18:18 UTC</span></div>
+      <p class="card-summary">Hachette、Cengage、Elsevier 等主流出版商联合起诉 Google,指控其在未获必要授权的情况下使用版权作品训练 AI 模型。继 OpenAI 遭遇类似诉讼后,AI 训练数据版权争议持续升级,可能深刻影响未来数据采集策略与合规成本。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#17</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers" target="_blank" rel="noopener">纽约州暂停所有新建大型数据中心项目,算力扩张遭遇能源与社区阻力</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · TechCrunch</span><span class="card-time">7/14 15:18 UTC</span></div>
+      <p class="card-summary">纽约州宣布暂停所有新建大型数据中心项目审批,核心考量是电力供应、用水和社区影响。AI 算力扩张的"能源墙"问题正式进入地方政府议程,可能引发其他州跟进,影响美国 AI 基础设施布局节奏。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#18</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-extension" target="_blank" rel="noopener">视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资,估值超 20 亿美元</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · TechCrunch</span><span class="card-time">7/13 23:55 UTC</span></div>
+      <p class="card-summary">视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资,估值突破 20 亿美元进入独角兽行列。资金将用于多模态视频模型迭代和全球市场拓展,视频生成赛道在 Sora/可灵/海螺之后持续吸引大额资本。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-extension" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#19</div>
+      <h3 class="card-title"><a href="https://x.com/AIatMeta/status/2077138553210028042" target="_blank" rel="noopener">Meta AI 模型在亚洲物理奥赛理论考试中获满分,与金牌选手持平</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：AI at Meta</span><span class="card-time">7/14 21:01 UTC</span></div>
+      <p class="card-summary">Meta AI 模型在亚洲物理奥赛(APhO)理论考试中获得满分,成绩与金牌选手持平,这是大模型首次在高级物理奥赛中达到金牌水平。数学奥赛之后,AI 在物理论证题上同样开始超越人类顶尖学生。</p>
+      <a class="card-link" href="https://x.com/AIatMeta/status/2077138553210028042" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#20</div>
+      <h3 class="card-title"><a href="https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs" target="_blank" rel="noopener">Meta 被指控使用有偏见的 AI 工具大规模裁员,遭前员工起诉</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · The Verge · Ars Technica</span><span class="card-time">7/14 17:10 UTC</span></div>
+      <p class="card-summary">Meta 遭前员工集体起诉,指控公司在 2024-2025 年裁员决策中"完全由 AI 而非人类管理者"做出,导致对特定年龄、性别和族裔群体的系统性歧视。这是首例明确指控"AI 决策裁员"的诉讼,影响深远。</p>
+      <a class="card-link" href="https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs" target="_blank" rel="noopener">The Verge →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#21</div>
+      <h3 class="card-title"><a href="https://x.com/demishassabis/status/2076957440109625718" target="_blank" rel="noopener">Demis Hassabis 长帖:AGI 可能仅剩几年,提议参照 FINRA 模式设立独立标准机构</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · X：Demis Hassabis · TechCrunch</span><span class="card-time">7/14 09:00 UTC</span></div>
+      <p class="card-summary">DeepMind CEO Demis Hassabis 发长帖:AGI 可能"数年"内实现,影响"将达工业革命的 10 倍",提议参照金融业 FINRA 模式设立独立标准机构,专门监管前沿 AI 模型发布。Sundar Pichai 转发并称"值得一读"。</p>
+      <a class="card-link" href="https://x.com/demishassabis/status/2076957440109625718" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#22</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out" target="_blank" rel="noopener">Anthropic 最新广告引发用户不适,创意与品牌定位引争议</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · TechCrunch</span><span class="card-time">7/14 19:30 UTC</span></div>
+      <p class="card-summary">Anthropic 近期投放的最新品牌广告在社交媒体上引发强烈负面反应,被吐槽"令人毛骨悚然"。创意与品牌定位的脱节反映出 AI 公司在大众市场传播中仍需找到平衡点,过于技术化的表达可能适得其反。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out" target="_blank" rel="noopener">TechCrunch →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#23</div>
+      <h3 class="card-title"><a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload" target="_blank" rel="noopener">Grok Build AI 编程工具被曝上传用户完整代码库至谷歌云</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · The Verge</span><span class="card-time">7/14 19:00 UTC</span></div>
+      <p class="card-summary">xAI 旗下 Grok Build AI 编程工具被安全研究员曝光,默认行为会将用户完整代码库上传至第三方云存储(谷歌云),无明确告知与同意流程。开发者隐私与 AI 编程工具的信任边界再次被推上风口浪尖。</p>
+      <a class="card-link" href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload" target="_blank" rel="noopener">The Verge →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 论文研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📚 论文 / 研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#24</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.11643" target="_blank" rel="noopener">小米发布 38B 参数具身世界基础模型 Xiaomi-Robotics-U0,系统解决多视角一致性</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers · Jason Zhu 快讯</span><span class="card-time">7/15</span></div>
+      <p class="card-summary">小米推出 380 亿参数多模态自回归模型 Xiaomi-Robotics-U0,专门解决机器人场景下的多视角一致性、几何连贯性和实体约束问题。大模型的视觉生成能力首次被系统性地桥接到机器人操控任务,具身 AI 数据稀缺瓶颈有望缓解。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.11643" target="_blank" rel="noopener">论文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#25</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.11881" target="_blank" rel="noopener">LLM 元认知能力综述:AI 何时知道自己不知道?</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers · Jason Zhu 快讯</span><span class="card-time">7/15</span></div>
+      <p class="card-summary">这篇综述系统梳理了大语言模型元认知能力的研究现状——即模型对自身知识边界、推理过程的感知与调控能力。这直接关系到如何构建更可靠的 AI Agent:一个能准确判断"我不确定"的模型,比一个自信答错的模型在生产环境中安全得多。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.11881" target="_blank" rel="noopener">论文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#26</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.11736" target="_blank" rel="noopener">多语言道德推理基准 MET:LLM 的伦理判断真的能跨文化吗?</a></h3>
+      <div class="card-meta"><span class="card-source">HuggingFace Papers · Jason Zhu 快讯</span><span class="card-time">7/15</span></div>
+      <p class="card-summary">MET 提出首个兼顾多语言与跨文化的道德推理评测框架,揭示现有模型严重依赖英语中心化的道德脚手架,直接翻译无法捕捉文化特异性。若 AI 要服务非英语用户,主流模型的道德推理能力可能存在系统性偏差,出海产品开发者必读。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.11736" target="_blank" rel="noopener">论文 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 技巧与观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧 / 观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#27</div>
+      <h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2077158183169404934" target="_blank" rel="noopener">AI token 成本或超软件工程师薪资:Anthropic 经济指数揭示企业 AI 支出拐点</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：Rohan Paul</span><span class="card-time">7/14 22:18 UTC</span></div>
+      <p class="card-summary">Anthropic 经济指数显示,前沿企业级 AI Agent 的 token 月支出已接近或超过一名资深软件工程师的全职薪资,加拿大企业尤其突出。AI 工具的 ROI 测算正在被重新定义,"单位任务成本"比"工具订阅费"更关键。</p>
+      <a class="card-link" href="https://x.com/rohanpaul_ai/status/2077158183169404934" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#28</div>
+      <h3 class="card-title"><a href="https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing" target="_blank" rel="noopener">如何让 Claude 不再说"honest takes"和"load-bearing seams"等 AI 套话</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · Hacker News</span><span class="card-time">7/14 16:30 UTC</span></div>
+      <p class="card-summary">开发者 jola 发布逆向工程指南,提供完整的"负向词库 + 替换策略",让 Claude 在写作中避免高频 AI 套话("honest takes"、"load-bearing seams"、"nuanced landscape" 等)。同时给出 System Prompt 注入示例,可直接用于生产项目。</p>
+      <a class="card-link" href="https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#29</div>
+      <h3 class="card-title"><a href="https://www.normaltech.ai/p/what-will-be-left-for-us-to-work" target="_blank" rel="noopener">普林斯顿教授 Narayanan ICML 2026 主旨演讲:AI 作为正常技术,人类应主动适应</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · Hacker News</span><span class="card-time">7/14 06:55 UTC</span></div>
+      <p class="card-summary">普林斯顿计算机系教授 Sayash Kapoor 与 Arvind Narayanan 在 ICML 2026 发表主旨演讲,主张"AI 应被视为正常技术(Normal Technology)",不应被神化也不应被妖魔化。人类应主动适应,通过制度设计让 AI 红利普惠,反对"AGI 即将取代一切"的炒作叙事。</p>
+      <a class="card-link" href="https://www.normaltech.ai/p/what-will-be-left-for-us-to-work" target="_blank" rel="noopener">原文 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#30</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/s75qDGt5iNqLXyMbjpwxeQ" target="_blank" rel="noopener">面壁智能 CTO 曾国洋专访:端侧模型是 AI 落地关键路径,小模型也有大未来</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · 公众号：面壁智能</span><span class="card-time">7/14 02:25 UTC</span></div>
+      <p class="card-summary">面壁智能 CTO 曾国洋在专访中表示,端侧模型是 AI 落地的关键路径。MiniCPM 系列坚持"小而强"路线,在保护隐私、降低成本、离线可用三个维度构建差异化壁垒。参数规模竞赛之外,小模型正在打开新的应用空间。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/s75qDGt5iNqLXyMbjpwxeQ" target="_blank" rel="noopener">面壁智能 →</a>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<div class="footer">
+  <p>AI 晨报 · 2026-07-15 · Augusta 出品</p>
+  <p style="margin-top:8px">数据来源：AI HOT、宝玉 (@dotey)、Jason Zhu 快讯、TechCrunch、The Verge、Ars Technica、Anthropic Newsroom、MarkTechPost、HuggingFace Papers、Hacker News、PrismML、Emad Mostaque、Normal Tech、Demis Hassabis、面壁智能、IT之家、公众号腾讯混元、商汤 SenseTime 等</p>
+  <p style="margin-top:4px"><a href="../">← 返回首页</a> · <a href="index.html">查看归档 →</a></p>
+</div>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.card').forEach((card, i) => {
+    card.style.transitionDelay = (i % 4) * 0.05 + 's';
+    observer.observe(card);
+  });
+
+  // Active nav highlighting
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>

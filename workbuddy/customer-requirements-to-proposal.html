@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>别让 WorkBuddy 直接写方案：完整跑一次客户需求到方案提纲 - Augusta</title>
+<meta name="description" content="用三份脱敏教学材料和四轮任务，完整演示 WorkBuddy 如何完成事实核对、痛点分析、方案提纲与人工验收。">
+<link rel="stylesheet" href="/workbuddy/assets/workbuddy.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="/">Augusta <span>/ WorkBuddy</span></a><nav class="nav"><a href="/">首页</a><a href="/reports/">晨报</a><a href="/perfume/">香氛研究</a><a class="active" href="/workbuddy/">WorkBuddy</a><a href="/about.html">关于</a></nav></div></header>
+
+<main>
+  <section class="case-hero">
+    <div class="article-shell case-hero-grid">
+      <div>
+        <span class="eyebrow">完整实操案例</span>
+        <h1>别让 WorkBuddy<br>直接写方案</h1>
+        <p class="dek">桌面上只有三份材料，一段客户访谈、一小段政策摘录、一份旧方案目录。我们不追求一键成稿，只用四轮任务，把它们变成项目组可以继续讨论的事实表、痛点表、方案骨架和客户追问清单。</p>
+        <div class="case-meta"><span>脱敏教学样例</span><span>四轮任务</span><span>含完整指令与验收记录</span><span>2026-07-14</span></div>
+      </div>
+      <div class="material-stack" aria-label="案例使用的三份输入材料">
+        <section class="material-sheet"><div class="doc-label"><span>输入 C</span><span>历史结构参照</span></div><h3>过往方案目录</h3><p>项目背景、现状分析、总体思路、数字底座、企业服务、能耗与安全、分期路径、运营保障。</p></section>
+        <section class="material-sheet"><div class="doc-label"><span>输入 B</span><span>公开方向依据</span></div><h3>政策摘录</h3><p>鼓励建设统一数字底座，提升企业服务、能耗管理、安防联动和数据治理能力。</p></section>
+        <section class="material-sheet"><div class="doc-label"><span>输入 A</span><span>客户一手表达</span></div><h3>客户访谈纪要</h3><p>园区有 120 多家企业，服务入口分散，已有门禁、停车和部分能耗设备，客户希望分阶段推进，也担心后期没人运营。</p></section>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-shell"><div class="article-body">
+    <div class="case-disclosure"><strong>先说明案例边界。</strong>这不是对真实客户项目的效果宣传，而是一套根据设计院、咨询和售前常见任务构造的脱敏教学样例。文中的标准输出用于解释方法，不代表 WorkBuddy 在任何材料上都会自动得到相同结果。</div>
+
+    <p class="lead">很多方案工作的第一步，看起来都差不多。客户发来一段需求，项目组翻出一份旧目录，再找几段政策材料，然后有人把它们一起扔给 AI，说，帮我写个方案。</p>
+    <p>问题也常常从这里开始。客户没有说预算，初稿里出现了投资金额；客户只说希望明年申报试点，初稿却写成三个月完成建设；旧方案里有数字底座，AI 就默认这次也要先建一个大平台。文字很完整，项目组反而要花更多时间找出哪些话不能用。</p>
+    <p>这篇文章只解决一个问题，怎样让 WorkBuddy 先把材料读清楚，再一步步形成可检查的方案骨架。</p>
+
+    <div class="takeaway-strip">
+      <div><b>你要准备什么</b><span>三份可脱敏材料，不需要完整项目资料。</span></div>
+      <div><b>WorkBuddy 做什么</b><span>分四轮整理事实、痛点、结构和风险。</span></div>
+      <div><b>人要做什么</b><span>查依据、删猜测、决定方案取舍和对外口径。</span></div>
+      <div><b>最后留下什么</b><span>方案骨架、追问清单、任务模板和验收记录。</span></div>
+    </div>
+
+    <h2>先把任务写成一张工作交接单</h2>
+    <p>直接写提示词之前，先回答六个问题。它们并不神秘，就是把一个项目负责人原本放在脑子里的要求写出来。后面哪一步出错，也能知道应该补资料、改步骤，还是调整验收标准。</p>
+
+    <div class="worksheet-grid">
+      <section class="worksheet-cell"><b>目标</b><p>得到项目组可讨论的方案一级目录和下一轮客户追问，不生成正式对外方案。</p></section>
+      <section class="worksheet-cell"><b>资料</b><p>客户访谈纪要、政策摘录、历史方案目录。没有预算、接口和运营团队资料。</p></section>
+      <section class="worksheet-cell"><b>步骤</b><p>先分事实与缺口，再分析痛点，再生成目录，最后站在项目负责人角度反查。</p></section>
+      <section class="worksheet-cell"><b>格式</b><p>事实表、痛点表、方案目录、分期建议、三个优先追问。</p></section>
+      <section class="worksheet-cell"><b>验收</b><p>重要结论能追到材料；缺失信息不补猜；客户的投入、运营和对接顾虑进入方案。</p></section>
+      <section class="worksheet-cell"><b>沉淀</b><p>保存资料清单、四轮指令、人工删改记录和最终目录，供同类任务复用。</p></section>
+    </div>
+
+    <p>这六格里最容易被忽略的是「验收」和「沉淀」。没有验收，AI 写得越顺越危险；没有沉淀，下次遇到相似客户，所有人还得从一句「帮我写个方案」重新开始。</p>
+
+    <section class="stage">
+      <div class="stage-head"><span class="stage-index">1</span><div><h2>第一轮，只读材料，不写方案</h2><p>先把已知、推断和未知分开，阻止流畅文字掩盖资料缺口。</p></div></div>
+      <p>把三份材料放进同一个 WorkBuddy 任务。第一句话要主动限制它，不许写方案。原因很简单，一旦正文开始生成，读者很容易被完整结构带着走，后面再找事实边界会更难。</p>
+      <div class="note"><strong>四轮都留在同一个任务里。</strong>WorkBuddy 官方把任务定义为一次对话和一个工作空间。第一轮检查通过后，在原任务中继续第二轮，让后续分析沿用已经确认的材料和中间结果。不要每轮另开聊天窗口，再靠手工复制拼上下文。</div>
+
+      <div class="prompt">请先不要写方案。
+
+阅读客户访谈纪要、政策摘录和过往方案目录，只输出一张事实与缺口表。
+
+请区分三类内容
+1. 客户或材料明确说过的事实
+2. 可以合理推断、但仍需人工确认的判断
+3. 当前材料没有提供、会影响方案的待确认信息
+
+输出字段为 类别、内容、依据材料、对方案的影响、下一步动作。
+
+不得补充投资金额、建设周期、系统接口能力、产品功能或客户承诺。</div>
+
+      <p>一份可用的第一轮结果，大致应该长成下面这样。这里最重要的不是表格有多少行，而是每一行都告诉项目组，这句话来自哪里，接下来要做什么。</p>
+
+      <div class="evidence-table-wrap"><table class="evidence-table">
+        <thead><tr><th>类别</th><th>内容</th><th>依据</th><th>对方案的影响</th><th>下一步动作</th></tr></thead>
+        <tbody>
+          <tr><td class="fact">事实</td><td>园区有 120 多家企业，服务事项分散在线上群、电话和线下窗口。</td><td>客户访谈</td><td>企业服务入口是现状问题，方案需要回应服务可达性。</td><td>确认高频服务事项和现有办理量。</td></tr>
+          <tr><td class="fact">事实</td><td>已有门禁、停车和部分能耗采集设备，但数据没有统一汇总。</td><td>客户访谈</td><td>需要先盘点现有系统和数据，不宜直接假定可以全部接入。</td><td>获取系统清单、厂商和接口情况。</td></tr>
+          <tr><td class="fact">事实</td><td>客户不希望一开始投入太大，希望分阶段推进。</td><td>客户访谈</td><td>方案必须给出小范围起步和后续扩展条件。</td><td>确认首期预算边界与优先业务。</td></tr>
+          <tr><td class="inference">推断</td><td>企业服务线上化可能适合作为首期切口。</td><td>由客户关注点推断</td><td>可以进入备选路径，不能直接写成已确定建设范围。</td><td>在下一轮访谈中验证优先级。</td></tr>
+          <tr><td class="unknown">待确认</td><td>项目预算、建设周期、系统接口、运营负责人、数据权限均未提供。</td><td>三份材料均无</td><td>无法据此形成投资估算、工期承诺或详细集成方案。</td><td>进入客户追问清单。</td></tr>
+        </tbody>
+      </table></div>
+
+      <div class="compare-grid">
+        <section class="compare-panel bad"><h3>看起来完整，实际上不能用</h3><p>AI 根据常见项目经验自行补齐空白。</p><p>首期预算约 <mark>300 万元</mark>，计划 <mark>三个月完成</mark>，统一接入现有门禁、停车和能耗系统。</p><p>金额、工期和接口能力都没有材料依据。这样的句子一旦进入汇报，很快会变成项目风险。</p></section>
+        <section class="compare-panel good"><h3>信息不完整，也可以交付</h3><p>把空白变成下一步工作。</p><p>首期预算和周期 <mark>待客户确认</mark>。现有系统能否接入，需要取得系统清单、接口文档和厂商配合条件后判断。</p><p>它没有替项目组作决定，却让项目组知道下一次沟通要拿回什么资料。</p></section>
+      </div>
+
+      <p>如果第一轮结果里仍然出现材料没有写过的数字、品牌或确定性承诺，不要急着换模型。先指出具体问题，让 WorkBuddy 回到原文标依据。这个动作本身就是训练，项目组开始建立自己的「什么叫合格」。</p>
+    </section>
+
+    <section class="stage">
+      <div class="stage-head"><span class="stage-index">2</span><div><h2>第二轮，从事实走到痛点</h2><p>痛点不能写成广告词，必须能找到证据、影响和待确认项。</p></div></div>
+
+      <div class="prompt">基于刚才已经人工检查过的事实与缺口表，整理客户痛点。
+
+每个痛点必须包含 表层问题、材料证据、可能原因、业务影响、可讨论的建设方向、待确认问题。
+
+不要使用先进、全面、一体化、智能化赋能等没有信息增量的表达。
+建设方向只能作为讨论建议，不得写成客户已经确认的需求。</div>
+
+      <div class="evidence-table-wrap"><table class="evidence-table">
+        <thead><tr><th>痛点</th><th>材料证据</th><th>业务影响</th><th>可讨论方向</th><th>还要问什么</th></tr></thead>
+        <tbody>
+          <tr><td>企业服务入口分散</td><td>微信群、电话、线下窗口并存，企业不知道找谁。</td><td>办理路径不稳定，服务过程难追踪。</td><td>先梳理高频事项，再讨论统一入口或线上流程。</td><td>哪些事项频率最高，谁负责受理，是否已有台账。</td></tr>
+          <tr><td>运行数据看不见</td><td>已有部分系统和设备，数据没有统一汇总。</td><td>运营方难以形成日常监测和管理判断。</td><td>选择少量关键指标做可视化验证。</td><td>数据归谁、采集频率、准确性和接口条件如何。</td></tr>
+          <tr><td>系统对接不确定</td><td>客户担心不同系统打不通。</td><td>可能影响范围、成本、周期和后续维护。</td><td>先做系统与接口盘点，再确定集成路径。</td><td>厂商是否配合，是否有 API，历史合同如何约定。</td></tr>
+          <tr><td>运营责任不清</td><td>客户担心系统复杂、后期没人运营。</td><td>平台上线后可能缺少内容、流程和数据维护。</td><td>把运营角色和日常动作写进首期方案。</td><td>谁维护事项、指标和权限，现有团队能投入多少精力。</td></tr>
+        </tbody>
+      </table></div>
+
+      <p>这一轮最常见的问题，是把「痛点」写成「需要建设一个先进、统一、智能的平台」。这句话放在哪个客户身上都成立，所以没有用。判断痛点表能不能留下，只问一件事，如果删掉客户访谈，这句话还能原样成立吗？如果能，说明它还没有贴到这个客户身上。</p>
+    </section>
+
+    <section class="stage">
+      <div class="stage-head"><span class="stage-index">3</span><div><h2>第三轮，只做方案骨架</h2><p>把客户顾虑放进章节和分期路径，暂时不写大段正文。</p></div></div>
+
+      <div class="prompt">根据已确认的事实与痛点表，形成一份项目组讨论用的方案一级目录。
+
+每章说明 核心内容、回应的客户问题、需要补充的资料、风险提示。
+同时给出分期路径，说明首期做什么、后续在什么条件满足后再扩展。
+
+过往方案目录只作为结构参照。若某一章没有客户材料支撑，请标记为待论证，不要因为旧目录里有就自动保留。
+不要生成投资估算、工期和产品参数。</div>
+
+      <div class="evidence-table-wrap"><table class="evidence-table">
+        <thead><tr><th>章节</th><th>这一章解决什么</th><th>需要补什么资料</th><th>当前处理</th></tr></thead>
+        <tbody>
+          <tr><td>1. 现状与目标</td><td>还原服务入口、现有系统、数据和运营问题，明确分阶段原则。</td><td>高频服务事项、现有系统清单、当前运营流程。</td><td class="fact">保留</td></tr>
+          <tr><td>2. 首期业务范围</td><td>从企业服务线上化和少量关键指标中选择可验证切口。</td><td>业务优先级、预算边界、试点用户和成功标准。</td><td class="inference">待客户确认</td></tr>
+          <tr><td>3. 数据与系统衔接</td><td>说明盘点、接口验证和数据责任，不直接承诺全部打通。</td><td>接口文档、厂商配合、数据权限和质量。</td><td class="inference">条件式保留</td></tr>
+          <tr><td>4. 运营与治理</td><td>写清事项、内容、指标、权限和日常维护由谁负责。</td><td>运营组织、人员投入、审批与安全要求。</td><td class="fact">必须补强</td></tr>
+          <tr><td>5. 分期路径</td><td>首期先验证一项可以完整运行的业务流程，后续根据数据和运营条件扩展。</td><td>每阶段验收结果与扩展触发条件。</td><td class="fact">保留</td></tr>
+          <tr><td>6. 投资估算</td><td>当前资料不足，无法可靠估算。</td><td>范围、产品、接口、实施和运维条件。</td><td class="unknown">暂不写入</td></tr>
+        </tbody>
+      </table></div>
+
+      <p>注意上面那一行「投资估算」。旧目录里有，不等于这次就该写。删掉一章有时比多生成三章更有价值，因为它保护了项目组的专业边界。</p>
+    </section>
+
+    <section class="stage">
+      <div class="stage-head"><span class="stage-index">4</span><div><h2>第四轮，让 WorkBuddy 反过来挑错</h2><p>换成项目负责人视角，形成保留、改写、删除和追问记录。</p></div></div>
+
+      <div class="prompt">请站在项目负责人角度审查这份方案骨架。
+
+分别列出
+1. 可以保留的内容及材料依据
+2. 需要改写或补资料的内容
+3. 当前应该删除的内容及原因
+4. 可能影响范围、投入、系统对接和后续运营的风险
+5. 下一轮客户沟通要问的 10 个问题
+
+最后选出最优先的 3 个问题，说明如果不问清，会影响哪项方案判断。</div>
+
+      <div class="review-log">
+        <div class="review-row keep"><span class="decision">保留</span><p>企业服务入口分散、数据未汇总、客户希望分阶段推进。</p><p class="why">访谈中有直接表达，可以进入现状和目标章节。</p></div>
+        <div class="review-row revise"><span class="decision">改写</span><p>建设统一数字底座。</p><p class="why">政策支持这个方向，但客户是否需要、首期做到什么程度尚未确认，应改成条件式方案。</p></div>
+        <div class="review-row remove"><span class="decision">删除</span><p>首期投资规模、三个月工期、全部系统接入。</p><p class="why">材料没有依据，继续保留会制造错误预期。</p></div>
+        <div class="review-row revise"><span class="decision">优先追问</span><p>首期预算与成功标准、现有系统接口条件、上线后的运营负责人。</p><p class="why">这三项分别决定范围、技术路径和持续运行能力。</p></div>
+      </div>
+
+      <p>做到这里，项目组拿到的还不是正式方案。它是一份更有价值的中间交付，哪些内容已经站得住，哪些内容需要补材料，下一次客户沟通要问什么，都已经可见。</p>
+    </section>
+
+    <h2>四个工具分别站在哪个位置</h2>
+    <p>这套方法不要求所有材料都塞进同一个工具。更稳妥的做法，是让每个工具承担清楚的角色，具体权限仍以企业实际配置和制度为准。</p>
+
+    <div class="workflow-band">
+      <div class="workflow-title">资料进入以后，沿着一条工作流走完</div>
+      <div class="workflow-steps">
+        <div><b>ima</b><span>保存和检索可引用资料，回答时尽量回到来源。</span></div>
+        <div><b>WorkBuddy</b><span>承接多轮任务，形成中间表格、目录和文件产物。</span></div>
+        <div><b>腾讯文档</b><span>让项目组共同标注保留、修改、删除和待确认。</span></div>
+        <div><b>Obsidian</b><span>保存任务模板、失败点、验收规则和复盘。</span></div>
+        <div><b>企业知识体系</b><span>再决定哪些资料和工作流可以进入部门共享与治理。</span></div>
+      </div>
+    </div>
+
+    <p>WorkBuddy 官方的项目能力可以统一组织指令、资料、连接器、专家和 Skill，这为团队复用提供了产品基础。但从个人任务进入项目之前，仍然要先回答三个现实问题，哪些资料允许共享，谁对结果负责，这套方法由谁维护。</p>
+
+    <h2>真正应该保存的，不是最后那段文字</h2>
+    <p>一次任务完成后，最容易做的是下载方案目录，然后关掉窗口。这样只留下了一份结果，没有留下能力。</p>
+    <p>更完整的沉淀至少包含四样东西，三份输入材料的清单，四轮任务指令，人工保留与删除记录，经过修改的最终目录。它们共同回答了这个团队怎样处理一类客户需求。</p>
+    <p>当同岗位的第二个人能够拿另一组材料照着跑，并且知道哪里必须停下来找项目负责人，这项任务才开始接近岗位工作流。到了这一步，再讨论项目配置、连接器、Skill 或自动化，会比从功能菜单出发可靠得多。</p>
+
+    <h2>你可以直接拿走的四轮指令</h2>
+    <p>下面把本文的指令集中放在一起。不要一次全部粘贴。每完成一轮，先由人检查，再进入下一轮。</p>
+    <div class="copy-pack">
+      <details open><summary>第一轮，事实与缺口表</summary><div class="prompt">请先不要写方案。阅读客户访谈纪要、政策摘录和过往方案目录，只输出事实与缺口表。区分事实、推断和待确认，标出依据材料、对方案的影响和下一步动作。不得补充投资金额、建设周期、系统接口能力、产品功能或客户承诺。</div></details>
+      <details><summary>第二轮，痛点分析表</summary><div class="prompt">基于人工检查后的事实与缺口表整理客户痛点。每项包含表层问题、材料证据、可能原因、业务影响、可讨论的建设方向和待确认问题。不要使用没有证据的宣传语言。</div></details>
+      <details><summary>第三轮，方案骨架与分期路径</summary><div class="prompt">根据已确认的事实与痛点表形成项目组讨论用的方案一级目录。每章说明核心内容、回应的客户问题、需要补充的资料和风险。旧方案目录只作结构参照，没有材料支撑的章节标为待论证。不要生成投资、工期和产品参数。</div></details>
+      <details><summary>第四轮，项目负责人反向验收</summary><div class="prompt">站在项目负责人角度审查方案骨架，分别列出可保留、需改写、应删除、主要风险和下一轮客户问题。选出最优先的三个问题，并说明它们会影响哪项方案判断。</div></details>
+    </div>
+
+    <h2>什么情况下先不要用这个方法</h2>
+    <p>材料涉及未获授权的客户信息、合同、报价、个人信息或内部系统细节时，先按单位制度脱敏和确认环境。需要专业签字、正式投标、法律承诺或对外报价的内容，不能把 WorkBuddy 的输出当成最终意见。</p>
+    <p>如果任务连项目负责人都说不清楚要交什么，先开一次短会把目标和验收标准定下来。AI 可以帮助暴露问题，不能替团队决定项目为什么做。</p>
+
+    <div class="article-end-card">
+      <h2>今天怎么开始</h2>
+      <p>找一个已经结束、可以脱敏的历史项目，只拿三份材料。用第一轮指令做事实与缺口表，然后请当时的项目负责人检查。先不要追求完整方案，只统计三件事，漏了什么，猜了什么，下一轮该问什么。</p>
+      <p>如果这张表能帮助你们把一次讨论开得更具体，再继续第二轮。一个可靠的 AI 工作流，往往不是从惊艳的成品开始，而是从少说一句没有依据的话开始。</p>
+    </div>
+
+    <div class="source-box"><h2>资料与边界来源</h2><ul>
+      <li><a href="https://www.workbuddy.cn/docs/workbuddy/Overview" target="_blank" rel="noopener noreferrer">WorkBuddy 官方简介</a>，任务规划、文档与文件处理能力。</li>
+      <li><a href="https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Project" target="_blank" rel="noopener noreferrer">WorkBuddy 官方：项目</a>，项目级指令、资料、连接器、专家与 Skill。</li>
+      <li><a href="https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector" target="_blank" rel="noopener noreferrer">WorkBuddy 官方：连接器</a>，外部服务与权限边界。</li>
+      <li>案例方法来自 Augusta 企业 AI 课程中的 S03「客户需求转方案提纲」教学样例，本文未使用真实客户名称、项目金额或未公开资料。</li>
+    </ul></div>
+  </div></article>
+</main>
+
+<footer class="site-footer"><div class="site-footer-inner">© 2026 Augusta · <a href="/workbuddy/">返回 WorkBuddy 专题</a></div></footer>
+</body>
+</html>

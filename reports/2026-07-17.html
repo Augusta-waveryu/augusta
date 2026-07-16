@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-17</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 17 日 · 星期五</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">30</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">9</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">模型发布/更新</a>
+  <a href="#products">产品发布/更新</a>
+  <a href="#industry">行业动态</a>
+  <a href="#papers">论文研究</a>
+  <a href="#tips">技巧与观点</a>
+</nav>
+
+<main>
+<!-- ====== 🧠 模型发布 / 更新 ====== -->
+<section class="section" id="models">
+  <h2 class="section-title">🧠 模型发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#1</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/" target="_blank" rel="noopener">Thinking Machines Lab 发布 Inkling：9750亿参数、410亿活跃参数的开放权重多模态模型</a></h3>
+      <div class="card-meta"><span class="card-source">TechCrunch · Jason Zhu 快讯</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 发布首个基础模型 Inkling。采用 MoE 架构，总参数 9750 亿、单次激活 410 亿，支持最高 100 万 token 上下文，原生处理文本、图像与音频。模型以 Apache 2.0 开放权重，强调可定制性与成本性能平衡，而非单纯追求榜单第一。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 🛠️ 产品发布 / 更新 ====== -->
+<section class="section" id="products">
+  <h2 class="section-title">🛠️ 产品发布 / 更新</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#2</div>
+      <h3 class="card-title"><a href="https://x.ai/news/grok-automations" target="_blank" rel="noopener">Grok 推出 Automations 功能：定时或邮件触发，自动执行任务并汇报结果</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · xAI：News</span><span class="card-time">7/16 21:39 UTC</span></div>
+      <p class="card-summary">xAI 为 Grok 引入 Automations，用户可描述一次任务，让 Grok 按计划或邮件触发自动运行。每次执行都是一次完整对话，结果保存至运行历史并支持通知。定时自动化对所有用户开放，邮件触发需 SuperGrok 订阅。</p>
+      <a class="card-link" href="https://x.ai/news/grok-automations" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#3</div>
+      <h3 class="card-title"><a href="https://x.com/ChatGPTapp/status/2077826846373380535" target="_blank" rel="noopener">ChatGPT 工作区支持文档、表格与幻灯片编辑</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：ChatGPT</span><span class="card-time">7/16 18:44 UTC</span></div>
+      <p class="card-summary">ChatGPT 工作区新增办公套件能力，可直接创建和编辑精美文档、电子表格与幻灯片。配合 Agent 与工作流，ChatGPT 正从对话工具向企业协作平台延伸。</p>
+      <a class="card-link" href="https://x.com/ChatGPTapp/status/2077826846373380535" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#4</div>
+      <h3 class="card-title"><a href="https://www.mixfont.com/experiments/decoy-font" target="_blank" rel="noopener">Decoy 字体：用空间频率混淆让 AI 看不清你输入的文字</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · Hacker News</span><span class="card-time">7/16 18:32 UTC</span></div>
+      <p class="card-summary">Decoy Font 通过在同一字符中叠加不同空间频率的图形，让近距离读取的 AI 看到&quot;诱饵&quot;字母，而人眼远距离或眯眼时才能看到真实信息。为反 AI 抓取、隐私保护提供了一种新颖的字体层方案。</p>
+      <a class="card-link" href="https://www.mixfont.com/experiments/decoy-font" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#5</div>
+      <h3 class="card-title"><a href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars" target="_blank" rel="noopener">Google Vids 上线 Gemini Omni 与个人数字分身功能</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · Google Blog</span><span class="card-time">7/16 16:00 UTC</span></div>
+      <p class="card-summary">Google Vids 推出 Gemini Omni 和个人数字分身。前者支持自然语言生成并分步编辑视频片段；后者可让用户输入文字后由数字分身出镜。面向 Google AI Pro / Ultra 及 Workspace 商业客户，生成内容含 SynthID 水印。</p>
+      <a class="card-link" href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#6</div>
+      <h3 class="card-title"><a href="https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork" target="_blank" rel="noopener">在 Claude Cowork 中使用 Claude Fable 5</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · Claude Blog</span><span class="card-time">7/16 14:32 UTC</span></div>
+      <p class="card-summary">Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。默认模型仍为 Claude Sonnet 5，Fable 5 需手动选择。</p>
+      <a class="card-link" href="https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#7</div>
+      <h3 class="card-title"><a href="https://x.com/OpenBMB/status/2077741814799548451" target="_blank" rel="noopener">面壁智能开源企业 AI 数字员工平台 StaffDeck</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · X：面壁智能 OpenBMB</span><span class="card-time">7/16 13:07 UTC</span></div>
+      <p class="card-summary">面壁智能联合多团队开源 StaffDeck，用于将专业知识、SOP 和决策规则转化为持续工作、持续改进并保留组织知识的数字员工。项目代码已发布于 GitHub，定位超越传统聊天机器人的企业数字劳动力。</p>
+      <a class="card-link" href="https://x.com/OpenBMB/status/2077741814799548451" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#8</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg" target="_blank" rel="noopener">秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · 公众号：百度智能云</span><span class="card-time">7/16 12:17 UTC</span></div>
+      <p class="card-summary">百度智能云在 WAIC 2026 发布秒哒 3.5，新增 iOS 打包能力，无需 Mac 或 Xcode 即可生成 IPA 或上架 App Store。内置 SEO Agent、多应用共享后端、数据库多环境隔离，累计服务超 3500 万用户。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#9</div>
+      <h3 class="card-title"><a href="https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search" target="_blank" rel="noopener">Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · Google Developers Blog</span><span class="card-time">7/16 09:58 UTC</span></div>
+      <p class="card-summary">Google Cloud 将 Parallel Web Systems 的搜索基础设施原生集成到 Gemini Enterprise Agent Platform。开发者可把 AI 智能体锚定在可验证的实时网络结果上，并编程提取、缓存和处理网络数据。</p>
+      <a class="card-link" href="https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#10</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/WlGAeogkF_N5122nHA0TtQ" target="_blank" rel="noopener">天工短剧工作台发布&quot;Agent 智能分镜 + 无限画布&quot;双轨创作模式</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · 公众号：昆仑万维（天工）</span><span class="card-time">7/16 02:00 UTC</span></div>
+      <p class="card-summary">天工短剧工作台通过导演 Agent 自动解析剧本、规划站位与机位，并支持多视角细节图生成，解决 AI 短剧角色变脸和站位漂移。已有三部作品上线 DramaWave 7 天实现百万美元级营收。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/WlGAeogkF_N5122nHA0TtQ" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#11</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg" target="_blank" rel="noopener">MiniMax Code 2.0 桌面端焕新：底层架构全面升级，金融模块即将上线</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · 公众号：MiniMax</span><span class="card-time">7/16 01:36 UTC</span></div>
+      <p class="card-summary">MiniMax Code 2.0 基于 Pi Agent 框架重构底层架构，提升会话启动速度与长程复杂任务稳定性。已打通恒生金融数据库、企查查 MCP，金融模块即将上线，支持多源数据实时检索与专业报告生成。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 📡 行业动态 ====== -->
+<section class="section" id="industry">
+  <h2 class="section-title">📡 行业动态</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#12</div>
+      <h3 class="card-title"><a href="https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users" target="_blank" rel="noopener">xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · Ars Technica</span><span class="card-time">7/16 20:26 UTC</span></div>
+      <p class="card-summary">xAI 首次对一名 Grok 用户提起诉讼，指控其利用模型制作儿童性虐待图像。此前 xAI 一直否认 Grok 能生成此类内容，此次诉讼标志其立场转变，也将 AI 平台责任与用户滥用边界再次推上风口浪尖。</p>
+      <a class="card-link" href="https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#13</div>
+      <h3 class="card-title"><a href="https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials" target="_blank" rel="noopener">54% 企业已遭遇 AI 智能体安全事件，多数仍共享凭证</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · VentureBeat</span><span class="card-time">7/16 19:02 UTC</span></div>
+      <p class="card-summary">VentureBeat 调查 107 家企业发现，54% 已遭遇 AI 智能体安全事件。仅 32% 为每个智能体分配独立身份凭证，30% 将高风险智能体隔离在沙箱中。专用智能体安全产品渗透率极低，身份与权限管理成为企业落地短板。</p>
+      <a class="card-link" href="https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#14</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/977/793.htm" target="_blank" rel="noopener">世界人工智能合作组织协定签署仪式在上海举行，总部设中国上海</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · IT之家</span><span class="card-time">7/16 14:38 UTC</span></div>
+      <p class="card-summary">7 月 16 日，成立世界人工智能合作组织协定签署仪式在上海举行。该组织为独立政府间国际组织，总部设在上海，旨在促进人工智能国际合作与全球治理，哈萨克斯坦、老挝、巴基斯坦等 29 国成为创始成员国。</p>
+      <a class="card-link" href="https://www.ithome.com/0/977/793.htm" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#15</div>
+      <h3 class="card-title"><a href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma" target="_blank" rel="noopener">欧盟裁定 Google 必须向竞争对手开放 Android 和 Search，影响 Gemini 等 AI 服务</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · The Verge</span><span class="card-time">7/16 12:06 UTC</span></div>
+      <p class="card-summary">欧盟依据《数字市场法案》裁定 Google 必须向竞争对手开放 Android 和 Google Search 的关键部分，允许第三方 AI 助手和搜索引擎获得更大访问权限。这可能削弱 Google 对核心平台的控制，也为竞争对手创造新机会。</p>
+      <a class="card-link" href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#16</div>
+      <h3 class="card-title"><a href="https://www.ithome.com/0/977/544.htm" target="_blank" rel="noopener">台积电上调 2026 年资本支出预测至 600~640 亿美元，A14 制程进展顺利</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · IT之家</span><span class="card-time">7/16 07:59 UTC</span></div>
+      <p class="card-summary">台积电在 2026Q2 财报说明会上将全年资本支出预测上调至 600~640 亿美元。预计 2028 年量产的 A14 制程（1.4nm）开发进展顺利，移动与 HPC 客户兴趣强烈，将成为比 2nm 更大、更持久的工艺节点。</p>
+      <a class="card-link" href="https://www.ithome.com/0/977/544.htm" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#17</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/" target="_blank" rel="noopener">黑客破解 Suno：AI 音乐生成器被曝大规模爬取 YouTube 音频训练数据</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu 快讯 · TechCrunch</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">黑客通过盗用 Suno 员工凭据访问源码，发现该 AI 音乐生成器系统性爬取数十年 YouTube 音频用于训练。继 Google 遭出版商起诉后，AI 训练数据版权合规风险再度升级，音乐生成赛道面临更严格监管预期。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#18</div>
+      <h3 class="card-title"><a href="https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/" target="_blank" rel="noopener">Anthropic 与黑石押注：AI 下一个万亿美元机会在「落地实施」而非模型本身</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu 快讯 · TechCrunch</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">Anthropic 与私募巨头黑石联合判断，AI 最大的价值不在模型能力竞赛，而在企业落地实施层。对独立开发者和出海 SaaS 创业者而言，工具层与垂直集成层可能比底层模型更容易形成护城河。</p>
+      <a class="card-link" href="https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 📚 论文 / 研究 ====== -->
+<section class="section" id="papers">
+  <h2 class="section-title">📚 论文 / 研究</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#19</div>
+      <h3 class="card-title"><a href="https://www.kimi.com/blog/perception-bench" target="_blank" rel="noopener">Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · Moonshot AI：Kimi Blog</span><span class="card-time">7/16 19:11 UTC</span></div>
+      <p class="card-summary">Moonshot AI 发布 PerceptionBench，从 40 多个现有基准的实际失败案例中归纳出 10 项原子感知能力与 3000 道验证题。所有测试模型准确率均未超过 60%，揭示多模态 AI 在视觉感知上仍存在系统性的断裂点。</p>
+      <a class="card-link" href="https://www.kimi.com/blog/perception-bench" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#20</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/RWveWvw9yBH6YQINBQ-XjA" target="_blank" rel="noopener">HYPIC：小红书联合北大、上交提出首个混合注意力大模型位置无关缓存系统</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT ⭐精选 · 公众号：小红书技术</span><span class="card-time">7/16 10:00 UTC</span></div>
+      <p class="card-summary">HYPIC 在混合注意力大模型上实现位置无关缓存，首 token 延迟平均降低 3.25 倍。在 4 个生产级模型上，同 SLO 下可持续 QPS 提升 1.66 倍，任务质量与完全重算仅相差 1.71 分。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/RWveWvw9yBH6YQINBQ-XjA" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#21</div>
+      <h3 class="card-title"><a href="https://huggingface.co/papers/2607.11562" target="_blank" rel="noopener">MonkeyOCRv2：1.13 亿文档图像预训练，17 语言文档 AI 基础模型</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu 快讯 · HuggingFace Papers</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">MonkeyOCRv2 构建迄今最大的文档图像预训练语料库（1.13 亿张图，覆盖 17 种语言），针对密集文字和细粒度字符感知做专项适配。对发票 OCR、合同解析等文档处理产品而言，这是可直接落地的重要基础模型进展。</p>
+      <a class="card-link" href="https://huggingface.co/papers/2607.11562" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ====== 💡 技巧 / 观点 ====== -->
+<section class="section" id="tips">
+  <h2 class="section-title">💡 技巧 / 观点</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-num">#22</div>
+      <h3 class="card-title"><a href="https://claude.com/blog/ai-code-migration" target="_blank" rel="noopener">Anthropic 用 Claude Code 大规模迁移代码：Bun 百万行 Zig 转 Rust，两周完成</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · Claude Blog</span><span class="card-time">7/16 17:32 UTC</span></div>
+      <p class="card-summary">Anthropic 工程师用 Claude Code 在两周内将 Bun 的百万行 Zig 代码迁移至 Rust，100% 现有测试通过，19 个回归问题已全部修复。迁移 API 成本约 16.5 万美元，但编译时间从八分钟降至两秒，二进制启动快 6 倍。</p>
+      <a class="card-link" href="https://claude.com/blog/ai-code-migration" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#23</div>
+      <h3 class="card-title"><a href="https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway" target="_blank" rel="noopener">企业 AI 智能体评估存在&quot;现实对齐&quot;缺口：半数组织部署后导致客户故障</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · VentureBeat</span><span class="card-time">7/16 16:40 UTC</span></div>
+      <p class="card-summary">对 157 家企业的调查显示，50% 的组织过去一年曾部署通过内部评估但导致客户故障的 AI 智能体。66% 已允许或计划 12 个月内实现低风险智能体全自动部署，评估与现实结果的对齐问题被严重低估。</p>
+      <a class="card-link" href="https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#24</div>
+      <h3 class="card-title"><a href="https://www.marktechpost.com/2026/07/16/patter-sdk-guide-to-building-a-restaurant-booking-phone-agent-with-dynamic-variables-guardrails-latency-dashboards-and-eval-checks" target="_blank" rel="noopener">Patter SDK 教程：构建餐厅预订电话智能体，支持动态变量、护栏、延迟仪表盘与评估检查</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · MarkTechPost</span><span class="card-time">7/16 07:42 UTC</span></div>
+      <p class="card-summary">Patter SDK 发布教程，演示如何构建餐厅预订语音智能体。流程支持动态变量、可调用工具、输出护栏（PII 脱敏、话题限制），并可在无实时电话凭证的情况下运行脚本化通话模拟、追踪延迟与成本指标。</p>
+      <a class="card-link" href="https://www.marktechpost.com/2026/07/16/patter-sdk-guide-to-building-a-restaurant-booking-phone-agent-with-dynamic-variables-guardrails-latency-dashboards-and-eval-checks" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#25</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/dCk6IXbFyOSSc1JxcWsglA" target="_blank" rel="noopener">千问 APP 联合武汉发布举办 AI 求职实战课，演示简历诊断与办公自动化</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · 公众号：千问 APP</span><span class="card-time">7/16 03:27 UTC</span></div>
+      <p class="card-summary">千问 APP 与武汉发布在武汉举办 AI 求职实战课，演示简历诊断、PPT 制作和表格分析。产品经理提出&quot;给全材料、说明目标、定义标准、划定边界、索要可编辑文件&quot;五步法，以及将杂乱数据浓缩为结论 PPT 的方法论。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/dCk6IXbFyOSSc1JxcWsglA" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#26</div>
+      <h3 class="card-title"><a href="https://simonwillison.net/2026/Jul/16/grok-mermaid" target="_blank" rel="noopener">xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · Simon Willison 博客</span><span class="card-time">7/16 00:33 UTC</span></div>
+      <p class="card-summary">xAI 开源的 Grok CLI 编码智能体代码库中包含一个 Rust 编写的 Mermaid 图表示例终端渲染器。开发者通过 Claude Code for web（Fable 5）将其编译为 WebAssembly，实现在浏览器中运行该工具。</p>
+      <a class="card-link" href="https://simonwillison.net/2026/Jul/16/grok-mermaid" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#27</div>
+      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/x2JlkhOlGNVhL8oe7AVk9Q" target="_blank" rel="noopener">远程操控 Agent 干活方案：Codex 主力 + UU 远程兜底</a></h3>
+      <div class="card-meta"><span class="card-source">AI HOT · 公众号：数字生命卡兹克</span><span class="card-time">7/16 00:12 UTC</span></div>
+      <p class="card-summary">作者分享了一套远程使用 Agent 的组合方案：以 Codex 远程控制功能连接家中 24 小时开机的 Mac Mini；遇到扫码登录、图形界面操作等 Codex 难以处理的场景时，用网易 UU 远程在手机上直接操控电脑完整桌面。</p>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/x2JlkhOlGNVhL8oe7AVk9Q" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#28</div>
+      <h3 class="card-title"><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">Matt Pocock 发布「Skills for Real Engineers」：真工程师的 Claude 技能集</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu 快讯 · GitHub</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">TypeScript 教育者 Matt Pocock 开源了他日常真实工程中使用的 Claude 技能集（.claude 目录），主打&quot;小、易改、可组合&quot;，明确对标 GSD / BMAD / Spec-Kit 等流程重型方案。适合不想失控但又要提效的开发者。</p>
+      <a class="card-link" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#29</div>
+      <h3 class="card-title"><a href="https://github.com/Dicklesworthstone/destructive_command_guard" target="_blank" rel="noopener">Destructive Command Guard：防止 AI Agent 误执行危险 Shell 命令的安全钩子</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu 快讯 · GitHub</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">高性能安全钩子 dcg 可在 Claude Code、Codex CLI、Gemini CLI、Cursor、Copilot 等主流 AI 编码 Agent 执行前拦截危险 git/shell 命令，防止意外删除文件和数据损毁。在 GPT-5.6 Sol 自行删除文件事件后，此类工具需求正在上升。</p>
+      <a class="card-link" href="https://github.com/Dicklesworthstone/destructive_command_guard" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-num">#30</div>
+      <h3 class="card-title"><a href="https://jasonzhu.ai/zh/news/2026-07-16" target="_blank" rel="noopener">Jason Zhu 今日观察：Codex 单日新增百万用户、Skills 生态与安全钩子走红</a></h3>
+      <div class="card-meta"><span class="card-source">Jason Zhu 快讯</span><span class="card-time">7/16</span></div>
+      <p class="card-summary">Jason Zhu 指出，Codex 单日新增约百万用户、Matt Pocock 开源真实工程技能集、dcg 安全钩子走红，三件事合在一起说明：AI 编码工具的战场已从&quot;能不能用&quot;进入&quot;怎么用得安全、用得专业&quot;的新阶段。</p>
+      <a class="card-link" href="https://jasonzhu.ai/zh/news/2026-07-16" target="_blank" rel="noopener">查看详情 →</a>
+    </article>
+
+  </div>
+</section>
+</main>
+
+<div class="footer">
+  <p>AI 晨报 · 2026-07-17 · Augusta 出品</p>
+  <p style="margin-top:8px">数据来源：AI HOT、Jason Zhu 快讯、xAI、OpenAI、Anthropic、Google、百度、MiniMax、昆仑万维、面壁智能、Moonshot AI、小红书技术、TechCrunch、The Verge、Ars Technica、VentureBeat、IT之家、Simon Willison 等</p>
+  <p style="margin-top:4px"><a href="../">← 返回首页</a> · <a href="index.html">查看归档 →</a></p>
+</div>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.card').forEach((card, i) => {
+    card.style.transitionDelay = (i % 4) * 0.05 + 's';
+    observer.observe(card);
+  });
+
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+</body>
+</html>

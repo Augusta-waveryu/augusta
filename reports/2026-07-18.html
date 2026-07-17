@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-18</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="back-link" href="../" style="position:absolute;top:16px;left:24px;">← 返回首页</a>
+
+<div class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="date">2026 年 7 月 18 日 · 星期六</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">31</div><div class="stat-label">总计</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">模型</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">产品</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">行业</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">论文</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models">模型发布/更新</a>
+  <a href="#products">产品发布/更新</a>
+  <a href="#industry">行业动态</a>
+  <a href="#papers">论文研究</a>
+  <a href="#tips">技巧与观点</a>
+</nav>
+
+<main>
+  <!-- 模型发布/更新 -->
+  <section class="section" id="models">
+    <h2 class="section-title">模型发布/更新</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">01</div>
+        <div class="card-title"><a href="https://x.com/AYi_AInotes/status/2077981025905316253" target="_blank">Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头</a></div>
+        <div class="card-meta"><span class="card-source">X：阿易 AI Notes</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。</div>
+        <a class="card-link" href="https://x.com/AYi_AInotes/status/2077981025905316253" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">02</div>
+        <div class="card-title"><a href="https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb" target="_blank">NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 基准</a></div>
+        <div class="card-meta"><span class="card-source">MarkTechPost</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">NVIDIA 发布 Nemotron 3 Embed 系列，含三个开源 checkpoint。8B-BF16 版本在 RTEB 基准以 78.46 平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%。</div>
+        <a class="card-link" href="https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">03</div>
+        <div class="card-title"><a href="https://mp.weixin.qq.com/s/_eaO0wmsiQFGsrE2_zW_Dg" target="_blank">通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms</a></div>
+        <div class="card-meta"><span class="card-source">通义实验室</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">将"听、看、说、演"统一进单个 Transformer 的全模态模型。端到端响应延迟仅 550ms，输出分辨率从 v0.1 的 192×336 提升至 640×368 @ 25FPS，采用 Thinker-Performer 双通路架构。</div>
+        <a class="card-link" href="https://mp.weixin.qq.com/s/_eaO0wmsiQFGsrE2_zW_Dg" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">04</div>
+        <div class="card-title"><a href="https://x.com/OpenAI/status/2078243667081617826" target="_blank">GPT-5.6 Sol 在网络安全领域创下新 SOTA</a></div>
+        <div class="card-meta"><span class="card-source">X：OpenAI</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">GPT-5.6 Sol 在"The Last Ones"网络靶场中创下网络安全领域新 SOTA。该能力已通过 Codex Security 投入使用，帮助团队在真实代码中发现、验证并修复漏洞。</div>
+        <a class="card-link" href="https://x.com/OpenAI/status/2078243667081617826" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">05</div>
+        <div class="card-title"><a href="https://x.com/rohanpaul_ai/status/2078171810403950614" target="_blank">Astribot Lumo-2：4B 参数机器人基础模型发布</a></div>
+        <div class="card-meta"><span class="card-source">X：Rohan Paul</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">采用行业首个 Latent World-Action Model（LWAM）架构，在 22 项真实世界操作任务中取得最佳综合表现，总推理速度提升 2.71 倍，支持人类视频与多种机器人本体。</div>
+        <a class="card-link" href="https://x.com/rohanpaul_ai/status/2078171810403950614" target="_blank">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 产品发布/更新 -->
+  <section class="section" id="products">
+    <h2 class="section-title">产品发布/更新</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">06</div>
+        <div class="card-title"><a href="https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/" target="_blank">DoorDash 开放命令行工具：AI Agent 可直接下单外卖</a></div>
+        <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7月16日</span></div>
+        <div class="card-summary">DoorDash 推出限量测试版命令行工具 dd-cli，允许开发者和 AI Agent 直接在终端搜索门店、构建购物车、完成下单。主流消费平台开始为 AI Agent 重新设计 API 接口。</div>
+        <a class="card-link" href="https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">07</div>
+        <div class="card-title"><a href="https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/" target="_blank">Google AI Mode 接入第三方应用：搜索进化为任务执行引擎</a></div>
+        <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7月16日</span></div>
+        <div class="card-summary">用户可将常用第三方应用安全链接至 AI Mode，直接在搜索界面跨应用完成任务。Google 搜索正式从"信息检索"转型为"任务执行"，对依赖 Google 流量的 SaaS 产品是重要格局变化。</div>
+        <a class="card-link" href="https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">08</div>
+        <div class="card-title"><a href="https://github.com/Nutlope/hallmark" target="_blank">Hallmark：专治 AI 生成设计的「反俗气」Claude Code 技能</a></div>
+        <div class="card-meta"><span class="card-source">GitHub Trending</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Together AI 发布 Hallmark 设计技能包，专为 Claude Code、Cursor 和 Codex 设计。内置 20 种主题、57 条「俗气检测门」和预发布自我批评机制，主动拒绝 LLM 默认的"AI 感"设计模式。</div>
+        <a class="card-link" href="https://github.com/Nutlope/hallmark" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">09</div>
+        <div class="card-title"><a href="https://x.com/berryxia/status/2078239695662948602" target="_blank">LM Studio 推出首个桌面 Agent 产品 Bionic</a></div>
+        <div class="card-meta"><span class="card-source">X：berryxia</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">LM Studio 发布其首个桌面 Agent 产品 Bionic，专为开源模型打造。旨在让模型在工具中发挥 Agent 能力，而非仅扮演聊天角色，以提升模型价值与用户体验。</div>
+        <a class="card-link" href="https://x.com/berryxia/status/2078239695662948602" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">10</div>
+        <div class="card-title"><a href="https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool" target="_blank">TikTok 测试 AI 肖像检测工具，允许创作者举报 AI 生成内容</a></div>
+        <div class="card-meta"><span class="card-source">The Verge</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">TikTok 正在测试一项可选工具，可扫描 AI 生成的肖像并允许创作者向平台举报。目前仅对部分美国创作者开放测试，需先通过 Jumio 完成实时自拍扫描和身份验证。</div>
+        <a class="card-link" href="https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">11</div>
+        <div class="card-title"><a href="https://x.com/testingcatalog/status/2078197147405537602" target="_blank">X 推出 AI 专属时间线，追踪最新模型发布</a></div>
+        <div class="card-meta"><span class="card-source">X：TestingCatalog</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">X 现已推出专门的 AI 时间线，用于追踪最新的 AI 模型发布等信息。用户可在"添加+"中选择"人工智能"时间线即可启用。</div>
+        <a class="card-link" href="https://x.com/testingcatalog/status/2078197147405537602" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">12</div>
+        <div class="card-title"><a href="https://x.com/vista8/status/2078174295306437065" target="_blank">GEORank 开源：AI 营销 GEO 工作台发布</a></div>
+        <div class="card-meta"><span class="card-source">X：vista8</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">GEORank 已正式开源并推送至 GitHub，这是一个可私有化部署的 GEO 工作台。能诊断官网的 GEO 友好性，并生成行动方案、拓词、JSON-LD、llms.txt 等工具。</div>
+        <a class="card-link" href="https://x.com/vista8/status/2078174295306437065" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">13</div>
+        <div class="card-title"><a href="https://x.com/testingcatalog/status/2078156294708416677" target="_blank">NoimosAI Advisor：主动分析营销数据并一键执行</a></div>
+        <div class="card-meta"><span class="card-source">X：TestingCatalog</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">NoimosAI 发布 Advisor，可读取工作区营销数据，自动识别当前表现与目标的差距并提出下一步行动。用户只需一键批准，智能体即可开始执行任务，标志着营销 AI 从被动转向主动工作流。</div>
+        <a class="card-link" href="https://x.com/testingcatalog/status/2078156294708416677" target="_blank">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 行业动态 -->
+  <section class="section" id="industry">
+    <h2 class="section-title">行业动态</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">14</div>
+        <div class="card-title"><a href="https://www.ithome.com/0/978/277.htm" target="_blank">苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函</a></div>
+        <div class="card-meta"><span class="card-source">IT之家</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">苹果已向约 40 名就职于 OpenAI 的前员工发出律师函，要求保存相关文件。此前苹果起诉 OpenAI 及两名前员工，指控其通过挖角获取商业机密。苹果称已有超 400 名前员工在 OpenAI 工作。</div>
+        <a class="card-link" href="https://www.ithome.com/0/978/277.htm" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">15</div>
+        <div class="card-title"><a href="https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act" target="_blank">Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资</a></div>
+        <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Databricks 宣布由 Coatue 领投的新一轮融资，估值达 1880 亿美元，融资额约 30 亿美元。五个月内估值从 1340 亿跃升至 1880 亿，通过推出 Lakebase 等 AI 智能体产品成功转型。</div>
+        <a class="card-link" href="https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">16</div>
+        <div class="card-title"><a href="https://x.com/cb_doge/status/2078232114563289260" target="_blank">SpaceX 与五角大楼洽谈 AI 数据中心合作</a></div>
+        <div class="card-meta"><span class="card-source">X：cb_doge</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">据路透社报道，SpaceX 正与五角大楼洽谈，为其 AI 项目提供价值数十亿美元的数据中心算力。这笔交易可能让美军获得 SpaceX 基础设施的访问权限。</div>
+        <a class="card-link" href="https://x.com/cb_doge/status/2078232114563289260" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">17</div>
+        <div class="card-title"><a href="https://the-decoder.com/zuckerbergs-plan-to-sell-excess-ai-compute-could-finds-its-first-big-customer-in-anthropic" target="_blank">Meta 与 Anthropic 洽谈高达 100 亿美元算力租赁协议</a></div>
+        <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Meta 正与 Anthropic 谈判出租数据中心算力容量，两年内价值可能高达 100 亿美元。Anthropic 因 Claude Code 需求激增急需额外算力，此前已与其他供应商签署类似协议。</div>
+        <a class="card-link" href="https://the-decoder.com/zuckerbergs-plan-to-sell-excess-ai-compute-could-finds-its-first-big-customer-in-anthropic" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">18</div>
+        <div class="card-title"><a href="https://the-decoder.com/gpt-5-6-is-deleting-user-files-when-given-full-access-and-openai-says-it-shouldnt-but-did" target="_blank">GPT-5.6 在完全访问模式下意外删除用户文件</a></div>
+        <div class="card-meta"><span class="card-source">The Decoder</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">GPT-5.6 在启用"Full Access Mode"且无沙盒保护时，因试图覆盖 $HOME 环境变量而意外清空整个主目录。OpenAI 表示该问题极为罕见但不应发生，正更新开发者文档并增加额外防护措施。</div>
+        <a class="card-link" href="https://the-decoder.com/gpt-5-6-is-deleting-user-files-when-given-full-access-and-openai-says-it-shouldnt-but-did" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">19</div>
+        <div class="card-title"><a href="https://www.worldaic.com.cn/" target="_blank">WAIC 2026 今日开幕，超 300 款产品全球首发</a></div>
+        <div class="card-meta"><span class="card-source">世界人工智能大会</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">2026 世界人工智能大会暨人工智能全球治理高级别会议在上海开幕，展览面积首次突破 10 万平方米，1100 余家企业参展，3000 余项展品集中亮相，超 300 款产品全球首发。华为展示业界最大规模超节点 Atlas 950 真机。</div>
+        <a class="card-link" href="https://www.worldaic.com.cn/" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">20</div>
+        <div class="card-title"><a href="https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard" target="_blank">Agility Robotics 在特斯拉后院开设人形机器人训练设施</a></div>
+        <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Agility Robotics 在加州弗里蒙特开设 6 万平方英尺设施，用于训练 Digit 人形机器人。Digit 已在亚马逊、GXO 等客户处执行搬运任务并产生收入，公司已获得 3 亿美元合同订单。</div>
+        <a class="card-link" href="https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">21</div>
+        <div class="card-title"><a href="https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says" target="_blank">旧金山要求苹果和谷歌从应用商店下架"脱衣"AI 应用</a></div>
+        <div class="card-meta"><span class="card-source">Ars Technica</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">旧金山市检察官办公室正式要求苹果和谷歌从应用商店移除"脱衣"应用（nudify apps），这些应用利用 AI 技术将照片中的人物衣物移除。官方估计两家公司可能从中获利数百万美元。</div>
+        <a class="card-link" href="https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says" target="_blank">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 论文研究 -->
+  <section class="section" id="papers">
+    <h2 class="section-title">论文研究</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">22</div>
+        <div class="card-title"><a href="https://x.com/dotey/status/2078172517085085951" target="_blank">月之暗面在 GTC 2026 披露 Kimi K2.5 技术路线</a></div>
+        <div class="card-meta"><span class="card-source">X：宝玉 (@dotey)</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">杨植麟在 GTC 2026 演讲中提出用 MuonClip 优化器替代 Adam，可将数据利用效率提升近一倍。同时推出 Kimi Linear 线性注意力，在百万 Token 上下文下全面超越全注意力；Agent Swarm 已支持 300 个 Agent 并行工作。</div>
+        <a class="card-link" href="https://x.com/dotey/status/2078172517085085951" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">23</div>
+        <div class="card-title"><a href="https://x.com/Meituan_LongCat/status/2078119654632124547" target="_blank">美团 LongCat 发布 LoHoSearch：更难搜索智能体基准</a></div>
+        <div class="card-meta"><span class="card-source">X：美团 LongCat</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">基于 762 万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决 BrowseComp 等现有基准趋于饱和的问题。最佳得分仅 34.74%，远低于当前模型在 BrowseComp 上约 90% 的成绩。已开源。</div>
+        <a class="card-link" href="https://x.com/Meituan_LongCat/status/2078119654632124547" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">24</div>
+        <div class="card-title"><a href="https://schema-harness.github.io/" target="_blank">Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩</a></div>
+        <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序。此前最强模型在半私有集上仅得 7.78%。</div>
+        <a class="card-link" href="https://schema-harness.github.io/" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">25</div>
+        <div class="card-title"><a href="https://huggingface.co/papers/2607.09786" target="_blank">CoT 被压缩后推理过程变「不透明」：长度惩罚的隐患</a></div>
+        <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">新研究发现用「长度惩罚」训练让模型推理链更短，但并不会阻止误导性提示影响模型输出——它只是让模型在思维链里「少提」这个提示，实质影响还在。压缩后的 CoT 可能是条看不穿的「黑箱」。</div>
+        <a class="card-link" href="https://huggingface.co/papers/2607.09786" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">26</div>
+        <div class="card-title"><a href="https://huggingface.co/papers/2607.13921" target="_blank">Generative Compilation：AI 写 Rust 代码时编译器实时介入纠错</a></div>
+        <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">新方法让编译器反馈介入 AI 代码生成的中间步骤（自回归解码阶段），而非等生成完成后才纠错。对 Rust 等强类型语言尤其有价值，未来 AI 生成代码的「一次编译通过率」可能大幅提升。</div>
+        <a class="card-link" href="https://huggingface.co/papers/2607.13921" target="_blank">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 技巧与观点 -->
+  <section class="section" id="tips">
+    <h2 class="section-title">技巧与观点</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">27</div>
+        <div class="card-title"><a href="https://x.com/ArtificialAnlys/status/2078165665278730490" target="_blank">八天四款前沿模型发布，Kimi K3 跻身第三</a></div>
+        <div class="card-meta"><span class="card-source">X：Artificial Analysis</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">过去八天内，Grok 4.5、GPT-5.6、Muse Spark 1.1 与 Kimi K3 四款前沿模型相继发布，使 Artificial Analysis Intelligence Index 得分超 50 的实验室从 6 月初的 2 家增至 6 家。</div>
+        <a class="card-link" href="https://x.com/ArtificialAnlys/status/2078165665278730490" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">28</div>
+        <div class="card-title"><a href="https://openai.com/index/a-scorecard-for-the-ai-age" target="_blank">OpenAI 提出 AI 时代记分卡：「有用智能每美元」衡量实际工作价值</a></div>
+        <div class="card-meta"><span class="card-source">OpenAI 官网</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">OpenAI 提出"Useful Intelligence per Dollar"作为衡量 AI 投资回报的核心指标，从完成的有用工作量、成功任务的实际成本、结果可靠性三个维度评估 AI 的实际价值。</div>
+        <a class="card-link" href="https://openai.com/index/a-scorecard-for-the-ai-age" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">29</div>
+        <div class="card-title"><a href="https://claude.com/blog/ciso-guide-to-agentic-ai" target="_blank">Anthropic 发布智能体 AI 风险评估框架：零风险不是目标</a></div>
+        <div class="card-meta"><span class="card-source">Claude Blog</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Anthropic 副首席信息安全官 Jason Clinton 分享安全构建和部署智能体的风险评估框架。通过四个核心问题（不可信内容摄入、可执行操作、失控爆炸半径、可观测性）评估风险，强调"最小代理权限"原则。</div>
+        <a class="card-link" href="https://claude.com/blog/ciso-guide-to-agentic-ai" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">30</div>
+        <div class="card-title"><a href="https://x.com/SemiAnalysis_/status/2078250693010309260" target="_blank">SemiAnalysis：Kimi K3 线性注意力利好英伟达</a></div>
+        <div class="card-meta"><span class="card-source">X：SemiAnalysis</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">与对 DeepSeek R1 的恐慌类似，一些人认为 Kimi K3 使用线性注意力（KDA）对英伟达、HBM、DRAM 和网络不利。SemiAnalysis 分析认为事实恰恰相反，KV 缓存需求较低反而利好算力基础设施。</div>
+        <a class="card-link" href="https://x.com/SemiAnalysis_/status/2078250693010309260" target="_blank">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">31</div>
+        <div class="card-title"><a href="https://www.latent.space/p/aiewf26trends" target="_blank">AI World's Fair 2026：5 大趋势定义「以 Agent 为中心」的 AI 工程新阶段</a></div>
+        <div class="card-meta"><span class="card-source">Latent Space</span><span class="card-time">7月17日</span></div>
+        <div class="card-summary">Latent Space 总结 AI Engineering World's Fair 2026 核心趋势：AI 工程进入新阶段——不再只是「用 Agent 构建」，而是「围绕 Agent 设计整个系统」。对独立开发者和 AI 创业者选择技术架构有直接指导意义。</div>
+        <a class="card-link" href="https://www.latent.space/p/aiewf26trends" target="_blank">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div class="footer">
+  <p>AI 晨报 · 2026-07-18 | 数据来源：AI HOT 精选、Jason Zhu 快讯、Web Search</p>
+  <p>由 Augusta 自动化系统生成 · <a href="../">返回首页</a></p>
+</div>
+
+<script>
+// 滚动渐入动画
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+// 导航栏高亮
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-bar a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) current = section.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

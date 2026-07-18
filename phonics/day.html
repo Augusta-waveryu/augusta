@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>音标打卡 - Augusta</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; color: #1a1a1a; background: #f9fafb; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #0066cc; }
+.site-header { max-width: 1400px; margin: 0 auto; padding: 32px 24px 16px; }
+.site-title { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+.site-title a:hover { color: #0066cc; }
+.site-desc { color: #888; font-size: 13px; }
+.nav { margin-top: 10px; font-size: 13px; display: flex; gap: 16px; }
+.nav a { color: #888; }
+.nav a:hover { color: #0066cc; }
+.nav a.active { color: #1a1a1a; font-weight: 600; }
+
+.container { max-width: 1400px; margin: 0 auto; padding: 16px 24px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+@media (max-width: 960px) { .container { grid-template-columns: 1fr; } }
+
+/* 左侧 PDF 卡片 */
+.pdf-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 16px; position: sticky; top: 16px; }
+.pdf-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.pdf-meta { display: flex; justify-content: space-between; align-items: center; padding: 12px 4px 4px; }
+.pdf-day { font-size: 14px; font-weight: 600; color: #1a1a1a; }
+.pdf-ipa { font-size: 16px; font-weight: 700; color: #ef4444; font-family: "Lucida Sans Unicode", serif; }
+.pdf-letters { font-size: 13px; color: #888; margin-top: 4px; padding: 0 4px; }
+.pdf-nav { display: flex; justify-content: space-between; margin-top: 12px; }
+.pdf-nav button { background: #f3f4f6; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; color: #555; font-family: inherit; }
+.pdf-nav button:hover:not(:disabled) { background: #e5e7eb; color: #1a1a1a; }
+.pdf-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* 右侧内容 */
+.content-panel { display: flex; flex-direction: column; gap: 16px; }
+
+.section { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 20px; }
+.section-title { font-size: 16px; font-weight: 600; margin-bottom: 14px; color: #1a1a1a; }
+.section-title .count { color: #aaa; font-weight: 400; font-size: 13px; margin-left: 6px; }
+
+.word-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; }
+.word-btn { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px 4px; text-align: center; cursor: pointer; font-family: inherit; font-size: 14px; color: #1a1a1a; transition: all 0.15s; }
+.word-btn:hover { background: #eff6ff; border-color: #2563eb; color: #2563eb; }
+.word-btn.active { background: #2563eb; border-color: #2563eb; color: #fff; }
+
+/* 详情面板 */
+.detail-panel { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); border-radius: 16px; padding: 24px; min-height: 320px; }
+.detail-empty { display: flex; align-items: center; justify-content: center; height: 280px; color: #92400e; opacity: 0.6; font-size: 15px; }
+.detail-word { font-size: 36px; font-weight: 700; color: #2563eb; text-align: center; margin-bottom: 6px; cursor: pointer; }
+.detail-word:hover { text-decoration: underline; }
+.detail-phonetic { text-align: center; font-size: 18px; color: #666; margin-bottom: 12px; cursor: pointer; }
+.detail-phonetic:hover { color: #2563eb; }
+.detail-phonetic::after { content: ' ▶'; color: #2563eb; opacity: 0.5; font-size: 14px; }
+.detail-def { text-align: center; font-size: 14px; color: #555; margin-bottom: 18px; }
+
+.breakdown-label { font-size: 12px; color: #92400e; text-align: center; margin-bottom: 6px; opacity: 0.7; }
+.breakdown { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
+.syllable { display: flex; flex-direction: column; align-items: center; background: #fff; border: 1px solid #fbbf24; border-radius: 8px; padding: 8px 12px; min-width: 50px; cursor: pointer; transition: all 0.15s; }
+.syllable:hover { background: #fffbeb; transform: scale(1.05); }
+.syllable-letter { font-size: 18px; font-weight: 700; color: #1a1a1a; }
+.syllable-phon { font-size: 11px; color: #666; margin-top: 2px; font-family: "Lucida Sans Unicode", serif; }
+
+.sound-bar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
+.sound-btn { background: #fff; border: 1px solid #fb923c; color: #9a3412; padding: 6px 14px; border-radius: 20px; cursor: pointer; font-size: 13px; font-family: inherit; transition: all 0.15s; }
+.sound-btn:hover { background: #9a3412; color: #fff; }
+.sound-btn.primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+.sound-btn.primary:hover { background: #1d4ed8; }
+
+.sentence-box { background: rgba(255,255,255,0.7); border-radius: 10px; padding: 14px; margin-bottom: 10px; cursor: pointer; transition: all 0.15s; }
+.sentence-box:hover { background: #fff; }
+.sentence-en { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.sentence-zh { font-size: 13px; color: #666; }
+
+.playing { animation: pulse 0.5s ease-in-out; }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+.back { margin-bottom: 12px; font-size: 13px; color: #888; }
+.back a:hover { color: #0066cc; }
+.no-data { text-align: center; color: #888; padding: 40px 20px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1 class="site-title"><a href="/">Augusta</a></h1>
+  <p class="site-desc">48 国际音标打卡</p>
+  <nav class="nav">
+    <a href="/">首页</a>
+    <a href="/phonics/">音标列表</a>
+    <a href="/phonics/day.html?d=1" class="active" id="nav-current">当前 Day</a>
+  </nav>
+</header>
+
+<div class="container">
+  <!-- 左侧 PDF 卡片 -->
+  <div>
+    <div class="pdf-card">
+      <p class="back"><a href="/phonics/">← 返回音标列表</a></p>
+      <img id="pdf-img" src="" alt="PDF Card">
+      <div class="pdf-meta">
+        <span class="pdf-day" id="pdf-day">Day 1</span>
+        <span class="pdf-ipa" id="pdf-ipa">/i:/</span>
+      </div>
+      <div class="pdf-letters" id="pdf-letters">ee · ea · e · ie · i</div>
+      <div class="pdf-nav">
+        <button id="prev-day">← 上一天</button>
+        <button id="next-day">下一天 →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右侧内容 -->
+  <div class="content-panel">
+    <!-- 单词网格 -->
+    <div class="section">
+      <h2 class="section-title">📚 单词列表 <span class="count" id="word-count"></span></h2>
+      <div class="word-grid" id="word-grid"></div>
+    </div>
+
+    <!-- 详情面板 -->
+    <div class="detail-panel" id="detail-panel">
+      <div class="detail-empty">👆 点击上方任一单词查看发音详情</div>
+    </div>
+  </div>
+</div>
+
+<script src="data/days-base.js"></script>
+<script>
+(function() {
+  // 工具：Web Speech API TTS
+  function speak(text, opts) {
+    opts = opts || {};
+    if (!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = opts.rate || 0.85;
+    u.pitch = opts.pitch || 1;
+    u.volume = opts.volume || 1;
+    window.speechSynthesis.speak(u);
+  }
+  function findEnglishVoice() {
+    var voices = window.speechSynthesis.getVoices();
+    return voices.find(function(v) { return v.lang.indexOf('en') === 0; });
+  }
+  // 加载 voice 列表（异步）
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = function() {
+      var voice = findEnglishVoice();
+      // voice 将在下次播放时生效
+    };
+  }
+
+  // 工具：拼读（按音节依次播放，最后连起来读）
+  function speakBreakdown(breakdown, fullWord, callback) {
+    if (!breakdown || !breakdown.length) { speak(fullWord); if (callback) callback(); return; }
+    var i = 0;
+    function next() {
+      if (i >= breakdown.length) {
+        // 拼读后连起来读
+        setTimeout(function() { speak(fullWord, { rate: 0.75 }); if (callback) callback(); }, 250);
+        return;
+      }
+      var part = breakdown[i].phon.replace(/[\/\[\]]/g, '');
+      speak(part, { rate: 0.7 });
+      i++;
+      setTimeout(next, 600);
+    }
+    next();
+  }
+
+  // 工具：动画
+  function pulse(el) {
+    el.classList.add('playing');
+    setTimeout(function() { el.classList.remove('playing'); }, 500);
+  }
+
+  // 工具：取 URL 参数
+  function getQuery(name) {
+    var m = location.search.match(new RegExp('[?&]' + name + '=([^&]*)'));
+    return m ? parseInt(decodeURIComponent(m[1])) : null;
+  }
+
+  // 加载 Day 数据
+  var day = getQuery('d') || 1;
+  if (day < 1 || day > 48) day = 1;
+  var base = window.PHONICS_DAYS_BASE;
+  if (!base) return;
+  var meta = base.days.find(function(d) { return d.day === day; });
+  if (!meta) return;
+
+  // 设置 PDF 图
+  document.getElementById('pdf-img').src = meta.pdfImage;
+  document.getElementById('pdf-img').alt = 'Day ' + day + ' Phonics Card';
+  document.getElementById('pdf-day').textContent = 'Day ' + day;
+  document.getElementById('pdf-ipa').textContent = meta.ipa;
+  document.getElementById('pdf-letters').textContent = 'Common Letter Groups: ' + meta.letterGroups;
+  document.getElementById('nav-current').textContent = 'Day ' + day;
+  document.getElementById('prev-day').disabled = (day === 1);
+  document.getElementById('next-day').disabled = (day === 48);
+  document.getElementById('prev-day').onclick = function() { location.href = 'day.html?d=' + (day - 1); };
+  document.getElementById('next-day').onclick = function() { location.href = 'day.html?d=' + (day + 1); };
+
+  // 加载详细数据
+  var detail = null;
+  if (day === 1 && window.PHONICS_DAY_01) {
+    detail = window.PHONICS_DAY_01;
+  }
+
+  // 渲染单词按钮
+  var grid = document.getElementById('word-grid');
+  document.getElementById('word-count').textContent = '（' + (detail ? detail.words.length : 30) + ' 词）';
+
+  if (detail) {
+    detail.words.forEach(function(w, idx) {
+      var btn = document.createElement('button');
+      btn.className = 'word-btn';
+      btn.textContent = w.word;
+      btn.dataset.idx = idx;
+      btn.onclick = function() { selectWord(idx); };
+      grid.appendChild(btn);
+    });
+  } else {
+    grid.innerHTML = '<div class="no-data">Day ' + day + ' 详细发音数据待补全<br><br>查看左侧 PDF 卡片上的 30 个单词<br>后续将逐日补全详细数据</div>';
+  }
+
+  function selectWord(idx) {
+    if (!detail) return;
+    // 标记选中
+    document.querySelectorAll('.word-btn').forEach(function(b, i) {
+      if (i === idx) b.classList.add('active');
+      else b.classList.remove('active');
+    });
+
+    var w = detail.words[idx];
+    var phoneticClean = (w.phonetic || '').replace(/[\/\[\]]/g, '');
+    var sentenceEn = (w.sentences && w.sentences[0]) || '';
+    var sentenceZh = (w.sentences && w.sentences[1]) || '';
+
+    // 渲染详情
+    var breakdownHtml = (w.breakdown || []).map(function(b) {
+      return '<div class="syllable" data-phon="' + b.phon + '">' +
+             '<div class="syllable-letter">' + b.letter + '</div>' +
+             '<div class="syllable-phon">' + b.phon + '</div>' +
+             '</div>';
+    }).join('');
+
+    var sentenceHtml = '';
+    if (sentenceEn) {
+      sentenceHtml = '<div class="sentence-box" data-sentence="' + escapeAttr(sentenceEn) + '">' +
+                     '<div class="sentence-en">' + sentenceEn + '</div>' +
+                     (sentenceZh ? '<div class="sentence-zh">' + sentenceZh + '</div>' : '') +
+                     '</div>';
+    }
+
+    document.getElementById('detail-panel').innerHTML =
+      '<div class="detail-word" id="d-word">' + w.word + '</div>' +
+      '<div class="detail-phonetic" id="d-phonetic">' + (w.phonetic || '') + '</div>' +
+      '<div class="detail-def">' + (w.definition || '') + '</div>' +
+      (breakdownHtml ? '<div class="breakdown-label">↓ 拼读 ↓</div><div class="breakdown">' + breakdownHtml + '</div>' : '') +
+      '<div class="sound-bar">' +
+        '<button class="sound-btn" id="d-syllables">🔤 拼读</button>' +
+        '<button class="sound-btn primary" id="d-word-sound">🔊 单词连读</button>' +
+        (sentenceEn ? '<button class="sound-btn" id="d-sentence">📖 句子</button>' : '') +
+      '</div>' +
+      sentenceHtml;
+
+    // 绑定点击发音
+    document.getElementById('d-word').onclick = function() { pulse(this); speak(w.word); };
+    document.getElementById('d-phonetic').onclick = function() { pulse(this); speak(w.word); };
+    document.getElementById('d-syllables').onclick = function() { pulse(this); speakBreakdown(w.breakdown, w.word); };
+    document.getElementById('d-word-sound').onclick = function() { pulse(this); speak(w.word, { rate: 0.75 }); };
+    if (sentenceEn) {
+      document.getElementById('d-sentence').onclick = function() { pulse(this); speak(sentenceEn, { rate: 0.8 }); };
+    }
+    // 拼读单个音节
+    document.querySelectorAll('.syllable').forEach(function(s) {
+      s.onclick = function() { pulse(this); speak(this.dataset.phon.replace(/[\/\[\]]/g, ''), { rate: 0.7 }); };
+    });
+    // 例句点击
+    var sb = document.querySelector('.sentence-box');
+    if (sb) {
+      sb.onclick = function() { pulse(this); speak(this.dataset.sentence, { rate: 0.8 }); };
+    }
+
+    // 自动播放：拼读 + 连读
+    setTimeout(function() { speakBreakdown(w.breakdown, w.word); }, 300);
+  }
+
+  function escapeAttr(s) { return String(s).replace(/"/g, '&quot;'); }
+})();
+</script>
+</body>
+</html>

@@ -18,7 +18,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "i · y · e · ui",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-02.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 3,
@@ -26,7 +26,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "e · ea · a · ie",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-03.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 4,
@@ -34,7 +34,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "a · ai · air · ei",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-04.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 5,
@@ -42,7 +42,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ir · ur · er · or · ear",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-05.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 6,
@@ -50,7 +50,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "a · e · i · o · u · er · or · our · ar",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-06.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 7,
@@ -58,7 +58,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "u · o · ou · oo · love · flood",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-07.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 8,
@@ -66,7 +66,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "or · al · au · aw · oar · oor",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-08.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 9,
@@ -74,7 +74,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "o · a · ho · wa · qua",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-09.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 10,
@@ -82,7 +82,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ar · a · al · au · ear",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-10.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 11,
@@ -90,7 +90,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "o · oo · u · ue · ui · ew · ou · ough",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-11.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 12,
@@ -98,7 +98,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "oo · u · oul · o · wood · book",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-12.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 13,
@@ -106,7 +106,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "a · ay · ai · ey · ea · eigh · aigh · et",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-13.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 14,
@@ -114,7 +114,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "i · y · igh · ie · uy · ye · ai · eye · is · eigh",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-14.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 15,
@@ -122,7 +122,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "oi · oy · uoy · eu",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-15.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 16,
@@ -130,7 +130,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ou · ow · ough · au · aw · oo",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-16.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 17,
@@ -138,7 +138,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "o · oa · ow · ou · ough · ew · oo · oe",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-17.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 18,
@@ -146,7 +146,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ear · eer · ier · ea",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-18.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 19,
@@ -154,7 +154,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "air · are · ear · ayer · aer · eir · ere",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-19.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 20,
@@ -162,7 +162,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "oor · our · oar · oor · uer · ure · iour",
       "category": "vowel",
       "pdfImage": "/phonics/images/day-20.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 21,
@@ -170,7 +170,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "p · pp · pe · gh",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-21.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 22,
@@ -178,7 +178,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "b · bb · be · bt",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-22.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 23,
@@ -186,7 +186,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "t · tt · te · ed · bt",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-23.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 24,
@@ -194,7 +194,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "d · dd · de · ed · dh",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-24.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 25,
@@ -202,7 +202,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "c · k · ck · ch · cc · qu · que · lk",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-25.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 26,
@@ -210,7 +210,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "g · gg · gu · gh · gue",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-26.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 27,
@@ -218,7 +218,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "f · ff · ph · fe · lf · gh",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-27.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 28,
@@ -226,7 +226,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "v · ve · f · lf",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-28.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 29,
@@ -234,7 +234,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "s · ss · c · sc · ps · ce · se",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-29.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 30,
@@ -242,7 +242,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "z · zz · s · x · ze",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-30.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 31,
@@ -250,7 +250,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "th",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-31.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 32,
@@ -258,7 +258,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "th",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-32.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 33,
@@ -266,7 +266,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "sh · ch · s · ci · si · ti · xi",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-33.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 34,
@@ -274,7 +274,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "s · z · si · ge · g · j",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-34.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 35,
@@ -282,7 +282,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "h · wh",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-35.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 36,
@@ -290,7 +290,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "r · rr · wr · rh",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-36.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 37,
@@ -298,7 +298,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ch · tch · t · c · te · ti",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-37.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 38,
@@ -306,7 +306,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "j · g · dg · dge · ge · gg · di · dj",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-38.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 39,
@@ -314,7 +314,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "l · ll · le · al · sl",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-39.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 40,
@@ -322,7 +322,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "m · mm · mb · mn · lm · gm",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-40.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 41,
@@ -330,7 +330,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "n · nn · kn · gn · pn · ne",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-41.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 42,
@@ -338,7 +338,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ng · n · nc · ngue",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-42.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 43,
@@ -346,7 +346,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "y · i · j · hi",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-43.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 44,
@@ -354,7 +354,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "w · wh · u · o",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-44.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 45,
@@ -362,7 +362,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "tr · tree",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-45.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 46,
@@ -370,7 +370,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "dr · dre",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-46.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 47,
@@ -378,7 +378,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ts",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-47.jpg",
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "day": 48,
@@ -386,7 +386,7 @@ window.PHONICS_DAYS_BASE = {
       "letterGroups": "ds · des",
       "category": "consonant",
       "pdfImage": "/phonics/images/day-48.jpg",
-      "hasDetail": false
+      "hasDetail": true
     }
   ]
 };

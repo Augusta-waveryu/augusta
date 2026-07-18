@@ -203,17 +203,31 @@ a:hover { color: #0066cc; }
   document.getElementById('prev-day').onclick = function() { location.href = 'day.html?d=' + (day - 1); };
   document.getElementById('next-day').onclick = function() { location.href = 'day.html?d=' + (day + 1); };
 
-  // 加载详细数据
+  // 动态加载当天详细数据
   var detail = null;
-  if (day === 1 && window.PHONICS_DAY_01) {
-    detail = window.PHONICS_DAY_01;
-  }
-
-  // 渲染单词按钮
   var grid = document.getElementById('word-grid');
-  document.getElementById('word-count').textContent = '（' + (detail ? detail.words.length : 30) + ' 词）';
+  var dayStr = String(day).padStart(2, '0');
+  var varName = 'PHONICS_DAY_' + dayStr;
 
-  if (detail) {
+  grid.innerHTML = '<div class="no-data">⏳ 加载 Day ' + day + ' 数据…</div>';
+  document.getElementById('word-count').textContent = '';
+
+  var dataScript = document.createElement('script');
+  dataScript.src = 'data/day-' + dayStr + '.js';
+  dataScript.onload = function() {
+    detail = window[varName];
+    renderWords();
+  };
+  dataScript.onerror = function() {
+    grid.innerHTML = '<div class="no-data">Day ' + day + ' 详细发音数据待补全<br><br>查看左侧 PDF 卡片上的 30 个单词</div>';
+    document.getElementById('word-count').textContent = '（待补全）';
+  };
+  document.head.appendChild(dataScript);
+
+  function renderWords() {
+    if (!detail) return;
+    grid.innerHTML = '';
+    document.getElementById('word-count').textContent = '（' + detail.words.length + ' 词）';
     detail.words.forEach(function(w, idx) {
       var btn = document.createElement('button');
       btn.className = 'word-btn';
@@ -222,8 +236,6 @@ a:hover { color: #0066cc; }
       btn.onclick = function() { selectWord(idx); };
       grid.appendChild(btn);
     });
-  } else {
-    grid.innerHTML = '<div class="no-data">Day ' + day + ' 详细发音数据待补全<br><br>查看左侧 PDF 卡片上的 30 个单词<br>后续将逐日补全详细数据</div>';
   }
 
   function selectWord(idx) {

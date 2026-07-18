@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-19</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>AI 晨报 · 2026-07-19</h1>
+  <p class="date">星期日 · 覆盖 48 小时 · 精选 26 条</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">模型发布</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">产品更新</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">行业动态</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">论文研究</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">技巧观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models" class="active">模型</a>
+  <a href="#products">产品</a>
+  <a href="#industry">行业</a>
+  <a href="#papers">论文</a>
+  <a href="#tips">观点</a>
+</nav>
+
+<main>
+
+<a class="back-link" href="../">← 返回首页</a>
+
+<section class="section" id="models">
+  <h2 class="section-title">模型发布 / 更新</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#01</div>
+      <div class="card-title"><a href="https://www.36kr.com/p/3901159363905409" target="_blank">商汤发布旗舰级 SenseNova U1 Pro，从"内容生成"走向"系统级交付"</a></div>
+      <div class="card-meta">
+        <span class="card-source">36氪</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">商汤在 WAIC 2026 发布旗舰级多模态智能体基座 U1 Pro，基于 NEO-unify 内核实现语言与视觉统一表征。具备原生 8K 输出、图文细节精准控制、长程 Agentic 闭环思维等四大交付能力，标志着多模态从"单点生成"进入"系统交付"时代。</div>
+      <a class="card-link" href="https://www.36kr.com/p/3901159363905409" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#02</div>
+      <div class="card-title"><a href="https://www.163.com/dy/article/L24Q4EOJ0518R7MO.html" target="_blank">腾讯发布具身智能基座模型矩阵，打通"感知—身体—行动"闭环</a></div>
+      <div class="card-meta">
+        <span class="card-source">腾讯技术工程</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">腾讯 Robotics X 联合混元发布三款具身基座模型：Hy-Embodied-VLM-1.0（视觉理解"右脑"）、RxBrain-1.0（认知规划"大脑"）、VLA-0.5（动作控制"小脑"）。同时发布 Apexio 和 TairosAgent 两款智能体，首次系统性打通感知-身体-行动闭环。</div>
+      <a class="card-link" href="https://www.163.com/dy/article/L24Q4EOJ0518R7MO.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#03</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">京东发布 JoyAI-Talker 实时语音模型与 JoyAI-Video-Edit 实时视频编辑模型</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">京东在 WAIC 2026 发布 JoyAI-Talker 实时语音交互模型和 JoyAI-Video-Edit 实时视频编辑模型。Talker 具备低延迟对话、情绪理解、工具调用和记忆能力；Video-Edit 支持边预览边修改。京东提出 AI 三阶段路径：数字智能→附身智能→物理智能。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#04</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阿里云发布灵骏真武 M890 超节点实例，64 卡算力开箱即用</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">阿里云在 WAIC 2026 发布灵骏真武 M890 超节点实例，提供高速互联、开箱即用的 64 卡算力单元。这是阿里云首次通过公共云对外提供超节点形态的 AI 算力服务，现已于乌兰察布地域开放邀测。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#05</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">千问发布 AI 智能体眼镜，联合 Bose 推出首款 AI 智能体耳机</a></div>
+      <div class="card-meta">
+        <span class="card-source">科技狐</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">阿里千问在 WAIC 2026 发布升级后的智能体眼镜，搭载全双工语音、眼动追踪、体征监测，可测心率血氧并提醒用眼疲劳。同时联合 Bose 推出首款耳夹式 AI 智能体耳机，由 Bose 调音，支持同声传译、会议纪要和健康记录。</div>
+      <a class="card-link" href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#06</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">平头哥开源自研 AI 软件栈 T-Head SAIL，真武芯片已出货 56 万片</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">阿里旗下芯片企业平头哥在 WAIC 2026 开源自研 AI 软件栈 T-Head SAIL，这是真武 AI 芯片的底层软件。截至今年 4 月，真武 AI 芯片已累计出货 56 万片，服务 20 多个行业 400 多家客户。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="products">
+  <h2 class="section-title">产品发布 / 更新</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#07</div>
+      <div class="card-title"><a href="https://m.yangtse.com/news_details.html?channelid=6&id=4994973" target="_blank">腾讯 ADP 4.0 海外版正式上线，已落地 30 多个行业</a></div>
+      <div class="card-meta">
+        <span class="card-source">扬子晚报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">腾讯企业级智能体开发平台 ADP 4.0 海外版在 WAIC 2026 正式上线，发布"十大行业百大场景生态计划"。目前该平台已落地 30 多个行业，覆盖智能客服、知识管理、媒体生产等业务场景。</div>
+      <a class="card-link" href="https://m.yangtse.com/news_details.html?channelid=6&id=4994973" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#08</div>
+      <div class="card-title"><a href="https://m.yangtse.com/news_details.html?channelid=6&id=4994973" target="_blank">腾讯 WorkBuddy 正式发布独立 App，登陆 iOS / Android / 鸿蒙三端</a></div>
+      <div class="card-meta">
+        <span class="card-source">扬子晚报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">腾讯在 WAIC 2026 发布 WorkBuddy 独立 App，成为业界首个登陆 iOS、Android、鸿蒙三端的通用智能体应用。腾讯副总裁林松涛表示："AI 应用正从问答式交互走向任务式协作，从一个助手到一个团队再到一个组织。"</div>
+      <a class="card-link" href="https://m.yangtse.com/news_details.html?channelid=6&id=4994973" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#09</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">京东打造首个 JoyInside "AI Home"，开源行业最大人类视角数据集</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">京东在 WAIC 2026 首次系统展示面向物理世界的 JoyAI 模型矩阵，打造首个 JoyInside "AI Home"，并开源行业最大人类视角数据集。观众可戴上 JoyEgoCam 体验第一视角数据采集。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#10</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阿里云发布 Agent Native Cloud 与 AgentTeams 等企业级智能体工具</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">阿里云在 WAIC 2026 发布 Agent Native Cloud（智能体原生的云），并同步推出 AgentTeams、Agentic Computer 等企业级智能体工具，覆盖基础设施、开发平台和云桌面等多个维度。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#11</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">阿里 ATH 事业群将上线 AI 音乐创作平台 HappyShrimp（快乐虾米）</a></div>
+      <div class="card-meta">
+        <span class="card-source">科技狐</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">阿里 ATH 事业群计划上线 AI 音乐创作平台 HappyShrimp（快乐虾米），支持文生词曲、音频复刻、曲风转换等功能，可一键生成旋律、人声、配乐，面向音乐人、自媒体、影视创作者等人群。</div>
+      <a class="card-link" href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#12</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">努比亚 AI 宠物机器人 iMoochi 正式发售，售价 1699 元</a></div>
+      <div class="card-meta">
+        <span class="card-source">ZAKER</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">努比亚情感陪伴 AI 宠物机器人 iMoochi 正式发售，单机售价 1699 元。主打拟生命交互，抚摸可触发摇头、摆尾等反馈，长期使用会形成专属性格。配有多传感器，支持 Wi-Fi 和 4G 联网，续航 8-10 小时。</div>
+      <a class="card-link" href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#13</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">Meta 推出青少年 AI 防护新功能，识别高危内容将通知家长</a></div>
+      <div class="card-meta">
+        <span class="card-source">DoNews</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">Meta 推出青少年防护新功能，若未成年人和 Meta AI 聊自杀、自残内容，系统经人工复核后会通知家长。该功能已在美英澳加上线，年底覆盖全球。平台还在研发紧急求助机制，识别高危轻生倾向将对接急救机构。</div>
+      <a class="card-link" href="https://dy.163.com/article/L2399U4Q0511CMF5.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#14</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L24I54UN05568W0A.html" target="_blank">腾讯钛螺丝平台升级，提供模型、智能体与开发工具开源服务</a></div>
+      <div class="card-meta">
+        <span class="card-source">新浪财经</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">腾讯在 WAIC 2026 升级钛螺丝（Tairos）平台，为行业提供模型、智能体与开发工具等开源能力与服务，降低从模型到本体再到应用全链条的开发门槛，让具身能力更快走进真实世界。</div>
+      <a class="card-link" href="https://dy.163.com/article/L24I54UN05568W0A.html" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="industry">
+  <h2 class="section-title">行业动态</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#15</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">WAIC 2026 进入第二天：阿里、京东、百度、华为齐聚，多款新品集中发布</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">WAIC 2026 第二天，阿里、京东、百度、华为等大厂齐聚一堂，多款大模型新品和端侧应用集中发布。共同展现 AI 向物理世界迈进的趋势，从数字智能到附身智能再到物理智能，中国 AI 产业正加速落地。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#16</div>
+      <div class="card-title"><a href="https://new.qq.com/rain/a/20260718A07TTT00" target="_blank">爱诗科技完成 29.8 亿元 C 轮融资，阿里领投</a></div>
+      <div class="card-meta">
+        <span class="card-source">亿邦动力</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">AIGC 视觉多模态算法开发商爱诗科技宣布完成整体 C 轮融资累计 29.8 亿元人民币，C+ 轮由阿里巴巴领投，十余家国内外机构参投。资金将用于视频生成基础模型、实时世界模型及全球化产品增长。</div>
+      <a class="card-link" href="https://new.qq.com/rain/a/20260718A07TTT00" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#17</div>
+      <div class="card-title"><a href="https://www.163.com/dy/article/L241LKIK051481US.html" target="_blank">特朗普政府考虑设立独立 AI 监管机构，Kimi K3 引发美股芯片股"熊市"</a></div>
+      <div class="card-meta">
+        <span class="card-source">观察者网</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">特朗普政府正在考虑设立一个独立 AI 监管机构，在听取行业意见的基础上审查 AI 模型安全性。该计划由财长贝森特协助制定，正由白宫办公厅主任审查。Kimi K3 发布引发"DeepSeek 时刻"重演担忧，纳斯达克 100 本周下跌 1.5%，费城半导体指数从 6 月高点跌幅扩大至 20%，达"熊市"标准。</div>
+      <a class="card-link" href="https://www.163.com/dy/article/L241LKIK051481US.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#18</div>
+      <div class="card-title"><a href="https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out" target="_blank">Index Ventures 联合创始人 Neil Rimer：AI 财富将面临"再分配"</a></div>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临"某种形式的再分配"，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，加州正考虑对亿万富翁征收 5% 的一次性财富税。</div>
+      <a class="card-link" href="https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#19</div>
+      <div class="card-title"><a href="https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901" target="_blank">生成式 AI 是一场工程灾难：AI 公司抢购 70% 高端内存推高价格</a></div>
+      <div class="card-meta">
+        <span class="card-source">The Atlantic</span>
+        <span class="card-time">7月17日</span>
+      </div>
+      <div class="card-summary">AI 公司可能已购买全球 70% 的高端计算机内存，导致内存与存储价格飙升。两年前 350 美元的硬盘现已涨至 800 美元且缺货，部分笔记本电脑涨价 50%。科技公司计划未来几年将美国数据中心容量扩大 8 倍，平价入门电脑可能在 2028 年前消失。</div>
+      <a class="card-link" href="https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="papers">
+  <h2 class="section-title">论文研究</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#20</div>
+      <div class="card-title"><a href="https://x.com/Meituan_LongCat/status/2078119654632124547" target="_blank">美团 LongCat 发布 LoHoSearch：更难搜索智能体基准测试</a></div>
+      <div class="card-meta">
+        <span class="card-source">X / 美团 LongCat</span>
+        <span class="card-time">7月17日</span>
+      </div>
+      <div class="card-summary">美团 LongCat 推出 LoHoSearch，基于 762 万实体维基百科知识图谱自动生成问题的搜索智能体基准。旨在解决 BrowseComp 等现有基准趋于饱和的问题，包含 544 道问题、11 个领域，已开源。最佳得分仅 34.74%，远低于当前模型在 BrowseComp 上约 90% 的成绩。</div>
+      <a class="card-link" href="https://x.com/Meituan_LongCat/status/2078119654632124547" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#21</div>
+      <div class="card-title"><a href="https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ" target="_blank">"小有所为"大赛一等奖作品"智绘科普"技术拆解：Qwen3.5 多 Agent 协作生成教学动画</a></div>
+      <div class="card-meta">
+        <span class="card-source">通义实验室</span>
+        <span class="card-time">7月17日</span>
+      </div>
+      <div class="card-summary">首届"小有所为"大赛乡村教育一等奖作品"智绘科普"采用 Qwen3.5-397B-A17B 大模型与 Manim 动画引擎，通过多 Agent 分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段。</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#22</div>
+      <div class="card-title"><a href="https://openai.com/index/a-scorecard-for-the-ai-age" target="_blank">OpenAI 提出"有用智能每美元"记分卡，三维度评估 AI 投资回报</a></div>
+      <div class="card-meta">
+        <span class="card-source">OpenAI Blog</span>
+        <span class="card-time">7月17日</span>
+      </div>
+      <div class="card-summary">OpenAI 提出"Useful Intelligence per Dollar"（有用智能每美元）作为衡量 AI 投资回报的核心指标，从完成的有用工作量、成功任务的实际成本、结果可靠性三个维度评估。这是行业首次提出系统性的 AI 投资效率评估框架。</div>
+      <a class="card-link" href="https://openai.com/index/a-scorecard-for-the-ai-age" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="tips">
+  <h2 class="section-title">技巧与观点</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#23</div>
+      <div class="card-title"><a href="https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter" target="_blank">Simon Willison 发布 LLM Cliché Highlighter：反 AI 套话检测工具</a></div>
+      <div class="card-meta">
+        <span class="card-source">Simon Willison 博客</span>
+        <span class="card-time">7月17日</span>
+      </div>
+      <div class="card-summary">Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如"no fluff, no filler, no jargon"这类陈词滥调。帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。</div>
+      <a class="card-link" href="https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#24</div>
+      <div class="card-title"><a href="https://www.36kr.com/p/3901159363905409" target="_blank">商汤林达华：多模态产品正经历从 Copilot 到 Vibe Coding 再到 Agentic Coding 的演进</a></div>
+      <div class="card-meta">
+        <span class="card-source">36氪</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">商汤科技联合创始人林达华指出，多模态产品正经历三阶段长程演进：第一阶段解决真实感生成，第二阶段以自然语言交互并持续修改，第三阶段在真实场景中直接完成"交付级"创作。U1 Pro 的问世标志着行业正式告别单点式生成，全面迈向系统级交付。</div>
+      <a class="card-link" href="https://www.36kr.com/p/3901159363905409" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#25</div>
+      <div class="card-title"><a href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">京东段楠：AI 技术路径分三阶段——数字智能、附身智能、物理智能</a></div>
+      <div class="card-meta">
+        <span class="card-source">科创板日报</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">京东集团副总裁段楠在 WAIC 2026 提出 AI 技术路径三阶段：第一阶段数字智能，以语言、代码和多模态模型为基础，通过智能体自主完成数字世界任务；第二阶段附身智能，将模型部署到手机、电脑、可穿戴设备等终端；第三阶段物理智能，将模型部署到真实物理硬件，自主完成物理世界任务。</div>
+      <a class="card-link" href="https://dy.163.com/article/L25I2T360550B1DU.html" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#26</div>
+      <div class="card-title"><a href="https://www.163.com/dy/article/L24Q4EOJ0518R7MO.html" target="_blank">腾讯张正友：真正的智能需要"感知—身体—行动"闭环验证</a></div>
+      <div class="card-meta">
+        <span class="card-source">腾讯技术工程</span>
+        <span class="card-time">7月18日</span>
+      </div>
+      <div class="card-summary">腾讯首席科学家张正友在 WAIC 2026 指出，今天最聪明的人工智能本质仍是"缸中之脑"——善于逻辑推理和文本生成，却缺乏与物理世界直接互动的闭环。真正的智能需要让语言、视觉、空间认知、身体控制和环境反馈连通起来，在感知-身体-行动的闭环里接受验证。</div>
+      <a class="card-link" href="https://www.163.com/dy/article/L24Q4EOJ0518R7MO.html" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<div class="footer">
+  <p>数据来源：AI HOT 精选、科创板日报、36氪、TechCrunch、The Atlantic、OpenAI 等 · 由 Augusta 整理</p>
+  <p style="margin-top:4px;">AI 晨报 · 2026-07-19</p>
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.card').forEach(c => observer.observe(c));
+
+// Highlight nav on scroll
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-bar a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+  navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
+});
+</script>
+
+</body>
+</html>

@@ -30,17 +30,29 @@ section{margin-bottom:48px}
 .card .summary{font-size:14px;color:var(--m);line-height:1.7;margin-bottom:8px}
 .card .tags{margin-top:8px}
 .kw-tag{display:inline-block;font-size:11px;background:var(--al);color:var(--a);padding:2px 10px;border-radius:10px;margin-right:4px;margin-bottom:4px}
+.type-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:8px;margin-left:6px;font-weight:600}
+.type-tag.video{background:#fff3e0;color:#e65100}
+.type-tag.image{background:#e8f5e9;color:#2e7d32}
+.time-tag{display:inline-block;font-size:10px;color:var(--m);margin-left:6px}
 .num{display:inline-block;background:var(--al);color:var(--a);font-weight:700;font-size:11px;padding:3px 10px;border-radius:8px;margin-right:8px}
 .footer{border-top:1px solid var(--b);padding-top:28px;margin-top:40px;font-size:12px;color:var(--m);text-align:center;line-height:2}
 .back{display:block;margin-bottom:24px;font-size:14px;color:var(--m)}
 .warn-box{background:#fef3ec;border:1px solid #f5d5c0;border-radius:10px;padding:16px 20px;margin:20px 0;font-size:13px;color:#7a4a2a}
 .empty-box{background:#f5f5f5;border:1px dashed #ccc;border-radius:10px;padding:40px 20px;text-align:center;color:var(--m);font-size:14px}
+.insight-box{background:linear-gradient(135deg,#fff5f8 0%,#fef0f5 100%);border-left:4px solid var(--a);border-radius:8px;padding:20px 24px;margin-bottom:14px}
+.insight-box h4{font-size:14px;font-weight:700;color:var(--a);margin-bottom:10px}
+.insight-box ol{margin-left:20px;font-size:14px;color:var(--c);line-height:1.8}
+.insight-box li{margin-bottom:8px}
+.comment-box{background:#fafafa;border-left:3px solid var(--m);padding:10px 14px;margin-top:8px;font-size:13px;color:var(--m);border-radius:4px}
+.comment-box .c-likes{color:var(--a);font-weight:600;margin-right:6px}
 @media (prefers-color-scheme: dark){
   :root{--bg:#1a1410;--c:#e8e0d5;--m:#a89a8a;--a:#f48fb1;--al:#4a2332;--b:#3a2f28}
   body{background:var(--bg);color:var(--c)}
   .card{background:#241d16;border-color:var(--b)}
   nav.sticky{background:rgba(26,20,16,0.95)}
   .warn-box{background:#3a2a1e;border-color:#5a3a28;color:#d5a888}
+  .insight-box{background:#2a1f28;border-left-color:var(--a)}
+  .comment-box{background:#1f1a14}
 }
 </style>
 </head>
@@ -56,9 +68,11 @@ section{margin-bottom:48px}
   </div>
 </div>
 <nav class="sticky">
+  <a href="#insights">启发</a>
   <a href="#influencer">大V动态</a>
   <a href="#product">产品信号</a>
   <a href="#pain">用户痛点</a>
+  <a href="#authors">活跃作者</a>
   <a href="#keywords">关键词</a>
   <a href="#hypothesis">假设验证</a>
   <a href="#all">全部</a>
@@ -66,39 +80,45 @@ section{margin-bottom:48px}
 <main>
 <a class="back" href="../">← 返回首页</a>
 
+<section id="insights">
+  <div class="sl">INSIGHTS</div>
+  <h2 class="st">🎯 对禾川的启发</h2>
+  <div class="empty-box">今日样本不足，未生成行动建议</div>
+</section>
+
 <section id="influencer">
   <div class="sl">INFLUENCER</div>
   <h2 class="st">📣 大V动态</h2>
   <div class="card">
-  <h3><span class="num">01</span>香水空瓶得亏没扔，1L都能给续满？！</h3>
+  <h3><span class="num">01</span>香水空瓶得亏没扔，1L都能给续满？！<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:3123de6 · ❤️ 7.4k · ⭐ 688 · 💬 60</div>
-  <div class="summary">#香水分享[话题]# #香水瓶也有高颜值[话题]# #香味听得见[话题]# #沉浸式[话题]# #续杯[话题]# #香水refill[话题]# #香水小样[话题]# #今天穿什么香[话题]# #补货[话题]#</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 710</span>对啊，会特地调色的。出厂无调色一般就白色或者浅黄浅绿深棕褐色。那种很漂亮的颜色都是调的。</div><div class="comment-box"><span class="c-likes">❤️ 45</span>这个应该不会挥发，它的瓶口是像装化学试剂那样的磨砂玻璃材质，仔细存放应该不会挥发，可能博主在开玩笑吧</div></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a4e06bb000000001503c8b7" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">02</span>梨教你如何使用香水补充装续杯Your Turn😍</h3>
+  <h3><span class="num">02</span>梨教你如何使用香水补充装续杯Your Turn😍<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:a21dd3a · ❤️ 1.6k · ⭐ 274 · 💬 52</div>
-  <div class="summary">#billieeilish_fanpage[话题]# #Billieeilish[话题]# #Billie[话题]##我要火[话题]# #billie碧梨[话题]# #Billie[话题]##碧梨[话题]##碧梨🍐[话题]# #碧梨bil…</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 22</span>完全没有！超级甜美！</div><div class="comment-box"><span class="c-likes">❤️ 20</span>有种mean girl的感觉</div></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/695fe9fc000000000b008af1" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">03</span>Vlog沉浸式香水续杯📦</h3>
+  <h3><span class="num">03</span>Vlog沉浸式香水续杯📦<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:ec06c5d · ❤️ 673 · ⭐ 180 · 💬 6</div>
-  <div class="summary">#香水续杯[话题]# #香水[话题]# #香水分享[话题]#</div>
+  <div class="summary"><span style="color:var(--m);font-style:italic">正文为话题标签，无实质内容</span></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/67246a1f000000001d03a09d" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">04</span>Tesla女车主| 夏日多巴胺香薰谁还没有?</h3>
+  <h3><span class="num">04</span>Tesla女车主| 夏日多巴胺香薰谁还没有?<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:ce2bc22 · ❤️ 273 · ⭐ 195 · 💬 99</div>
-  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光…</div>
+  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光玫瑰加巨峰葡萄的味道，喜欢葡萄味道的闭眼冲 ｜芝芝芒芒｜ 百…</div>
   <div class="tags"><span class="kw-tag">车载香薰</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">05</span>解锁香水补充液打开方式</h3>
+  <h3><span class="num">05</span>解锁香水补充液打开方式<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:ad69661 · ❤️ 220 · ⭐ 126 · 💬 39</div>
   <div class="summary">终于知道怎么打开了，旋转一下开关即可，简单方便呢，我这瓶是拉夫劳伦地球系列的普罗旺斯鼠尾草，有想要体验分装的吗？太大支用不完#大牌香水补充液[话题]#</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
@@ -110,86 +130,77 @@ section{margin-bottom:48px}
   <div class="sl">PRODUCT</div>
   <h2 class="st">🛍 产品信号</h2>
   <div class="card">
-  <h3><span class="num">01</span>香水空瓶得亏没扔，1L都能给续满？！</h3>
-  <div class="meta">👤 anon:3123de6 · ❤️ 7.4k · ⭐ 688 · 💬 60</div>
-  <div class="summary">#香水分享[话题]# #香水瓶也有高颜值[话题]# #香味听得见[话题]# #沉浸式[话题]# #续杯[话题]# #香水refill[话题]# #香水小样[话题]# #今天穿什么香[话题]# #补货[话题]#</div>
-  <div class="tags"><span class="kw-tag">香水替换装</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a4e06bb000000001503c8b7" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
-<div class="card">
-  <h3><span class="num">02</span>梨教你如何使用香水补充装续杯Your Turn😍</h3>
-  <div class="meta">👤 anon:a21dd3a · ❤️ 1.6k · ⭐ 274 · 💬 52</div>
-  <div class="summary">#billieeilish_fanpage[话题]# #Billieeilish[话题]# #Billie[话题]##我要火[话题]# #billie碧梨[话题]# #Billie[话题]##碧梨[话题]##碧梨🍐[话题]# #碧梨bil…</div>
-  <div class="tags"><span class="kw-tag">香水替换装</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/695fe9fc000000000b008af1" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
-<div class="card">
-  <h3><span class="num">03</span>Vlog沉浸式香水续杯📦</h3>
-  <div class="meta">👤 anon:ec06c5d · ❤️ 673 · ⭐ 180 · 💬 6</div>
-  <div class="summary">#香水续杯[话题]# #香水[话题]# #香水分享[话题]#</div>
-  <div class="tags"><span class="kw-tag">香水替换装</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/67246a1f000000001d03a09d" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
-<div class="card">
-  <h3><span class="num">04</span>Tesla女车主| 夏日多巴胺香薰谁还没有?</h3>
-  <div class="meta">👤 anon:ce2bc22 · ❤️ 273 · ⭐ 195 · 💬 99</div>
-  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光…</div>
-  <div class="tags"><span class="kw-tag">车载香薰</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
-<div class="card">
-  <h3><span class="num">05</span>解锁香水补充液打开方式</h3>
-  <div class="meta">👤 anon:ad69661 · ❤️ 220 · ⭐ 126 · 💬 39</div>
-  <div class="summary">终于知道怎么打开了，旋转一下开关即可，简单方便呢，我这瓶是拉夫劳伦地球系列的普罗旺斯鼠尾草，有想要体验分装的吗？太大支用不完#大牌香水补充液[话题]#</div>
-  <div class="tags"><span class="kw-tag">香水替换装</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6769861d000000000902e427" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
-<div class="card">
-  <h3><span class="num">06</span>Vlog沉浸式香水续杯📦</h3>
+  <h3><span class="num">01</span>Vlog沉浸式香水续杯📦<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:77d3bd5 · ❤️ 214 · ⭐ 61 · 💬 3</div>
-  <div class="summary">#香水分享[话题]# #香水续杯[话题]# #香水[话题]# #vlog我的一天[话题]# #化妆就是玩儿[话题]# #解压视频[话题]#</div>
+  <div class="summary"><span style="color:var(--m);font-style:italic">正文为话题标签，无实质内容</span></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/688391f4000000000d01a2fd" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
-</section>
-
-<section id="pain">
-  <div class="sl">PAIN POINTS</div>
-  <h2 class="st">💡 用户痛点（简化产品机会）</h2>
-  <div class="card">
-  <h3><span class="num">01</span>香水空瓶得亏没扔，1L都能给续满？！</h3>
-  <div class="meta">👤 anon:3123de6 · ❤️ 7.4k · ⭐ 688 · 💬 60</div>
-  <div class="summary">#香水分享[话题]# #香水瓶也有高颜值[话题]# #香味听得见[话题]# #沉浸式[话题]# #续杯[话题]# #香水refill[话题]# #香水小样[话题]# #今天穿什么香[话题]# #补货[话题]#</div>
-  <div class="tags"><span class="kw-tag">香水替换装</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a4e06bb000000001503c8b7" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
 <div class="card">
-  <h3><span class="num">02</span>解锁香水补充液打开方式</h3>
-  <div class="meta">👤 anon:ad69661 · ❤️ 220 · ⭐ 126 · 💬 39</div>
-  <div class="summary">终于知道怎么打开了，旋转一下开关即可，简单方便呢，我这瓶是拉夫劳伦地球系列的普罗旺斯鼠尾草，有想要体验分装的吗？太大支用不完#大牌香水补充液[话题]#</div>
-  <div class="tags"><span class="kw-tag">香水替换装</span></div>
-  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6769861d000000000902e427" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
-</div>
-<div class="card">
-  <h3><span class="num">03</span>巴黎世家香水秒变名创优品</h3>
+  <h3><span class="num">02</span>巴黎世家香水秒变名创优品<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:0fdec1c · ❤️ 207 · ⭐ 52 · 💬 21</div>
   <div class="summary">因为原瓶100ML2300，替换装200ML1985，喜欢量大的我选择了替换瓶，发现他的替换头和我现在在用的香水分装瓶不一样。 随手拿了一个miniso喷壶的头按上，严丝合缝的 舒服了</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/691311c0000000000402a308" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">04</span>一生要强的中国女人什么招都有</h3>
+  <h3><span class="num">03</span>一生要强的中国女人什么招都有<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:7bba9e5 · ❤️ 164 · ⭐ 106 · 💬 56</div>
-  <div class="summary">娇兰这200ml花草水语淡香水替换装怎么用？ Anyway，她这个介绍是，用这个原装的嘴儿往原装瓶里管，反正我也没看明白，我寻思，那灌一次得漏半瓶吧…这点能难倒咱中国女人？必须不能，办法总比困难多，随便找个喷雾瓶换上不就得了…可劲儿喷就完…</div>
+  <div class="summary">娇兰这200ml花草水语淡香水替换装怎么用？ Anyway，她这个介绍是，用这个原装的嘴儿往原装瓶里管，反正我也没看明白，我寻思，那灌一次得漏半瓶吧…这点能难倒咱中国女人？必须不能，办法总比困难多，随便找个喷雾瓶换上不就得了…可劲儿喷就完事儿了！ 哦忘了说这个香调了，她这个玫瑰玫瑰就是那种标准的荔…</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6862bdda000000001c032b94" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">05</span>怎样花50ml的钱买60ml的香奈儿嘉柏丽尔香水</h3>
+  <h3><span class="num">04</span>怎样花50ml的钱买60ml的香奈儿嘉柏丽尔香水<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:5831dd7 · ❤️ 149 · ⭐ 74 · 💬 38</div>
-  <div class="summary">小香嘉柏丽尔天性50ml的香水专柜¥1180 替换装20ml*3＝60ml的专柜¥1180 但是替换装只有一个喷头，如果不装进原装的喷壳里使用并不方便 家里祖马龙香水有吧，把喷头拆下来，挪到天性替换装上面[赞R]绝绝子 完美适配[害羞R]…</div>
+  <div class="summary">小香嘉柏丽尔天性50ml的香水专柜¥1180 替换装20ml*3＝60ml的专柜¥1180 但是替换装只有一个喷头，如果不装进原装的喷壳里使用并不方便 家里祖马龙香水有吧，把喷头拆下来，挪到天性替换装上面[赞R]绝绝子 完美适配[害羞R] #香奈儿嘉柏丽儿香水天性[话题]#</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/65a476ff000000001d027aaa" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">05</span>爱马仕尼罗河花园这么便宜了！！！<span class="type-tag video">📹 视频</span></h3>
+  <div class="meta">👤 anon:a8bd66e · ❤️ 82 · ⭐ 32 · 💬 25</div>
+  <div class="summary">虽然便宜但是好闻，也特适合夏天 不想花多钱又想买点香水过夏天的这个味道可以选择，这个价格完全可以 #香水分装[话题]# #香水分享[话题]# #香水测评[话题]# #如果香水有故事[话题]# #香水控[话题]# #真爱香水[话题]# #爱马仕[话题]# #香水瓶也有颜值[话题]# #香水[话题]#…</div>
+  <div class="tags"><span class="kw-tag">香水替换装</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a2548e4000000003600105d" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">06</span>豪车车载香薰🚗｜把白茶茶室搬进车里🍵<span class="type-tag image">📷 图文</span></h3>
+  <div class="meta">👤 anon:7aef504 · ❤️ 47 · ⭐ 19 · 💬 50</div>
+  <div class="summary">谁懂啊！之前换过各式各样的车载香薰，放在车里几乎闻不到香气，一度以为车子和香气无缘😭直到入手洛瑞欧的这款鼠尾草白茶香包，彻底改观！一拉开车门香气缓缓散开，清透温润不闷不刺鼻，氛围感直接拉满✨ 层次丰富的香调，仿佛沉浸式置身安静茶室： ▫️前调：白茶、荔枝、紫罗兰叶，清甜柔和，快速消散车内沉闷异味 …</div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58ab7f000000001d022252" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+</section>
+
+<section id="pain">
+  <div class="sl">PAIN POINTS</div>
+  <h2 class="st">💡 用户痛点（简化产品机会）</h2>
+  <div class="empty-box">今日暂无痛点信号</div>
+</section>
+
+<section id="authors">
+  <div class="sl">AUTHORS</div>
+  <h2 class="st">👥 活跃作者</h2>
+  <div class="card">
+  <h3><span class="num">01</span>👤 anon:3123de6af1f <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 7.4k · 平均 7.4k）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a4e06bb000000001503c8b7" target="_blank" rel="noopener noreferrer">香水空瓶得亏没扔，1L都能给续满？！</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">02</span>👤 anon:a21dd3a7a20 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 1.6k · 平均 1.6k）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/695fe9fc000000000b008af1" target="_blank" rel="noopener noreferrer">梨教你如何使用香水补充装续杯Your Turn😍</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">03</span>👤 anon:ec06c5d19d7 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 673 · 平均 673）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/67246a1f000000001d03a09d" target="_blank" rel="noopener noreferrer">Vlog沉浸式香水续杯📦</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">04</span>👤 anon:ce2bc220351 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 273 · 平均 273）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">Tesla女车主| 夏日多巴胺香薰谁还没有?</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">05</span>👤 anon:ad696614759 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 220 · 平均 220）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6769861d000000000902e427" target="_blank" rel="noopener noreferrer">解锁香水补充液打开方式</a></div>
 </div>
 </section>
 
@@ -234,84 +245,84 @@ section{margin-bottom:48px}
   <div class="sl">ALL</div>
   <h2 class="st">📚 全部精品笔记</h2>
   <div class="card">
-  <h3><span class="num">01</span>香水空瓶得亏没扔，1L都能给续满？！</h3>
+  <h3><span class="num">01</span>香水空瓶得亏没扔，1L都能给续满？！<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:3123de6 · ❤️ 7.4k · ⭐ 688 · 💬 60</div>
-  <div class="summary">#香水分享[话题]# #香水瓶也有高颜值[话题]# #香味听得见[话题]# #沉浸式[话题]# #续杯[话题]# #香水refill[话题]# #香水小样[话题]# #今天穿什么香[话题]# #补货[话题]#</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 710</span>对啊，会特地调色的。出厂无调色一般就白色或者浅黄浅绿深棕褐色。那种很漂亮的颜色都是调的。</div><div class="comment-box"><span class="c-likes">❤️ 45</span>这个应该不会挥发，它的瓶口是像装化学试剂那样的磨砂玻璃材质，仔细存放应该不会挥发，可能博主在开玩笑吧</div></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a4e06bb000000001503c8b7" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">02</span>梨教你如何使用香水补充装续杯Your Turn😍</h3>
+  <h3><span class="num">02</span>梨教你如何使用香水补充装续杯Your Turn😍<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:a21dd3a · ❤️ 1.6k · ⭐ 274 · 💬 52</div>
-  <div class="summary">#billieeilish_fanpage[话题]# #Billieeilish[话题]# #Billie[话题]##我要火[话题]# #billie碧梨[话题]# #Billie[话题]##碧梨[话题]##碧梨🍐[话题]# #碧梨bil…</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 22</span>完全没有！超级甜美！</div><div class="comment-box"><span class="c-likes">❤️ 20</span>有种mean girl的感觉</div></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/695fe9fc000000000b008af1" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">03</span>Vlog沉浸式香水续杯📦</h3>
+  <h3><span class="num">03</span>Vlog沉浸式香水续杯📦<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:ec06c5d · ❤️ 673 · ⭐ 180 · 💬 6</div>
-  <div class="summary">#香水续杯[话题]# #香水[话题]# #香水分享[话题]#</div>
+  <div class="summary"><span style="color:var(--m);font-style:italic">正文为话题标签，无实质内容</span></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/67246a1f000000001d03a09d" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">04</span>Tesla女车主| 夏日多巴胺香薰谁还没有?</h3>
+  <h3><span class="num">04</span>Tesla女车主| 夏日多巴胺香薰谁还没有?<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:ce2bc22 · ❤️ 273 · ⭐ 195 · 💬 99</div>
-  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光…</div>
+  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光玫瑰加巨峰葡萄的味道，喜欢葡萄味道的闭眼冲 ｜芝芝芒芒｜ 百…</div>
   <div class="tags"><span class="kw-tag">车载香薰</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">05</span>解锁香水补充液打开方式</h3>
+  <h3><span class="num">05</span>解锁香水补充液打开方式<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:ad69661 · ❤️ 220 · ⭐ 126 · 💬 39</div>
   <div class="summary">终于知道怎么打开了，旋转一下开关即可，简单方便呢，我这瓶是拉夫劳伦地球系列的普罗旺斯鼠尾草，有想要体验分装的吗？太大支用不完#大牌香水补充液[话题]#</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6769861d000000000902e427" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">06</span>Vlog沉浸式香水续杯📦</h3>
+  <h3><span class="num">06</span>Vlog沉浸式香水续杯📦<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:77d3bd5 · ❤️ 214 · ⭐ 61 · 💬 3</div>
-  <div class="summary">#香水分享[话题]# #香水续杯[话题]# #香水[话题]# #vlog我的一天[话题]# #化妆就是玩儿[话题]# #解压视频[话题]#</div>
+  <div class="summary"><span style="color:var(--m);font-style:italic">正文为话题标签，无实质内容</span></div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/688391f4000000000d01a2fd" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">07</span>巴黎世家香水秒变名创优品</h3>
+  <h3><span class="num">07</span>巴黎世家香水秒变名创优品<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:0fdec1c · ❤️ 207 · ⭐ 52 · 💬 21</div>
   <div class="summary">因为原瓶100ML2300，替换装200ML1985，喜欢量大的我选择了替换瓶，发现他的替换头和我现在在用的香水分装瓶不一样。 随手拿了一个miniso喷壶的头按上，严丝合缝的 舒服了</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/691311c0000000000402a308" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">08</span>一生要强的中国女人什么招都有</h3>
+  <h3><span class="num">08</span>一生要强的中国女人什么招都有<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:7bba9e5 · ❤️ 164 · ⭐ 106 · 💬 56</div>
-  <div class="summary">娇兰这200ml花草水语淡香水替换装怎么用？ Anyway，她这个介绍是，用这个原装的嘴儿往原装瓶里管，反正我也没看明白，我寻思，那灌一次得漏半瓶吧…这点能难倒咱中国女人？必须不能，办法总比困难多，随便找个喷雾瓶换上不就得了…可劲儿喷就完…</div>
+  <div class="summary">娇兰这200ml花草水语淡香水替换装怎么用？ Anyway，她这个介绍是，用这个原装的嘴儿往原装瓶里管，反正我也没看明白，我寻思，那灌一次得漏半瓶吧…这点能难倒咱中国女人？必须不能，办法总比困难多，随便找个喷雾瓶换上不就得了…可劲儿喷就完事儿了！ 哦忘了说这个香调了，她这个玫瑰玫瑰就是那种标准的荔…</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6862bdda000000001c032b94" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">09</span>怎样花50ml的钱买60ml的香奈儿嘉柏丽尔香水</h3>
+  <h3><span class="num">09</span>怎样花50ml的钱买60ml的香奈儿嘉柏丽尔香水<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:5831dd7 · ❤️ 149 · ⭐ 74 · 💬 38</div>
-  <div class="summary">小香嘉柏丽尔天性50ml的香水专柜¥1180 替换装20ml*3＝60ml的专柜¥1180 但是替换装只有一个喷头，如果不装进原装的喷壳里使用并不方便 家里祖马龙香水有吧，把喷头拆下来，挪到天性替换装上面[赞R]绝绝子 完美适配[害羞R]…</div>
+  <div class="summary">小香嘉柏丽尔天性50ml的香水专柜¥1180 替换装20ml*3＝60ml的专柜¥1180 但是替换装只有一个喷头，如果不装进原装的喷壳里使用并不方便 家里祖马龙香水有吧，把喷头拆下来，挪到天性替换装上面[赞R]绝绝子 完美适配[害羞R] #香奈儿嘉柏丽儿香水天性[话题]#</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/65a476ff000000001d027aaa" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">10</span>爱马仕尼罗河花园这么便宜了！！！</h3>
+  <h3><span class="num">10</span>爱马仕尼罗河花园这么便宜了！！！<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:a8bd66e · ❤️ 82 · ⭐ 32 · 💬 25</div>
-  <div class="summary">虽然便宜但是好闻，也特适合夏天 不想花多钱又想买点香水过夏天的这个味道可以选择，这个价格完全可以 #香水分装[话题]# #香水分享[话题]# #香水测评[话题]# #如果香水有故事[话题]# #香水控[话题]# #真爱香水[话题]# #爱…</div>
+  <div class="summary">虽然便宜但是好闻，也特适合夏天 不想花多钱又想买点香水过夏天的这个味道可以选择，这个价格完全可以 #香水分装[话题]# #香水分享[话题]# #香水测评[话题]# #如果香水有故事[话题]# #香水控[话题]# #真爱香水[话题]# #爱马仕[话题]# #香水瓶也有颜值[话题]# #香水[话题]#…</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a2548e4000000003600105d" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">11</span>豪车车载香薰🚗｜把白茶茶室搬进车里🍵</h3>
+  <h3><span class="num">11</span>豪车车载香薰🚗｜把白茶茶室搬进车里🍵<span class="type-tag image">📷 图文</span></h3>
   <div class="meta">👤 anon:7aef504 · ❤️ 47 · ⭐ 19 · 💬 50</div>
-  <div class="summary">谁懂啊！之前换过各式各样的车载香薰，放在车里几乎闻不到香气，一度以为车子和香气无缘😭直到入手洛瑞欧的这款鼠尾草白茶香包，彻底改观！一拉开车门香气缓缓散开，清透温润不闷不刺鼻，氛围感直接拉满✨ 层次丰富的香调，仿佛沉浸式置身安静茶室： ▫️…</div>
+  <div class="summary">谁懂啊！之前换过各式各样的车载香薰，放在车里几乎闻不到香气，一度以为车子和香气无缘😭直到入手洛瑞欧的这款鼠尾草白茶香包，彻底改观！一拉开车门香气缓缓散开，清透温润不闷不刺鼻，氛围感直接拉满✨ 层次丰富的香调，仿佛沉浸式置身安静茶室： ▫️前调：白茶、荔枝、紫罗兰叶，清甜柔和，快速消散车内沉闷异味 …</div>
   <div class="tags"><span class="kw-tag">车载香薰</span></div>
   <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58ab7f000000001d022252" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
 </div>
 <div class="card">
-  <h3><span class="num">12</span>娇兰花草水语补充装！适配muji喷头！</h3>
+  <h3><span class="num">12</span>娇兰花草水语补充装！适配muji喷头！<span class="type-tag video">📹 视频</span></h3>
   <div class="meta">👤 anon:c7e52f9 · ❤️ 37 · ⭐ 17 · 💬 23</div>
   <div class="summary">抱着试试看的心态下单了muji的喷头，超级适配，喷雾也超细，爱了！！！#花草水语[话题]#</div>
   <div class="tags"><span class="kw-tag">香水替换装</span></div>
@@ -320,7 +331,7 @@ section{margin-bottom:48px}
 </section>
 
 <div class="footer">
-  数据来源：小红书 · 采集时间：2026-07-18 13:10<br>
+  数据来源：小红书 · 采集时间：2026-07-18 18:37<br>
   本快讯由 Hermes 自动生成 · 禾川香精贸易商内部参考
 </div>
 </main>

@@ -32,6 +32,9 @@ a:hover { color: #0066cc; }
 .pdf-nav button { background: #f3f4f6; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; color: #555; font-family: inherit; }
 .pdf-nav button:hover:not(:disabled) { background: #e5e7eb; color: #1a1a1a; }
 .pdf-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+.pdf-sound { display: block; width: 100%; margin-top: 12px; background: #2563eb; color: #fff; border: none; padding: 10px; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 600; font-family: inherit; }
+.pdf-sound:hover:not(:disabled) { background: #1d4ed8; }
+.pdf-sound:disabled { opacity: 0.4; cursor: not-allowed; }
 
 /* 右侧内容 */
 .content-panel { display: flex; flex-direction: column; gap: 16px; }
@@ -104,6 +107,7 @@ a:hover { color: #0066cc; }
         <span class="pdf-ipa" id="pdf-ipa">/i:/</span>
       </div>
       <div class="pdf-letters" id="pdf-letters">ee · ea · e · ie · i</div>
+      <button id="play-sound" class="pdf-sound" disabled>🔊 听示范词</button>
       <div class="pdf-nav">
         <button id="prev-day">← 上一天</button>
         <button id="next-day">下一天 →</button>
@@ -200,6 +204,19 @@ a:hover { color: #0066cc; }
     setTimeout(finish, est + 500);
   }
 
+  // 字位→可朗读文本：拼读时读「字母组合」而非「音标符号」
+  // TTS 只能读文本，把音标符号当文本读会完全错：
+  //   "/tr/" → 念成「特啊」；"/iː/"(写作 i:) → 念成「爱/ai」
+  // 改用 letter 字段（字位）："tr" → /tr/ 连读，"ee" → /iː/，才是正确的自然拼读
+  var GRAPHEME_FIX = { 'c': 'k' }; // 个别单字母修正（c 在拼读词中多读 /k/）
+  function graphemeText(b) {
+    if (!b) return '';
+    var L = (b.letter != null) ? String(b.letter) : '';
+    if (!L && b.phon) L = String(b.phon).replace(/[\/\[\]]/g, '');
+    if (L.length === 1 && GRAPHEME_FIX[L]) L = GRAPHEME_FIX[L];
+    return L;
+  }
+
   // 工具：拼读（按音节依次播放，最后连起来读）
   // 用 onend 链式播放而非固定定时器，拼读更连贯自然
   function speakBreakdown(breakdown, fullWord, callback) {
@@ -211,7 +228,7 @@ a:hover { color: #0066cc; }
         setTimeout(function() { speakOne(fullWord, { rate: 0.9 }, function() { if (callback) callback(); }); }, 280);
         return;
       }
-      var part = breakdown[i].phon.replace(/[\/\[\]]/g, '');
+      var part = graphemeText(breakdown[i]);
       speakOne(part, { rate: 0.85 }, function() {
         i++;
         setTimeout(playPart, 160); // 音节间轻微停顿
@@ -277,6 +294,12 @@ a:hover { color: #0066cc; }
     if (!detail) return;
     grid.innerHTML = '';
     document.getElementById('word-count').textContent = '（' + detail.words.length + ' 词）';
+    // 卡片「听示范词」：播放当天第一个单词（含本日目标音的代表词）
+    var ps = document.getElementById('play-sound');
+    if (ps && detail.words && detail.words.length) {
+      ps.disabled = false;
+      ps.onclick = function() { pulse(this); speak(detail.words[0].word); };
+    }
     detail.words.forEach(function(w, idx) {
       var btn = document.createElement('button');
       btn.className = 'word-btn';
@@ -302,9 +325,9 @@ a:hover { color: #0066cc; }
 
     // 渲染详情
     var breakdownHtml = (w.breakdown || []).map(function(b) {
-      return '<div class="syllable" data-phon="' + b.phon + '">' +
-             '<div class="syllable-letter">' + b.letter + '</div>' +
-             '<div class="syllable-phon">' + b.phon + '</div>' +
+      return '<div class="syllable" data-letter="' + escapeAttr(b.letter || '') + '" data-phon="' + escapeAttr(b.phon || '') + '">' +
+             '<div class="syllable-letter">' + (b.letter || '') + '</div>' +
+             '<div class="syllable-phon">' + (b.phon || '') + '</div>' +
              '</div>';
     }).join('');
 
@@ -336,9 +359,9 @@ a:hover { color: #0066cc; }
     if (sentenceEn) {
       document.getElementById('d-sentence').onclick = function() { pulse(this); speak(sentenceEn, { rate: 0.9 }); };
     }
-    // 拼读单个音节
+    // 拼读单个音节（点字位，读字母组合发音，而非音标符号）
     document.querySelectorAll('.syllable').forEach(function(s) {
-      s.onclick = function() { pulse(this); speak(this.dataset.phon.replace(/[\/\[\]]/g, ''), { rate: 0.85 }); };
+      s.onclick = function() { pulse(this); speak(this.dataset.letter || s.dataset.phon.replace(/[\/\[\]]/g, ''), { rate: 0.85 }); };
     });
     // 例句点击
     var sb = document.querySelector('.sentence-box');

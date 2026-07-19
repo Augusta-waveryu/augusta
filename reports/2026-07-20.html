@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-20</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>AI 晨报 · 2026-07-20</h1>
+  <p class="date">星期一 · 覆盖 48 小时 · 精选 26 条</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">模型发布</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">产品更新</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">行业动态</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">论文研究</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">技巧观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models" class="active">模型</a>
+  <a href="#products">产品</a>
+  <a href="#industry">行业</a>
+  <a href="#papers">论文</a>
+  <a href="#tips">观点</a>
+</nav>
+
+<main>
+
+<a class="back-link" href="../">← 返回首页</a>
+
+<section class="section" id="models">
+  <h2 class="section-title">模型发布 / 更新</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#01</div>
+      <div class="card-title"><a href="https://x.com/Alibaba_Qwen/status/2078754377473601787" target="_blank">阿里云发布 Qwen3.8，2.4T 参数开源在即</a></div>
+      <div class="card-meta">
+        <span class="card-source">X / 通义千问</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">阿里发布 Qwen3.8-Max-Preview，总参数量达 2.4T，预览版已上线 Token Plan、Qoder 和 QoderWork。官方称该模型仅次于 Fable 5，即将开放权重下载。</div>
+      <a class="card-link" href="https://x.com/Alibaba_Qwen/status/2078754377473601787" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#02</div>
+      <div class="card-title"><a href="https://x.com/OpenBMB/status/2078839529591759025" target="_blank">面壁智能开源 MiniCPM-Robot 具身智能模型系列</a></div>
+      <div class="card-meta">
+        <span class="card-source">X / OpenBMB</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">面壁智能开源首个具身 AI 模型系列 MiniCPM-Robot，包含 1.5B 参数通用 VLA 模型 MiniCPM-RobotManip 和用于目标跟踪的 MiniCPM-RobotTrack，同时发布高性能推理框架 PhyAI。</div>
+      <a class="card-link" href="https://x.com/OpenBMB/status/2078839529591759025" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#03</div>
+      <div class="card-title"><a href="https://mp.weixin.qq.com/s/rjFxrUylyGMqa5QtgypCdw" target="_blank">MiniCPM5-2B 发布：4B 以下全球性能第一，适配 9 款芯片</a></div>
+      <div class="card-meta">
+        <span class="card-source">面壁智能</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">面壁智能联合 OpenBMB 发布端侧模型 MiniCPM5-2B，在 AA-Index 榜单取得 4B 以下模型最高分，原生支持混合思考与 512K 上下文，已完成华为昇腾、英伟达等 9 款芯片 Day0 适配。</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/rjFxrUylyGMqa5QtgypCdw" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#04</div>
+      <div class="card-title"><a href="https://mp.weixin.qq.com/s/LidvGePhOOoUY3KTor_w9g" target="_blank">昆仑万维宣布 2026 为"世界模型元年"，发布 Matrix-Game 3.5</a></div>
+      <div class="card-meta">
+        <span class="card-source">昆仑万维</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">昆仑万维董事长方汉在 WAIC 2026 宣布 2026 年为"世界模型元年"，发布 Matrix-Game 3.5 世界模型、Mureka v9.5 与 O3 音乐模型。5B 模型在 720p 分辨率下单卡可达 20FPS 实时生成。</div>
+      <a class="card-link" href="https://mp.weixin.qq.com/s/LidvGePhOOoUY3KTor_w9g" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#05</div>
+      <div class="card-title"><a href="https://workshop.cjpais.com/projects/transcribe-cpp" target="_blank">Feyn AI 发布 SQRL 文本转 SQL 模型族，查询前先探查数据库</a></div>
+      <div class="card-meta">
+        <span class="card-source">Feyn AI</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Feyn AI 发布 SQRL 文本转 SQL 模型族，创新性地在生成查询前先探查数据库 schema，提升复杂查询的准确率。面向企业数据分析和 BI 场景。</div>
+      <a class="card-link" href="https://workshop.cjpais.com/projects/transcribe-cpp" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="products">
+  <h2 class="section-title">产品发布 / 更新</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#06</div>
+      <div class="card-title"><a href="https://x.com/thsottiaux/status/2078697631019303273" target="_blank">ChatGPT Work 功能扩展：建站、邮件、文档处理</a></div>
+      <div class="card-meta">
+        <span class="card-source">X / Tibo</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">ChatGPT Work 功能正式上线，支持创建和托管网站、管理电子邮件、总结海量文档、制作文档/表格/幻灯片。已包含在 Plus、Pro、Business 和 Enterprise 套餐中。</div>
+      <a class="card-link" href="https://x.com/thsottiaux/status/2078697631019303273" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#07</div>
+      <div class="card-title"><a href="https://workshop.cjpais.com/projects/transcribe-cpp" target="_blank">transcribe.cpp 发布：跨平台语音转录库，支持 16 个 ASR 模型族</a></div>
+      <div class="card-meta">
+        <span class="card-source">Hacker News</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">transcribe.cpp v0.1.0 发布，基于 ggml 的语音转录库，支持 16 个 ASR 模型族（60+ 模型），通过 Vulkan、Metal、CUDA 和 TinyBLAS 实现 GPU 加速。</div>
+      <a class="card-link" href="https://workshop.cjpais.com/projects/transcribe-cpp" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#08</div>
+      <div class="card-title"><a href="https://www.aliyun.com" target="_blank">阿里 Token Plan 个人版发布，每月 39 元起体验 Qwen3.8-Max-Preview</a></div>
+      <div class="card-meta">
+        <span class="card-source">阿里云</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">阿里云推出个人 Token 计划，限时优惠每月 39 元起，覆盖多模态。Qoder 上线 Qwen3.8-Max-Preview 限时 1 折、夜间 0.2 折起。</div>
+      <a class="card-link" href="https://www.aliyun.com" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#09</div>
+      <div class="card-title"><a href="https://testflight.apple.com" target="_blank">Google Flow iOS 版 TestFlight 上线</a></div>
+      <div class="card-meta">
+        <span class="card-source">Google</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Google Flow iOS 版正式开启 TestFlight 测试，这是 Google 面向 AI 工作流的新产品，支持移动端智能体任务编排和自动化。</div>
+      <a class="card-link" href="https://testflight.apple.com" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#10</div>
+      <div class="card-title"><a href="https://openai.com" target="_blank">OpenAI 将 Codex 上下文窗口从 37.2 万缩减至 27.2 万 token</a></div>
+      <div class="card-meta">
+        <span class="card-source">OpenAI</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">OpenAI 对 Codex 模型进行工程优化，将上下文窗口从 37.2 万 token 缩减至 27.2 万 token，在保持性能的同时降低推理成本和延迟。</div>
+      <a class="card-link" href="https://openai.com" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#11</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">深空矩阵发布"星环计划"，部署约 210 颗卫星构建太空 AI 算力星座</a></div>
+      <div class="card-meta">
+        <span class="card-source">深空矩阵</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">深空矩阵发布"星环计划"第一阶段，计划部署约 210 颗卫星构建太空 AI 算力星座，为偏远地区和太空应用提供分布式 AI 推理能力。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="industry">
+  <h2 class="section-title">行业动态</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#12</div>
+      <div class="card-title"><a href="https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit" target="_blank">黄仁勋访日：Nvidia 联手日本打造物理 AI 时代</a></div>
+      <div class="card-meta">
+        <span class="card-source">TechCrunch</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Nvidia CEO 黄仁勋在 7 月 15-16 日访日期间，宣布为日本建设"Vera Rubin AI 工厂"，配备 13,750 颗 Vera CPU 和 27,500 颗 Rubin GPU，预计 2028 年投运。</div>
+      <a class="card-link" href="https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#13</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">Kimi K3 需求爆棚，月之暗面暂停 C 端新用户订阅</a></div>
+      <div class="card-meta">
+        <span class="card-source">月之暗面</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Kimi K3 上线仅两天即成为 OpenRouter 第 10 大模型，基础设施不堪重负。月之暗面宣布暂停 C 端新用户订阅，拆分会员计划，全力保障已有用户体验。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#14</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">世界人工智能合作组织在上海成立，29 国签署协定</a></div>
+      <div class="card-meta">
+        <span class="card-source">新华社</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">在 WAIC 2026 期间，29 个国家正式签署协定，成立世界人工智能合作组织，总部设于上海。中国承诺五年内向全球南方国家提供 5,000 个 AI 培训名额。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#15</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">Grok 网站访问量突破 15 亿次</a></div>
+      <div class="card-meta">
+        <span class="card-source">xAI</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Grok 网站访问量突破 15 亿次，xAI 的独立用户规模持续高速增长。Grok 4.5 同时领跑 VulcanBench 新编程基准，显示技术与流量同步提升。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#16</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">非营利组织 Current AI 正构建开放、公共的 AI 基础设施</a></div>
+      <div class="card-meta">
+        <span class="card-source">Current AI</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">非营利组织 Current AI 启动开放公共 AI 基础设施建设项目，旨在为研究者和开发者提供可负担、可访问的算力和模型资源，推动 AI 民主化。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#17</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">韩国棋手申真谞受让两子战胜围棋 AI KataGo</a></div>
+      <div class="card-meta">
+        <span class="card-source">围棋赛事</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">韩国棋手申真谞在受让两子的情况下战胜围棋 AI KataGo，扳平三番棋比分。这是人类顶尖棋手在让子条件下对 AI 的重大胜利，引发对 AI 围棋上限的新讨论。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="papers">
+  <h2 class="section-title">论文研究</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#18</div>
+      <div class="card-title"><a href="https://dair.ai" target="_blank">DAIR.AI 推出每周 AI 论文合集与 AI 导师</a></div>
+      <div class="card-meta">
+        <span class="card-source">DAIR.AI</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">DAIR.AI 推出全新服务：每周精选 AI 论文合集，配备 AI 导师进行解读和答疑。帮助研究者和开发者高效追踪前沿学术动态，降低论文阅读门槛。</div>
+      <a class="card-link" href="https://dair.ai" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#19</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">美国海军战略：将 LLM 和 Agent 部署上军舰，接受不完美对齐</a></div>
+      <div class="card-meta">
+        <span class="card-source">美国海军</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">美国海军发布"数据与人工智能武器化战略"，计划将大语言模型和 AI 智能体直接部署到军舰和海军陆战队单位，包括在通信中断期间运行。文件明确接受"不完美对齐"风险。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#20</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">英国 AI 安全研究所：开源模型正在缩小网络能力差距</a></div>
+      <div class="card-meta">
+        <span class="card-source">UK AI Security Institute</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">英国 AI 安全研究所评估发现，GLM-5.2 和 DeepSeek V4-Pro 等开源模型的网络能力已追平 4-7 个月前的闭源前沿系统。GLM-5.2 在特定网络任务上匹配 Claude Opus 4.6，成本仅为 $1.19/亿 token。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="tips">
+  <h2 class="section-title">技巧与观点</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-num">#21</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">Anthropic 将 Claude Code 的 system prompt 削减 80%</a></div>
+      <div class="card-meta">
+        <span class="card-source">Anthropic</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Anthropic 对 Claude Code 进行系统提示词大幅精简，将 system prompt 削减约 80%。这一优化表明模型本身的指令遵循能力已足够强，不再需要冗长的规则约束，同时降低 token 消耗。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#22</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">Apple 起诉 OpenAI 窃取商业机密，会否拖累其硬件与 IPO 计划？</a></div>
+      <div class="card-meta">
+        <span class="card-source">多方分析</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Apple 向 40 名前员工发律师函后，正式对 OpenAI 提起商业机密窃取诉讼。市场分析指出，此案可能拖累 OpenAI 的硬件合作计划与 IPO 进程，也可能影响苹果自研 AI 的战略节奏。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#23</div>
+      <div class="card-title"><a href="https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making" target="_blank">AI 热潮正在瓦解全球决策机制</a></div>
+      <div class="card-meta">
+        <span class="card-source">Hacker News</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">一位拥有 300 多次行业交流经验的从业者指出，全球公私机构陷入集体性 AI 狂热，过去一年半其团队所见的所有 AI 项目均以失败告终（成功率 0%）。失败原因常与 LLM 能力无关，而是企业本就难以有效运行软件项目。</div>
+      <a class="card-link" href="https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#24</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">Linus Torvalds 公开反对 Linux 社区反 AI 情绪</a></div>
+      <div class="card-meta">
+        <span class="card-source">Linux Kernel</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">Linus Torvalds 公开反对 Linux 社区中的反 AI 立场，表示"Linux 不是那些反 AI 项目之一"。他强调内核维护基于技术价值而非意识形态，AI 工具"显然有用"，尽管存在缺陷。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#25</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">AI 内存需求导致印度智能手机出货量暴跌 10%</a></div>
+      <div class="card-meta">
+        <span class="card-source">行业分析</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">三星、SK 海力士、美光等将 DRAM 产能转向高利润 AI 数据中心内存，导致智能手机内存短缺。印度 Q2 出货量同比暴跌 10%，为六年来最大跌幅，低端机型涨幅达 4%-68%。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-num">#26</div>
+      <div class="card-title"><a href="https://www.my2cents.ai/news/2026-07-19" target="_blank">美前沿闭源与开源模型监管矛盾待解</a></div>
+      <div class="card-meta">
+        <span class="card-source">政策分析</span>
+        <span class="card-time">7月19日</span>
+      </div>
+      <div class="card-summary">随着开源模型（Qwen、Kimi、GLM 等）快速逼近闭源前沿性能，美国现有的出口管制和 AI 监管框架面临矛盾。开源模型的全球可获取性使得国界式监管的有效性受到质疑。</div>
+      <a class="card-link" href="https://www.my2cents.ai/news/2026-07-19" target="_blank">阅读详情 →</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>AI 晨报 · 2026-07-20 · 数据源：AI HOT、TechCrunch、X、新华社等</p>
+  <p style="margin-top:8px; opacity:0.6;">由 Augusta 的 AI 助理自动采集与生成</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+cards.forEach(c => observer.observe(c));
+
+const navLinks = document.querySelectorAll('.nav-bar a');
+const sections = ['models','products','industry','papers','tips'];
+window.addEventListener('scroll', () => {
+  let current = sections[0];
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 100) current = id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+</script>
+
+</body>
+</html>

@@ -108,7 +108,6 @@ a:hover { color: #0066cc; }
       </div>
       <div class="pdf-letters" id="pdf-letters">ee · ea · e · ie · i</div>
       <button id="play-sound" class="pdf-sound" disabled>🔊 听示范词</button>
-      <button id="play-ipa" class="pdf-sound alt" disabled>🎯 听本音</button>
       <div class="pdf-nav">
         <button id="prev-day">← 上一天</button>
         <button id="next-day">下一天 →</button>
@@ -242,13 +241,12 @@ a:hover { color: #0066cc; }
     } catch (e) { if (done) done(false); }
   }
 
-  // 播放某个字位（字母组合）的精确发音；缺音频时 fallback 到 TTS
+  // 播放某个字位（字母组合）：用设备高质量英文 voice 直接朗读字母组合文本
+  // 依赖 pickBestEnglishVoice 选出的自然语音（Samantha / Google US English 等），
+  // 读 "tr"/"ee"/"sh" 即自然发出对应音素——效果等同原网页的高质量 TTS，无机器音
+  // 注：单字母（a/e/i/c...）浏览器会读字母名，是 Web Speech API 限制，非机器音
   function playGrapheme(letter, done) {
-    var src = 'audio/g_' + safeName(letter) + '.mp3';
-    playAudioFile(src, function(ok) {
-      if (!ok) { speakOne(letter, { rate: 0.9 }, function() { if (done) done(); }); }
-      else if (done) done();
-    });
+    speakOne(letter, { rate: 0.9 }, function() { if (done) done(); });
   }
 
   // 播放当天目标音（卡片「听本音」）；缺音频时回退真实代表词
@@ -312,12 +310,6 @@ a:hover { color: #0066cc; }
   document.getElementById('next-day').disabled = (day === 48);
   document.getElementById('prev-day').onclick = function() { location.href = 'day.html?d=' + (day - 1); };
   document.getElementById('next-day').onclick = function() { location.href = 'day.html?d=' + (day + 1); };
-  // 卡片「听本音」：播放当天目标音的精确音频
-  var piBtn = document.getElementById('play-ipa');
-  if (piBtn) {
-    piBtn.disabled = false;
-    piBtn.onclick = function() { pulse(this); playDaySound(function() {}); };
-  }
 
   // 动态加载当天详细数据
   var detail = null;

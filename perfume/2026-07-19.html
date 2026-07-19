@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>香氛研究 · 2026-07-19</title>
+<style>
+:root{--bg:#fdf8f3;--c:#2c2417;--m:#8a7968;--a:#c2185b;--al:#f8e1eb;--b:#ede5db}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--c);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--a);text-decoration:none}
+a:hover{opacity:0.8}
+.hero{background:linear-gradient(160deg,#e91e63 0%,#c2185b 60%,#880e4f 100%);color:#fff;padding:60px 24px 50px;text-align:center}
+.hero h1{font-size:26px;font-weight:700;margin-bottom:8px}
+.hero .date{font-size:13px;opacity:0.85;margin-top:12px}
+.hero-stats{display:flex;justify-content:center;gap:28px;margin-top:24px;flex-wrap:wrap}
+.hero-stats .s{text-align:center}
+.hero-stats .n{font-size:24px;font-weight:700}
+.hero-stats .l{font-size:11px;opacity:0.8;margin-top:4px}
+nav.sticky{position:sticky;top:0;background:rgba(253,248,243,0.95);backdrop-filter:blur(8px);padding:12px 24px;border-bottom:1px solid var(--b);text-align:center;z-index:10}
+nav.sticky a{margin:0 12px;font-size:13px;color:var(--m)}
+nav.sticky a:hover{color:var(--a)}
+main{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+section{margin-bottom:48px}
+.sl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--a);font-weight:600;margin-bottom:8px}
+.st{font-size:20px;font-weight:700;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b)}
+.card{background:#fff;border:1px solid var(--b);border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.card h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--c)}
+.card .meta{font-size:12px;color:var(--m);margin-bottom:8px}
+.card .summary{font-size:14px;color:var(--m);line-height:1.7;margin-bottom:8px}
+.card .tags{margin-top:8px}
+.kw-tag{display:inline-block;font-size:11px;background:var(--al);color:var(--a);padding:2px 10px;border-radius:10px;margin-right:4px;margin-bottom:4px}
+.type-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:8px;margin-left:6px;font-weight:600}
+.type-tag.video{background:#fff3e0;color:#e65100}
+.type-tag.image{background:#e8f5e9;color:#2e7d32}
+.type-tag.no-content{background:#f5f5f5;color:#9e9e9e}
+.time-tag{display:inline-block;font-size:10px;color:var(--m);margin-left:6px}
+.num{display:inline-block;background:var(--al);color:var(--a);font-weight:700;font-size:11px;padding:3px 10px;border-radius:8px;margin-right:8px}
+.footer{border-top:1px solid var(--b);padding-top:28px;margin-top:40px;font-size:12px;color:var(--m);text-align:center;line-height:2}
+.back{display:block;margin-bottom:24px;font-size:14px;color:var(--m)}
+.warn-box{background:#fef3ec;border:1px solid #f5d5c0;border-radius:10px;padding:16px 20px;margin:20px 0;font-size:13px;color:#7a4a2a}
+.empty-box{background:#f5f5f5;border:1px dashed #ccc;border-radius:10px;padding:40px 20px;text-align:center;color:var(--m);font-size:14px}
+.insight-box{background:linear-gradient(135deg,#fff5f8 0%,#fef0f5 100%);border-left:4px solid var(--a);border-radius:8px;padding:20px 24px;margin-bottom:14px}
+.insight-box h4{font-size:14px;font-weight:700;color:var(--a);margin-bottom:10px}
+.insight-box ol{margin-left:20px;font-size:14px;color:var(--c);line-height:1.8}
+.insight-box li{margin-bottom:8px}
+.comment-box{background:#fafafa;border-left:3px solid var(--m);padding:10px 14px;margin-top:8px;font-size:13px;color:var(--m);border-radius:4px}
+.comment-box .c-likes{color:var(--a);font-weight:600;margin-right:6px}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#1a1410;--c:#e8e0d5;--m:#a89a8a;--a:#f48fb1;--al:#4a2332;--b:#3a2f28}
+  body{background:var(--bg);color:var(--c)}
+  .card{background:#241d16;border-color:var(--b)}
+  nav.sticky{background:rgba(26,20,16,0.95)}
+  .warn-box{background:#3a2a1e;border-color:#5a3a28;color:#d5a888}
+  .insight-box{background:#2a1f28;border-left-color:var(--a)}
+  .comment-box{background:#1f1a14}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>🌹 香氛市场研究</h1>
+  <div class="date">2026 年 07 月 19 日 · 每日雷达 · 贸易商视角</div>
+  <div class="hero-stats">
+    <div class="s"><div class="n">5</div><div class="l">精品笔记</div></div>
+    <div class="s"><div class="n">2</div><div class="l">相关且实质</div></div>
+    <div class="s"><div class="n">445</div><div class="l">总点赞</div></div>
+    <div class="s"><div class="n">289</div><div class="l">总评论</div></div>
+  </div>
+</div>
+<nav class="sticky">
+  <a href="#insights">启发</a>
+  <a href="#influencer">大V动态</a>
+  <a href="#product">产品信号</a>
+  <a href="#pain">用户痛点</a>
+  <a href="#authors">活跃作者</a>
+  <a href="#keywords">关键词</a>
+  <a href="#hypothesis">假设验证</a>
+  <a href="#all">全部</a>
+</nav>
+<main>
+<a class="back" href="../">← 返回首页</a>
+
+<section id="insights">
+  <div class="sl">INSIGHTS</div>
+  <h2 class="st">🎯 对禾川的启发</h2>
+  <div class="insight-box"><h4>💡 对禾川的启发（基于今日真实数据）</h4><ol><li>关注多巴胺彩色系车载香薰设计，满足年轻车主人群的审美需求</li><li>开发西瓜、椰子等清爽果香型车载香薰，契合夏日场景</li><li>重视茶香（白茶、鼠尾草）品类，车主对淡雅茶香有需求</li></ol></div>
+</section>
+
+<section id="influencer">
+  <div class="sl">INFLUENCER</div>
+  <h2 class="st">📣 大V动态</h2>
+  <div class="card">
+  <h3><span class="num">01</span>Tesla女车主| 夏日多巴胺香薰谁还没有?<span class="type-tag image">📷 图文</span></h3>
+  <div class="meta">👤 anon:ce2bc22 · ❤️ 281 · ⭐ 200 · 💬 107</div>
+  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光玫瑰加巨峰葡萄的味道，喜欢葡萄味道的闭眼冲 ｜芝芝芒芒｜ 百…</div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">02</span>小车氛围感秘密｜Hello Kitty香薰<span class="type-tag no-content">📷 图文 · 无内容</span></h3>
+  <div class="meta">👤 anon:74d718a · ❤️ 66 · ⭐ 46 · 💬 13</div>
+  <div class="summary"><span style="color:var(--m);font-style:italic">正文为话题标签，无实质内容</span></div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58a1050000000006011027" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">03</span>豪车车载香薰🚗｜把白茶茶室搬进车里🍵<span class="type-tag image">📷 图文</span></h3>
+  <div class="meta">👤 anon:7aef504 · ❤️ 55 · ⭐ 23 · 💬 58</div>
+  <div class="summary">谁懂啊！之前换过各式各样的车载香薰，放在车里几乎闻不到香气，一度以为车子和香气无缘😭直到入手洛瑞欧的这款鼠尾草白茶香包，彻底改观！一拉开车门香气缓缓散开，清透温润不闷不刺鼻，氛围感直接拉满✨ 层次丰富的香调，仿佛沉浸式置身安静茶室： ▫️前调：白茶、荔枝、紫罗兰叶，清甜柔和，快速消散车内沉闷异味 …</div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58ab7f000000001d022252" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">04</span>[无标题]<span class="type-tag no-content">📷 图文 · 无内容</span></h3>
+  <div class="meta">👤 anon:fe2d75c · ❤️ 29 · ⭐ 26 · 💬 62</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 1</span>三连没呀，宝[害羞R]</div><div class="comment-box"><span class="c-likes">❤️ 0</span>报名，积极返图，主页可查，可拍图文/vlog</div></div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a59fe640000000001001552" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">05</span>🌱招募车载香薰体验官<span class="type-tag no-content">📷 图文 · 无内容</span></h3>
+  <div class="meta">👤 anon:f0c1492 · ❤️ 14 · ⭐ 8 · 💬 49</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 1</span>万粉报名</div><div class="comment-box"><span class="c-likes">❤️ 0</span>看看我吧好想体验呀车里缺一个会拍照反馈认真对待这份来之不易缘分[飞吻R]</div></div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58a5cc000000001c0107e3" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+</section>
+
+<section id="product">
+  <div class="sl">PRODUCT</div>
+  <h2 class="st">🛍 产品信号</h2>
+  <div class="empty-box">今日暂无明确产品信号</div>
+</section>
+
+<section id="pain">
+  <div class="sl">PAIN POINTS</div>
+  <h2 class="st">💡 用户痛点（简化产品机会）</h2>
+  <div class="empty-box">今日暂无痛点信号</div>
+</section>
+
+<section id="authors">
+  <div class="sl">AUTHORS</div>
+  <h2 class="st">👥 活跃作者</h2>
+  <div class="card">
+  <h3><span class="num">01</span>👤 anon:ce2bc220351 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 281 · 平均 281）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">Tesla女车主| 夏日多巴胺香薰谁还没有?</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">02</span>👤 anon:74d718a5250 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 66 · 平均 66）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a58a1050000000006011027" target="_blank" rel="noopener noreferrer">小车氛围感秘密｜Hello Kitty香薰</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">03</span>👤 anon:7aef50400c6 <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 55 · 平均 55）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a58ab7f000000001d022252" target="_blank" rel="noopener noreferrer">豪车车载香薰🚗｜把白茶茶室搬进车里🍵</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">04</span>👤 anon:fe2d75c635d <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 29 · 平均 29）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a59fe640000000001001552" target="_blank" rel="noopener noreferrer">[无标题]</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">05</span>👤 anon:f0c1492793a <span style="font-size:12px;color:var(--m);font-weight:normal">（1 篇 · 总赞 14 · 平均 14）</span></h3>
+  <div class="summary">最热：<a href="https://www.xiaohongshu.com/explore/6a58a5cc000000001c0107e3" target="_blank" rel="noopener noreferrer">🌱招募车载香薰体验官</a></div>
+</div>
+</section>
+
+<section id="keywords">
+  <div class="sl">KEYWORDS</div>
+  <h2 class="st">🔥 今日关键词</h2>
+  <div class="card"><div class="tags"><span class="kw-tag">车载香薰</span></div></div>
+</section>
+
+<section id="hypothesis">
+  <div class="sl">HYPOTHESIS</div>
+  <h2 class="st">🎯 业务假设验证</h2>
+  <div class="card">
+    <table style="width:100%;border-collapse:collapse">
+      <tr style="font-size:11px;background:var(--al)">
+        <th style="padding:9px 12px;text-align:left">假设</th>
+        <th style="padding:9px 12px;text-align:left">支持</th>
+        <th style="padding:9px 12px;text-align:left">反驳</th>
+        <th style="padding:9px 12px;text-align:left">置信度</th>
+      </tr>
+      <tr>
+  <td><strong>refill-opportunity</strong>: 用户主动寻找补充液/替换装/分装的信号足以支撑简化产品方向</td>
+  <td style="color:#2e7d32;font-weight:700">0</td>
+  <td style="color:#c62828;font-weight:700">0</td>
+  <td>证据不足</td>
+</tr><tr>
+  <td><strong>budget-alternative</strong>: 平价/小众香水市场存在真实的平替需求，不是伪需求</td>
+  <td style="color:#2e7d32;font-weight:700">0</td>
+  <td style="color:#c62828;font-weight:700">0</td>
+  <td>证据不足</td>
+</tr><tr>
+  <td><strong>car-diffuser-trend</strong>: 车载香薰是增长品类，存在产品形态创新机会</td>
+  <td style="color:#2e7d32;font-weight:700">0</td>
+  <td style="color:#c62828;font-weight:700">0</td>
+  <td>证据不足</td>
+</tr>
+    </table>
+  </div>
+</section>
+
+<section id="all">
+  <div class="sl">ALL</div>
+  <h2 class="st">📚 全部精品笔记</h2>
+  <div class="card">
+  <h3><span class="num">01</span>Tesla女车主| 夏日多巴胺香薰谁还没有?<span class="type-tag image">📷 图文</span></h3>
+  <div class="meta">👤 anon:ce2bc22 · ❤️ 281 · ⭐ 200 · 💬 107</div>
+  <div class="summary">赤橙黄绿青蓝紫 彩色多巴胺谁能不爱？ 车子基础车搭子就不能基础 夏日多巴胺香薰一次集齐4个味道 和小姐妹一起分享夏天的快乐🎉 ｜西瓜椰椰｜🍉 这个味道特别清新~是海盐混着甜瓜🍉的果香味~喜欢清新一挂的冲鸭 ｜多肉葡萄｜🍇 这个味道就是阳光玫瑰加巨峰葡萄的味道，喜欢葡萄味道的闭眼冲 ｜芝芝芒芒｜ 百…</div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a55f0f200000000070256db" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">02</span>小车氛围感秘密｜Hello Kitty香薰<span class="type-tag no-content">📷 图文 · 无内容</span></h3>
+  <div class="meta">👤 anon:74d718a · ❤️ 66 · ⭐ 46 · 💬 13</div>
+  <div class="summary"><span style="color:var(--m);font-style:italic">正文为话题标签，无实质内容</span></div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58a1050000000006011027" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">03</span>豪车车载香薰🚗｜把白茶茶室搬进车里🍵<span class="type-tag image">📷 图文</span></h3>
+  <div class="meta">👤 anon:7aef504 · ❤️ 55 · ⭐ 23 · 💬 58</div>
+  <div class="summary">谁懂啊！之前换过各式各样的车载香薰，放在车里几乎闻不到香气，一度以为车子和香气无缘😭直到入手洛瑞欧的这款鼠尾草白茶香包，彻底改观！一拉开车门香气缓缓散开，清透温润不闷不刺鼻，氛围感直接拉满✨ 层次丰富的香调，仿佛沉浸式置身安静茶室： ▫️前调：白茶、荔枝、紫罗兰叶，清甜柔和，快速消散车内沉闷异味 …</div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58ab7f000000001d022252" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">04</span>[无标题]<span class="type-tag no-content">📷 图文 · 无内容</span></h3>
+  <div class="meta">👤 anon:fe2d75c · ❤️ 29 · ⭐ 26 · 💬 62</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 1</span>三连没呀，宝[害羞R]</div><div class="comment-box"><span class="c-likes">❤️ 0</span>报名，积极返图，主页可查，可拍图文/vlog</div></div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a59fe640000000001001552" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+<div class="card">
+  <h3><span class="num">05</span>🌱招募车载香薰体验官<span class="type-tag no-content">📷 图文 · 无内容</span></h3>
+  <div class="meta">👤 anon:f0c1492 · ❤️ 14 · ⭐ 8 · 💬 49</div>
+  <div class="summary"><div class="comment-box"><span class="c-likes">❤️ 1</span>万粉报名</div><div class="comment-box"><span class="c-likes">❤️ 0</span>看看我吧好想体验呀车里缺一个会拍照反馈认真对待这份来之不易缘分[飞吻R]</div></div>
+  <div class="tags"><span class="kw-tag">车载香薰</span></div>
+  <div style="margin-top:8px;font-size:12px"><a href="https://www.xiaohongshu.com/explore/6a58a5cc000000001c0107e3" target="_blank" rel="noopener noreferrer">查看原文 →</a></div>
+</div>
+</section>
+
+<div class="footer">
+  数据来源：小红书 · 采集时间：2026-07-19 09:34<br>
+  相关且实质 2 篇 · 无实质内容 3 篇 · 不相关 0 篇<br>
+  本快讯由 Hermes 自动生成 · 禾川香精贸易商内部参考
+</div>
+</main>
+</body>
+</html>

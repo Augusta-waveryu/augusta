@@ -129,46 +129,95 @@ a:hover { color: #0066cc; }
 <script src="data/days-base.js"></script>
 <script>
 (function() {
-  // 工具：Web Speech API TTS
+  // 工具：Web Speech API TTS —— 发音质量优化
+  // 全局选中的英文 voice（异步加载后填充）
+  var selectedVoice = null;
+
+  // 在可用 voice 中挑选一个高质量英文语音
+  function pickBestEnglishVoice() {
+    var voices = window.speechSynthesis.getVoices() || [];
+    if (!voices.length) return null;
+    // 按优先级匹配命名/语言，优先自然流畅的英文 voice
+    var preferred = [
+      /Samantha/i,
+      /Google US English/i,
+      /Microsoft[^]*?English[^]*?United States/i,
+      /Microsoft[^]*?Zira/i,
+      /Microsoft[^]*?David/i,
+      /Daniel/i,
+      /Karen/i,
+      /Alex/i,
+      /Victoria/i,
+      /en[-_]US/i,
+      /en[-_]GB/i
+    ];
+    for (var p = 0; p < preferred.length; p++) {
+      var found = voices.find(function(v) { return preferred[p].test(v.name) || preferred[p].test(v.lang); });
+      if (found) return found;
+    }
+    // 兜底：第一个 en 开头的 voice
+    return voices.find(function(v) { return v.lang.indexOf('en') === 0; }) || null;
+  }
+
+  function initVoices() {
+    selectedVoice = pickBestEnglishVoice();
+  }
+  if ('speechSynthesis' in window) {
+    initVoices();
+    window.speechSynthesis.onvoiceschanged = function() {
+      selectedVoice = pickBestEnglishVoice();
+    };
+  }
+
+  // 单次发音（用户点击/自动触发）：先取消上一条，避免叠加
   function speak(text, opts) {
     opts = opts || {};
     if (!('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
+    speakOne(text, opts, null);
+  }
+
+  // 底层发音：设置 voice / 语速 / 语调，可选 onend 回调
+  function speakOne(text, opts, done) {
+    opts = opts || {};
     var u = new SpeechSynthesisUtterance(text);
-    u.lang = 'en-US';
-    u.rate = opts.rate || 0.85;
+    u.lang = (selectedVoice && selectedVoice.lang) ? selectedVoice.lang : 'en-US';
+    if (selectedVoice) u.voice = selectedVoice;
+    u.rate = opts.rate || 0.9;
     u.pitch = opts.pitch || 1;
     u.volume = opts.volume || 1;
+    var finished = false;
+    function finish() {
+      if (finished) return;
+      finished = true;
+      if (done) done();
+    }
+    u.onend = finish;
+    u.onerror = finish;
     window.speechSynthesis.speak(u);
-  }
-  function findEnglishVoice() {
-    var voices = window.speechSynthesis.getVoices();
-    return voices.find(function(v) { return v.lang.indexOf('en') === 0; });
-  }
-  // 加载 voice 列表（异步）
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.onvoiceschanged = function() {
-      var voice = findEnglishVoice();
-      // voice 将在下次播放时生效
-    };
+    // 安全网：极短语音有时不触发 onend，按预估时长兜底推进
+    var est = Math.max(450, text.length * 150 / (opts.rate || 0.9));
+    setTimeout(finish, est + 500);
   }
 
   // 工具：拼读（按音节依次播放，最后连起来读）
+  // 用 onend 链式播放而非固定定时器，拼读更连贯自然
   function speakBreakdown(breakdown, fullWord, callback) {
     if (!breakdown || !breakdown.length) { speak(fullWord); if (callback) callback(); return; }
     var i = 0;
-    function next() {
+    function playPart() {
       if (i >= breakdown.length) {
-        // 拼读后连起来读
-        setTimeout(function() { speak(fullWord, { rate: 0.75 }); if (callback) callback(); }, 250);
+        // 拼读后自然停顿再连读整词
+        setTimeout(function() { speakOne(fullWord, { rate: 0.9 }, function() { if (callback) callback(); }); }, 280);
         return;
       }
       var part = breakdown[i].phon.replace(/[\/\[\]]/g, '');
-      speak(part, { rate: 0.7 });
-      i++;
-      setTimeout(next, 600);
+      speakOne(part, { rate: 0.85 }, function() {
+        i++;
+        setTimeout(playPart, 160); // 音节间轻微停顿
+      });
     }
-    next();
+    playPart();
   }
 
   // 工具：动画
@@ -283,13 +332,13 @@ a:hover { color: #0066cc; }
     document.getElementById('d-word').onclick = function() { pulse(this); speak(w.word); };
     document.getElementById('d-phonetic').onclick = function() { pulse(this); speak(w.word); };
     document.getElementById('d-syllables').onclick = function() { pulse(this); speakBreakdown(w.breakdown, w.word); };
-    document.getElementById('d-word-sound').onclick = function() { pulse(this); speak(w.word, { rate: 0.75 }); };
+    document.getElementById('d-word-sound').onclick = function() { pulse(this); speak(w.word, { rate: 0.9 }); };
     if (sentenceEn) {
-      document.getElementById('d-sentence').onclick = function() { pulse(this); speak(sentenceEn, { rate: 0.8 }); };
+      document.getElementById('d-sentence').onclick = function() { pulse(this); speak(sentenceEn, { rate: 0.9 }); };
     }
     // 拼读单个音节
     document.querySelectorAll('.syllable').forEach(function(s) {
-      s.onclick = function() { pulse(this); speak(this.dataset.phon.replace(/[\/\[\]]/g, ''), { rate: 0.7 }); };
+      s.onclick = function() { pulse(this); speak(this.dataset.phon.replace(/[\/\[\]]/g, ''), { rate: 0.85 }); };
     });
     // 例句点击
     var sb = document.querySelector('.sentence-box');

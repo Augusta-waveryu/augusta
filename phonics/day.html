@@ -108,6 +108,7 @@ a:hover { color: #0066cc; }
       </div>
       <div class="pdf-letters" id="pdf-letters">ee · ea · e · ie · i</div>
       <button id="play-sound" class="pdf-sound" disabled>🔊 听示范词</button>
+      <button id="play-ipa" class="pdf-sound alt" disabled>🎯 听本音</button>
       <div class="pdf-nav">
         <button id="prev-day">← 上一天</button>
         <button id="next-day">下一天 →</button>
@@ -217,8 +218,51 @@ a:hover { color: #0066cc; }
     return L;
   }
 
-  // 工具：拼读（按音节依次播放，最后连起来读）
-  // 用 onend 链式播放而非固定定时器，拼读更连贯自然
+  // ---- 精确音素音频播放 ----
+  // 音频文件由 tools/gen_audio.py 用 espeak 从音标合成，音素级精确
+  // （含单字母 a/e/i 也读成纯音而非字母名）；缺文件时回退 TTS
+  function safeName(s) { return String(s).replace(/[^a-zA-Z0-9]/g, '_'); }
+
+  // 播放一个音频文件，done(ok) 回调；出错返回 false
+  function playAudioFile(src, done) {
+    try {
+      var a = new Audio(src);
+      var finished = false;
+      function fin(ok) {
+        if (finished) return;
+        finished = true;
+        if (done) done(ok !== false);
+      }
+      a.onended = function() { fin(true); };
+      a.onerror = function() { fin(false); };
+      var pr = a.play();
+      if (pr && pr.catch) pr.catch(function() { fin(false); });
+      // 安全网：按估算时长兜底（字位音频 <1.3s，留足余量）
+      setTimeout(function() { fin(true); }, 2600);
+    } catch (e) { if (done) done(false); }
+  }
+
+  // 播放某个字位（字母组合）的精确发音；缺音频时 fallback 到 TTS
+  function playGrapheme(letter, done) {
+    var src = 'audio/g_' + safeName(letter) + '.mp3';
+    playAudioFile(src, function(ok) {
+      if (!ok) { speakOne(letter, { rate: 0.9 }, function() { if (done) done(); }); }
+      else if (done) done();
+    });
+  }
+
+  // 播放当天目标音（卡片「听本音」）；缺音频时回退真实代表词
+  function playDaySound(done) {
+    var src = 'audio/day_' + dayStr + '.mp3';
+    playAudioFile(src, function(ok) {
+      if (!ok) {
+        if (detail && detail.words && detail.words[0]) speakOne(detail.words[0].word, { rate: 0.9 }, function() { if (done) done(); });
+        else if (done) done();
+      } else if (done) done();
+    });
+  }
+
+  // 拼读：逐个音节播放「精确音素音频」，最后用 TTS 连读整词（真实单词 TTS 很准）
   function speakBreakdown(breakdown, fullWord, callback) {
     if (!breakdown || !breakdown.length) { speak(fullWord); if (callback) callback(); return; }
     var i = 0;
@@ -228,8 +272,8 @@ a:hover { color: #0066cc; }
         setTimeout(function() { speakOne(fullWord, { rate: 0.9 }, function() { if (callback) callback(); }); }, 280);
         return;
       }
-      var part = graphemeText(breakdown[i]);
-      speakOne(part, { rate: 0.85 }, function() {
+      var L = graphemeText(breakdown[i]);
+      playGrapheme(L, function() {
         i++;
         setTimeout(playPart, 160); // 音节间轻微停顿
       });
@@ -268,6 +312,12 @@ a:hover { color: #0066cc; }
   document.getElementById('next-day').disabled = (day === 48);
   document.getElementById('prev-day').onclick = function() { location.href = 'day.html?d=' + (day - 1); };
   document.getElementById('next-day').onclick = function() { location.href = 'day.html?d=' + (day + 1); };
+  // 卡片「听本音」：播放当天目标音的精确音频
+  var piBtn = document.getElementById('play-ipa');
+  if (piBtn) {
+    piBtn.disabled = false;
+    piBtn.onclick = function() { pulse(this); playDaySound(function() {}); };
+  }
 
   // 动态加载当天详细数据
   var detail = null;
@@ -359,9 +409,9 @@ a:hover { color: #0066cc; }
     if (sentenceEn) {
       document.getElementById('d-sentence').onclick = function() { pulse(this); speak(sentenceEn, { rate: 0.9 }); };
     }
-    // 拼读单个音节（点字位，读字母组合发音，而非音标符号）
+    // 拼读单个音节（点字位，播精确音素音频）
     document.querySelectorAll('.syllable').forEach(function(s) {
-      s.onclick = function() { pulse(this); speak(this.dataset.letter || s.dataset.phon.replace(/[\/\[\]]/g, ''), { rate: 0.85 }); };
+      s.onclick = function() { pulse(this); playGrapheme(this.dataset.letter || s.dataset.phon.replace(/[\/\[\]]/g, '')); };
     });
     // 例句点击
     var sb = document.querySelector('.sentence-box');

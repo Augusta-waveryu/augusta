@@ -229,7 +229,7 @@ a:hover { color: #0066cc; }
     var s = '';
     phon = String(phon).replace(/[\/\[\]]/g, '');
     for (var i = 0; i < phon.length; i++) {
-      var h = ('0000' + phon.charCodeAt(i).toString(16).toUpperCase()).slice(-4);
+      var h = ('0000' + phon.charCodeAt(i).toString(16)).slice(-4);
       s += 'u' + h;
     }
     return s;

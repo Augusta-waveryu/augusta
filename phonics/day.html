@@ -18,7 +18,8 @@ a:hover { color: #0066cc; }
 .nav a:hover { color: #0066cc; }
 .nav a.active { color: #1a1a1a; font-weight: 600; }
 
-.container { max-width: 760px; margin: 0 auto; padding: 16px 24px 60px; display: flex; flex-direction: column; gap: 24px; align-items: stretch; }
+.container { max-width: 1400px; margin: 0 auto; padding: 16px 24px 60px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 960px) { .container { grid-template-columns: 1fr; } }
 
 /* 左侧 PDF 卡片 */
 .pdf-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 16px; position: sticky; top: 16px; }
@@ -128,6 +129,7 @@ a:hover { color: #0066cc; }
 </div>
 
 <script src="data/days-base.js"></script>
+<script src="data/image-order.js"></script>
 <script>
 (function() {
   // 工具：Web Speech API TTS —— 发音质量优化
@@ -348,11 +350,10 @@ a:hover { color: #0066cc; }
   dataScript.src = 'data/day-' + dayStr + '.js';
   dataScript.onload = function() {
     detail = window[varName];
-    buildHotspots();
   };
   dataScript.onerror = function() {
     document.getElementById('detail-panel').innerHTML =
-      '<div class="detail-empty">Day ' + day + ' 详细发音数据待补全</div>';
+      '<div class="detail-empty">Day ' + day + ' 详细发音数据待补全<br>点击卡片单词仍可朗读</div>';
   };
   document.head.appendChild(dataScript);
 
@@ -365,37 +366,89 @@ a:hover { color: #0066cc; }
     tops: [21.636, 36.559, 51.447, 64.285, 79.480], // 各行 top%（按各行角标实测）
     height: 13.411  // 热区高%
   };
+  // 文本规范化：用于把图片 OCR 单词与数据单词做匹配（去大小写/音标/多余空格）
+  function normWord(s) {
+    return String(s || '').toLowerCase().replace(/[\/\[\]]/g, '').replace(/[^a-z'\- ]/g, '').replace(/\s+/g, ' ').trim();
+  }
+  // 在 detail.words 里按文本找一个词（返回其下标；找不到返回 -1）
+  function findWordIndex(imageWord) {
+    if (!detail || !detail.words) return -1;
+    var target = normWord(imageWord);
+    if (!target) return -1;
+    var i, w;
+    // 1) 精确匹配
+    for (i = 0; i < detail.words.length; i++) {
+      if (normWord(detail.words[i].word) === target) return i;
+    }
+    // 2) 去空格匹配（复合词如 tree house vs treehouse）
+    var t2 = target.replace(/ /g, '');
+    for (i = 0; i < detail.words.length; i++) {
+      if (normWord(detail.words[i].word).replace(/ /g, '') === t2) return i;
+    }
+    // 3) 互为包含（OCR 截断/多词）
+    for (i = 0; i < detail.words.length; i++) {
+      w = normWord(detail.words[i].word);
+      if (w && (w.indexOf(target) === 0 || target.indexOf(w) === 0)) return i;
+    }
+    return -1;
+  }
+
   var hotspotEls = [];
   function buildHotspots() {
-    if (!detail || !detail.words) return;
     // 清掉旧热区
     hotspotEls.forEach(function(el){ if (el.parentNode) el.parentNode.removeChild(el); });
     hotspotEls = [];
-    detail.words.forEach(function(w, idx) {
+    var imageOrder = (window.PHONICS_IMAGE_ORDER && window.PHONICS_IMAGE_ORDER[day]) || [];
+    // 固定 30 个格子；每格绑定"图片上该位置实际显示的单词"
+    for (var idx = 0; idx < 30; idx++) {
       var row = Math.floor(idx / 6), col = idx % 6;
-      if (row > 4) return; // 仅 5 行
       var hs = document.createElement('div');
       hs.className = 'hotspot';
       hs.style.left = (GRID.left0 + col * GRID.colStep) + '%';
       hs.style.top = GRID.tops[row] + '%';
       hs.style.width = GRID.width + '%';
       hs.style.height = GRID.height + '%';
-      hs.title = w.word;
-      hs.dataset.idx = idx;
-      hs.onclick = function() { selectWord(idx); };
+      var imgWord = imageOrder[idx] || '';
+      hs.title = imgWord;
+      hs.dataset.pos = idx;
+      hs.dataset.imageWord = imgWord;
+      (function(el){ el.onclick = function() { selectByPosition(parseInt(el.dataset.pos, 10)); }; })(hs);
       imgwrap.appendChild(hs);
       hotspotEls.push(hs);
+    }
+  }
+
+  // 点击图片第 pos 格：取该格图片实际单词，去数据里匹配后显示
+  function selectByPosition(pos) {
+    // 标记选中
+    hotspotEls.forEach(function(el, i) {
+      if (i === pos) el.classList.add('active');
+      else el.classList.remove('active');
     });
+    var imageOrder = (window.PHONICS_IMAGE_ORDER && window.PHONICS_IMAGE_ORDER[day]) || [];
+    var imageWord = imageOrder[pos] || '';
+    var dataIdx = findWordIndex(imageWord);
+    if (dataIdx >= 0) {
+      selectWord(dataIdx, pos);
+    } else {
+      renderFallback(imageWord);
+    }
+  }
+
+  // 数据里找不到该图片词时的降级展示：至少显示单词并 TTS 发音
+  function renderFallback(imageWord) {
+    var word = imageWord || '(未识别)';
+    document.getElementById('detail-panel').innerHTML =
+      '<div class="detail-word" id="d-word">' + word + '</div>' +
+      '<div class="detail-def">该词的音标 / 拼读 / 例句详情待补全</div>' +
+      '<div class="sound-bar"><button class="sound-btn primary" id="d-word-sound">🔊 朗读单词</button></div>';
+    document.getElementById('d-word').onclick = function() { pulse(this); speak(word); };
+    document.getElementById('d-word-sound').onclick = function() { pulse(this); speak(word, { rate: 0.9 }); };
+    setTimeout(function() { speak(word); }, 250);
   }
 
   function selectWord(idx) {
     if (!detail) return;
-    // 标记选中（图片热区高亮）
-    hotspotEls.forEach(function(el, i) {
-      if (i === idx) el.classList.add('active');
-      else el.classList.remove('active');
-    });
-
     var w = detail.words[idx];
     var phoneticClean = (w.phonetic || '').replace(/[\/\[\]]/g, '');
     var sentenceEn = (w.sentences && w.sentences[0]) || '';
@@ -452,6 +505,9 @@ a:hover { color: #0066cc; }
   }
 
   function escapeAttr(s) { return String(s).replace(/"/g, '&quot;'); }
+
+  // 页面初始化即建热区（不依赖详情数据，点击时按图片单词匹配）
+  buildHotspots();
 })();
 </script>
 </body>

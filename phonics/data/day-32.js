@@ -927,6 +927,153 @@ window.PHONICS_DAY_32 = {
           "I see a clothing.",
           "我看到一个衣服。"
     ]
+},
+{
+    "word": "leather",
+    "phonetic": "/ˈleðə/",
+    "definition": "n. 皮革",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "This is leather.",
+          "这是皮革。"
+    ]
+},
+{
+    "word": "another",
+    "phonetic": "/əˈnʌðə/",
+    "definition": "pron. 另一个",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "Another is here.",
+          "另一个在这里。"
+    ]
+},
+{
+    "word": "either",
+    "phonetic": "/ˈaɪðə/",
+    "definition": "pron. 两者之一",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "Either is here.",
+          "两者之一在这里。"
+    ]
+},
+{
+    "word": "neither",
+    "phonetic": "/ˈnaɪðə/",
+    "definition": "pron. 两者都不",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "Neither is here.",
+          "两者都不在这里。"
+    ]
+},
+{
+    "word": "they're",
+    "phonetic": "/ðeə/",
+    "definition": "pron. 他们是",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "They're is here.",
+          "他们是在这里。"
+    ]
 }
   ]
 };

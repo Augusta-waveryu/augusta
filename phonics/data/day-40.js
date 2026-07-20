@@ -1291,6 +1291,33 @@ window.PHONICS_DAY_40 = {
           "I see a room.",
           "我看到一个房间。"
     ]
+},
+{
+    "word": "home",
+    "phonetic": "/həʊm/",
+    "definition": "n. 家",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is home.",
+          "这是家。"
+    ]
 }
   ]
 };

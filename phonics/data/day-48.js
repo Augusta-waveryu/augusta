@@ -1625,6 +1625,45 @@ window.PHONICS_DAY_48 = {
         "I see many stars.",
         "我看到许多星星。"
       ]
-    }
+    },
+{
+    "word": "hands up",
+    "phonetic": "/hændz ʌp/",
+    "definition": "phr. 举手",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/dz/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "This is hands up.",
+          "这是举手。"
+    ]
+}
   ]
 };

@@ -975,6 +975,37 @@ window.PHONICS_DAY_05 = {
           "It is very purple.",
           "它非常紫色的。"
     ]
+},
+{
+    "word": "Thursday",
+    "phonetic": "/ˈθɜːzdeɪ/",
+    "definition": "n. 星期四",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "This is Thursday.",
+          "这是星期四。"
+    ]
 }
   ]
 };

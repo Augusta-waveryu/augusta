@@ -1012,6 +1012,29 @@ window.PHONICS_DAY_10 = {
           "Please start it.",
           "请开始它。"
     ]
+},
+{
+    "word": "march",
+    "phonetic": "/mɑːtʃ/",
+    "definition": "n. 三月；行进",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "This is march.",
+          "这是三月。"
+    ]
 }
   ]
 };

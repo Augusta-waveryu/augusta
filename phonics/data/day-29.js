@@ -1188,6 +1188,87 @@ window.PHONICS_DAY_29 = {
           "I see a course.",
           "我看到一个课程。"
     ]
+},
+{
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "definition": "n. 学校",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "This is school.",
+          "这是学校。"
+    ]
+},
+{
+    "word": "sign",
+    "phonetic": "/saɪn/",
+    "definition": "n. 标志；符号",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "This is sign.",
+          "这是标志。"
+    ]
+},
+{
+    "word": "cent",
+    "phonetic": "/sent/",
+    "definition": "n. 分（货币）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "This is cent.",
+          "这是分（货币）。"
+    ]
 }
   ]
 };

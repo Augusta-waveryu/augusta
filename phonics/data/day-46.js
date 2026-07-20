@@ -1259,6 +1259,143 @@ window.PHONICS_DAY_46 = {
           "I see a dropper.",
           "我看到一个滴管。"
     ]
+},
+{
+    "word": "driveway",
+    "phonetic": "/ˈdraɪvweɪ/",
+    "definition": "n. 私家车道",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "This is driveway.",
+          "这是私家车道。"
+    ]
+},
+{
+    "word": "drink bottle",
+    "phonetic": "/drɪŋk ˈbɒtl/",
+    "definition": "n. 饮料瓶",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is drink bottle.",
+          "这是饮料瓶。"
+    ]
+},
+{
+    "word": "dress shoe",
+    "phonetic": "/dres ʃuː/",
+    "definition": "n. 礼服鞋",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is dress shoe.",
+          "这是礼服鞋。"
+    ]
 }
   ]
 };

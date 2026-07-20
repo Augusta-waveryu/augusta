@@ -1316,6 +1316,64 @@ window.PHONICS_DAY_02 = {
           "I see a middle.",
           "我看到一个中间。"
     ]
+},
+{
+    "word": "quit",
+    "phonetic": "/kwɪt/",
+    "definition": "v. 放弃；退出",
+    "breakdown": [
+          {
+                "letter": "q",
+                "phon": "/I/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please quit it.",
+          "请放弃它。"
+    ]
+},
+{
+    "word": "visit",
+    "phonetic": "/ˈvɪzɪt/",
+    "definition": "v. 参观；拜访",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/I/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please visit it.",
+          "请参观它。"
+    ]
 }
   ]
 };

@@ -929,6 +929,60 @@ window.PHONICS_DAY_35 = {
           "It is very white.",
           "它非常白色的。"
     ]
+},
+{
+    "word": "honey",
+    "phonetic": "/ˈhʌni/",
+    "definition": "n. 蜂蜜",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "This is honey.",
+          "这是蜂蜜。"
+    ]
+},
+{
+    "word": "whom",
+    "phonetic": "/huːm/",
+    "definition": "pron. 谁（宾格）",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "Whom is here.",
+          "谁（宾格）在这里。"
+    ]
 }
   ]
 };

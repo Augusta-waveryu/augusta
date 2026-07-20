@@ -1039,6 +1039,52 @@ window.PHONICS_DAY_17 = {
           "I see a smoke.",
           "我看到一个烟。"
     ]
+},
+{
+    "word": "sow",
+    "phonetic": "/səʊ/",
+    "definition": "v. 播种",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "Please sow it.",
+          "请播种它。"
+    ]
+},
+{
+    "word": "joke",
+    "phonetic": "/dʒəʊk/",
+    "definition": "n. 笑话",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is joke.",
+          "这是笑话。"
+    ]
 }
   ]
 };

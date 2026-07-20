@@ -934,6 +934,60 @@ window.PHONICS_DAY_13 = {
           "Hey!",
           "嘿！"
     ]
+},
+{
+    "word": "date",
+    "phonetic": "/deɪt/",
+    "definition": "n. 日期",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is date.",
+          "这是日期。"
+    ]
+},
+{
+    "word": "page",
+    "phonetic": "/peɪdʒ/",
+    "definition": "n. 页",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is page.",
+          "这是页。"
+    ]
 }
   ]
 };

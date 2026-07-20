@@ -1130,6 +1130,33 @@ window.PHONICS_DAY_24 = {
           "I see a daddy.",
           "我看到一个爸爸。"
     ]
+},
+{
+    "word": "date",
+    "phonetic": "/deɪt/",
+    "definition": "n. 日期",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is date.",
+          "这是日期。"
+    ]
 }
   ]
 };

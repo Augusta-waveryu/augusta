@@ -1264,6 +1264,119 @@ window.PHONICS_DAY_21 = {
           "I see a playground.",
           "我看到一个操场。"
     ]
+},
+{
+    "word": "apply",
+    "phonetic": "/əˈplaɪ/",
+    "definition": "v. 申请；应用",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "Please apply it.",
+          "请申请它。"
+    ]
+},
+{
+    "word": "popcorn",
+    "phonetic": "/ˈpɒpkɔːn/",
+    "definition": "n. 爆米花",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "This is popcorn.",
+          "这是爆米花。"
+    ]
+},
+{
+    "word": "pencil-box",
+    "phonetic": "/ˈpensl bɒks/",
+    "definition": "n. 铅笔盒",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "x",
+                "phon": "/ks/"
+          }
+    ],
+    "sentences": [
+          "This is pencil-box.",
+          "这是铅笔盒。"
+    ]
 }
   ]
 };

@@ -1116,6 +1116,37 @@ window.PHONICS_DAY_23 = {
           "I see a water.",
           "我看到一个水。"
     ]
+},
+{
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "definition": "n. 票",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "This is ticket.",
+          "这是票。"
+    ]
 }
   ]
 };

@@ -1283,6 +1283,45 @@ window.PHONICS_DAY_34 = {
           "I see a exposure.",
           "我看到一个暴露。"
     ]
+},
+{
+    "word": "usually",
+    "phonetic": "/ˈjuːʒuəli/",
+    "definition": "adv. 通常",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "He runs usually.",
+          "他通常地跑。"
+    ]
 }
   ]
 };

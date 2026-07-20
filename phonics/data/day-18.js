@@ -1014,6 +1014,64 @@ window.PHONICS_DAY_18 = {
           "I see a hearing.",
           "我看到一个听力。"
     ]
+},
+{
+    "word": "period",
+    "phonetic": "/ˈpɪəriəd/",
+    "definition": "n. 时期；句号",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/ɪə/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "This is period.",
+          "这是时期。"
+    ]
+},
+{
+    "word": "nearly",
+    "phonetic": "/ˈnɪəli/",
+    "definition": "adv. 几乎",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/ɪə/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "He runs nearly.",
+          "他几乎地跑。"
+    ]
 }
   ]
 };

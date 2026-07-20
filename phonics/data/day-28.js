@@ -1117,6 +1117,37 @@ window.PHONICS_DAY_28 = {
           "Please leave it.",
           "请离开它。"
     ]
+},
+{
+    "word": "clever",
+    "phonetic": "/ˈklevə/",
+    "definition": "adj. 聪明的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "It is very clever.",
+          "它非常聪明的。"
+    ]
 }
   ]
 };

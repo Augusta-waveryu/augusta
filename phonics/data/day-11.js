@@ -961,6 +961,33 @@ window.PHONICS_DAY_11 = {
           "I see a broom.",
           "我看到一个扫帚。"
     ]
+},
+{
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "definition": "n. 学校",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "This is school.",
+          "这是学校。"
+    ]
 }
   ]
 };

@@ -920,6 +920,145 @@ window.PHONICS_DAY_03 = {
           "I see a dress.",
           "我看到一个连衣裙。"
     ]
+},
+{
+    "word": "weather",
+    "phonetic": "/ˈwɛðə/",
+    "definition": "n. 天气",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "This is weather.",
+          "这是天气。"
+    ]
+},
+{
+    "word": "friend",
+    "phonetic": "/fɹɛnd/",
+    "definition": "n. 朋友",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "This is friend.",
+          "这是朋友。"
+    ]
+},
+{
+    "word": "many",
+    "phonetic": "/ˈmeni/",
+    "definition": "adj. 许多的",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/e/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very many.",
+          "它非常许多的。"
+    ]
+},
+{
+    "word": "any",
+    "phonetic": "/ˈeni/",
+    "definition": "adj. 任何的",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very any.",
+          "它非常任何的。"
+    ]
+},
+{
+    "word": "shell",
+    "phonetic": "/ʃɛl/",
+    "definition": "n. 贝壳",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "This is shell.",
+          "这是贝壳。"
+    ]
 }
   ]
 };

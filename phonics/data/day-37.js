@@ -1238,6 +1238,60 @@ window.PHONICS_DAY_37 = {
           "I see a sandwich.",
           "我看到一个三明治。"
     ]
+},
+{
+    "word": "beach",
+    "phonetic": "/biːtʃ/",
+    "definition": "n. 海滩",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "This is beach.",
+          "这是海滩。"
+    ]
+},
+{
+    "word": "teacher's",
+    "phonetic": "/ˈtiːtʃəz/",
+    "definition": "n. 老师的",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "This is teacher's.",
+          "这是老师的。"
+    ]
 }
   ]
 };

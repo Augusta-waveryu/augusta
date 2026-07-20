@@ -837,6 +837,60 @@ window.PHONICS_DAY_19 = {
           "I see a airport.",
           "我看到一个机场。"
     ]
+},
+{
+    "word": "fare",
+    "phonetic": "/feə/",
+    "definition": "n. 费用；票价",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is fare.",
+          "这是费用。"
+    ]
+},
+{
+    "word": "parent",
+    "phonetic": "/ˈpeərənt/",
+    "definition": "n. 父（母）亲",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "This is parent.",
+          "这是父（母）亲。"
+    ]
 }
   ]
 };

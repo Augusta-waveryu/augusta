@@ -1044,6 +1044,29 @@ window.PHONICS_DAY_04 = {
           "I see a lamp.",
           "我看到一个灯。"
     ]
+},
+{
+    "word": "pack",
+    "phonetic": "/pæk/",
+    "definition": "v. 打包",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "Please pack it.",
+          "请打包它。"
+    ]
 }
   ]
 };

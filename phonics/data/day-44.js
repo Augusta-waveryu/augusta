@@ -967,6 +967,29 @@ window.PHONICS_DAY_44 = {
           "It is very wonderful.",
           "它非常精彩的。"
     ]
+},
+{
+    "word": "week",
+    "phonetic": "/wiːk/",
+    "definition": "n. 星期；周",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ee",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "This is week.",
+          "这是星期。"
+    ]
 }
   ]
 };

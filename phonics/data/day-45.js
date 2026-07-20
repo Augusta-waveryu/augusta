@@ -1060,6 +1060,135 @@ window.PHONICS_DAY_45 = {
           "Please trim it.",
           "请修剪它。"
     ]
+},
+{
+    "word": "treasure box",
+    "phonetic": "/ˈtreʒə bɒks/",
+    "definition": "n. 宝箱",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "x",
+                "phon": "/ks/"
+          }
+    ],
+    "sentences": [
+          "This is treasure box.",
+          "这是宝箱。"
+    ]
+},
+{
+    "word": "tree leaf",
+    "phonetic": "/triː liːf/",
+    "definition": "n. 树叶",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ee",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "This is tree leaf.",
+          "这是树叶。"
+    ]
+},
+{
+    "word": "treasure map",
+    "phonetic": "/ˈtreʒə mæp/",
+    "definition": "n. 藏宝图",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "This is treasure map.",
+          "这是藏宝图。"
+    ]
 }
   ]
 };

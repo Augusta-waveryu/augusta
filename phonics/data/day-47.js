@@ -1550,6 +1550,92 @@ window.PHONICS_DAY_47 = {
         "I see many planets.",
         "我看到许多行星。"
       ]
-    }
+    },
+{
+    "word": "tickets",
+    "phonetic": "/ˈtɪkɪts/",
+    "definition": "n. 票（复数）",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/ts/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "This is tickets.",
+          "这是票（复数）。"
+    ]
+},
+{
+    "word": "carrots cake",
+    "phonetic": "/ˈkærəts keɪk/",
+    "definition": "n. 胡萝卜蛋糕",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/ts/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is carrots cake.",
+          "这是胡萝卜蛋糕。"
+    ]
+}
   ]
 };

@@ -1073,6 +1073,25 @@ window.PHONICS_DAY_25 = {
           "I see a kangaroo.",
           "我看到一个袋鼠。"
     ]
+},
+{
+    "word": "cow",
+    "phonetic": "/kaʊ/",
+    "definition": "n. 奶牛",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "This is cow.",
+          "这是奶牛。"
+    ]
 }
   ]
 };

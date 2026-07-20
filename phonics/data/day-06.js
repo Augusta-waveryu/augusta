@@ -1387,6 +1387,56 @@ window.PHONICS_DAY_06 = {
           "I see a visitor.",
           "我看到一个访客。"
     ]
+},
+{
+    "word": "actor",
+    "phonetic": "/ˈæktə/",
+    "definition": "n. 演员",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          }
+    ],
+    "sentences": [
+          "This is actor.",
+          "这是演员。"
+    ]
+},
+{
+    "word": "order",
+    "phonetic": "/ˈɔːdə/",
+    "definition": "n. 命令；订单",
+    "breakdown": [
+          {
+                "letter": "or",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "This is order.",
+          "这是命令。"
+    ]
 }
   ]
 };

@@ -1012,6 +1012,57 @@ window.PHONICS_DAY_38 = {
           "I see a message.",
           "我看到一个信息。"
     ]
+},
+{
+    "word": "village road",
+    "phonetic": "/ˈvɪlɪdʒ rəʊd/",
+    "definition": "n. 村路",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oa",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "This is village road.",
+          "这是村路。"
+    ]
 }
   ]
 };

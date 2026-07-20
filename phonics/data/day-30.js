@@ -1253,6 +1253,33 @@ window.PHONICS_DAY_30 = {
           "I see a scissors.",
           "我看到一个剪刀。"
     ]
+},
+{
+    "word": "lazy",
+    "phonetic": "/ˈleɪzi/",
+    "definition": "adj. 懒惰的",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "z",
+                "phon": "/z/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very lazy.",
+          "它非常懒惰的。"
+    ]
 }
   ]
 };

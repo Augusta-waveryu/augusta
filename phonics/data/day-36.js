@@ -1012,6 +1012,57 @@ window.PHONICS_DAY_36 = {
           "It is very rainy.",
           "它非常下雨的。"
     ]
+},
+{
+    "word": "rabbit-hole",
+    "phonetic": "/ˈræbɪt həʊl/",
+    "definition": "n. 兔子洞",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is rabbit-hole.",
+          "这是兔子洞。"
+    ]
 }
   ]
 };

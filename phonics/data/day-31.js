@@ -1055,6 +1055,95 @@ window.PHONICS_DAY_31 = {
           "Everything is here.",
           "一切在这里。"
     ]
+},
+{
+    "word": "third",
+    "phonetic": "/θɜːd/",
+    "definition": "num. 第三",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I have third apples.",
+          "我有第三个苹果。"
+    ]
+},
+{
+    "word": "thousand",
+    "phonetic": "/ˈθaʊznd/",
+    "definition": "num. 一千",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I have thousand apples.",
+          "我有一千个苹果。"
+    ]
+},
+{
+    "word": "Thursday",
+    "phonetic": "/ˈθɜːzdeɪ/",
+    "definition": "n. 星期四",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "This is Thursday.",
+          "这是星期四。"
+    ]
 }
   ]
 };

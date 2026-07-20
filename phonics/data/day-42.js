@@ -1041,6 +1041,37 @@ window.PHONICS_DAY_42 = {
           "I see a bani.",
           "我看到一个（地名）巴尼。"
     ]
+},
+{
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋ.ɡɹi/",
+    "definition": "adj. 饥饿的",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very hungry.",
+          "它非常饥饿的。"
+    ]
 }
   ]
 };

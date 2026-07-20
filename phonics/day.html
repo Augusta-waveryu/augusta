@@ -18,12 +18,17 @@ a:hover { color: #0066cc; }
 .nav a:hover { color: #0066cc; }
 .nav a.active { color: #1a1a1a; font-weight: 600; }
 
-.container { max-width: 1400px; margin: 0 auto; padding: 16px 24px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
-@media (max-width: 960px) { .container { grid-template-columns: 1fr; } }
+.container { max-width: 760px; margin: 0 auto; padding: 16px 24px 60px; display: flex; flex-direction: column; gap: 24px; align-items: stretch; }
 
 /* 左侧 PDF 卡片 */
 .pdf-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 16px; position: sticky; top: 16px; }
+.pdf-imgwrap { position: relative; width: 100%; }
 .pdf-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
+/* 图片上的单词热区层 */
+.hotspot { position: absolute; border-radius: 8px; cursor: pointer; transition: all 0.12s; border: 2px solid transparent; }
+.hotspot:hover { background: rgba(37,99,235,0.12); border-color: rgba(37,99,235,0.55); }
+.hotspot.active { background: rgba(37,99,235,0.16); border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.25) inset; }
+.pdf-hint { font-size: 12px; color: #aaa; text-align: center; margin-top: 8px; }
 .pdf-meta { display: flex; justify-content: space-between; align-items: center; padding: 12px 4px 4px; }
 .pdf-day { font-size: 14px; font-weight: 600; color: #1a1a1a; }
 .pdf-ipa { font-size: 16px; font-weight: 700; color: #ef4444; font-family: "Lucida Sans Unicode", serif; }
@@ -42,11 +47,6 @@ a:hover { color: #0066cc; }
 .section { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 20px; }
 .section-title { font-size: 16px; font-weight: 600; margin-bottom: 14px; color: #1a1a1a; }
 .section-title .count { color: #aaa; font-weight: 400; font-size: 13px; margin-left: 6px; }
-
-.word-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; }
-.word-btn { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px 4px; text-align: center; cursor: pointer; font-family: inherit; font-size: 14px; color: #1a1a1a; transition: all 0.15s; }
-.word-btn:hover { background: #eff6ff; border-color: #2563eb; color: #2563eb; }
-.word-btn.active { background: #2563eb; border-color: #2563eb; color: #fff; }
 
 /* 详情面板 */
 .detail-panel { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); border-radius: 16px; padding: 24px; min-height: 320px; }
@@ -97,17 +97,20 @@ a:hover { color: #0066cc; }
 </header>
 
 <div class="container">
-  <!-- 左侧 PDF 卡片 -->
+  <!-- PDF 打卡卡片（图上点击单词选词） -->
   <div>
     <div class="pdf-card">
       <p class="back"><a href="/phonics/">← 返回音标列表</a></p>
-      <img id="pdf-img" src="" alt="PDF Card">
+      <div class="pdf-imgwrap" id="pdf-imgwrap">
+        <img id="pdf-img" src="" alt="PDF Card">
+        <!-- 30 个单词热区由 JS 生成，覆盖在图上 -->
+      </div>
+      <div class="pdf-hint">👆 点击卡片上的单词即可听发音、看详情</div>
       <div class="pdf-meta">
         <span class="pdf-day" id="pdf-day">Day 1</span>
         <span class="pdf-ipa" id="pdf-ipa">/i:/</span>
       </div>
       <div class="pdf-letters" id="pdf-letters">ee · ea · e · ie · i</div>
-      <button id="play-sound" class="pdf-sound" disabled>🔊 听示范词</button>
       <button id="play-ipa" class="pdf-sound alt" disabled>🎯 听本音</button>
       <div class="pdf-nav">
         <button id="prev-day">← 上一天</button>
@@ -116,17 +119,10 @@ a:hover { color: #0066cc; }
     </div>
   </div>
 
-  <!-- 右侧内容 -->
+  <!-- 详情面板 -->
   <div class="content-panel">
-    <!-- 单词网格 -->
-    <div class="section">
-      <h2 class="section-title">📚 单词列表 <span class="count" id="word-count"></span></h2>
-      <div class="word-grid" id="word-grid"></div>
-    </div>
-
-    <!-- 详情面板 -->
     <div class="detail-panel" id="detail-panel">
-      <div class="detail-empty">👆 点击上方任一单词查看发音详情</div>
+      <div class="detail-empty">👆 点击上方卡片中的单词查看发音详情</div>
     </div>
   </div>
 </div>
@@ -344,51 +340,60 @@ a:hover { color: #0066cc; }
 
   // 动态加载当天详细数据
   var detail = null;
-  var grid = document.getElementById('word-grid');
+  var imgwrap = document.getElementById('pdf-imgwrap');
   var dayStr = String(day).padStart(2, '0');
   var varName = 'PHONICS_DAY_' + dayStr;
-
-  grid.innerHTML = '<div class="no-data">⏳ 加载 Day ' + day + ' 数据…</div>';
-  document.getElementById('word-count').textContent = '';
 
   var dataScript = document.createElement('script');
   dataScript.src = 'data/day-' + dayStr + '.js';
   dataScript.onload = function() {
     detail = window[varName];
-    renderWords();
+    buildHotspots();
   };
   dataScript.onerror = function() {
-    grid.innerHTML = '<div class="no-data">Day ' + day + ' 详细发音数据待补全<br><br>查看左侧 PDF 卡片上的 30 个单词</div>';
-    document.getElementById('word-count').textContent = '（待补全）';
+    document.getElementById('detail-panel').innerHTML =
+      '<div class="detail-empty">Day ' + day + ' 详细发音数据待补全</div>';
   };
   document.head.appendChild(dataScript);
 
-  function renderWords() {
-    if (!detail) return;
-    grid.innerHTML = '';
-    document.getElementById('word-count').textContent = '（' + detail.words.length + ' 词）';
-    // 卡片「听示范词」：播放当天第一个单词（含本日目标音的代表词）
-    var ps = document.getElementById('play-sound');
-    if (ps && detail.words && detail.words.length) {
-      ps.disabled = false;
-      ps.onclick = function() { pulse(this); speak(detail.words[0].word); };
-    }
+  // 在 PDF 图上生成 30 个单词热区（48 张图共用同一 6列x5行 网格版式）
+  // 网格参数：基于 1583x2237 原图实测，用百分比定位以自适应缩放
+  var GRID = {
+    left0: 1.137,   // 第1列 left%
+    colStep: 16.435,// 列间距%
+    width: 15.551,  // 热区宽%
+    tops: [21.636, 36.559, 51.447, 64.285, 79.480], // 各行 top%（按各行角标实测）
+    height: 13.411  // 热区高%
+  };
+  var hotspotEls = [];
+  function buildHotspots() {
+    if (!detail || !detail.words) return;
+    // 清掉旧热区
+    hotspotEls.forEach(function(el){ if (el.parentNode) el.parentNode.removeChild(el); });
+    hotspotEls = [];
     detail.words.forEach(function(w, idx) {
-      var btn = document.createElement('button');
-      btn.className = 'word-btn';
-      btn.textContent = w.word;
-      btn.dataset.idx = idx;
-      btn.onclick = function() { selectWord(idx); };
-      grid.appendChild(btn);
+      var row = Math.floor(idx / 6), col = idx % 6;
+      if (row > 4) return; // 仅 5 行
+      var hs = document.createElement('div');
+      hs.className = 'hotspot';
+      hs.style.left = (GRID.left0 + col * GRID.colStep) + '%';
+      hs.style.top = GRID.tops[row] + '%';
+      hs.style.width = GRID.width + '%';
+      hs.style.height = GRID.height + '%';
+      hs.title = w.word;
+      hs.dataset.idx = idx;
+      hs.onclick = function() { selectWord(idx); };
+      imgwrap.appendChild(hs);
+      hotspotEls.push(hs);
     });
   }
 
   function selectWord(idx) {
     if (!detail) return;
-    // 标记选中
-    document.querySelectorAll('.word-btn').forEach(function(b, i) {
-      if (i === idx) b.classList.add('active');
-      else b.classList.remove('active');
+    // 标记选中（图片热区高亮）
+    hotspotEls.forEach(function(el, i) {
+      if (i === idx) el.classList.add('active');
+      else el.classList.remove('active');
     });
 
     var w = detail.words[idx];

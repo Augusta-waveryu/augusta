@@ -689,6 +689,361 @@ window.PHONICS_DAY_04 = {
         "The man is very tall.",
         "那个男人很高。"
       ]
-    }
+    },
+{
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "definition": "adj. 伤心的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very sad.",
+          "它非常伤心的。"
+    ]
+},
+{
+    "word": "fat",
+    "phonetic": "/fæt/",
+    "definition": "adj. 胖的",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very fat.",
+          "它非常胖的。"
+    ]
+},
+{
+    "word": "mad",
+    "phonetic": "/ˈmæːd/",
+    "definition": "adj. 发疯的；生气的",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very mad.",
+          "它非常发疯的。"
+    ]
+},
+{
+    "word": "ban",
+    "phonetic": "/bæn/",
+    "definition": "v. 禁止",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please ban it.",
+          "请禁止它。"
+    ]
+},
+{
+    "word": "plan",
+    "phonetic": "/plæn/",
+    "definition": "n. 计划",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a plan.",
+          "我看到一个计划。"
+    ]
+},
+{
+    "word": "back",
+    "phonetic": "/bæk/",
+    "definition": "n. 后面；背部",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a back.",
+          "我看到一个后面。"
+    ]
+},
+{
+    "word": "track",
+    "phonetic": "/tɹæk/",
+    "definition": "n. 轨道；足迹",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a track.",
+          "我看到一个轨道。"
+    ]
+},
+{
+    "word": "batt",
+    "phonetic": "/bæt/",
+    "definition": "n. 棉絮",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a batt.",
+          "我看到一个棉絮。"
+    ]
+},
+{
+    "word": "apple",
+    "phonetic": "/ˈæp.əl/",
+    "definition": "n. 苹果",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a apple.",
+          "我看到一个苹果。"
+    ]
+},
+{
+    "word": "happy",
+    "phonetic": "/ˈhæpiː/",
+    "definition": "adj. 快乐的",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very happy.",
+          "它非常快乐的。"
+    ]
+},
+{
+    "word": "family",
+    "phonetic": "/ˈfɛm(ɘ)li/",
+    "definition": "n. 家庭",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a family.",
+          "我看到一个家庭。"
+    ]
+},
+{
+    "word": "animal",
+    "phonetic": "/ˈænɪməl/",
+    "definition": "n. 动物",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a animal.",
+          "我看到一个动物。"
+    ]
+},
+{
+    "word": "lamp",
+    "phonetic": "/læmp/",
+    "definition": "n. 灯",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a lamp.",
+          "我看到一个灯。"
+    ]
+}
   ]
 };

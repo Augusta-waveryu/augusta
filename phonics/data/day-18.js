@@ -697,6 +697,323 @@ window.PHONICS_DAY_18 = {
         "The material is very soft.",
         "材料很柔软。"
       ]
-    }
+    },
+{
+    "word": "here",
+    "phonetic": "/hiːɹ/",
+    "definition": "adv. 这里",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "He runs here.",
+          "他这里地跑。"
+    ]
+},
+{
+    "word": "mere",
+    "phonetic": "/mɪə/",
+    "definition": "adj. 仅仅的",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very mere.",
+          "它非常仅仅的。"
+    ]
+},
+{
+    "word": "series",
+    "phonetic": "/ˈsɪə.ɹiːz/",
+    "definition": "n. 系列",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a series.",
+          "我看到一个系列。"
+    ]
+},
+{
+    "word": "area",
+    "phonetic": "/ˈɛə̯ɹɪə̯/",
+    "definition": "n. 地区；面积",
+    "breakdown": [
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/ɪə/"
+          }
+    ],
+    "sentences": [
+          "I see a area.",
+          "我看到一个地区。"
+    ]
+},
+{
+    "word": "theatre",
+    "phonetic": "/ˈθɪətə/",
+    "definition": "n. 剧院",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/ɪə/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a theatre.",
+          "我看到一个剧院。"
+    ]
+},
+{
+    "word": "career",
+    "phonetic": "/kəˈɹɪə/",
+    "definition": "n. 职业；事业",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "eer",
+                "phon": "/ɪə/"
+          }
+    ],
+    "sentences": [
+          "I see a career.",
+          "我看到一个职业。"
+    ]
+},
+{
+    "word": "appear",
+    "phonetic": "/əˈpiːɹ/",
+    "definition": "v. 出现",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/ɪə/"
+          }
+    ],
+    "sentences": [
+          "Please appear it.",
+          "请出现它。"
+    ]
+},
+{
+    "word": "experience",
+    "phonetic": "/ɪkˈspɪə.ɹɪəns/",
+    "definition": "n. 经验；经历",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "x",
+                "phon": "/ks/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a experience.",
+          "我看到一个经验。"
+    ]
+},
+{
+    "word": "really",
+    "phonetic": "/ˈɹɪəli/",
+    "definition": "adv. 真的；非常",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/ɪə/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "He runs really.",
+          "他真的地跑。"
+    ]
+},
+{
+    "word": "almost",
+    "phonetic": "/ɔːl.ˈməʊst/",
+    "definition": "adv. 几乎",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "He runs almost.",
+          "他几乎地跑。"
+    ]
+},
+{
+    "word": "hearing",
+    "phonetic": "/ˈhiːɹ.ɪŋ/",
+    "definition": "n. 听力；听证",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/ɪə/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a hearing.",
+          "我看到一个听力。"
+    ]
+}
   ]
 };

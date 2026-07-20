@@ -693,6 +693,368 @@ window.PHONICS_DAY_09 = {
         "Wash your hands before eating.",
         "饭前洗手。"
       ]
-    }
+    },
+{
+    "word": "cost",
+    "phonetic": "/ˈkɑst/",
+    "definition": "n. 费用；成本",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a cost.",
+          "我看到一个费用。"
+    ]
+},
+{
+    "word": "crop",
+    "phonetic": "/kɹɒp/",
+    "definition": "n. 庄稼",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a crop.",
+          "我看到一个庄稼。"
+    ]
+},
+{
+    "word": "long",
+    "phonetic": "/ˈlɔːŋ/",
+    "definition": "adj. 长的",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "It is very long.",
+          "它非常长的。"
+    ]
+},
+{
+    "word": "wrong",
+    "phonetic": "/ɹɒŋ/",
+    "definition": "adj. 错误的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "It is very wrong.",
+          "它非常错误的。"
+    ]
+},
+{
+    "word": "boss",
+    "phonetic": "/bɑs/",
+    "definition": "n. 老板",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a boss.",
+          "我看到一个老板。"
+    ]
+},
+{
+    "word": "loss",
+    "phonetic": "/lɑs/",
+    "definition": "n. 损失",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a loss.",
+          "我看到一个损失。"
+    ]
+},
+{
+    "word": "sod",
+    "phonetic": "/sɒd/",
+    "definition": "n. 草皮",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a sod.",
+          "我看到一个草皮。"
+    ]
+},
+{
+    "word": "cock",
+    "phonetic": "/kɒk/",
+    "definition": "n. 公鸡",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a cock.",
+          "我看到一个公鸡。"
+    ]
+},
+{
+    "word": "knock",
+    "phonetic": "/nɒk/",
+    "definition": "v. 敲",
+    "breakdown": [
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "Please knock it.",
+          "请敲它。"
+    ]
+},
+{
+    "word": "song",
+    "phonetic": "/sɒŋ/",
+    "definition": "n. 歌曲",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a song.",
+          "我看到一个歌曲。"
+    ]
+},
+{
+    "word": "watch",
+    "phonetic": "/wɒt͡ʃ/",
+    "definition": "n. 手表；观看",
+    "breakdown": [
+          {
+                "letter": "wa",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a watch.",
+          "我看到一个手表。"
+    ]
+},
+{
+    "word": "what",
+    "phonetic": "/wɔt/",
+    "definition": "pron. 什么",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "What is here.",
+          "什么在这里。"
+    ]
+},
+{
+    "word": "quality",
+    "phonetic": "/ˈkwɒlɪti/",
+    "definition": "n. 质量",
+    "breakdown": [
+          {
+                "letter": "qua",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a quality.",
+          "我看到一个质量。"
+    ]
+},
+{
+    "word": "quarrel",
+    "phonetic": "/ˈkwɒɹəl/",
+    "definition": "n. 争吵",
+    "breakdown": [
+          {
+                "letter": "qua",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a quarrel.",
+          "我看到一个争吵。"
+    ]
+}
   ]
 };

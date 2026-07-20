@@ -681,6 +681,300 @@ window.PHONICS_DAY_05 = {
         "The journey takes two hours.",
         "旅程需要两个小时。"
       ]
-    }
+    },
+{
+    "word": "thirty",
+    "phonetic": "/ˈθɜːti/",
+    "definition": "num. 三十",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I have thirty apples.",
+          "我有三十个苹果。"
+    ]
+},
+{
+    "word": "mercy",
+    "phonetic": "/ˈmɜːsi/",
+    "definition": "n. 仁慈；怜悯",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a mercy.",
+          "我看到一个仁慈。"
+    ]
+},
+{
+    "word": "herb",
+    "phonetic": "/hɜːb/",
+    "definition": "n. 草本植物；香草",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          }
+    ],
+    "sentences": [
+          "I see a herb.",
+          "我看到一个草本植物。"
+    ]
+},
+{
+    "word": "person",
+    "phonetic": "/ˈpɜːsən/",
+    "definition": "n. 人",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a person.",
+          "我看到一个人。"
+    ]
+},
+{
+    "word": "service",
+    "phonetic": "/ˈsɜːvɪs/",
+    "definition": "n. 服务",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a service.",
+          "我看到一个服务。"
+    ]
+},
+{
+    "word": "journal",
+    "phonetic": "/ˈd͡ʒɜːnəl/",
+    "definition": "n. 日志；期刊",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a journal.",
+          "我看到一个日志。"
+    ]
+},
+{
+    "word": "birthday",
+    "phonetic": "/ˈbɜːθ.deɪ/",
+    "definition": "n. 生日",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a birthday.",
+          "我看到一个生日。"
+    ]
+},
+{
+    "word": "return",
+    "phonetic": "/ɹɪˈtɜːn/",
+    "definition": "v. 返回",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please return it.",
+          "请返回它。"
+    ]
+},
+{
+    "word": "church",
+    "phonetic": "/t͡ʃɜːt͡ʃ/",
+    "definition": "n. 教堂",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a church.",
+          "我看到一个教堂。"
+    ]
+},
+{
+    "word": "purple",
+    "phonetic": "/ˈpɜː(ɹ).pəl/",
+    "definition": "adj. 紫色的",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very purple.",
+          "它非常紫色的。"
+    ]
+}
   ]
 };

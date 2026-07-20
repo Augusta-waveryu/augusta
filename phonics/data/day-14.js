@@ -633,6 +633,414 @@ window.PHONICS_DAY_14 = {
         "I close my eyes.",
         "我闭上眼睛。"
       ]
-    }
+    },
+{
+    "word": "site",
+    "phonetic": "/saɪt/",
+    "definition": "n. 地点；网站",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a site.",
+          "我看到一个地点。"
+    ]
+},
+{
+    "word": "buy",
+    "phonetic": "/baɪ/",
+    "definition": "v. 买",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "uy",
+                "phon": "/aɪ/"
+          }
+    ],
+    "sentences": [
+          "Please buy it.",
+          "请买它。"
+    ]
+},
+{
+    "word": "deny",
+    "phonetic": "/dɪˈnaɪ/",
+    "definition": "v. 否认",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "y",
+                "phon": "/aɪ/"
+          }
+    ],
+    "sentences": [
+          "Please deny it.",
+          "请否认它。"
+    ]
+},
+{
+    "word": "guy",
+    "phonetic": "/ɡaɪ/",
+    "definition": "n. 家伙；小伙子",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "uy",
+                "phon": "/aɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a guy.",
+          "我看到一个家伙。"
+    ]
+},
+{
+    "word": "sight",
+    "phonetic": "/saɪt/",
+    "definition": "n. 视力；景象",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "igh",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a sight.",
+          "我看到一个视力。"
+    ]
+},
+{
+    "word": "tight",
+    "phonetic": "/taɪt/",
+    "definition": "adj. 紧的",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "igh",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very tight.",
+          "它非常紧的。"
+    ]
+},
+{
+    "word": "rice",
+    "phonetic": "/ɹaɪs/",
+    "definition": "n. 米饭；大米",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a rice.",
+          "我看到一个米饭。"
+    ]
+},
+{
+    "word": "nice",
+    "phonetic": "/naɪs/",
+    "definition": "adj. 好的；友善的",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very nice.",
+          "它非常好的。"
+    ]
+},
+{
+    "word": "side",
+    "phonetic": "/saɪd/",
+    "definition": "n. 边；侧面",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a side.",
+          "我看到一个边。"
+    ]
+},
+{
+    "word": "wide",
+    "phonetic": "/wɑed/",
+    "definition": "adj. 宽的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very wide.",
+          "它非常宽的。"
+    ]
+},
+{
+    "word": "hide",
+    "phonetic": "/haɪd/",
+    "definition": "v. 隐藏",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please hide it.",
+          "请隐藏它。"
+    ]
+},
+{
+    "word": "wife",
+    "phonetic": "/waɪf/",
+    "definition": "n. 妻子",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a wife.",
+          "我看到一个妻子。"
+    ]
+},
+{
+    "word": "life",
+    "phonetic": "/laɪf/",
+    "definition": "n. 生活；生命",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a life.",
+          "我看到一个生活。"
+    ]
+},
+{
+    "word": "bite",
+    "phonetic": "/bʌɪt/",
+    "definition": "v. 咬",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please bite it.",
+          "请咬它。"
+    ]
+},
+{
+    "word": "kite",
+    "phonetic": "/kaɪt/",
+    "definition": "n. 风筝",
+    "breakdown": [
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a kite.",
+          "我看到一个风筝。"
+    ]
+},
+{
+    "word": "size",
+    "phonetic": "/saɪz/",
+    "definition": "n. 尺寸；大小",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "z",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a size.",
+          "我看到一个尺寸。"
+    ]
+}
   ]
 };

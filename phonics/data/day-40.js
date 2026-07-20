@@ -753,6 +753,544 @@ window.PHONICS_DAY_40 = {
         "We sing a psalm.",
         "我们唱赞美诗。"
       ]
-    }
+    },
+{
+    "word": "morning",
+    "phonetic": "/ˈmɔːnɪŋ/",
+    "definition": "n. 早晨",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a morning.",
+          "我看到一个早晨。"
+    ]
+},
+{
+    "word": "music",
+    "phonetic": "/ˈmjuːzɪk/",
+    "definition": "n. 音乐",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a music.",
+          "我看到一个音乐。"
+    ]
+},
+{
+    "word": "mother",
+    "phonetic": "/ˈmʌðə(ɹ)/",
+    "definition": "n. 母亲",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a mother.",
+          "我看到一个母亲。"
+    ]
+},
+{
+    "word": "mango",
+    "phonetic": "/ˈmæŋɡəʊ/",
+    "definition": "n. 芒果",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "I see a mango.",
+          "我看到一个芒果。"
+    ]
+},
+{
+    "word": "mountain",
+    "phonetic": "/ˈmaʊntɪn/",
+    "definition": "n. 山",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a mountain.",
+          "我看到一个山。"
+    ]
+},
+{
+    "word": "mirror",
+    "phonetic": "/ˈmɘ.ɹɘ/",
+    "definition": "n. 镜子",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          }
+    ],
+    "sentences": [
+          "I see a mirror.",
+          "我看到一个镜子。"
+    ]
+},
+{
+    "word": "swimming",
+    "phonetic": "/ˈswɪmɪŋ/",
+    "definition": "n. 游泳",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "mm",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a swimming.",
+          "我看到一个游泳。"
+    ]
+},
+{
+    "word": "common",
+    "phonetic": "/ˈkɒmən/",
+    "definition": "adj. 普通的；常见的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "mm",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "It is very common.",
+          "它非常普通的。"
+    ]
+},
+{
+    "word": "middle",
+    "phonetic": "/ˈmɪdəl/",
+    "definition": "n. 中间",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a middle.",
+          "我看到一个中间。"
+    ]
+},
+{
+    "word": "tomato",
+    "phonetic": "/tʰə̥ˈmɐːtʰɐʉ/",
+    "definition": "n. 西红柿",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "I see a tomato.",
+          "我看到一个西红柿。"
+    ]
+},
+{
+    "word": "family",
+    "phonetic": "/ˈfɛm(ɘ)li/",
+    "definition": "n. 家庭",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a family.",
+          "我看到一个家庭。"
+    ]
+},
+{
+    "word": "animal",
+    "phonetic": "/ˈænɪməl/",
+    "definition": "n. 动物",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a animal.",
+          "我看到一个动物。"
+    ]
+},
+{
+    "word": "dream",
+    "phonetic": "/dɹiːm/",
+    "definition": "n. 梦；梦想",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a dream.",
+          "我看到一个梦。"
+    ]
+},
+{
+    "word": "game",
+    "phonetic": "/ɡeɪm/",
+    "definition": "n. 游戏；比赛",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a game.",
+          "我看到一个游戏。"
+    ]
+},
+{
+    "word": "jump",
+    "phonetic": "/dʒʌmp/",
+    "definition": "v. 跳",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "Please jump it.",
+          "请跳它。"
+    ]
+},
+{
+    "word": "team",
+    "phonetic": "/tiːm/",
+    "definition": "n. 队伍",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a team.",
+          "我看到一个队伍。"
+    ]
+},
+{
+    "word": "from",
+    "phonetic": "/fɹɒm/",
+    "definition": "prep. 从；自",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "The book is from the desk.",
+          "书在桌子的从。"
+    ]
+},
+{
+    "word": "room",
+    "phonetic": "/ɹuːm/",
+    "definition": "n. 房间",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a room.",
+          "我看到一个房间。"
+    ]
+}
   ]
 };

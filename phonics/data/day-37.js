@@ -837,6 +837,407 @@ window.PHONICS_DAY_37 = {
         "He has a fortune.",
         "他有一笔财富。"
       ]
-    }
+    },
+{
+    "word": "chips",
+    "phonetic": "/tʃɪps/",
+    "definition": "n. 薯条；薯片",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a chips.",
+          "我看到一个薯条。"
+    ]
+},
+{
+    "word": "chat",
+    "phonetic": "/tʃæt/",
+    "definition": "v. 聊天",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please chat it.",
+          "请聊天它。"
+    ]
+},
+{
+    "word": "church",
+    "phonetic": "/t͡ʃɜːt͡ʃ/",
+    "definition": "n. 教堂",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a church.",
+          "我看到一个教堂。"
+    ]
+},
+{
+    "word": "lunch",
+    "phonetic": "/lʌnt͡ʃ/",
+    "definition": "n. 午餐",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a lunch.",
+          "我看到一个午餐。"
+    ]
+},
+{
+    "word": "teacher",
+    "phonetic": "/ˈtiːt͡ʃə/",
+    "definition": "n. 老师",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a teacher.",
+          "我看到一个老师。"
+    ]
+},
+{
+    "word": "peach",
+    "phonetic": "/piːt͡ʃ/",
+    "definition": "n. 桃子",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a peach.",
+          "我看到一个桃子。"
+    ]
+},
+{
+    "word": "much",
+    "phonetic": "/mʌt͡ʃ/",
+    "definition": "adj. 许多的",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "It is very much.",
+          "它非常许多的。"
+    ]
+},
+{
+    "word": "which",
+    "phonetic": "/wɪt͡ʃ/",
+    "definition": "pron. 哪一个",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "Which is here.",
+          "哪一个在这里。"
+    ]
+},
+{
+    "word": "rich",
+    "phonetic": "/ɹɪt͡ʃ/",
+    "definition": "adj. 富有的",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "It is very rich.",
+          "它非常富有的。"
+    ]
+},
+{
+    "word": "touch",
+    "phonetic": "/tʌtʃ/",
+    "definition": "v. 触摸",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "Please touch it.",
+          "请触摸它。"
+    ]
+},
+{
+    "word": "patch",
+    "phonetic": "/pætʃ/",
+    "definition": "n. 补丁；小块",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "tch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a patch.",
+          "我看到一个补丁。"
+    ]
+},
+{
+    "word": "branch",
+    "phonetic": "/bɹæntʃ/",
+    "definition": "n. 树枝；分支",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a branch.",
+          "我看到一个树枝。"
+    ]
+},
+{
+    "word": "chest",
+    "phonetic": "/t͡ʃɛst/",
+    "definition": "n. 胸部；箱子",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a chest.",
+          "我看到一个胸部。"
+    ]
+},
+{
+    "word": "children",
+    "phonetic": "/ˈt͡ʃʊld̠ɹ̠ ̝ʷən/",
+    "definition": "n. 孩子们",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a children.",
+          "我看到一个孩子们。"
+    ]
+},
+{
+    "word": "sandwich",
+    "phonetic": "/ˈsæmwɪd͡ʒ/",
+    "definition": "n. 三明治",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a sandwich.",
+          "我看到一个三明治。"
+    ]
+}
   ]
 };

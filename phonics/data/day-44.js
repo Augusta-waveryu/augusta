@@ -701,6 +701,272 @@ window.PHONICS_DAY_44 = {
         "I go there once a week.",
         "我每周去一次。"
       ]
-    }
+    },
+{
+    "word": "wet",
+    "phonetic": "/wɛt/",
+    "definition": "adj. 湿的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very wet.",
+          "它非常湿的。"
+    ]
+},
+{
+    "word": "win",
+    "phonetic": "/wɪn/",
+    "definition": "v. 赢",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please win it.",
+          "请赢它。"
+    ]
+},
+{
+    "word": "woman",
+    "phonetic": "/ˈwʊmɘn/",
+    "definition": "n. 女人",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a woman.",
+          "我看到一个女人。"
+    ]
+},
+{
+    "word": "work",
+    "phonetic": "/wɜːk/",
+    "definition": "n. 工作",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a work.",
+          "我看到一个工作。"
+    ]
+},
+{
+    "word": "word",
+    "phonetic": "/wɜːd/",
+    "definition": "n. 单词",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a word.",
+          "我看到一个单词。"
+    ]
+},
+{
+    "word": "world",
+    "phonetic": "/wɝld/",
+    "definition": "n. 世界",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a world.",
+          "我看到一个世界。"
+    ]
+},
+{
+    "word": "who",
+    "phonetic": "/huː/",
+    "definition": "pron. 谁",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Who is here.",
+          "谁在这里。"
+    ]
+},
+{
+    "word": "whose",
+    "phonetic": "/huːz/",
+    "definition": "pron. 谁的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Whose is here.",
+          "谁的在这里。"
+    ]
+},
+{
+    "word": "whole",
+    "phonetic": "/həʊl/",
+    "definition": "adj. 整个的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very whole.",
+          "它非常整个的。"
+    ]
+},
+{
+    "word": "wonderful",
+    "phonetic": "/ˈwʌn.də.fl/",
+    "definition": "adj. 精彩的；美妙的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very wonderful.",
+          "它非常精彩的。"
+    ]
+}
   ]
 };

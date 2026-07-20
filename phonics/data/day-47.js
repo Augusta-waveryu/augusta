@@ -825,6 +825,731 @@ window.PHONICS_DAY_47 = {
         "My parents are kind.",
         "我父母很善良。"
       ]
+    },
+{
+    "word": "apples",
+    "phonetic": "/ˈæ.pl̩z/",
+    "definition": "n. 苹果（复数）",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some apples.",
+        "我看到一些苹果。"
+      ]
+    },
+{
+    "word": "cups",
+    "phonetic": "/kʌps/",
+    "definition": "n. 杯子（复数）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two cups.",
+        "我看到两个杯子。"
+      ]
+    },
+{
+    "word": "books",
+    "phonetic": "/bʊks/",
+    "definition": "n. 书（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two books.",
+        "我看到两本书。"
+      ]
+    },
+{
+    "word": "cakes",
+    "phonetic": "/keɪks/",
+    "definition": "n. 蛋糕（复数）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two cakes.",
+        "我看到两块蛋糕。"
+      ]
+    },
+{
+    "word": "ducks",
+    "phonetic": "/dʌks/",
+    "definition": "n. 鸭子（复数）",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two ducks.",
+        "我看到两只鸭子。"
+      ]
+    },
+{
+    "word": "socks",
+    "phonetic": "/sɒks/",
+    "definition": "n. 袜子（复数）",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two socks.",
+        "我看到两只袜子。"
+      ]
+    },
+{
+    "word": "bikes",
+    "phonetic": "/baɪks/",
+    "definition": "n. 自行车（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two bikes.",
+        "我看到两辆自行车。"
+      ]
+    },
+{
+    "word": "stars",
+    "phonetic": "/stɑːz/",
+    "definition": "n. 星星（复数）",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see many stars.",
+        "我看到许多星星。"
+      ]
+    },
+{
+    "word": "rabbits",
+    "phonetic": "/ˈræbɪts/",
+    "definition": "n. 兔子（复数）",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two rabbits.",
+        "我看到两只兔子。"
+      ]
+    },
+{
+    "word": "carrots",
+    "phonetic": "/ˈkærəts/",
+    "definition": "n. 胡萝卜（复数）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see some carrots.",
+        "我看到一些胡萝卜。"
+      ]
+    },
+{
+    "word": "robots",
+    "phonetic": "/ˈrəʊbɒts/",
+    "definition": "n. 机器人（复数）",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two robots.",
+        "我看到两个机器人。"
+      ]
+    },
+{
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "definition": "n. 票",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a ticket.",
+          "我看到一个票。"
+    ]
+},
+{
+    "word": "parrots",
+    "phonetic": "/ˈpærəts/",
+    "definition": "n. 鹦鹉（复数）",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two parrots.",
+        "我看到两只鹦鹉。"
+      ]
+    },
+{
+    "word": "jackets",
+    "phonetic": "/ˈdʒækɪts/",
+    "definition": "n. 夹克（复数）",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two jackets.",
+        "我看到两件夹克。"
+      ]
+    },
+{
+    "word": "pockets",
+    "phonetic": "/ˈpɒkɪts/",
+    "definition": "n. 口袋（复数）",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two pockets.",
+        "我看到两个口袋。"
+      ]
+    },
+{
+    "word": "rockets",
+    "phonetic": "/ˈrɒkɪts/",
+    "definition": "n. 火箭（复数）",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two rockets.",
+        "我看到两枚火箭。"
+      ]
+    },
+{
+    "word": "buckets",
+    "phonetic": "/ˈbʌkɪts/",
+    "definition": "n. 桶（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two buckets.",
+        "我看到两个桶。"
+      ]
+    },
+{
+    "word": "markets",
+    "phonetic": "/ˈmɑːkɪts/",
+    "definition": "n. 市场（复数）",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two markets.",
+        "我看到两个市场。"
+      ]
+    },
+{
+    "word": "helmets",
+    "phonetic": "/ˈhelmɪts/",
+    "definition": "n. 头盔（复数）",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two helmets.",
+        "我看到两顶头盔。"
+      ]
+    },
+{
+    "word": "bracelets",
+    "phonetic": "/ˈbreɪslɪts/",
+    "definition": "n. 手镯（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two bracelets.",
+        "我看到两只手镯。"
+      ]
+    },
+{
+    "word": "magnets",
+    "phonetic": "/ˈmæɡnɪts/",
+    "definition": "n. 磁铁（复数）",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two magnets.",
+        "我看到两块磁铁。"
+      ]
+    },
+{
+    "word": "carpets",
+    "phonetic": "/ˈkɑːpɪts/",
+    "definition": "n. 地毯（复数）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see two carpets.",
+        "我看到两块地毯。"
+      ]
+    },
+{
+    "word": "planets",
+    "phonetic": "/ˈplænɪts/",
+    "definition": "n. 行星（复数）",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ts",
+                "phon": "/ts/"
+          }
+    ],
+    "sentences": [
+        "I see many planets.",
+        "我看到许多行星。"
+      ]
     }
   ]
 };

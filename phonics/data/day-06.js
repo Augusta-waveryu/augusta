@@ -821,6 +821,572 @@ window.PHONICS_DAY_06 = {
         "The book is on the table.",
         "书在桌子上。"
       ]
-    }
+    },
+{
+    "word": "ago",
+    "phonetic": "/əˈɡəʊ/",
+    "definition": "adv. 以前",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "He runs ago.",
+          "他以前地跑。"
+    ]
+},
+{
+    "word": "arrive",
+    "phonetic": "/əˈɹaɪv/",
+    "definition": "v. 到达",
+    "breakdown": [
+          {
+                "letter": "ar",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please arrive it.",
+          "请到达它。"
+    ]
+},
+{
+    "word": "collect",
+    "phonetic": "/kəˈlɛkt/",
+    "definition": "v. 收集",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please collect it.",
+          "请收集它。"
+    ]
+},
+{
+    "word": "occasion",
+    "phonetic": "/əˈkeɪʒən/",
+    "definition": "n. 场合",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a occasion.",
+          "我看到一个场合。"
+    ]
+},
+{
+    "word": "accident",
+    "phonetic": "/ˈæk.sə.dənt/",
+    "definition": "n. 事故",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a accident.",
+          "我看到一个事故。"
+    ]
+},
+{
+    "word": "happen",
+    "phonetic": "/ˈhæpən/",
+    "definition": "v. 发生",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please happen it.",
+          "请发生它。"
+    ]
+},
+{
+    "word": "father",
+    "phonetic": "/ˈfaːðə/",
+    "definition": "n. 父亲",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a father.",
+          "我看到一个父亲。"
+    ]
+},
+{
+    "word": "mother",
+    "phonetic": "/ˈmʌðə(ɹ)/",
+    "definition": "n. 母亲",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a mother.",
+          "我看到一个母亲。"
+    ]
+},
+{
+    "word": "farmer",
+    "phonetic": "/fɑːmə/",
+    "definition": "n. 农民",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a farmer.",
+          "我看到一个农民。"
+    ]
+},
+{
+    "word": "forget",
+    "phonetic": "/fəˈɡɛt/",
+    "definition": "v. 忘记",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please forget it.",
+          "请忘记它。"
+    ]
+},
+{
+    "word": "inventor",
+    "phonetic": "/ɪnˈvɛntə/",
+    "definition": "n. 发明家",
+    "breakdown": [
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a inventor.",
+          "我看到一个发明家。"
+    ]
+},
+{
+    "word": "ruler",
+    "phonetic": "/ˈɹuːlə(ɹ)/",
+    "definition": "n. 尺子；统治者",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a ruler.",
+          "我看到一个尺子。"
+    ]
+},
+{
+    "word": "teacher",
+    "phonetic": "/ˈtiːt͡ʃə/",
+    "definition": "n. 老师",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a teacher.",
+          "我看到一个老师。"
+    ]
+},
+{
+    "word": "menu",
+    "phonetic": "/ˈmɛnju/",
+    "definition": "n. 菜单",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/ə/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          }
+    ],
+    "sentences": [
+          "I see a menu.",
+          "我看到一个菜单。"
+    ]
+},
+{
+    "word": "worker",
+    "phonetic": "/ˈwɜː.kə/",
+    "definition": "n. 工人",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a worker.",
+          "我看到一个工人。"
+    ]
+},
+{
+    "word": "dollar",
+    "phonetic": "/dɔlɚ/",
+    "definition": "n. 美元",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a dollar.",
+          "我看到一个美元。"
+    ]
+},
+{
+    "word": "mirror",
+    "phonetic": "/ˈmɘ.ɹɘ/",
+    "definition": "n. 镜子",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a mirror.",
+          "我看到一个镜子。"
+    ]
+},
+{
+    "word": "visitor",
+    "phonetic": "/ˈvɪzɪtə/",
+    "definition": "n. 访客",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ə/"
+          }
+    ],
+    "sentences": [
+          "I see a visitor.",
+          "我看到一个访客。"
+    ]
+}
   ]
 };

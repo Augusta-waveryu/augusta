@@ -821,6 +821,810 @@ window.PHONICS_DAY_48 = {
         "The shields are strong.",
         "盾牌很坚固。"
       ]
+    },
+{
+    "word": "roads",
+    "phonetic": "/ɹəʊdz/",
+    "definition": "n. 路（复数）",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oa",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "ds",
+                "phon": "/dz/"
+          }
+    ],
+    "sentences": [
+        "I see two roads.",
+        "我看到两条路。"
+      ]
+    },
+{
+    "word": "dogs",
+    "phonetic": "/dɑɡz/",
+    "definition": "n. 狗（复数）",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two dogs.",
+        "我看到两只狗。"
+      ]
+    },
+{
+    "word": "eggs",
+    "phonetic": "/ɛɡz/",
+    "definition": "n. 鸡蛋（复数）",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some eggs.",
+        "我看到一些鸡蛋。"
+      ]
+    },
+{
+    "word": "bags",
+    "phonetic": "/bæɡz/",
+    "definition": "n. 包（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two bags.",
+        "我看到两个包。"
+      ]
+    },
+{
+    "word": "toys",
+    "phonetic": "/tɔɪz/",
+    "definition": "n. 玩具（复数）",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oy",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some toys.",
+        "我看到一些玩具。"
+      ]
+    },
+{
+    "word": "leaves",
+    "phonetic": "/liːvz/",
+    "definition": "n. 树叶（复数）",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see many leaves.",
+        "我看到许多树叶。"
+      ]
+    },
+{
+    "word": "boys",
+    "phonetic": "/bɔɪz/",
+    "definition": "n. 男孩（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "oy",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two boys.",
+        "我看到两个男孩。"
+      ]
+    },
+{
+    "word": "girls",
+    "phonetic": "/ɡɜːlz/",
+    "definition": "n. 女孩（复数）",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two girls.",
+        "我看到两个女孩。"
+      ]
+    },
+{
+    "word": "pencils",
+    "phonetic": "/ˈpɛnsəlz/",
+    "definition": "n. 铅笔（复数）",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two pencils.",
+        "我看到两支铅笔。"
+      ]
+    },
+{
+    "word": "rulers",
+    "phonetic": "/ˈruːləz/",
+    "definition": "n. 尺子（复数）",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two rulers.",
+        "我看到两把尺子。"
+      ]
+    },
+{
+    "word": "windows",
+    "phonetic": "/ˈwɪndəʊz/",
+    "definition": "n. 窗户（复数）",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two windows.",
+        "我看到两扇窗户。"
+      ]
+    },
+{
+    "word": "bananas",
+    "phonetic": "/bəˈnɑːnəz/",
+    "definition": "n. 香蕉（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some bananas.",
+        "我看到一些香蕉。"
+      ]
+    },
+{
+    "word": "tomatoes",
+    "phonetic": "/təˈmɑːtəʊz/",
+    "definition": "n. 西红柿（复数）",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some tomatoes.",
+        "我看到一些西红柿。"
+      ]
+    },
+{
+    "word": "potatoes",
+    "phonetic": "/pəˈteɪtəʊz/",
+    "definition": "n. 土豆（复数）",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some potatoes.",
+        "我看到一些土豆。"
+      ]
+    },
+{
+    "word": "noodles",
+    "phonetic": "/ˈnuːd(ə)lz/",
+    "definition": "n. 面条（复数）",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some noodles.",
+        "我看到一些面条。"
+      ]
+    },
+{
+    "word": "families",
+    "phonetic": "/ˈfæməliz/",
+    "definition": "n. 家庭（复数）",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two families.",
+        "我看到两个家庭。"
+      ]
+    },
+{
+    "word": "babies",
+    "phonetic": "/ˈbeɪbiz/",
+    "definition": "n. 婴儿（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two babies.",
+        "我看到两个婴儿。"
+      ]
+    },
+{
+    "word": "strawberries",
+    "phonetic": "/ˈstrɔːbəriz/",
+    "definition": "n. 草莓（复数）",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some strawberries.",
+        "我看到一些草莓。"
+      ]
+    },
+{
+    "word": "candies",
+    "phonetic": "/ˈkændiz/",
+    "definition": "n. 糖果（复数）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see some candies.",
+        "我看到一些糖果。"
+      ]
+    },
+{
+    "word": "ladies",
+    "phonetic": "/ˈleɪdiz/",
+    "definition": "n. 女士们",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two ladies.",
+        "我看到两位女士。"
+      ]
+    },
+{
+    "word": "buddies",
+    "phonetic": "/ˈbʌdiz/",
+    "definition": "n. 伙伴（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two buddies.",
+        "我看到两个伙伴。"
+      ]
+    },
+{
+    "word": "clouds",
+    "phonetic": "/klaʊdz/",
+    "definition": "n. 云（复数）",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "ds",
+                "phon": "/dz/"
+          }
+    ],
+    "sentences": [
+        "I see many clouds.",
+        "我看到许多云。"
+      ]
+    },
+{
+    "word": "balls",
+    "phonetic": "/bɔːlz/",
+    "definition": "n. 球（复数）",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see two balls.",
+        "我看到两个球。"
+      ]
+    },
+{
+    "word": "stars",
+    "phonetic": "/stɑːz/",
+    "definition": "n. 星星（复数）",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+        "I see many stars.",
+        "我看到许多星星。"
+      ]
     }
   ]
 };

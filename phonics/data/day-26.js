@@ -737,6 +737,372 @@ window.PHONICS_DAY_26 = {
         "The eagle flies high.",
         "鹰飞得很高。"
       ]
-    }
+    },
+{
+    "word": "gate",
+    "phonetic": "/ɡeɪt/",
+    "definition": "n. 大门",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a gate.",
+          "我看到一个大门。"
+    ]
+},
+{
+    "word": "gift",
+    "phonetic": "/ɡɪft/",
+    "definition": "n. 礼物",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a gift.",
+          "我看到一个礼物。"
+    ]
+},
+{
+    "word": "grass",
+    "phonetic": "/ɡɹ̠äːs/",
+    "definition": "n. 草",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a grass.",
+          "我看到一个草。"
+    ]
+},
+{
+    "word": "goat",
+    "phonetic": "/ɡɐ̟ʉt/",
+    "definition": "n. 山羊",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "oa",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a goat.",
+          "我看到一个山羊。"
+    ]
+},
+{
+    "word": "goose",
+    "phonetic": "/ˈɡuːs/",
+    "definition": "n. 鹅",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a goose.",
+          "我看到一个鹅。"
+    ]
+},
+{
+    "word": "gold",
+    "phonetic": "/ɡɒʊld/",
+    "definition": "n. 黄金",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a gold.",
+          "我看到一个黄金。"
+    ]
+},
+{
+    "word": "egg",
+    "phonetic": "/eɪɡ/",
+    "definition": "n. 鸡蛋",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "gg",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a egg.",
+          "我看到一个鸡蛋。"
+    ]
+},
+{
+    "word": "foggy",
+    "phonetic": "/ˈfɒɡi/",
+    "definition": "adj. 有雾的",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "gg",
+                "phon": "/g/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very foggy.",
+          "它非常有雾的。"
+    ]
+},
+{
+    "word": "dog",
+    "phonetic": "/dɑɡ/",
+    "definition": "n. 狗",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a dog.",
+          "我看到一个狗。"
+    ]
+},
+{
+    "word": "bag",
+    "phonetic": "/ˈbæːɡ/",
+    "definition": "n. 包",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a bag.",
+          "我看到一个包。"
+    ]
+},
+{
+    "word": "flag",
+    "phonetic": "/flæɡ/",
+    "definition": "n. 旗帜",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a flag.",
+          "我看到一个旗帜。"
+    ]
+},
+{
+    "word": "leg",
+    "phonetic": "/leɪɡ/",
+    "definition": "n. 腿",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a leg.",
+          "我看到一个腿。"
+    ]
+},
+{
+    "word": "frog",
+    "phonetic": "/fɹɒɡ/",
+    "definition": "n. 青蛙",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a frog.",
+          "我看到一个青蛙。"
+    ]
+},
+{
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋ.ɡɹi/",
+    "definition": "adj. 饥饿的",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very hungry.",
+          "它非常饥饿的。"
+    ]
+}
   ]
 };

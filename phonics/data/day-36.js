@@ -761,6 +761,257 @@ window.PHONICS_DAY_36 = {
         "The rhino is big.",
         "犀牛很大。"
       ]
-    }
+    },
+{
+    "word": "ruler",
+    "phonetic": "/ˈɹuːlə(ɹ)/",
+    "definition": "n. 尺子；统治者",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a ruler.",
+          "我看到一个尺子。"
+    ]
+},
+{
+    "word": "rocket",
+    "phonetic": "/ˈɹɒkɪt/",
+    "definition": "n. 火箭",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a rocket.",
+          "我看到一个火箭。"
+    ]
+},
+{
+    "word": "round",
+    "phonetic": "/ˈɹaʊnd/",
+    "definition": "adj. 圆的",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very round.",
+          "它非常圆的。"
+    ]
+},
+{
+    "word": "mirror",
+    "phonetic": "/ˈmɘ.ɹɘ/",
+    "definition": "n. 镜子",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "rr",
+                "phon": "/r/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          }
+    ],
+    "sentences": [
+          "I see a mirror.",
+          "我看到一个镜子。"
+    ]
+},
+{
+    "word": "parrot",
+    "phonetic": "/ˈpæɹət/",
+    "definition": "n. 鹦鹉",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "rr",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a parrot.",
+          "我看到一个鹦鹉。"
+    ]
+},
+{
+    "word": "arrange",
+    "phonetic": "/əˈɹeɪndʒ/",
+    "definition": "v. 安排",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "rr",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please arrange it.",
+          "请安排它。"
+    ]
+},
+{
+    "word": "wrap",
+    "phonetic": "/ɹæp/",
+    "definition": "v. 包裹",
+    "breakdown": [
+          {
+                "letter": "wr",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "Please wrap it.",
+          "请包裹它。"
+    ]
+},
+{
+    "word": "writer",
+    "phonetic": "/ˈɹaɪ.tə/",
+    "definition": "n. 作家",
+    "breakdown": [
+          {
+                "letter": "wr",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a writer.",
+          "我看到一个作家。"
+    ]
+},
+{
+    "word": "rainy",
+    "phonetic": "/ˈɹeɪni/",
+    "definition": "adj. 下雨的",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very rainy.",
+          "它非常下雨的。"
+    ]
+}
   ]
 };

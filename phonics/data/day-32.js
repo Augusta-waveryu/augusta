@@ -777,6 +777,156 @@ window.PHONICS_DAY_32 = {
         "He is a worthy hero.",
         "他是个值得尊敬的英雄。"
       ]
-    }
+    },
+{
+    "word": "et",
+    "phonetic": "/ɛt/",
+    "definition": "abbr. 外星人（ET）",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a et.",
+          "我看到一个外星人（ET）。"
+    ]
+},
+{
+    "word": "though",
+    "phonetic": "/ðəʊ/",
+    "definition": "conj. 虽然",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "h",
+                "phon": "/h/"
+          }
+    ],
+    "sentences": [
+          "You though me.",
+          "你虽然我。"
+    ]
+},
+{
+    "word": "or",
+    "phonetic": "/ɔː(ɹ)/",
+    "definition": "conj. 或者",
+    "breakdown": [
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          }
+    ],
+    "sentences": [
+          "You or me.",
+          "你或者我。"
+    ]
+},
+{
+    "word": "weather",
+    "phonetic": "/ˈwɛðə/",
+    "definition": "n. 天气",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a weather.",
+          "我看到一个天气。"
+    ]
+},
+{
+    "word": "feather",
+    "phonetic": "/ˈfɛð.ə(ɹ)/",
+    "definition": "n. 羽毛",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a feather.",
+          "我看到一个羽毛。"
+    ]
+},
+{
+    "word": "clothing",
+    "phonetic": "/ˈkləʊðɪŋ/",
+    "definition": "n. 衣服",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/ð/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a clothing.",
+          "我看到一个衣服。"
+    ]
+}
   ]
 };

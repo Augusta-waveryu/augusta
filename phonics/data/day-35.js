@@ -681,6 +681,254 @@ window.PHONICS_DAY_35 = {
         "The whale is huge.",
         "鲸鱼很大。"
       ]
-    }
+    },
+{
+    "word": "hen",
+    "phonetic": "/hɛn/",
+    "definition": "n. 母鸡",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a hen.",
+          "我看到一个母鸡。"
+    ]
+},
+{
+    "word": "hello",
+    "phonetic": "/həˈləʊ/",
+    "definition": "int. 你好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Hello!",
+          "你好！"
+    ]
+},
+{
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋ.ɡɹi/",
+    "definition": "adj. 饥饿的",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very hungry.",
+          "它非常饥饿的。"
+    ]
+},
+{
+    "word": "hobby",
+    "phonetic": "/ˈhɒ.bi/",
+    "definition": "n. 爱好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a hobby.",
+          "我看到一个爱好。"
+    ]
+},
+{
+    "word": "hospital",
+    "phonetic": "/ˈhɒs.pɪ.tl̩/",
+    "definition": "n. 医院",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a hospital.",
+          "我看到一个医院。"
+    ]
+},
+{
+    "word": "holiday",
+    "phonetic": "/ˈhɒlɪdeɪ/",
+    "definition": "n. 假日",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a holiday.",
+          "我看到一个假日。"
+    ]
+},
+{
+    "word": "whose",
+    "phonetic": "/huːz/",
+    "definition": "pron. 谁的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Whose is here.",
+          "谁的在这里。"
+    ]
+},
+{
+    "word": "white",
+    "phonetic": "/waɪt/",
+    "definition": "adj. 白色的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/h/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very white.",
+          "它非常白色的。"
+    ]
+}
   ]
 };

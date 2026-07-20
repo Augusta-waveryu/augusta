@@ -793,6 +793,254 @@ window.PHONICS_DAY_42 = {
         "My uncle is funny.",
         "叔叔很有趣。"
       ]
-    }
+    },
+{
+    "word": "fishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "definition": "n. 钓鱼",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a fishing.",
+          "我看到一个钓鱼。"
+    ]
+},
+{
+    "word": "swimming",
+    "phonetic": "/ˈswɪmɪŋ/",
+    "definition": "n. 游泳",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a swimming.",
+          "我看到一个游泳。"
+    ]
+},
+{
+    "word": "reading",
+    "phonetic": "/ˈɹidiŋ/",
+    "definition": "n. 阅读",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a reading.",
+          "我看到一个阅读。"
+    ]
+},
+{
+    "word": "running",
+    "phonetic": "/ˈɹʌnɪŋ/",
+    "definition": "n. 跑步",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a running.",
+          "我看到一个跑步。"
+    ]
+},
+{
+    "word": "young",
+    "phonetic": "/jʌŋ/",
+    "definition": "adj. 年轻的",
+    "breakdown": [
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "It is very young.",
+          "它非常年轻的。"
+    ]
+},
+{
+    "word": "longer",
+    "phonetic": "/ˈlɑŋ.ɡɚ/",
+    "definition": "adj. 更长的",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "It is very longer.",
+          "它非常更长的。"
+    ]
+},
+{
+    "word": "stronger",
+    "phonetic": "/ˈstɹɑŋɡɚ/",
+    "definition": "adj. 更强壮的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "It is very stronger.",
+          "它非常更强壮的。"
+    ]
+},
+{
+    "word": "bani",
+    "phonetic": "/ˈbɑːni/",
+    "definition": "n. （地名）巴尼",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a bani.",
+          "我看到一个（地名）巴尼。"
+    ]
+}
   ]
 };

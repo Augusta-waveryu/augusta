@@ -689,6 +689,237 @@ window.PHONICS_DAY_03 = {
         "I have a headache.",
         "我头疼。"
       ]
-    }
+    },
+{
+    "word": "fed",
+    "phonetic": "/fɛd/",
+    "definition": "v. 喂（feed的过去式）",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "Please fed it.",
+          "请喂（feed的过去式）它。"
+    ]
+},
+{
+    "word": "then",
+    "phonetic": "/ðen/",
+    "definition": "adv. 然后；那时",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "He runs then.",
+          "他然后地跑。"
+    ]
+},
+{
+    "word": "when",
+    "phonetic": "/ʍɛn/",
+    "definition": "adv. 什么时候",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "He runs when.",
+          "他什么时候地跑。"
+    ]
+},
+{
+    "word": "set",
+    "phonetic": "/sɛt/",
+    "definition": "v. 设置；放置",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please set it.",
+          "请设置它。"
+    ]
+},
+{
+    "word": "best",
+    "phonetic": "/ˈbɛst/",
+    "definition": "adj. 最好的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very best.",
+          "它非常最好的。"
+    ]
+},
+{
+    "word": "bread",
+    "phonetic": "/bɹeːd/",
+    "definition": "n. 面包",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/e/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a bread.",
+          "我看到一个面包。"
+    ]
+},
+{
+    "word": "ready",
+    "phonetic": "/ˈɹɛdi/",
+    "definition": "adj. 准备好的",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/e/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very ready.",
+          "它非常准备好的。"
+    ]
+},
+{
+    "word": "help",
+    "phonetic": "/hɛlp/",
+    "definition": "v. 帮助",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "Please help it.",
+          "请帮助它。"
+    ]
+},
+{
+    "word": "dress",
+    "phonetic": "/dɹɛs/",
+    "definition": "n. 连衣裙",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a dress.",
+          "我看到一个连衣裙。"
+    ]
+}
   ]
 };

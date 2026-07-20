@@ -645,6 +645,198 @@ window.PHONICS_DAY_19 = {
         "Repair the broken chair.",
         "修理坏椅子。"
       ]
-    }
+    },
+{
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "definition": "n. 票",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a ticket.",
+          "我看到一个票。"
+    ]
+},
+{
+    "word": "bare",
+    "phonetic": "/bɛə(ɹ)/",
+    "definition": "adj. 光秃的；赤裸的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "are",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "It is very bare.",
+          "它非常光秃的。"
+    ]
+},
+{
+    "word": "swear",
+    "phonetic": "/swɛə/",
+    "definition": "v. 发誓",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "Please swear it.",
+          "请发誓它。"
+    ]
+},
+{
+    "word": "there",
+    "phonetic": "/ðeː(ɹ)/",
+    "definition": "adv. 那里",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ere",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "He runs there.",
+          "他那里地跑。"
+    ]
+},
+{
+    "word": "where",
+    "phonetic": "/wɛə(ɹ)/",
+    "definition": "adv. 哪里",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ere",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "He runs where.",
+          "他哪里地跑。"
+    ]
+},
+{
+    "word": "fairy",
+    "phonetic": "/ˈfɛə̯ɹi/",
+    "definition": "n. 仙女",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "air",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a fairy.",
+          "我看到一个仙女。"
+    ]
+},
+{
+    "word": "various",
+    "phonetic": "/ˈvɛə.ɹi.əs/",
+    "definition": "adj. 各种各样的",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "It is very various.",
+          "它非常各种各样的。"
+    ]
+},
+{
+    "word": "airport",
+    "phonetic": "/ˈɛə.pɔːt/",
+    "definition": "n. 机场",
+    "breakdown": [
+          {
+                "letter": "air",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a airport.",
+          "我看到一个机场。"
+    ]
+}
   ]
 };

@@ -717,6 +717,200 @@ window.PHONICS_DAY_12 = {
         "I play football after school.",
         "放学后我踢足球。"
       ]
-    }
+    },
+{
+    "word": "brook",
+    "phonetic": "/bɹʊk/",
+    "definition": "n. 小溪",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/ʊ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a brook.",
+          "我看到一个小溪。"
+    ]
+},
+{
+    "word": "sugar",
+    "phonetic": "/ˈʃʊɡə(ɹ)/",
+    "definition": "n. 糖",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʊ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          }
+    ],
+    "sentences": [
+          "I see a sugar.",
+          "我看到一个糖。"
+    ]
+},
+{
+    "word": "butcher",
+    "phonetic": "/ˈbʊtʃ.ə(ɹ)/",
+    "definition": "n. 屠夫；肉贩",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a butcher.",
+          "我看到一个屠夫。"
+    ]
+},
+{
+    "word": "bullet",
+    "phonetic": "/ˈbʊl.ɪt/",
+    "definition": "n. 子弹",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a bullet.",
+          "我看到一个子弹。"
+    ]
+},
+{
+    "word": "cookie",
+    "phonetic": "/ˈkuːki/",
+    "definition": "n. 饼干",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/ʊ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a cookie.",
+          "我看到一个饼干。"
+    ]
+},
+{
+    "word": "classroom",
+    "phonetic": "/ˈklɑːsɹʊm/",
+    "definition": "n. 教室",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/ʊ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a classroom.",
+          "我看到一个教室。"
+    ]
+}
   ]
 };

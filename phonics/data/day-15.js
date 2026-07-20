@@ -685,6 +685,149 @@ window.PHONICS_DAY_15 = {
         "Keep poison away from children.",
         "把毒药远离儿童。"
       ]
-    }
+    },
+{
+    "word": "toilet",
+    "phonetic": "/ˈtɔɪ.lət/",
+    "definition": "n. 厕所",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oi",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a toilet.",
+          "我看到一个厕所。"
+    ]
+},
+{
+    "word": "spoil",
+    "phonetic": "/spɔɪl/",
+    "definition": "v. 破坏；宠坏",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "oi",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "Please spoil it.",
+          "请破坏它。"
+    ]
+},
+{
+    "word": "moist",
+    "phonetic": "/mɔɪst/",
+    "definition": "adj. 湿润的",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "oi",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very moist.",
+          "它非常湿润的。"
+    ]
+},
+{
+    "word": "miff",
+    "phonetic": "/mɪf/",
+    "definition": "n. 小争执",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a miff.",
+          "我看到一个小争执。"
+    ]
+},
+{
+    "word": "toyshop",
+    "phonetic": "/ˈtɔɪʃɒp/",
+    "definition": "n. 玩具店",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oy",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a toyshop.",
+          "我看到一个玩具店。"
+    ]
+}
   ]
 };

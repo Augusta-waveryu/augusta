@@ -769,6 +769,353 @@ window.PHONICS_DAY_23 = {
         "I washed my hands.",
         "我洗了手。"
       ]
-    }
+    },
+{
+    "word": "toy",
+    "phonetic": "/tɔɪ/",
+    "definition": "n. 玩具",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oy",
+                "phon": "/ɔɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a toy.",
+          "我看到一个玩具。"
+    ]
+},
+{
+    "word": "tail",
+    "phonetic": "/teɪl/",
+    "definition": "n. 尾巴",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a tail.",
+          "我看到一个尾巴。"
+    ]
+},
+{
+    "word": "tell",
+    "phonetic": "/tɛl/",
+    "definition": "v. 告诉",
+    "breakdown": [
+          {
+                "letter": "te",
+                "phon": "/t/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "Please tell it.",
+          "请告诉它。"
+    ]
+},
+{
+    "word": "take",
+    "phonetic": "/teɪk/",
+    "definition": "v. 拿；带走",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please take it.",
+          "请拿它。"
+    ]
+},
+{
+    "word": "train",
+    "phonetic": "/tɹeɪn/",
+    "definition": "n. 火车",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a train.",
+          "我看到一个火车。"
+    ]
+},
+{
+    "word": "trip",
+    "phonetic": "/tɹɪp/",
+    "definition": "n. 旅行",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a trip.",
+          "我看到一个旅行。"
+    ]
+},
+{
+    "word": "teacher",
+    "phonetic": "/ˈtiːt͡ʃə/",
+    "definition": "n. 老师",
+    "breakdown": [
+          {
+                "letter": "te",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a teacher.",
+          "我看到一个老师。"
+    ]
+},
+{
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "definition": "v. 承认",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please admit it.",
+          "请承认它。"
+    ]
+},
+{
+    "word": "turtle",
+    "phonetic": "/ˈtɜːtəl/",
+    "definition": "n. 乌龟",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a turtle.",
+          "我看到一个乌龟。"
+    ]
+},
+{
+    "word": "pretty",
+    "phonetic": "/ˈpɹɪti/",
+    "definition": "adj. 漂亮的",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "tt",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very pretty.",
+          "它非常漂亮的。"
+    ]
+},
+{
+    "word": "bitter",
+    "phonetic": "/ˈbɪtə/",
+    "definition": "adj. 苦的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "tt",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "It is very bitter.",
+          "它非常苦的。"
+    ]
+},
+{
+    "word": "city",
+    "phonetic": "/sɪtɪ/",
+    "definition": "n. 城市",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a city.",
+          "我看到一个城市。"
+    ]
+},
+{
+    "word": "water",
+    "phonetic": "/ˈwoːtə/",
+    "definition": "n. 水",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "te",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a water.",
+          "我看到一个水。"
+    ]
+}
   ]
 };

@@ -741,6 +741,277 @@ window.PHONICS_DAY_38 = {
         "The soldier is brave.",
         "士兵很勇敢。"
       ]
-    }
+    },
+{
+    "word": "jeep",
+    "phonetic": "/dʒiːp/",
+    "definition": "n. 吉普车",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "ee",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a jeep.",
+          "我看到一个吉普车。"
+    ]
+},
+{
+    "word": "jelly",
+    "phonetic": "/ˈd͡ʒɛl.i/",
+    "definition": "n. 果冻",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a jelly.",
+          "我看到一个果冻。"
+    ]
+},
+{
+    "word": "jacket",
+    "phonetic": "/ˈd͡ʒæk.ɪt/",
+    "definition": "n. 夹克",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a jacket.",
+          "我看到一个夹克。"
+    ]
+},
+{
+    "word": "january",
+    "phonetic": "/ˈdʒænjuəri/",
+    "definition": "n. 一月",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a january.",
+          "我看到一个一月。"
+    ]
+},
+{
+    "word": "general",
+    "phonetic": "/ˈd͡ʒɛnɹəl/",
+    "definition": "adj. 一般的；总体的",
+    "breakdown": [
+          {
+                "letter": "ge",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very general.",
+          "它非常一般的。"
+    ]
+},
+{
+    "word": "age",
+    "phonetic": "/eɪd͡ʒ/",
+    "definition": "n. 年龄",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ge",
+                "phon": "/dʒ/"
+          }
+    ],
+    "sentences": [
+          "I see a age.",
+          "我看到一个年龄。"
+    ]
+},
+{
+    "word": "engine",
+    "phonetic": "/end͡ʒən/",
+    "definition": "n. 发动机",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "g",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a engine.",
+          "我看到一个发动机。"
+    ]
+},
+{
+    "word": "danger",
+    "phonetic": "/ˈdeɪn.dʒə(ɹ)/",
+    "definition": "n. 危险",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ge",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a danger.",
+          "我看到一个危险。"
+    ]
+},
+{
+    "word": "message",
+    "phonetic": "/ˈmɛsɪd͡ʒ/",
+    "definition": "n. 信息",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ge",
+                "phon": "/dʒ/"
+          }
+    ],
+    "sentences": [
+          "I see a message.",
+          "我看到一个信息。"
+    ]
+}
   ]
 };

@@ -685,6 +685,237 @@ window.PHONICS_DAY_16 = {
         "The ball is on the ground.",
         "球在地上。"
       ]
-    }
+    },
+{
+    "word": "plow",
+    "phonetic": "/plaʊ/",
+    "definition": "n. 犁",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a plow.",
+          "我看到一个犁。"
+    ]
+},
+{
+    "word": "powder",
+    "phonetic": "/ˈpaʊ.də(ɹ)/",
+    "definition": "n. 粉末",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a powder.",
+          "我看到一个粉末。"
+    ]
+},
+{
+    "word": "drown",
+    "phonetic": "/dɹaʊn/",
+    "definition": "v. 溺水",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please drown it.",
+          "请溺水它。"
+    ]
+},
+{
+    "word": "out",
+    "phonetic": "/æɔt/",
+    "definition": "adv. 出去",
+    "breakdown": [
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "He runs out.",
+          "他出去地跑。"
+    ]
+},
+{
+    "word": "about",
+    "phonetic": "/əˈbɛʊt/",
+    "definition": "prep. 关于",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "The book is about the desk.",
+          "书在桌子的关于。"
+    ]
+},
+{
+    "word": "shout",
+    "phonetic": "/ʃaʊt/",
+    "definition": "v. 喊叫",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please shout it.",
+          "请喊叫它。"
+    ]
+},
+{
+    "word": "doubt",
+    "phonetic": "/dʌʊt/",
+    "definition": "n. 怀疑",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a doubt.",
+          "我看到一个怀疑。"
+    ]
+},
+{
+    "word": "couch",
+    "phonetic": "/kaʊtʃ/",
+    "definition": "n. 沙发",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a couch.",
+          "我看到一个沙发。"
+    ]
+},
+{
+    "word": "mountain",
+    "phonetic": "/ˈmaʊntɪn/",
+    "definition": "n. 山",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a mountain.",
+          "我看到一个山。"
+    ]
+}
   ]
 };

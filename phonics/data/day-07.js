@@ -697,6 +697,519 @@ window.PHONICS_DAY_07 = {
         "I am done with my homework.",
         "我做完作业了。"
       ]
+    },
+{
+    "word": "truck",
+    "phonetic": "/tɹʌk/",
+    "definition": "n. 卡车",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a truck.",
+          "我看到一个卡车。"
+    ]
+},
+{
+    "word": "monkey",
+    "phonetic": "/ˈmʌŋki/",
+    "definition": "n. 猴子",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a monkey.",
+          "我看到一个猴子。"
+    ]
+},
+{
+    "word": "money",
+    "phonetic": "/ˈmʌni/",
+    "definition": "n. 钱",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a money.",
+          "我看到一个钱。"
+    ]
+},
+{
+    "word": "colour",
+    "phonetic": "/ˈkʌlə/",
+    "definition": "n. 颜色",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a colour.",
+          "我看到一个颜色。"
+    ]
+},
+{
+    "word": "glove",
+    "phonetic": "/ɡlʌv/",
+    "definition": "n. 手套",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "love",
+                "phon": "/ʌ/"
+          }
+    ],
+    "sentences": [
+          "I see a glove.",
+          "我看到一个手套。"
+    ]
+},
+{
+    "word": "above",
+    "phonetic": "/əˈbʌv/",
+    "definition": "prep. 在…上面",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "The book is above the desk.",
+          "书在桌子的在…上面。"
+    ]
+},
+{
+    "word": "enough",
+    "phonetic": "/iˈnʌf/",
+    "definition": "adj. 足够的",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "h",
+                "phon": "/h/"
+          }
+    ],
+    "sentences": [
+          "It is very enough.",
+          "它非常足够的。"
+    ]
+},
+{
+    "word": "tough",
+    "phonetic": "/tʌf/",
+    "definition": "adj. 坚硬的；困难的",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "h",
+                "phon": "/h/"
+          }
+    ],
+    "sentences": [
+          "It is very tough.",
+          "它非常坚硬的。"
+    ]
+},
+{
+    "word": "trouble",
+    "phonetic": "/ˈtɹʌb(ə)l/",
+    "definition": "n. 麻烦",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a trouble.",
+          "我看到一个麻烦。"
+    ]
+},
+{
+    "word": "double",
+    "phonetic": "/ˈdʌb.əl/",
+    "definition": "adj. 双倍的",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very double.",
+          "它非常双倍的。"
+    ]
+},
+{
+    "word": "couple",
+    "phonetic": "/ˈkʌpəl/",
+    "definition": "n. 一对；夫妇",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a couple.",
+          "我看到一个一对。"
+    ]
+},
+{
+    "word": "flood",
+    "phonetic": "/flʌd/",
+    "definition": "n. 洪水",
+    "breakdown": [
+          {
+                "letter": "flood",
+                "phon": "/ʌ/"
+          }
+    ],
+    "sentences": [
+          "I see a flood.",
+          "我看到一个洪水。"
+    ]
+},
+{
+    "word": "blood",
+    "phonetic": "/blʊd/",
+    "definition": "n. 血",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a blood.",
+          "我看到一个血。"
+    ]
+},
+{
+    "word": "gun",
+    "phonetic": "/ɡʌn/",
+    "definition": "n. 枪",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a gun.",
+          "我看到一个枪。"
+    ]
+},
+{
+    "word": "us",
+    "phonetic": "/əs/",
+    "definition": "pron. 我们（宾格）",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Us is here.",
+          "我们（宾格）在这里。"
+    ]
+},
+{
+    "word": "up",
+    "phonetic": "/ap/",
+    "definition": "adv. 向上",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "He runs up.",
+          "他向上地跑。"
+    ]
+},
+{
+    "word": "dust",
+    "phonetic": "/dʌst/",
+    "definition": "n. 灰尘",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a dust.",
+          "我看到一个灰尘。"
+    ]
+},
+{
+    "word": "just",
+    "phonetic": "/d͡ʒʌst/",
+    "definition": "adv. 只是；刚刚",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "He runs just.",
+          "他只是地跑。"
+    ]
+},
+{
+    "word": "must",
+    "phonetic": "/mʌst/",
+    "definition": "v. 必须",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+        "You must go now.",
+        "你必须现在走。"
+      ]
     }
   ]
 };

@@ -729,6 +729,465 @@ window.PHONICS_DAY_29 = {
         "Exercise builds muscle.",
         "锻炼长肌肉。"
       ]
-    }
+    },
+{
+    "word": "seven",
+    "phonetic": "/ˈsɛv.ən/",
+    "definition": "num. 七",
+    "breakdown": [
+          {
+                "letter": "se",
+                "phon": "/s/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I have seven apples.",
+          "我有七个苹果。"
+    ]
+},
+{
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "definition": "adj. 伤心的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very sad.",
+          "它非常伤心的。"
+    ]
+},
+{
+    "word": "soup",
+    "phonetic": "/suːp/",
+    "definition": "n. 汤",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a soup.",
+          "我看到一个汤。"
+    ]
+},
+{
+    "word": "sister",
+    "phonetic": "/ˈsɪs.tə/",
+    "definition": "n. 姐妹",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a sister.",
+          "我看到一个姐妹。"
+    ]
+},
+{
+    "word": "sunny",
+    "phonetic": "/ˈsʌni/",
+    "definition": "adj. 晴朗的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very sunny.",
+          "它非常晴朗的。"
+    ]
+},
+{
+    "word": "rice",
+    "phonetic": "/ɹaɪs/",
+    "definition": "n. 米饭；大米",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ce",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a rice.",
+          "我看到一个米饭。"
+    ]
+},
+{
+    "word": "pencil",
+    "phonetic": "/ˈpɛnsɪl/",
+    "definition": "n. 铅笔",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "c",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a pencil.",
+          "我看到一个铅笔。"
+    ]
+},
+{
+    "word": "place",
+    "phonetic": "/pleɪs/",
+    "definition": "n. 地方",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ce",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a place.",
+          "我看到一个地方。"
+    ]
+},
+{
+    "word": "peace",
+    "phonetic": "/piːs/",
+    "definition": "n. 和平",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ce",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a peace.",
+          "我看到一个和平。"
+    ]
+},
+{
+    "word": "mice",
+    "phonetic": "/maɪs/",
+    "definition": "n. 老鼠（复数）",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ce",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a mice.",
+          "我看到一个老鼠（复数）。"
+    ]
+},
+{
+    "word": "dance",
+    "phonetic": "/dæːns/",
+    "definition": "v. 跳舞",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ce",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Please dance it.",
+          "请跳舞它。"
+    ]
+},
+{
+    "word": "centre",
+    "phonetic": "/ˈsen.tə(ɹ)/",
+    "definition": "n. 中心",
+    "breakdown": [
+          {
+                "letter": "ce",
+                "phon": "/s/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a centre.",
+          "我看到一个中心。"
+    ]
+},
+{
+    "word": "boss",
+    "phonetic": "/bɑs/",
+    "definition": "n. 老板",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ss",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a boss.",
+          "我看到一个老板。"
+    ]
+},
+{
+    "word": "bless",
+    "phonetic": "/blɛs/",
+    "definition": "v. 祝福",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ss",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Please bless it.",
+          "请祝福它。"
+    ]
+},
+{
+    "word": "horse",
+    "phonetic": "/hɔːs/",
+    "definition": "n. 马",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "se",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a horse.",
+          "我看到一个马。"
+    ]
+},
+{
+    "word": "promise",
+    "phonetic": "/ˈpɹɒmɪs/",
+    "definition": "v. 承诺",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "se",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Please promise it.",
+          "请承诺它。"
+    ]
+},
+{
+    "word": "course",
+    "phonetic": "/kɔːs/",
+    "definition": "n. 课程；过程",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "se",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a course.",
+          "我看到一个课程。"
+    ]
+}
   ]
 };

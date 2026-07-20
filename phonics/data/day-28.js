@@ -753,6 +753,370 @@ window.PHONICS_DAY_28 = {
         "Even a child can do it.",
         "连小孩都能做。"
       ]
-    }
+    },
+{
+    "word": "video",
+    "phonetic": "/ˈvɪ.di.əʊ/",
+    "definition": "n. 视频",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "I see a video.",
+          "我看到一个视频。"
+    ]
+},
+{
+    "word": "vegetable",
+    "phonetic": "/ˈvɛd͡ʒtəbəl/",
+    "definition": "n. 蔬菜",
+    "breakdown": [
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a vegetable.",
+          "我看到一个蔬菜。"
+    ]
+},
+{
+    "word": "vacation",
+    "phonetic": "/veɪˈkeɪʃ(ə)n/",
+    "definition": "n. 假期",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a vacation.",
+          "我看到一个假期。"
+    ]
+},
+{
+    "word": "value",
+    "phonetic": "/ˈvæljuː/",
+    "definition": "n. 价值",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a value.",
+          "我看到一个价值。"
+    ]
+},
+{
+    "word": "view",
+    "phonetic": "/vjuː/",
+    "definition": "n. 景色；观点",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          }
+    ],
+    "sentences": [
+          "I see a view.",
+          "我看到一个景色。"
+    ]
+},
+{
+    "word": "valid",
+    "phonetic": "/ˈvælɪd/",
+    "definition": "adj. 有效的",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very valid.",
+          "它非常有效的。"
+    ]
+},
+{
+    "word": "event",
+    "phonetic": "/əˈvɛnt/",
+    "definition": "n. 事件",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a event.",
+          "我看到一个事件。"
+    ]
+},
+{
+    "word": "evening",
+    "phonetic": "/ˈivnɪŋ/",
+    "definition": "n. 傍晚",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a evening.",
+          "我看到一个傍晚。"
+    ]
+},
+{
+    "word": "over",
+    "phonetic": "/ˈəʊ.və(ɹ)/",
+    "definition": "prep. 在…上方；结束",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "The book is over the desk.",
+          "书在桌子的在…上方。"
+    ]
+},
+{
+    "word": "river",
+    "phonetic": "/ˈɹɪvə/",
+    "definition": "n. 河流",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a river.",
+          "我看到一个河流。"
+    ]
+},
+{
+    "word": "never",
+    "phonetic": "/ˈnɛv.ə(ɹ)/",
+    "definition": "adv. 从不",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "He runs never.",
+          "他从不地跑。"
+    ]
+},
+{
+    "word": "leave",
+    "phonetic": "/liːv/",
+    "definition": "v. 离开；留下",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          }
+    ],
+    "sentences": [
+          "Please leave it.",
+          "请离开它。"
+    ]
+}
   ]
 };

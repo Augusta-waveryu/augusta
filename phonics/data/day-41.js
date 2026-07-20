@@ -737,6 +737,496 @@ window.PHONICS_DAY_41 = {
         "Dogs chew bones.",
         "狗啃骨头。"
       ]
-    }
+    },
+{
+    "word": "net",
+    "phonetic": "/net/",
+    "definition": "n. 网",
+    "breakdown": [
+          {
+                "letter": "ne",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a net.",
+          "我看到一个网。"
+    ]
+},
+{
+    "word": "hello",
+    "phonetic": "/həˈləʊ/",
+    "definition": "int. 你好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Hello!",
+          "你好！"
+    ]
+},
+{
+    "word": "near",
+    "phonetic": "/nɪə(ɹ)/",
+    "definition": "prep. 靠近",
+    "breakdown": [
+          {
+                "letter": "ne",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          }
+    ],
+    "sentences": [
+          "The book is near the desk.",
+          "书在桌子的靠近。"
+    ]
+},
+{
+    "word": "neck",
+    "phonetic": "/nɛk/",
+    "definition": "n. 脖子",
+    "breakdown": [
+          {
+                "letter": "ne",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a neck.",
+          "我看到一个脖子。"
+    ]
+},
+{
+    "word": "nurse",
+    "phonetic": "/nɜːs/",
+    "definition": "n. 护士",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a nurse.",
+          "我看到一个护士。"
+    ]
+},
+{
+    "word": "noodle",
+    "phonetic": "/nuːdl̩/",
+    "definition": "n. 面条",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a noodle.",
+          "我看到一个面条。"
+    ]
+},
+{
+    "word": "notebook",
+    "phonetic": "/ˈnəʊtˌbʊk/",
+    "definition": "n. 笔记本",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a notebook.",
+          "我看到一个笔记本。"
+    ]
+},
+{
+    "word": "number",
+    "phonetic": "/ˈnʌmbə/",
+    "definition": "n. 数字；号码",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a number.",
+          "我看到一个数字。"
+    ]
+},
+{
+    "word": "north",
+    "phonetic": "/noːθ/",
+    "definition": "n. 北方",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a north.",
+          "我看到一个北方。"
+    ]
+},
+{
+    "word": "new",
+    "phonetic": "/njʉː/",
+    "definition": "adj. 新的",
+    "breakdown": [
+          {
+                "letter": "ne",
+                "phon": "/n/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          }
+    ],
+    "sentences": [
+          "It is very new.",
+          "它非常新的。"
+    ]
+},
+{
+    "word": "next",
+    "phonetic": "/nɛkst/",
+    "definition": "adj. 下一个的",
+    "breakdown": [
+          {
+                "letter": "ne",
+                "phon": "/n/"
+          },
+          {
+                "letter": "x",
+                "phon": "/ks/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very next.",
+          "它非常下一个的。"
+    ]
+},
+{
+    "word": "winner",
+    "phonetic": "/ˈwɪnə/",
+    "definition": "n. 赢家",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "nn",
+                "phon": "/n/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a winner.",
+          "我看到一个赢家。"
+    ]
+},
+{
+    "word": "knit",
+    "phonetic": "/ˈnɪt/",
+    "definition": "v. 编织",
+    "breakdown": [
+          {
+                "letter": "kn",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please knit it.",
+          "请编织它。"
+    ]
+},
+{
+    "word": "need",
+    "phonetic": "/niːd/",
+    "definition": "v. 需要",
+    "breakdown": [
+          {
+                "letter": "ne",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "Please need it.",
+          "请需要它。"
+    ]
+},
+{
+    "word": "banana",
+    "phonetic": "/bəˈnɑːnə/",
+    "definition": "n. 香蕉",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          }
+    ],
+    "sentences": [
+          "I see a banana.",
+          "我看到一个香蕉。"
+    ]
+},
+{
+    "word": "animal",
+    "phonetic": "/ˈænɪməl/",
+    "definition": "n. 动物",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a animal.",
+          "我看到一个动物。"
+    ]
+},
+{
+    "word": "window",
+    "phonetic": "/ˈwɪndəʊ/",
+    "definition": "n. 窗户",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a window.",
+          "我看到一个窗户。"
+    ]
+},
+{
+    "word": "snowman",
+    "phonetic": "/ˈsnəʊ.mæn/",
+    "definition": "n. 雪人",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a snowman.",
+          "我看到一个雪人。"
+    ]
+}
   ]
 };

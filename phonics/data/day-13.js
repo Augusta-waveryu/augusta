@@ -641,6 +641,299 @@ window.PHONICS_DAY_13 = {
         "They are my friends.",
         "他们是我的朋友。"
       ]
-    }
+    },
+{
+    "word": "june",
+    "phonetic": "/dʒuːn/",
+    "definition": "n. 六月",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a june.",
+          "我看到一个六月。"
+    ]
+},
+{
+    "word": "hate",
+    "phonetic": "/heɪt/",
+    "definition": "v. 讨厌；憎恨",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "a",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please hate it.",
+          "请讨厌它。"
+    ]
+},
+{
+    "word": "hello",
+    "phonetic": "/həˈləʊ/",
+    "definition": "int. 你好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Hello!",
+          "你好！"
+    ]
+},
+{
+    "word": "same",
+    "phonetic": "/seɪm/",
+    "definition": "adj. 相同的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very same.",
+          "它非常相同的。"
+    ]
+},
+{
+    "word": "wake",
+    "phonetic": "/ˈweɪk/",
+    "definition": "v. 醒来",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "a",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please wake it.",
+          "请醒来它。"
+    ]
+},
+{
+    "word": "plane",
+    "phonetic": "/pleɪn/",
+    "definition": "n. 飞机",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a plane.",
+          "我看到一个飞机。"
+    ]
+},
+{
+    "word": "grape",
+    "phonetic": "/ɡɹeɪp/",
+    "definition": "n. 葡萄",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a grape.",
+          "我看到一个葡萄。"
+    ]
+},
+{
+    "word": "tail",
+    "phonetic": "/teɪl/",
+    "definition": "n. 尾巴",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a tail.",
+          "我看到一个尾巴。"
+    ]
+},
+{
+    "word": "pain",
+    "phonetic": "/peɪn/",
+    "definition": "n. 疼痛",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a pain.",
+          "我看到一个疼痛。"
+    ]
+},
+{
+    "word": "plain",
+    "phonetic": "/pleɪn/",
+    "definition": "adj. 朴素的；平坦的",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "It is very plain.",
+          "它非常朴素的。"
+    ]
+},
+{
+    "word": "hey",
+    "phonetic": "/heɪ/",
+    "definition": "int. 嘿",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "ey",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "Hey!",
+          "嘿！"
+    ]
+}
   ]
 };

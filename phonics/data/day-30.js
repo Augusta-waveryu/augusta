@@ -349,8 +349,8 @@ window.PHONICS_DAY_30 = {
         }
       ],
       "sentences": [
-        "The dogs bark loudly.",
-        "狗大声叫。"
+        "I see two dogs.",
+        "我看到两只狗。"
       ]
     },
     {
@@ -399,8 +399,8 @@ window.PHONICS_DAY_30 = {
         }
       ],
       "sentences": [
-        "The boys play soccer.",
-        "男孩们踢足球。"
+        "I see two boys.",
+        "我看到两个男孩。"
       ]
     },
     {
@@ -422,8 +422,8 @@ window.PHONICS_DAY_30 = {
         }
       ],
       "sentences": [
-        "I have many toys.",
-        "我有很多玩具。"
+        "I see some toys.",
+        "我看到一些玩具。"
       ]
     },
     {
@@ -445,8 +445,8 @@ window.PHONICS_DAY_30 = {
         }
       ],
       "sentences": [
-        "The boys run fast.",
-        "男孩们跑得快。"
+        "I see two boys.",
+        "我看到两个男孩。"
       ]
     },
     {
@@ -765,6 +765,494 @@ window.PHONICS_DAY_30 = {
         "I like cheese.",
         "我喜欢奶酪。"
       ]
-    }
+    },
+{
+    "word": "zone",
+    "phonetic": "/zəʊn/",
+    "definition": "n. 区域",
+    "breakdown": [
+          {
+                "letter": "z",
+                "phon": "/z/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a zone.",
+          "我看到一个区域。"
+    ]
+},
+{
+    "word": "zebra",
+    "phonetic": "/ˈziːbɹə/",
+    "definition": "n. 斑马",
+    "breakdown": [
+          {
+                "letter": "ze",
+                "phon": "/z/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          }
+    ],
+    "sentences": [
+          "I see a zebra.",
+          "我看到一个斑马。"
+    ]
+},
+{
+    "word": "crazy",
+    "phonetic": "/ˈkɹeɪzi/",
+    "definition": "adj. 疯狂的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "z",
+                "phon": "/z/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very crazy.",
+          "它非常疯狂的。"
+    ]
+},
+{
+    "word": "cozy",
+    "phonetic": "/ˈkəʊzi/",
+    "definition": "adj. 舒适的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "z",
+                "phon": "/z/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very cozy.",
+          "它非常舒适的。"
+    ]
+},
+{
+    "word": "easy",
+    "phonetic": "/ˈiːzi/",
+    "definition": "adj. 容易的",
+    "breakdown": [
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very easy.",
+          "它非常容易的。"
+    ]
+},
+{
+    "word": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "definition": "adj. 忙的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very busy.",
+          "它非常忙的。"
+    ]
+},
+{
+    "word": "please",
+    "phonetic": "/pliːz/",
+    "definition": "int. 请",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please!",
+          "请！"
+    ]
+},
+{
+    "word": "these",
+    "phonetic": "/ðiːz/",
+    "definition": "pron. 这些",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "These is here.",
+          "这些在这里。"
+    ]
+},
+{
+    "word": "those",
+    "phonetic": "/ðəʊz/",
+    "definition": "pron. 那些",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Those is here.",
+          "那些在这里。"
+    ]
+},
+{
+    "word": "present",
+    "phonetic": "/pɹəˈzɛnt/",
+    "definition": "n. 礼物；现在",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a present.",
+          "我看到一个礼物。"
+    ]
+},
+{
+    "word": "music",
+    "phonetic": "/ˈmjuːzɪk/",
+    "definition": "n. 音乐",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a music.",
+          "我看到一个音乐。"
+    ]
+},
+{
+    "word": "cousin",
+    "phonetic": "/ˈkʌz.n̩/",
+    "definition": "n. 表（堂）兄弟姐妹",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a cousin.",
+          "我看到一个表（堂）兄弟姐妹。"
+    ]
+},
+{
+    "word": "reason",
+    "phonetic": "/ˈɹiːzən/",
+    "definition": "n. 原因；理由",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a reason.",
+          "我看到一个原因。"
+    ]
+},
+{
+    "word": "season",
+    "phonetic": "/ˈsiːzən/",
+    "definition": "n. 季节",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a season.",
+          "我看到一个季节。"
+    ]
+},
+{
+    "word": "because",
+    "phonetic": "/bɪˈkɒz/",
+    "definition": "conj. 因为",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "You because me.",
+          "你因为我。"
+    ]
+},
+{
+    "word": "scissors",
+    "phonetic": "/ˈsɪzəz/",
+    "definition": "n. 剪刀",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/z/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a scissors.",
+          "我看到一个剪刀。"
+    ]
+}
   ]
 };

@@ -665,6 +665,302 @@ window.PHONICS_DAY_11 = {
         "The baby is very cute.",
         "宝宝很可爱。"
       ]
-    }
+    },
+{
+    "word": "noon",
+    "phonetic": "/nuːn/",
+    "definition": "n. 中午",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a noon.",
+          "我看到一个中午。"
+    ]
+},
+{
+    "word": "tool",
+    "phonetic": "/tuːl/",
+    "definition": "n. 工具",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a tool.",
+          "我看到一个工具。"
+    ]
+},
+{
+    "word": "move",
+    "phonetic": "/muːv/",
+    "definition": "v. 移动",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please move it.",
+          "请移动它。"
+    ]
+},
+{
+    "word": "who",
+    "phonetic": "/huː/",
+    "definition": "pron. 谁",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/u:/"
+          }
+    ],
+    "sentences": [
+          "Who is here.",
+          "谁在这里。"
+    ]
+},
+{
+    "word": "rules",
+    "phonetic": "/ˈɹuːlz/",
+    "definition": "n. 规则（复数）",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a rules.",
+          "我看到一个规则（复数）。"
+    ]
+},
+{
+    "word": "june",
+    "phonetic": "/dʒuːn/",
+    "definition": "n. 六月",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a june.",
+          "我看到一个六月。"
+    ]
+},
+{
+    "word": "goose",
+    "phonetic": "/ˈɡuːs/",
+    "definition": "n. 鹅",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a goose.",
+          "我看到一个鹅。"
+    ]
+},
+{
+    "word": "pool",
+    "phonetic": "/pul/",
+    "definition": "n. 水池；游泳池",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a pool.",
+          "我看到一个水池。"
+    ]
+},
+{
+    "word": "cool",
+    "phonetic": "/kuːl/",
+    "definition": "adj. 凉爽的；酷的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very cool.",
+          "它非常凉爽的。"
+    ]
+},
+{
+    "word": "boot",
+    "phonetic": "/buːt/",
+    "definition": "n. 靴子",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a boot.",
+          "我看到一个靴子。"
+    ]
+},
+{
+    "word": "root",
+    "phonetic": "/ɹuːt/",
+    "definition": "n. 根",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a root.",
+          "我看到一个根。"
+    ]
+},
+{
+    "word": "broom",
+    "phonetic": "/bɹuːm/",
+    "definition": "n. 扫帚",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/u:/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a broom.",
+          "我看到一个扫帚。"
+    ]
+}
   ]
 };

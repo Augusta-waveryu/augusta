@@ -757,6 +757,379 @@ window.PHONICS_DAY_24 = {
         "I used a pencil.",
         "我用了一支铅笔。"
       ]
-    }
+    },
+{
+    "word": "doll",
+    "phonetic": "/dɒl/",
+    "definition": "n. 玩偶",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a doll.",
+          "我看到一个玩偶。"
+    ]
+},
+{
+    "word": "dish",
+    "phonetic": "/dɪʃ/",
+    "definition": "n. 盘子；菜肴",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a dish.",
+          "我看到一个盘子。"
+    ]
+},
+{
+    "word": "dress",
+    "phonetic": "/dɹɛs/",
+    "definition": "n. 连衣裙",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a dress.",
+          "我看到一个连衣裙。"
+    ]
+},
+{
+    "word": "drum",
+    "phonetic": "/ˈdɹʌm/",
+    "definition": "n. 鼓",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a drum.",
+          "我看到一个鼓。"
+    ]
+},
+{
+    "word": "bread",
+    "phonetic": "/bɹeːd/",
+    "definition": "n. 面包",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a bread.",
+          "我看到一个面包。"
+    ]
+},
+{
+    "word": "hand",
+    "phonetic": "/hænd/",
+    "definition": "n. 手",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a hand.",
+          "我看到一个手。"
+    ]
+},
+{
+    "word": "red",
+    "phonetic": "/ɹɛd/",
+    "definition": "adj. 红色的",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ed",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very red.",
+          "它非常红色的。"
+    ]
+},
+{
+    "word": "bed",
+    "phonetic": "/bed/",
+    "definition": "n. 床",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ed",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a bed.",
+          "我看到一个床。"
+    ]
+},
+{
+    "word": "bird",
+    "phonetic": "/bɜd/",
+    "definition": "n. 鸟",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a bird.",
+          "我看到一个鸟。"
+    ]
+},
+{
+    "word": "food",
+    "phonetic": "/fuːd/",
+    "definition": "n. 食物",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a food.",
+          "我看到一个食物。"
+    ]
+},
+{
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "definition": "adj. 伤心的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very sad.",
+          "它非常伤心的。"
+    ]
+},
+{
+    "word": "glad",
+    "phonetic": "/ɡlæd/",
+    "definition": "adj. 高兴的",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very glad.",
+          "它非常高兴的。"
+    ]
+},
+{
+    "word": "add",
+    "phonetic": "/æd/",
+    "definition": "v. 加；添加",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "dd",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "Please add it.",
+          "请加它。"
+    ]
+},
+{
+    "word": "middle",
+    "phonetic": "/ˈmɪdəl/",
+    "definition": "n. 中间",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "dd",
+                "phon": "/d/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a middle.",
+          "我看到一个中间。"
+    ]
+},
+{
+    "word": "daddy",
+    "phonetic": "/ˈdædi/",
+    "definition": "n. 爸爸",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "dd",
+                "phon": "/d/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a daddy.",
+          "我看到一个爸爸。"
+    ]
+}
   ]
 };

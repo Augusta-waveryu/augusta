@@ -825,6 +825,561 @@ window.PHONICS_DAY_43 = {
         "The hierarchy is clear.",
         "等级很清楚。"
       ]
-    }
+    },
+{
+    "word": "yes-man",
+    "phonetic": "/ˈjes mæn/",
+    "definition": "n. 应声虫；唯唯诺诺的人",
+    "breakdown": [
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a yes-man.",
+          "我看到一个应声虫。"
+    ]
+},
+{
+    "word": "useful",
+    "phonetic": "/ˈjuːsfəl/",
+    "definition": "adj. 有用的",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very useful.",
+          "它非常有用的。"
+    ]
+},
+{
+    "word": "use",
+    "phonetic": "/juːz/",
+    "definition": "v. 使用",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please use it.",
+          "请使用它。"
+    ]
+},
+{
+    "word": "university",
+    "phonetic": "/juːnɪˈvɜːsətiː/",
+    "definition": "n. 大学",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a university.",
+          "我看到一个大学。"
+    ]
+},
+{
+    "word": "uniform",
+    "phonetic": "/ˈjuːnɪfɔːm/",
+    "definition": "n. 制服",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/j/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a uniform.",
+          "我看到一个制服。"
+    ]
+},
+{
+    "word": "human",
+    "phonetic": "/ˈhjuː.mən/",
+    "definition": "n. 人类",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a human.",
+          "我看到一个人类。"
+    ]
+},
+{
+    "word": "music",
+    "phonetic": "/ˈmjuːzɪk/",
+    "definition": "n. 音乐",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/j/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a music.",
+          "我看到一个音乐。"
+    ]
+},
+{
+    "word": "student",
+    "phonetic": "/ˈstjuː.dənt/",
+    "definition": "n. 学生",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a student.",
+          "我看到一个学生。"
+    ]
+},
+{
+    "word": "computer",
+    "phonetic": "/kəmˈpjuːtə/",
+    "definition": "n. 电脑",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a computer.",
+          "我看到一个电脑。"
+    ]
+},
+{
+    "word": "beautiful",
+    "phonetic": "/ˈbjuːtɪfəl/",
+    "definition": "adj. 美丽的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/j/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very beautiful.",
+          "它非常美丽的。"
+    ]
+},
+{
+    "word": "cute",
+    "phonetic": "/kjuːt/",
+    "definition": "adj. 可爱的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very cute.",
+          "它非常可爱的。"
+    ]
+},
+{
+    "word": "few",
+    "phonetic": "/fjuː/",
+    "definition": "adj. 少数的",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          }
+    ],
+    "sentences": [
+          "It is very few.",
+          "它非常少数的。"
+    ]
+},
+{
+    "word": "news",
+    "phonetic": "/njuːz/",
+    "definition": "n. 新闻",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a news.",
+          "我看到一个新闻。"
+    ]
+},
+{
+    "word": "new",
+    "phonetic": "/njʉː/",
+    "definition": "adj. 新的",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          }
+    ],
+    "sentences": [
+          "It is very new.",
+          "它非常新的。"
+    ]
+},
+{
+    "word": "excuse",
+    "phonetic": "/ɪkˈskjuːs/",
+    "definition": "n. 借口",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "x",
+                "phon": "/ks/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a excuse.",
+          "我看到一个借口。"
+    ]
+},
+{
+    "word": "onion",
+    "phonetic": "/ˈʌŋjɪn/",
+    "definition": "n. 洋葱",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/j/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a onion.",
+          "我看到一个洋葱。"
+    ]
+},
+{
+    "word": "union",
+    "phonetic": "/ˈjuːnjən/",
+    "definition": "n. 联合；工会",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/j/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a union.",
+          "我看到一个联合。"
+    ]
+}
   ]
 };

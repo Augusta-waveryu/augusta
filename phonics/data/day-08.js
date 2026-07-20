@@ -653,6 +653,410 @@ window.PHONICS_DAY_08 = {
         "Write on the board.",
         "在板上写字。"
       ]
-    }
+    },
+{
+    "word": "forty",
+    "phonetic": "/ˈfɔɹti/",
+    "definition": "num. 四十",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I have forty apples.",
+          "我有四十个苹果。"
+    ]
+},
+{
+    "word": "force",
+    "phonetic": "/fɔːs/",
+    "definition": "n. 力量",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a force.",
+          "我看到一个力量。"
+    ]
+},
+{
+    "word": "north",
+    "phonetic": "/noːθ/",
+    "definition": "n. 北方",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a north.",
+          "我看到一个北方。"
+    ]
+},
+{
+    "word": "form",
+    "phonetic": "/fɔːm/",
+    "definition": "n. 表格；形式",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a form.",
+          "我看到一个表格。"
+    ]
+},
+{
+    "word": "corner",
+    "phonetic": "/ˈkɔːnə(ɹ)/",
+    "definition": "n. 角落",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a corner.",
+          "我看到一个角落。"
+    ]
+},
+{
+    "word": "pork",
+    "phonetic": "/pɔːk/",
+    "definition": "n. 猪肉",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a pork.",
+          "我看到一个猪肉。"
+    ]
+},
+{
+    "word": "sore",
+    "phonetic": "/sɔː/",
+    "definition": "adj. 疼痛的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very sore.",
+          "它非常疼痛的。"
+    ]
+},
+{
+    "word": "lord",
+    "phonetic": "/lɔːd/",
+    "definition": "n. 主人；勋爵",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a lord.",
+          "我看到一个主人。"
+    ]
+},
+{
+    "word": "morning",
+    "phonetic": "/ˈmɔːnɪŋ/",
+    "definition": "n. 早晨",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a morning.",
+          "我看到一个早晨。"
+    ]
+},
+{
+    "word": "airport",
+    "phonetic": "/ˈɛə.pɔːt/",
+    "definition": "n. 机场",
+    "breakdown": [
+          {
+                "letter": "air",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a airport.",
+          "我看到一个机场。"
+    ]
+},
+{
+    "word": "autumn",
+    "phonetic": "/ˈɔːtəm/",
+    "definition": "n. 秋天",
+    "breakdown": [
+          {
+                "letter": "au",
+                "phon": "/ɔ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a autumn.",
+          "我看到一个秋天。"
+    ]
+},
+{
+    "word": "author",
+    "phonetic": "/ˈɔː.θə/",
+    "definition": "n. 作者",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔ:/"
+          }
+    ],
+    "sentences": [
+          "I see a author.",
+          "我看到一个作者。"
+    ]
+},
+{
+    "word": "quarter",
+    "phonetic": "/ˈkoː.tɘ/",
+    "definition": "n. 四分之一；一刻钟",
+    "breakdown": [
+          {
+                "letter": "q",
+                "phon": "/k/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a quarter.",
+          "我看到一个四分之一。"
+    ]
+},
+{
+    "word": "warm",
+    "phonetic": "/wɔːm/",
+    "definition": "adj. 温暖的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "It is very warm.",
+          "它非常温暖的。"
+    ]
+},
+{
+    "word": "war",
+    "phonetic": "/wɔː/",
+    "definition": "n. 战争",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          }
+    ],
+    "sentences": [
+          "I see a war.",
+          "我看到一个战争。"
+    ]
+},
+{
+    "word": "paw",
+    "phonetic": "/pɔː/",
+    "definition": "n. 爪子",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "aw",
+                "phon": "/ɔ:/"
+          }
+    ],
+    "sentences": [
+          "I see a paw.",
+          "我看到一个爪子。"
+    ]
+}
   ]
 };

@@ -741,6 +741,365 @@ window.PHONICS_DAY_27 = {
         "I have enough food.",
         "我有足够的食物。"
       ]
-    }
+    },
+{
+    "word": "fat",
+    "phonetic": "/fæt/",
+    "definition": "adj. 胖的",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very fat.",
+          "它非常胖的。"
+    ]
+},
+{
+    "word": "foot",
+    "phonetic": "/fʊt̚/",
+    "definition": "n. 脚",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a foot.",
+          "我看到一个脚。"
+    ]
+},
+{
+    "word": "father",
+    "phonetic": "/ˈfaːðə/",
+    "definition": "n. 父亲",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a father.",
+          "我看到一个父亲。"
+    ]
+},
+{
+    "word": "family",
+    "phonetic": "/ˈfɛm(ɘ)li/",
+    "definition": "n. 家庭",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a family.",
+          "我看到一个家庭。"
+    ]
+},
+{
+    "word": "floor",
+    "phonetic": "/flɔː/",
+    "definition": "n. 地板；楼层",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a floor.",
+          "我看到一个地板。"
+    ]
+},
+{
+    "word": "flag",
+    "phonetic": "/flæɡ/",
+    "definition": "n. 旗帜",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a flag.",
+          "我看到一个旗帜。"
+    ]
+},
+{
+    "word": "frog",
+    "phonetic": "/fɹɒɡ/",
+    "definition": "n. 青蛙",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "I see a frog.",
+          "我看到一个青蛙。"
+    ]
+},
+{
+    "word": "fruit",
+    "phonetic": "/fɹuːt/",
+    "definition": "n. 水果",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a fruit.",
+          "我看到一个水果。"
+    ]
+},
+{
+    "word": "friend",
+    "phonetic": "/fɹɛnd/",
+    "definition": "n. 朋友",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a friend.",
+          "我看到一个朋友。"
+    ]
+},
+{
+    "word": "off",
+    "phonetic": "/ɔːf/",
+    "definition": "adv. 离开；关掉",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ff",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "He runs off.",
+          "他离开地跑。"
+    ]
+},
+{
+    "word": "staff",
+    "phonetic": "/ˈstæf/",
+    "definition": "n. 员工",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ff",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a staff.",
+          "我看到一个员工。"
+    ]
+},
+{
+    "word": "stuff",
+    "phonetic": "/stʌf/",
+    "definition": "n. 东西；材料",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ff",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a stuff.",
+          "我看到一个东西。"
+    ]
+},
+{
+    "word": "nephew",
+    "phonetic": "/ˈnɛf.ju/",
+    "definition": "n. 侄子；外甥",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ph",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          }
+    ],
+    "sentences": [
+          "I see a nephew.",
+          "我看到一个侄子。"
+    ]
+}
   ]
 };

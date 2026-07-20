@@ -665,6 +665,353 @@ window.PHONICS_DAY_10 = {
         "He runs very fast.",
         "他跑得很快。"
       ]
-    }
+    },
+{
+    "word": "birthday",
+    "phonetic": "/ˈbɜːθ.deɪ/",
+    "definition": "n. 生日",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a birthday.",
+          "我看到一个生日。"
+    ]
+},
+{
+    "word": "path",
+    "phonetic": "/pʰäːθ/",
+    "definition": "n. 小路",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a path.",
+          "我看到一个小路。"
+    ]
+},
+{
+    "word": "pass",
+    "phonetic": "/pʰäːs/",
+    "definition": "v. 通过；传递",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Please pass it.",
+          "请通过它。"
+    ]
+},
+{
+    "word": "yesterday",
+    "phonetic": "/ˈjɛstədeɪ/",
+    "definition": "n. 昨天",
+    "breakdown": [
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a yesterday.",
+          "我看到一个昨天。"
+    ]
+},
+{
+    "word": "father",
+    "phonetic": "/ˈfaːðə/",
+    "definition": "n. 父亲",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a father.",
+          "我看到一个父亲。"
+    ]
+},
+{
+    "word": "calm",
+    "phonetic": "/kam/",
+    "definition": "adj. 平静的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "al",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "It is very calm.",
+          "它非常平静的。"
+    ]
+},
+{
+    "word": "half",
+    "phonetic": "/hɑːf/",
+    "definition": "n. 一半",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "al",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a half.",
+          "我看到一个一半。"
+    ]
+},
+{
+    "word": "calf",
+    "phonetic": "/kæf/",
+    "definition": "n. 小牛",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "al",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a calf.",
+          "我看到一个小牛。"
+    ]
+},
+{
+    "word": "aunt",
+    "phonetic": "/ɑ(ː)nt/",
+    "definition": "n. 阿姨；姑妈",
+    "breakdown": [
+          {
+                "letter": "au",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a aunt.",
+          "我看到一个阿姨。"
+    ]
+},
+{
+    "word": "hearth",
+    "phonetic": "/hɑːθ/",
+    "definition": "n. 壁炉",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a hearth.",
+          "我看到一个壁炉。"
+    ]
+},
+{
+    "word": "clerk",
+    "phonetic": "/klɐːk/",
+    "definition": "n. 职员；店员",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a clerk.",
+          "我看到一个职员。"
+    ]
+},
+{
+    "word": "shark",
+    "phonetic": "/ʃɑːk/",
+    "definition": "n. 鲨鱼",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a shark.",
+          "我看到一个鲨鱼。"
+    ]
+},
+{
+    "word": "start",
+    "phonetic": "/stɑːt/",
+    "definition": "v. 开始",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please start it.",
+          "请开始它。"
+    ]
+}
   ]
 };

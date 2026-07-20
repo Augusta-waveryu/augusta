@@ -368,7 +368,8 @@ window.PHONICS_DAY_01 = {
         }
       ],
       "sentences": [
-        "Please take your seat."
+        "Please take a seat.",
+        "请坐。"
       ]
     },
     {
@@ -566,7 +567,8 @@ window.PHONICS_DAY_01 = {
         }
       ],
       "sentences": [
-        "Give the ball to me."
+        "Come with me.",
+        "跟我来。"
       ]
     },
     {
@@ -660,6 +662,41 @@ window.PHONICS_DAY_01 = {
         "I have new skis.",
         "我有新滑雪板。"
       ]
-    }
+    },
+{
+    "word": "police",
+    "phonetic": "/pəˈliːs/",
+    "definition": "n. 警察",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/i:/"
+          }
+    ],
+    "sentences": [
+          "I see a police.",
+          "我看到一个警察。"
+    ]
+}
   ]
 };

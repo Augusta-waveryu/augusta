@@ -909,6 +909,380 @@ window.PHONICS_DAY_34 = {
         "The azure sky is beautiful.",
         "蔚蓝的天空很美。"
       ]
-    }
+    },
+{
+    "word": "occasion",
+    "phonetic": "/əˈkeɪʒən/",
+    "definition": "n. 场合",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a occasion.",
+          "我看到一个场合。"
+    ]
+},
+{
+    "word": "collision",
+    "phonetic": "/kəˈlɪʒən/",
+    "definition": "n. 碰撞",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a collision.",
+          "我看到一个碰撞。"
+    ]
+},
+{
+    "word": "camouflage",
+    "phonetic": "/ˈkæ.məˌflɑːʒ/",
+    "definition": "n. 伪装",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ge",
+                "phon": "/ʒ/"
+          }
+    ],
+    "sentences": [
+          "I see a camouflage.",
+          "我看到一个伪装。"
+    ]
+},
+{
+    "word": "unusual",
+    "phonetic": "/ʌnˈjuːʒuəl/",
+    "definition": "adj. 不寻常的",
+    "breakdown": [
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very unusual.",
+          "它非常不寻常的。"
+    ]
+},
+{
+    "word": "asia",
+    "phonetic": "/ˈeɪʒə/",
+    "definition": "n. 亚洲",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          }
+    ],
+    "sentences": [
+          "I see a asia.",
+          "我看到一个亚洲。"
+    ]
+},
+{
+    "word": "persian",
+    "phonetic": "/ˈpɜːʒn/",
+    "definition": "adj. 波斯的",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "It is very persian.",
+          "它非常波斯的。"
+    ]
+},
+{
+    "word": "version",
+    "phonetic": "/ˈvɜːʃən/",
+    "definition": "n. 版本",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a version.",
+          "我看到一个版本。"
+    ]
+},
+{
+    "word": "confusion",
+    "phonetic": "/kənˈfjuːʒən/",
+    "definition": "n. 混乱；困惑",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a confusion.",
+          "我看到一个混乱。"
+    ]
+},
+{
+    "word": "intrusion",
+    "phonetic": "/ɪnˈtɹuːʒən/",
+    "definition": "n. 闯入；侵扰",
+    "breakdown": [
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a intrusion.",
+          "我看到一个闯入。"
+    ]
+},
+{
+    "word": "exposure",
+    "phonetic": "/ɪkˈspoʊʒɚ/",
+    "definition": "n. 暴露；曝光",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "x",
+                "phon": "/ks/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/ʒ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a exposure.",
+          "我看到一个暴露。"
+    ]
+}
   ]
 };

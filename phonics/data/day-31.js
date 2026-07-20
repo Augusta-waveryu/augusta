@@ -749,6 +749,312 @@ window.PHONICS_DAY_31 = {
         "He is very athletic.",
         "他很健壮。"
       ]
-    }
+    },
+{
+    "word": "theatre",
+    "phonetic": "/ˈθɪətə/",
+    "definition": "n. 剧院",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a theatre.",
+          "我看到一个剧院。"
+    ]
+},
+{
+    "word": "theme",
+    "phonetic": "/θiːm/",
+    "definition": "n. 主题",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a theme.",
+          "我看到一个主题。"
+    ]
+},
+{
+    "word": "theory",
+    "phonetic": "/ˈθiːəɹi/",
+    "definition": "n. 理论",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a theory.",
+          "我看到一个理论。"
+    ]
+},
+{
+    "word": "teeth",
+    "phonetic": "/tiːθ/",
+    "definition": "n. 牙齿（复数）",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ee",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a teeth.",
+          "我看到一个牙齿（复数）。"
+    ]
+},
+{
+    "word": "maths",
+    "phonetic": "/mæθs/",
+    "definition": "n. 数学",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "I see a maths.",
+          "我看到一个数学。"
+    ]
+},
+{
+    "word": "author",
+    "phonetic": "/ˈɔː.θə/",
+    "definition": "n. 作者",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          }
+    ],
+    "sentences": [
+          "I see a author.",
+          "我看到一个作者。"
+    ]
+},
+{
+    "word": "athlete",
+    "phonetic": "/ˈæθ.lit/",
+    "definition": "n. 运动员",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a athlete.",
+          "我看到一个运动员。"
+    ]
+},
+{
+    "word": "nothing",
+    "phonetic": "/ˈnʌθɪŋ/",
+    "definition": "pron. 没有什么",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "Nothing is here.",
+          "没有什么在这里。"
+    ]
+},
+{
+    "word": "something",
+    "phonetic": "/ˈsamθɪŋ/",
+    "definition": "pron. 某物",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "Something is here.",
+          "某物在这里。"
+    ]
+},
+{
+    "word": "everything",
+    "phonetic": "/ˈɛvɹiθɪŋ/",
+    "definition": "pron. 一切",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "Everything is here.",
+          "一切在这里。"
+    ]
+}
   ]
 };

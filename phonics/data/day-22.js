@@ -741,6 +741,359 @@ window.PHONICS_DAY_22 = {
         "He pays off his debt.",
         "他还清了债务。"
       ]
-    }
+    },
+{
+    "word": "banana",
+    "phonetic": "/bəˈnɑːnə/",
+    "definition": "n. 香蕉",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          }
+    ],
+    "sentences": [
+          "I see a banana.",
+          "我看到一个香蕉。"
+    ]
+},
+{
+    "word": "bike",
+    "phonetic": "/bɐɪk/",
+    "definition": "n. 自行车",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a bike.",
+          "我看到一个自行车。"
+    ]
+},
+{
+    "word": "breakfast",
+    "phonetic": "/ˈbɹɛkfəst/",
+    "definition": "n. 早餐",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a breakfast.",
+          "我看到一个早餐。"
+    ]
+},
+{
+    "word": "brother",
+    "phonetic": "/ˈbɹɐðɘ(ɹ)/",
+    "definition": "n. 兄弟",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a brother.",
+          "我看到一个兄弟。"
+    ]
+},
+{
+    "word": "bathroom",
+    "phonetic": "/ˈbæθ.ɹuːm/",
+    "definition": "n. 浴室",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a bathroom.",
+          "我看到一个浴室。"
+    ]
+},
+{
+    "word": "bedroom",
+    "phonetic": "/ˈbɛdɹʊm/",
+    "definition": "n. 卧室",
+    "breakdown": [
+          {
+                "letter": "be",
+                "phon": "/b/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a bedroom.",
+          "我看到一个卧室。"
+    ]
+},
+{
+    "word": "basketball",
+    "phonetic": "/ˈbɑːs.kɪt.bɔːl/",
+    "definition": "n. 篮球",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a basketball.",
+          "我看到一个篮球。"
+    ]
+},
+{
+    "word": "hobby",
+    "phonetic": "/ˈhɒ.bi/",
+    "definition": "n. 爱好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "bb",
+                "phon": "/b/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a hobby.",
+          "我看到一个爱好。"
+    ]
+},
+{
+    "word": "rob",
+    "phonetic": "/ɹɒb/",
+    "definition": "v. 抢劫",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          }
+    ],
+    "sentences": [
+          "Please rob it.",
+          "请抢劫它。"
+    ]
+},
+{
+    "word": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "definition": "adj. 忙的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very busy.",
+          "它非常忙的。"
+    ]
+},
+{
+    "word": "bye",
+    "phonetic": "/baɪ/",
+    "definition": "int. 再见",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Bye!",
+          "再见！"
+    ]
+}
   ]
 };

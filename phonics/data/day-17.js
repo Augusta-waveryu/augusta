@@ -653,6 +653,392 @@ window.PHONICS_DAY_17 = {
         "I answer the phone.",
         "我接电话。"
       ]
-    }
+    },
+{
+    "word": "hole",
+    "phonetic": "/həʊl/",
+    "definition": "n. 洞",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a hole.",
+          "我看到一个洞。"
+    ]
+},
+{
+    "word": "cold",
+    "phonetic": "/kɔʊld/",
+    "definition": "adj. 冷的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very cold.",
+          "它非常冷的。"
+    ]
+},
+{
+    "word": "open",
+    "phonetic": "/ˈəʊ.pən/",
+    "definition": "v. 打开",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please open it.",
+          "请打开它。"
+    ]
+},
+{
+    "word": "close",
+    "phonetic": "/kləʊz/",
+    "definition": "v. 关；关闭",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please close it.",
+          "请关它。"
+    ]
+},
+{
+    "word": "goal",
+    "phonetic": "/ɡɒʊl/",
+    "definition": "n. 目标；进球",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "oa",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a goal.",
+          "我看到一个目标。"
+    ]
+},
+{
+    "word": "soul",
+    "phonetic": "/səʊl/",
+    "definition": "n. 灵魂",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a soul.",
+          "我看到一个灵魂。"
+    ]
+},
+{
+    "word": "shoulder",
+    "phonetic": "/ˈʃəʊldə/",
+    "definition": "n. 肩膀",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a shoulder.",
+          "我看到一个肩膀。"
+    ]
+},
+{
+    "word": "bowl",
+    "phonetic": "/bəʊɫ/",
+    "definition": "n. 碗",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a bowl.",
+          "我看到一个碗。"
+    ]
+},
+{
+    "word": "follow",
+    "phonetic": "/ˈfɒləʊ/",
+    "definition": "v. 跟随",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/əʊ/"
+          }
+    ],
+    "sentences": [
+          "Please follow it.",
+          "请跟随它。"
+    ]
+},
+{
+    "word": "pillow",
+    "phonetic": "/ˈpɪləʊ/",
+    "definition": "n. 枕头",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/əʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a pillow.",
+          "我看到一个枕头。"
+    ]
+},
+{
+    "word": "role",
+    "phonetic": "/ɹəʊl/",
+    "definition": "n. 角色",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a role.",
+          "我看到一个角色。"
+    ]
+},
+{
+    "word": "nose",
+    "phonetic": "/nəʊz/",
+    "definition": "n. 鼻子",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a nose.",
+          "我看到一个鼻子。"
+    ]
+},
+{
+    "word": "whole",
+    "phonetic": "/həʊl/",
+    "definition": "adj. 整个的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very whole.",
+          "它非常整个的。"
+    ]
+},
+{
+    "word": "smoke",
+    "phonetic": "/sməʊk/",
+    "definition": "n. 烟",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a smoke.",
+          "我看到一个烟。"
+    ]
+}
   ]
 };

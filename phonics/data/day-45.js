@@ -809,6 +809,257 @@ window.PHONICS_DAY_45 = {
         "Go to the entrance.",
         "去入口。"
       ]
-    }
+    },
+{
+    "word": "tray",
+    "phonetic": "/tɹeɪ/",
+    "definition": "n. 托盘",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a tray.",
+          "我看到一个托盘。"
+    ]
+},
+{
+    "word": "tree house",
+    "phonetic": "/ˈtriː haʊs/",
+    "definition": "n. 树屋",
+    "breakdown": [
+          {
+                "letter": "tree",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a tree house.",
+          "我看到一个树屋。"
+    ]
+},
+{
+    "word": "train station",
+    "phonetic": "/tɹeɪn /",
+    "definition": "n. 火车站",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a train station.",
+          "我看到一个火车站。"
+    ]
+},
+{
+    "word": "tree trunk",
+    "phonetic": "/ˈtriː trʌŋk/",
+    "definition": "n. 树干",
+    "breakdown": [
+          {
+                "letter": "tree",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a tree trunk.",
+          "我看到一个树干。"
+    ]
+},
+{
+    "word": "tramp",
+    "phonetic": "/tɹæmp/",
+    "definition": "n. 流浪汉",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a tramp.",
+          "我看到一个流浪汉。"
+    ]
+},
+{
+    "word": "trap",
+    "phonetic": "/tɹæp/",
+    "definition": "n. 陷阱",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a trap.",
+          "我看到一个陷阱。"
+    ]
+},
+{
+    "word": "trout",
+    "phonetic": "/tɹʌʊt/",
+    "definition": "n. 鳟鱼",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a trout.",
+          "我看到一个鳟鱼。"
+    ]
+},
+{
+    "word": "tram",
+    "phonetic": "/tɹam/",
+    "definition": "n. 有轨电车",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a tram.",
+          "我看到一个有轨电车。"
+    ]
+},
+{
+    "word": "trim",
+    "phonetic": "/tɹɪm/",
+    "definition": "v. 修剪",
+    "breakdown": [
+          {
+                "letter": "tr",
+                "phon": "/tr/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "Please trim it.",
+          "请修剪它。"
+    ]
+}
   ]
 };

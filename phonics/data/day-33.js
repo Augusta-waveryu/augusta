@@ -749,6 +749,347 @@ window.PHONICS_DAY_33 = {
         "The mansion is huge.",
         "宅邸很大。"
       ]
-    }
+    },
+{
+    "word": "brush",
+    "phonetic": "/bɹʌʃ/",
+    "definition": "n. 刷子",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a brush.",
+          "我看到一个刷子。"
+    ]
+},
+{
+    "word": "short",
+    "phonetic": "/ʃoːt/",
+    "definition": "adj. 短的；矮的",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very short.",
+          "它非常短的。"
+    ]
+},
+{
+    "word": "shirt",
+    "phonetic": "/ʃɜːt/",
+    "definition": "n. 衬衫",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a shirt.",
+          "我看到一个衬衫。"
+    ]
+},
+{
+    "word": "shape",
+    "phonetic": "/ʃeɪp/",
+    "definition": "n. 形状",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a shape.",
+          "我看到一个形状。"
+    ]
+},
+{
+    "word": "shadow",
+    "phonetic": "/ˈʃædəʊ/",
+    "definition": "n. 影子",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a shadow.",
+          "我看到一个影子。"
+    ]
+},
+{
+    "word": "shampoo",
+    "phonetic": "/ʃamˈpuː/",
+    "definition": "n. 洗发水",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          }
+    ],
+    "sentences": [
+          "I see a shampoo.",
+          "我看到一个洗发水。"
+    ]
+},
+{
+    "word": "social",
+    "phonetic": "/ˈsəʊʃəl/",
+    "definition": "adj. 社会的；社交的",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ci",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very social.",
+          "它非常社会的。"
+    ]
+},
+{
+    "word": "motion",
+    "phonetic": "/ˈməʊʃən/",
+    "definition": "n. 运动；动作",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ti",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a motion.",
+          "我看到一个运动。"
+    ]
+},
+{
+    "word": "musician",
+    "phonetic": "/mjuˈzɪʃən/",
+    "definition": "n. 音乐家",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ci",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a musician.",
+          "我看到一个音乐家。"
+    ]
+},
+{
+    "word": "discussion",
+    "phonetic": "/dɪsˈkʊʃən/",
+    "definition": "n. 讨论",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a discussion.",
+          "我看到一个讨论。"
+    ]
+},
+{
+    "word": "russian",
+    "phonetic": "/ˈrʌʃn/",
+    "definition": "adj. 俄罗斯的；俄语的",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "si",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "It is very russian.",
+          "它非常俄罗斯的。"
+    ]
+}
   ]
 };

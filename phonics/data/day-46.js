@@ -793,6 +793,472 @@ window.PHONICS_DAY_46 = {
         "The hydrant is red.",
         "消防栓是红色的。"
       ]
-    }
+    },
+{
+    "word": "drumstick",
+    "phonetic": "/ˈdrʌmstɪk/",
+    "definition": "n. 鼓槌；鸡腿",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a drumstick.",
+          "我看到一个鼓槌。"
+    ]
+},
+{
+    "word": "dress-up",
+    "phonetic": "/ˈdres ʌp/",
+    "definition": "n. 装扮游戏",
+    "breakdown": [
+          {
+                "letter": "dre",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a dress-up.",
+          "我看到一个装扮游戏。"
+    ]
+},
+{
+    "word": "dribble",
+    "phonetic": "/dɹɪ.bl̩/",
+    "definition": "v. 运球；滴下",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please dribble it.",
+          "请运球它。"
+    ]
+},
+{
+    "word": "drill",
+    "phonetic": "/dɹɪl/",
+    "definition": "v. 钻孔；操练",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "Please drill it.",
+          "请钻孔它。"
+    ]
+},
+{
+    "word": "dramatic",
+    "phonetic": "/dɹəˈmætɪk/",
+    "definition": "adj. 戏剧性的",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "It is very dramatic.",
+          "它非常戏剧性的。"
+    ]
+},
+{
+    "word": "drone",
+    "phonetic": "/dɹəʊn/",
+    "definition": "n. 无人机",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a drone.",
+          "我看到一个无人机。"
+    ]
+},
+{
+    "word": "drawing",
+    "phonetic": "/ˈdɹɔ.(w)ɪŋ(ɡ)/",
+    "definition": "n. 图画；素描",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a drawing.",
+          "我看到一个图画。"
+    ]
+},
+{
+    "word": "drape",
+    "phonetic": "/dɹeɪp/",
+    "definition": "v. 披挂；悬挂",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please drape it.",
+          "请披挂它。"
+    ]
+},
+{
+    "word": "drummer",
+    "phonetic": "/ˈdɹʌmə(ɹ)/",
+    "definition": "n. 鼓手",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a drummer.",
+          "我看到一个鼓手。"
+    ]
+},
+{
+    "word": "drainage",
+    "phonetic": "/ˈdɹeɪnədʒ/",
+    "definition": "n. 排水",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a drainage.",
+          "我看到一个排水。"
+    ]
+},
+{
+    "word": "drawbridge",
+    "phonetic": "/ˈdɹɔːbɹɪdʒ/",
+    "definition": "n. 吊桥",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a drawbridge.",
+          "我看到一个吊桥。"
+    ]
+},
+{
+    "word": "dragonfly",
+    "phonetic": "/ˈdɹæɡənˌflaɪ/",
+    "definition": "n. 蜻蜓",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a dragonfly.",
+          "我看到一个蜻蜓。"
+    ]
+},
+{
+    "word": "drench",
+    "phonetic": "/dɹɛntʃ/",
+    "definition": "v. 使湿透",
+    "breakdown": [
+          {
+                "letter": "dre",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "Please drench it.",
+          "请使湿透它。"
+    ]
+},
+{
+    "word": "dropper",
+    "phonetic": "/ˈdɹɔp.ə/",
+    "definition": "n. 滴管",
+    "breakdown": [
+          {
+                "letter": "dr",
+                "phon": "/dr/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a dropper.",
+          "我看到一个滴管。"
+    ]
+}
   ]
 };

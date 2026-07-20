@@ -693,6 +693,629 @@ window.PHONICS_DAY_02 = {
         "I drink water every day.",
         "我每天喝水。"
       ]
-    }
+    },
+{
+    "word": "dig",
+    "phonetic": "/dɪɡ/",
+    "definition": "v. 挖",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          }
+    ],
+    "sentences": [
+          "Please dig it.",
+          "请挖它。"
+    ]
+},
+{
+    "word": "kid",
+    "phonetic": "/kɪd/",
+    "definition": "n. 小孩",
+    "breakdown": [
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a kid.",
+          "我看到一个小孩。"
+    ]
+},
+{
+    "word": "fit",
+    "phonetic": "/fɪt/",
+    "definition": "adj. 合适的；健康的",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very fit.",
+          "它非常合适的。"
+    ]
+},
+{
+    "word": "bit",
+    "phonetic": "/bɪt/",
+    "definition": "n. 一点；小块",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a bit.",
+          "我看到一个一点。"
+    ]
+},
+{
+    "word": "gift",
+    "phonetic": "/ɡɪft/",
+    "definition": "n. 礼物",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a gift.",
+          "我看到一个礼物。"
+    ]
+},
+{
+    "word": "city",
+    "phonetic": "/sɪtɪ/",
+    "definition": "n. 城市",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a city.",
+          "我看到一个城市。"
+    ]
+},
+{
+    "word": "sister",
+    "phonetic": "/ˈsɪs.tə/",
+    "definition": "n. 姐妹",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a sister.",
+          "我看到一个姐妹。"
+    ]
+},
+{
+    "word": "jacket",
+    "phonetic": "/ˈd͡ʒæk.ɪt/",
+    "definition": "n. 夹克",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a jacket.",
+          "我看到一个夹克。"
+    ]
+},
+{
+    "word": "basket",
+    "phonetic": "/ˈbaːskət/",
+    "definition": "n. 篮子",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a basket.",
+          "我看到一个篮子。"
+    ]
+},
+{
+    "word": "build",
+    "phonetic": "/bɪld/",
+    "definition": "v. 建造",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ui",
+                "phon": "/I/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "Please build it.",
+          "请建造它。"
+    ]
+},
+{
+    "word": "guitar",
+    "phonetic": "/ɡɪˈtɑː(ɹ)/",
+    "definition": "n. 吉他",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "ui",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          }
+    ],
+    "sentences": [
+          "I see a guitar.",
+          "我看到一个吉他。"
+    ]
+},
+{
+    "word": "winter",
+    "phonetic": "/ˈwɪntɚ/",
+    "definition": "n. 冬天",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a winter.",
+          "我看到一个冬天。"
+    ]
+},
+{
+    "word": "river",
+    "phonetic": "/ˈɹɪvə/",
+    "definition": "n. 河流",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a river.",
+          "我看到一个河流。"
+    ]
+},
+{
+    "word": "dinner",
+    "phonetic": "/ˈdɪnə/",
+    "definition": "n. 晚餐",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a dinner.",
+          "我看到一个晚餐。"
+    ]
+},
+{
+    "word": "chicken",
+    "phonetic": "/ˈt͡ʃɪkɪn/",
+    "definition": "n. 鸡；鸡肉",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a chicken.",
+          "我看到一个鸡。"
+    ]
+},
+{
+    "word": "rabbit",
+    "phonetic": "/ˈɹæbət/",
+    "definition": "n. 兔子",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a rabbit.",
+          "我看到一个兔子。"
+    ]
+},
+{
+    "word": "museum",
+    "phonetic": "/mjuːˈziːəm/",
+    "definition": "n. 博物馆",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/I/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a museum.",
+          "我看到一个博物馆。"
+    ]
+},
+{
+    "word": "picnic",
+    "phonetic": "/ˈpɪknɪk/",
+    "definition": "n. 野餐",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a picnic.",
+          "我看到一个野餐。"
+    ]
+},
+{
+    "word": "window",
+    "phonetic": "/ˈwɪndəʊ/",
+    "definition": "n. 窗户",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a window.",
+          "我看到一个窗户。"
+    ]
+},
+{
+    "word": "little",
+    "phonetic": "/ˈlɪ.ɾɫ̩/",
+    "definition": "adj. 小的；少的",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very little.",
+          "它非常小的。"
+    ]
+},
+{
+    "word": "middle",
+    "phonetic": "/ˈmɪdəl/",
+    "definition": "n. 中间",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/I/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a middle.",
+          "我看到一个中间。"
+    ]
+}
   ]
 };

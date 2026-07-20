@@ -133,6 +133,7 @@ a:hover { color: #0066cc; }
 
 <script src="data/days-base.js"></script>
 <script src="data/image-order.js"></script>
+<script src="data/grid-data.js"></script>
 <script>
 (function() {
   // 工具：Web Speech API TTS —— 发音质量优化
@@ -360,14 +361,16 @@ a:hover { color: #0066cc; }
   };
   document.head.appendChild(dataScript);
 
-  // 在 PDF 图上生成 30 个单词热区（48 张图共用同一 6列x5行 网格版式）
-  // 网格参数：基于 1583x2237 原图实测，用百分比定位以自适应缩放
-  var GRID = {
-    left0: 1.137,   // 第1列 left%
-    colStep: 16.435,// 列间距%
-    width: 15.551,  // 热区宽%
-    tops: [21.636, 36.559, 51.447, 64.285, 79.480], // 各行 top%（按各行角标实测）
-    height: 13.411  // 热区高%
+  // 在 PDF 图上生成 30 个单词热区（6列x5行 网格）
+  // 网格坐标：对 48 张卡片逐张用像素边框检测实测（见 data/grid-data.js），
+  // 因各卡片尺寸/版式略有差异，按天取独立百分比坐标，彻底消除统一参数的累积偏移。
+  var GRID_ALL = window.PHONICS_GRID || {};
+  var GRID = GRID_ALL[day] || {
+    // 兜底：day-02 实测值
+    lefts: [2.148, 17.814, 33.481, 49.147, 64.877, 80.543],
+    widths: [15.666, 15.666, 15.666, 15.730, 15.666, 15.666],
+    tops: [24.184, 38.131, 52.079, 66.026, 79.973],
+    heights: [15.020, 15.020, 15.020, 15.020, 15.020]
   };
   // 文本规范化：用于把图片 OCR 单词与数据单词做匹配（去大小写/音标/多余空格）
   function normWord(s) {
@@ -407,10 +410,10 @@ a:hover { color: #0066cc; }
       var row = Math.floor(idx / 6), col = idx % 6;
       var hs = document.createElement('div');
       hs.className = 'hotspot';
-      hs.style.left = (GRID.left0 + col * GRID.colStep) + '%';
+      hs.style.left = GRID.lefts[col] + '%';
       hs.style.top = GRID.tops[row] + '%';
-      hs.style.width = GRID.width + '%';
-      hs.style.height = GRID.height + '%';
+      hs.style.width = GRID.widths[col] + '%';
+      hs.style.height = GRID.heights[row] + '%';
       var imgWord = imageOrder[idx] || '';
       hs.title = imgWord;
       hs.dataset.pos = idx;

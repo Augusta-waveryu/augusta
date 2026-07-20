@@ -677,7 +677,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "n",
@@ -700,7 +700,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "l",
@@ -723,7 +723,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "o",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "v",
@@ -750,7 +750,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "o",
-                "phon": "/u:/"
+                "phon": "/uː/"
           }
     ],
     "sentences": [
@@ -769,7 +769,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "u",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "l",
@@ -800,7 +800,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "u",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "n",
@@ -827,7 +827,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "s",
@@ -854,7 +854,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "l",
@@ -877,7 +877,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "l",
@@ -900,7 +900,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "t",
@@ -923,7 +923,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "t",
@@ -950,7 +950,7 @@ window.PHONICS_DAY_11 = {
           },
           {
                 "letter": "oo",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "m",
@@ -969,7 +969,7 @@ window.PHONICS_DAY_11 = {
     "breakdown": [
           {
                 "letter": "s",
-                "phon": "/u:/"
+                "phon": "/uː/"
           },
           {
                 "letter": "ch",

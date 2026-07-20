@@ -256,10 +256,20 @@ a:hover { color: #0066cc; }
     } catch (e) { if (done) done(false); }
   }
 
+  // 规范化 IPA：统一旧式/简写为带标准符号的形式，确保命中真人音频文件名
+  // （数据里出现的 /I/ /i:/ /u:/ 等写法对应的音频文件是 /ɪ/ /iː/ /uː/）
+  function normalizeIpa(ipa) {
+    var map = {
+      'I': 'ɪ', 'i:': 'iː', 'u:': 'uː', 'a:': 'ɑː', 'o:': 'ɔː',
+      'e:': 'ɜː', '@': 'ə', 'O': 'ɒ', 'A': 'ʌ', 'E': 'e'
+    };
+    return map[ipa] || ipa;
+  }
+
   // 播放某个音素（传 IPA 音标，如 "/tr/"、"/iː/"）：播精确音素音频文件；
   // 缺文件时回退到用高质量语音朗读字位文本（letter），保证一定出声
   function playPhoneme(phon, fallbackLetter, done) {
-    var ipa = (phon || '').replace(/[\/\[\]]/g, '');
+    var ipa = normalizeIpa((phon || '').replace(/[\/\[\]]/g, ''));
     if (!ipa) {
       if (fallbackLetter) speakOne(fallbackLetter, { rate: 0.9 }, function() { if (done) done(); });
       else if (done) done();
@@ -275,7 +285,7 @@ a:hover { color: #0066cc; }
 
   // 播放当天目标音（卡片「听本音」）；缺音频时回退真实代表词
   function playDaySound(done) {
-    var ipa = (meta.ipa || '').replace(/[\/\[\]]/g, '');
+    var ipa = normalizeIpa((meta.ipa || '').replace(/[\/\[\]]/g, ''));
     if (ipa) {
       var src = 'audio/ipa_' + safeIpa(ipa) + '.mp3';
       playAudioFile(src, function(ok) {

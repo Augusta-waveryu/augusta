@@ -705,7 +705,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "g",
@@ -728,7 +728,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "d",
@@ -751,7 +751,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -774,7 +774,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -797,7 +797,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "f",
@@ -824,7 +824,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -851,7 +851,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "s",
@@ -890,7 +890,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "e",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -925,7 +925,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "e",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -948,7 +948,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "ui",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "l",
@@ -975,7 +975,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "ui",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -1002,7 +1002,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "n",
@@ -1033,7 +1033,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "v",
@@ -1060,7 +1060,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "n",
@@ -1091,7 +1091,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "ck",
@@ -1134,7 +1134,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -1165,7 +1165,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "e",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "u",
@@ -1192,7 +1192,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "c",
@@ -1227,7 +1227,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "n",
@@ -1258,7 +1258,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "t",
@@ -1293,7 +1293,7 @@ window.PHONICS_DAY_02 = {
           },
           {
                 "letter": "i",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "d",
@@ -1324,7 +1324,7 @@ window.PHONICS_DAY_02 = {
     "breakdown": [
           {
                 "letter": "q",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "u",
@@ -1351,7 +1351,7 @@ window.PHONICS_DAY_02 = {
     "breakdown": [
           {
                 "letter": "v",
-                "phon": "/I/"
+                "phon": "/ɪ/"
           },
           {
                 "letter": "i",

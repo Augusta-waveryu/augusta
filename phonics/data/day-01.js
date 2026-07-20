@@ -690,7 +690,7 @@ window.PHONICS_DAY_01 = {
           },
           {
                 "letter": "e",
-                "phon": "/i:/"
+                "phon": "/iː/"
           }
     ],
     "sentences": [

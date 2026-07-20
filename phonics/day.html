@@ -18,11 +18,14 @@ a:hover { color: #0066cc; }
 .nav a:hover { color: #0066cc; }
 .nav a.active { color: #1a1a1a; font-weight: 600; }
 
-.container { max-width: 1400px; margin: 0 auto; padding: 16px 24px 60px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.container { max-width: 1400px; margin: 0 auto; padding: 16px 24px 60px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: stretch; }
 @media (max-width: 960px) { .container { grid-template-columns: 1fr; } }
 
+/* 左右两栏严格对称：统一卡片高度，内容超出各自内部滚动 */
+.pdf-card, .detail-panel { height: calc(100vh - 190px); min-height: 560px; box-sizing: border-box; }
+
 /* 左侧 PDF 卡片 */
-.pdf-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 16px; position: sticky; top: 16px; }
+.pdf-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 16px; position: sticky; top: 16px; overflow-y: auto; }
 .pdf-imgwrap { position: relative; width: 100%; }
 .pdf-card img { width: 100%; height: auto; display: block; border-radius: 8px; }
 /* 图片上的单词热区层 */
@@ -43,14 +46,14 @@ a:hover { color: #0066cc; }
 .pdf-sound:disabled { opacity: 0.4; cursor: not-allowed; }
 
 /* 右侧内容 */
-.content-panel { display: flex; flex-direction: column; gap: 16px; }
+.content-panel { display: flex; flex-direction: column; }
 
 .section { background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); padding: 20px; }
 .section-title { font-size: 16px; font-weight: 600; margin-bottom: 14px; color: #1a1a1a; }
 .section-title .count { color: #aaa; font-weight: 400; font-size: 13px; margin-left: 6px; }
 
-/* 详情面板 */
-.detail-panel { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); border-radius: 16px; padding: 24px; min-height: 320px; }
+/* 详情面板（与左卡片等高，内容超出内部滚动） */
+.detail-panel { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); border-radius: 16px; padding: 24px; overflow-y: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
 .detail-empty { display: flex; align-items: center; justify-content: center; height: 280px; color: #92400e; opacity: 0.6; font-size: 15px; }
 .detail-word { font-size: 36px; font-weight: 700; color: #2563eb; text-align: center; margin-bottom: 6px; cursor: pointer; }
 .detail-word:hover { text-decoration: underline; }

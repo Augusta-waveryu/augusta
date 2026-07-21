@@ -10,8 +10,12 @@ window.PHONICS_DAY_42 = {
       "definition": "v. 唱歌",
       "breakdown": [
         {
-          "letter": "sing",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 歌曲",
       "breakdown": [
         {
-          "letter": "song",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -40,8 +52,16 @@ window.PHONICS_DAY_42 = {
       "definition": "adj. 长的；远的",
       "breakdown": [
         {
-          "letter": "long",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -55,8 +75,12 @@ window.PHONICS_DAY_42 = {
       "definition": "n.圆圈;圆环;v.响铃",
       "breakdown": [
         {
-          "letter": "ring",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -70,8 +94,12 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 国王",
       "breakdown": [
         {
-          "letter": "king",
+          "letter": "k",
           "phon": "/k/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -85,8 +113,16 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 翅膀, 机翼",
       "breakdown": [
         {
-          "letter": "wing",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -100,8 +136,16 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 东西；事情",
       "breakdown": [
         {
-          "letter": "thing",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -115,8 +159,12 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 春天，泉水",
       "breakdown": [
         {
-          "letter": "spring",
+          "letter": "spr",
           "phon": "/spr/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -130,8 +178,16 @@ window.PHONICS_DAY_42 = {
       "definition": "adj. 强壮的；坚固的",
       "breakdown": [
         {
-          "letter": "strong",
+          "letter": "str",
           "phon": "/str/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -145,12 +201,28 @@ window.PHONICS_DAY_42 = {
       "definition": "n.英语，英国人",
       "breakdown": [
         {
-          "letter": "Eng",
+          "letter": "E",
           "phon": "/ɪ/"
         },
         {
-          "letter": "lish",
+          "letter": "n",
           "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -164,12 +236,20 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 早晨；上午",
       "breakdown": [
         {
-          "letter": "morn",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ing",
+          "letter": "or",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -183,12 +263,21 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 晚上；傍晚",
       "breakdown": [
         {
-          "letter": "eve",
+          "letter": "e",
           "phon": "/iː/"
         },
         {
-          "letter": "ning",
+          "letter": "v",
           "phon": "/v/"
+        },
+        {
+          "letter": "e",
+          "phon": "",
+          "silent": "e"
+        },
+        {
+          "letter": "n",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -202,12 +291,20 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 钓鱼",
       "breakdown": [
         {
-          "letter": "fish",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ing",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -221,12 +318,21 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 游泳",
       "breakdown": [
         {
-          "letter": "swim",
+          "letter": "sw",
           "phon": "/sw/"
         },
         {
-          "letter": "ming",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "m"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -240,12 +346,20 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 阅读；读物",
       "breakdown": [
         {
-          "letter": "read",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "ing",
+          "letter": "ea",
           "phon": "/iː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -259,12 +373,29 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 跑步；奔跑",
       "breakdown": [
         {
-          "letter": "run",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "ning",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "n",
+          "phon": "",
+          "silent": "n"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -278,8 +409,16 @@ window.PHONICS_DAY_42 = {
       "definition": "adj. 年轻的，幼小的",
       "breakdown": [
         {
-          "letter": "young",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -293,12 +432,28 @@ window.PHONICS_DAY_42 = {
       "definition": "adj. 饥饿的",
       "breakdown": [
         {
-          "letter": "hun",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "gry",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -312,12 +467,24 @@ window.PHONICS_DAY_42 = {
       "definition": "adj. 生气的；愤怒的",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "gry",
+          "letter": "n",
           "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -331,12 +498,24 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 手指",
       "breakdown": [
         {
-          "letter": "fin",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ger",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -350,12 +529,24 @@ window.PHONICS_DAY_42 = {
       "definition": "adj. 更长的",
       "breakdown": [
         {
-          "letter": "long",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -388,8 +579,16 @@ window.PHONICS_DAY_42 = {
       "definition": "v. 感谢",
       "breakdown": [
         {
-          "letter": "thank",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -403,8 +602,16 @@ window.PHONICS_DAY_42 = {
       "definition": "v. 认为；思考",
       "breakdown": [
         {
-          "letter": "think",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -418,12 +625,21 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 叔叔；舅舅",
       "breakdown": [
         {
-          "letter": "un",
+          "letter": "u",
           "phon": "/ʌ/"
         },
         {
-          "letter": "cle",
+          "letter": "n",
           "phon": "/ŋ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -437,8 +653,16 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 银行；河岸",
       "breakdown": [
         {
-          "letter": "bank",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -452,12 +676,24 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 猴子",
       "breakdown": [
         {
-          "letter": "mon",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "key",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -471,8 +707,16 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 粉红色",
       "breakdown": [
         {
-          "letter": "pink",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -486,8 +730,16 @@ window.PHONICS_DAY_42 = {
       "definition": "v. 喝；饮",
       "breakdown": [
         {
-          "letter": "drink",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -501,12 +753,28 @@ window.PHONICS_DAY_42 = {
       "definition": "n. 语言",
       "breakdown": [
         {
-          "letter": "lan",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "guage",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "gu",
+          "phon": "/gw/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [

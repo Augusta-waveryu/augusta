@@ -10,8 +10,12 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 动物园",
       "breakdown": [
         {
-          "letter": "zoo",
+          "letter": "z",
           "phon": "/z/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 拉链",
       "breakdown": [
         {
-          "letter": "zip",
+          "letter": "z",
           "phon": "/z/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -40,12 +52,20 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 零，零点",
       "breakdown": [
         {
-          "letter": "ze",
+          "letter": "z",
           "phon": "/z/"
         },
         {
-          "letter": "ro",
+          "letter": "e",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -59,8 +79,17 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 区域，地带",
       "breakdown": [
         {
-          "letter": "zone",
+          "letter": "z",
           "phon": "/z/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -74,12 +103,20 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 斑马",
       "breakdown": [
         {
-          "letter": "ze",
+          "letter": "z",
           "phon": "/z/"
         },
         {
-          "letter": "bra",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "br",
+          "phon": "/br/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -93,8 +130,17 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 尺寸；大小",
       "breakdown": [
         {
-          "letter": "size",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "z",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -108,12 +154,20 @@ window.PHONICS_DAY_30 = {
       "definition": "adj. 疯狂的；着迷的",
       "breakdown": [
         {
-          "letter": "cra",
+          "letter": "cr",
           "phon": "/kr/"
         },
         {
-          "letter": "zy",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "z",
+          "phon": "/z/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -127,12 +181,20 @@ window.PHONICS_DAY_30 = {
       "definition": "adj. 懒惰的；不勤快的",
       "breakdown": [
         {
-          "letter": "la",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "zy",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "z",
+          "phon": "/z/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -165,8 +227,17 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 奖品；奖金",
       "breakdown": [
         {
-          "letter": "prize",
+          "letter": "pr",
           "phon": "/pr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "z",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -180,8 +251,12 @@ window.PHONICS_DAY_30 = {
       "definition": "prep. 作为",
       "breakdown": [
         {
-          "letter": "as",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -195,8 +270,12 @@ window.PHONICS_DAY_30 = {
       "definition": "v. 是（be动词第三人称单数现在式）",
       "breakdown": [
         {
-          "letter": "is",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -210,8 +289,16 @@ window.PHONICS_DAY_30 = {
       "definition": "pron. 他的",
       "breakdown": [
         {
-          "letter": "his",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -225,8 +312,16 @@ window.PHONICS_DAY_30 = {
       "definition": "v. 有；拥有",
       "breakdown": [
         {
-          "letter": "has",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -240,8 +335,16 @@ window.PHONICS_DAY_30 = {
       "definition": "v. 是 (be的过去式，用于第一、三人称单数)",
       "breakdown": [
         {
-          "letter": "was",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -255,12 +358,16 @@ window.PHONICS_DAY_30 = {
       "definition": "adj. 容易的",
       "breakdown": [
         {
-          "letter": "eas",
+          "letter": "ea",
           "phon": "/iː/"
         },
         {
-          "letter": "y",
+          "letter": "s",
           "phon": "/z/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -274,12 +381,20 @@ window.PHONICS_DAY_30 = {
       "definition": "adj. 忙碌的",
       "breakdown": [
         {
-          "letter": "bus",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "y",
+          "letter": "u",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -293,8 +408,17 @@ window.PHONICS_DAY_30 = {
       "definition": "v. 使高兴；取悦",
       "breakdown": [
         {
-          "letter": "please",
+          "letter": "pl",
           "phon": "/pl/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -308,8 +432,17 @@ window.PHONICS_DAY_30 = {
       "definition": "v. 选择",
       "breakdown": [
         {
-          "letter": "choose",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -323,8 +456,17 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 鼻子",
       "breakdown": [
         {
-          "letter": "nose",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -338,8 +480,17 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 玫瑰",
       "breakdown": [
         {
-          "letter": "rose",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -353,8 +504,17 @@ window.PHONICS_DAY_30 = {
       "definition": "pron. 这些",
       "breakdown": [
         {
-          "letter": "these",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "e",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -368,8 +528,17 @@ window.PHONICS_DAY_30 = {
       "definition": "pron. 那些",
       "breakdown": [
         {
-          "letter": "those",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -383,12 +552,24 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 礼物；现在",
       "breakdown": [
         {
-          "letter": "pres",
+          "letter": "pr",
           "phon": "/pr/"
         },
         {
-          "letter": "ent",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -402,12 +583,24 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 音乐",
       "breakdown": [
         {
-          "letter": "mu",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "sic",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -421,12 +614,16 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 表(堂)兄弟姐妹",
       "breakdown": [
         {
-          "letter": "cous",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "in",
+          "letter": "ou",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "sin",
+          "phon": "/zn/"
         }
       ],
       "sentences": [
@@ -440,12 +637,17 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 理由，原因",
       "breakdown": [
         {
-          "letter": "rea",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "son",
+          "letter": "ea",
           "phon": "/iː/"
+        },
+        {
+          "letter": "sn",
+          "phon": "/zn/",
+          "silent": "o"
         }
       ],
       "sentences": [
@@ -459,12 +661,16 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 季节；时期",
       "breakdown": [
         {
-          "letter": "sea",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "son",
+          "letter": "ea",
           "phon": "/iː/"
+        },
+        {
+          "letter": "son",
+          "phon": "/zn/"
         }
       ],
       "sentences": [
@@ -478,12 +684,25 @@ window.PHONICS_DAY_30 = {
       "definition": "conj. 因为",
       "breakdown": [
         {
-          "letter": "be",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "cause",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "au",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -497,12 +716,25 @@ window.PHONICS_DAY_30 = {
       "definition": "n. 剪刀",
       "breakdown": [
         {
-          "letter": "scis",
-          "phon": "/s/"
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "c"
         },
         {
-          "letter": "sors",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/z/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [

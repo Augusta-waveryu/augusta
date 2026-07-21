@@ -10,8 +10,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 狗",
       "breakdown": [
         {
-          "letter": "dog",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -25,7 +33,15 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 爸爸",
       "breakdown": [
         {
-          "letter": "dad",
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
           "phon": "/d/"
         }
       ],
@@ -40,8 +56,12 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 天，白天",
       "breakdown": [
         {
-          "letter": "day",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -55,8 +75,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 书桌；办公桌",
       "breakdown": [
         {
-          "letter": "desk",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "sk",
+          "phon": "/sk/"
         }
       ],
       "sentences": [
@@ -70,8 +98,17 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 玩偶；玩具娃娃",
       "breakdown": [
         {
-          "letter": "doll",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
         }
       ],
       "sentences": [
@@ -85,8 +122,12 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 门",
       "breakdown": [
         {
-          "letter": "door",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "oor",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -100,8 +141,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 鸭子",
       "breakdown": [
         {
-          "letter": "duck",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -115,8 +164,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 盘子；一道菜",
       "breakdown": [
         {
-          "letter": "dish",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -130,8 +187,17 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 日期；约会",
       "breakdown": [
         {
-          "letter": "date",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -145,12 +211,21 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 晚餐，正餐",
       "breakdown": [
         {
-          "letter": "din",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ner",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -164,12 +239,24 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 医生；博士",
       "breakdown": [
         {
-          "letter": "doc",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "tor",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -183,8 +270,21 @@ window.PHONICS_DAY_24 = {
       "definition": "v. 跳舞",
       "breakdown": [
         {
-          "letter": "dance",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -198,8 +298,12 @@ window.PHONICS_DAY_24 = {
       "definition": "v. 画画",
       "breakdown": [
         {
-          "letter": "draw",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "aw",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -213,8 +317,16 @@ window.PHONICS_DAY_24 = {
       "definition": "v. 喝；饮",
       "breakdown": [
         {
-          "letter": "drink",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -228,8 +340,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 连衣裙",
       "breakdown": [
         {
-          "letter": "dress",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -243,8 +363,17 @@ window.PHONICS_DAY_24 = {
       "definition": "v. 驾驶；开车",
       "breakdown": [
         {
-          "letter": "drive",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -258,8 +387,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 梦想",
       "breakdown": [
         {
-          "letter": "dream",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -273,8 +410,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 鼓",
       "breakdown": [
         {
-          "letter": "drum",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -288,8 +433,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 面包",
       "breakdown": [
         {
-          "letter": "bread",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -303,8 +456,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 手；指针",
       "breakdown": [
         {
-          "letter": "hand",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -318,8 +479,16 @@ window.PHONICS_DAY_24 = {
       "definition": "adj. 红色的",
       "breakdown": [
         {
-          "letter": "red",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -333,8 +502,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 床",
       "breakdown": [
         {
-          "letter": "bed",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -348,8 +525,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 鸟",
       "breakdown": [
         {
-          "letter": "bird",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -363,8 +548,16 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 食物",
       "breakdown": [
         {
-          "letter": "food",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -378,8 +571,16 @@ window.PHONICS_DAY_24 = {
       "definition": "adj. 悲伤的；难过的",
       "breakdown": [
         {
-          "letter": "sad",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -393,8 +594,16 @@ window.PHONICS_DAY_24 = {
       "definition": "adj. 高兴的；乐意的",
       "breakdown": [
         {
-          "letter": "glad",
+          "letter": "gl",
           "phon": "/gl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -408,8 +617,12 @@ window.PHONICS_DAY_24 = {
       "definition": "v. 增加；添加",
       "breakdown": [
         {
-          "letter": "add",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -423,12 +636,21 @@ window.PHONICS_DAY_24 = {
       "definition": "n. 中间",
       "breakdown": [
         {
-          "letter": "mid",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "dle",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -442,12 +664,25 @@ window.PHONICS_DAY_24 = {
       "definition": "adj. 突然的；骤然的",
       "breakdown": [
         {
-          "letter": "sud",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "den",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "",
+          "silent": "e"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -461,12 +696,20 @@ window.PHONICS_DAY_24 = {
       "definition": "n.爸爸",
       "breakdown": [
         {
-          "letter": "Dad",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "dy",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [

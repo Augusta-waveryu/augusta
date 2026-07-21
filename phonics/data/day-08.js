@@ -10,8 +10,17 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 马",
       "breakdown": [
         {
-          "letter": "horse",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -25,12 +34,20 @@ window.PHONICS_DAY_08 = {
       "definition": "num. 四十",
       "breakdown": [
         {
-          "letter": "for",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ty",
+          "letter": "or",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -44,8 +61,16 @@ window.PHONICS_DAY_08 = {
       "definition": "adj. 短的；矮的",
       "breakdown": [
         {
-          "letter": "short",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -59,8 +84,16 @@ window.PHONICS_DAY_08 = {
       "definition": "adj. 出生的；天生的",
       "breakdown": [
         {
-          "letter": "born",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -74,8 +107,17 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 力；力量",
       "breakdown": [
         {
-          "letter": "force",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -89,8 +131,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 北方；北部",
       "breakdown": [
         {
-          "letter": "north",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -104,8 +154,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 运动，体育运动",
       "breakdown": [
         {
-          "letter": "sport",
+          "letter": "sp",
           "phon": "/sp/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -119,8 +177,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 形式；表格",
       "breakdown": [
         {
-          "letter": "form",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -134,8 +200,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 叉子；岔路",
       "breakdown": [
         {
-          "letter": "fork",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -149,8 +223,17 @@ window.PHONICS_DAY_08 = {
       "definition": "adj. 更多的",
       "breakdown": [
         {
-          "letter": "more",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "e",
+          "phon": "",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -164,12 +247,20 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 角落；拐角",
       "breakdown": [
         {
-          "letter": "cor",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ner",
+          "letter": "or",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -183,8 +274,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 猪肉",
       "breakdown": [
         {
-          "letter": "pork",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -198,8 +297,12 @@ window.PHONICS_DAY_08 = {
       "definition": "adj. 疼痛的；酸痛的",
       "breakdown": [
         {
-          "letter": "sore",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "ore",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -228,12 +331,20 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 早晨；上午",
       "breakdown": [
         {
-          "letter": "morn",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ing",
+          "letter": "or",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -251,8 +362,16 @@ window.PHONICS_DAY_08 = {
           "phon": "/eə/"
         },
         {
-          "letter": "port",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -266,8 +385,16 @@ window.PHONICS_DAY_08 = {
       "definition": "v. 走路",
       "breakdown": [
         {
-          "letter": "walk",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -281,8 +408,16 @@ window.PHONICS_DAY_08 = {
       "definition": "v. 说话；交谈",
       "breakdown": [
         {
-          "letter": "talk",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -296,8 +431,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 粉笔",
       "breakdown": [
         {
-          "letter": "chalk",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -315,8 +458,17 @@ window.PHONICS_DAY_08 = {
           "phon": "/ɔː/"
         },
         {
-          "letter": "tumn",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "n"
         }
       ],
       "sentences": [
@@ -334,8 +486,12 @@ window.PHONICS_DAY_08 = {
           "phon": "/ɔː/"
         },
         {
-          "letter": "thor",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -349,12 +505,20 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 四分之一，季度",
       "breakdown": [
         {
-          "letter": "quar",
+          "letter": "qu",
           "phon": "/kw/"
         },
         {
-          "letter": "ter",
+          "letter": "ar",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -368,8 +532,16 @@ window.PHONICS_DAY_08 = {
       "definition": "adj. 温暖的",
       "breakdown": [
         {
-          "letter": "warm",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -383,8 +555,12 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 战争",
       "breakdown": [
         {
-          "letter": "war",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -398,8 +574,12 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 爪子",
       "breakdown": [
         {
-          "letter": "paw",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "aw",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -413,8 +593,12 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 法律；规章",
       "breakdown": [
         {
-          "letter": "law",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "aw",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -428,8 +612,12 @@ window.PHONICS_DAY_08 = {
       "definition": "v. 画画",
       "breakdown": [
         {
-          "letter": "draw",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "aw",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -443,8 +631,12 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 地板；楼层",
       "breakdown": [
         {
-          "letter": "floor",
+          "letter": "fl",
           "phon": "/fl/"
+        },
+        {
+          "letter": "oor",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -458,8 +650,12 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 门",
       "breakdown": [
         {
-          "letter": "door",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "oor",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -473,8 +669,16 @@ window.PHONICS_DAY_08 = {
       "definition": "n. 板；委员会",
       "breakdown": [
         {
-          "letter": "board",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oar",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [

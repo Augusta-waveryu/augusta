@@ -10,8 +10,16 @@ window.PHONICS_DAY_12 = {
       "definition": "adj. 好的；善良的",
       "breakdown": [
         {
-          "letter": "good",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 脚",
       "breakdown": [
         {
-          "letter": "foot",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_12 = {
       "definition": "v. 站立（stand的过去式）",
       "breakdown": [
         {
-          "letter": "stood",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 木头；森林",
       "breakdown": [
         {
-          "letter": "wood",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 羊毛",
       "breakdown": [
         {
-          "letter": "wool",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 书；书籍",
       "breakdown": [
         {
-          "letter": "book",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -100,8 +148,16 @@ window.PHONICS_DAY_12 = {
       "definition": "v. 看；看起来",
       "breakdown": [
         {
-          "letter": "look",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -115,7 +171,15 @@ window.PHONICS_DAY_12 = {
       "definition": "v. 烹饪；煮",
       "breakdown": [
         {
-          "letter": "cook",
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
           "phon": "/k/"
         }
       ],
@@ -130,8 +194,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 钩子",
       "breakdown": [
         {
-          "letter": "hook",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -145,8 +217,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 小溪",
       "breakdown": [
         {
-          "letter": "brook",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -160,8 +240,16 @@ window.PHONICS_DAY_12 = {
       "definition": "v. (take的过去式) 拿；取；带",
       "breakdown": [
         {
-          "letter": "took",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -175,8 +263,16 @@ window.PHONICS_DAY_12 = {
       "definition": "v. 放；置",
       "breakdown": [
         {
-          "letter": "put",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -190,8 +286,16 @@ window.PHONICS_DAY_12 = {
       "definition": "adj. 饱的；满的",
       "breakdown": [
         {
-          "letter": "full",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -205,8 +309,16 @@ window.PHONICS_DAY_12 = {
       "definition": "v. 拉；拖",
       "breakdown": [
         {
-          "letter": "pull",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -220,8 +332,16 @@ window.PHONICS_DAY_12 = {
       "definition": "v. 推",
       "breakdown": [
         {
-          "letter": "push",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -235,8 +355,17 @@ window.PHONICS_DAY_12 = {
       "definition": "aux.v. （can的过去式）能；可以；可能",
       "breakdown": [
         {
-          "letter": "could",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʊ/",
+          "silent": "l"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -250,8 +379,21 @@ window.PHONICS_DAY_12 = {
       "definition": "aux. 应该；本应",
       "breakdown": [
         {
-          "letter": "should",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "l",
+          "phon": "",
+          "silent": "l"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -265,8 +407,17 @@ window.PHONICS_DAY_12 = {
       "definition": "aux.v. 将会 (表示意愿)",
       "breakdown": [
         {
-          "letter": "would",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʊ/",
+          "silent": "l"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -280,12 +431,24 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 女人",
       "breakdown": [
         {
-          "letter": "wom",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "an",
+          "letter": "o",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -299,8 +462,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 狼",
       "breakdown": [
         {
-          "letter": "wolf",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "lf",
+          "phon": "/lf/"
         }
       ],
       "sentences": [
@@ -314,8 +485,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 灌木；矮树丛",
       "breakdown": [
         {
-          "letter": "bush",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -329,12 +508,20 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 糖",
       "breakdown": [
         {
-          "letter": "sug",
+          "letter": "s",
           "phon": "/ʃ/"
         },
         {
-          "letter": "ar",
+          "letter": "u",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -348,12 +535,20 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 布丁；甜点",
       "breakdown": [
         {
-          "letter": "pud",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ding",
+          "letter": "u",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -367,12 +562,20 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 屠夫",
       "breakdown": [
         {
-          "letter": "butch",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "er",
+          "letter": "u",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "tch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -386,8 +589,16 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 帽子；兜帽",
       "breakdown": [
         {
-          "letter": "hood",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -401,12 +612,24 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 子弹",
       "breakdown": [
         {
-          "letter": "bul",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "let",
+          "letter": "u",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -420,12 +643,29 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 垫子",
       "breakdown": [
         {
-          "letter": "cush",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ion",
+          "letter": "u",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "o",
+          "phon": "",
+          "silent": "o"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -439,12 +679,20 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 曲奇饼干；小甜饼",
       "breakdown": [
         {
-          "letter": "cook",
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
           "phon": "/k/"
         },
         {
           "letter": "ie",
-          "phon": "/ʊ/"
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -458,12 +706,28 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 足球",
       "breakdown": [
         {
-          "letter": "foot",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ball",
+          "letter": "oo",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -477,12 +741,28 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 教室",
       "breakdown": [
         {
-          "letter": "class",
+          "letter": "cl",
           "phon": "/kl/"
         },
         {
-          "letter": "room",
+          "letter": "a",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [

@@ -10,8 +10,12 @@ window.PHONICS_DAY_26 = {
       "definition": "v. 去；走",
       "breakdown": [
         {
-          "letter": "go",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_26 = {
       "definition": "v. 得到；变成",
       "breakdown": [
         {
-          "letter": "get",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -40,8 +52,17 @@ window.PHONICS_DAY_26 = {
       "definition": "v. 给；赠送",
       "breakdown": [
         {
-          "letter": "give",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -55,8 +76,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 女孩",
       "breakdown": [
         {
-          "letter": "girl",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/əlː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -70,8 +99,17 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 游戏，比赛",
       "breakdown": [
         {
-          "letter": "game",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -85,8 +123,17 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 大门",
       "breakdown": [
         {
-          "letter": "gate",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -100,8 +147,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 礼物；天赋",
       "breakdown": [
         {
-          "letter": "gift",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ft",
+          "phon": "/ft/"
         }
       ],
       "sentences": [
@@ -115,8 +170,16 @@ window.PHONICS_DAY_26 = {
       "definition": "adj. 绿色的",
       "breakdown": [
         {
-          "letter": "green",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -130,8 +193,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 草",
       "breakdown": [
         {
-          "letter": "grass",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -145,8 +216,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 玻璃；玻璃杯",
       "breakdown": [
         {
-          "letter": "glass",
+          "letter": "gl",
           "phon": "/gl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -160,8 +239,17 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 葡萄",
       "breakdown": [
         {
-          "letter": "grape",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -175,8 +263,16 @@ window.PHONICS_DAY_26 = {
       "definition": "adj. 伟大的；很棒的",
       "breakdown": [
         {
-          "letter": "great",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -190,8 +286,12 @@ window.PHONICS_DAY_26 = {
       "definition": "v. 生长；种植",
       "breakdown": [
         {
-          "letter": "grow",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -205,8 +305,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 地面；土地",
       "breakdown": [
         {
-          "letter": "ground",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -220,12 +328,24 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 花园",
       "breakdown": [
         {
-          "letter": "gar",
+          "letter": "g",
           "phon": "/g/"
         },
         {
-          "letter": "den",
+          "letter": "ar",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -239,12 +359,21 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 吉他",
       "breakdown": [
         {
-          "letter": "gui",
-          "phon": "/g/"
+          "letter": "g",
+          "phon": "/g/",
+          "silent": "u"
         },
         {
-          "letter": "tar",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
@@ -258,8 +387,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 山羊",
       "breakdown": [
         {
-          "letter": "goat",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "oa",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -273,8 +410,17 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 鹅",
       "breakdown": [
         {
-          "letter": "goose",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -288,8 +434,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 黄金；金色",
       "breakdown": [
         {
-          "letter": "gold",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "ld",
+          "phon": "/ld/"
         }
       ],
       "sentences": [
@@ -303,8 +457,16 @@ window.PHONICS_DAY_26 = {
       "definition": "adj. 好的；善良的",
       "breakdown": [
         {
-          "letter": "good",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -318,8 +480,12 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 蛋",
       "breakdown": [
         {
-          "letter": "egg",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "gg",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -333,12 +499,20 @@ window.PHONICS_DAY_26 = {
       "definition": "adj. 更大的",
       "breakdown": [
         {
-          "letter": "big",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ger",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "gg",
+          "phon": "/g/"
+        },
+        {
+          "letter": "er",
+          "phon": "/əː/"
         }
       ],
       "sentences": [
@@ -352,12 +526,20 @@ window.PHONICS_DAY_26 = {
       "definition": "adj. 有雾的",
       "breakdown": [
         {
-          "letter": "fog",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "gy",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "gg",
+          "phon": "/g/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -371,8 +553,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 狗",
       "breakdown": [
         {
-          "letter": "dog",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -386,8 +576,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 包；袋",
       "breakdown": [
         {
-          "letter": "bag",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -401,8 +599,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 旗帜",
       "breakdown": [
         {
-          "letter": "flag",
+          "letter": "fl",
           "phon": "/fl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -416,8 +622,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 腿；支架",
       "breakdown": [
         {
-          "letter": "leg",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -431,8 +645,16 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 青蛙",
       "breakdown": [
         {
-          "letter": "frog",
+          "letter": "fr",
           "phon": "/fr/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -446,12 +668,20 @@ window.PHONICS_DAY_26 = {
       "definition": "n. 老虎",
       "breakdown": [
         {
-          "letter": "ti",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ger",
+          "letter": "i",
           "phon": "/aɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -465,12 +695,28 @@ window.PHONICS_DAY_26 = {
       "definition": "adj. 饥饿的",
       "breakdown": [
         {
-          "letter": "hun",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "gry",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [

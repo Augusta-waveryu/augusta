@@ -10,8 +10,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 地图",
       "breakdown": [
         {
-          "letter": "map",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 男人",
       "breakdown": [
         {
-          "letter": "man",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -40,7 +56,15 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 妈妈",
       "breakdown": [
         {
-          "letter": "mom",
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "m",
           "phon": "/m/"
         }
       ],
@@ -55,8 +79,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 牛奶",
       "breakdown": [
         {
-          "letter": "milk",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "lk",
+          "phon": "/lk/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 月亮",
       "breakdown": [
         {
-          "letter": "moon",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -85,8 +125,17 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 老鼠",
       "breakdown": [
         {
-          "letter": "mouse",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -100,8 +149,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 嘴巴",
       "breakdown": [
         {
-          "letter": "mouth",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -115,12 +172,24 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 猴子",
       "breakdown": [
         {
-          "letter": "mon",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "key",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -134,12 +203,20 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 早晨；上午",
       "breakdown": [
         {
-          "letter": "morn",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ing",
+          "letter": "or",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -153,12 +230,20 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 钱",
       "breakdown": [
         {
-          "letter": "mon",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ey",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -172,12 +257,24 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 音乐",
       "breakdown": [
         {
-          "letter": "mu",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "sic",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -191,12 +288,20 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 母亲；妈妈",
       "breakdown": [
         {
-          "letter": "moth",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -210,12 +315,24 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 芒果",
       "breakdown": [
         {
-          "letter": "man",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "go",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -229,12 +346,28 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 山",
       "breakdown": [
         {
-          "letter": "moun",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "tain",
+          "letter": "ou",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -248,12 +381,21 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 镜子",
       "breakdown": [
         {
-          "letter": "mir",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ror",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -267,12 +409,21 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 夏天；夏季",
       "breakdown": [
         {
-          "letter": "sum",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "mer",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "m"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -286,12 +437,20 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 锤子",
       "breakdown": [
         {
-          "letter": "ham",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "mer",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "mm",
+          "phon": "/m/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -305,12 +464,21 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 游泳",
       "breakdown": [
         {
-          "letter": "swim",
+          "letter": "sw",
           "phon": "/sw/"
         },
         {
-          "letter": "ming",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "m"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -324,12 +492,29 @@ window.PHONICS_DAY_40 = {
       "definition": "adj. 普通的，常见的",
       "breakdown": [
         {
-          "letter": "com",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "mon",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "m",
+          "phon": "",
+          "silent": "m"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -343,12 +528,21 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 中间",
       "breakdown": [
         {
-          "letter": "mid",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "dle",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -362,16 +556,28 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 番茄，西红柿",
       "breakdown": [
         {
-          "letter": "to",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ma",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "to",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -385,16 +591,28 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 家庭；家人",
       "breakdown": [
         {
-          "letter": "fam",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "i",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ly",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -408,16 +626,24 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 动物",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "i",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "mal",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -431,8 +657,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 梦想",
       "breakdown": [
         {
-          "letter": "dream",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -446,8 +680,17 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 游戏，比赛",
       "breakdown": [
         {
-          "letter": "game",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -461,8 +704,16 @@ window.PHONICS_DAY_40 = {
       "definition": "v. 跳；跳跃",
       "breakdown": [
         {
-          "letter": "jump",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
         }
       ],
       "sentences": [
@@ -476,8 +727,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 队，团队",
       "breakdown": [
         {
-          "letter": "team",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -491,8 +750,16 @@ window.PHONICS_DAY_40 = {
       "definition": "prep. 从...；来自...",
       "breakdown": [
         {
-          "letter": "from",
+          "letter": "fr",
           "phon": "/fr/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -506,8 +773,17 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 家，住宅",
       "breakdown": [
         {
-          "letter": "home",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -521,8 +797,16 @@ window.PHONICS_DAY_40 = {
       "definition": "n. 房间；空间",
       "breakdown": [
         {
-          "letter": "room",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [

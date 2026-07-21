@@ -10,8 +10,16 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 红色的",
       "breakdown": [
         {
-          "letter": "red",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 跑；经营",
       "breakdown": [
         {
-          "letter": "run",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -40,8 +56,17 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 米饭；稻米",
       "breakdown": [
         {
-          "letter": "rice",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -55,8 +80,16 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 雨",
       "breakdown": [
         {
-          "letter": "rain",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -70,8 +103,16 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 房间；空间",
       "breakdown": [
         {
-          "letter": "room",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -85,8 +126,16 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 阅读；理解",
       "breakdown": [
         {
-          "letter": "read",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -100,8 +149,16 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 正确的；右边的",
       "breakdown": [
         {
-          "letter": "right",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -115,12 +172,20 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 河；江",
       "breakdown": [
         {
-          "letter": "riv",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "er",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -134,12 +199,25 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 兔子",
       "breakdown": [
         {
-          "letter": "rab",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "bit",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/",
+          "silent": "b"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -153,12 +231,20 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 尺子；统治者",
       "breakdown": [
         {
-          "letter": "rul",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "er",
+          "letter": "u",
           "phon": "/uː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -172,12 +258,24 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 机器人",
       "breakdown": [
         {
-          "letter": "ro",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "bot",
+          "letter": "o",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -191,12 +289,24 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 火箭",
       "breakdown": [
         {
-          "letter": "rock",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "et",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -210,8 +320,16 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 道路；公路",
       "breakdown": [
         {
-          "letter": "road",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "oa",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -225,8 +343,16 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 圆的",
       "breakdown": [
         {
-          "letter": "round",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -240,8 +366,16 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 房间；空间",
       "breakdown": [
         {
-          "letter": "room",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -255,12 +389,25 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 胡萝卜",
       "breakdown": [
         {
-          "letter": "car",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "rot",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -274,12 +421,21 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 抱歉的；遗憾的",
       "breakdown": [
         {
-          "letter": "sor",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "ry",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -293,12 +449,21 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 镜子",
       "breakdown": [
         {
-          "letter": "mir",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ror",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -312,12 +477,25 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 鹦鹉",
       "breakdown": [
         {
-          "letter": "par",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "rot",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -331,12 +509,25 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 安排；整理",
       "breakdown": [
         {
-          "letter": "ar",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "range",
+          "letter": "rr",
           "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -350,12 +541,21 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 提；抱；背",
       "breakdown": [
         {
-          "letter": "car",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ry",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -369,8 +569,18 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 写",
       "breakdown": [
         {
-          "letter": "write",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -384,8 +594,17 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 错误的",
       "breakdown": [
         {
-          "letter": "wrong",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -399,8 +618,17 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 手腕",
       "breakdown": [
         {
-          "letter": "wrist",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -414,8 +642,17 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 包裹",
       "breakdown": [
         {
-          "letter": "wrap",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -448,12 +685,21 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 作家",
       "breakdown": [
         {
-          "letter": "writ",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         },
         {
           "letter": "er",
-          "phon": "/aɪ/"
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -467,12 +713,20 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 下雨的；多雨的",
       "breakdown": [
         {
-          "letter": "rain",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "y",
+          "letter": "ai",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -486,8 +740,12 @@ window.PHONICS_DAY_36 = {
       "definition": "n.圆圈;圆环;v.响铃",
       "breakdown": [
         {
-          "letter": "ring",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [

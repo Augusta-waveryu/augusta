@@ -10,8 +10,12 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 树",
       "breakdown": [
         {
-          "letter": "tree",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 火车",
       "breakdown": [
         {
-          "letter": "train",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -40,8 +52,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 卡车",
       "breakdown": [
         {
-          "letter": "truck",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -55,8 +75,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 旅行；绊倒",
       "breakdown": [
         {
-          "letter": "trip",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -70,8 +98,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 轨道；小路",
       "breakdown": [
         {
-          "letter": "track",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -85,8 +121,12 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 托盘；盘子",
       "breakdown": [
         {
-          "letter": "tray",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -100,12 +140,24 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 喇叭，小号",
       "breakdown": [
         {
-          "letter": "trum",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "pet",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -119,16 +171,29 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 三角形",
       "breakdown": [
         {
-          "letter": "tri",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "an",
+          "letter": "i",
           "phon": "/aɪ/"
         },
         {
-          "letter": "gle",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -142,12 +207,24 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 裤子",
       "breakdown": [
         {
-          "letter": "trou",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "sers",
+          "letter": "ou",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -161,12 +238,21 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 宝藏；珍品",
       "breakdown": [
         {
-          "letter": "treas",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "ure",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "su",
+          "phon": "/ʒ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/ə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -180,12 +266,20 @@ window.PHONICS_DAY_45 = {
       "definition": "v. 旅行，行进",
       "breakdown": [
         {
-          "letter": "trav",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "el",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "el",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -199,12 +293,25 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 交通；运输",
       "breakdown": [
         {
-          "letter": "traf",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "fic",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/",
+          "silent": "f"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -233,8 +340,12 @@ window.PHONICS_DAY_45 = {
       "definition": "v. 尝试，努力",
       "breakdown": [
         {
-          "letter": "try",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -248,8 +359,12 @@ window.PHONICS_DAY_45 = {
       "definition": "adj. 真的，真实的",
       "breakdown": [
         {
-          "letter": "true",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "ue",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -263,8 +378,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 诡计；诀窍",
       "breakdown": [
         {
-          "letter": "trick",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -278,12 +401,20 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 奖杯；战利品",
       "breakdown": [
         {
-          "letter": "tro",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "phy",
+          "letter": "o",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "ph",
+          "phon": "/f/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -312,12 +443,24 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 拖拉机",
       "breakdown": [
         {
-          "letter": "trac",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "tor",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -376,8 +519,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 陷阱；圈套",
       "breakdown": [
         {
-          "letter": "trap",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -421,8 +572,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 有轨电车",
       "breakdown": [
         {
-          "letter": "tram",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -436,8 +595,16 @@ window.PHONICS_DAY_45 = {
       "definition": "n. 小径；踪迹",
       "breakdown": [
         {
-          "letter": "trail",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -481,8 +648,16 @@ window.PHONICS_DAY_45 = {
       "definition": "v. 信任，相信",
       "breakdown": [
         {
-          "letter": "trust",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [

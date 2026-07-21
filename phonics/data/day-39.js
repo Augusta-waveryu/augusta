@@ -10,8 +10,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 腿；支架",
       "breakdown": [
         {
-          "letter": "leg",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 嘴唇",
       "breakdown": [
         {
-          "letter": "lip",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 灯",
       "breakdown": [
         {
-          "letter": "lamp",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 叶子；纸张",
       "breakdown": [
         {
-          "letter": "leaf",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -70,12 +102,20 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 狮子",
       "breakdown": [
         {
-          "letter": "li",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "on",
+          "letter": "i",
           "phon": "/aɪ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -89,12 +129,22 @@ window.PHONICS_DAY_39 = {
       "definition": "adj. 小的；少的",
       "breakdown": [
         {
-          "letter": "lit",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "tle",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -108,8 +158,16 @@ window.PHONICS_DAY_39 = {
       "definition": "adj. 长的；远的",
       "breakdown": [
         {
-          "letter": "long",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -123,8 +181,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 光；灯",
       "breakdown": [
         {
-          "letter": "light",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -138,8 +204,17 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 线；排队",
       "breakdown": [
         {
-          "letter": "line",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -153,8 +228,17 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 湖",
       "breakdown": [
         {
-          "letter": "lake",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -168,8 +252,16 @@ window.PHONICS_DAY_39 = {
       "definition": "v. 锁住；上锁",
       "breakdown": [
         {
-          "letter": "lock",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -183,8 +275,16 @@ window.PHONICS_DAY_39 = {
       "definition": "v. 看；看起来",
       "breakdown": [
         {
-          "letter": "look",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -198,8 +298,20 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 午餐",
       "breakdown": [
         {
-          "letter": "lunch",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
@@ -213,8 +325,17 @@ window.PHONICS_DAY_39 = {
       "definition": "v. 爱",
       "breakdown": [
         {
-          "letter": "love",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -228,8 +349,17 @@ window.PHONICS_DAY_39 = {
       "definition": "v. 居住；生活",
       "breakdown": [
         {
-          "letter": "live",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -243,8 +373,17 @@ window.PHONICS_DAY_39 = {
       "definition": "adj. 迟的；晚的",
       "breakdown": [
         {
-          "letter": "late",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -258,12 +397,20 @@ window.PHONICS_DAY_39 = {
       "definition": "adj. 幸运的",
       "breakdown": [
         {
-          "letter": "luck",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "y",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -277,12 +424,21 @@ window.PHONICS_DAY_39 = {
       "definition": "adj. 黄色的",
       "breakdown": [
         {
-          "letter": "yel",
+          "letter": "y",
           "phon": "/j/"
         },
         {
-          "letter": "low",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -296,12 +452,21 @@ window.PHONICS_DAY_39 = {
       "definition": "int. 你好",
       "breakdown": [
         {
-          "letter": "hel",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "lo",
+          "letter": "e",
           "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -315,12 +480,25 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 气球",
       "breakdown": [
         {
-          "letter": "bal",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "loon",
+          "letter": "a",
           "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -334,8 +512,17 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 玩偶；玩具娃娃",
       "breakdown": [
         {
-          "letter": "doll",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
         }
       ],
       "sentences": [
@@ -349,8 +536,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 球；舞会",
       "breakdown": [
         {
-          "letter": "ball",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -364,8 +559,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 墙",
       "breakdown": [
         {
-          "letter": "wall",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -379,8 +582,16 @@ window.PHONICS_DAY_39 = {
       "definition": "adj. 小的",
       "breakdown": [
         {
-          "letter": "small",
+          "letter": "sm",
           "phon": "/sm/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -394,8 +605,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 铃；钟",
       "breakdown": [
         {
-          "letter": "bell",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -409,8 +628,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 贝壳；外壳",
       "breakdown": [
         {
-          "letter": "shell",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -424,8 +651,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 牛奶",
       "breakdown": [
         {
-          "letter": "milk",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "lk",
+          "phon": "/lk/"
         }
       ],
       "sentences": [
@@ -439,12 +674,21 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 桌子；餐桌",
       "breakdown": [
         {
-          "letter": "ta",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ble",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -458,8 +702,16 @@ window.PHONICS_DAY_39 = {
       "definition": "n. 学校",
       "breakdown": [
         {
-          "letter": "school",
+          "letter": "sch",
           "phon": "/sk/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -473,8 +725,17 @@ window.PHONICS_DAY_39 = {
       "definition": "v. 微笑",
       "breakdown": [
         {
-          "letter": "smile",
+          "letter": "sm",
           "phon": "/sm/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [

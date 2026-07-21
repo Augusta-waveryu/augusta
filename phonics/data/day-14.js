@@ -10,8 +10,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 自行车",
       "breakdown": [
         {
-          "letter": "bike",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -25,8 +34,17 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 喜欢",
       "breakdown": [
         {
-          "letter": "like",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -40,8 +58,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 地点",
       "breakdown": [
         {
-          "letter": "site",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -55,8 +82,17 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 骑；搭乘",
       "breakdown": [
         {
-          "letter": "ride",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -70,8 +106,12 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 天空",
       "breakdown": [
         {
-          "letter": "sky",
+          "letter": "sk",
           "phon": "/sk/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -85,8 +125,12 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 尝试，努力",
       "breakdown": [
         {
-          "letter": "try",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -100,8 +144,12 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 飞，飞行",
       "breakdown": [
         {
-          "letter": "fly",
+          "letter": "fl",
           "phon": "/fl/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -115,8 +163,12 @@ window.PHONICS_DAY_14 = {
       "definition": "adj. 干的；干燥的",
       "breakdown": [
         {
-          "letter": "dry",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -130,8 +182,12 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 购买",
       "breakdown": [
         {
-          "letter": "buy",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "uy",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -145,12 +201,20 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 否认；拒绝",
       "breakdown": [
         {
-          "letter": "de",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ny",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -164,8 +228,12 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 馅饼",
       "breakdown": [
         {
-          "letter": "pie",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -179,8 +247,12 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 系，捆绑",
       "breakdown": [
         {
-          "letter": "tie",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -194,8 +266,12 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 躺；平放",
       "breakdown": [
         {
-          "letter": "lie",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -209,8 +285,12 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 家伙；人",
       "breakdown": [
         {
-          "letter": "guy",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "uy",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -224,8 +304,16 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 视力；景象",
       "breakdown": [
         {
-          "letter": "sight",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -239,7 +327,15 @@ window.PHONICS_DAY_14 = {
       "definition": "adj. 紧的",
       "breakdown": [
         {
-          "letter": "tight",
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
           "phon": "/t/"
         }
       ],
@@ -254,8 +350,16 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 光；灯",
       "breakdown": [
         {
-          "letter": "light",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -269,8 +373,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 米饭；稻米",
       "breakdown": [
         {
-          "letter": "rice",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -284,8 +397,17 @@ window.PHONICS_DAY_14 = {
       "definition": "adj. 好的；友好的",
       "breakdown": [
         {
-          "letter": "nice",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -299,8 +421,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 侧面；边",
       "breakdown": [
         {
-          "letter": "side",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -314,8 +445,17 @@ window.PHONICS_DAY_14 = {
       "definition": "adj. 宽的；广阔的",
       "breakdown": [
         {
-          "letter": "wide",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -329,8 +469,17 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 隐藏；躲藏",
       "breakdown": [
         {
-          "letter": "hide",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -344,8 +493,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 妻子",
       "breakdown": [
         {
-          "letter": "wife",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -359,8 +517,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 生命；生活",
       "breakdown": [
         {
-          "letter": "life",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -374,8 +541,17 @@ window.PHONICS_DAY_14 = {
       "definition": "adj. 好的；健康的",
       "breakdown": [
         {
-          "letter": "fine",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -389,8 +565,17 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 发光；照耀",
       "breakdown": [
         {
-          "letter": "shine",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -404,8 +589,17 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 咬；叮",
       "breakdown": [
         {
-          "letter": "bite",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -419,8 +613,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 风筝",
       "breakdown": [
         {
-          "letter": "kite",
+          "letter": "k",
           "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -434,8 +637,18 @@ window.PHONICS_DAY_14 = {
       "definition": "v. 写",
       "breakdown": [
         {
-          "letter": "write",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -449,8 +662,17 @@ window.PHONICS_DAY_14 = {
       "definition": "n. 尺寸；大小",
       "breakdown": [
         {
-          "letter": "size",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "z",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [

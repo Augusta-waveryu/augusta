@@ -10,8 +10,12 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 鹿",
       "breakdown": [
         {
-          "letter": "deer",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "eer",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -25,8 +29,12 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 啤酒",
       "breakdown": [
         {
-          "letter": "beer",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "eer",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -40,8 +48,12 @@ window.PHONICS_DAY_18 = {
       "definition": "v. 欢呼；喝彩",
       "breakdown": [
         {
-          "letter": "cheer",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "eer",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -55,8 +67,13 @@ window.PHONICS_DAY_18 = {
       "definition": "adv. 这里",
       "breakdown": [
         {
-          "letter": "here",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɪə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -70,8 +87,12 @@ window.PHONICS_DAY_18 = {
       "definition": "adj. 仅仅的",
       "breakdown": [
         {
-          "letter": "mere",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "ere",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -85,12 +106,16 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 英雄",
       "breakdown": [
         {
-          "letter": "he",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "ro",
+          "letter": "er",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -104,12 +129,20 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 系列；连续",
       "breakdown": [
         {
-          "letter": "se",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "ries",
+          "letter": "er",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -123,16 +156,24 @@ window.PHONICS_DAY_18 = {
       "definition": "adj. 严肃的；认真的",
       "breakdown": [
         {
-          "letter": "se",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "ri",
+          "letter": "er",
           "phon": "/ɪə/"
         },
         {
-          "letter": "ous",
+          "letter": "i",
           "phon": "/i/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -146,15 +187,15 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 区域；面积",
       "breakdown": [
         {
-          "letter": "ar",
+          "letter": "a",
           "phon": "/eə/"
         },
         {
-          "letter": "e",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "a",
+          "letter": "ea",
           "phon": "/iə/"
         }
       ],
@@ -173,11 +214,11 @@ window.PHONICS_DAY_18 = {
           "phon": "/aɪ/"
         },
         {
-          "letter": "de",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "a",
+          "letter": "ea",
           "phon": "/ɪə/"
         }
       ],
@@ -192,16 +233,20 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 剧院；戏院",
       "breakdown": [
         {
-          "letter": "the",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "a",
+          "letter": "ea",
           "phon": "/ɪə/"
         },
         {
-          "letter": "tre",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "re",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -215,8 +260,12 @@ window.PHONICS_DAY_18 = {
       "definition": "v. 听见；听说",
       "breakdown": [
         {
-          "letter": "hear",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -230,8 +279,12 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 年，年度",
       "breakdown": [
         {
-          "letter": "year",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -245,8 +298,12 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 眼泪",
       "breakdown": [
         {
-          "letter": "tear",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -260,8 +317,12 @@ window.PHONICS_DAY_18 = {
       "definition": "adj. 清楚的",
       "breakdown": [
         {
-          "letter": "clear",
+          "letter": "cl",
           "phon": "/kl/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -275,8 +336,12 @@ window.PHONICS_DAY_18 = {
       "definition": "adj. 亲爱的，昂贵的",
       "breakdown": [
         {
-          "letter": "dear",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -290,8 +355,12 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 害怕",
       "breakdown": [
         {
-          "letter": "fear",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -305,8 +374,12 @@ window.PHONICS_DAY_18 = {
       "definition": "prep. 在…附近",
       "breakdown": [
         {
-          "letter": "near",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -335,12 +408,21 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 职业；生涯",
       "breakdown": [
         {
-          "letter": "ca",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "reer",
+          "letter": "a",
           "phon": "/ə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/ɪə/",
+          "silent": "r"
         }
       ],
       "sentences": [
@@ -354,12 +436,21 @@ window.PHONICS_DAY_18 = {
       "definition": "v. 出现；显现",
       "breakdown": [
         {
-          "letter": "ap",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "pear",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "p",
+          "phon": "",
+          "silent": "p"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -373,16 +464,28 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 工程师；技师",
       "breakdown": [
         {
-          "letter": "en",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "gi",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "neer",
+          "letter": "g",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "eer",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -396,16 +499,24 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 谷物；麦片",
       "breakdown": [
         {
-          "letter": "ce",
+          "letter": "c",
           "phon": "/s/"
         },
         {
-          "letter": "re",
+          "letter": "e",
           "phon": "/ɪə/"
         },
         {
-          "letter": "al",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -419,16 +530,24 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 句号；时期",
       "breakdown": [
         {
-          "letter": "pe",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ri",
+          "letter": "er",
           "phon": "/ɪə/"
         },
         {
-          "letter": "od",
+          "letter": "i",
           "phon": "/i/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -442,20 +561,41 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 经验；经历",
       "breakdown": [
         {
-          "letter": "ex",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "pe",
+          "letter": "x",
           "phon": "/ks/"
         },
         {
-          "letter": "ri",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ence",
+          "letter": "er",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "i",
+          "phon": "/i/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/"
+        },
+        {
+          "letter": "e",
+          "phon": "",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -469,20 +609,28 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 材料",
       "breakdown": [
         {
-          "letter": "ma",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "te",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "ri",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "al",
+          "letter": "er",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "i",
+          "phon": "/i/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -496,12 +644,16 @@ window.PHONICS_DAY_18 = {
       "definition": "adj. 真实的；真正的",
       "breakdown": [
         {
-          "letter": "re",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "al",
+          "letter": "ea",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -515,16 +667,20 @@ window.PHONICS_DAY_18 = {
       "definition": "adv. 真正地；确实地",
       "breakdown": [
         {
-          "letter": "re",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "al",
+          "letter": "ea",
           "phon": "/ɪə/"
         },
         {
-          "letter": "ly",
+          "letter": "ll",
           "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -538,12 +694,20 @@ window.PHONICS_DAY_18 = {
       "definition": "adv. 几乎",
       "breakdown": [
         {
-          "letter": "near",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "ly",
+          "letter": "ear",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [

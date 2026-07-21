@@ -10,8 +10,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 衬衫",
       "breakdown": [
         {
-          "letter": "shirt",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 女孩",
       "breakdown": [
         {
-          "letter": "girl",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/əlː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 裙子",
       "breakdown": [
         {
-          "letter": "skirt",
+          "letter": "sk",
           "phon": "/sk/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 鸟",
       "breakdown": [
         {
-          "letter": "bird",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -70,8 +102,12 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 先生（用于称呼男性）",
       "breakdown": [
         {
-          "letter": "sir",
+          "letter": "S",
           "phon": "/s/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
         }
       ],
       "sentences": [
@@ -85,12 +121,20 @@ window.PHONICS_DAY_05 = {
       "definition": "num. 三十",
       "breakdown": [
         {
-          "letter": "thir",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "ty",
+          "letter": "ir",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -123,8 +167,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 香草；草本植物",
       "breakdown": [
         {
-          "letter": "herb",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
         }
       ],
       "sentences": [
@@ -138,8 +190,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 学期，术语",
       "breakdown": [
         {
-          "letter": "term",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -153,8 +213,12 @@ window.PHONICS_DAY_05 = {
       "definition": "pron. 她的；她（宾格）",
       "breakdown": [
         {
-          "letter": "her",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɜː/"
         }
       ],
       "sentences": [
@@ -168,12 +232,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 人",
       "breakdown": [
         {
-          "letter": "per",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "son",
+          "letter": "er",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "son",
+          "phon": "/sn/"
         }
       ],
       "sentences": [
@@ -187,12 +255,25 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 服务；效劳",
       "breakdown": [
         {
-          "letter": "ser",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "vice",
+          "letter": "er",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -206,8 +287,16 @@ window.PHONICS_DAY_05 = {
       "definition": "v. 工作；运转",
       "breakdown": [
         {
-          "letter": "work",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -221,8 +310,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 单词；言语",
       "breakdown": [
         {
-          "letter": "word",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -236,8 +333,16 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 世界",
       "breakdown": [
         {
-          "letter": "world",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "ld",
+          "phon": "/ld/"
         }
       ],
       "sentences": [
@@ -251,8 +356,16 @@ window.PHONICS_DAY_05 = {
       "definition": "v. 转动，旋转",
       "breakdown": [
         {
-          "letter": "turn",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -266,8 +379,16 @@ window.PHONICS_DAY_05 = {
       "definition": "v. 燃烧；烧伤",
       "breakdown": [
         {
-          "letter": "burn",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -281,8 +402,17 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 护士",
       "breakdown": [
         {
-          "letter": "nurse",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -300,8 +430,12 @@ window.PHONICS_DAY_05 = {
           "phon": "/ɜː/"
         },
         {
-          "letter": "ly",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -315,8 +449,12 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 地球",
       "breakdown": [
         {
-          "letter": "earth",
+          "letter": "ear",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -330,8 +468,16 @@ window.PHONICS_DAY_05 = {
       "definition": "v. 学习；学会",
       "breakdown": [
         {
-          "letter": "learn",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -345,12 +491,20 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 旅行",
       "breakdown": [
         {
-          "letter": "jour",
+          "letter": "j",
           "phon": "/dʒ/"
         },
         {
-          "letter": "ney",
+          "letter": "our",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -383,8 +537,16 @@ window.PHONICS_DAY_05 = {
       "definition": "adj. 第一的",
       "breakdown": [
         {
-          "letter": "first",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -398,8 +560,16 @@ window.PHONICS_DAY_05 = {
       "definition": "num. 第三",
       "breakdown": [
         {
-          "letter": "third",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -413,12 +583,24 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 生日",
       "breakdown": [
         {
-          "letter": "birth",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "day",
+          "letter": "ir",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -432,12 +614,24 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 星期四",
       "breakdown": [
         {
-          "letter": "Thurs",
+          "letter": "Th",
           "phon": "/θ/"
         },
         {
-          "letter": "day",
+          "letter": "ur",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -451,12 +645,24 @@ window.PHONICS_DAY_05 = {
       "definition": "v. 返回；归还",
       "breakdown": [
         {
-          "letter": "re",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "turn",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -470,7 +676,15 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 教堂",
       "breakdown": [
         {
-          "letter": "church",
+          "letter": "ch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "ch",
           "phon": "/tʃ/"
         }
       ],
@@ -485,12 +699,21 @@ window.PHONICS_DAY_05 = {
       "definition": "n. 紫色",
       "breakdown": [
         {
-          "letter": "pur",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ple",
+          "letter": "ur",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [

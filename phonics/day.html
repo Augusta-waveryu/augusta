@@ -67,6 +67,11 @@ a:hover { color: #0066cc; }
 .syllable { display: flex; flex-direction: column; align-items: center; background: #fff; border: 1px solid #fbbf24; border-radius: 8px; padding: 8px 12px; min-width: 50px; cursor: pointer; transition: all 0.15s; }
 .syllable:hover { background: #fffbeb; transform: scale(1.05); }
 .syllable-letter { font-size: 18px; font-weight: 700; color: #1a1a1a; }
+.syllable-letter .silent-letter { color: #bbb; font-weight: 400; text-decoration: line-through; text-decoration-color: #ddd; }
+.syllable.is-silent { border-color: #e5e5e5; background: #fafafa; cursor: default; }
+.syllable.is-silent:hover { background: #fafafa; transform: none; }
+.syllable.is-silent .syllable-letter { color: #bbb; }
+.syllable.is-silent .syllable-phon { visibility: hidden; }
 .syllable-phon { font-size: 11px; color: #666; margin-top: 2px; font-family: "Lucida Sans Unicode", serif; }
 
 .sound-bar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
@@ -301,14 +306,16 @@ a:hover { color: #0066cc; }
   // 拼读：逐个音节播「精确音素音频」，最后用 TTS 连读整词（真实单词 TTS 很准）
   function speakBreakdown(breakdown, fullWord, callback) {
     if (!breakdown || !breakdown.length) { speak(fullWord); if (callback) callback(); return; }
+    var parts = breakdown.filter(function(b) { return b.phon; }); // 跳过不发音字母盒
+    if (!parts.length) { speak(fullWord); if (callback) callback(); return; }
     var i = 0;
     function playPart() {
-      if (i >= breakdown.length) {
+      if (i >= parts.length) {
         // 拼读后自然停顿再连读整词
         setTimeout(function() { speakOne(fullWord, { rate: 0.9 }, function() { if (callback) callback(); }); }, 320);
         return;
       }
-      playPhoneme(breakdown[i].phon, breakdown[i].letter, function() {
+      playPhoneme(parts[i].phon, parts[i].letter, function() {
         i++;
         setTimeout(playPart, 180); // 音节间轻微停顿
       });
@@ -470,11 +477,14 @@ a:hover { color: #0066cc; }
     var sentenceEn = (w.sentences && w.sentences[0]) || '';
     var sentenceZh = (w.sentences && w.sentences[1]) || '';
 
-    // 渲染详情
+    // 渲染详情（silent 字母灰色显示，纯不发音盒不可点不发音）
     var breakdownHtml = (w.breakdown || []).map(function(b) {
-      return '<div class="syllable" data-letter="' + escapeAttr(b.letter || '') + '" data-phon="' + escapeAttr(b.phon || '') + '">' +
-             '<div class="syllable-letter">' + (b.letter || '') + '</div>' +
-             '<div class="syllable-phon">' + (b.phon || '') + '</div>' +
+      var isSilent = !b.phon;
+      var letterHtml = escapeHtml(b.letter || '') +
+        (b.silent ? '<span class="silent-letter">' + escapeHtml(b.silent) + '</span>' : '');
+      return '<div class="syllable' + (isSilent ? ' is-silent' : '') + '" data-letter="' + escapeAttr(b.letter || '') + '" data-phon="' + escapeAttr(b.phon || '') + '">' +
+             '<div class="syllable-letter">' + letterHtml + '</div>' +
+             '<div class="syllable-phon">' + (b.phon || '&nbsp;') + '</div>' +
              '</div>';
     }).join('');
 
@@ -508,6 +518,7 @@ a:hover { color: #0066cc; }
     }
     // 拼读单个音节（点字位，播精确音素音频；缺文件回退朗读字位）
     document.querySelectorAll('.syllable').forEach(function(s) {
+      if (s.classList.contains('is-silent')) { s.onclick = null; return; }
       s.onclick = function() { pulse(this); playPhoneme(this.dataset.phon, this.dataset.letter); };
     });
     // 例句点击
@@ -521,6 +532,7 @@ a:hover { color: #0066cc; }
   }
 
   function escapeAttr(s) { return String(s).replace(/"/g, '&quot;'); }
+  function escapeHtml(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
   // 页面初始化即建热区（不依赖详情数据，点击时按图片单词匹配）
   buildHotspots();

@@ -10,8 +10,12 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 茶，茶叶",
       "breakdown": [
         {
-          "letter": "tea",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_23 = {
       "definition": "num. 十",
       "breakdown": [
         {
-          "letter": "ten",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -40,8 +52,13 @@ window.PHONICS_DAY_23 = {
       "definition": "num. 二",
       "breakdown": [
         {
-          "letter": "two",
-          "phon": "/t/"
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "w"
+        },
+        {
+          "letter": "o",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -55,8 +72,12 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 玩具",
       "breakdown": [
         {
-          "letter": "toy",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -70,12 +91,20 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 老虎",
       "breakdown": [
         {
-          "letter": "ti",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ger",
+          "letter": "i",
           "phon": "/aɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -89,12 +118,21 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 桌子；餐桌",
       "breakdown": [
         {
-          "letter": "ta",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ble",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -108,8 +146,16 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 尾巴",
       "breakdown": [
         {
-          "letter": "tail",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -123,8 +169,17 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 时间；次数",
       "breakdown": [
         {
-          "letter": "time",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -138,8 +193,16 @@ window.PHONICS_DAY_23 = {
       "definition": "v. 告诉，讲述",
       "breakdown": [
         {
-          "letter": "tell",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -153,8 +216,17 @@ window.PHONICS_DAY_23 = {
       "definition": "v. 拿；取；带",
       "breakdown": [
         {
-          "letter": "take",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -168,8 +240,16 @@ window.PHONICS_DAY_23 = {
       "definition": "adj. 高的",
       "breakdown": [
         {
-          "letter": "tall",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -183,8 +263,12 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 树",
       "breakdown": [
         {
-          "letter": "tree",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -225,8 +309,16 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 旅行；绊倒",
       "breakdown": [
         {
-          "letter": "trip",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -240,16 +332,28 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 番茄，西红柿",
       "breakdown": [
         {
-          "letter": "to",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ma",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "to",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -263,12 +367,20 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 教师，老师",
       "breakdown": [
         {
-          "letter": "teach",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "er",
+          "letter": "ea",
           "phon": "/iː/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -282,12 +394,24 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 票",
       "breakdown": [
         {
-          "letter": "tick",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "et",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -301,12 +425,21 @@ window.PHONICS_DAY_23 = {
       "definition": "n.乌龟",
       "breakdown": [
         {
-          "letter": "tur",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "tle",
+          "letter": "ur",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -320,12 +453,22 @@ window.PHONICS_DAY_23 = {
       "definition": "adj. 小的；少的",
       "breakdown": [
         {
-          "letter": "lit",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "tle",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -339,12 +482,22 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 瓶子",
       "breakdown": [
         {
-          "letter": "bot",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "tle",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -358,12 +511,20 @@ window.PHONICS_DAY_23 = {
       "definition": "adj. 更好的",
       "breakdown": [
         {
-          "letter": "bet",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ter",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -377,12 +538,21 @@ window.PHONICS_DAY_23 = {
       "definition": "adj. 漂亮的；可爱的",
       "breakdown": [
         {
-          "letter": "pret",
+          "letter": "pr",
           "phon": "/pr/"
         },
         {
-          "letter": "ty",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -396,12 +566,20 @@ window.PHONICS_DAY_23 = {
       "definition": "adj. 苦的；痛苦的",
       "breakdown": [
         {
-          "letter": "bit",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ter",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -415,12 +593,21 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 字母；信件",
       "breakdown": [
         {
-          "letter": "let",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "ter",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -434,12 +621,20 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 黄油",
       "breakdown": [
         {
-          "letter": "but",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ter",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -453,12 +648,25 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 小猫",
       "breakdown": [
         {
-          "letter": "kit",
+          "letter": "k",
           "phon": "/k/"
         },
         {
-          "letter": "ten",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -472,12 +680,16 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 棉花；棉布",
       "breakdown": [
         {
-          "letter": "cot",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ton",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "tton",
+          "phon": "/tn/"
         }
       ],
       "sentences": [
@@ -491,12 +703,21 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 按钮；纽扣",
       "breakdown": [
         {
-          "letter": "but",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ton",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "t",
+          "phon": "",
+          "silent": "t"
+        },
+        {
+          "letter": "ton",
+          "phon": "/tn/"
         }
       ],
       "sentences": [
@@ -510,12 +731,20 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 城市",
       "breakdown": [
         {
-          "letter": "cit",
+          "letter": "c",
           "phon": "/s/"
         },
         {
-          "letter": "y",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -529,12 +758,20 @@ window.PHONICS_DAY_23 = {
       "definition": "n. 水",
       "breakdown": [
         {
-          "letter": "wa",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "ter",
+          "letter": "a",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [

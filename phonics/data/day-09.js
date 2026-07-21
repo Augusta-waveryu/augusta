@@ -10,8 +10,16 @@ window.PHONICS_DAY_09 = {
       "definition": "adj. 热的；辣的",
       "breakdown": [
         {
-          "letter": "hot",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 狗",
       "breakdown": [
         {
-          "letter": "dog",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 狐狸",
       "breakdown": [
         {
-          "letter": "fox",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "x",
+          "phon": "/ks/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 盒子；箱",
       "breakdown": [
         {
-          "letter": "box",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "x",
+          "phon": "/ks/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 费用，价格",
       "breakdown": [
         {
-          "letter": "cost",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 射击；投篮",
       "breakdown": [
         {
-          "letter": "shot",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -100,8 +148,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 顶部；陀螺",
       "breakdown": [
         {
-          "letter": "top",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -115,8 +171,16 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 停止；停下",
       "breakdown": [
         {
-          "letter": "stop",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -130,8 +194,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 庄稼；收成",
       "breakdown": [
         {
-          "letter": "crop",
+          "letter": "cr",
           "phon": "/kr/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -145,8 +217,16 @@ window.PHONICS_DAY_09 = {
       "definition": "adj. 长的；远的",
       "breakdown": [
         {
-          "letter": "long",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -160,8 +240,17 @@ window.PHONICS_DAY_09 = {
       "definition": "adj. 错误的",
       "breakdown": [
         {
-          "letter": "wrong",
-          "phon": "/r/"
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "w"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -175,8 +264,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 老板；上司",
       "breakdown": [
         {
-          "letter": "boss",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -190,8 +287,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 损失",
       "breakdown": [
         {
-          "letter": "loss",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -205,8 +310,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 许多",
       "breakdown": [
         {
-          "letter": "lot",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -220,8 +333,16 @@ window.PHONICS_DAY_09 = {
       "definition": "adv. 不，没",
       "breakdown": [
         {
-          "letter": "not",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -235,8 +356,16 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 点头；打瞌睡",
       "breakdown": [
         {
-          "letter": "nod",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -250,8 +379,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 草皮",
       "breakdown": [
         {
-          "letter": "sod",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -265,7 +402,15 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 公鸡",
       "breakdown": [
         {
-          "letter": "cock",
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
           "phon": "/k/"
         }
       ],
@@ -280,8 +425,16 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 锁住；上锁",
       "breakdown": [
         {
-          "letter": "lock",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -295,8 +448,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 短袜",
       "breakdown": [
         {
-          "letter": "sock",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -310,8 +471,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 岩石；石头",
       "breakdown": [
         {
-          "letter": "rock",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -325,8 +494,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 积木；街区",
       "breakdown": [
         {
-          "letter": "block",
+          "letter": "bl",
           "phon": "/bl/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -340,8 +517,21 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 敲；打",
       "breakdown": [
         {
-          "letter": "knock",
-          "phon": ""
+          "letter": "k",
+          "phon": "",
+          "silent": "k"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -355,8 +545,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 歌曲",
       "breakdown": [
         {
-          "letter": "song",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -370,8 +568,16 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 洗涤",
       "breakdown": [
         {
-          "letter": "wash",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -385,8 +591,16 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 想要",
       "breakdown": [
         {
-          "letter": "want",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -400,8 +614,16 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 手表",
       "breakdown": [
         {
-          "letter": "watch",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "tch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
@@ -415,8 +637,16 @@ window.PHONICS_DAY_09 = {
       "definition": "pron. 什么",
       "breakdown": [
         {
-          "letter": "what",
+          "letter": "wh",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -430,16 +660,28 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 质量，品质",
       "breakdown": [
         {
-          "letter": "qual",
+          "letter": "qu",
           "phon": "/kw/"
         },
         {
-          "letter": "i",
+          "letter": "a",
           "phon": "/ɒ/"
         },
         {
-          "letter": "ty",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -453,12 +695,20 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 争吵，争执",
       "breakdown": [
         {
-          "letter": "quar",
+          "letter": "qu",
           "phon": "/kw/"
         },
         {
-          "letter": "rel",
+          "letter": "a",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "rr",
+          "phon": "/r/"
+        },
+        {
+          "letter": "el",
+          "phon": "/əl/"
         }
       ],
       "sentences": [

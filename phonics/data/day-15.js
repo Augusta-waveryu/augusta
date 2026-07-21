@@ -10,8 +10,12 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 男孩",
       "breakdown": [
         {
-          "letter": "boy",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -25,8 +29,12 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 玩具",
       "breakdown": [
         {
-          "letter": "toy",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -40,8 +48,12 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 快乐",
       "breakdown": [
         {
-          "letter": "joy",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -55,12 +67,20 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 享受；喜欢",
       "breakdown": [
         {
-          "letter": "en",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "joy",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "j",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -74,8 +94,16 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 煮沸；沸腾",
       "breakdown": [
         {
-          "letter": "boil",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -89,8 +117,16 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 硬币",
       "breakdown": [
         {
-          "letter": "coin",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -104,8 +140,16 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 泥土，土壤",
       "breakdown": [
         {
-          "letter": "soil",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -119,8 +163,16 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 加入",
       "breakdown": [
         {
-          "letter": "join",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -134,8 +186,16 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 点；要点",
       "breakdown": [
         {
-          "letter": "point",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -149,8 +209,17 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 声音；嗓音",
       "breakdown": [
         {
-          "letter": "voice",
+          "letter": "v",
           "phon": "/v/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -164,8 +233,12 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 油",
       "breakdown": [
         {
-          "letter": "oil",
+          "letter": "oi",
           "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -179,8 +252,17 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 选择",
       "breakdown": [
         {
-          "letter": "choice",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -194,8 +276,17 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 噪音；喧闹声",
       "breakdown": [
         {
-          "letter": "noise",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -209,12 +300,24 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 厕所；马桶",
       "breakdown": [
         {
-          "letter": "toi",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "let",
+          "letter": "oi",
           "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -228,8 +331,16 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 破坏，宠坏",
       "breakdown": [
         {
-          "letter": "spoil",
+          "letter": "sp",
           "phon": "/sp/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -243,8 +354,16 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 卷，线圈",
       "breakdown": [
         {
-          "letter": "coil",
+          "letter": "co",
           "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -258,8 +377,16 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 箔",
       "breakdown": [
         {
-          "letter": "foil",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -292,8 +419,12 @@ window.PHONICS_DAY_15 = {
           "phon": "/ɔɪ/"
         },
         {
-          "letter": "ster",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -307,12 +438,20 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 雇用；使用",
       "breakdown": [
         {
-          "letter": "em",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "ploy",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "pl",
+          "phon": "/pl/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -326,12 +465,20 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 牛仔",
       "breakdown": [
         {
-          "letter": "cow",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "boy",
+          "letter": "ow",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -345,12 +492,20 @@ window.PHONICS_DAY_15 = {
       "definition": "adj. 皇家的",
       "breakdown": [
         {
-          "letter": "roy",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "al",
+          "letter": "oy",
           "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -364,12 +519,16 @@ window.PHONICS_DAY_15 = {
       "definition": "adj. 忠诚的",
       "breakdown": [
         {
-          "letter": "loy",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "al",
+          "letter": "oy",
           "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -383,12 +542,20 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 破坏；摧毁",
       "breakdown": [
         {
-          "letter": "de",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "stroy",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "str",
+          "phon": "/str/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -402,12 +569,21 @@ window.PHONICS_DAY_15 = {
       "definition": "v. 惹恼；使烦恼",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "noy",
-          "phon": ""
+          "letter": "n",
+          "phon": "",
+          "silent": "n"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -421,12 +597,24 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 毒药",
       "breakdown": [
         {
-          "letter": "poi",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "son",
+          "letter": "oi",
           "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -444,8 +632,16 @@ window.PHONICS_DAY_15 = {
           "phon": "/ə/"
         },
         {
-          "letter": "void",
+          "letter": "v",
           "phon": "/v/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -459,8 +655,16 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 关节",
       "breakdown": [
         {
-          "letter": "joint",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -474,8 +678,12 @@ window.PHONICS_DAY_15 = {
       "definition": "n. 大豆；酱油",
       "breakdown": [
         {
-          "letter": "soy",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [

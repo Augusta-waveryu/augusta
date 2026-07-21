@@ -25,8 +25,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 头发；毛发",
       "breakdown": [
         {
-          "letter": "hair",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -40,8 +44,12 @@ window.PHONICS_DAY_19 = {
       "definition": "adj. 公平的；美丽的",
       "breakdown": [
         {
-          "letter": "fair",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -55,8 +63,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 一双；一对",
       "breakdown": [
         {
-          "letter": "pair",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -70,8 +82,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 椅子",
       "breakdown": [
         {
-          "letter": "chair",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -85,8 +101,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 楼梯",
       "breakdown": [
         {
-          "letter": "stair",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -100,8 +120,13 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 关心；照顾",
       "breakdown": [
         {
-          "letter": "care",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -115,8 +140,12 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 敢；挑战",
       "breakdown": [
         {
-          "letter": "dare",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -130,8 +159,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 费用",
       "breakdown": [
         {
-          "letter": "fare",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -145,8 +178,12 @@ window.PHONICS_DAY_19 = {
       "definition": "adj. 稀有的；罕见的",
       "breakdown": [
         {
-          "letter": "rare",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -160,8 +197,13 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 分享",
       "breakdown": [
         {
-          "letter": "share",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -175,8 +217,13 @@ window.PHONICS_DAY_19 = {
       "definition": "adj. 多余的；备用的",
       "breakdown": [
         {
-          "letter": "spare",
+          "letter": "sp",
           "phon": "/sp/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -190,8 +237,13 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 野兔",
       "breakdown": [
         {
-          "letter": "hare",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -205,8 +257,13 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 凝视；盯着看",
       "breakdown": [
         {
-          "letter": "stare",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -220,8 +277,17 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 惊吓；使害怕",
       "breakdown": [
         {
-          "letter": "scare",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -235,8 +301,13 @@ window.PHONICS_DAY_19 = {
       "definition": "adj. 赤裸的；空的",
       "breakdown": [
         {
-          "letter": "bare",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -250,8 +321,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 熊",
       "breakdown": [
         {
-          "letter": "bear",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -265,8 +340,12 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 梨",
       "breakdown": [
         {
-          "letter": "pear",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -280,8 +359,12 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 穿；戴",
       "breakdown": [
         {
-          "letter": "wear",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -295,8 +378,12 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 发誓",
       "breakdown": [
         {
-          "letter": "swear",
+          "letter": "sw",
           "phon": "/sw/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -310,8 +397,13 @@ window.PHONICS_DAY_19 = {
       "definition": "adv. 在那里；到那里",
       "breakdown": [
         {
-          "letter": "there",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -325,8 +417,14 @@ window.PHONICS_DAY_19 = {
       "definition": "adv. 哪里",
       "breakdown": [
         {
-          "letter": "where",
-          "phon": "/w/"
+          "letter": "w",
+          "phon": "/w/",
+          "silent": "h"
+        },
+        {
+          "letter": "er",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -340,8 +438,16 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 正方形；广场",
       "breakdown": [
         {
-          "letter": "square",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "qu",
+          "phon": "/kw/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -355,12 +461,25 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 比较，对照",
       "breakdown": [
         {
-          "letter": "com",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "pare",
+          "letter": "o",
           "phon": "/ə/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -374,12 +493,21 @@ window.PHONICS_DAY_19 = {
       "definition": "v. 准备；预备",
       "breakdown": [
         {
-          "letter": "pre",
+          "letter": "pr",
           "phon": "/pr/"
         },
         {
-          "letter": "pare",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -393,12 +521,24 @@ window.PHONICS_DAY_19 = {
       "definition": "adj. 小心的；仔细的",
       "breakdown": [
         {
-          "letter": "care",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ful",
+          "letter": "are",
           "phon": "/eə/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -412,12 +552,16 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 仙女；小精灵",
       "breakdown": [
         {
-          "letter": "fai",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ry",
+          "letter": "ai",
           "phon": "/eə/"
+        },
+        {
+          "letter": "ry",
+          "phon": "/rɪ/"
         }
       ],
       "sentences": [
@@ -431,12 +575,24 @@ window.PHONICS_DAY_19 = {
       "definition": "n. 父母",
       "breakdown": [
         {
-          "letter": "par",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ent",
+          "letter": "a",
           "phon": "/eə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -450,16 +606,24 @@ window.PHONICS_DAY_19 = {
       "definition": "adj. 各种各样的；不同的",
       "breakdown": [
         {
-          "letter": "var",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "i",
+          "letter": "ar",
           "phon": "/eə/"
         },
         {
-          "letter": "ous",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -477,8 +641,16 @@ window.PHONICS_DAY_19 = {
           "phon": "/eə/"
         },
         {
-          "letter": "port",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [

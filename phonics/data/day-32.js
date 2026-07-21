@@ -10,8 +10,16 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 这",
       "breakdown": [
         {
-          "letter": "this",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 那；那个",
       "breakdown": [
         {
-          "letter": "that",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -40,8 +56,17 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 这些",
       "breakdown": [
         {
-          "letter": "these",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "e",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -55,8 +80,17 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 那些",
       "breakdown": [
         {
-          "letter": "those",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -70,8 +104,12 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 他们；她们；它们",
       "breakdown": [
         {
-          "letter": "they",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -85,8 +123,16 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 他们；她们；它们",
       "breakdown": [
         {
-          "letter": "them",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -100,8 +146,12 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 他们的；她们的；它们的",
       "breakdown": [
         {
-          "letter": "their",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "eir",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
@@ -115,8 +165,13 @@ window.PHONICS_DAY_32 = {
       "definition": "adv. 在那里；到那里",
       "breakdown": [
         {
-          "letter": "there",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -130,8 +185,16 @@ window.PHONICS_DAY_32 = {
       "definition": "adv. 然后；那时",
       "breakdown": [
         {
-          "letter": "then",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -145,8 +208,16 @@ window.PHONICS_DAY_32 = {
       "definition": "conj. 比；除了",
       "breakdown": [
         {
-          "letter": "than",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -160,8 +231,12 @@ window.PHONICS_DAY_32 = {
       "definition": "conj. 虽然；尽管",
       "breakdown": [
         {
-          "letter": "though",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "ough",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -175,8 +250,16 @@ window.PHONICS_DAY_32 = {
       "definition": "adv. 因此",
       "breakdown": [
         {
-          "letter": "thus",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -190,12 +273,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 父亲",
       "breakdown": [
         {
-          "letter": "fa",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ther",
+          "letter": "a",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -209,12 +300,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 母亲；妈妈",
       "breakdown": [
         {
-          "letter": "moth",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -228,12 +327,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 兄弟",
       "breakdown": [
         {
-          "letter": "broth",
+          "letter": "br",
           "phon": "/br/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -247,16 +354,28 @@ window.PHONICS_DAY_32 = {
       "definition": "adv. 一起",
       "breakdown": [
         {
-          "letter": "to",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "geth",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "er",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -270,12 +389,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 天气",
       "breakdown": [
         {
-          "letter": "weath",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "er",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -289,12 +416,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 羽毛",
       "breakdown": [
         {
-          "letter": "feath",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "er",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -308,12 +443,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 皮革；皮革制品",
       "breakdown": [
         {
-          "letter": "leath",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "er",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -327,16 +470,24 @@ window.PHONICS_DAY_32 = {
       "definition": "det. 另外的；pron. 另一个",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "oth",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -350,12 +501,16 @@ window.PHONICS_DAY_32 = {
       "definition": "adj. 另外的；其他的",
       "breakdown": [
         {
-          "letter": "oth",
+          "letter": "o",
           "phon": "/ʌ/"
         },
         {
-          "letter": "er",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -373,8 +528,12 @@ window.PHONICS_DAY_32 = {
           "phon": "/aɪ/"
         },
         {
-          "letter": "ther",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -388,12 +547,25 @@ window.PHONICS_DAY_32 = {
       "definition": "det. 两者都不",
       "breakdown": [
         {
-          "letter": "nei",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "ther",
+          "letter": "ei",
           "phon": "/aɪ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "r",
+          "phon": "",
+          "silent": "r"
         }
       ],
       "sentences": [
@@ -407,12 +579,24 @@ window.PHONICS_DAY_32 = {
       "definition": "prep. 没有；不带",
       "breakdown": [
         {
-          "letter": "with",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "out",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -426,8 +610,16 @@ window.PHONICS_DAY_32 = {
       "definition": "adj. 光滑的；平稳的",
       "breakdown": [
         {
-          "letter": "smooth",
+          "letter": "sm",
           "phon": "/sm/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
         }
       ],
       "sentences": [
@@ -441,8 +633,17 @@ window.PHONICS_DAY_32 = {
       "definition": "v. 呼吸；吸入",
       "breakdown": [
         {
-          "letter": "breathe",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -456,12 +657,20 @@ window.PHONICS_DAY_32 = {
       "definition": "n. 服装，衣服",
       "breakdown": [
         {
-          "letter": "cloth",
+          "letter": "cl",
           "phon": "/kl/"
         },
         {
-          "letter": "ing",
+          "letter": "o",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -494,8 +703,17 @@ window.PHONICS_DAY_32 = {
       "definition": "v. (在水中)沐浴，洗澡",
       "breakdown": [
         {
-          "letter": "bathe",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/",
+          "silent": "e"
         }
       ],
       "sentences": [

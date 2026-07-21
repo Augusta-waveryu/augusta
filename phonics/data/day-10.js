@@ -10,8 +10,12 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 手臂；胳膊",
       "breakdown": [
         {
-          "letter": "arm",
+          "letter": "ar",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 卡片；扑克牌",
       "breakdown": [
         {
-          "letter": "card",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -40,8 +52,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 公园；停车场",
       "breakdown": [
         {
-          "letter": "park",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -55,8 +75,12 @@ window.PHONICS_DAY_10 = {
       "definition": "adv. 远地",
       "breakdown": [
         {
-          "letter": "far",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
@@ -70,8 +94,12 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 星星；明星",
       "breakdown": [
         {
-          "letter": "star",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
@@ -85,8 +113,17 @@ window.PHONICS_DAY_10 = {
       "definition": "adj. 大的；宽大的",
       "breakdown": [
         {
-          "letter": "large",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -100,8 +137,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 草",
       "breakdown": [
         {
-          "letter": "grass",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -115,8 +160,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 班级",
       "breakdown": [
         {
-          "letter": "class",
+          "letter": "cl",
           "phon": "/kl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -130,8 +183,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 小路，路径",
       "breakdown": [
         {
-          "letter": "path",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -145,8 +206,16 @@ window.PHONICS_DAY_10 = {
       "definition": "v. 通过；经过",
       "breakdown": [
         {
-          "letter": "pass",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -160,8 +229,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 过去；昔日",
       "breakdown": [
         {
-          "letter": "past",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -175,12 +252,20 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 父亲",
       "breakdown": [
         {
-          "letter": "fa",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ther",
+          "letter": "a",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -194,8 +279,16 @@ window.PHONICS_DAY_10 = {
       "definition": "adj. 平静的",
       "breakdown": [
         {
-          "letter": "calm",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -209,8 +302,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 一半",
       "breakdown": [
         {
-          "letter": "half",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -224,8 +325,21 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 小牛",
       "breakdown": [
         {
-          "letter": "calf",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "l",
+          "phon": "",
+          "silent": "l"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -239,8 +353,12 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 姑妈；阿姨",
       "breakdown": [
         {
-          "letter": "aunt",
+          "letter": "au",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -254,8 +372,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 心脏；内心",
       "breakdown": [
         {
-          "letter": "heart",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -284,8 +410,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 办事员；店员",
       "breakdown": [
         {
-          "letter": "clerk",
+          "letter": "cl",
           "phon": "/kl/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -299,8 +433,12 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 汽车",
       "breakdown": [
         {
-          "letter": "car",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
@@ -314,8 +452,12 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 酒吧；棒",
       "breakdown": [
         {
-          "letter": "bar",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
@@ -329,8 +471,12 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 艺术；美术",
       "breakdown": [
         {
-          "letter": "art",
+          "letter": "ar",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -344,8 +490,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 部分；角色",
       "breakdown": [
         {
-          "letter": "part",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -359,8 +513,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 农场",
       "breakdown": [
         {
-          "letter": "farm",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -374,8 +536,16 @@ window.PHONICS_DAY_10 = {
       "definition": "adj. 黑暗的；深色的",
       "breakdown": [
         {
-          "letter": "dark",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -389,8 +559,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 鲨鱼",
       "breakdown": [
         {
-          "letter": "shark",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -404,8 +582,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 狗叫；树皮",
       "breakdown": [
         {
-          "letter": "bark",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -419,8 +605,16 @@ window.PHONICS_DAY_10 = {
       "definition": "n. 三月",
       "breakdown": [
         {
-          "letter": "march",
+          "letter": "M",
           "phon": "/m/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
@@ -434,8 +628,16 @@ window.PHONICS_DAY_10 = {
       "definition": "v. 开始；启动",
       "breakdown": [
         {
-          "letter": "start",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -449,8 +651,16 @@ window.PHONICS_DAY_10 = {
       "definition": "adj. 坚硬的；困难的",
       "breakdown": [
         {
-          "letter": "hard",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [

@@ -14,8 +14,16 @@ window.PHONICS_DAY_06 = {
           "phon": "/ə/"
         },
         {
-          "letter": "bout",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -33,8 +41,12 @@ window.PHONICS_DAY_06 = {
           "phon": "/ə/"
         },
         {
-          "letter": "go",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -52,8 +64,12 @@ window.PHONICS_DAY_06 = {
           "phon": "/ə/"
         },
         {
-          "letter": "way",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -71,8 +87,16 @@ window.PHONICS_DAY_06 = {
           "phon": "/ə/"
         },
         {
-          "letter": "long",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -86,12 +110,21 @@ window.PHONICS_DAY_06 = {
       "definition": "v. 到达",
       "breakdown": [
         {
-          "letter": "ar",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "rive",
+          "letter": "rr",
           "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -105,12 +138,20 @@ window.PHONICS_DAY_06 = {
       "definition": "adv. 今天",
       "breakdown": [
         {
-          "letter": "to",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "day",
+          "letter": "o",
           "phon": "/ə/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -124,12 +165,24 @@ window.PHONICS_DAY_06 = {
       "definition": "v. 收集",
       "breakdown": [
         {
-          "letter": "col",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "lect",
+          "letter": "o",
           "phon": "/ə/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ct",
+          "phon": "/kt/"
         }
       ],
       "sentences": [
@@ -143,16 +196,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 场合；时机",
       "breakdown": [
         {
-          "letter": "oc",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "ca",
+          "letter": "cc",
           "phon": "/k/"
         },
         {
-          "letter": "sion",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -166,16 +223,32 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 事故；意外",
       "breakdown": [
         {
-          "letter": "ac",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ci",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "dent",
+          "letter": "c",
           "phon": "/s/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -189,12 +262,24 @@ window.PHONICS_DAY_06 = {
       "definition": "v. 发生；碰巧",
       "breakdown": [
         {
-          "letter": "hap",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "pen",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "pp",
+          "phon": "/p/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -208,12 +293,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 河；江",
       "breakdown": [
         {
-          "letter": "riv",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "er",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -227,12 +320,21 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 字母；信件",
       "breakdown": [
         {
-          "letter": "let",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "ter",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "t"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -246,12 +348,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 父亲",
       "breakdown": [
         {
-          "letter": "fa",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ther",
+          "letter": "a",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -265,12 +375,20 @@ window.PHONICS_DAY_06 = {
       "definition": "adj. 更好的",
       "breakdown": [
         {
-          "letter": "bet",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ter",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -284,12 +402,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 母亲；妈妈",
       "breakdown": [
         {
-          "letter": "moth",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -303,12 +429,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 农民",
       "breakdown": [
         {
-          "letter": "farm",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "er",
+          "letter": "ar",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -322,12 +456,24 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 医生；博士",
       "breakdown": [
         {
-          "letter": "doc",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "tor",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -341,12 +487,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 演员",
       "breakdown": [
         {
-          "letter": "ac",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "tor",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -360,12 +514,24 @@ window.PHONICS_DAY_06 = {
       "definition": "v. 忘记；忽略",
       "breakdown": [
         {
-          "letter": "for",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "get",
+          "letter": "or",
           "phon": "/ə/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -379,16 +545,32 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 发明家",
       "breakdown": [
         {
-          "letter": "in",
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "ven",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "tor",
+          "letter": "v",
           "phon": "/v/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -402,12 +584,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 水",
       "breakdown": [
         {
-          "letter": "wa",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "ter",
+          "letter": "a",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -421,12 +611,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 尺子；统治者",
       "breakdown": [
         {
-          "letter": "rul",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "er",
+          "letter": "u",
           "phon": "/uː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -440,12 +638,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 教师，老师",
       "breakdown": [
         {
-          "letter": "teach",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "er",
+          "letter": "ea",
           "phon": "/iː/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -463,8 +669,12 @@ window.PHONICS_DAY_06 = {
           "phon": "/ɔː/"
         },
         {
-          "letter": "der",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -478,12 +688,21 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 晚餐，正餐",
       "breakdown": [
         {
-          "letter": "din",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ner",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -497,12 +716,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 工人",
       "breakdown": [
         {
-          "letter": "work",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "er",
+          "letter": "or",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -516,12 +743,20 @@ window.PHONICS_DAY_06 = {
       "definition": "prep. 在……下面",
       "breakdown": [
         {
-          "letter": "un",
+          "letter": "u",
           "phon": "/ʌ/"
         },
         {
-          "letter": "der",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -535,12 +770,20 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 美元；元",
       "breakdown": [
         {
-          "letter": "dol",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "lar",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -554,12 +797,21 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 镜子",
       "breakdown": [
         {
-          "letter": "mir",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ror",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/",
+          "silent": "r"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -573,7 +825,7 @@ window.PHONICS_DAY_06 = {
       "definition": "n. 参观者；访客",
       "breakdown": [
         {
-          "letter": "vis",
+          "letter": "v",
           "phon": "/v/"
         },
         {
@@ -581,8 +833,20 @@ window.PHONICS_DAY_06 = {
           "phon": "/ɪ/"
         },
         {
-          "letter": "tor",
+          "letter": "s",
           "phon": "/z/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [

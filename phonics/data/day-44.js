@@ -10,8 +10,12 @@ window.PHONICS_DAY_44 = {
       "definition": "pron. 我们",
       "breakdown": [
         {
-          "letter": "we",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "e",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_44 = {
       "definition": "adj. 湿的",
       "breakdown": [
         {
-          "letter": "wet",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -40,8 +52,16 @@ window.PHONICS_DAY_44 = {
       "definition": "v. 赢；获胜",
       "breakdown": [
         {
-          "letter": "win",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -55,8 +75,16 @@ window.PHONICS_DAY_44 = {
       "definition": "adj. 温暖的",
       "breakdown": [
         {
-          "letter": "warm",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -70,12 +98,20 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 水",
       "breakdown": [
         {
-          "letter": "wa",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "ter",
+          "letter": "a",
           "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -89,8 +125,16 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 墙",
       "breakdown": [
         {
-          "letter": "wall",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -104,12 +148,24 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 窗户",
       "breakdown": [
         {
-          "letter": "win",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "dow",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -123,12 +179,24 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 女人",
       "breakdown": [
         {
-          "letter": "wom",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "an",
+          "letter": "o",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -142,8 +210,16 @@ window.PHONICS_DAY_44 = {
       "definition": "v. 洗涤",
       "breakdown": [
         {
-          "letter": "wash",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -157,8 +233,16 @@ window.PHONICS_DAY_44 = {
       "definition": "v. 走路",
       "breakdown": [
         {
-          "letter": "walk",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -172,8 +256,16 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 手表",
       "breakdown": [
         {
-          "letter": "watch",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "tch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
@@ -187,8 +279,16 @@ window.PHONICS_DAY_44 = {
       "definition": "v. 工作；运转",
       "breakdown": [
         {
-          "letter": "work",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -202,8 +302,16 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 单词；言语",
       "breakdown": [
         {
-          "letter": "word",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -217,8 +325,16 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 世界",
       "breakdown": [
         {
-          "letter": "world",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "ld",
+          "phon": "/ld/"
         }
       ],
       "sentences": [
@@ -232,8 +348,16 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 星期；周",
       "breakdown": [
         {
-          "letter": "week",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -247,12 +371,24 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 冬天",
       "breakdown": [
         {
-          "letter": "win",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "ter",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -266,8 +402,17 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 白色",
       "breakdown": [
         {
-          "letter": "white",
+          "letter": "wh",
           "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -281,8 +426,17 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 鲸鱼",
       "breakdown": [
         {
-          "letter": "whale",
+          "letter": "wh",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -296,8 +450,16 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 轮子",
       "breakdown": [
         {
-          "letter": "wheel",
+          "letter": "wh",
           "phon": "/w/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -311,8 +473,17 @@ window.PHONICS_DAY_44 = {
       "definition": "adv. 何时",
       "breakdown": [
         {
-          "letter": "when",
-          "phon": "/w/"
+          "letter": "w",
+          "phon": "/w/",
+          "silent": "h"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -326,8 +497,14 @@ window.PHONICS_DAY_44 = {
       "definition": "adv. 哪里",
       "breakdown": [
         {
-          "letter": "where",
-          "phon": "/w/"
+          "letter": "w",
+          "phon": "/w/",
+          "silent": "h"
+        },
+        {
+          "letter": "er",
+          "phon": "/eə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -341,8 +518,16 @@ window.PHONICS_DAY_44 = {
       "definition": "pron. 什么",
       "breakdown": [
         {
-          "letter": "what",
+          "letter": "wh",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -356,8 +541,12 @@ window.PHONICS_DAY_44 = {
       "definition": "adv. 为什么",
       "breakdown": [
         {
-          "letter": "why",
+          "letter": "wh",
           "phon": "/w/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -371,8 +560,13 @@ window.PHONICS_DAY_44 = {
       "definition": "pron. 谁",
       "breakdown": [
         {
-          "letter": "who",
-          "phon": "/h/"
+          "letter": "h",
+          "phon": "/h/",
+          "silent": "w"
+        },
+        {
+          "letter": "o",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -386,8 +580,17 @@ window.PHONICS_DAY_44 = {
       "definition": "pron. 谁的",
       "breakdown": [
         {
-          "letter": "whose",
+          "letter": "wh",
           "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -401,8 +604,18 @@ window.PHONICS_DAY_44 = {
       "definition": "adj. 整个的；全部的",
       "breakdown": [
         {
-          "letter": "whole",
-          "phon": "/h/"
+          "letter": "h",
+          "phon": "/h/",
+          "silent": "w"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -416,8 +629,17 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 小麦",
       "breakdown": [
         {
-          "letter": "wheat",
-          "phon": "/w/"
+          "letter": "w",
+          "phon": "/w/",
+          "silent": "h"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -431,12 +653,25 @@ window.PHONICS_DAY_44 = {
       "definition": "v. 低语",
       "breakdown": [
         {
-          "letter": "whis",
-          "phon": "/w/"
+          "letter": "w",
+          "phon": "/w/",
+          "silent": "h"
         },
         {
-          "letter": "per",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -450,16 +685,32 @@ window.PHONICS_DAY_44 = {
       "definition": "adj. 极好的；精彩的",
       "breakdown": [
         {
-          "letter": "won",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "der",
+          "letter": "o",
           "phon": "/ʌ/"
         },
         {
-          "letter": "ful",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "ul",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -473,8 +724,16 @@ window.PHONICS_DAY_44 = {
       "definition": "v. 等待",
       "breakdown": [
         {
-          "letter": "wait",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [

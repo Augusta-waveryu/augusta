@@ -14,16 +14,25 @@ window.PHONICS_DAY_34 = {
           "phon": "/juː/"
         },
         {
-          "letter": "su",
+          "letter": "s",
           "phon": "/ʒ/"
         },
         {
-          "letter": "al",
-          "phon": ""
+          "letter": "u",
+          "phon": "",
+          "silent": "u"
         },
         {
-          "letter": "ly",
+          "letter": "a",
           "phon": "/ə/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -37,7 +46,7 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 电视机",
       "breakdown": [
         {
-          "letter": "tel",
+          "letter": "t",
           "phon": "/t/"
         },
         {
@@ -45,12 +54,24 @@ window.PHONICS_DAY_34 = {
           "phon": "/e/"
         },
         {
-          "letter": "vi",
+          "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "sion",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -64,12 +85,21 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 宝藏；珍品",
       "breakdown": [
         {
-          "letter": "treas",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "ure",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "su",
+          "phon": "/ʒ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/ə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -83,12 +113,21 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 愉快；乐趣",
       "breakdown": [
         {
-          "letter": "pleas",
+          "letter": "pl",
           "phon": "/pl/"
         },
         {
-          "letter": "ure",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "s",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -102,12 +141,20 @@ window.PHONICS_DAY_34 = {
       "definition": "v. 测量；估量",
       "breakdown": [
         {
-          "letter": "meas",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ure",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "s",
+          "phon": "/ʒ/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -121,12 +168,16 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 视力；想象力",
       "breakdown": [
         {
-          "letter": "vi",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "sion",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -140,16 +191,24 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 决定；判断",
       "breakdown": [
         {
-          "letter": "de",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ci",
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/"
+        },
+        {
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
           "letter": "sion",
-          "phon": "/s/"
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -163,16 +222,20 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 场合；时机",
       "breakdown": [
         {
-          "letter": "oc",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "ca",
+          "letter": "cc",
           "phon": "/k/"
         },
         {
-          "letter": "sion",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -186,16 +249,24 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 修订；修改本",
       "breakdown": [
         {
-          "letter": "re",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "vi",
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
           "letter": "sion",
-          "phon": "/v/"
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -232,16 +303,24 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 分开，划分",
       "breakdown": [
         {
-          "letter": "di",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "vi",
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "sion",
+          "letter": "v",
           "phon": "/v/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "si",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -255,16 +334,24 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 爆炸；爆发",
       "breakdown": [
         {
-          "letter": "ex",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "plo",
+          "letter": "x",
           "phon": "/ks/"
         },
         {
-          "letter": "sion",
+          "letter": "pl",
           "phon": "/pl/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -278,12 +365,24 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 车库",
       "breakdown": [
         {
-          "letter": "ga",
+          "letter": "g",
           "phon": "/ɡ/"
         },
         {
-          "letter": "rage",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
@@ -411,16 +510,24 @@ window.PHONICS_DAY_34 = {
       "definition": "adj. 休闲的；非正式的",
       "breakdown": [
         {
-          "letter": "cas",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "u",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "al",
+          "letter": "s",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -434,16 +541,28 @@ window.PHONICS_DAY_34 = {
       "definition": "adj. 视觉的",
       "breakdown": [
         {
-          "letter": "vis",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "u",
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "al",
+          "letter": "s",
           "phon": "/ʒ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -457,20 +576,28 @@ window.PHONICS_DAY_34 = {
       "definition": "adj. 不寻常的；独特的",
       "breakdown": [
         {
-          "letter": "un",
+          "letter": "u",
           "phon": "/ʌ/"
         },
         {
-          "letter": "u",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "su",
+          "letter": "u",
           "phon": "/juː/"
         },
         {
-          "letter": "al",
+          "letter": "s",
           "phon": "/z/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -486,10 +613,6 @@ window.PHONICS_DAY_34 = {
         {
           "letter": "A",
           "phon": "/ˈeɪʒə/"
-        },
-        {
-          "letter": "sia",
-          "phon": ""
         }
       ],
       "sentences": [
@@ -522,12 +645,16 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 版本；型号",
       "breakdown": [
         {
-          "letter": "ver",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "sion",
+          "letter": "er",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʃn/"
         }
       ],
       "sentences": [
@@ -541,16 +668,28 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 困惑；混乱",
       "breakdown": [
         {
-          "letter": "con",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "fu",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "sion",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [
@@ -564,16 +703,28 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 结论，结束",
       "breakdown": [
         {
-          "letter": "con",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "clu",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "sion",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "cl",
+          "phon": "/kl/"
+        },
+        {
+          "letter": "u",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ʒn/"
         }
       ],
       "sentences": [

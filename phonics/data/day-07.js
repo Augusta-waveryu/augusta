@@ -10,8 +10,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 杯子",
       "breakdown": [
         {
-          "letter": "cup",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_07 = {
       "definition": "v. 切，剪",
       "breakdown": [
         {
-          "letter": "cut",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 公共汽车",
       "breakdown": [
         {
-          "letter": "bus",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 鸭子",
       "breakdown": [
         {
-          "letter": "duck",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 卡车",
       "breakdown": [
         {
-          "letter": "truck",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -85,12 +125,24 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 猴子",
       "breakdown": [
         {
-          "letter": "mon",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "key",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -104,12 +156,20 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 钱",
       "breakdown": [
         {
-          "letter": "mon",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ey",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -123,12 +183,20 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 颜色；vt. 给…上色",
       "breakdown": [
         {
-          "letter": "col",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "our",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "our",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -142,8 +210,17 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 手套",
       "breakdown": [
         {
-          "letter": "glove",
+          "letter": "gl",
           "phon": "/gl/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -161,8 +238,17 @@ window.PHONICS_DAY_07 = {
           "phon": "/ə/"
         },
         {
-          "letter": "bove",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -176,8 +262,17 @@ window.PHONICS_DAY_07 = {
       "definition": "v. 爱",
       "breakdown": [
         {
-          "letter": "love",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -195,8 +290,16 @@ window.PHONICS_DAY_07 = {
           "phon": "/ɪ/"
         },
         {
-          "letter": "nough",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "gh",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -210,8 +313,16 @@ window.PHONICS_DAY_07 = {
       "definition": "adj. 坚韧的；困难的",
       "breakdown": [
         {
-          "letter": "tough",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "gh",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -225,12 +336,21 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 麻烦；困难",
       "breakdown": [
         {
-          "letter": "trou",
+          "letter": "tr",
           "phon": "/tr/"
         },
         {
-          "letter": "ble",
+          "letter": "ou",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -244,12 +364,20 @@ window.PHONICS_DAY_07 = {
       "definition": "adj. 双的，两倍的",
       "breakdown": [
         {
-          "letter": "dou",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ble",
+          "letter": "ou",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -263,12 +391,17 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 一对；几个",
       "breakdown": [
         {
-          "letter": "cou",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ple",
+          "letter": "ou",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "pl",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -282,8 +415,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 洪水；大量",
       "breakdown": [
         {
-          "letter": "flood",
+          "letter": "fl",
           "phon": "/fl/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -297,8 +438,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 血液；血统",
       "breakdown": [
         {
-          "letter": "blood",
+          "letter": "bl",
           "phon": "/bl/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -312,8 +461,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 太阳",
       "breakdown": [
         {
-          "letter": "sun",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -327,8 +484,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 乐趣，娱乐",
       "breakdown": [
         {
-          "letter": "fun",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -342,8 +507,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 枪",
       "breakdown": [
         {
-          "letter": "gun",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -376,8 +549,12 @@ window.PHONICS_DAY_07 = {
       "definition": "adv. 向上；在上面",
       "breakdown": [
         {
-          "letter": "up",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -391,8 +568,16 @@ window.PHONICS_DAY_07 = {
       "definition": "conj. 但是",
       "breakdown": [
         {
-          "letter": "but",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -406,8 +591,16 @@ window.PHONICS_DAY_07 = {
       "definition": "v. 关闭；关上",
       "breakdown": [
         {
-          "letter": "shut",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -421,8 +614,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 坚果",
       "breakdown": [
         {
-          "letter": "nut",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -436,8 +637,16 @@ window.PHONICS_DAY_07 = {
       "definition": "n. 灰尘；尘土",
       "breakdown": [
         {
-          "letter": "dust",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -451,8 +660,16 @@ window.PHONICS_DAY_07 = {
       "definition": "adv. 刚刚；仅仅",
       "breakdown": [
         {
-          "letter": "just",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -466,8 +683,16 @@ window.PHONICS_DAY_07 = {
       "definition": "mod. 必须，一定",
       "breakdown": [
         {
-          "letter": "must",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -481,8 +706,16 @@ window.PHONICS_DAY_07 = {
       "definition": "adv. 很多，非常",
       "breakdown": [
         {
-          "letter": "much",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [

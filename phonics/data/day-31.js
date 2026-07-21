@@ -10,8 +10,16 @@ window.PHONICS_DAY_31 = {
       "definition": "v. 认为；思考",
       "breakdown": [
         {
-          "letter": "think",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_31 = {
       "definition": "v. 感谢",
       "breakdown": [
         {
-          "letter": "thank",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_31 = {
       "definition": "adj. 瘦的；薄的",
       "breakdown": [
         {
-          "letter": "thin",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_31 = {
       "definition": "adj. 厚的；粗的",
       "breakdown": [
         {
-          "letter": "thick",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_31 = {
       "definition": "num. 三",
       "breakdown": [
         {
-          "letter": "three",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_31 = {
       "definition": "num. 第三",
       "breakdown": [
         {
-          "letter": "third",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -100,12 +148,20 @@ window.PHONICS_DAY_31 = {
       "definition": "adj. 口渴的；渴望的",
       "breakdown": [
         {
-          "letter": "thirst",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "y",
+          "letter": "ir",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -119,12 +175,20 @@ window.PHONICS_DAY_31 = {
       "definition": "num. 三十",
       "breakdown": [
         {
-          "letter": "thir",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "ty",
+          "letter": "ir",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -138,12 +202,20 @@ window.PHONICS_DAY_31 = {
       "definition": "num. 一千",
       "breakdown": [
         {
-          "letter": "thou",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "sand",
+          "letter": "ou",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "and",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -157,8 +229,12 @@ window.PHONICS_DAY_31 = {
       "definition": "v. 扔，抛",
       "breakdown": [
         {
-          "letter": "throw",
+          "letter": "thr",
           "phon": "/θr/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -172,12 +248,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 雷",
       "breakdown": [
         {
-          "letter": "thun",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "der",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -191,12 +275,24 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 星期四",
       "breakdown": [
         {
-          "letter": "Thurs",
+          "letter": "Th",
           "phon": "/θ/"
         },
         {
-          "letter": "day",
+          "letter": "ur",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -210,16 +306,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 剧院；戏院",
       "breakdown": [
         {
-          "letter": "the",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "a",
+          "letter": "ea",
           "phon": "/ɪə/"
         },
         {
-          "letter": "tre",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "re",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -233,8 +333,17 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 主题；题目",
       "breakdown": [
         {
-          "letter": "theme",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -248,16 +357,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 理论",
       "breakdown": [
         {
-          "letter": "the",
+          "letter": "th",
           "phon": "/θ/"
         },
         {
-          "letter": "o",
+          "letter": "eo",
           "phon": "/ɪə/"
         },
         {
-          "letter": "ry",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -271,8 +384,16 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 牙齿",
       "breakdown": [
         {
-          "letter": "tooth",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -286,8 +407,16 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 牙齿 (tooth 的复数)",
       "breakdown": [
         {
-          "letter": "teeth",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -301,8 +430,16 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 洗澡；浴室",
       "breakdown": [
         {
-          "letter": "bath",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -316,8 +453,16 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 嘴巴",
       "breakdown": [
         {
-          "letter": "mouth",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -331,8 +476,16 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 南方",
       "breakdown": [
         {
-          "letter": "south",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -346,8 +499,16 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 北方；北部",
       "breakdown": [
         {
-          "letter": "north",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -361,8 +522,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 月",
       "breakdown": [
         {
-          "letter": "month",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -376,8 +549,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 数学",
       "breakdown": [
         {
-          "letter": "maths",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -391,8 +576,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 健康；卫生",
       "breakdown": [
         {
-          "letter": "health",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -406,8 +603,20 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 财富；大量",
       "breakdown": [
         {
-          "letter": "wealth",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -425,8 +634,12 @@ window.PHONICS_DAY_31 = {
           "phon": "/ɔː/"
         },
         {
-          "letter": "thor",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -440,12 +653,25 @@ window.PHONICS_DAY_31 = {
       "definition": "n. 运动员",
       "breakdown": [
         {
-          "letter": "ath",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "lete",
+          "letter": "th",
           "phon": "/θ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -459,12 +685,24 @@ window.PHONICS_DAY_31 = {
       "definition": "pron. 没有什么，没有一样东西",
       "breakdown": [
         {
-          "letter": "noth",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "ing",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -478,12 +716,29 @@ window.PHONICS_DAY_31 = {
       "definition": "pron. 某事，某物",
       "breakdown": [
         {
-          "letter": "some",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "thing",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -497,16 +752,32 @@ window.PHONICS_DAY_31 = {
       "definition": "pron. 一切；所有事物",
       "breakdown": [
         {
-          "letter": "eve",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "ry",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "thing",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [

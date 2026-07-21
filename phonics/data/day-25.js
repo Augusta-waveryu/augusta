@@ -10,8 +10,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 猫",
       "breakdown": [
         {
-          "letter": "cat",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 帽子；盖子",
       "breakdown": [
         {
-          "letter": "cap",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -40,8 +56,12 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 汽车",
       "breakdown": [
         {
-          "letter": "car",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
@@ -55,8 +75,17 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 蛋糕",
       "breakdown": [
         {
-          "letter": "cake",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -70,8 +99,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 杯子",
       "breakdown": [
         {
-          "letter": "cup",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -85,8 +122,12 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 奶牛",
       "breakdown": [
         {
-          "letter": "cow",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
@@ -100,8 +141,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 外套",
       "breakdown": [
         {
-          "letter": "coat",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "oa",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -115,8 +164,17 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 风筝",
       "breakdown": [
         {
-          "letter": "kite",
+          "letter": "k",
           "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -130,8 +188,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 小孩",
       "breakdown": [
         {
-          "letter": "kid",
+          "letter": "k",
           "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -145,8 +211,16 @@ window.PHONICS_DAY_25 = {
       "definition": "v. 亲吻",
       "breakdown": [
         {
-          "letter": "kiss",
+          "letter": "k",
           "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -160,8 +234,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 牛奶",
       "breakdown": [
         {
-          "letter": "milk",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "lk",
+          "phon": "/lk/"
         }
       ],
       "sentences": [
@@ -175,8 +257,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 书；书籍",
       "breakdown": [
         {
-          "letter": "book",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -190,8 +280,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 书桌；办公桌",
       "breakdown": [
         {
-          "letter": "desk",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "sk",
+          "phon": "/sk/"
         }
       ],
       "sentences": [
@@ -205,8 +303,20 @@ window.PHONICS_DAY_25 = {
       "definition": "adj. 黑色的；黑暗的",
       "breakdown": [
         {
-          "letter": "black",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -220,8 +330,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 鸭子",
       "breakdown": [
         {
-          "letter": "duck",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -235,8 +353,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 钟",
       "breakdown": [
         {
-          "letter": "clock",
+          "letter": "cl",
           "phon": "/kl/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -250,8 +376,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 短袜",
       "breakdown": [
         {
-          "letter": "sock",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -265,8 +399,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 背部；后面",
       "breakdown": [
         {
-          "letter": "back",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -280,8 +422,16 @@ window.PHONICS_DAY_25 = {
       "definition": "v. 挑选；采摘",
       "breakdown": [
         {
-          "letter": "pick",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -295,8 +445,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 卡车",
       "breakdown": [
         {
-          "letter": "truck",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -310,12 +468,24 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 鸡；鸡肉",
       "breakdown": [
         {
-          "letter": "chick",
+          "letter": "ch",
           "phon": "/tʃ/"
         },
         {
-          "letter": "en",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -329,8 +499,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 学校",
       "breakdown": [
         {
-          "letter": "school",
+          "letter": "sch",
           "phon": "/sk/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -344,16 +522,28 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 化学；化学作用",
       "breakdown": [
         {
-          "letter": "chem",
+          "letter": "Ch",
           "phon": "/k/"
         },
         {
-          "letter": "is",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "try",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "str",
+          "phon": "/str/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -367,16 +557,32 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 性格，特点",
       "breakdown": [
         {
-          "letter": "char",
+          "letter": "ch",
           "phon": "/k/"
         },
         {
-          "letter": "ac",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ter",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -390,12 +596,41 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 圣诞节",
       "breakdown": [
         {
-          "letter": "Christ",
+          "letter": "C",
           "phon": "/k/"
         },
         {
-          "letter": "mas",
+          "letter": "h",
           "phon": ""
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "t",
+          "phon": "",
+          "silent": "t"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -409,8 +644,16 @@ window.PHONICS_DAY_25 = {
       "definition": "adj. 快的，迅速的",
       "breakdown": [
         {
-          "letter": "quick",
+          "letter": "qu",
           "phon": "/kw/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -424,8 +667,16 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 女王",
       "breakdown": [
         {
-          "letter": "queen",
+          "letter": "qu",
           "phon": "/kw/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -439,12 +690,20 @@ window.PHONICS_DAY_25 = {
       "definition": "adj. 安静的，宁静的",
       "breakdown": [
         {
-          "letter": "qui",
+          "letter": "qu",
           "phon": "/kw/"
         },
         {
-          "letter": "et",
+          "letter": "i",
           "phon": "/aɪ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -458,8 +717,16 @@ window.PHONICS_DAY_25 = {
       "definition": "v. 检查；核对",
       "breakdown": [
         {
-          "letter": "check",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -473,16 +740,32 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 袋鼠",
       "breakdown": [
         {
-          "letter": "kan",
+          "letter": "K",
           "phon": "/k/"
         },
         {
-          "letter": "ga",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "roo",
+          "letter": "n",
           "phon": "/ŋ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
         }
       ],
       "sentences": [

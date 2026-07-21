@@ -10,8 +10,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 钢笔",
       "breakdown": [
         {
-          "letter": "pen",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 床",
       "breakdown": [
         {
-          "letter": "bed",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_03 = {
       "definition": "adj. 红色的",
       "breakdown": [
         {
-          "letter": "red",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_03 = {
       "definition": "v. 喂养（feed的过去式和过去分词）",
       "breakdown": [
         {
-          "letter": "fed",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 母鸡",
       "breakdown": [
         {
-          "letter": "hen",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_03 = {
       "definition": "adv. 然后；那时",
       "breakdown": [
         {
-          "letter": "then",
+          "letter": "th",
           "phon": "/ð/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -100,8 +148,17 @@ window.PHONICS_DAY_03 = {
       "definition": "adv. 何时",
       "breakdown": [
         {
-          "letter": "when",
-          "phon": "/w/"
+          "letter": "w",
+          "phon": "/w/",
+          "silent": "h"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -115,8 +172,16 @@ window.PHONICS_DAY_03 = {
       "definition": "v. 允许；让",
       "breakdown": [
         {
-          "letter": "let",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -130,8 +195,16 @@ window.PHONICS_DAY_03 = {
       "definition": "v. 放置；设定",
       "breakdown": [
         {
-          "letter": "set",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -145,8 +218,16 @@ window.PHONICS_DAY_03 = {
       "definition": "adj. 湿的",
       "breakdown": [
         {
-          "letter": "wet",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -160,8 +241,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 宠物",
       "breakdown": [
         {
-          "letter": "pet",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -175,8 +264,16 @@ window.PHONICS_DAY_03 = {
       "definition": "v. 得到；变成",
       "breakdown": [
         {
-          "letter": "get",
+          "letter": "g",
           "phon": "/g/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -190,8 +287,20 @@ window.PHONICS_DAY_03 = {
       "definition": "adj. 最好的",
       "breakdown": [
         {
-          "letter": "best",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -205,8 +314,16 @@ window.PHONICS_DAY_03 = {
       "definition": "v. 休息；倚靠",
       "breakdown": [
         {
-          "letter": "rest",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -220,8 +337,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 测验；考验",
       "breakdown": [
         {
-          "letter": "test",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -235,8 +360,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 头；顶部",
       "breakdown": [
         {
-          "letter": "head",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -250,8 +383,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 面包",
       "breakdown": [
         {
-          "letter": "bread",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -265,12 +406,20 @@ window.PHONICS_DAY_03 = {
       "definition": "adj. 准备好的；乐意的",
       "breakdown": [
         {
-          "letter": "read",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "y",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -284,12 +433,20 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 天气",
       "breakdown": [
         {
-          "letter": "weath",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "er",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -303,8 +460,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 朋友",
       "breakdown": [
         {
-          "letter": "friend",
+          "letter": "fr",
           "phon": "/fr/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/e/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -318,12 +483,20 @@ window.PHONICS_DAY_03 = {
       "definition": "adj. 许多的",
       "breakdown": [
         {
-          "letter": "man",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "y",
+          "letter": "a",
           "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -337,12 +510,16 @@ window.PHONICS_DAY_03 = {
       "definition": "det. 任何的；一些",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/e/"
         },
         {
-          "letter": "y",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -356,8 +533,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 书桌；办公桌",
       "breakdown": [
         {
-          "letter": "desk",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "sk",
+          "phon": "/sk/"
         }
       ],
       "sentences": [
@@ -371,8 +556,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 贝壳；外壳",
       "breakdown": [
         {
-          "letter": "shell",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -386,8 +579,16 @@ window.PHONICS_DAY_03 = {
       "definition": "v. 帮助",
       "breakdown": [
         {
-          "letter": "help",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "lp",
+          "phon": "/lp/"
         }
       ],
       "sentences": [
@@ -401,8 +602,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 腿；支架",
       "breakdown": [
         {
-          "letter": "leg",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -416,8 +625,16 @@ window.PHONICS_DAY_03 = {
       "definition": "num. 十",
       "breakdown": [
         {
-          "letter": "ten",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -431,8 +648,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 网；净重",
       "breakdown": [
         {
-          "letter": "net",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -446,8 +671,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 铃；钟",
       "breakdown": [
         {
-          "letter": "bell",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -461,8 +694,16 @@ window.PHONICS_DAY_03 = {
       "definition": "n. 连衣裙",
       "breakdown": [
         {
-          "letter": "dress",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
         }
       ],
       "sentences": [

@@ -10,8 +10,16 @@ window.PHONICS_DAY_38 = {
       "definition": "v. 跳；跳跃",
       "breakdown": [
         {
-          "letter": "jump",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 工作",
       "breakdown": [
         {
-          "letter": "job",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 果酱；堵塞",
       "breakdown": [
         {
-          "letter": "jam",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 吉普车",
       "breakdown": [
         {
-          "letter": "jeep",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -70,8 +102,17 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 果汁",
       "breakdown": [
         {
-          "letter": "juice",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "ui",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -85,12 +126,21 @@ window.PHONICS_DAY_38 = {
       "definition": "n.果冻，果酱",
       "breakdown": [
         {
-          "letter": "jel",
+          "letter": "j",
           "phon": "/dʒ/"
         },
         {
-          "letter": "ly",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -104,12 +154,24 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 夹克，外套",
       "breakdown": [
         {
-          "letter": "jack",
+          "letter": "j",
           "phon": "/dʒ/"
         },
         {
-          "letter": "et",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -123,12 +185,20 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 七月",
       "breakdown": [
         {
-          "letter": "Ju",
+          "letter": "j",
           "phon": "/dʒ/"
         },
         {
-          "letter": "ly",
+          "letter": "u",
           "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -142,20 +212,32 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 一月",
       "breakdown": [
         {
-          "letter": "Jan",
+          "letter": "j",
           "phon": "/dʒ/"
         },
         {
-          "letter": "u",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ar",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "y",
+          "letter": "u",
           "phon": "/j/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -169,12 +251,20 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 巨人",
       "breakdown": [
         {
-          "letter": "gi",
+          "letter": "g",
           "phon": "/dʒ/"
         },
         {
-          "letter": "ant",
+          "letter": "ia",
           "phon": "/aɪə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -188,12 +278,24 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 长颈鹿",
       "breakdown": [
         {
-          "letter": "gi",
+          "letter": "g",
           "phon": "/dʒ/"
         },
         {
-          "letter": "raffe",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ffe",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -207,12 +309,24 @@ window.PHONICS_DAY_38 = {
       "definition": "adj. 温和的；轻轻的",
       "breakdown": [
         {
-          "letter": "gen",
+          "letter": "g",
           "phon": "/dʒ/"
         },
         {
-          "letter": "tle",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -226,16 +340,24 @@ window.PHONICS_DAY_38 = {
       "definition": "adj. 大体的；普通的",
       "breakdown": [
         {
-          "letter": "gen",
+          "letter": "g",
           "phon": "/dʒ/"
         },
         {
-          "letter": "er",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "al",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -249,12 +371,25 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 橙子；橙色",
       "breakdown": [
         {
-          "letter": "or",
+          "letter": "o",
           "phon": "/ɒ/"
         },
         {
-          "letter": "ange",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -268,12 +403,25 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 村庄",
       "breakdown": [
         {
-          "letter": "vil",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "lage",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -287,8 +435,16 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 桥",
       "breakdown": [
         {
-          "letter": "bridge",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "dge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
@@ -302,8 +458,21 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 冰箱",
       "breakdown": [
         {
-          "letter": "fridge",
+          "letter": "fr",
           "phon": "/fr/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "",
+          "silent": "d"
+        },
+        {
+          "letter": "ge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
@@ -317,8 +486,16 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 徽章；标记",
       "breakdown": [
         {
-          "letter": "badge",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "dge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
@@ -332,7 +509,15 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 法官",
       "breakdown": [
         {
-          "letter": "judge",
+          "letter": "j",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "dge",
           "phon": "/dʒ/"
         }
       ],
@@ -347,8 +532,12 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 边缘；刀刃",
       "breakdown": [
         {
-          "letter": "edge",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "dge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
@@ -362,8 +551,17 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 页",
       "breakdown": [
         {
-          "letter": "page",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -377,8 +575,13 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 年龄；时代",
       "breakdown": [
         {
-          "letter": "age",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -392,8 +595,21 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 笼子",
       "breakdown": [
         {
-          "letter": "cage",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "e",
+          "phon": "",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -407,8 +623,21 @@ window.PHONICS_DAY_38 = {
       "definition": "v. 改变，变化",
       "breakdown": [
         {
-          "letter": "change",
+          "letter": "ch",
           "phon": "/tʃ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -422,12 +651,25 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 发动机；引擎",
       "breakdown": [
         {
-          "letter": "en",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "gine",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -441,12 +683,24 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 危险；威胁",
       "breakdown": [
         {
-          "letter": "dan",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ger",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -460,16 +714,24 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 能量；精力",
       "breakdown": [
         {
-          "letter": "en",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "er",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "gy",
+          "letter": "er",
           "phon": "/ə/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -483,12 +745,24 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 魔法；魔术",
       "breakdown": [
         {
-          "letter": "mag",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ic",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -502,12 +776,25 @@ window.PHONICS_DAY_38 = {
       "definition": "n. 信息；消息",
       "breakdown": [
         {
-          "letter": "mes",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "sage",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/dʒ/",
+          "silent": "e"
         }
       ],
       "sentences": [

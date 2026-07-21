@@ -10,8 +10,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 钢笔",
       "breakdown": [
         {
-          "letter": "pen",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 猪",
       "breakdown": [
         {
-          "letter": "pig",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 粉红色",
       "breakdown": [
         {
-          "letter": "pink",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "nk",
+          "phon": "/ŋk/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 放；置",
       "breakdown": [
         {
-          "letter": "put",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 宠物",
       "breakdown": [
         {
-          "letter": "pet",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 地图",
       "breakdown": [
         {
-          "letter": "map",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -100,8 +148,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 帽子；盖子",
       "breakdown": [
         {
-          "letter": "cap",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -115,8 +171,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 杯子",
       "breakdown": [
         {
-          "letter": "cup",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -130,8 +194,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 顶部；陀螺",
       "breakdown": [
         {
-          "letter": "top",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -145,8 +217,16 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 停止；停下",
       "breakdown": [
         {
-          "letter": "stop",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -160,8 +240,17 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 飞机",
       "breakdown": [
         {
-          "letter": "plane",
+          "letter": "pl",
           "phon": "/pl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -175,8 +264,12 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 玩；演奏",
       "breakdown": [
         {
-          "letter": "play",
+          "letter": "pl",
           "phon": "/pl/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -190,8 +283,16 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 公园；停车场",
       "breakdown": [
         {
-          "letter": "park",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -205,12 +306,20 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 纸",
       "breakdown": [
         {
-          "letter": "pa",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "per",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -224,12 +333,24 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 铅笔",
       "breakdown": [
         {
-          "letter": "pen",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "cil",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/"
+        },
+        {
+          "letter": "il",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -243,12 +364,25 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 图画；照片",
       "breakdown": [
         {
-          "letter": "pic",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ture",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "t",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -262,12 +396,24 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 熊猫",
       "breakdown": [
         {
-          "letter": "pan",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "da",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -281,16 +427,28 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 土豆，马铃薯",
       "breakdown": [
         {
-          "letter": "po",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "ta",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "to",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -304,12 +462,28 @@ window.PHONICS_DAY_21 = {
       "definition": "n.南瓜",
       "breakdown": [
         {
-          "letter": "pump",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "kin",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -323,12 +497,18 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 苹果",
       "breakdown": [
         {
-          "letter": "ap",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ple",
-          "phon": "/p/"
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "p"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -342,12 +522,21 @@ window.PHONICS_DAY_21 = {
       "definition": "adj. 快乐的；幸福的",
       "breakdown": [
         {
-          "letter": "hap",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "py",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "p"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -361,12 +550,21 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 小狗",
       "breakdown": [
         {
-          "letter": "pup",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "py",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "p"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -380,12 +578,20 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 晚餐；夜宵",
       "breakdown": [
         {
-          "letter": "sup",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "per",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "pp",
+          "phon": "/p/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -399,12 +605,24 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 支持；支撑",
       "breakdown": [
         {
-          "letter": "sup",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "port",
+          "letter": "u",
           "phon": "/ə/"
+        },
+        {
+          "letter": "pp",
+          "phon": "/p/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -418,12 +636,21 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 出现；显现",
       "breakdown": [
         {
-          "letter": "ap",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "pear",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "p",
+          "phon": "",
+          "silent": "p"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -437,12 +664,25 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 申请；应用",
       "breakdown": [
         {
-          "letter": "ap",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "ply",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "p",
+          "phon": "",
+          "silent": "p"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
@@ -456,12 +696,25 @@ window.PHONICS_DAY_21 = {
       "definition": "v. 呼吁；恳求",
       "breakdown": [
         {
-          "letter": "ap",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "peal",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "p",
+          "phon": "",
+          "silent": "p"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -475,12 +728,28 @@ window.PHONICS_DAY_21 = {
       "definition": "n.爆米花",
       "breakdown": [
         {
-          "letter": "pop",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "corn",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -509,12 +778,24 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 操场；游乐场",
       "breakdown": [
         {
-          "letter": "play",
+          "letter": "pl",
           "phon": "/pl/"
         },
         {
-          "letter": "ground",
+          "letter": "ay",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "gr",
+          "phon": "/gr/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [

@@ -10,8 +10,12 @@ window.PHONICS_DAY_33 = {
       "definition": "pron. 她",
       "breakdown": [
         {
-          "letter": "she",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 商店；店铺",
       "breakdown": [
         {
-          "letter": "shop",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -40,8 +52,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 船；舰",
       "breakdown": [
         {
-          "letter": "ship",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -55,8 +75,12 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 鞋子",
       "breakdown": [
         {
-          "letter": "shoe",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "oe",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -70,8 +94,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 绵羊",
       "breakdown": [
         {
-          "letter": "sheep",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -85,8 +117,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 鱼",
       "breakdown": [
         {
-          "letter": "fish",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -100,8 +140,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 盘子；一道菜",
       "breakdown": [
         {
-          "letter": "dish",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -115,8 +163,16 @@ window.PHONICS_DAY_33 = {
       "definition": "v. 希望, 祝愿",
       "breakdown": [
         {
-          "letter": "wish",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -130,8 +186,16 @@ window.PHONICS_DAY_33 = {
       "definition": "v. 洗涤",
       "breakdown": [
         {
-          "letter": "wash",
+          "letter": "w",
           "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -145,8 +209,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 刷子",
       "breakdown": [
         {
-          "letter": "brush",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
         }
       ],
       "sentences": [
@@ -160,8 +232,16 @@ window.PHONICS_DAY_33 = {
       "definition": "adj. 短的；矮的",
       "breakdown": [
         {
-          "letter": "short",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -175,8 +255,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 衬衫",
       "breakdown": [
         {
-          "letter": "shirt",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -190,8 +278,17 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 形状",
       "breakdown": [
         {
-          "letter": "shape",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -205,12 +302,20 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 影子",
       "breakdown": [
         {
-          "letter": "shad",
+          "letter": "sh",
           "phon": "/ʃ/"
         },
         {
-          "letter": "ow",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -224,12 +329,24 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 洗发水",
       "breakdown": [
         {
-          "letter": "sham",
+          "letter": "sh",
           "phon": "/ʃ/"
         },
         {
-          "letter": "poo",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -243,8 +360,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 厨师；主厨",
       "breakdown": [
         {
-          "letter": "chef",
+          "letter": "ch",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
         }
       ],
       "sentences": [
@@ -258,12 +383,25 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 机器",
       "breakdown": [
         {
-          "letter": "ma",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "chine",
+          "letter": "a",
           "phon": "/ə/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -277,12 +415,20 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 糖",
       "breakdown": [
         {
-          "letter": "sug",
+          "letter": "s",
           "phon": "/ʃ/"
         },
         {
-          "letter": "ar",
+          "letter": "u",
           "phon": "/ʊ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -296,8 +442,13 @@ window.PHONICS_DAY_33 = {
       "definition": "adj. 确信的；一定的",
       "breakdown": [
         {
-          "letter": "sure",
+          "letter": "s",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ʊə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -311,12 +462,20 @@ window.PHONICS_DAY_33 = {
       "definition": "adj. 社会的；社交的",
       "breakdown": [
         {
-          "letter": "so",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "cial",
+          "letter": "o",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "ci",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -330,12 +489,20 @@ window.PHONICS_DAY_33 = {
       "definition": "adj. 特别的；特殊的",
       "breakdown": [
         {
-          "letter": "spe",
+          "letter": "sp",
           "phon": "/sp/"
         },
         {
-          "letter": "cial",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "ci",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -349,12 +516,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 车站；电视台",
       "breakdown": [
         {
-          "letter": "sta",
+          "letter": "st",
           "phon": "/st/"
         },
         {
-          "letter": "tion",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "tion",
+          "phon": "/ʃn/"
         }
       ],
       "sentences": [
@@ -368,12 +539,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 国家，民族",
       "breakdown": [
         {
-          "letter": "na",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "tion",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "tion",
+          "phon": "/ʃn/"
         }
       ],
       "sentences": [
@@ -387,12 +562,16 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 行动；行为",
       "breakdown": [
         {
-          "letter": "ac",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "tion",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "tion",
+          "phon": "/ʃn/"
         }
       ],
       "sentences": [
@@ -429,8 +608,16 @@ window.PHONICS_DAY_33 = {
           "phon": "/əʊ/"
         },
         {
-          "letter": "cean",
+          "letter": "c",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -444,16 +631,32 @@ window.PHONICS_DAY_33 = {
       "definition": "adj. 美味的",
       "breakdown": [
         {
-          "letter": "de",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "li",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "cious",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ci",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -467,16 +670,24 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 音乐家",
       "breakdown": [
         {
-          "letter": "mu",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "si",
+          "letter": "u",
           "phon": "/juː/"
         },
         {
-          "letter": "cian",
+          "letter": "s",
           "phon": "/z/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "cian",
+          "phon": "/ʃn/"
         }
       ],
       "sentences": [
@@ -490,16 +701,28 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 讨论；商议",
       "breakdown": [
         {
-          "letter": "dis",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "cus",
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "sion",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ssion",
+          "phon": "/ʃn/"
         }
       ],
       "sentences": [
@@ -513,12 +736,28 @@ window.PHONICS_DAY_33 = {
       "definition": "adj. 俄罗斯的，俄语的",
       "breakdown": [
         {
-          "letter": "Rus",
+          "letter": "R",
           "phon": "/r/"
         },
         {
-          "letter": "sian",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [

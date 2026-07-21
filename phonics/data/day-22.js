@@ -10,8 +10,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 包；袋",
       "breakdown": [
         {
-          "letter": "bag",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -25,8 +33,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 床",
       "breakdown": [
         {
-          "letter": "bed",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_22 = {
       "definition": "adj. 大的；重要的",
       "breakdown": [
         {
-          "letter": "big",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 公共汽车",
       "breakdown": [
         {
-          "letter": "bus",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 书；书籍",
       "breakdown": [
         {
-          "letter": "book",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 盒子；箱",
       "breakdown": [
         {
-          "letter": "box",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "x",
+          "phon": "/ks/"
         }
       ],
       "sentences": [
@@ -100,8 +148,12 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 男孩",
       "breakdown": [
         {
-          "letter": "boy",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
@@ -115,12 +167,20 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 婴儿；宝贝",
       "breakdown": [
         {
-          "letter": "ba",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "by",
+          "letter": "a",
           "phon": "/eɪ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -134,8 +194,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 球；舞会",
       "breakdown": [
         {
-          "letter": "ball",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -149,16 +217,28 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 香蕉",
       "breakdown": [
         {
-          "letter": "ba",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "nan",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "a",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -172,8 +252,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 鸟",
       "breakdown": [
         {
-          "letter": "bird",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -187,8 +275,17 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 自行车",
       "breakdown": [
         {
-          "letter": "bike",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -202,8 +299,12 @@ window.PHONICS_DAY_22 = {
       "definition": "adj. 蓝色的；忧郁的",
       "breakdown": [
         {
-          "letter": "blue",
+          "letter": "bl",
           "phon": "/bl/"
+        },
+        {
+          "letter": "ue",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -217,8 +318,20 @@ window.PHONICS_DAY_22 = {
       "definition": "adj. 黑色的；黑暗的",
       "breakdown": [
         {
-          "letter": "black",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -232,8 +345,16 @@ window.PHONICS_DAY_22 = {
       "definition": "adj. 棕色的",
       "breakdown": [
         {
-          "letter": "brown",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -247,8 +368,16 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 面包",
       "breakdown": [
         {
-          "letter": "bread",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -262,12 +391,28 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 早餐",
       "breakdown": [
         {
-          "letter": "break",
+          "letter": "br",
           "phon": "/br/"
         },
         {
-          "letter": "fast",
+          "letter": "ea",
           "phon": "/e/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -281,12 +426,20 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 兄弟",
       "breakdown": [
         {
-          "letter": "broth",
+          "letter": "br",
           "phon": "/br/"
         },
         {
-          "letter": "er",
+          "letter": "o",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -300,12 +453,28 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 浴室；卫生间",
       "breakdown": [
         {
-          "letter": "bath",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "room",
+          "letter": "a",
           "phon": "/ɑː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -319,12 +488,28 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 卧室",
       "breakdown": [
         {
-          "letter": "bed",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "room",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -338,16 +523,37 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 篮球；篮球运动",
       "breakdown": [
         {
-          "letter": "bas",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ket",
+          "letter": "a",
           "phon": "/ɑː/"
         },
         {
-          "letter": "ball",
+          "letter": "sk",
           "phon": "/sk/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
         }
       ],
       "sentences": [
@@ -361,12 +567,25 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 兔子",
       "breakdown": [
         {
-          "letter": "rab",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "bit",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/",
+          "silent": "b"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -380,12 +599,20 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 爱好，业余爱好",
       "breakdown": [
         {
-          "letter": "hob",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "by",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "bb",
+          "phon": "/b/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -399,12 +626,29 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 卷心菜",
       "breakdown": [
         {
-          "letter": "cab",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "bage",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "b",
+          "phon": "",
+          "silent": "b"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ge",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
@@ -418,12 +662,25 @@ window.PHONICS_DAY_22 = {
       "definition": "n. 橡胶；橡皮",
       "breakdown": [
         {
-          "letter": "rub",
+          "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "ber",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "b",
+          "phon": "",
+          "silent": "b"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -456,12 +713,22 @@ window.PHONICS_DAY_22 = {
       "definition": "n.泡泡",
       "breakdown": [
         {
-          "letter": "bub",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ble",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/",
+          "silent": "b"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -475,8 +742,16 @@ window.PHONICS_DAY_22 = {
       "definition": "v. 抢劫，盗窃",
       "breakdown": [
         {
-          "letter": "rob",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
         }
       ],
       "sentences": [
@@ -490,12 +765,20 @@ window.PHONICS_DAY_22 = {
       "definition": "adj. 忙碌的",
       "breakdown": [
         {
-          "letter": "bus",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "y",
+          "letter": "u",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -509,8 +792,12 @@ window.PHONICS_DAY_22 = {
       "definition": "int. 再见",
       "breakdown": [
         {
-          "letter": "bye",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ye",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [

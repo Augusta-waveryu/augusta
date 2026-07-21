@@ -10,8 +10,12 @@ window.PHONICS_DAY_16 = {
       "definition": "adv. 现在，目前",
       "breakdown": [
         {
-          "letter": "now",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
@@ -25,8 +29,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 城镇；市镇",
       "breakdown": [
         {
-          "letter": "town",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -40,8 +52,12 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 犁",
       "breakdown": [
         {
-          "letter": "plow",
+          "letter": "pl",
           "phon": "/pl/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
@@ -55,8 +71,12 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 奶牛",
       "breakdown": [
         {
-          "letter": "cow",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
@@ -70,11 +90,11 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 塔；高楼",
       "breakdown": [
         {
-          "letter": "tow",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "er",
+          "letter": "ower",
           "phon": "/aʊə/"
         }
       ],
@@ -89,12 +109,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 力量；权力",
       "breakdown": [
         {
-          "letter": "pow",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "er",
+          "letter": "ow",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -108,12 +132,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 花朵",
       "breakdown": [
         {
-          "letter": "flow",
+          "letter": "fl",
           "phon": "/fl/"
         },
         {
-          "letter": "er",
+          "letter": "ow",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -127,8 +155,16 @@ window.PHONICS_DAY_16 = {
       "definition": "adj. 棕色的",
       "breakdown": [
         {
-          "letter": "brown",
+          "letter": "br",
           "phon": "/br/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -142,12 +178,20 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 粉末",
       "breakdown": [
         {
-          "letter": "pow",
+          "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "der",
+          "letter": "ow",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -161,8 +205,16 @@ window.PHONICS_DAY_16 = {
       "definition": "adv. 向下",
       "breakdown": [
         {
-          "letter": "down",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -176,8 +228,16 @@ window.PHONICS_DAY_16 = {
       "definition": "v. 溺水；淹没",
       "breakdown": [
         {
-          "letter": "drown",
+          "letter": "dr",
           "phon": "/dr/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -191,8 +251,12 @@ window.PHONICS_DAY_16 = {
       "definition": "adv. 怎样；如何",
       "breakdown": [
         {
-          "letter": "how",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
@@ -206,8 +270,12 @@ window.PHONICS_DAY_16 = {
       "definition": "adv. 在外，向外",
       "breakdown": [
         {
-          "letter": "out",
+          "letter": "ou",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -221,8 +289,16 @@ window.PHONICS_DAY_16 = {
       "definition": "adj. 大声的",
       "breakdown": [
         {
-          "letter": "loud",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -236,8 +312,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 云",
       "breakdown": [
         {
-          "letter": "cloud",
+          "letter": "cl",
           "phon": "/kl/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -251,8 +335,17 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 房子，住宅",
       "breakdown": [
         {
-          "letter": "house",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -266,8 +359,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 嘴巴",
       "breakdown": [
         {
-          "letter": "mouth",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -285,8 +386,16 @@ window.PHONICS_DAY_16 = {
           "phon": "/ə/"
         },
         {
-          "letter": "bout",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -300,8 +409,16 @@ window.PHONICS_DAY_16 = {
       "definition": "v. 叫喊；大声说",
       "breakdown": [
         {
-          "letter": "shout",
+          "letter": "sh",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -315,8 +432,16 @@ window.PHONICS_DAY_16 = {
       "definition": "v. 找到 (find的过去式和过去分词)",
       "breakdown": [
         {
-          "letter": "found",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -330,8 +455,17 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 老鼠",
       "breakdown": [
         {
-          "letter": "mouse",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -345,8 +479,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 地面；土地",
       "breakdown": [
         {
-          "letter": "ground",
+          "letter": "gr",
           "phon": "/gr/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -360,8 +502,17 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 女衬衫；短上衣",
       "breakdown": [
         {
-          "letter": "blouse",
+          "letter": "bl",
           "phon": "/bl/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -375,8 +526,16 @@ window.PHONICS_DAY_16 = {
       "definition": "adj. 圆的",
       "breakdown": [
         {
-          "letter": "round",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -390,8 +549,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 南方",
       "breakdown": [
         {
-          "letter": "south",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -405,8 +572,21 @@ window.PHONICS_DAY_16 = {
       "definition": "v. 怀疑",
       "breakdown": [
         {
-          "letter": "doubt",
+          "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "b",
+          "phon": "",
+          "silent": "b"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -420,8 +600,16 @@ window.PHONICS_DAY_16 = {
       "definition": "v. 数数；计算",
       "breakdown": [
         {
-          "letter": "count",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
@@ -435,8 +623,16 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 长沙发；睡椅",
       "breakdown": [
         {
-          "letter": "couch",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
@@ -450,8 +646,16 @@ window.PHONICS_DAY_16 = {
       "definition": "adj. 骄傲的；自豪的",
       "breakdown": [
         {
-          "letter": "proud",
+          "letter": "pr",
           "phon": "/pr/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -465,12 +669,28 @@ window.PHONICS_DAY_16 = {
       "definition": "n. 山",
       "breakdown": [
         {
-          "letter": "moun",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "tain",
+          "letter": "ou",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [

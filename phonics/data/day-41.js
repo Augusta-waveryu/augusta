@@ -10,8 +10,17 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 鼻子",
       "breakdown": [
         {
-          "letter": "nose",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -25,8 +34,16 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 网；净重",
       "breakdown": [
         {
-          "letter": "net",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -40,8 +57,17 @@ window.PHONICS_DAY_41 = {
       "definition": "num. 九；九个",
       "breakdown": [
         {
-          "letter": "nine",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -55,8 +81,17 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 名字，名称",
       "breakdown": [
         {
-          "letter": "name",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -70,8 +105,17 @@ window.PHONICS_DAY_41 = {
       "definition": "adj. 好的；友好的",
       "breakdown": [
         {
-          "letter": "nice",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -85,8 +129,12 @@ window.PHONICS_DAY_41 = {
       "definition": "prep. 在…附近",
       "breakdown": [
         {
-          "letter": "near",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -100,8 +148,16 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 脖子",
       "breakdown": [
         {
-          "letter": "neck",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -115,8 +171,17 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 护士",
       "breakdown": [
         {
-          "letter": "nurse",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -130,12 +195,21 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 面条",
       "breakdown": [
         {
-          "letter": "noo",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "dle",
+          "letter": "oo",
           "phon": "/uː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -149,12 +223,29 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 笔记本",
       "breakdown": [
         {
-          "letter": "note",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "book",
+          "letter": "o",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -168,8 +259,16 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 夜晚",
       "breakdown": [
         {
-          "letter": "night",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -183,12 +282,24 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 数字，号码",
       "breakdown": [
         {
-          "letter": "num",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "ber",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -202,8 +313,16 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 北方；北部",
       "breakdown": [
         {
-          "letter": "north",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
@@ -217,8 +336,12 @@ window.PHONICS_DAY_41 = {
       "definition": "adj. 新的；新鲜的",
       "breakdown": [
         {
-          "letter": "new",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ew",
+          "phon": "/juː/"
         }
       ],
       "sentences": [
@@ -232,8 +355,20 @@ window.PHONICS_DAY_41 = {
       "definition": "adj. 下一个的；紧邻的",
       "breakdown": [
         {
-          "letter": "next",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "x",
+          "phon": "/ks/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -247,12 +382,21 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 晚餐，正餐",
       "breakdown": [
         {
-          "letter": "din",
+          "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ner",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -266,12 +410,21 @@ window.PHONICS_DAY_41 = {
       "definition": "adj. 有趣的，好笑的",
       "breakdown": [
         {
-          "letter": "fun",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "ny",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -285,12 +438,21 @@ window.PHONICS_DAY_41 = {
       "definition": "adj. 阳光充足的；晴朗的",
       "breakdown": [
         {
-          "letter": "sun",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "ny",
+          "letter": "u",
           "phon": "/ʌ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -304,12 +466,21 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 赢家, 获胜者",
       "breakdown": [
         {
-          "letter": "win",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "ner",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -323,12 +494,25 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 网球",
       "breakdown": [
         {
-          "letter": "ten",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "nis",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "n"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -342,8 +526,13 @@ window.PHONICS_DAY_41 = {
       "definition": "v. 知道；认识",
       "breakdown": [
         {
-          "letter": "know",
-          "phon": "/n/"
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "k"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -357,8 +546,17 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 刀",
       "breakdown": [
         {
-          "letter": "knife",
+          "letter": "kn",
           "phon": "/n/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -372,8 +570,13 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 膝盖",
       "breakdown": [
         {
-          "letter": "knee",
-          "phon": "/n/"
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "k"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -387,8 +590,21 @@ window.PHONICS_DAY_41 = {
       "definition": "v. 敲；打",
       "breakdown": [
         {
-          "letter": "knock",
-          "phon": ""
+          "letter": "k",
+          "phon": "",
+          "silent": "k"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -402,8 +618,17 @@ window.PHONICS_DAY_41 = {
       "definition": "v. 编织",
       "breakdown": [
         {
-          "letter": "knit",
-          "phon": "/n/"
+          "letter": "n",
+          "phon": "/n/",
+          "silent": "k"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -417,8 +642,16 @@ window.PHONICS_DAY_41 = {
       "definition": "v. 需要",
       "breakdown": [
         {
-          "letter": "need",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -432,16 +665,28 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 香蕉",
       "breakdown": [
         {
-          "letter": "ba",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "nan",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "a",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -455,16 +700,24 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 动物",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "i",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "mal",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -478,12 +731,24 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 窗户",
       "breakdown": [
         {
-          "letter": "win",
+          "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "dow",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -497,12 +762,24 @@ window.PHONICS_DAY_41 = {
       "definition": "n. 雪人",
       "breakdown": [
         {
-          "letter": "snow",
+          "letter": "sn",
           "phon": "/sn/"
         },
         {
-          "letter": "man",
+          "letter": "ow",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [

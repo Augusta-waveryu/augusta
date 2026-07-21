@@ -10,8 +10,12 @@ window.PHONICS_DAY_20 = {
       "definition": "adj. 贫穷的；可怜的",
       "breakdown": [
         {
-          "letter": "poor",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "oor",
+          "phon": "/ʊə/"
         }
       ],
       "sentences": [
@@ -40,8 +44,12 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 荒野；沼泽地",
       "breakdown": [
         {
-          "letter": "moor",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "oor",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -55,8 +63,12 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 旅行；观光",
       "breakdown": [
         {
-          "letter": "tour",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "our",
+          "phon": "/ʊə/"
         }
       ],
       "sentences": [
@@ -70,12 +82,24 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 游客；观光客",
       "breakdown": [
         {
-          "letter": "tour",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ist",
+          "letter": "ou",
           "phon": "/ʊə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
         }
       ],
       "sentences": [
@@ -89,12 +113,24 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 旅游业；观光",
       "breakdown": [
         {
-          "letter": "tour",
+          "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ism",
+          "letter": "our",
           "phon": "/ʊə/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -142,8 +178,13 @@ window.PHONICS_DAY_20 = {
       "definition": "adj. 确信的；一定的",
       "breakdown": [
         {
-          "letter": "sure",
+          "letter": "s",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ʊə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -157,12 +198,16 @@ window.PHONICS_DAY_20 = {
       "definition": "v. 保证；使确信",
       "breakdown": [
         {
-          "letter": "as",
+          "letter": "a",
           "phon": "/ə/"
         },
         {
-          "letter": "sure",
+          "letter": "ss",
           "phon": "/ʃ/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/ʊə/"
         }
       ],
       "sentences": [
@@ -176,12 +221,21 @@ window.PHONICS_DAY_20 = {
       "definition": "v. 确保；保证",
       "breakdown": [
         {
-          "letter": "en",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "sure",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "s",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɔː/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -214,8 +268,21 @@ window.PHONICS_DAY_20 = {
       "definition": "adj. 纯洁的；纯净的",
       "breakdown": [
         {
-          "letter": "pure",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "r",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "e",
+          "phon": "",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -229,8 +296,17 @@ window.PHONICS_DAY_20 = {
       "definition": "v. 治愈；治疗",
       "breakdown": [
         {
-          "letter": "cure",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/j/"
+        },
+        {
+          "letter": "r",
+          "phon": "/ʊə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -244,12 +320,25 @@ window.PHONICS_DAY_20 = {
       "definition": "adj. 安全的；牢固的",
       "breakdown": [
         {
-          "letter": "se",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "cure",
+          "letter": "e",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/j/"
+        },
+        {
+          "letter": "r",
+          "phon": "/ʊə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -282,12 +371,20 @@ window.PHONICS_DAY_20 = {
       "definition": "v. 忍受；持续",
       "breakdown": [
         {
-          "letter": "en",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "dure",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/ʊə/"
         }
       ],
       "sentences": [
@@ -339,8 +436,13 @@ window.PHONICS_DAY_20 = {
       "definition": "v. 引诱；诱惑",
       "breakdown": [
         {
-          "letter": "lure",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/jʊə/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -354,12 +456,16 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 陪审团",
       "breakdown": [
         {
-          "letter": "ju",
+          "letter": "j",
           "phon": "/dʒ/"
         },
         {
-          "letter": "ry",
+          "letter": "ur",
           "phon": "/ʊə/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -392,16 +498,28 @@ window.PHONICS_DAY_20 = {
       "definition": "adj.好奇的；稀奇的",
       "breakdown": [
         {
-          "letter": "cu",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ri",
+          "letter": "u",
           "phon": "/juː/"
         },
         {
-          "letter": "ous",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -415,12 +533,8 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 欧洲",
       "breakdown": [
         {
-          "letter": "Eu",
+          "letter": "Eur",
           "phon": "/ˈjʊərəp/"
-        },
-        {
-          "letter": "rope",
-          "phon": ""
         }
       ],
       "sentences": [
@@ -434,12 +548,16 @@ window.PHONICS_DAY_20 = {
       "definition": "prep. 在……期间",
       "breakdown": [
         {
-          "letter": "dur",
+          "letter": "d",
           "phon": "/dʒ/"
         },
         {
-          "letter": "ing",
+          "letter": "ur",
           "phon": "/ʊə/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ɪŋ/"
         }
       ],
       "sentences": [
@@ -453,12 +571,20 @@ window.PHONICS_DAY_20 = {
       "definition": "adj. 成熟的",
       "breakdown": [
         {
-          "letter": "ma",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ture",
+          "letter": "a",
           "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/ʊə/"
         }
       ],
       "sentences": [
@@ -491,12 +617,21 @@ window.PHONICS_DAY_20 = {
       "definition": "adv. 确实地；无疑地",
       "breakdown": [
         {
-          "letter": "sure",
+          "letter": "s",
           "phon": "/ʃ/"
         },
         {
-          "letter": "ly",
-          "phon": "/ɔː/"
+          "letter": "ur",
+          "phon": "/ɔː/",
+          "silent": "e"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -529,20 +664,36 @@ window.PHONICS_DAY_20 = {
       "definition": "n. 安全，保卫",
       "breakdown": [
         {
-          "letter": "se",
+          "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "cu",
+          "letter": "e",
           "phon": "/ɪ/"
         },
         {
-          "letter": "ri",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ty",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [

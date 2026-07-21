@@ -10,8 +10,16 @@ window.PHONICS_DAY_43 = {
       "definition": "adv. 是的，好",
       "breakdown": [
         {
-          "letter": "yes",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -25,8 +33,12 @@ window.PHONICS_DAY_43 = {
       "definition": "pron. 你，你们",
       "breakdown": [
         {
-          "letter": "you",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/uː/"
         }
       ],
       "sentences": [
@@ -40,8 +52,12 @@ window.PHONICS_DAY_43 = {
       "definition": "pron. 你的，你们的",
       "breakdown": [
         {
-          "letter": "your",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "our",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
@@ -55,8 +71,16 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 院子",
       "breakdown": [
         {
-          "letter": "yard",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -70,12 +94,21 @@ window.PHONICS_DAY_43 = {
       "definition": "adj. 黄色的",
       "breakdown": [
         {
-          "letter": "yel",
+          "letter": "y",
           "phon": "/j/"
         },
         {
-          "letter": "low",
+          "letter": "e",
           "phon": "/e/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/",
+          "silent": "l"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
         }
       ],
       "sentences": [
@@ -89,8 +122,12 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 年，年度",
       "breakdown": [
         {
-          "letter": "year",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "ear",
+          "phon": "/ɪə/"
         }
       ],
       "sentences": [
@@ -104,8 +141,16 @@ window.PHONICS_DAY_43 = {
       "definition": "adj. 年轻的，幼小的",
       "breakdown": [
         {
-          "letter": "young",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
@@ -119,16 +164,28 @@ window.PHONICS_DAY_43 = {
       "definition": "adv. 昨天",
       "breakdown": [
         {
-          "letter": "yes",
+          "letter": "y",
           "phon": "/j/"
         },
         {
-          "letter": "ter",
+          "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "day",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ay",
+          "phon": "/eɪ/"
         }
       ],
       "sentences": [
@@ -142,8 +199,16 @@ window.PHONICS_DAY_43 = {
       "definition": "adv. 还没，仍然",
       "breakdown": [
         {
-          "letter": "yet",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -157,12 +222,24 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 酸奶",
       "breakdown": [
         {
-          "letter": "yo",
+          "letter": "y",
           "phon": "/j/"
         },
         {
-          "letter": "gurt",
+          "letter": "o",
           "phon": "/ɒ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -176,8 +253,16 @@ window.PHONICS_DAY_43 = {
       "definition": "v. 打哈欠",
       "breakdown": [
         {
-          "letter": "yawn",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "aw",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -191,8 +276,16 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 山药；番薯",
       "breakdown": [
         {
-          "letter": "yam",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -206,8 +299,21 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 游艇",
       "breakdown": [
         {
-          "letter": "yacht",
+          "letter": "y",
           "phon": "/j/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ch",
+          "phon": "",
+          "silent": "ch"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -236,12 +342,21 @@ window.PHONICS_DAY_43 = {
       "definition": "adj. 有用的，有益的",
       "breakdown": [
         {
-          "letter": "use",
+          "letter": "u",
           "phon": "/juː/"
         },
         {
-          "letter": "ful",
-          "phon": "/s/"
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "ul",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -255,8 +370,13 @@ window.PHONICS_DAY_43 = {
       "definition": "v. 使用，利用",
       "breakdown": [
         {
-          "letter": "use",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -274,20 +394,36 @@ window.PHONICS_DAY_43 = {
           "phon": "/juː/"
         },
         {
-          "letter": "ni",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "ver",
+          "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "si",
+          "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "ty",
+          "letter": "er",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -305,12 +441,24 @@ window.PHONICS_DAY_43 = {
           "phon": "/juː/"
         },
         {
-          "letter": "ni",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "form",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -324,12 +472,24 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 人类，人",
       "breakdown": [
         {
-          "letter": "hu",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "man",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -343,12 +503,24 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 音乐",
       "breakdown": [
         {
-          "letter": "mu",
+          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "sic",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -362,12 +534,21 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 学生；学者",
       "breakdown": [
         {
-          "letter": "stu",
+          "letter": "st",
           "phon": "/st/"
         },
         {
-          "letter": "dent",
+          "letter": "u",
           "phon": "/juː/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -381,16 +562,32 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 电脑",
       "breakdown": [
         {
-          "letter": "com",
+          "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "put",
+          "letter": "o",
           "phon": "/ə/"
         },
         {
-          "letter": "er",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
@@ -404,16 +601,32 @@ window.PHONICS_DAY_43 = {
       "definition": "adj. 美丽的，漂亮的",
       "breakdown": [
         {
-          "letter": "beau",
+          "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "ti",
+          "letter": "eau",
           "phon": "/juː/"
         },
         {
-          "letter": "ful",
+          "letter": "t",
           "phon": "/t/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
@@ -427,8 +640,17 @@ window.PHONICS_DAY_43 = {
       "definition": "adj. 可爱的；漂亮的；聪明的",
       "breakdown": [
         {
-          "letter": "cute",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -442,8 +664,12 @@ window.PHONICS_DAY_43 = {
       "definition": "det. 很少的",
       "breakdown": [
         {
-          "letter": "few",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "ew",
+          "phon": "/juː/"
         }
       ],
       "sentences": [
@@ -457,8 +683,16 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 新闻；消息",
       "breakdown": [
         {
-          "letter": "news",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ew",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -472,8 +706,12 @@ window.PHONICS_DAY_43 = {
       "definition": "adj. 新的；新鲜的",
       "breakdown": [
         {
-          "letter": "new",
+          "letter": "n",
           "phon": "/n/"
+        },
+        {
+          "letter": "ew",
+          "phon": "/juː/"
         }
       ],
       "sentences": [
@@ -491,8 +729,17 @@ window.PHONICS_DAY_43 = {
           "phon": "/ɪks/"
         },
         {
-          "letter": "cuse",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -506,11 +753,19 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 洋葱",
       "breakdown": [
         {
-          "letter": "on",
+          "letter": "o",
           "phon": "/ʌ/"
         },
         {
-          "letter": "ion",
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "io",
+          "phon": "/jə/"
+        },
+        {
+          "letter": "n",
           "phon": "/n/"
         }
       ],
@@ -525,11 +780,23 @@ window.PHONICS_DAY_43 = {
       "definition": "n. 联盟，结合",
       "breakdown": [
         {
-          "letter": "un",
+          "letter": "u",
           "phon": "/juː/"
         },
         {
-          "letter": "ion",
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "n",
           "phon": "/n/"
         }
       ],

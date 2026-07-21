@@ -10,7 +10,15 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 爸爸",
       "breakdown": [
         {
-          "letter": "dad",
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
           "phon": "/d/"
         }
       ],
@@ -25,8 +33,16 @@ window.PHONICS_DAY_04 = {
       "definition": "adj. 坏的；糟糕的",
       "breakdown": [
         {
-          "letter": "bad",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -40,8 +56,16 @@ window.PHONICS_DAY_04 = {
       "definition": "adj. 悲伤的；难过的",
       "breakdown": [
         {
-          "letter": "sad",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -55,8 +79,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 猫",
       "breakdown": [
         {
-          "letter": "cat",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -70,8 +102,16 @@ window.PHONICS_DAY_04 = {
       "definition": "adj. 肥胖的",
       "breakdown": [
         {
-          "letter": "fat",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -85,8 +125,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 老鼠",
       "breakdown": [
         {
-          "letter": "rat",
+          "letter": "r",
           "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -100,8 +148,16 @@ window.PHONICS_DAY_04 = {
       "definition": "adj. 生气的；发疯的",
       "breakdown": [
         {
-          "letter": "mad",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -115,8 +171,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 包；袋",
       "breakdown": [
         {
-          "letter": "bag",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -130,8 +194,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 男人",
       "breakdown": [
         {
-          "letter": "man",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -145,8 +217,16 @@ window.PHONICS_DAY_04 = {
       "definition": "v. 禁止，取缔",
       "breakdown": [
         {
-          "letter": "ban",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -160,8 +240,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 粉丝；风扇",
       "breakdown": [
         {
-          "letter": "fan",
+          "letter": "f",
           "phon": "/f/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -175,8 +263,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 旗帜",
       "breakdown": [
         {
-          "letter": "flag",
+          "letter": "fl",
           "phon": "/fl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -190,8 +286,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 计划",
       "breakdown": [
         {
-          "letter": "plan",
+          "letter": "pl",
           "phon": "/pl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -205,8 +309,20 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 沙子",
       "breakdown": [
         {
-          "letter": "sand",
+          "letter": "s",
           "phon": "/s/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -220,8 +336,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 陆地；国家",
       "breakdown": [
         {
-          "letter": "land",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -235,8 +359,16 @@ window.PHONICS_DAY_04 = {
       "definition": "v. 站立；忍受",
       "breakdown": [
         {
-          "letter": "stand",
+          "letter": "st",
           "phon": "/st/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -250,8 +382,20 @@ window.PHONICS_DAY_04 = {
       "definition": "adj. 黑色的；黑暗的",
       "breakdown": [
         {
-          "letter": "black",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -265,8 +409,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 背部；后面",
       "breakdown": [
         {
-          "letter": "back",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -280,8 +432,16 @@ window.PHONICS_DAY_04 = {
       "definition": "v. 打包",
       "breakdown": [
         {
-          "letter": "pack",
+          "letter": "p",
           "phon": "/p/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -295,8 +455,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 轨道；小路",
       "breakdown": [
         {
-          "letter": "track",
+          "letter": "tr",
           "phon": "/tr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -310,8 +478,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 手；指针",
       "breakdown": [
         {
-          "letter": "hand",
+          "letter": "h",
           "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
@@ -325,12 +501,18 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 苹果",
       "breakdown": [
         {
-          "letter": "ap",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ple",
-          "phon": "/p/"
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "p"
+        },
+        {
+          "letter": "l",
+          "phon": "/əl/",
+          "silent": "e"
         }
       ],
       "sentences": [
@@ -344,12 +526,21 @@ window.PHONICS_DAY_04 = {
       "definition": "adj. 快乐的；幸福的",
       "breakdown": [
         {
-          "letter": "hap",
+          "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "py",
+          "letter": "a",
           "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/",
+          "silent": "p"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -363,16 +554,28 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 家庭；家人",
       "breakdown": [
         {
-          "letter": "fam",
+          "letter": "f",
           "phon": "/f/"
         },
         {
-          "letter": "i",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "ly",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
@@ -386,16 +589,24 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 动物",
       "breakdown": [
         {
-          "letter": "an",
+          "letter": "a",
           "phon": "/æ/"
         },
         {
-          "letter": "i",
+          "letter": "n",
           "phon": "/n/"
         },
         {
-          "letter": "mal",
+          "letter": "i",
           "phon": "/ɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
@@ -409,8 +620,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 地图",
       "breakdown": [
         {
-          "letter": "map",
+          "letter": "m",
           "phon": "/m/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -424,8 +643,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 帽子；盖子",
       "breakdown": [
         {
-          "letter": "cap",
+          "letter": "c",
           "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -439,8 +666,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 球棒；蝙蝠",
       "breakdown": [
         {
-          "letter": "bat",
+          "letter": "b",
           "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -454,8 +689,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 灯",
       "breakdown": [
         {
-          "letter": "lamp",
+          "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
         }
       ],
       "sentences": [
@@ -469,8 +712,16 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 果酱；堵塞",
       "breakdown": [
         {
-          "letter": "jam",
+          "letter": "j",
           "phon": "/dʒ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [

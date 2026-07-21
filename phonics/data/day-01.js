@@ -1,4 +1,3 @@
-// Day 1 详细数据（含音标、拼读、例句、翻译）
 window.PHONICS_DAY_01 = {
   "day": 1,
   "ipa": "/i:/",
@@ -11,12 +10,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 树",
       "breakdown": [
         {
-          "letter": "tr",
+          "letter": "tree",
           "phon": "/tr/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -30,16 +25,8 @@ window.PHONICS_DAY_01 = {
       "definition": "num. 三",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "three",
           "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -53,16 +40,8 @@ window.PHONICS_DAY_01 = {
       "definition": "adj. 绿色的",
       "breakdown": [
         {
-          "letter": "gr",
+          "letter": "green",
           "phon": "/gr/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -76,12 +55,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 蜜蜂",
       "breakdown": [
         {
-          "letter": "b",
+          "letter": "bee",
           "phon": "/b/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -95,12 +70,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 看见；理解",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "see",
           "phon": "/s/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -114,16 +85,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 遇见；开会",
       "breakdown": [
         {
-          "letter": "m",
+          "letter": "meet",
           "phon": "/m/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -137,16 +100,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 睡眠",
       "breakdown": [
         {
-          "letter": "sl",
+          "letter": "sleep",
           "phon": "/sl/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -160,16 +115,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 绵羊",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "sheep",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
         }
       ],
       "sentences": [
@@ -183,16 +130,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 脚（复数）",
       "breakdown": [
         {
-          "letter": "f",
+          "letter": "feet",
           "phon": "/f/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -206,16 +145,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 需要",
       "breakdown": [
         {
-          "letter": "n",
+          "letter": "need",
           "phon": "/n/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -229,16 +160,8 @@ window.PHONICS_DAY_01 = {
       "definition": "adj. 干净的",
       "breakdown": [
         {
-          "letter": "cl",
+          "letter": "clean",
           "phon": "/kl/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -252,16 +175,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 肉",
       "breakdown": [
         {
-          "letter": "m",
+          "letter": "meat",
           "phon": "/m/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -275,12 +190,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 吃；用餐",
       "breakdown": [
         {
-          "letter": "ea",
+          "letter": "eat",
           "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -294,16 +205,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 阅读；理解",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "read",
           "phon": "/r/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -317,12 +220,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 海洋；大量",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "sea",
           "phon": "/s/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -336,12 +235,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 茶，茶叶",
       "breakdown": [
         {
-          "letter": "t",
+          "letter": "tea",
           "phon": "/t/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -355,21 +250,13 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 座位；所在地",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "seat",
           "phon": "/s/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "Please take a seat.",
-        "请坐。"
+        "Please take your seat.",
+        "请坐下。"
       ]
     },
     {
@@ -378,16 +265,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 热；热度",
       "breakdown": [
         {
-          "letter": "h",
+          "letter": "heat",
           "phon": "/h/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -401,16 +280,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 跳动；打败",
       "breakdown": [
         {
-          "letter": "b",
+          "letter": "beat",
           "phon": "/b/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
@@ -424,16 +295,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 梦想",
       "breakdown": [
         {
-          "letter": "dr",
+          "letter": "dream",
           "phon": "/dr/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -447,16 +310,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 奶油",
       "breakdown": [
         {
-          "letter": "cr",
+          "letter": "cream",
           "phon": "/kr/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -470,16 +325,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 队，团队",
       "breakdown": [
         {
-          "letter": "t",
+          "letter": "team",
           "phon": "/t/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
         }
       ],
       "sentences": [
@@ -493,16 +340,8 @@ window.PHONICS_DAY_01 = {
       "definition": "v. 说话；讲话",
       "breakdown": [
         {
-          "letter": "sp",
+          "letter": "speak",
           "phon": "/sp/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -516,16 +355,8 @@ window.PHONICS_DAY_01 = {
       "definition": "adj. 虚弱的；弱的",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "weak",
           "phon": "/w/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
         }
       ],
       "sentences": [
@@ -539,12 +370,8 @@ window.PHONICS_DAY_01 = {
       "definition": "pron. 我们",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "we",
           "phon": "/w/"
-        },
-        {
-          "letter": "e",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -558,17 +385,13 @@ window.PHONICS_DAY_01 = {
       "definition": "pron. 我",
       "breakdown": [
         {
-          "letter": "m",
+          "letter": "me",
           "phon": "/m/"
-        },
-        {
-          "letter": "e",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
-        "Come with me.",
-        "跟我来。"
+        "Give the ball to me.",
+        "把球给我。"
       ]
     },
     {
@@ -577,12 +400,8 @@ window.PHONICS_DAY_01 = {
       "definition": "pron. 他",
       "breakdown": [
         {
-          "letter": "h",
+          "letter": "he",
           "phon": "/h/"
-        },
-        {
-          "letter": "e",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
@@ -596,16 +415,8 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 片；块",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "piece",
           "phon": "/p/"
-        },
-        {
-          "letter": "ie",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -614,29 +425,17 @@ window.PHONICS_DAY_01 = {
       ]
     },
     {
-      "word": "po",
+      "word": "police",
       "phonetic": "/pəˈliːs/",
       "definition": "n. 警察；警方",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "po",
           "phon": "/p/"
         },
         {
-          "letter": "o",
+          "letter": "lice",
           "phon": "/ə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -650,53 +449,14 @@ window.PHONICS_DAY_01 = {
       "definition": "n. 滑雪板",
       "breakdown": [
         {
-          "letter": "sk",
+          "letter": "ski",
           "phon": "/sk/"
-        },
-        {
-          "letter": "i",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
         "I have new skis.",
         "我有新滑雪板。"
       ]
-    },
-{
-    "word": "police",
-    "phonetic": "/pəˈliːs/",
-    "definition": "n. 警察",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "e",
-                "phon": "/iː/"
-          }
-    ],
-    "sentences": [
-          "I see a police.",
-          "我看到一个警察。"
-    ]
-}
+    }
   ]
-};
+}

@@ -10,44 +10,43 @@ window.PHONICS_DAY_36 = {
       "definition": "adj. 红色的",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "red",
           "phon": "/r/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
         }
       ],
       "sentences": [
         "The apple is red.",
-        "苹果是红色的。"
+        "这个苹果是红色的。"
       ]
     },
     {
       "word": "run",
       "phonetic": "/rʌn/",
-      "definition": "v. 跑",
+      "definition": "v. 跑；经营",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "run",
           "phon": "/r/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "I run fast.",
-        "我跑得快。"
+        "The dog can run fast.",
+        "这只狗能跑得很快。"
+      ]
+    },
+    {
+      "word": "rice",
+      "phonetic": "/raɪs/",
+      "definition": "n. 米饭；稻米",
+      "breakdown": [
+        {
+          "letter": "rice",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "I like to eat rice.",
+        "我喜欢吃米饭。"
       ]
     },
     {
@@ -56,140 +55,77 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 雨",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "rain",
           "phon": "/r/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "The rain is heavy.",
-        "雨很大。"
-      ]
-    },
-    {
-      "word": "read",
-      "phonetic": "/riːd/",
-      "definition": "v. 阅读",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I read a book.",
-        "我读书。"
-      ]
-    },
-    {
-      "word": "rice",
-      "phonetic": "/raɪs/",
-      "definition": "n. 米饭",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "ce",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "I eat rice every day.",
-        "我每天吃米饭。"
+        "The rain falls down.",
+        "雨落下来。"
       ]
     },
     {
       "word": "room",
       "phonetic": "/ruːm/",
-      "definition": "n. 房间",
+      "definition": "n. 房间；空间",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "room",
           "phon": "/r/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
         }
       ],
       "sentences": [
-        "My room is clean.",
-        "我的房间干净。"
+        "This is my room.",
+        "这是我的房间。"
       ]
     },
     {
-      "word": "rose",
-      "phonetic": "/rəʊz/",
-      "definition": "n. 玫瑰",
+      "word": "read",
+      "phonetic": "/riːd/",
+      "definition": "v. 阅读；理解",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "read",
           "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
-        "The rose is red.",
-        "玫瑰是红色的。"
+        "I can read a book.",
+        "我能读一本书。"
       ]
     },
     {
-      "word": "road",
-      "phonetic": "/rəʊd/",
-      "definition": "n. 路",
+      "word": "right",
+      "phonetic": "/raɪt/",
+      "definition": "adj. 正确的；右边的",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "right",
           "phon": "/r/"
-        },
-        {
-          "letter": "oa",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
         }
       ],
       "sentences": [
-        "The road is long.",
-        "路很长。"
+        "Turn right at the tree.",
+        "在树那里右转。"
+      ]
+    },
+    {
+      "word": "river",
+      "phonetic": "/ˈrɪvə/",
+      "definition": "n. 河；江",
+      "breakdown": [
+        {
+          "letter": "riv",
+          "phon": "/r/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "Fish swim in the river.",
+        "鱼在河里游泳。"
       ]
     },
     {
@@ -198,56 +134,36 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 兔子",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "rab",
           "phon": "/r/"
         },
         {
-          "letter": "a",
+          "letter": "bit",
           "phon": "/æ/"
-        },
-        {
-          "letter": "bb",
-          "phon": "/b/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The rabbit hops.",
-        "兔子跳。"
+        "The rabbit likes to hop.",
+        "兔子喜欢跳。"
       ]
     },
     {
-      "word": "river",
-      "phonetic": "/ˈrɪvə/",
-      "definition": "n. 河流",
+      "word": "ruler",
+      "phonetic": "/ˈruːlər/",
+      "definition": "n. 尺子；统治者",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "rul",
           "phon": "/r/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
           "letter": "er",
-          "phon": "/ə/"
+          "phon": "/uː/"
         }
       ],
       "sentences": [
-        "The river is long.",
-        "河很长。"
+        "Use a ruler to draw.",
+        "用尺子画图。"
       ]
     },
     {
@@ -256,129 +172,81 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 机器人",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "ro",
           "phon": "/r/"
         },
         {
-          "letter": "o",
+          "letter": "bot",
           "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "The robot can walk and talk.",
+        "机器人会走路和说话。"
+      ]
+    },
+    {
+      "word": "rocket",
+      "phonetic": "/ˈrɒkɪt/",
+      "definition": "n. 火箭",
+      "breakdown": [
+        {
+          "letter": "rock",
+          "phon": "/r/"
         },
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "o",
+          "letter": "et",
           "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The robot helps us.",
-        "机器人帮助我们。"
+        "The rocket flies to the moon.",
+        "火箭飞向月亮。"
       ]
     },
     {
-      "word": "ring",
-      "phonetic": "/rɪŋ/",
-      "definition": "n. 戒指",
+      "word": "road",
+      "phonetic": "/rəʊd/",
+      "definition": "n. 道路；公路",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "road",
           "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ng",
-          "phon": "/ŋ/"
         }
       ],
       "sentences": [
-        "I have a ring.",
-        "我有戒指。"
+        "The car is on the road.",
+        "汽车在路上。"
       ]
     },
     {
-      "word": "rock",
-      "phonetic": "/rɒk/",
-      "definition": "n. 岩石",
+      "word": "round",
+      "phonetic": "/raʊnd/",
+      "definition": "adj. 圆的",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "round",
           "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
         }
       ],
       "sentences": [
-        "The rock is heavy.",
-        "岩石很重。"
+        "The ball is round.",
+        "球是圆的。"
       ]
     },
     {
-      "word": "right",
-      "phonetic": "/raɪt/",
-      "definition": "adj. 对的",
+      "word": "room",
+      "phonetic": "/ruːm/",
+      "definition": "n. 房间；空间",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "room",
           "phon": "/r/"
-        },
-        {
-          "letter": "igh",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "You are right.",
-        "你是对的。"
-      ]
-    },
-    {
-      "word": "rabbit",
-      "phonetic": "/ˈræbɪt/",
-      "definition": "n. 兔子",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "bb",
-          "phon": "/b/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "A rabbit eats carrots.",
-        "兔子吃胡萝卜。"
+        "This is my room.",
+        "这是我的房间。"
       ]
     },
     {
@@ -387,164 +255,112 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 胡萝卜",
       "breakdown": [
         {
-          "letter": "c",
+          "letter": "car",
           "phon": "/k/"
         },
         {
-          "letter": "a",
+          "letter": "rot",
           "phon": "/æ/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "I like carrots.",
-        "我喜欢胡萝卜。"
-      ]
-    },
-    {
-      "word": "cherry",
-      "phonetic": "/ˈtʃeri/",
-      "definition": "n. 樱桃",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "The cherry is sweet.",
-        "樱桃很甜。"
-      ]
-    },
-    {
-      "word": "carry",
-      "phonetic": "/ˈkæri/",
-      "definition": "v. 搬运",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "I carry the bag.",
-        "我提包。"
-      ]
-    },
-    {
-      "word": "marry",
-      "phonetic": "/ˈmæri/",
-      "definition": "v. 结婚",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "They marry in spring.",
-        "他们春天结婚。"
-      ]
-    },
-    {
-      "word": "merry",
-      "phonetic": "/ˈmeri/",
-      "definition": "adj. 快乐的",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "Merry Christmas!",
-        "圣诞快乐！"
+        "Rabbits love to eat carrots.",
+        "兔子喜欢吃胡萝卜。"
       ]
     },
     {
       "word": "sorry",
       "phonetic": "/ˈsɒri/",
-      "definition": "adj. 抱歉的",
+      "definition": "adj. 抱歉的；遗憾的",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "sor",
           "phon": "/s/"
         },
         {
-          "letter": "o",
+          "letter": "ry",
           "phon": "/ɒ/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
         }
       ],
       "sentences": [
         "I am sorry.",
-        "对不起。"
+        "我很抱歉。"
+      ]
+    },
+    {
+      "word": "mirror",
+      "phonetic": "/ˈmɪrər/",
+      "definition": "n. 镜子",
+      "breakdown": [
+        {
+          "letter": "mir",
+          "phon": "/m/"
+        },
+        {
+          "letter": "ror",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "Look in the mirror.",
+        "照照镜子。"
+      ]
+    },
+    {
+      "word": "parrot",
+      "phonetic": "/ˈpærət/",
+      "definition": "n. 鹦鹉",
+      "breakdown": [
+        {
+          "letter": "par",
+          "phon": "/p/"
+        },
+        {
+          "letter": "rot",
+          "phon": "/æ/"
+        }
+      ],
+      "sentences": [
+        "The parrot can talk.",
+        "鹦鹉会说话。"
+      ]
+    },
+    {
+      "word": "arrange",
+      "phonetic": "/əˈreɪndʒ/",
+      "definition": "v. 安排；整理",
+      "breakdown": [
+        {
+          "letter": "ar",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "range",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "Please arrange the toys neatly.",
+        "请把玩具摆放整齐。"
+      ]
+    },
+    {
+      "word": "carry",
+      "phonetic": "/ˈkæri/",
+      "definition": "v. 提；抱；背",
+      "breakdown": [
+        {
+          "letter": "car",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ry",
+          "phon": "/æ/"
+        }
+      ],
+      "sentences": [
+        "Can you carry this bag?",
+        "你能提这个包吗？"
       ]
     },
     {
@@ -553,44 +369,28 @@ window.PHONICS_DAY_36 = {
       "definition": "v. 写",
       "breakdown": [
         {
-          "letter": "wr",
+          "letter": "write",
           "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "te",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "Write your name.",
-        "写你的名字。"
+        "I like to write my name.",
+        "我喜欢写我的名字。"
       ]
     },
     {
       "word": "wrong",
       "phonetic": "/rɒŋ/",
-      "definition": "adj. 错的",
+      "definition": "adj. 错误的",
       "breakdown": [
         {
-          "letter": "wr",
+          "letter": "wrong",
           "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ng",
-          "phon": "/ŋ/"
         }
       ],
       "sentences": [
-        "This is wrong.",
-        "这是错的。"
+        "That answer is wrong.",
+        "那个答案是错的。"
       ]
     },
     {
@@ -599,470 +399,116 @@ window.PHONICS_DAY_36 = {
       "definition": "n. 手腕",
       "breakdown": [
         {
-          "letter": "wr",
+          "letter": "wrist",
           "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
         }
       ],
       "sentences": [
-        "I hurt my wrist.",
-        "我伤了手腕。"
+        "My watch is on my wrist.",
+        "我的手表在我的手腕上。"
+      ]
+    },
+    {
+      "word": "wrap",
+      "phonetic": "/ræp/",
+      "definition": "v. 包裹",
+      "breakdown": [
+        {
+          "letter": "wrap",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "Please wrap the gift.",
+        "请把礼物包起来。"
       ]
     },
     {
       "word": "wrestle",
-      "phonetic": "/ˈresəl/",
-      "definition": "v. 摔跤",
+      "phonetic": "/ˈresl/",
+      "definition": "v. 摔跤；搏斗",
       "breakdown": [
         {
-          "letter": "wr",
-          "phon": "/r/"
+          "letter": "wres",
+          "phon": ""
         },
         {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "stle",
-          "phon": "/səl/"
+          "letter": "tle",
+          "phon": ""
         }
       ],
       "sentences": [
-        "They wrestle on the mat.",
-        "他们在垫子上摔跤。"
+        "They like to wrestle for fun.",
+        "他们喜欢摔跤取乐。"
       ]
     },
     {
-      "word": "wreck",
-      "phonetic": "/rek/",
-      "definition": "n. 残骸",
+      "word": "writer",
+      "phonetic": "/ˈraɪtər/",
+      "definition": "n. 作家",
       "breakdown": [
         {
-          "letter": "wr",
+          "letter": "writ",
           "phon": "/r/"
         },
         {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
+          "letter": "er",
+          "phon": "/aɪ/"
         }
       ],
       "sentences": [
-        "The ship is a wreck.",
-        "船是残骸。"
+        "My mom is a writer.",
+        "我妈妈是一位作家。"
       ]
     },
     {
-      "word": "wring",
+      "word": "rainy",
+      "phonetic": "/ˈreɪni/",
+      "definition": "adj. 下雨的；多雨的",
+      "breakdown": [
+        {
+          "letter": "rain",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/eɪ/"
+        }
+      ],
+      "sentences": [
+        "It is a rainy day.",
+        "今天是个下雨天。"
+      ]
+    },
+    {
+      "word": "ring",
       "phonetic": "/rɪŋ/",
-      "definition": "v. 拧",
+      "definition": "n.圆圈;圆环;v.响铃",
       "breakdown": [
         {
-          "letter": "wr",
+          "letter": "ring",
           "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ng",
-          "phon": "/ŋ/"
         }
       ],
       "sentences": [
-        "Wring the wet towel.",
-        "拧干湿毛巾。"
+        "The phone is ringing.",
+        "电话正在响。"
       ]
     },
     {
-      "word": "rhyme",
-      "phonetic": "/raɪm/",
-      "definition": "n. 韵律",
+      "word": "rabbit-hole",
+      "phonetic": "/ˈræbɪt həʊl/",
+      "definition": "n. 兔子洞穴",
       "breakdown": [
         {
-          "letter": "rh",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "me",
-          "phon": "/m/"
+          "letter": "rabbit-hole",
+          "phon": ""
         }
       ],
       "sentences": [
-        "Learn to rhyme.",
-        "学押韵。"
+        "I saw a rabbit-hole in the grass.",
+        "我在草地上看到了一个兔子洞。"
       ]
-    },
-    {
-      "word": "rhythm",
-      "phonetic": "/ˈrɪðəm/",
-      "definition": "n. 节奏",
-      "breakdown": [
-        {
-          "letter": "rh",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "m",
-          "phon": "/əm/"
-        }
-      ],
-      "sentences": [
-        "Feel the rhythm.",
-        "感受节奏。"
-      ]
-    },
-    {
-      "word": "rhino",
-      "phonetic": "/ˈraɪnəʊ/",
-      "definition": "n. 犀牛",
-      "breakdown": [
-        {
-          "letter": "rh",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "The rhino is big.",
-        "犀牛很大。"
-      ]
-    },
-{
-    "word": "ruler",
-    "phonetic": "/ˈɹuːlə(ɹ)/",
-    "definition": "n. 尺子；统治者",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a ruler.",
-          "我看到一个尺子。"
-    ]
-},
-{
-    "word": "rocket",
-    "phonetic": "/ˈɹɒkɪt/",
-    "definition": "n. 火箭",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ck",
-                "phon": "/k/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a rocket.",
-          "我看到一个火箭。"
-    ]
-},
-{
-    "word": "round",
-    "phonetic": "/ˈɹaʊnd/",
-    "definition": "adj. 圆的",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "ou",
-                "phon": "/aʊ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "It is very round.",
-          "它非常圆的。"
-    ]
-},
-{
-    "word": "mirror",
-    "phonetic": "/ˈmɘ.ɹɘ/",
-    "definition": "n. 镜子",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "rr",
-                "phon": "/r/"
-          },
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          }
-    ],
-    "sentences": [
-          "I see a mirror.",
-          "我看到一个镜子。"
-    ]
-},
-{
-    "word": "parrot",
-    "phonetic": "/ˈpæɹət/",
-    "definition": "n. 鹦鹉",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "rr",
-                "phon": "/r/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a parrot.",
-          "我看到一个鹦鹉。"
-    ]
-},
-{
-    "word": "arrange",
-    "phonetic": "/əˈɹeɪndʒ/",
-    "definition": "v. 安排",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "rr",
-                "phon": "/r/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "Please arrange it.",
-          "请安排它。"
-    ]
-},
-{
-    "word": "wrap",
-    "phonetic": "/ɹæp/",
-    "definition": "v. 包裹",
-    "breakdown": [
-          {
-                "letter": "wr",
-                "phon": "/r/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "Please wrap it.",
-          "请包裹它。"
-    ]
-},
-{
-    "word": "writer",
-    "phonetic": "/ˈɹaɪ.tə/",
-    "definition": "n. 作家",
-    "breakdown": [
-          {
-                "letter": "wr",
-                "phon": "/r/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a writer.",
-          "我看到一个作家。"
-    ]
-},
-{
-    "word": "rainy",
-    "phonetic": "/ˈɹeɪni/",
-    "definition": "adj. 下雨的",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "ai",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "It is very rainy.",
-          "它非常下雨的。"
-    ]
-},
-{
-    "word": "rabbit-hole",
-    "phonetic": "/ˈræbɪt həʊl/",
-    "definition": "n. 兔子洞",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "This is rabbit-hole.",
-          "这是兔子洞。"
-    ]
-}
+    }
   ]
-};
+}

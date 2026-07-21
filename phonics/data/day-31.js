@@ -7,116 +7,16 @@ window.PHONICS_DAY_31 = {
     {
       "word": "think",
       "phonetic": "/θɪŋk/",
-      "definition": "v. 思考",
+      "definition": "v. 认为；思考",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "think",
           "phon": "/θ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "nk",
-          "phon": "/ŋk/"
         }
       ],
       "sentences": [
-        "I think you are right.",
-        "我觉得你是对的。"
-      ]
-    },
-    {
-      "word": "thin",
-      "phonetic": "/θɪn/",
-      "definition": "adj. 薄的",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "This book is thin.",
-        "这本书很薄。"
-      ]
-    },
-    {
-      "word": "three",
-      "phonetic": "/θriː/",
-      "definition": "num. 三",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        }
-      ],
-      "sentences": [
-        "I have three apples.",
-        "我有三个苹果。"
-      ]
-    },
-    {
-      "word": "thumb",
-      "phonetic": "/θʌm/",
-      "definition": "n. 大拇指",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "mb",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "I hurt my thumb.",
-        "我伤了大拇指。"
-      ]
-    },
-    {
-      "word": "thick",
-      "phonetic": "/θɪk/",
-      "definition": "adj. 厚的",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The book is very thick.",
-        "书很厚。"
+        "I think I can do it.",
+        "我想我能做到。"
       ]
     },
     {
@@ -125,305 +25,92 @@ window.PHONICS_DAY_31 = {
       "definition": "v. 感谢",
       "breakdown": [
         {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nk",
-          "phon": "/ŋk/"
-        }
-      ],
-      "sentences": [
-        "Thank you very much.",
-        "非常感谢。"
-      ]
-    },
-    {
-      "word": "thing",
-      "phonetic": "/θɪŋ/",
-      "definition": "n. 事情",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ng",
-          "phon": "/ŋ/"
-        }
-      ],
-      "sentences": [
-        "What is this thing?",
-        "这是什么？"
-      ]
-    },
-    {
-      "word": "bath",
-      "phonetic": "/bɑːθ/",
-      "definition": "n. 洗澡",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "th",
+          "letter": "thank",
           "phon": "/θ/"
         }
       ],
       "sentences": [
-        "I take a bath every day.",
-        "我每天洗澡。"
+        "I want to thank you.",
+        "我想感谢你。"
       ]
     },
     {
-      "word": "math",
-      "phonetic": "/mæθ/",
-      "definition": "n. 数学",
+      "word": "thin",
+      "phonetic": "/θɪn/",
+      "definition": "adj. 瘦的；薄的",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "th",
+          "letter": "thin",
           "phon": "/θ/"
         }
       ],
       "sentences": [
-        "I like math class.",
-        "我喜欢数学课。"
+        "The cat is thin.",
+        "这只猫很瘦。"
       ]
     },
     {
-      "word": "mouth",
-      "phonetic": "/maʊθ/",
-      "definition": "n. 嘴",
+      "word": "thick",
+      "phonetic": "/θɪk/",
+      "definition": "adj. 厚的；粗的",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "th",
+          "letter": "thick",
           "phon": "/θ/"
         }
       ],
       "sentences": [
-        "Open your mouth.",
-        "张开嘴。"
+        "This book is thick.",
+        "这本书很厚。"
       ]
     },
     {
-      "word": "tooth",
-      "phonetic": "/tuːθ/",
-      "definition": "n. 牙齿",
+      "word": "three",
+      "phonetic": "/θriː/",
+      "definition": "num. 三",
       "breakdown": [
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "th",
+          "letter": "three",
           "phon": "/θ/"
         }
       ],
       "sentences": [
-        "Brush your tooth.",
-        "刷牙。"
+        "I have three red apples.",
+        "我有三个红苹果。"
       ]
     },
     {
-      "word": "truth",
-      "phonetic": "/truːθ/",
-      "definition": "n. 真相",
+      "word": "third",
+      "phonetic": "/θɜːd/",
+      "definition": "num. 第三",
       "breakdown": [
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "u",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "th",
+          "letter": "third",
           "phon": "/θ/"
         }
       ],
       "sentences": [
-        "Tell me the truth.",
-        "告诉我真相。"
+        "I am third in line.",
+        "我排在第三。"
       ]
     },
     {
-      "word": "earth",
-      "phonetic": "/ɜːθ/",
-      "definition": "n. 地球",
+      "word": "thirsty",
+      "phonetic": "/ˈθɜːsti/",
+      "definition": "adj. 口渴的；渴望的",
       "breakdown": [
         {
-          "letter": "ea",
+          "letter": "thirst",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "y",
           "phon": "/ɜː/"
-        },
-        {
-          "letter": "rth",
-          "phon": "/θ/"
         }
       ],
       "sentences": [
-        "The earth is round.",
-        "地球是圆的。"
-      ]
-    },
-    {
-      "word": "north",
-      "phonetic": "/nɔːθ/",
-      "definition": "n. 北方",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "The north is cold.",
-        "北方很冷。"
-      ]
-    },
-    {
-      "word": "south",
-      "phonetic": "/saʊθ/",
-      "definition": "n. 南方",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "The south is warm.",
-        "南方很暖。"
-      ]
-    },
-    {
-      "word": "month",
-      "phonetic": "/mʌnθ/",
-      "definition": "n. 月",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ʌn/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "There are twelve months.",
-        "有十二个月。"
-      ]
-    },
-    {
-      "word": "health",
-      "phonetic": "/helθ/",
-      "definition": "n. 健康",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "al",
-          "phon": "/l/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "Health is important.",
-        "健康很重要。"
-      ]
-    },
-    {
-      "word": "wealth",
-      "phonetic": "/welθ/",
-      "definition": "n. 财富",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "al",
-          "phon": "/l/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "Health is better than wealth.",
-        "健康胜过财富。"
+        "Are you thirsty? Drink water.",
+        "你口渴吗？喝水。"
       ]
     },
     {
@@ -432,718 +119,400 @@ window.PHONICS_DAY_31 = {
       "definition": "num. 三十",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "thir",
           "phon": "/θ/"
-        },
-        {
-          "letter": "ir",
-          "phon": "/ɜː/"
         },
         {
           "letter": "ty",
-          "phon": "/ti/"
-        }
-      ],
-      "sentences": [
-        "I am thirty years old.",
-        "我三十岁。"
-      ]
-    },
-    {
-      "word": "thirsty",
-      "phonetic": "/ˈθɜːsti/",
-      "definition": "adj. 渴的",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "ir",
           "phon": "/ɜː/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
         }
       ],
       "sentences": [
-        "I am very thirsty.",
-        "我很渴。"
+        "My dad is thirty.",
+        "我爸爸三十岁。"
       ]
     },
     {
-      "word": "theater",
-      "phonetic": "/ˈθɪətə/",
-      "definition": "n. 剧院",
+      "word": "thousand",
+      "phonetic": "/ˈθaʊzənd/",
+      "definition": "num. 一千",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "thou",
           "phon": "/θ/"
         },
         {
-          "letter": "ea",
-          "phon": "/ɪə/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
+          "letter": "sand",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
-        "We go to the theater.",
-        "我们去剧院。"
-      ]
-    },
-    {
-      "word": "thief",
-      "phonetic": "/θiːf/",
-      "definition": "n. 小偷",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "ie",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        }
-      ],
-      "sentences": [
-        "The thief steals money.",
-        "小偷偷钱。"
-      ]
-    },
-    {
-      "word": "thread",
-      "phonetic": "/θred/",
-      "definition": "n. 线",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "Sew with thread.",
-        "用线缝。"
-      ]
-    },
-    {
-      "word": "throat",
-      "phonetic": "/θrəʊt/",
-      "definition": "n. 喉咙",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "oa",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "My throat hurts.",
-        "喉咙疼。"
+        "There are a thousand stars.",
+        "有一千颗星星。"
       ]
     },
     {
       "word": "throw",
       "phonetic": "/θrəʊ/",
-      "definition": "v. 扔",
+      "definition": "v. 扔，抛",
       "breakdown": [
         {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/əʊ/"
+          "letter": "throw",
+          "phon": "/θr/"
         }
       ],
       "sentences": [
-        "Throw the ball.",
-        "扔球。"
-      ]
-    },
-    {
-      "word": "throne",
-      "phonetic": "/θrəʊn/",
-      "definition": "n. 王座",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "ne",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "The king sits on the throne.",
-        "国王坐在王座上。"
+        "Throw the ball to me.",
+        "把球扔给我。"
       ]
     },
     {
       "word": "thunder",
       "phonetic": "/ˈθʌndə/",
-      "definition": "n. 雷声",
+      "definition": "n. 雷",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "thun",
           "phon": "/θ/"
         },
         {
-          "letter": "u",
+          "letter": "der",
           "phon": "/ʌ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "I hear thunder.",
-        "我听到雷声。"
+        "I heard thunder.",
+        "我听到了雷声。"
       ]
     },
     {
-      "word": "thermos",
-      "phonetic": "/ˈθɜːməs/",
-      "definition": "n. 保温瓶",
+      "word": "Thursday",
+      "phonetic": "/ˈθɜːzdeɪ/",
+      "definition": "n. 星期四",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "Thurs",
           "phon": "/θ/"
         },
         {
-          "letter": "er",
+          "letter": "day",
           "phon": "/ɜː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "os",
-          "phon": "/əs/"
         }
       ],
       "sentences": [
-        "The thermos keeps water hot.",
-        "保温瓶保温。"
+        "Today is Thursday.",
+        "今天星期四。"
       ]
     },
     {
-      "word": "method",
-      "phonetic": "/ˈmeθəd/",
-      "definition": "n. 方法",
+      "word": "theatre",
+      "phonetic": "/ˈθɪətər/",
+      "definition": "n. 剧院；戏院",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "th",
+          "letter": "the",
           "phon": "/θ/"
         },
-        {
-          "letter": "od",
-          "phon": "/əd/"
-        }
-      ],
-      "sentences": [
-        "This is a good method.",
-        "这是好方法。"
-      ]
-    },
-    {
-      "word": "athletic",
-      "phonetic": "/æθˈletɪk/",
-      "definition": "adj. 运动的",
-      "breakdown": [
         {
           "letter": "a",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "tre",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "We go to the theatre.",
+        "我们去剧院。"
+      ]
+    },
+    {
+      "word": "theme",
+      "phonetic": "/θiːm/",
+      "definition": "n. 主题；题目",
+      "breakdown": [
+        {
+          "letter": "theme",
+          "phon": "/θ/"
+        }
+      ],
+      "sentences": [
+        "The theme is about animals.",
+        "主题是关于动物的。"
+      ]
+    },
+    {
+      "word": "theory",
+      "phonetic": "/ˈθɪəəri/",
+      "definition": "n. 理论",
+      "breakdown": [
+        {
+          "letter": "the",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "ry",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "His theory is interesting.",
+        "他的理论很有趣。"
+      ]
+    },
+    {
+      "word": "tooth",
+      "phonetic": "/tuːθ/",
+      "definition": "n. 牙齿",
+      "breakdown": [
+        {
+          "letter": "tooth",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "I have a new tooth.",
+        "我有一颗新牙齿。"
+      ]
+    },
+    {
+      "word": "teeth",
+      "phonetic": "/tiːθ/",
+      "definition": "n. 牙齿 (tooth 的复数)",
+      "breakdown": [
+        {
+          "letter": "teeth",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Brush your teeth every day.",
+        "每天刷牙。"
+      ]
+    },
+    {
+      "word": "bath",
+      "phonetic": "/bɑːθ/",
+      "definition": "n. 洗澡；浴室",
+      "breakdown": [
+        {
+          "letter": "bath",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "Take a warm bath.",
+        "洗个热水澡。"
+      ]
+    },
+    {
+      "word": "mouth",
+      "phonetic": "/maʊθ/",
+      "definition": "n. 嘴巴",
+      "breakdown": [
+        {
+          "letter": "mouth",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "Open your mouth wide.",
+        "把你的嘴巴张大。"
+      ]
+    },
+    {
+      "word": "south",
+      "phonetic": "/saʊθ/",
+      "definition": "n. 南方",
+      "breakdown": [
+        {
+          "letter": "south",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Birds fly south.",
+        "鸟儿向南飞。"
+      ]
+    },
+    {
+      "word": "north",
+      "phonetic": "/nɔːθ/",
+      "definition": "n. 北方；北部",
+      "breakdown": [
+        {
+          "letter": "north",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "The sun rises in the north.",
+        "太阳从北方升起。"
+      ]
+    },
+    {
+      "word": "month",
+      "phonetic": "/mʌnθ/",
+      "definition": "n. 月",
+      "breakdown": [
+        {
+          "letter": "month",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "There are twelve months in a year.",
+        "一年有十二个月。"
+      ]
+    },
+    {
+      "word": "maths",
+      "phonetic": "/mæθs/",
+      "definition": "n. 数学",
+      "breakdown": [
+        {
+          "letter": "maths",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "I like maths class.",
+        "我喜欢数学课。"
+      ]
+    },
+    {
+      "word": "health",
+      "phonetic": "/helθ/",
+      "definition": "n. 健康；卫生",
+      "breakdown": [
+        {
+          "letter": "health",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Good food brings health.",
+        "好食物带来健康。"
+      ]
+    },
+    {
+      "word": "wealth",
+      "phonetic": "/welθ/",
+      "definition": "n. 财富；大量",
+      "breakdown": [
+        {
+          "letter": "wealth",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "Health is more important than wealth.",
+        "健康比财富更重要。"
+      ]
+    },
+    {
+      "word": "author",
+      "phonetic": "/ˈɔːθər/",
+      "definition": "n. 作者；作家",
+      "breakdown": [
+        {
+          "letter": "au",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "thor",
+          "phon": "/θ/"
+        }
+      ],
+      "sentences": [
+        "The author writes many books.",
+        "这位作者写了很多书。"
+      ]
+    },
+    {
+      "word": "athlete",
+      "phonetic": "/ˈæθliːt/",
+      "definition": "n. 运动员",
+      "breakdown": [
+        {
+          "letter": "ath",
           "phon": "/æ/"
         },
         {
-          "letter": "th",
+          "letter": "lete",
           "phon": "/θ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ic",
-          "phon": "/ɪk/"
         }
       ],
       "sentences": [
-        "He is very athletic.",
-        "他很健壮。"
+        "She is a good athlete.",
+        "她是个好运动员。"
       ]
     },
-{
-    "word": "theatre",
-    "phonetic": "/ˈθɪətə/",
-    "definition": "n. 剧院",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a theatre.",
-          "我看到一个剧院。"
-    ]
-},
-{
-    "word": "theme",
-    "phonetic": "/θiːm/",
-    "definition": "n. 主题",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a theme.",
-          "我看到一个主题。"
-    ]
-},
-{
-    "word": "theory",
-    "phonetic": "/ˈθiːəɹi/",
-    "definition": "n. 理论",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "I see a theory.",
-          "我看到一个理论。"
-    ]
-},
-{
-    "word": "teeth",
-    "phonetic": "/tiːθ/",
-    "definition": "n. 牙齿（复数）",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ee",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          }
-    ],
-    "sentences": [
-          "I see a teeth.",
-          "我看到一个牙齿（复数）。"
-    ]
-},
-{
-    "word": "maths",
-    "phonetic": "/mæθs/",
-    "definition": "n. 数学",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "I see a maths.",
-          "我看到一个数学。"
-    ]
-},
-{
-    "word": "author",
-    "phonetic": "/ˈɔː.θə/",
-    "definition": "n. 作者",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          }
-    ],
-    "sentences": [
-          "I see a author.",
-          "我看到一个作者。"
-    ]
-},
-{
-    "word": "athlete",
-    "phonetic": "/ˈæθ.lit/",
-    "definition": "n. 运动员",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a athlete.",
-          "我看到一个运动员。"
-    ]
-},
-{
-    "word": "nothing",
-    "phonetic": "/ˈnʌθɪŋ/",
-    "definition": "pron. 没有什么",
-    "breakdown": [
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "Nothing is here.",
-          "没有什么在这里。"
-    ]
-},
-{
-    "word": "something",
-    "phonetic": "/ˈsamθɪŋ/",
-    "definition": "pron. 某物",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "Something is here.",
-          "某物在这里。"
-    ]
-},
-{
-    "word": "everything",
-    "phonetic": "/ˈɛvɹiθɪŋ/",
-    "definition": "pron. 一切",
-    "breakdown": [
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "v",
-                "phon": "/v/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "Everything is here.",
-          "一切在这里。"
-    ]
-},
-{
-    "word": "third",
-    "phonetic": "/θɜːd/",
-    "definition": "num. 第三",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "ir",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "I have third apples.",
-          "我有第三个苹果。"
-    ]
-},
-{
-    "word": "thousand",
-    "phonetic": "/ˈθaʊznd/",
-    "definition": "num. 一千",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "ou",
-                "phon": "/aʊ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "I have thousand apples.",
-          "我有一千个苹果。"
-    ]
-},
-{
-    "word": "Thursday",
-    "phonetic": "/ˈθɜːzdeɪ/",
-    "definition": "n. 星期四",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "ay",
-                "phon": "/eɪ/"
-          }
-    ],
-    "sentences": [
-          "This is Thursday.",
-          "这是星期四。"
-    ]
-}
+    {
+      "word": "nothing",
+      "phonetic": "/ˈnʌθɪŋ/",
+      "definition": "pron. 没有什么，没有一样东西",
+      "breakdown": [
+        {
+          "letter": "noth",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ʌ/"
+        }
+      ],
+      "sentences": [
+        "I have nothing to do.",
+        "我无事可做。"
+      ]
+    },
+    {
+      "word": "something",
+      "phonetic": "/ˈsʌmθɪŋ/",
+      "definition": "pron. 某事，某物",
+      "breakdown": [
+        {
+          "letter": "some",
+          "phon": "/s/"
+        },
+        {
+          "letter": "thing",
+          "phon": "/ʌ/"
+        }
+      ],
+      "sentences": [
+        "I see something.",
+        "我看到一些东西。"
+      ]
+    },
+    {
+      "word": "everything",
+      "phonetic": "/ˈevriθɪŋ/",
+      "definition": "pron. 一切；所有事物",
+      "breakdown": [
+        {
+          "letter": "eve",
+          "phon": "/e/"
+        },
+        {
+          "letter": "ry",
+          "phon": "/v/"
+        },
+        {
+          "letter": "thing",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "Everything is fine.",
+        "一切都很好。"
+      ]
+    }
   ]
-};
+}

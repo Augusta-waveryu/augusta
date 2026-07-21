@@ -5,247 +5,13 @@ window.PHONICS_DAY_03 = {
   "pdfImage": "/phonics/images/day-03.jpg",
   "words": [
     {
-      "word": "bed",
-      "phonetic": "/bed/",
-      "definition": "n. 床",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I go to bed at nine.",
-        "我九点上床睡觉。"
-      ]
-    },
-    {
-      "word": "red",
-      "phonetic": "/red/",
-      "definition": "adj. 红色的",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "The apple is red.",
-        "苹果是红色的。"
-      ]
-    },
-    {
-      "word": "leg",
-      "phonetic": "/leɡ/",
-      "definition": "n. 腿",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "My leg hurts after running.",
-        "跑步后我的腿疼。"
-      ]
-    },
-    {
-      "word": "egg",
-      "phonetic": "/eɡ/",
-      "definition": "n. 鸡蛋",
-      "breakdown": [
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "gg",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "I eat an egg for breakfast.",
-        "我早餐吃一个鸡蛋。"
-      ]
-    },
-    {
-      "word": "net",
-      "phonetic": "/net/",
-      "definition": "n. 网",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The fish is in the net.",
-        "鱼在网里。"
-      ]
-    },
-    {
-      "word": "pet",
-      "phonetic": "/pet/",
-      "definition": "n. 宠物",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I have a pet dog.",
-        "我有一只宠物狗。"
-      ]
-    },
-    {
-      "word": "wet",
-      "phonetic": "/wet/",
-      "definition": "adj. 湿的",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The grass is wet in the morning.",
-        "早上草是湿的。"
-      ]
-    },
-    {
-      "word": "jet",
-      "phonetic": "/dʒet/",
-      "definition": "n. 喷气飞机",
-      "breakdown": [
-        {
-          "letter": "j",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The jet flies very fast.",
-        "喷气飞机飞得很快。"
-      ]
-    },
-    {
-      "word": "get",
-      "phonetic": "/ɡet/",
-      "definition": "v. 得到",
-      "breakdown": [
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I get a gift on my birthday.",
-        "我生日时得到一份礼物。"
-      ]
-    },
-    {
-      "word": "let",
-      "phonetic": "/let/",
-      "definition": "v. 让",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Let me help you.",
-        "让我帮你。"
-      ]
-    },
-    {
       "word": "pen",
       "phonetic": "/pen/",
       "definition": "n. 钢笔",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pen",
           "phon": "/p/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -254,21 +20,58 @@ window.PHONICS_DAY_03 = {
       ]
     },
     {
+      "word": "bed",
+      "phonetic": "/bed/",
+      "definition": "n. 床",
+      "breakdown": [
+        {
+          "letter": "bed",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "I sleep in my bed.",
+        "我在我的床上睡觉。"
+      ]
+    },
+    {
+      "word": "red",
+      "phonetic": "/red/",
+      "definition": "adj. 红色的",
+      "breakdown": [
+        {
+          "letter": "red",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "The apple is red.",
+        "这个苹果是红色的。"
+      ]
+    },
+    {
+      "word": "fed",
+      "phonetic": "/ˈfed/",
+      "definition": "v. 喂养（feed的过去式和过去分词）",
+      "breakdown": [
+        {
+          "letter": "fed",
+          "phon": "/f/"
+        }
+      ],
+      "sentences": [
+        "I fed my cat this morning.",
+        "我今天早上喂了我的猫。"
+      ]
+    },
+    {
       "word": "hen",
       "phonetic": "/hen/",
       "definition": "n. 母鸡",
       "breakdown": [
         {
-          "letter": "h",
+          "letter": "hen",
           "phon": "/h/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -277,21 +80,344 @@ window.PHONICS_DAY_03 = {
       ]
     },
     {
+      "word": "then",
+      "phonetic": "/ðen/",
+      "definition": "adv. 然后；那时",
+      "breakdown": [
+        {
+          "letter": "then",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "First this, then that.",
+        "先这个，然后那个。"
+      ]
+    },
+    {
+      "word": "when",
+      "phonetic": "/wen/",
+      "definition": "adv. 何时",
+      "breakdown": [
+        {
+          "letter": "when",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "When do you sleep?",
+        "你什么时候睡觉？"
+      ]
+    },
+    {
+      "word": "let",
+      "phonetic": "/let/",
+      "definition": "v. 允许；让",
+      "breakdown": [
+        {
+          "letter": "let",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Let me play outside.",
+        "让我出去玩。"
+      ]
+    },
+    {
+      "word": "set",
+      "phonetic": "/set/",
+      "definition": "v. 放置；设定",
+      "breakdown": [
+        {
+          "letter": "set",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Set the table.",
+        "摆好桌子。"
+      ]
+    },
+    {
+      "word": "wet",
+      "phonetic": "/wet/",
+      "definition": "adj. 湿的",
+      "breakdown": [
+        {
+          "letter": "wet",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "My dog is wet.",
+        "我的狗是湿的。"
+      ]
+    },
+    {
+      "word": "pet",
+      "phonetic": "/pet/",
+      "definition": "n. 宠物",
+      "breakdown": [
+        {
+          "letter": "pet",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "I have a pet dog.",
+        "我有一只宠物狗。"
+      ]
+    },
+    {
+      "word": "get",
+      "phonetic": "/ɡet/",
+      "definition": "v. 得到；变成",
+      "breakdown": [
+        {
+          "letter": "get",
+          "phon": "/g/"
+        }
+      ],
+      "sentences": [
+        "Can I get a cookie?",
+        "我能得到一块饼干吗？"
+      ]
+    },
+    {
+      "word": "best",
+      "phonetic": "/best/",
+      "definition": "adj. 最好的",
+      "breakdown": [
+        {
+          "letter": "best",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "You are the best!",
+        "你是最棒的！"
+      ]
+    },
+    {
+      "word": "rest",
+      "phonetic": "/rest/",
+      "definition": "v. 休息；倚靠",
+      "breakdown": [
+        {
+          "letter": "rest",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "Let's rest here.",
+        "我们在这里休息。"
+      ]
+    },
+    {
+      "word": "test",
+      "phonetic": "/test/",
+      "definition": "n. 测验；考验",
+      "breakdown": [
+        {
+          "letter": "test",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "We will have a small test.",
+        "我们会有个小测验。"
+      ]
+    },
+    {
+      "word": "head",
+      "phonetic": "/hed/",
+      "definition": "n. 头；顶部",
+      "breakdown": [
+        {
+          "letter": "head",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "This is my head.",
+        "这是我的头。"
+      ]
+    },
+    {
+      "word": "bread",
+      "phonetic": "/bred/",
+      "definition": "n. 面包",
+      "breakdown": [
+        {
+          "letter": "bread",
+          "phon": "/br/"
+        }
+      ],
+      "sentences": [
+        "I like to eat bread.",
+        "我喜欢吃面包。"
+      ]
+    },
+    {
+      "word": "ready",
+      "phonetic": "/ˈredi/",
+      "definition": "adj. 准备好的；乐意的",
+      "breakdown": [
+        {
+          "letter": "read",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "Are you ready to play?",
+        "你准备好玩了吗？"
+      ]
+    },
+    {
+      "word": "weather",
+      "phonetic": "/ˈweðər/",
+      "definition": "n. 天气",
+      "breakdown": [
+        {
+          "letter": "weath",
+          "phon": "/w/"
+        },
+        {
+          "letter": "er",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "The weather is sunny today.",
+        "今天天气晴朗。"
+      ]
+    },
+    {
+      "word": "friend",
+      "phonetic": "/frend/",
+      "definition": "n. 朋友",
+      "breakdown": [
+        {
+          "letter": "friend",
+          "phon": "/fr/"
+        }
+      ],
+      "sentences": [
+        "This is my best friend.",
+        "这是我最好的朋友。"
+      ]
+    },
+    {
+      "word": "many",
+      "phonetic": "/ˈmeni/",
+      "definition": "adj. 许多的",
+      "breakdown": [
+        {
+          "letter": "man",
+          "phon": "/m/"
+        },
+        {
+          "letter": "y",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "I have many toys.",
+        "我有很多玩具。"
+      ]
+    },
+    {
+      "word": "any",
+      "phonetic": "/ˈeni/",
+      "definition": "det. 任何的；一些",
+      "breakdown": [
+        {
+          "letter": "an",
+          "phon": "/e/"
+        },
+        {
+          "letter": "y",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "Do you have any toys?",
+        "你有任何玩具吗？"
+      ]
+    },
+    {
+      "word": "desk",
+      "phonetic": "/desk/",
+      "definition": "n. 书桌；办公桌",
+      "breakdown": [
+        {
+          "letter": "desk",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "My book is on the desk.",
+        "我的书在书桌上。"
+      ]
+    },
+    {
+      "word": "shell",
+      "phonetic": "/ʃel/",
+      "definition": "n. 贝壳；外壳",
+      "breakdown": [
+        {
+          "letter": "shell",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "We found a pretty shell.",
+        "我们找到一个漂亮的贝壳。"
+      ]
+    },
+    {
+      "word": "help",
+      "phonetic": "/help/",
+      "definition": "v. 帮助",
+      "breakdown": [
+        {
+          "letter": "help",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Can you help me?",
+        "你能帮助我吗？"
+      ]
+    },
+    {
+      "word": "leg",
+      "phonetic": "/leɡ/",
+      "definition": "n. 腿；支架",
+      "breakdown": [
+        {
+          "letter": "leg",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "A dog has four legs.",
+        "狗有四条腿。"
+      ]
+    },
+    {
       "word": "ten",
       "phonetic": "/ten/",
       "definition": "num. 十",
       "breakdown": [
         {
-          "letter": "t",
+          "letter": "ten",
           "phon": "/t/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -300,765 +426,49 @@ window.PHONICS_DAY_03 = {
       ]
     },
     {
-      "word": "men",
-      "phonetic": "/men/",
-      "definition": "n. 男人（复数）",
+      "word": "net",
+      "phonetic": "/net/",
+      "definition": "n. 网；净重",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
+          "letter": "net",
           "phon": "/n/"
         }
       ],
       "sentences": [
-        "Two men are talking.",
-        "两个男人在说话。"
-      ]
-    },
-    {
-      "word": "send",
-      "phonetic": "/send/",
-      "definition": "v. 发送",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "I send a letter to my friend.",
-        "我给朋友寄了一封信。"
-      ]
-    },
-    {
-      "word": "bend",
-      "phonetic": "/bend/",
-      "definition": "v. 弯曲",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "Bend your knees slowly.",
-        "慢慢弯曲你的膝盖。"
-      ]
-    },
-    {
-      "word": "lend",
-      "phonetic": "/lend/",
-      "definition": "v. 借出",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "Can you lend me a book?",
-        "你能借我一本书吗？"
-      ]
-    },
-    {
-      "word": "tent",
-      "phonetic": "/tent/",
-      "definition": "n. 帐篷",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
-        }
-      ],
-      "sentences": [
-        "We sleep in a tent.",
-        "我们在帐篷里睡觉。"
-      ]
-    },
-    {
-      "word": "cent",
-      "phonetic": "/sent/",
-      "definition": "n. 分（货币）",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/s/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
-        }
-      ],
-      "sentences": [
-        "I have fifty cents.",
-        "我有五十分。"
-      ]
-    },
-    {
-      "word": "went",
-      "phonetic": "/went/",
-      "definition": "v. 去（过去式）",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
-        }
-      ],
-      "sentences": [
-        "She went to school yesterday.",
-        "她昨天去上学了。"
-      ]
-    },
-    {
-      "word": "rest",
-      "phonetic": "/rest/",
-      "definition": "n. 休息",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        }
-      ],
-      "sentences": [
-        "Take a rest after lunch.",
-        "午饭后休息一下。"
-      ]
-    },
-    {
-      "word": "test",
-      "phonetic": "/test/",
-      "definition": "n. 测试",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        }
-      ],
-      "sentences": [
-        "I have a test today.",
-        "我今天有考试。"
-      ]
-    },
-    {
-      "word": "desk",
-      "phonetic": "/desk/",
-      "definition": "n. 书桌",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "sk",
-          "phon": "/sk/"
-        }
-      ],
-      "sentences": [
-        "My book is on the desk.",
-        "我的书在桌上。"
-      ]
-    },
-    {
-      "word": "neck",
-      "phonetic": "/nek/",
-      "definition": "n. 脖子",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "He has a long neck.",
-        "他的脖子很长。"
+        "We caught fish in the net.",
+        "我们用网捕鱼。"
       ]
     },
     {
       "word": "bell",
       "phonetic": "/bel/",
-      "definition": "n. 铃",
+      "definition": "n. 铃；钟",
       "breakdown": [
         {
-          "letter": "b",
+          "letter": "bell",
           "phon": "/b/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
         }
       ],
       "sentences": [
-        "The bell is ringing.",
-        "铃在响。"
+        "The bell rings loud.",
+        "铃铛响亮。"
       ]
     },
     {
-      "word": "sell",
-      "phonetic": "/sel/",
-      "definition": "v. 卖",
+      "word": "dress",
+      "phonetic": "/dres/",
+      "definition": "n. 连衣裙",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
+          "letter": "dress",
+          "phon": "/dr/"
         }
       ],
       "sentences": [
-        "They sell fresh fruit.",
-        "他们卖新鲜水果。"
+        "She wears a pretty dress.",
+        "她穿了一条漂亮的连衣裙。"
       ]
-    },
-    {
-      "word": "tell",
-      "phonetic": "/tel/",
-      "definition": "v. 告诉",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "Tell me a story.",
-        "给我讲个故事。"
-      ]
-    },
-    {
-      "word": "well",
-      "phonetic": "/wel/",
-      "definition": "adv. 好",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "She sings very well.",
-        "她唱得很好。"
-      ]
-    },
-    {
-      "word": "yes",
-      "phonetic": "/jes/",
-      "definition": "adv. 是的",
-      "breakdown": [
-        {
-          "letter": "y",
-          "phon": "/j/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "Yes, I like it.",
-        "是的，我喜欢。"
-      ]
-    },
-    {
-      "word": "head",
-      "phonetic": "/hed/",
-      "definition": "n. 头",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I have a headache.",
-        "我头疼。"
-      ]
-    },
-{
-    "word": "fed",
-    "phonetic": "/fɛd/",
-    "definition": "v. 喂（feed的过去式）",
-    "breakdown": [
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "Please fed it.",
-          "请喂（feed的过去式）它。"
-    ]
-},
-{
-    "word": "then",
-    "phonetic": "/ðen/",
-    "definition": "adv. 然后；那时",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "He runs then.",
-          "他然后地跑。"
-    ]
-},
-{
-    "word": "when",
-    "phonetic": "/ʍɛn/",
-    "definition": "adv. 什么时候",
-    "breakdown": [
-          {
-                "letter": "wh",
-                "phon": "/w/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "He runs when.",
-          "他什么时候地跑。"
-    ]
-},
-{
-    "word": "set",
-    "phonetic": "/sɛt/",
-    "definition": "v. 设置；放置",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "Please set it.",
-          "请设置它。"
-    ]
-},
-{
-    "word": "best",
-    "phonetic": "/ˈbɛst/",
-    "definition": "adj. 最好的",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "It is very best.",
-          "它非常最好的。"
-    ]
-},
-{
-    "word": "bread",
-    "phonetic": "/bɹeːd/",
-    "definition": "n. 面包",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/e/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "I see a bread.",
-          "我看到一个面包。"
-    ]
-},
-{
-    "word": "ready",
-    "phonetic": "/ˈɹɛdi/",
-    "definition": "adj. 准备好的",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/e/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "It is very ready.",
-          "它非常准备好的。"
-    ]
-},
-{
-    "word": "help",
-    "phonetic": "/hɛlp/",
-    "definition": "v. 帮助",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "Please help it.",
-          "请帮助它。"
-    ]
-},
-{
-    "word": "dress",
-    "phonetic": "/dɹɛs/",
-    "definition": "n. 连衣裙",
-    "breakdown": [
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "I see a dress.",
-          "我看到一个连衣裙。"
-    ]
-},
-{
-    "word": "weather",
-    "phonetic": "/ˈwɛðə/",
-    "definition": "n. 天气",
-    "breakdown": [
-          {
-                "letter": "w",
-                "phon": "/e/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "This is weather.",
-          "这是天气。"
-    ]
-},
-{
-    "word": "friend",
-    "phonetic": "/fɹɛnd/",
-    "definition": "n. 朋友",
-    "breakdown": [
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "This is friend.",
-          "这是朋友。"
-    ]
-},
-{
-    "word": "many",
-    "phonetic": "/ˈmeni/",
-    "definition": "adj. 许多的",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/e/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "It is very many.",
-          "它非常许多的。"
-    ]
-},
-{
-    "word": "any",
-    "phonetic": "/ˈeni/",
-    "definition": "adj. 任何的",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "It is very any.",
-          "它非常任何的。"
-    ]
-},
-{
-    "word": "shell",
-    "phonetic": "/ʃɛl/",
-    "definition": "n. 贝壳",
-    "breakdown": [
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "This is shell.",
-          "这是贝壳。"
-    ]
-}
+    }
   ]
-};
+}

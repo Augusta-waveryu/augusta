@@ -10,197 +10,58 @@ window.PHONICS_DAY_33 = {
       "definition": "pron. 她",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "she",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "e",
-          "phon": "/iː/"
         }
       ],
       "sentences": [
-        "She is my sister.",
-        "她是我妹妹。"
-      ]
-    },
-    {
-      "word": "ship",
-      "phonetic": "/ʃɪp/",
-      "definition": "n. 船",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "The ship is on the sea.",
-        "船在海上。"
+        "She is a girl.",
+        "她是一个女孩。"
       ]
     },
     {
       "word": "shop",
       "phonetic": "/ʃɒp/",
-      "definition": "n. 商店",
+      "definition": "n. 商店；店铺",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "shop",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
         }
       ],
       "sentences": [
-        "I go to the shop.",
-        "我去商店。"
+        "We go to the shop.",
+        "我们去商店。"
       ]
     },
     {
-      "word": "fish",
-      "phonetic": "/fɪʃ/",
-      "definition": "n. 鱼",
+      "word": "ship",
+      "phonetic": "/ʃɪp/",
+      "definition": "n. 船；舰",
       "breakdown": [
         {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "sh",
+          "letter": "ship",
           "phon": "/ʃ/"
         }
       ],
       "sentences": [
-        "I see a fish.",
-        "我看到一条鱼。"
-      ]
-    },
-    {
-      "word": "wish",
-      "phonetic": "/wɪʃ/",
-      "definition": "v. 祝愿",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "I wish you well.",
-        "祝你好运。"
-      ]
-    },
-    {
-      "word": "wash",
-      "phonetic": "/wɒʃ/",
-      "definition": "v. 洗",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "Wash your hands.",
-        "洗手。"
-      ]
-    },
-    {
-      "word": "dish",
-      "phonetic": "/dɪʃ/",
-      "definition": "n. 盘子",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "Put the dish away.",
-        "把盘子收好。"
-      ]
-    },
-    {
-      "word": "push",
-      "phonetic": "/pʊʃ/",
-      "definition": "v. 推",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "Push the door.",
-        "推门。"
+        "A big ship sails the sea.",
+        "一艘大船在海上航行。"
       ]
     },
     {
       "word": "shoe",
       "phonetic": "/ʃuː/",
-      "definition": "n. 鞋",
+      "definition": "n. 鞋子",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "shoe",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "oe",
-          "phon": "/uː/"
         }
       ],
       "sentences": [
-        "I tie my shoe.",
-        "系鞋带。"
+        "My new shoe is red.",
+        "我的新鞋是红色的。"
       ]
     },
     {
@@ -209,159 +70,186 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 绵羊",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "sheep",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "A sheep has soft wool.",
+        "绵羊有柔软的羊毛。"
+      ]
+    },
+    {
+      "word": "fish",
+      "phonetic": "/fɪʃ/",
+      "definition": "n. 鱼",
+      "breakdown": [
+        {
+          "letter": "fish",
+          "phon": "/f/"
+        }
+      ],
+      "sentences": [
+        "A fish swims in water.",
+        "鱼在水里游泳。"
+      ]
+    },
+    {
+      "word": "dish",
+      "phonetic": "/dɪʃ/",
+      "definition": "n. 盘子；一道菜",
+      "breakdown": [
+        {
+          "letter": "dish",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "Please put the dish on the table.",
+        "请把盘子放到桌子上。"
+      ]
+    },
+    {
+      "word": "wish",
+      "phonetic": "/wɪʃ/",
+      "definition": "v. 希望, 祝愿",
+      "breakdown": [
+        {
+          "letter": "wish",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "I wish you well.",
+        "我祝你一切顺利。"
+      ]
+    },
+    {
+      "word": "wash",
+      "phonetic": "/wɒʃ/",
+      "definition": "v. 洗涤",
+      "breakdown": [
+        {
+          "letter": "wash",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "Let's wash our hands.",
+        "我们洗手吧。"
+      ]
+    },
+    {
+      "word": "brush",
+      "phonetic": "/brʌʃ/",
+      "definition": "n. 刷子",
+      "breakdown": [
+        {
+          "letter": "brush",
+          "phon": "/br/"
+        }
+      ],
+      "sentences": [
+        "Brush your teeth daily.",
+        "每天刷牙。"
+      ]
+    },
+    {
+      "word": "short",
+      "phonetic": "/ʃɔːt/",
+      "definition": "adj. 短的；矮的",
+      "breakdown": [
+        {
+          "letter": "short",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "My hair is short.",
+        "我的头发很短。"
+      ]
+    },
+    {
+      "word": "shirt",
+      "phonetic": "/ʃɜːt/",
+      "definition": "n. 衬衫",
+      "breakdown": [
+        {
+          "letter": "shirt",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "My dad wears a blue shirt.",
+        "我爸爸穿一件蓝色衬衫。"
+      ]
+    },
+    {
+      "word": "shape",
+      "phonetic": "/ʃeɪp/",
+      "definition": "n. 形状",
+      "breakdown": [
+        {
+          "letter": "shape",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "What shape is the ball?",
+        "球是什么形状的？"
+      ]
+    },
+    {
+      "word": "shadow",
+      "phonetic": "/ˈʃædəʊ/",
+      "definition": "n. 影子",
+      "breakdown": [
+        {
+          "letter": "shad",
           "phon": "/ʃ/"
         },
         {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "ow",
+          "phon": "/æ/"
         }
       ],
       "sentences": [
-        "The sheep is white.",
-        "绵羊是白色的。"
+        "I see my shadow.",
+        "我看到我的影子。"
       ]
     },
     {
-      "word": "shine",
-      "phonetic": "/ʃaɪn/",
-      "definition": "v. 发光",
+      "word": "shampoo",
+      "phonetic": "/ʃæmˈpuː/",
+      "definition": "n. 洗发水",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "sham",
           "phon": "/ʃ/"
         },
         {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "ne",
-          "phon": "/n/"
+          "letter": "poo",
+          "phon": "/æ/"
         }
       ],
       "sentences": [
-        "The sun shines.",
-        "太阳闪耀。"
+        "Use shampoo for your hair.",
+        "用洗发水洗你的头发。"
       ]
     },
     {
-      "word": "share",
-      "phonetic": "/ʃeə/",
-      "definition": "v. 分享",
+      "word": "chef",
+      "phonetic": "/ʃef/",
+      "definition": "n. 厨师；主厨",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "chef",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "are",
-          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "Share with your friends.",
-        "和朋友分享。"
-      ]
-    },
-    {
-      "word": "shout",
-      "phonetic": "/ʃaʊt/",
-      "definition": "v. 大喊",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Don't shout at me.",
-        "别对我喊。"
-      ]
-    },
-    {
-      "word": "chair",
-      "phonetic": "/tʃeə/",
-      "definition": "n. 椅子",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "air",
-          "phon": "/eə/"
-        }
-      ],
-      "sentences": [
-        "Sit on the chair.",
-        "坐椅子上。"
-      ]
-    },
-    {
-      "word": "cheese",
-      "phonetic": "/tʃiːz/",
-      "definition": "n. 奶酪",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "I like cheese.",
-        "我喜欢奶酪。"
-      ]
-    },
-    {
-      "word": "chicken",
-      "phonetic": "/ˈtʃɪkɪn/",
-      "definition": "n. 鸡",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        },
-        {
-          "letter": "en",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "The chicken lays eggs.",
-        "鸡下蛋。"
+        "The chef cooks yummy food.",
+        "厨师做美味的食物。"
       ]
     },
     {
@@ -370,295 +258,184 @@ window.PHONICS_DAY_33 = {
       "definition": "n. 机器",
       "breakdown": [
         {
-          "letter": "m",
+          "letter": "ma",
           "phon": "/m/"
         },
         {
-          "letter": "a",
+          "letter": "chine",
           "phon": "/ə/"
-        },
-        {
-          "letter": "ch",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "ne",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "The machine works well.",
-        "机器运转良好。"
-      ]
-    },
-    {
-      "word": "chef",
-      "phonetic": "/ʃef/",
-      "definition": "n. 厨师",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ef",
-          "phon": "/ef/"
-        }
-      ],
-      "sentences": [
-        "The chef cooks delicious food.",
-        "厨师做的菜很好吃。"
+        "This is a big machine.",
+        "这是一台大机器。"
       ]
     },
     {
       "word": "sugar",
-      "phonetic": "/ˈʃʊɡə/",
+      "phonetic": "/ˈʃʊɡər/",
       "definition": "n. 糖",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
+          "letter": "sug",
+          "phon": "/ʃ/"
         },
         {
           "letter": "ar",
-          "phon": "/ə/"
+          "phon": "/ʊ/"
         }
       ],
       "sentences": [
-        "I put sugar in tea.",
-        "茶里放糖。"
+        "I like sugar in my tea.",
+        "我喜欢茶里放糖。"
       ]
     },
     {
       "word": "sure",
-      "phonetic": "/ʃʊə/",
-      "definition": "adv. 当然",
+      "phonetic": "/ʃɔː(r)/",
+      "definition": "adj. 确信的；一定的",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "sure",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
-        "I am sure.",
-        "我确定。"
+        "Are you sure about it?",
+        "你确定吗？"
+      ]
+    },
+    {
+      "word": "social",
+      "phonetic": "/ˈsəʊʃəl/",
+      "definition": "adj. 社会的；社交的",
+      "breakdown": [
+        {
+          "letter": "so",
+          "phon": "/s/"
+        },
+        {
+          "letter": "cial",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "We have a social club.",
+        "我们有一个社交俱乐部。"
       ]
     },
     {
       "word": "special",
       "phonetic": "/ˈspeʃəl/",
-      "definition": "adj. 特别的",
+      "definition": "adj. 特别的；特殊的",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
+          "letter": "spe",
+          "phon": "/sp/"
         },
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "e",
+          "letter": "cial",
           "phon": "/e/"
-        },
-        {
-          "letter": "ci",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "al",
-          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "Today is a special day.",
-        "今天是特别的日子。"
-      ]
-    },
-    {
-      "word": "nation",
-      "phonetic": "/ˈneɪʃən/",
-      "definition": "n. 国家",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ti",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "Our nation is strong.",
-        "我们的国家强大。"
+        "You are very special.",
+        "你很特别。"
       ]
     },
     {
       "word": "station",
       "phonetic": "/ˈsteɪʃən/",
-      "definition": "n. 车站",
+      "definition": "n. 车站；电视台",
       "breakdown": [
         {
-          "letter": "st",
+          "letter": "sta",
           "phon": "/st/"
         },
         {
-          "letter": "a",
+          "letter": "tion",
           "phon": "/eɪ/"
-        },
-        {
-          "letter": "ti",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "I wait at the station.",
-        "我在车站等。"
+        "The train is at the station.",
+        "火车在车站。"
+      ]
+    },
+    {
+      "word": "nation",
+      "phonetic": "/ˈneɪʃən/",
+      "definition": "n. 国家，民族",
+      "breakdown": [
+        {
+          "letter": "na",
+          "phon": "/n/"
+        },
+        {
+          "letter": "tion",
+          "phon": "/eɪ/"
+        }
+      ],
+      "sentences": [
+        "Our nation is big.",
+        "我们的国家很大。"
       ]
     },
     {
       "word": "action",
       "phonetic": "/ˈækʃən/",
-      "definition": "n. 行动",
+      "definition": "n. 行动；行为",
       "breakdown": [
         {
-          "letter": "a",
+          "letter": "ac",
           "phon": "/æ/"
         },
         {
-          "letter": "ct",
+          "letter": "tion",
           "phon": "/k/"
-        },
-        {
-          "letter": "io",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "Take action now.",
-        "现在就行动。"
+        "Good action makes friends.",
+        "好的行动能交到朋友。"
       ]
     },
     {
-      "word": "mention",
-      "phonetic": "/ˈmenʃən/",
-      "definition": "v. 提到",
+      "word": "motion",
+      "phonetic": "/ˈməʊʃn/",
+      "definition": "n. 运动；移动",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "mo",
+          "phon": ""
         },
         {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ti",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
+          "letter": "tion",
+          "phon": ""
         }
       ],
       "sentences": [
-        "Don't mention it.",
-        "别客气。"
-      ]
-    },
-    {
-      "word": "patient",
-      "phonetic": "/ˈpeɪʃənt/",
-      "definition": "adj. 耐心的",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ti",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ent",
-          "phon": "/ənt/"
-        }
-      ],
-      "sentences": [
-        "Be patient with kids.",
-        "对孩子要有耐心。"
+        "The car was in motion.",
+        "汽车正在行驶。"
       ]
     },
     {
       "word": "ocean",
       "phonetic": "/ˈəʊʃən/",
-      "definition": "n. 海洋",
+      "definition": "n. 海洋；大海",
       "breakdown": [
         {
           "letter": "o",
           "phon": "/əʊ/"
         },
         {
-          "letter": "c",
+          "letter": "cean",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "The ocean is very deep.",
-        "海洋很深。"
+        "The ocean is big.",
+        "海洋很大。"
       ]
     },
     {
@@ -668,428 +445,86 @@ window.PHONICS_DAY_33 = {
       "breakdown": [
         {
           "letter": "de",
-          "phon": "/dɪ/"
+          "phon": "/d/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
+          "letter": "li",
           "phon": "/ɪ/"
         },
         {
-          "letter": "ci",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ous",
-          "phon": "/əs/"
+          "letter": "cious",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "The food is delicious.",
-        "食物很美味。"
+        "This cake is delicious!",
+        "这个蛋糕真好吃！"
       ]
     },
     {
-      "word": "anxious",
-      "phonetic": "/ˈæŋkʃəs/",
-      "definition": "adj. 焦虑的",
+      "word": "musician",
+      "phonetic": "/mjuːˈzɪʃən/",
+      "definition": "n. 音乐家",
       "breakdown": [
         {
-          "letter": "an",
-          "phon": "/æŋk/"
-        },
-        {
-          "letter": "x",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "ous",
-          "phon": "/əs/"
-        }
-      ],
-      "sentences": [
-        "Don't be anxious.",
-        "别焦虑。"
-      ]
-    },
-    {
-      "word": "mansion",
-      "phonetic": "/ˈmænʃən/",
-      "definition": "n. 宅邸",
-      "breakdown": [
-        {
-          "letter": "m",
+          "letter": "mu",
           "phon": "/m/"
         },
         {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
           "letter": "si",
-          "phon": "/ʃ/"
+          "phon": "/juː/"
         },
         {
-          "letter": "on",
-          "phon": "/ən/"
+          "letter": "cian",
+          "phon": "/z/"
         }
       ],
       "sentences": [
-        "The mansion is huge.",
-        "宅邸很大。"
+        "A musician plays music.",
+        "音乐家演奏音乐。"
       ]
     },
-{
-    "word": "brush",
-    "phonetic": "/bɹʌʃ/",
-    "definition": "n. 刷子",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a brush.",
-          "我看到一个刷子。"
-    ]
-},
-{
-    "word": "short",
-    "phonetic": "/ʃoːt/",
-    "definition": "adj. 短的；矮的",
-    "breakdown": [
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "It is very short.",
-          "它非常短的。"
-    ]
-},
-{
-    "word": "shirt",
-    "phonetic": "/ʃɜːt/",
-    "definition": "n. 衬衫",
-    "breakdown": [
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "ir",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a shirt.",
-          "我看到一个衬衫。"
-    ]
-},
-{
-    "word": "shape",
-    "phonetic": "/ʃeɪp/",
-    "definition": "n. 形状",
-    "breakdown": [
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a shape.",
-          "我看到一个形状。"
-    ]
-},
-{
-    "word": "shadow",
-    "phonetic": "/ˈʃædəʊ/",
-    "definition": "n. 影子",
-    "breakdown": [
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "ow",
-                "phon": "/aʊ/"
-          }
-    ],
-    "sentences": [
-          "I see a shadow.",
-          "我看到一个影子。"
-    ]
-},
-{
-    "word": "shampoo",
-    "phonetic": "/ʃamˈpuː/",
-    "definition": "n. 洗发水",
-    "breakdown": [
-          {
-                "letter": "sh",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "oo",
-                "phon": "/uː/"
-          }
-    ],
-    "sentences": [
-          "I see a shampoo.",
-          "我看到一个洗发水。"
-    ]
-},
-{
-    "word": "social",
-    "phonetic": "/ˈsəʊʃəl/",
-    "definition": "adj. 社会的；社交的",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ci",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "It is very social.",
-          "它非常社会的。"
-    ]
-},
-{
-    "word": "motion",
-    "phonetic": "/ˈməʊʃən/",
-    "definition": "n. 运动；动作",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ti",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a motion.",
-          "我看到一个运动。"
-    ]
-},
-{
-    "word": "musician",
-    "phonetic": "/mjuˈzɪʃən/",
-    "definition": "n. 音乐家",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ci",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a musician.",
-          "我看到一个音乐家。"
-    ]
-},
-{
-    "word": "discussion",
-    "phonetic": "/dɪsˈkʊʃən/",
-    "definition": "n. 讨论",
-    "breakdown": [
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a discussion.",
-          "我看到一个讨论。"
-    ]
-},
-{
-    "word": "russian",
-    "phonetic": "/ˈrʌʃn/",
-    "definition": "adj. 俄罗斯的；俄语的",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "It is very russian.",
-          "它非常俄罗斯的。"
-    ]
-}
+    {
+      "word": "discussion",
+      "phonetic": "/dɪˈskʌʃən/",
+      "definition": "n. 讨论；商议",
+      "breakdown": [
+        {
+          "letter": "dis",
+          "phon": "/d/"
+        },
+        {
+          "letter": "cus",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "We had a good discussion.",
+        "我们进行了一次很好的讨论。"
+      ]
+    },
+    {
+      "word": "Russian",
+      "phonetic": "/ˈrʌʃən/",
+      "definition": "adj. 俄罗斯的，俄语的",
+      "breakdown": [
+        {
+          "letter": "Rus",
+          "phon": "/r/"
+        },
+        {
+          "letter": "sian",
+          "phon": "/ʌ/"
+        }
+      ],
+      "sentences": [
+        "She speaks Russian very well.",
+        "她俄语说得很好。"
+      ]
+    }
   ]
-};
+}

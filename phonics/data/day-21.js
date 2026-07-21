@@ -10,16 +10,8 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 钢笔",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pen",
           "phon": "/p/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
@@ -33,113 +25,43 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 猪",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pig",
           "phon": "/p/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "The pig is pink.",
-        "猪是粉色的。"
+        "A pig has a curly tail.",
+        "猪有卷卷的尾巴。"
       ]
     },
     {
-      "word": "pan",
-      "phonetic": "/pæn/",
-      "definition": "n. 平底锅",
+      "word": "pink",
+      "phonetic": "/pɪŋk/",
+      "definition": "n. 粉红色",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pink",
           "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "Cook eggs in a pan.",
-        "用平底锅煎蛋。"
+        "My dress is pink.",
+        "我的裙子是粉红色的。"
       ]
     },
     {
-      "word": "pot",
-      "phonetic": "/pɒt/",
-      "definition": "n. 锅",
+      "word": "put",
+      "phonetic": "/pʊt/",
+      "definition": "v. 放；置",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "put",
           "phon": "/p/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The pot is hot.",
-        "锅很热。"
-      ]
-    },
-    {
-      "word": "pat",
-      "phonetic": "/pæt/",
-      "definition": "v. 轻拍",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Pat the dog gently.",
-        "轻轻拍狗。"
-      ]
-    },
-    {
-      "word": "pin",
-      "phonetic": "/pɪn/",
-      "definition": "n. 别针",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "I need a pin to fix it.",
-        "我需要一根别针。"
+        "Put your toys away.",
+        "把你的玩具收起来。"
       ]
     },
     {
@@ -148,182 +70,88 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 宠物",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pet",
           "phon": "/p/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "I have a pet cat.",
-        "我有一只宠物猫。"
+        "I have a pet dog.",
+        "我有一只宠物狗。"
       ]
     },
     {
-      "word": "put",
-      "phonetic": "/pʊt/",
-      "definition": "v. 放",
+      "word": "map",
+      "phonetic": "/mæp/",
+      "definition": "n. 地图",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "map",
+          "phon": "/m/"
         }
       ],
       "sentences": [
-        "Put the cup on the table.",
-        "把杯子放在桌上。"
+        "Look at the map.",
+        "看地图。"
       ]
     },
     {
-      "word": "park",
-      "phonetic": "/pɑːk/",
-      "definition": "n. 公园",
+      "word": "cap",
+      "phonetic": "/kæp/",
+      "definition": "n. 帽子；盖子",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "k",
+          "letter": "cap",
           "phon": "/k/"
         }
       ],
       "sentences": [
-        "We play in the park.",
-        "我们在公园玩。"
+        "Wear your red cap.",
+        "戴上你的红帽子。"
       ]
     },
     {
-      "word": "push",
-      "phonetic": "/pʊʃ/",
-      "definition": "v. 推",
+      "word": "cup",
+      "phonetic": "/kʌp/",
+      "definition": "n. 杯子",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
+          "letter": "cup",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "Push the door open.",
-        "推开门。"
+        "Drink water from your cup.",
+        "从你的杯子里喝水。"
       ]
     },
     {
-      "word": "play",
-      "phonetic": "/pleɪ/",
-      "definition": "v. 玩",
+      "word": "top",
+      "phonetic": "/tɒp/",
+      "definition": "n. 顶部；陀螺",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "We play together.",
-        "我们一起玩。"
-      ]
-    },
-    {
-      "word": "pie",
-      "phonetic": "/paɪ/",
-      "definition": "n. 派",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ie",
-          "phon": "/aɪ/"
-        }
-      ],
-      "sentences": [
-        "I like apple pie.",
-        "我喜欢苹果派。"
-      ]
-    },
-    {
-      "word": "pink",
-      "phonetic": "/pɪŋk/",
-      "definition": "adj. 粉色的",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "nk",
-          "phon": "/ŋk/"
-        }
-      ],
-      "sentences": [
-        "My bag is pink.",
-        "我的包是粉色的。"
-      ]
-    },
-    {
-      "word": "plate",
-      "phonetic": "/pleɪt/",
-      "definition": "n. 盘子",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "te",
+          "letter": "top",
           "phon": "/t/"
         }
       ],
       "sentences": [
-        "Put food on the plate.",
-        "把食物放在盘子上。"
+        "The bird is on the top.",
+        "鸟在顶部。"
+      ]
+    },
+    {
+      "word": "stop",
+      "phonetic": "/stɒp/",
+      "definition": "v. 停止；停下",
+      "breakdown": [
+        {
+          "letter": "stop",
+          "phon": "/st/"
+        }
+      ],
+      "sentences": [
+        "Please stop running now.",
+        "请现在停止跑步。"
       ]
     },
     {
@@ -332,191 +160,199 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 飞机",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ne",
-          "phon": "/n/"
+          "letter": "plane",
+          "phon": "/pl/"
         }
       ],
       "sentences": [
-        "The plane flies high.",
-        "飞机飞得高。"
+        "I see a big plane.",
+        "我看到一架大飞机。"
       ]
     },
     {
-      "word": "please",
-      "phonetic": "/pliːz/",
-      "definition": "v. 请",
+      "word": "play",
+      "phonetic": "/pleɪ/",
+      "definition": "v. 玩；演奏",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "play",
+          "phon": "/pl/"
+        }
+      ],
+      "sentences": [
+        "Let's play with the ball.",
+        "我们玩球吧。"
+      ]
+    },
+    {
+      "word": "park",
+      "phonetic": "/pɑːk/",
+      "definition": "n. 公园；停车场",
+      "breakdown": [
+        {
+          "letter": "park",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Let's play in the park.",
+        "我们去公园玩吧。"
+      ]
+    },
+    {
+      "word": "paper",
+      "phonetic": "/ˈpeɪpər/",
+      "definition": "n. 纸",
+      "breakdown": [
+        {
+          "letter": "pa",
           "phon": "/p/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
+          "letter": "per",
+          "phon": "/eɪ/"
+        }
+      ],
+      "sentences": [
+        "Draw a picture on the paper.",
+        "在纸上画一幅画。"
+      ]
+    },
+    {
+      "word": "pencil",
+      "phonetic": "/ˈpensəl/",
+      "definition": "n. 铅笔",
+      "breakdown": [
+        {
+          "letter": "pen",
+          "phon": "/p/"
         },
         {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
+          "letter": "cil",
           "phon": "/e/"
         }
       ],
       "sentences": [
-        "Please sit down.",
-        "请坐下。"
+        "I draw with a pencil.",
+        "我用铅笔画画。"
       ]
     },
     {
-      "word": "police",
-      "phonetic": "/pəˈliːs/",
-      "definition": "n. 警察",
+      "word": "picture",
+      "phonetic": "/ˈpɪktʃər/",
+      "definition": "n. 图画；照片",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pic",
           "phon": "/p/"
         },
         {
-          "letter": "o",
+          "letter": "ture",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "Draw a big red picture.",
+        "画一幅大的红色图画。"
+      ]
+    },
+    {
+      "word": "panda",
+      "phonetic": "/ˈpændə/",
+      "definition": "n. 熊猫",
+      "breakdown": [
+        {
+          "letter": "pan",
+          "phon": "/p/"
+        },
+        {
+          "letter": "da",
+          "phon": "/æ/"
+        }
+      ],
+      "sentences": [
+        "The panda eats bamboo.",
+        "熊猫吃竹子。"
+      ]
+    },
+    {
+      "word": "potato",
+      "phonetic": "/pəˈteɪtoʊ/",
+      "definition": "n. 土豆，马铃薯",
+      "breakdown": [
+        {
+          "letter": "po",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ta",
           "phon": "/ə/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "ce",
-          "phon": "/s/"
+          "letter": "to",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "Call the police for help.",
-        "叫警察帮忙。"
+        "I like to eat potato.",
+        "我喜欢吃土豆。"
       ]
     },
     {
-      "word": "proud",
-      "phonetic": "/praʊd/",
-      "definition": "adj. 骄傲的",
+      "word": "pumpkin",
+      "phonetic": "/ˈpʌmpkɪn/",
+      "definition": "n.南瓜",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pump",
           "phon": "/p/"
         },
         {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
+          "letter": "kin",
+          "phon": "/ʌ/"
         }
       ],
       "sentences": [
-        "I am proud of you.",
-        "我为你骄傲。"
-      ]
-    },
-    {
-      "word": "prize",
-      "phonetic": "/praɪz/",
-      "definition": "n. 奖品",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "ze",
-          "phon": "/z/"
-        }
-      ],
-      "sentences": [
-        "I win a prize.",
-        "我赢了奖品。"
+        "We carved a pumpkin for Halloween.",
+        "我们为万圣节雕刻了一个南瓜。"
       ]
     },
     {
       "word": "apple",
-      "phonetic": "/ˈæpəl/",
+      "phonetic": "/ˈæpl/",
       "definition": "n. 苹果",
       "breakdown": [
         {
-          "letter": "a",
+          "letter": "ap",
           "phon": "/æ/"
         },
         {
-          "letter": "pp",
+          "letter": "ple",
           "phon": "/p/"
-        },
-        {
-          "letter": "le",
-          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "I eat an apple a day.",
-        "我每天吃一个苹果。"
+        "I like to eat an apple.",
+        "我喜欢吃苹果。"
       ]
     },
     {
       "word": "happy",
       "phonetic": "/ˈhæpi/",
-      "definition": "adj. 开心的",
+      "definition": "adj. 快乐的；幸福的",
       "breakdown": [
         {
-          "letter": "h",
+          "letter": "hap",
           "phon": "/h/"
         },
         {
-          "letter": "a",
+          "letter": "py",
           "phon": "/æ/"
-        },
-        {
-          "letter": "pp",
-          "phon": "/p/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
         }
       ],
       "sentences": [
-        "I am very happy.",
-        "我很开心。"
+        "I am a happy boy.",
+        "我是一个快乐的男孩。"
       ]
     },
     {
@@ -525,858 +361,166 @@ window.PHONICS_DAY_21 = {
       "definition": "n. 小狗",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pup",
           "phon": "/p/"
         },
         {
-          "letter": "u",
+          "letter": "py",
           "phon": "/ʌ/"
-        },
-        {
-          "letter": "pp",
-          "phon": "/p/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
         }
       ],
       "sentences": [
-        "The puppy is cute.",
-        "小狗很可爱。"
+        "Look! A cute puppy.",
+        "看！一只可爱的小狗。"
       ]
     },
     {
-      "word": "pepper",
-      "phonetic": "/ˈpepə/",
-      "definition": "n. 胡椒",
+      "word": "supper",
+      "phonetic": "/ˈsʌpər/",
+      "definition": "n. 晚餐；夜宵",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "sup",
+          "phon": "/s/"
         },
         {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "per",
+          "phon": "/ʌ/"
+        }
+      ],
+      "sentences": [
+        "We eat supper at 7.",
+        "我们7点吃晚餐。"
+      ]
+    },
+    {
+      "word": "support",
+      "phonetic": "/səˈpɔːt/",
+      "definition": "v. 支持；支撑",
+      "breakdown": [
+        {
+          "letter": "sup",
+          "phon": "/s/"
         },
         {
-          "letter": "pp",
-          "phon": "/p/"
-        },
-        {
-          "letter": "er",
+          "letter": "port",
           "phon": "/ə/"
         }
       ],
       "sentences": [
-        "Add pepper to the soup.",
-        "在汤里加胡椒。"
+        "I support my friend.",
+        "我支持我的朋友。"
       ]
     },
     {
-      "word": "copper",
-      "phonetic": "/ˈkɒpə/",
-      "definition": "n. 铜",
+      "word": "appear",
+      "phonetic": "/əˈpɪə/",
+      "definition": "v. 出现；显现",
       "breakdown": [
         {
-          "letter": "c",
-          "phon": "/k/"
+          "letter": "ap",
+          "phon": "/ə/"
         },
         {
-          "letter": "o",
+          "letter": "pear",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "He will appear in court tomorrow.",
+        "他明天将出庭。"
+      ]
+    },
+    {
+      "word": "apply",
+      "phonetic": "/əˈplaɪ/",
+      "definition": "v. 申请；应用",
+      "breakdown": [
+        {
+          "letter": "ap",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "ply",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Please apply the glue here.",
+        "请把胶水涂在这里。"
+      ]
+    },
+    {
+      "word": "appeal",
+      "phonetic": "/əˈpiːl/",
+      "definition": "v. 呼吁；恳求",
+      "breakdown": [
+        {
+          "letter": "ap",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "peal",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "The toy has appeal.",
+        "这个玩具有吸引力。"
+      ]
+    },
+    {
+      "word": "popcorn",
+      "phonetic": "/ˈpɒpkɔːn/",
+      "definition": "n.爆米花",
+      "breakdown": [
+        {
+          "letter": "pop",
+          "phon": "/p/"
+        },
+        {
+          "letter": "corn",
           "phon": "/ɒ/"
-        },
-        {
-          "letter": "pp",
-          "phon": "/p/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "The coin is made of copper.",
-        "硬币是铜做的。"
+        "We ate popcorn while watching the movie.",
+        "我们边看电影边吃爆米花。"
       ]
     },
     {
-      "word": "zipper",
-      "phonetic": "/ˈzɪpə/",
-      "definition": "n. 拉链",
+      "word": "pencil-box",
+      "phonetic": "/ˈpensl bɒks/",
+      "definition": "n. 铅笔盒",
       "breakdown": [
         {
-          "letter": "z",
-          "phon": "/z/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "pp",
-          "phon": "/p/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
+          "letter": "pencil-box",
+          "phon": ""
         }
       ],
       "sentences": [
-        "The zipper is broken.",
-        "拉链坏了。"
+        "My new pencil-box has a nice color.",
+        "我的新铅笔盒颜色很好看。"
       ]
     },
     {
-      "word": "ripe",
-      "phonetic": "/raɪp/",
-      "definition": "adj. 成熟的",
+      "word": "playground",
+      "phonetic": "/ˈpleɪɡraʊnd/",
+      "definition": "n. 操场；游乐场",
       "breakdown": [
         {
-          "letter": "r",
-          "phon": "/r/"
+          "letter": "play",
+          "phon": "/pl/"
         },
         {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "pe",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "The banana is ripe.",
-        "香蕉熟了。"
-      ]
-    },
-    {
-      "word": "shape",
-      "phonetic": "/ʃeɪp/",
-      "definition": "n. 形状",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "a",
+          "letter": "ground",
           "phon": "/eɪ/"
-        },
-        {
-          "letter": "pe",
-          "phon": "/p/"
         }
       ],
       "sentences": [
-        "Draw a round shape.",
-        "画一个圆形。"
+        "We go to the playground.",
+        "我们去游乐场。"
       ]
-    },
-    {
-      "word": "hope",
-      "phonetic": "/həʊp/",
-      "definition": "v. 希望",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "pe",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "I hope you are well.",
-        "希望你一切都好。"
-      ]
-    },
-    {
-      "word": "tape",
-      "phonetic": "/teɪp/",
-      "definition": "n. 胶带",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "pe",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Stick it with tape.",
-        "用胶带粘上。"
-      ]
-    },
-    {
-      "word": "happen",
-      "phonetic": "/ˈhæpən/",
-      "definition": "v. 发生",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "pp",
-          "phon": "/p/"
-        },
-        {
-          "letter": "en",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "What happened to you?",
-        "你怎么了？"
-      ]
-    },
-{
-    "word": "map",
-    "phonetic": "/mæp/",
-    "definition": "n. 地图",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "I see a map.",
-          "我看到一个地图。"
-    ]
-},
-{
-    "word": "cap",
-    "phonetic": "/kæp/",
-    "definition": "n. 帽子",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "I see a cap.",
-          "我看到一个帽子。"
-    ]
-},
-{
-    "word": "cup",
-    "phonetic": "/kʌp/",
-    "definition": "n. 杯子",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "I see a cup.",
-          "我看到一个杯子。"
-    ]
-},
-{
-    "word": "top",
-    "phonetic": "/tɒp/",
-    "definition": "n. 顶部",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "I see a top.",
-          "我看到一个顶部。"
-    ]
-},
-{
-    "word": "stop",
-    "phonetic": "/stɒp/",
-    "definition": "v. 停止",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "Please stop it.",
-          "请停止它。"
-    ]
-},
-{
-    "word": "paper",
-    "phonetic": "/ˈpeɪpə/",
-    "definition": "n. 纸；报纸",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "pe",
-                "phon": "/p/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          }
-    ],
-    "sentences": [
-          "I see a paper.",
-          "我看到一个纸。"
-    ]
-},
-{
-    "word": "pencil",
-    "phonetic": "/ˈpɛnsɪl/",
-    "definition": "n. 铅笔",
-    "breakdown": [
-          {
-                "letter": "pe",
-                "phon": "/p/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "I see a pencil.",
-          "我看到一个铅笔。"
-    ]
-},
-{
-    "word": "picture",
-    "phonetic": "/ˈpɪktʃə/",
-    "definition": "n. 图片；照片",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a picture.",
-          "我看到一个图片。"
-    ]
-},
-{
-    "word": "panda",
-    "phonetic": "/ˈpændə/",
-    "definition": "n. 熊猫",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          }
-    ],
-    "sentences": [
-          "I see a panda.",
-          "我看到一个熊猫。"
-    ]
-},
-{
-    "word": "potato",
-    "phonetic": "/pəˈteɪ.təʊ/",
-    "definition": "n. 土豆",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          }
-    ],
-    "sentences": [
-          "I see a potato.",
-          "我看到一个土豆。"
-    ]
-},
-{
-    "word": "pumpkin",
-    "phonetic": "/ˈpʌmpkɪn/",
-    "definition": "n. 南瓜",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "k",
-                "phon": "/k/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a pumpkin.",
-          "我看到一个南瓜。"
-    ]
-},
-{
-    "word": "supper",
-    "phonetic": "/ˈsʌpə/",
-    "definition": "n. 晚餐",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "pp",
-                "phon": "/p/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a supper.",
-          "我看到一个晚餐。"
-    ]
-},
-{
-    "word": "support",
-    "phonetic": "/səˈpɔːt/",
-    "definition": "v. 支持",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "pp",
-                "phon": "/p/"
-          },
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "Please support it.",
-          "请支持它。"
-    ]
-},
-{
-    "word": "appear",
-    "phonetic": "/əˈpiːɹ/",
-    "definition": "v. 出现",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "pp",
-                "phon": "/p/"
-          },
-          {
-                "letter": "ear",
-                "phon": "/ɪə/"
-          }
-    ],
-    "sentences": [
-          "Please appear it.",
-          "请出现它。"
-    ]
-},
-{
-    "word": "application",
-    "phonetic": "/aplɪˈkeɪʃ(ə)n/",
-    "definition": "n. 申请；应用",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "pp",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a application.",
-          "我看到一个申请。"
-    ]
-},
-{
-    "word": "appeal",
-    "phonetic": "/əˈpiːl/",
-    "definition": "v. 呼吁；上诉",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "pp",
-                "phon": "/p/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "Please appeal it.",
-          "请呼吁它。"
-    ]
-},
-{
-    "word": "playground",
-    "phonetic": "/ˈpleɪɡɹaʊnd/",
-    "definition": "n. 操场",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "ay",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "g",
-                "phon": "/g/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "ou",
-                "phon": "/aʊ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "I see a playground.",
-          "我看到一个操场。"
-    ]
-},
-{
-    "word": "apply",
-    "phonetic": "/əˈplaɪ/",
-    "definition": "v. 申请；应用",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "Please apply it.",
-          "请申请它。"
-    ]
-},
-{
-    "word": "popcorn",
-    "phonetic": "/ˈpɒpkɔːn/",
-    "definition": "n. 爆米花",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "This is popcorn.",
-          "这是爆米花。"
-    ]
-},
-{
-    "word": "pencil-box",
-    "phonetic": "/ˈpensl bɒks/",
-    "definition": "n. 铅笔盒",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "x",
-                "phon": "/ks/"
-          }
-    ],
-    "sentences": [
-          "This is pencil-box.",
-          "这是铅笔盒。"
-    ]
-}
+    }
   ]
-};
+}

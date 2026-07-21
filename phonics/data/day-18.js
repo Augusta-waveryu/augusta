@@ -5,6 +5,316 @@ window.PHONICS_DAY_18 = {
   "pdfImage": "/phonics/images/day-18.jpg",
   "words": [
     {
+      "word": "deer",
+      "phonetic": "/dɪə/",
+      "definition": "n. 鹿",
+      "breakdown": [
+        {
+          "letter": "deer",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "I saw a cute deer.",
+        "我看到一只可爱的鹿。"
+      ]
+    },
+    {
+      "word": "beer",
+      "phonetic": "/bɪə/",
+      "definition": "n. 啤酒",
+      "breakdown": [
+        {
+          "letter": "beer",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "Beer is a drink.",
+        "啤酒是一种饮料。"
+      ]
+    },
+    {
+      "word": "cheer",
+      "phonetic": "/tʃɪə/",
+      "definition": "v. 欢呼；喝彩",
+      "breakdown": [
+        {
+          "letter": "cheer",
+          "phon": "/tʃ/"
+        }
+      ],
+      "sentences": [
+        "Let's cheer for them.",
+        "让我们为他们欢呼。"
+      ]
+    },
+    {
+      "word": "here",
+      "phonetic": "/hɪə/",
+      "definition": "adv. 这里",
+      "breakdown": [
+        {
+          "letter": "here",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Come here, please.",
+        "请到这里来。"
+      ]
+    },
+    {
+      "word": "mere",
+      "phonetic": "/mɪə/",
+      "definition": "adj. 仅仅的",
+      "breakdown": [
+        {
+          "letter": "mere",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "It's a mere mistake.",
+        "这只是个小错误。"
+      ]
+    },
+    {
+      "word": "hero",
+      "phonetic": "/ˈhɪərəʊ/",
+      "definition": "n. 英雄",
+      "breakdown": [
+        {
+          "letter": "he",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ro",
+          "phon": "/ɪə/"
+        }
+      ],
+      "sentences": [
+        "He is a hero.",
+        "他是一个英雄。"
+      ]
+    },
+    {
+      "word": "series",
+      "phonetic": "/ˈsɪəriːz/",
+      "definition": "n. 系列；连续",
+      "breakdown": [
+        {
+          "letter": "se",
+          "phon": "/s/"
+        },
+        {
+          "letter": "ries",
+          "phon": "/ɪə/"
+        }
+      ],
+      "sentences": [
+        "This is a book series.",
+        "这是一套丛书。"
+      ]
+    },
+    {
+      "word": "serious",
+      "phonetic": "/ˈsɪəriəs/",
+      "definition": "adj. 严肃的；认真的",
+      "breakdown": [
+        {
+          "letter": "se",
+          "phon": "/s/"
+        },
+        {
+          "letter": "ri",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "ous",
+          "phon": "/i/"
+        }
+      ],
+      "sentences": [
+        "He looks serious.",
+        "他看起来很严肃。"
+      ]
+    },
+    {
+      "word": "area",
+      "phonetic": "/ˈeəriə/",
+      "definition": "n. 区域；面积",
+      "breakdown": [
+        {
+          "letter": "ar",
+          "phon": "/eə/"
+        },
+        {
+          "letter": "e",
+          "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/iə/"
+        }
+      ],
+      "sentences": [
+        "This is a play area.",
+        "这是一个玩耍区域。"
+      ]
+    },
+    {
+      "word": "idea",
+      "phonetic": "/aɪˈdɪə/",
+      "definition": "n. 主意；想法",
+      "breakdown": [
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "de",
+          "phon": "/d/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪə/"
+        }
+      ],
+      "sentences": [
+        "That's a good idea.",
+        "那是一个好主意。"
+      ]
+    },
+    {
+      "word": "theatre",
+      "phonetic": "/ˈθɪətər/",
+      "definition": "n. 剧院；戏院",
+      "breakdown": [
+        {
+          "letter": "the",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "tre",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "We go to the theatre.",
+        "我们去剧院。"
+      ]
+    },
+    {
+      "word": "hear",
+      "phonetic": "/hɪə/",
+      "definition": "v. 听见；听说",
+      "breakdown": [
+        {
+          "letter": "hear",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Can you hear me?",
+        "你能听见我吗？"
+      ]
+    },
+    {
+      "word": "year",
+      "phonetic": "/jɪə/",
+      "definition": "n. 年，年度",
+      "breakdown": [
+        {
+          "letter": "year",
+          "phon": "/j/"
+        }
+      ],
+      "sentences": [
+        "This year, I am six.",
+        "今年，我六岁。"
+      ]
+    },
+    {
+      "word": "tear",
+      "phonetic": "/tɪə/",
+      "definition": "n. 眼泪",
+      "breakdown": [
+        {
+          "letter": "tear",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "A tear rolled down her cheek.",
+        "一滴眼泪从她脸颊滚落。"
+      ]
+    },
+    {
+      "word": "clear",
+      "phonetic": "/klɪə/",
+      "definition": "adj. 清楚的",
+      "breakdown": [
+        {
+          "letter": "clear",
+          "phon": "/kl/"
+        }
+      ],
+      "sentences": [
+        "The sky is clear.",
+        "天空是晴朗的。"
+      ]
+    },
+    {
+      "word": "dear",
+      "phonetic": "/dɪə/",
+      "definition": "adj. 亲爱的，昂贵的",
+      "breakdown": [
+        {
+          "letter": "dear",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "My dear friend is here.",
+        "我亲爱的朋友在这里。"
+      ]
+    },
+    {
+      "word": "fear",
+      "phonetic": "/fɪə/",
+      "definition": "n. 害怕",
+      "breakdown": [
+        {
+          "letter": "fear",
+          "phon": "/f/"
+        }
+      ],
+      "sentences": [
+        "Don't fear the dark.",
+        "不要害怕黑暗。"
+      ]
+    },
+    {
+      "word": "near",
+      "phonetic": "/nɪə/",
+      "definition": "prep. 在…附近",
+      "breakdown": [
+        {
+          "letter": "near",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "My house is near the park.",
+        "我的房子在公园附近。"
+      ]
+    },
+    {
       "word": "ear",
       "phonetic": "/ɪə/",
       "definition": "n. 耳朵",
@@ -15,439 +325,87 @@ window.PHONICS_DAY_18 = {
         }
       ],
       "sentences": [
-        "I have two ears.",
-        "我有两只耳朵。"
+        "I hear with my ear.",
+        "我用耳朵听。"
       ]
     },
     {
-      "word": "hear",
-      "phonetic": "/hɪə/",
-      "definition": "v. 听见",
+      "word": "career",
+      "phonetic": "/kəˈrɪə/",
+      "definition": "n. 职业；生涯",
       "breakdown": [
         {
-          "letter": "h",
-          "phon": "/h/"
+          "letter": "ca",
+          "phon": "/k/"
         },
         {
-          "letter": "ear",
-          "phon": "/ɪə/"
+          "letter": "reer",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "I can hear you.",
-        "我能听见你。"
+        "My dad has a good career.",
+        "我爸爸有一个好的职业。"
       ]
     },
     {
-      "word": "near",
-      "phonetic": "/nɪə/",
-      "definition": "adv. 近",
+      "word": "appear",
+      "phonetic": "/əˈpɪə/",
+      "definition": "v. 出现；显现",
       "breakdown": [
         {
-          "letter": "n",
+          "letter": "ap",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "pear",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "He will appear in court tomorrow.",
+        "他明天将出庭。"
+      ]
+    },
+    {
+      "word": "engineer",
+      "phonetic": "/ˌendʒɪˈnɪər/",
+      "definition": "n. 工程师；技师",
+      "breakdown": [
+        {
+          "letter": "en",
+          "phon": "/e/"
+        },
+        {
+          "letter": "gi",
           "phon": "/n/"
         },
         {
-          "letter": "ear",
-          "phon": "/ɪə/"
+          "letter": "neer",
+          "phon": "/dʒ/"
         }
       ],
       "sentences": [
-        "The school is near my home.",
-        "学校在我家附近。"
-      ]
-    },
-    {
-      "word": "dear",
-      "phonetic": "/dɪə/",
-      "definition": "adj. 亲爱的",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Dear friend, how are you?",
-        "亲爱的朋友，你好吗？"
-      ]
-    },
-    {
-      "word": "fear",
-      "phonetic": "/fɪə/",
-      "definition": "n. 恐惧",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Don't be afraid of fear.",
-        "不要害怕恐惧。"
-      ]
-    },
-    {
-      "word": "tear",
-      "phonetic": "/tɪə/",
-      "definition": "n. 眼泪",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "A tear falls down her face.",
-        "一滴泪从她脸上滑落。"
-      ]
-    },
-    {
-      "word": "year",
-      "phonetic": "/jɪə/",
-      "definition": "n. 年",
-      "breakdown": [
-        {
-          "letter": "y",
-          "phon": "/j/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "I am seven years old.",
-        "我七岁了。"
-      ]
-    },
-    {
-      "word": "clear",
-      "phonetic": "/klɪə/",
-      "definition": "adj. 清楚的",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "The water is very clear.",
-        "水很清澈。"
-      ]
-    },
-    {
-      "word": "gear",
-      "phonetic": "/ɡɪə/",
-      "definition": "n. 齿轮",
-      "breakdown": [
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "The gear turns round.",
-        "齿轮转动。"
-      ]
-    },
-    {
-      "word": "rear",
-      "phonetic": "/rɪə/",
-      "definition": "n. 后部",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Sit in the rear of the car.",
-        "坐在车后面。"
-      ]
-    },
-    {
-      "word": "beer",
-      "phonetic": "/bɪə/",
-      "definition": "n. 啤酒",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Dad drinks a glass of beer.",
-        "爸爸喝了一杯啤酒。"
-      ]
-    },
-    {
-      "word": "deer",
-      "phonetic": "/dɪə/",
-      "definition": "n. 鹿",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "A deer runs in the forest.",
-        "一只鹿在森林里跑。"
-      ]
-    },
-    {
-      "word": "cheer",
-      "phonetic": "/tʃɪə/",
-      "definition": "v. 欢呼",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "We cheer for our team.",
-        "我们为队伍欢呼。"
-      ]
-    },
-    {
-      "word": "steer",
-      "phonetic": "/stɪə/",
-      "definition": "v. 驾驶",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Steer the car carefully.",
-        "小心驾驶。"
-      ]
-    },
-    {
-      "word": "idea",
-      "phonetic": "/aɪˈdɪə/",
-      "definition": "n. 主意",
-      "breakdown": [
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "I have a good idea.",
-        "我有个好主意。"
-      ]
-    },
-    {
-      "word": "real",
-      "phonetic": "/ˈrɪəl/",
-      "definition": "adj. 真的",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/ɪə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "This is a real diamond.",
-        "这是真的钻石。"
-      ]
-    },
-    {
-      "word": "museum",
-      "phonetic": "/mjuːˈzɪəm/",
-      "definition": "n. 博物馆",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "u",
-          "phon": "/juː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪə/"
-        },
-        {
-          "letter": "um",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "We visit the museum on Sunday.",
-        "我们周日参观博物馆。"
-      ]
-    },
-    {
-      "word": "serious",
-      "phonetic": "/ˈsɪəriəs/",
-      "definition": "adj. 严肃的",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "ous",
-          "phon": "/əs/"
-        }
-      ],
-      "sentences": [
-        "He looks very serious.",
-        "他看起来很严肃。"
-      ]
-    },
-    {
-      "word": "hero",
-      "phonetic": "/ˈhɪərəʊ/",
-      "definition": "n. 英雄",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "The hero saves the city.",
-        "英雄拯救了城市。"
-      ]
-    },
-    {
-      "word": "zero",
-      "phonetic": "/ˈzɪərəʊ/",
-      "definition": "num. 零",
-      "breakdown": [
-        {
-          "letter": "z",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "The count starts from zero.",
-        "计数从零开始。"
+        "My dad is an engineer.",
+        "我爸爸是一名工程师。"
       ]
     },
     {
       "word": "cereal",
       "phonetic": "/ˈsɪəriəl/",
-      "definition": "n. 麦片",
+      "definition": "n. 谷物；麦片",
       "breakdown": [
         {
-          "letter": "c",
+          "letter": "ce",
           "phon": "/s/"
         },
         {
-          "letter": "e",
+          "letter": "re",
           "phon": "/ɪə/"
         },
         {
-          "letter": "r",
+          "letter": "al",
           "phon": "/r/"
-        },
-        {
-          "letter": "eal",
-          "phon": "/iəl/"
         }
       ],
       "sentences": [
@@ -456,211 +414,53 @@ window.PHONICS_DAY_18 = {
       ]
     },
     {
-      "word": "pier",
-      "phonetic": "/pɪə/",
-      "definition": "n. 码头",
+      "word": "period",
+      "phonetic": "/ˈpɪəriəd/",
+      "definition": "n. 句号；时期",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pe",
           "phon": "/p/"
         },
         {
-          "letter": "ier",
+          "letter": "ri",
           "phon": "/ɪə/"
+        },
+        {
+          "letter": "od",
+          "phon": "/i/"
         }
       ],
       "sentences": [
-        "We walk on the pier.",
-        "我们在码头上散步。"
+        "It's the end of a period.",
+        "这是一个时期的结束。"
       ]
     },
     {
-      "word": "tier",
-      "phonetic": "/tɪə/",
-      "definition": "n. 层",
+      "word": "experience",
+      "phonetic": "/ɪkˈspɪəriəns/",
+      "definition": "n. 经验；经历",
       "breakdown": [
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ier",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "The cake has three tiers.",
-        "蛋糕有三层。"
-      ]
-    },
-    {
-      "word": "sneer",
-      "phonetic": "/snɪə/",
-      "definition": "v. 嘲笑",
-      "breakdown": [
-        {
-          "letter": "sn",
-          "phon": "/sn/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Don't sneer at others.",
-        "不要嘲笑别人。"
-      ]
-    },
-    {
-      "word": "cashier",
-      "phonetic": "/kæˈʃɪə/",
-      "definition": "n. 收银员",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ier",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Pay the cashier, please.",
-        "请付钱给收银员。"
-      ]
-    },
-    {
-      "word": "pioneer",
-      "phonetic": "/ˌpaɪəˈnɪə/",
-      "definition": "n. 先锋",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "io",
-          "phon": "/aɪə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "He is a pioneer in science.",
-        "他是科学先锋。"
-      ]
-    },
-    {
-      "word": "engineer",
-      "phonetic": "/ˌendʒɪˈnɪə/",
-      "definition": "n. 工程师",
-      "breakdown": [
-        {
-          "letter": "en",
-          "phon": "/en/"
-        },
-        {
-          "letter": "g",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "i",
+          "letter": "ex",
           "phon": "/ɪ/"
         },
         {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "pe",
+          "phon": "/ks/"
         },
         {
-          "letter": "eer",
+          "letter": "ri",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ence",
           "phon": "/ɪə/"
         }
       ],
       "sentences": [
-        "My dad is an engineer.",
-        "我爸爸是工程师。"
-      ]
-    },
-    {
-      "word": "volunteer",
-      "phonetic": "/ˌvɒlənˈtɪə/",
-      "definition": "n. 志愿者",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "un",
-          "phon": "/ən/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "She is a volunteer at the hospital.",
-        "她是医院的志愿者。"
-      ]
-    },
-    {
-      "word": "various",
-      "phonetic": "/ˈveəriəs/",
-      "definition": "adj. 各种各样的",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "ous",
-          "phon": "/əs/"
-        }
-      ],
-      "sentences": [
-        "There are various colors to choose.",
-        "有各种颜色可选。"
+        "It's a fun experience.",
+        "这是一个有趣的经历。"
       ]
     },
     {
@@ -669,409 +469,106 @@ window.PHONICS_DAY_18 = {
       "definition": "n. 材料",
       "breakdown": [
         {
-          "letter": "m",
+          "letter": "ma",
           "phon": "/m/"
         },
         {
-          "letter": "a",
+          "letter": "te",
           "phon": "/ə/"
         },
         {
-          "letter": "t",
+          "letter": "ri",
           "phon": "/t/"
         },
         {
-          "letter": "e",
+          "letter": "al",
           "phon": "/ɪə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ial",
-          "phon": "/iəl/"
         }
       ],
       "sentences": [
-        "The material is very soft.",
-        "材料很柔软。"
+        "This dress uses soft material.",
+        "这件衣服用了柔软的材料。"
       ]
     },
-{
-    "word": "here",
-    "phonetic": "/hiːɹ/",
-    "definition": "adv. 这里",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "He runs here.",
-          "他这里地跑。"
-    ]
-},
-{
-    "word": "mere",
-    "phonetic": "/mɪə/",
-    "definition": "adj. 仅仅的",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "It is very mere.",
-          "它非常仅仅的。"
-    ]
-},
-{
-    "word": "series",
-    "phonetic": "/ˈsɪə.ɹiːz/",
-    "definition": "n. 系列",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "I see a series.",
-          "我看到一个系列。"
-    ]
-},
-{
-    "word": "area",
-    "phonetic": "/ˈɛə̯ɹɪə̯/",
-    "definition": "n. 地区；面积",
-    "breakdown": [
-          {
-                "letter": "ar",
-                "phon": "/ɑː/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/ɪə/"
-          }
-    ],
-    "sentences": [
-          "I see a area.",
-          "我看到一个地区。"
-    ]
-},
-{
-    "word": "theatre",
-    "phonetic": "/ˈθɪətə/",
-    "definition": "n. 剧院",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/ɪə/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a theatre.",
-          "我看到一个剧院。"
-    ]
-},
-{
-    "word": "career",
-    "phonetic": "/kəˈɹɪə/",
-    "definition": "n. 职业；事业",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "ar",
-                "phon": "/ɑː/"
-          },
-          {
-                "letter": "eer",
-                "phon": "/ɪə/"
-          }
-    ],
-    "sentences": [
-          "I see a career.",
-          "我看到一个职业。"
-    ]
-},
-{
-    "word": "appear",
-    "phonetic": "/əˈpiːɹ/",
-    "definition": "v. 出现",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "ear",
-                "phon": "/ɪə/"
-          }
-    ],
-    "sentences": [
-          "Please appear it.",
-          "请出现它。"
-    ]
-},
-{
-    "word": "experience",
-    "phonetic": "/ɪkˈspɪə.ɹɪəns/",
-    "definition": "n. 经验；经历",
-    "breakdown": [
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "x",
-                "phon": "/ks/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a experience.",
-          "我看到一个经验。"
-    ]
-},
-{
-    "word": "really",
-    "phonetic": "/ˈɹɪəli/",
-    "definition": "adv. 真的；非常",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/ɪə/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "He runs really.",
-          "他真的地跑。"
-    ]
-},
-{
-    "word": "almost",
-    "phonetic": "/ɔːl.ˈməʊst/",
-    "definition": "adv. 几乎",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "He runs almost.",
-          "他几乎地跑。"
-    ]
-},
-{
-    "word": "hearing",
-    "phonetic": "/ˈhiːɹ.ɪŋ/",
-    "definition": "n. 听力；听证",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "ear",
-                "phon": "/ɪə/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "I see a hearing.",
-          "我看到一个听力。"
-    ]
-},
-{
-    "word": "period",
-    "phonetic": "/ˈpɪəriəd/",
-    "definition": "n. 时期；句号",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/ɪə/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "This is period.",
-          "这是时期。"
-    ]
-},
-{
-    "word": "nearly",
-    "phonetic": "/ˈnɪəli/",
-    "definition": "adv. 几乎",
-    "breakdown": [
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "ear",
-                "phon": "/ɪə/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "He runs nearly.",
-          "他几乎地跑。"
-    ]
-}
+    {
+      "word": "real",
+      "phonetic": "/rɪəl/",
+      "definition": "adj. 真实的；真正的",
+      "breakdown": [
+        {
+          "letter": "re",
+          "phon": "/r/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɪə/"
+        }
+      ],
+      "sentences": [
+        "Is this a real dog?",
+        "这是真的狗吗？"
+      ]
+    },
+    {
+      "word": "really",
+      "phonetic": "/ˈriːəli/",
+      "definition": "adv. 真正地；确实地",
+      "breakdown": [
+        {
+          "letter": "re",
+          "phon": "/r/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "ly",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "I really like this song.",
+        "我真的很喜欢这首歌。"
+      ]
+    },
+    {
+      "word": "nearly",
+      "phonetic": "/ˈnɪəli/",
+      "definition": "adv. 几乎",
+      "breakdown": [
+        {
+          "letter": "near",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ly",
+          "phon": "/ɪə/"
+        }
+      ],
+      "sentences": [
+        "I am nearly home now.",
+        "我现在差不多到家了。"
+      ]
+    },
+    {
+      "word": "hearing",
+      "phonetic": "/ˈhɪərɪŋ/",
+      "definition": "n. 听力；听证会",
+      "breakdown": [
+        {
+          "letter": "hear",
+          "phon": ""
+        },
+        {
+          "letter": "ing",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "My hearing is good.",
+        "我的听力很好。"
+      ]
+    }
   ]
-};
+}

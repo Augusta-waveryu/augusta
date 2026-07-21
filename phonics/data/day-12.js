@@ -5,95 +5,18 @@ window.PHONICS_DAY_12 = {
   "pdfImage": "/phonics/images/day-12.jpg",
   "words": [
     {
-      "word": "book",
-      "phonetic": "/bʊk/",
-      "definition": "n. 书",
+      "word": "good",
+      "phonetic": "/ɡʊd/",
+      "definition": "adj. 好的；善良的",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
+          "letter": "good",
+          "phon": "/g/"
         }
       ],
       "sentences": [
-        "I read a book every night.",
-        "我每晚读一本书。"
-      ]
-    },
-    {
-      "word": "look",
-      "phonetic": "/lʊk/",
-      "definition": "v. 看",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Look at the blackboard.",
-        "看黑板。"
-      ]
-    },
-    {
-      "word": "took",
-      "phonetic": "/tʊk/",
-      "definition": "v. 拿（过去式）",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "She took my pen.",
-        "她拿了我的笔。"
-      ]
-    },
-    {
-      "word": "cook",
-      "phonetic": "/kʊk/",
-      "definition": "v. 做饭",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "I cook dinner every day.",
-        "我每天做晚饭。"
+        "You are a good boy.",
+        "你是个好孩子。"
       ]
     },
     {
@@ -102,85 +25,23 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 脚",
       "breakdown": [
         {
-          "letter": "f",
+          "letter": "foot",
           "phon": "/f/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "I hurt my foot.",
-        "我伤了脚。"
-      ]
-    },
-    {
-      "word": "good",
-      "phonetic": "/ɡʊd/",
-      "definition": "adj. 好的",
-      "breakdown": [
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "This is a good book.",
-        "这是一本好书。"
-      ]
-    },
-    {
-      "word": "wood",
-      "phonetic": "/wʊd/",
-      "definition": "n. 木头",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "The chair is made of wood.",
-        "椅子是木头做的。"
+        "I walk with my feet.",
+        "我用脚走路。"
       ]
     },
     {
       "word": "stood",
       "phonetic": "/stʊd/",
-      "definition": "v. 站（过去式）",
+      "definition": "v. 站立（stand的过去式）",
       "breakdown": [
         {
-          "letter": "st",
+          "letter": "stood",
           "phon": "/st/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
         }
       ],
       "sentences": [
@@ -189,452 +50,18 @@ window.PHONICS_DAY_12 = {
       ]
     },
     {
-      "word": "hook",
-      "phonetic": "/hʊk/",
-      "definition": "n. 钩子",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Hang your coat on the hook.",
-        "把外套挂在钩子上。"
-      ]
-    },
-    {
-      "word": "shook",
-      "phonetic": "/ʃʊk/",
-      "definition": "v. 摇晃（过去式）",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "He shook his head.",
-        "他摇了摇头。"
-      ]
-    },
-    {
-      "word": "hood",
-      "phonetic": "/hʊd/",
-      "definition": "n. 兜帽",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "Put on your hood.",
-        "戴上兜帽。"
-      ]
-    },
-    {
-      "word": "pull",
-      "phonetic": "/pʊl/",
-      "definition": "v. 拉",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "Pull the door open.",
-        "把门拉开。"
-      ]
-    },
-    {
-      "word": "bull",
-      "phonetic": "/bʊl/",
-      "definition": "n. 公牛",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "The bull is very strong.",
-        "公牛很强壮。"
-      ]
-    },
-    {
-      "word": "full",
-      "phonetic": "/fʊl/",
-      "definition": "adj. 满的",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "The cup is full of water.",
-        "杯子装满了水。"
-      ]
-    },
-    {
-      "word": "push",
-      "phonetic": "/pʊʃ/",
-      "definition": "v. 推",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "Push the door to close it.",
-        "推门关上。"
-      ]
-    },
-    {
-      "word": "bush",
-      "phonetic": "/bʊʃ/",
-      "definition": "n. 灌木",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "A bird hides in the bush.",
-        "一只鸟藏在灌木丛里。"
-      ]
-    },
-    {
-      "word": "put",
-      "phonetic": "/pʊt/",
-      "definition": "v. 放",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Put the book on the desk.",
-        "把书放在桌上。"
-      ]
-    },
-    {
-      "word": "wolf",
-      "phonetic": "/wʊlf/",
-      "definition": "n. 狼",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "lf",
-          "phon": "/lf/"
-        }
-      ],
-      "sentences": [
-        "The wolf howls at night.",
-        "狼在夜里嚎叫。"
-      ]
-    },
-    {
-      "word": "woman",
-      "phonetic": "/ˈwʊmən/",
-      "definition": "n. 女人",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "an",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "The woman is very kind.",
-        "那个女人很善良。"
-      ]
-    },
-    {
-      "word": "should",
-      "phonetic": "/ʃʊd/",
-      "definition": "v. 应该",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
-        }
-      ],
-      "sentences": [
-        "You should drink more water.",
-        "你应该多喝水。"
-      ]
-    },
-    {
-      "word": "would",
+      "word": "wood",
       "phonetic": "/wʊd/",
-      "definition": "v. 会",
+      "definition": "n. 木头；森林",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "wood",
           "phon": "/w/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
         }
       ],
       "sentences": [
-        "I would like some tea.",
-        "我想要一些茶。"
-      ]
-    },
-    {
-      "word": "could",
-      "phonetic": "/kʊd/",
-      "definition": "v. 能",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
-        }
-      ],
-      "sentences": [
-        "I could help you.",
-        "我能帮你。"
-      ]
-    },
-    {
-      "word": "cushion",
-      "phonetic": "/ˈkʊʃən/",
-      "definition": "n. 垫子",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ion",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "The cushion is soft.",
-        "垫子很软。"
-      ]
-    },
-    {
-      "word": "pudding",
-      "phonetic": "/ˈpʊdɪŋ/",
-      "definition": "n. 布丁",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "dd",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ing",
-          "phon": "/ɪŋ/"
-        }
-      ],
-      "sentences": [
-        "I like chocolate pudding.",
-        "我喜欢巧克力布丁。"
-      ]
-    },
-    {
-      "word": "crook",
-      "phonetic": "/krʊk/",
-      "definition": "n. 弯钩",
-      "breakdown": [
-        {
-          "letter": "cr",
-          "phon": "/kr/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The crook is on the wall.",
-        "弯钩在墙上。"
-      ]
-    },
-    {
-      "word": "soot",
-      "phonetic": "/sʊt/",
-      "definition": "n. 煤烟",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The chimney is covered in soot.",
-        "烟囱上满是煤烟。"
-      ]
-    },
-    {
-      "word": "hoof",
-      "phonetic": "/hʊf/",
-      "definition": "n. 蹄子",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        }
-      ],
-      "sentences": [
-        "The horse's hoof is strong.",
-        "马的蹄子很结实。"
+        "The table is made of wood.",
+        "这张桌子是木头做的。"
       ]
     },
     {
@@ -643,44 +70,386 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 羊毛",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "wool",
           "phon": "/w/"
-        },
+        }
+      ],
+      "sentences": [
+        "My hat is made of wool.",
+        "我的帽子是羊毛做的。"
+      ]
+    },
+    {
+      "word": "book",
+      "phonetic": "/bʊk/",
+      "definition": "n. 书；书籍",
+      "breakdown": [
         {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
+          "letter": "book",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "I like to read a book.",
+        "我喜欢看书。"
+      ]
+    },
+    {
+      "word": "look",
+      "phonetic": "/lʊk/",
+      "definition": "v. 看；看起来",
+      "breakdown": [
         {
-          "letter": "l",
+          "letter": "look",
           "phon": "/l/"
         }
       ],
       "sentences": [
-        "The sweater is made of wool.",
-        "毛衣是羊毛做的。"
+        "Look at the bird!",
+        "看那只鸟！"
       ]
     },
     {
-      "word": "woods",
-      "phonetic": "/wʊdz/",
-      "definition": "n. 树林",
+      "word": "cook",
+      "phonetic": "/kʊk/",
+      "definition": "v. 烹饪；煮",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "ds",
-          "phon": "/dz/"
+          "letter": "cook",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "We walk in the woods.",
-        "我们在树林里散步。"
+        "Mom can cook well.",
+        "妈妈会做饭。"
+      ]
+    },
+    {
+      "word": "hook",
+      "phonetic": "/hʊk/",
+      "definition": "n. 钩子",
+      "breakdown": [
+        {
+          "letter": "hook",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Hang your coat on the hook.",
+        "把你的外套挂在钩子上。"
+      ]
+    },
+    {
+      "word": "brook",
+      "phonetic": "/ˈbrʊk/",
+      "definition": "n. 小溪",
+      "breakdown": [
+        {
+          "letter": "brook",
+          "phon": "/br/"
+        }
+      ],
+      "sentences": [
+        "A small brook runs near my house.",
+        "我家附近有一条小溪。"
+      ]
+    },
+    {
+      "word": "took",
+      "phonetic": "/tʊk/",
+      "definition": "v. (take的过去式) 拿；取；带",
+      "breakdown": [
+        {
+          "letter": "took",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "He took the bus to work.",
+        "他乘公共汽车去上班。"
+      ]
+    },
+    {
+      "word": "put",
+      "phonetic": "/pʊt/",
+      "definition": "v. 放；置",
+      "breakdown": [
+        {
+          "letter": "put",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Put your toys away.",
+        "把你的玩具收起来。"
+      ]
+    },
+    {
+      "word": "full",
+      "phonetic": "/fʊl/",
+      "definition": "adj. 饱的；满的",
+      "breakdown": [
+        {
+          "letter": "full",
+          "phon": "/f/"
+        }
+      ],
+      "sentences": [
+        "My tummy is full now.",
+        "我的肚子现在饱了。"
+      ]
+    },
+    {
+      "word": "pull",
+      "phonetic": "/pʊl/",
+      "definition": "v. 拉；拖",
+      "breakdown": [
+        {
+          "letter": "pull",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Please pull the door.",
+        "请拉门。"
+      ]
+    },
+    {
+      "word": "push",
+      "phonetic": "/pʊʃ/",
+      "definition": "v. 推",
+      "breakdown": [
+        {
+          "letter": "push",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Push the door open.",
+        "把门推开。"
+      ]
+    },
+    {
+      "word": "could",
+      "phonetic": "/kʊd/",
+      "definition": "aux.v. （can的过去式）能；可以；可能",
+      "breakdown": [
+        {
+          "letter": "could",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I could jump high.",
+        "我能跳得很高。"
+      ]
+    },
+    {
+      "word": "should",
+      "phonetic": "/ʃʊd/",
+      "definition": "aux. 应该；本应",
+      "breakdown": [
+        {
+          "letter": "should",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "You should be kind.",
+        "你应该友好。"
+      ]
+    },
+    {
+      "word": "would",
+      "phonetic": "/wʊd/",
+      "definition": "aux.v. 将会 (表示意愿)",
+      "breakdown": [
+        {
+          "letter": "would",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "I would like some juice.",
+        "我想要些果汁。"
+      ]
+    },
+    {
+      "word": "woman",
+      "phonetic": "/ˈwʊmən/",
+      "definition": "n. 女人",
+      "breakdown": [
+        {
+          "letter": "wom",
+          "phon": "/w/"
+        },
+        {
+          "letter": "an",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "She is a kind woman.",
+        "她是一个和善的女人。"
+      ]
+    },
+    {
+      "word": "wolf",
+      "phonetic": "/wʊlf/",
+      "definition": "n. 狼",
+      "breakdown": [
+        {
+          "letter": "wolf",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "Look! A big wolf!",
+        "看！一只大狼！"
+      ]
+    },
+    {
+      "word": "bush",
+      "phonetic": "/bʊʃ/",
+      "definition": "n. 灌木；矮树丛",
+      "breakdown": [
+        {
+          "letter": "bush",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "A bird is in the bush.",
+        "一只鸟在灌木丛里。"
+      ]
+    },
+    {
+      "word": "sugar",
+      "phonetic": "/ˈʃʊɡər/",
+      "definition": "n. 糖",
+      "breakdown": [
+        {
+          "letter": "sug",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "I like sugar in my tea.",
+        "我喜欢茶里放糖。"
+      ]
+    },
+    {
+      "word": "pudding",
+      "phonetic": "/ˈpʊdɪŋ/",
+      "definition": "n. 布丁；甜点",
+      "breakdown": [
+        {
+          "letter": "pud",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ding",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "I like to eat pudding.",
+        "我喜欢吃布丁。"
+      ]
+    },
+    {
+      "word": "butcher",
+      "phonetic": "/ˈbʊtʃər/",
+      "definition": "n. 屠夫",
+      "breakdown": [
+        {
+          "letter": "butch",
+          "phon": "/b/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "The butcher sells meat.",
+        "屠夫卖肉。"
+      ]
+    },
+    {
+      "word": "hood",
+      "phonetic": "/hʊd/",
+      "definition": "n. 帽子；兜帽",
+      "breakdown": [
+        {
+          "letter": "hood",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Put your hood up when it rains.",
+        "下雨时把你的帽子戴上。"
+      ]
+    },
+    {
+      "word": "bullet",
+      "phonetic": "/ˈbʊlɪt/",
+      "definition": "n. 子弹",
+      "breakdown": [
+        {
+          "letter": "bul",
+          "phon": "/b/"
+        },
+        {
+          "letter": "let",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "A bullet is very fast.",
+        "子弹非常快。"
+      ]
+    },
+    {
+      "word": "cushion",
+      "phonetic": "/ˈkʊʃən/",
+      "definition": "n. 垫子",
+      "breakdown": [
+        {
+          "letter": "cush",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ion",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "Sit on the soft cushion.",
+        "坐在软垫上。"
+      ]
+    },
+    {
+      "word": "cookie",
+      "phonetic": "/ˈkʊki/",
+      "definition": "n. 曲奇饼干；小甜饼",
+      "breakdown": [
+        {
+          "letter": "cook",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/ʊ/"
+        }
+      ],
+      "sentences": [
+        "He enjoyed a chocolate chip cookie.",
+        "他喜欢吃巧克力曲奇饼。"
       ]
     },
     {
@@ -689,228 +458,37 @@ window.PHONICS_DAY_12 = {
       "definition": "n. 足球",
       "breakdown": [
         {
-          "letter": "f",
+          "letter": "foot",
           "phon": "/f/"
         },
         {
-          "letter": "oo",
+          "letter": "ball",
           "phon": "/ʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "al",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
         }
       ],
       "sentences": [
-        "I play football after school.",
-        "放学后我踢足球。"
+        "Let's play football.",
+        "让我们踢足球。"
       ]
     },
-{
-    "word": "brook",
-    "phonetic": "/bɹʊk/",
-    "definition": "n. 小溪",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "oo",
-                "phon": "/ʊ/"
-          },
-          {
-                "letter": "k",
-                "phon": "/k/"
-          }
-    ],
-    "sentences": [
-          "I see a brook.",
-          "我看到一个小溪。"
-    ]
-},
-{
-    "word": "sugar",
-    "phonetic": "/ˈʃʊɡə(ɹ)/",
-    "definition": "n. 糖",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʊ/"
-          },
-          {
-                "letter": "g",
-                "phon": "/g/"
-          },
-          {
-                "letter": "ar",
-                "phon": "/ɑː/"
-          }
-    ],
-    "sentences": [
-          "I see a sugar.",
-          "我看到一个糖。"
-    ]
-},
-{
-    "word": "butcher",
-    "phonetic": "/ˈbʊtʃ.ə(ɹ)/",
-    "definition": "n. 屠夫；肉贩",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʊ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a butcher.",
-          "我看到一个屠夫。"
-    ]
-},
-{
-    "word": "bullet",
-    "phonetic": "/ˈbʊl.ɪt/",
-    "definition": "n. 子弹",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʊ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a bullet.",
-          "我看到一个子弹。"
-    ]
-},
-{
-    "word": "cookie",
-    "phonetic": "/ˈkuːki/",
-    "definition": "n. 饼干",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "oo",
-                "phon": "/ʊ/"
-          },
-          {
-                "letter": "k",
-                "phon": "/k/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a cookie.",
-          "我看到一个饼干。"
-    ]
-},
-{
-    "word": "classroom",
-    "phonetic": "/ˈklɑːsɹʊm/",
-    "definition": "n. 教室",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "oo",
-                "phon": "/ʊ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          }
-    ],
-    "sentences": [
-          "I see a classroom.",
-          "我看到一个教室。"
-    ]
-}
+    {
+      "word": "classroom",
+      "phonetic": "/ˈklɑːsruːm/",
+      "definition": "n. 教室",
+      "breakdown": [
+        {
+          "letter": "class",
+          "phon": "/kl/"
+        },
+        {
+          "letter": "room",
+          "phon": "/ɑː/"
+        }
+      ],
+      "sentences": [
+        "We are in the classroom.",
+        "我们在教室里。"
+      ]
+    }
   ]
-};
+}

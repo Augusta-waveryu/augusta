@@ -5,95 +5,78 @@ window.PHONICS_DAY_04 = {
   "pdfImage": "/phonics/images/day-04.jpg",
   "words": [
     {
+      "word": "dad",
+      "phonetic": "/dæd/",
+      "definition": "n. 爸爸",
+      "breakdown": [
+        {
+          "letter": "dad",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "My dad loves me.",
+        "我爸爸爱我。"
+      ]
+    },
+    {
+      "word": "bad",
+      "phonetic": "/bæd/",
+      "definition": "adj. 坏的；糟糕的",
+      "breakdown": [
+        {
+          "letter": "bad",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "It is a bad day.",
+        "这是糟糕的一天。"
+      ]
+    },
+    {
+      "word": "sad",
+      "phonetic": "/sæd/",
+      "definition": "adj. 悲伤的；难过的",
+      "breakdown": [
+        {
+          "letter": "sad",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Don't be sad, be happy.",
+        "不要难过，要开心。"
+      ]
+    },
+    {
       "word": "cat",
       "phonetic": "/kæt/",
       "definition": "n. 猫",
       "breakdown": [
         {
-          "letter": "c",
+          "letter": "cat",
           "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The cat is on the mat.",
-        "猫在垫子上。"
+        "My cat loves to play.",
+        "我的猫喜欢玩耍。"
       ]
     },
     {
-      "word": "bat",
-      "phonetic": "/bæt/",
-      "definition": "n. 球拍；蝙蝠",
+      "word": "fat",
+      "phonetic": "/fæt/",
+      "definition": "adj. 肥胖的",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "fat",
+          "phon": "/f/"
         }
       ],
       "sentences": [
-        "He hits the ball with a bat.",
-        "他用球拍击球。"
-      ]
-    },
-    {
-      "word": "hat",
-      "phonetic": "/hæt/",
-      "definition": "n. 帽子",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I wear a hat in the sun.",
-        "我在太阳下戴帽子。"
-      ]
-    },
-    {
-      "word": "mat",
-      "phonetic": "/mæt/",
-      "definition": "n. 垫子",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Wipe your feet on the mat.",
-        "在垫子上擦擦脚。"
+        "The cat is fat.",
+        "这只猫很胖。"
       ]
     },
     {
@@ -102,569 +85,43 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 老鼠",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "rat",
           "phon": "/r/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "A rat ran across the room.",
-        "一只老鼠跑过房间。"
+        "A rat has a long tail.",
+        "老鼠有长长的尾巴。"
       ]
     },
     {
-      "word": "sat",
-      "phonetic": "/sæt/",
-      "definition": "v. 坐（过去式）",
+      "word": "mad",
+      "phonetic": "/mæd/",
+      "definition": "adj. 生气的；发疯的",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "She sat on the chair.",
-        "她坐在椅子上。"
-      ]
-    },
-    {
-      "word": "map",
-      "phonetic": "/mæp/",
-      "definition": "n. 地图",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Look at the map to find the way.",
-        "看地图找路。"
-      ]
-    },
-    {
-      "word": "cap",
-      "phonetic": "/kæp/",
-      "definition": "n. 帽子",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "He wears a baseball cap.",
-        "他戴着一顶棒球帽。"
-      ]
-    },
-    {
-      "word": "tap",
-      "phonetic": "/tæp/",
-      "definition": "v. 轻拍",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Tap the screen to open it.",
-        "轻触屏幕打开。"
-      ]
-    },
-    {
-      "word": "jam",
-      "phonetic": "/dʒæm/",
-      "definition": "n. 果酱",
-      "breakdown": [
-        {
-          "letter": "j",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "m",
+          "letter": "mad",
           "phon": "/m/"
         }
       ],
       "sentences": [
-        "I like jam on my bread.",
-        "我喜欢在面包上涂果酱。"
-      ]
-    },
-    {
-      "word": "ham",
-      "phonetic": "/hæm/",
-      "definition": "n. 火腿",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "I eat a ham sandwich.",
-        "我吃一个火腿三明治。"
-      ]
-    },
-    {
-      "word": "bad",
-      "phonetic": "/bæd/",
-      "definition": "adj. 坏的",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "The weather is bad today.",
-        "今天天气不好。"
-      ]
-    },
-    {
-      "word": "dad",
-      "phonetic": "/dæd/",
-      "definition": "n. 爸爸",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "My dad is tall.",
-        "我爸爸很高。"
-      ]
-    },
-    {
-      "word": "had",
-      "phonetic": "/hæd/",
-      "definition": "v. 有（过去式）",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I had a good dream.",
-        "我做了一个好梦。"
+        "Don't be mad.",
+        "别生气。"
       ]
     },
     {
       "word": "bag",
       "phonetic": "/bæɡ/",
-      "definition": "n. 包",
+      "definition": "n. 包；袋",
       "breakdown": [
         {
-          "letter": "b",
+          "letter": "bag",
           "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "My bag is heavy.",
-        "我的包很重。"
-      ]
-    },
-    {
-      "word": "rag",
-      "phonetic": "/ræɡ/",
-      "definition": "n. 抹布",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "Clean the table with a rag.",
-        "用抹布擦桌子。"
-      ]
-    },
-    {
-      "word": "tag",
-      "phonetic": "/tæɡ/",
-      "definition": "n. 标签",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "The tag shows the price.",
-        "标签上标着价格。"
-      ]
-    },
-    {
-      "word": "flag",
-      "phonetic": "/flæɡ/",
-      "definition": "n. 旗帜",
-      "breakdown": [
-        {
-          "letter": "fl",
-          "phon": "/fl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "The flag is red and white.",
-        "旗帜是红白相间的。"
-      ]
-    },
-    {
-      "word": "glad",
-      "phonetic": "/ɡlæd/",
-      "definition": "adj. 高兴的",
-      "breakdown": [
-        {
-          "letter": "gl",
-          "phon": "/ɡl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I am glad to see you.",
-        "很高兴见到你。"
-      ]
-    },
-    {
-      "word": "black",
-      "phonetic": "/blæk/",
-      "definition": "adj. 黑色的",
-      "breakdown": [
-        {
-          "letter": "bl",
-          "phon": "/bl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "I have a black pen.",
-        "我有一支黑色钢笔。"
-      ]
-    },
-    {
-      "word": "flat",
-      "phonetic": "/flæt/",
-      "definition": "adj. 平的",
-      "breakdown": [
-        {
-          "letter": "fl",
-          "phon": "/fl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The road is flat.",
-        "路很平坦。"
-      ]
-    },
-    {
-      "word": "stamp",
-      "phonetic": "/stæmp/",
-      "definition": "n. 邮票",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "mp",
-          "phon": "/mp/"
-        }
-      ],
-      "sentences": [
-        "Put a stamp on the letter.",
-        "在信上贴邮票。"
-      ]
-    },
-    {
-      "word": "stand",
-      "phonetic": "/stænd/",
-      "definition": "v. 站立",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "Please stand in line.",
-        "请排队站好。"
-      ]
-    },
-    {
-      "word": "hand",
-      "phonetic": "/hænd/",
-      "definition": "n. 手",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "Raise your hand to speak.",
-        "举手发言。"
-      ]
-    },
-    {
-      "word": "land",
-      "phonetic": "/lænd/",
-      "definition": "n. 陆地",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "The plane lands on the ground.",
-        "飞机降落在地面上。"
-      ]
-    },
-    {
-      "word": "sand",
-      "phonetic": "/sænd/",
-      "definition": "n. 沙子",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "The sand is warm.",
-        "沙子是温暖的。"
-      ]
-    },
-    {
-      "word": "ant",
-      "phonetic": "/ænt/",
-      "definition": "n. 蚂蚁",
-      "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
-        }
-      ],
-      "sentences": [
-        "An ant is very small.",
-        "蚂蚁很小。"
-      ]
-    },
-    {
-      "word": "can",
-      "phonetic": "/kæn/",
-      "definition": "v. 能；n. 罐",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "I can swim fast.",
-        "我能游得很快。"
-      ]
-    },
-    {
-      "word": "fan",
-      "phonetic": "/fæn/",
-      "definition": "n. 风扇",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "Turn on the fan, please.",
-        "请打开风扇。"
+        "Put it in the bag.",
+        "把它放进包里。"
       ]
     },
     {
@@ -673,400 +130,353 @@ window.PHONICS_DAY_04 = {
       "definition": "n. 男人",
       "breakdown": [
         {
-          "letter": "m",
+          "letter": "man",
           "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "The man is very tall.",
-        "那个男人很高。"
+        "He is a tall man.",
+        "他是个高个子男人。"
       ]
     },
-{
-    "word": "sad",
-    "phonetic": "/sæd/",
-    "definition": "adj. 伤心的",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "It is very sad.",
-          "它非常伤心的。"
-    ]
-},
-{
-    "word": "fat",
-    "phonetic": "/fæt/",
-    "definition": "adj. 胖的",
-    "breakdown": [
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "It is very fat.",
-          "它非常胖的。"
-    ]
-},
-{
-    "word": "mad",
-    "phonetic": "/ˈmæːd/",
-    "definition": "adj. 发疯的；生气的",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "It is very mad.",
-          "它非常发疯的。"
-    ]
-},
-{
-    "word": "ban",
-    "phonetic": "/bæn/",
-    "definition": "v. 禁止",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "Please ban it.",
-          "请禁止它。"
-    ]
-},
-{
-    "word": "plan",
-    "phonetic": "/plæn/",
-    "definition": "n. 计划",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a plan.",
-          "我看到一个计划。"
-    ]
-},
-{
-    "word": "back",
-    "phonetic": "/bæk/",
-    "definition": "n. 后面；背部",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "ck",
-                "phon": "/k/"
-          }
-    ],
-    "sentences": [
-          "I see a back.",
-          "我看到一个后面。"
-    ]
-},
-{
-    "word": "track",
-    "phonetic": "/tɹæk/",
-    "definition": "n. 轨道；足迹",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "ck",
-                "phon": "/k/"
-          }
-    ],
-    "sentences": [
-          "I see a track.",
-          "我看到一个轨道。"
-    ]
-},
-{
-    "word": "batt",
-    "phonetic": "/bæt/",
-    "definition": "n. 棉絮",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a batt.",
-          "我看到一个棉絮。"
-    ]
-},
-{
-    "word": "apple",
-    "phonetic": "/ˈæp.əl/",
-    "definition": "n. 苹果",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a apple.",
-          "我看到一个苹果。"
-    ]
-},
-{
-    "word": "happy",
-    "phonetic": "/ˈhæpiː/",
-    "definition": "adj. 快乐的",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "It is very happy.",
-          "它非常快乐的。"
-    ]
-},
-{
-    "word": "family",
-    "phonetic": "/ˈfɛm(ɘ)li/",
-    "definition": "n. 家庭",
-    "breakdown": [
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "I see a family.",
-          "我看到一个家庭。"
-    ]
-},
-{
-    "word": "animal",
-    "phonetic": "/ˈænɪməl/",
-    "definition": "n. 动物",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "I see a animal.",
-          "我看到一个动物。"
-    ]
-},
-{
-    "word": "lamp",
-    "phonetic": "/læmp/",
-    "definition": "n. 灯",
-    "breakdown": [
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "I see a lamp.",
-          "我看到一个灯。"
-    ]
-},
-{
-    "word": "pack",
-    "phonetic": "/pæk/",
-    "definition": "v. 打包",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "ck",
-                "phon": "/k/"
-          }
-    ],
-    "sentences": [
-          "Please pack it.",
-          "请打包它。"
-    ]
-}
+    {
+      "word": "ban",
+      "phonetic": "/bæn/",
+      "definition": "v. 禁止，取缔",
+      "breakdown": [
+        {
+          "letter": "ban",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "They ban toys here.",
+        "他们在这里禁止玩具。"
+      ]
+    },
+    {
+      "word": "fan",
+      "phonetic": "/fæn/",
+      "definition": "n. 粉丝；风扇",
+      "breakdown": [
+        {
+          "letter": "fan",
+          "phon": "/f/"
+        }
+      ],
+      "sentences": [
+        "I am a big fan.",
+        "我是一个大粉丝。"
+      ]
+    },
+    {
+      "word": "flag",
+      "phonetic": "/flæɡ/",
+      "definition": "n. 旗帜",
+      "breakdown": [
+        {
+          "letter": "flag",
+          "phon": "/fl/"
+        }
+      ],
+      "sentences": [
+        "The flag is red.",
+        "这面旗帜是红色的。"
+      ]
+    },
+    {
+      "word": "plan",
+      "phonetic": "/plæn/",
+      "definition": "n. 计划",
+      "breakdown": [
+        {
+          "letter": "plan",
+          "phon": "/pl/"
+        }
+      ],
+      "sentences": [
+        "I have a good plan.",
+        "我有一个好计划。"
+      ]
+    },
+    {
+      "word": "sand",
+      "phonetic": "/sænd/",
+      "definition": "n. 沙子",
+      "breakdown": [
+        {
+          "letter": "sand",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Play in the yellow sand.",
+        "在黄色的沙子里玩。"
+      ]
+    },
+    {
+      "word": "land",
+      "phonetic": "/lænd/",
+      "definition": "n. 陆地；国家",
+      "breakdown": [
+        {
+          "letter": "land",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "The plane will land.",
+        "飞机将要着陆。"
+      ]
+    },
+    {
+      "word": "stand",
+      "phonetic": "/stænd/",
+      "definition": "v. 站立；忍受",
+      "breakdown": [
+        {
+          "letter": "stand",
+          "phon": "/st/"
+        }
+      ],
+      "sentences": [
+        "Please stand up straight.",
+        "请站直。"
+      ]
+    },
+    {
+      "word": "black",
+      "phonetic": "/blæk/",
+      "definition": "adj. 黑色的；黑暗的",
+      "breakdown": [
+        {
+          "letter": "black",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "The cat is black.",
+        "这只猫是黑色的。"
+      ]
+    },
+    {
+      "word": "back",
+      "phonetic": "/bæk/",
+      "definition": "n. 背部；后面",
+      "breakdown": [
+        {
+          "letter": "back",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "Come back home now.",
+        "现在回家。"
+      ]
+    },
+    {
+      "word": "pack",
+      "phonetic": "/pæk/",
+      "definition": "v. 打包",
+      "breakdown": [
+        {
+          "letter": "pack",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Pack your toys in the box.",
+        "把你的玩具装进盒子里。"
+      ]
+    },
+    {
+      "word": "track",
+      "phonetic": "/træk/",
+      "definition": "n. 轨道；小路",
+      "breakdown": [
+        {
+          "letter": "track",
+          "phon": "/tr/"
+        }
+      ],
+      "sentences": [
+        "The train runs on the track.",
+        "火车在轨道上行驶。"
+      ]
+    },
+    {
+      "word": "hand",
+      "phonetic": "/hænd/",
+      "definition": "n. 手；指针",
+      "breakdown": [
+        {
+          "letter": "hand",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Give me your hand.",
+        "把你的手给我。"
+      ]
+    },
+    {
+      "word": "apple",
+      "phonetic": "/ˈæpl/",
+      "definition": "n. 苹果",
+      "breakdown": [
+        {
+          "letter": "ap",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ple",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "I like to eat an apple.",
+        "我喜欢吃苹果。"
+      ]
+    },
+    {
+      "word": "happy",
+      "phonetic": "/ˈhæpi/",
+      "definition": "adj. 快乐的；幸福的",
+      "breakdown": [
+        {
+          "letter": "hap",
+          "phon": "/h/"
+        },
+        {
+          "letter": "py",
+          "phon": "/æ/"
+        }
+      ],
+      "sentences": [
+        "I am a happy boy.",
+        "我是一个快乐的男孩。"
+      ]
+    },
+    {
+      "word": "family",
+      "phonetic": "/ˈfæməli/",
+      "definition": "n. 家庭；家人",
+      "breakdown": [
+        {
+          "letter": "fam",
+          "phon": "/f/"
+        },
+        {
+          "letter": "i",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ly",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "I love my family.",
+        "我爱我的家人。"
+      ]
+    },
+    {
+      "word": "animal",
+      "phonetic": "/ˈænɪməl/",
+      "definition": "n. 动物",
+      "breakdown": [
+        {
+          "letter": "an",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/n/"
+        },
+        {
+          "letter": "mal",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "A dog is an animal.",
+        "狗是一种动物。"
+      ]
+    },
+    {
+      "word": "map",
+      "phonetic": "/mæp/",
+      "definition": "n. 地图",
+      "breakdown": [
+        {
+          "letter": "map",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "Look at the map.",
+        "看地图。"
+      ]
+    },
+    {
+      "word": "cap",
+      "phonetic": "/kæp/",
+      "definition": "n. 帽子；盖子",
+      "breakdown": [
+        {
+          "letter": "cap",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "Wear your red cap.",
+        "戴上你的红帽子。"
+      ]
+    },
+    {
+      "word": "bat",
+      "phonetic": "/bæt/",
+      "definition": "n. 球棒；蝙蝠",
+      "breakdown": [
+        {
+          "letter": "bat",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "He hit the ball with a bat.",
+        "他用球棒击球。"
+      ]
+    },
+    {
+      "word": "lamp",
+      "phonetic": "/læmp/",
+      "definition": "n. 灯",
+      "breakdown": [
+        {
+          "letter": "lamp",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Turn on the lamp.",
+        "打开灯。"
+      ]
+    },
+    {
+      "word": "jam",
+      "phonetic": "/dʒæm/",
+      "definition": "n. 果酱；堵塞",
+      "breakdown": [
+        {
+          "letter": "jam",
+          "phon": "/dʒ/"
+        }
+      ],
+      "sentences": [
+        "I like strawberry jam.",
+        "我喜欢草莓酱。"
+      ]
+    }
   ]
-};
+}

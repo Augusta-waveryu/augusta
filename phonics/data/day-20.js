@@ -6,132 +6,445 @@ window.PHONICS_DAY_20 = {
   "words": [
     {
       "word": "poor",
-      "phonetic": "/pʊə/",
-      "definition": "adj. 贫穷的",
+      "phonetic": "/pɔː/",
+      "definition": "adj. 贫穷的；可怜的",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "poor",
           "phon": "/p/"
-        },
-        {
-          "letter": "oor",
-          "phon": "/ʊə/"
         }
       ],
       "sentences": [
-        "The poor man has no food.",
-        "穷人没有食物。"
+        "The poor dog needs food.",
+        "这只可怜的狗需要食物。"
       ]
     },
     {
-      "word": "sure",
-      "phonetic": "/ʃʊə/",
-      "definition": "adv. 当然",
+      "word": "boor",
+      "phonetic": "/bʊə/",
+      "definition": "n. 粗鲁的人",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "boor",
+          "phon": ""
         }
       ],
       "sentences": [
-        "I am sure you can do it.",
-        "我相信你能做到。"
+        "He was a boor and never said \"please\".",
+        "他是个粗鲁的人，从不说“请”。"
       ]
     },
     {
-      "word": "cure",
-      "phonetic": "/kjʊə/",
-      "definition": "v. 治愈",
+      "word": "moor",
+      "phonetic": "/mɔː/",
+      "definition": "n. 荒野；沼泽地",
       "breakdown": [
         {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "moor",
+          "phon": "/m/"
         }
       ],
       "sentences": [
-        "The doctor cures the sick.",
-        "医生治愈病人。"
-      ]
-    },
-    {
-      "word": "pure",
-      "phonetic": "/pjʊə/",
-      "definition": "adj. 纯净的",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The water is pure.",
-        "水是纯净的。"
-      ]
-    },
-    {
-      "word": "lure",
-      "phonetic": "/lʊə/",
-      "definition": "v. 诱惑",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The fish bites the lure.",
-        "鱼咬了诱饵。"
+        "The sheep graze on the moor.",
+        "羊在荒野上吃草。"
       ]
     },
     {
       "word": "tour",
       "phonetic": "/tʊə/",
-      "definition": "n. 旅行",
+      "definition": "n. 旅行；观光",
       "breakdown": [
         {
-          "letter": "t",
+          "letter": "tour",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "We went on a fun tour.",
+        "我们进行了一次有趣的旅行。"
+      ]
+    },
+    {
+      "word": "tourist",
+      "phonetic": "/ˈtʊərɪst/",
+      "definition": "n. 游客；观光客",
+      "breakdown": [
+        {
+          "letter": "tour",
           "phon": "/t/"
         },
         {
-          "letter": "our",
+          "letter": "ist",
           "phon": "/ʊə/"
         }
       ],
       "sentences": [
-        "We go on a tour of the city.",
-        "我们去城市旅行。"
+        "Many tourists visit our city.",
+        "许多游客参观我们的城市。"
+      ]
+    },
+    {
+      "word": "tourism",
+      "phonetic": "/ˈtʊərɪzəm/",
+      "definition": "n. 旅游业；观光",
+      "breakdown": [
+        {
+          "letter": "tour",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ism",
+          "phon": "/ʊə/"
+        }
+      ],
+      "sentences": [
+        "Tourism helps our town.",
+        "旅游业对我们的小镇有帮助。"
+      ]
+    },
+    {
+      "word": "detour",
+      "phonetic": "/ˈdiːtʊə/",
+      "definition": "n. 绕行，改道",
+      "breakdown": [
+        {
+          "letter": "de",
+          "phon": ""
+        },
+        {
+          "letter": "tour",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "We had to make a detour because of the roadworks.",
+        "因为修路，我们不得不绕道。"
+      ]
+    },
+    {
+      "word": "gourd",
+      "phonetic": "/ɡʊəd/",
+      "definition": "n. 葫芦",
+      "breakdown": [
+        {
+          "letter": "gourd",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "We saw a large gourd growing in the garden.",
+        "我们看到花园里长着一个大葫芦。"
+      ]
+    },
+    {
+      "word": "sure",
+      "phonetic": "/ʃɔː(r)/",
+      "definition": "adj. 确信的；一定的",
+      "breakdown": [
+        {
+          "letter": "sure",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "Are you sure about it?",
+        "你确定吗？"
+      ]
+    },
+    {
+      "word": "assure",
+      "phonetic": "/əˈʃʊər/",
+      "definition": "v. 保证；使确信",
+      "breakdown": [
+        {
+          "letter": "as",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "sure",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "I assure you it's safe.",
+        "我向你保证它是安全的。"
+      ]
+    },
+    {
+      "word": "ensure",
+      "phonetic": "/ɪnˈʃʊər/",
+      "definition": "v. 确保；保证",
+      "breakdown": [
+        {
+          "letter": "en",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sure",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "Please ensure your safety.",
+        "请确保你的安全。"
+      ]
+    },
+    {
+      "word": "insure",
+      "phonetic": "/ɪnˈʃʊə/",
+      "definition": "v. 给…上保险",
+      "breakdown": [
+        {
+          "letter": "in",
+          "phon": ""
+        },
+        {
+          "letter": "sure",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "You should insure your car.",
+        "你应该给你的车上保险。"
+      ]
+    },
+    {
+      "word": "pure",
+      "phonetic": "/pjʊə/",
+      "definition": "adj. 纯洁的；纯净的",
+      "breakdown": [
+        {
+          "letter": "pure",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "This water is pure.",
+        "这水是纯净的。"
+      ]
+    },
+    {
+      "word": "cure",
+      "phonetic": "/kjʊə/",
+      "definition": "v. 治愈；治疗",
+      "breakdown": [
+        {
+          "letter": "cure",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "The doctor can cure him.",
+        "医生能治好他。"
+      ]
+    },
+    {
+      "word": "secure",
+      "phonetic": "/sɪˈkjʊər/",
+      "definition": "adj. 安全的；牢固的",
+      "breakdown": [
+        {
+          "letter": "se",
+          "phon": "/s/"
+        },
+        {
+          "letter": "cure",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "The door is secure.",
+        "门是安全的。"
+      ]
+    },
+    {
+      "word": "procure",
+      "phonetic": "/prəˈkjʊər/",
+      "definition": "v. 获得",
+      "breakdown": [
+        {
+          "letter": "pro",
+          "phon": ""
+        },
+        {
+          "letter": "cure",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "I need to procure some food for dinner.",
+        "我需要购买一些食物做晚餐。"
+      ]
+    },
+    {
+      "word": "endure",
+      "phonetic": "/ɪnˈdjʊər/",
+      "definition": "v. 忍受；持续",
+      "breakdown": [
+        {
+          "letter": "en",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "dure",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "He can endure the cold.",
+        "他能忍受寒冷。"
+      ]
+    },
+    {
+      "word": "obscure",
+      "phonetic": "/əbˈskjʊə/",
+      "definition": "adj. 模糊的，晦涩的",
+      "breakdown": [
+        {
+          "letter": "ob",
+          "phon": ""
+        },
+        {
+          "letter": "scure",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "The meaning of the poem was obscure.",
+        "这首诗的意思很模糊。"
+      ]
+    },
+    {
+      "word": "allure",
+      "phonetic": "/əˈlʊə/",
+      "definition": "v. 吸引；诱惑",
+      "breakdown": [
+        {
+          "letter": "al",
+          "phon": ""
+        },
+        {
+          "letter": "lure",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "The allure of the sea is strong.",
+        "大海的魅力很强大。"
+      ]
+    },
+    {
+      "word": "lure",
+      "phonetic": "/ljʊə/",
+      "definition": "v. 引诱；诱惑",
+      "breakdown": [
+        {
+          "letter": "lure",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "The bright colours lure the fish.",
+        "鲜艳的颜色引诱鱼儿。"
+      ]
+    },
+    {
+      "word": "jury",
+      "phonetic": "/ˈdʒʊəri/",
+      "definition": "n. 陪审团",
+      "breakdown": [
+        {
+          "letter": "ju",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "ry",
+          "phon": "/ʊə/"
+        }
+      ],
+      "sentences": [
+        "The jury listened carefully.",
+        "陪审团仔细聆听。"
+      ]
+    },
+    {
+      "word": "fury",
+      "phonetic": "/ˈfjʊəri/",
+      "definition": "n. 狂怒，暴怒",
+      "breakdown": [
+        {
+          "letter": "fu",
+          "phon": ""
+        },
+        {
+          "letter": "ry",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "He shouted in a fit of fury.",
+        "他狂怒地大喊大叫。"
+      ]
+    },
+    {
+      "word": "curious",
+      "phonetic": "/ˈkjʊərɪəs/",
+      "definition": "adj.好奇的；稀奇的",
+      "breakdown": [
+        {
+          "letter": "cu",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ri",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "ous",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "She was curious to know what would happen next.",
+        "她很好奇接下来会发生什么。"
+      ]
+    },
+    {
+      "word": "Europe",
+      "phonetic": "/ˈjʊərəp/",
+      "definition": "n. 欧洲",
+      "breakdown": [
+        {
+          "letter": "Eu",
+          "phon": "/ˈjʊərəp/"
+        },
+        {
+          "letter": "rope",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "Europe is a big continent.",
+        "欧洲是一个大洲。"
+      ]
+    },
+    {
+      "word": "during",
+      "phonetic": "/ˈdjʊərɪŋ/",
+      "definition": "prep. 在……期间",
+      "breakdown": [
+        {
+          "letter": "dur",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/ʊə/"
+        }
+      ],
+      "sentences": [
+        "We play during the day.",
+        "我们白天玩。"
       ]
     },
     {
@@ -141,1150 +454,101 @@ window.PHONICS_DAY_20 = {
       "breakdown": [
         {
           "letter": "ma",
-          "phon": "/mə/"
-        },
-        {
-          "letter": "t",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "She is a mature student.",
-        "她是个成熟的学生。"
-      ]
-    },
-    {
-      "word": "nature",
-      "phonetic": "/ˈneɪtʃə/",
-      "definition": "n. 自然",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "I love nature.",
-        "我热爱自然。"
-      ]
-    },
-    {
-      "word": "failure",
-      "phonetic": "/ˈfeɪljə/",
-      "definition": "n. 失败",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/jə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Failure is the mother of success.",
-        "失败是成功之母。"
-      ]
-    },
-    {
-      "word": "furniture",
-      "phonetic": "/ˈfɜːnɪtʃə/",
-      "definition": "n. 家具",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "We buy new furniture.",
-        "我们买了新家具。"
-      ]
-    },
-    {
-      "word": "pleasure",
-      "phonetic": "/ˈpleʒə/",
-      "definition": "n. 快乐",
-      "breakdown": [
-        {
-          "letter": "pl",
-          "phon": "/pl/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "It's a pleasure to meet you.",
-        "很高兴认识你。"
-      ]
-    },
-    {
-      "word": "treasure",
-      "phonetic": "/ˈtreʒə/",
-      "definition": "n. 宝藏",
-      "breakdown": [
-        {
-          "letter": "tr",
-          "phon": "/tr/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The pirate finds treasure.",
-        "海盗发现了宝藏。"
-      ]
-    },
-    {
-      "word": "measure",
-      "phonetic": "/ˈmeʒə/",
-      "definition": "v. 测量",
-      "breakdown": [
-        {
-          "letter": "m",
           "phon": "/m/"
         },
         {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
+          "letter": "ture",
           "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
-        "Measure the table with a ruler.",
-        "用尺子量桌子。"
+        "She is very mature for her age.",
+        "她这个年纪很成熟。"
       ]
     },
     {
-      "word": "procedure",
-      "phonetic": "/prəˈsiːdʒə/",
-      "definition": "n. 程序",
+      "word": "purely",
+      "phonetic": "/ˈpjʊəli/",
+      "definition": "adv. 纯粹地，完全地",
       "breakdown": [
         {
-          "letter": "pr",
-          "phon": "/pr/"
+          "letter": "pure",
+          "phon": ""
         },
         {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/"
-        },
-        {
-          "letter": "e",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "d",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "ly",
+          "phon": ""
         }
       ],
       "sentences": [
-        "Follow the procedure carefully.",
-        "仔细按照程序操作。"
+        "I did it purely for fun.",
+        "我做这件事纯粹是为了好玩。"
       ]
     },
     {
-      "word": "usual",
-      "phonetic": "/ˈjuːʒuəl/",
-      "definition": "adj. 通常的",
+      "word": "surely",
+      "phonetic": "/ˈʃʊəli/",
+      "definition": "adv. 确实地；无疑地",
       "breakdown": [
         {
-          "letter": "u",
-          "phon": "/juː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/uəl/"
-        }
-      ],
-      "sentences": [
-        "I take the usual route home.",
-        "我走通常的路线回家。"
-      ]
-    },
-    {
-      "word": "casual",
-      "phonetic": "/ˈkæʒjʊəl/",
-      "definition": "adj. 随意的",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/jʊəl/"
-        }
-      ],
-      "sentences": [
-        "I wear casual clothes at home.",
-        "在家穿便装。"
-      ]
-    },
-    {
-      "word": "visual",
-      "phonetic": "/ˈvɪʒjʊəl/",
-      "definition": "adj. 视觉的",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/jʊəl/"
-        }
-      ],
-      "sentences": [
-        "The visual effect is amazing.",
-        "视觉效果很棒。"
-      ]
-    },
-    {
-      "word": "manual",
-      "phonetic": "/ˈmænjʊəl/",
-      "definition": "adj. 手动的",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/jʊəl/"
-        }
-      ],
-      "sentences": [
-        "Read the manual first.",
-        "先读说明书。"
-      ]
-    },
-    {
-      "word": "actual",
-      "phonetic": "/ˈæktʃuəl/",
-      "definition": "adj. 实际的",
-      "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "ct",
-          "phon": "/kt/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/uəl/"
-        }
-      ],
-      "sentences": [
-        "The actual result is different.",
-        "实际结果不同。"
-      ]
-    },
-    {
-      "word": "mutual",
-      "phonetic": "/ˈmjuːtʃuəl/",
-      "definition": "adj. 相互的",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "u",
-          "phon": "/juː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/uəl/"
-        }
-      ],
-      "sentences": [
-        "We have mutual respect.",
-        "我们相互尊重。"
-      ]
-    },
-    {
-      "word": "curious",
-      "phonetic": "/ˈkjʊəriəs/",
-      "definition": "adj. 好奇的",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "u",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "ous",
-          "phon": "/əs/"
-        }
-      ],
-      "sentences": [
-        "The cat is very curious.",
-        "猫很好奇。"
-      ]
-    },
-    {
-      "word": "furious",
-      "phonetic": "/ˈfjʊəriəs/",
-      "definition": "adj. 愤怒的",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "u",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "ous",
-          "phon": "/əs/"
-        }
-      ],
-      "sentences": [
-        "He is furious about the mistake.",
-        "他对错误感到愤怒。"
-      ]
-    },
-    {
-      "word": "during",
-      "phonetic": "/ˈdjʊərɪŋ/",
-      "definition": "prep. 在…期间",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "u",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ing",
-          "phon": "/ɪŋ/"
-        }
-      ],
-      "sentences": [
-        "I read during the break.",
-        "我在休息时看书。"
-      ]
-    },
-    {
-      "word": "jury",
-      "phonetic": "/ˈdʒʊəri/",
-      "definition": "n. 陪审团",
-      "breakdown": [
-        {
-          "letter": "j",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "The jury makes a decision.",
-        "陪审团做出决定。"
-      ]
-    },
-    {
-      "word": "endure",
-      "phonetic": "/ɪnˈdjʊə/",
-      "definition": "v. 忍受",
-      "breakdown": [
-        {
-          "letter": "en",
-          "phon": "/ɪn/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "I endure the pain quietly.",
-        "我默默忍受痛苦。"
-      ]
-    },
-    {
-      "word": "insure",
-      "phonetic": "/ɪnˈʃʊə/",
-      "definition": "v. 保险",
-      "breakdown": [
-        {
-          "letter": "in",
-          "phon": "/ɪn/"
-        },
-        {
-          "letter": "s",
+          "letter": "sure",
           "phon": "/ʃ/"
         },
         {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "ly",
+          "phon": "/ɔː/"
         }
       ],
       "sentences": [
-        "Insure your car before driving.",
-        "开车前给车上保险。"
+        "You will surely win.",
+        "你一定会赢的。"
       ]
     },
     {
-      "word": "secure",
-      "phonetic": "/sɪˈkjʊə/",
-      "definition": "adj. 安全的",
+      "word": "poorly",
+      "phonetic": "/ˈpɔːli/",
+      "definition": "adv. 差地；拙劣地",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "poor",
+          "phon": ""
+        },
+        {
+          "letter": "ly",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "She felt poorly and stayed in bed.",
+        "她感觉不舒服，所以躺在床上。"
+      ]
+    },
+    {
+      "word": "security",
+      "phonetic": "/sɪˈkjʊərəti/",
+      "definition": "n. 安全，保卫",
+      "breakdown": [
+        {
+          "letter": "se",
           "phon": "/s/"
         },
         {
-          "letter": "e",
+          "letter": "cu",
           "phon": "/ɪ/"
         },
         {
-          "letter": "c",
+          "letter": "ri",
           "phon": "/k/"
         },
         {
-          "letter": "ure",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "ty",
+          "phon": "/juː/"
         }
       ],
       "sentences": [
-        "Keep your money in a secure place.",
-        "把钱放在安全的地方。"
+        "The airport has tight security.",
+        "机场安保严密。"
       ]
-    },
-    {
-      "word": "obscure",
-      "phonetic": "/əbˈskjʊə/",
-      "definition": "adj. 模糊的",
-      "breakdown": [
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "sc",
-          "phon": "/sk/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/jʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The meaning is obscure.",
-        "意思很模糊。"
-      ]
-    },
-    {
-      "word": "ensure",
-      "phonetic": "/ɪnˈʃʊə/",
-      "definition": "v. 确保",
-      "breakdown": [
-        {
-          "letter": "en",
-          "phon": "/ɪn/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Ensure the door is locked.",
-        "确保门锁好了。"
-      ]
-    },
-    {
-      "word": "allure",
-      "phonetic": "/əˈlʊə/",
-      "definition": "n. 诱惑力",
-      "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ʊə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The allure of the city is strong.",
-        "这座城市的诱惑力很强。"
-      ]
-    },
-{
-    "word": "boor",
-    "phonetic": "/bʊə/",
-    "definition": "n. 粗野的人",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "oor",
-                "phon": "/ʊə/"
-          }
-    ],
-    "sentences": [
-          "I see a boor.",
-          "我看到一个粗野的人。"
-    ]
-},
-{
-    "word": "moor",
-    "phonetic": "/moː/",
-    "definition": "n. 荒原",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "oor",
-                "phon": "/ʊə/"
-          }
-    ],
-    "sentences": [
-          "I see a moor.",
-          "我看到一个荒原。"
-    ]
-},
-{
-    "word": "tourist",
-    "phonetic": "/ˈtʊəɹɪst/",
-    "definition": "n. 游客",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "our",
-                "phon": "/ʊə/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a tourist.",
-          "我看到一个游客。"
-    ]
-},
-{
-    "word": "tourism",
-    "phonetic": "/tɔːɹɪz(ə)m/",
-    "definition": "n. 旅游业",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "our",
-                "phon": "/ʊə/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          }
-    ],
-    "sentences": [
-          "I see a tourism.",
-          "我看到一个旅游业。"
-    ]
-},
-{
-    "word": "detour",
-    "phonetic": "/ˈdiː.tɔː(ɹ)/",
-    "definition": "n. 绕行；弯路",
-    "breakdown": [
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "our",
-                "phon": "/ʊə/"
-          }
-    ],
-    "sentences": [
-          "I see a detour.",
-          "我看到一个绕行。"
-    ]
-},
-{
-    "word": "gourd",
-    "phonetic": "/ɡɔːd/",
-    "definition": "n. 葫芦",
-    "breakdown": [
-          {
-                "letter": "g",
-                "phon": "/g/"
-          },
-          {
-                "letter": "our",
-                "phon": "/ʊə/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "I see a gourd.",
-          "我看到一个葫芦。"
-    ]
-},
-{
-    "word": "assure",
-    "phonetic": "/əˈʃɔː/",
-    "definition": "v. 保证",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "ure",
-                "phon": "/ʊə/"
-          }
-    ],
-    "sentences": [
-          "Please assure it.",
-          "请保证它。"
-    ]
-},
-{
-    "word": "insurance",
-    "phonetic": "/ɪn.ˈʃɔː.ɹəns/",
-    "definition": "n. 保险",
-    "breakdown": [
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a insurance.",
-          "我看到一个保险。"
-    ]
-},
-{
-    "word": "procure",
-    "phonetic": "/pɹəˈkjɔː/",
-    "definition": "v. 获得；采购",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "ure",
-                "phon": "/ʊə/"
-          }
-    ],
-    "sentences": [
-          "Please procure it.",
-          "请获得它。"
-    ]
-},
-{
-    "word": "fury",
-    "phonetic": "/ˈfjʊəɹi/",
-    "definition": "n. 狂怒",
-    "breakdown": [
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "I see a fury.",
-          "我看到一个狂怒。"
-    ]
-},
-{
-    "word": "europe",
-    "phonetic": "/ˈjʊərəp/",
-    "definition": "n. 欧洲",
-    "breakdown": [
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a europe.",
-          "我看到一个欧洲。"
-    ]
-},
-{
-    "word": "june",
-    "phonetic": "/dʒuːn/",
-    "definition": "n. 六月",
-    "breakdown": [
-          {
-                "letter": "j",
-                "phon": "/dʒ/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a june.",
-          "我看到一个六月。"
-    ]
-},
-{
-    "word": "purely",
-    "phonetic": "/ˈpjɔːli/",
-    "definition": "adv. 纯粹地",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "ure",
-                "phon": "/ʊə/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "He runs purely.",
-          "他纯粹地地跑。"
-    ]
-},
-{
-    "word": "surely",
-    "phonetic": "/ˈʃɔːli/",
-    "definition": "adv. 当然；必定",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "ure",
-                "phon": "/ʊə/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "He runs surely.",
-          "他当然地跑。"
-    ]
-},
-{
-    "word": "poorly",
-    "phonetic": "/ˈpɔː(r)li/",
-    "definition": "adv. 糟糕地；可怜地",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "oor",
-                "phon": "/ʊə/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "He runs poorly.",
-          "他糟糕地地跑。"
-    ]
-},
-{
-    "word": "security",
-    "phonetic": "/sɪˈkjɔːɹəti/",
-    "definition": "n. 安全",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "I see a security.",
-          "我看到一个安全。"
-    ]
-}
+    }
   ]
-};
+}

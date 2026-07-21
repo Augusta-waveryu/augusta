@@ -5,190 +5,39 @@ window.PHONICS_DAY_34 = {
   "pdfImage": "/phonics/images/day-34.jpg",
   "words": [
     {
-      "word": "measure",
-      "phonetic": "/ˈmeʒə/",
-      "definition": "v. 测量",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Measure the table.",
-        "量桌子。"
-      ]
-    },
-    {
-      "word": "treasure",
-      "phonetic": "/ˈtreʒə/",
-      "definition": "n. 宝藏",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Find the treasure.",
-        "找到宝藏。"
-      ]
-    },
-    {
-      "word": "pleasure",
-      "phonetic": "/ˈpleʒə/",
-      "definition": "n. 快乐",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "It's a pleasure.",
-        "这是我的荣幸。"
-      ]
-    },
-    {
-      "word": "usual",
-      "phonetic": "/ˈjuːʒuəl/",
-      "definition": "adj. 通常的",
+      "word": "usually",
+      "phonetic": "/ˈjuːʒuəli/",
+      "definition": "adv. 通常，平常",
       "breakdown": [
         {
           "letter": "u",
           "phon": "/juː/"
         },
         {
-          "letter": "s",
+          "letter": "su",
           "phon": "/ʒ/"
         },
         {
-          "letter": "ual",
-          "phon": "/uəl/"
+          "letter": "al",
+          "phon": ""
+        },
+        {
+          "letter": "ly",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "As usual, I walk home.",
-        "像往常一样走回家。"
-      ]
-    },
-    {
-      "word": "casual",
-      "phonetic": "/ˈkæʒjʊəl/",
-      "definition": "adj. 随意的",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/jʊəl/"
-        }
-      ],
-      "sentences": [
-        "Wear casual clothes.",
-        "穿便装。"
-      ]
-    },
-    {
-      "word": "visual",
-      "phonetic": "/ˈvɪʒjʊəl/",
-      "definition": "adj. 视觉的",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ual",
-          "phon": "/jʊəl/"
-        }
-      ],
-      "sentences": [
-        "Visual art is beautiful.",
-        "视觉艺术很美。"
+        "I usually wake up early.",
+        "我通常很早醒来。"
       ]
     },
     {
       "word": "television",
-      "phonetic": "/ˈtelɪvɪʒən/",
-      "definition": "n. 电视",
+      "phonetic": "/ˈtelɪvɪʒn/",
+      "definition": "n. 电视机",
       "breakdown": [
         {
-          "letter": "t",
+          "letter": "tel",
           "phon": "/t/"
         },
         {
@@ -196,301 +45,231 @@ window.PHONICS_DAY_34 = {
           "phon": "/e/"
         },
         {
-          "letter": "l",
+          "letter": "vi",
           "phon": "/l/"
         },
         {
-          "letter": "e",
+          "letter": "sion",
           "phon": "/ɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "I watch television.",
-        "我看电视。"
+        "I like to watch television.",
+        "我喜欢看电视。"
+      ]
+    },
+    {
+      "word": "treasure",
+      "phonetic": "/ˈtreʒər/",
+      "definition": "n. 宝藏；珍品",
+      "breakdown": [
+        {
+          "letter": "treas",
+          "phon": "/tr/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "This is my treasure box.",
+        "这是我的百宝箱。"
+      ]
+    },
+    {
+      "word": "pleasure",
+      "phonetic": "/ˈpleʒər/",
+      "definition": "n. 愉快；乐趣",
+      "breakdown": [
+        {
+          "letter": "pleas",
+          "phon": "/pl/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "It's my pleasure to help.",
+        "我很乐意帮忙。"
+      ]
+    },
+    {
+      "word": "measure",
+      "phonetic": "/ˈmeʒə/",
+      "definition": "v. 测量；估量",
+      "breakdown": [
+        {
+          "letter": "meas",
+          "phon": "/m/"
+        },
+        {
+          "letter": "ure",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "Can you measure the table?",
+        "你能测量一下桌子吗？"
       ]
     },
     {
       "word": "vision",
       "phonetic": "/ˈvɪʒən/",
-      "definition": "n. 视力",
+      "definition": "n. 视力；想象力",
       "breakdown": [
         {
-          "letter": "v",
+          "letter": "vi",
           "phon": "/v/"
         },
         {
-          "letter": "i",
+          "letter": "sion",
           "phon": "/ɪ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "I have good vision.",
-        "我视力很好。"
+        "My vision is good.",
+        "我的视力很好。"
       ]
     },
     {
       "word": "decision",
       "phonetic": "/dɪˈsɪʒən/",
-      "definition": "n. 决定",
+      "definition": "n. 决定；判断",
       "breakdown": [
         {
-          "letter": "d",
+          "letter": "de",
           "phon": "/d/"
         },
         {
-          "letter": "e",
+          "letter": "ci",
           "phon": "/ɪ/"
         },
         {
-          "letter": "c",
+          "letter": "sion",
           "phon": "/s/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "Make a decision.",
-        "做决定。"
+        "My decision is to play.",
+        "我的决定是玩。"
+      ]
+    },
+    {
+      "word": "occasion",
+      "phonetic": "/əˈkeɪʒən/",
+      "definition": "n. 场合；时机",
+      "breakdown": [
+        {
+          "letter": "oc",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "ca",
+          "phon": "/k/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/eɪ/"
+        }
+      ],
+      "sentences": [
+        "It's a special occasion.",
+        "这是一个特殊的场合。"
       ]
     },
     {
       "word": "revision",
       "phonetic": "/rɪˈvɪʒən/",
-      "definition": "n. 复习",
+      "definition": "n. 修订；修改本",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "re",
           "phon": "/r/"
         },
         {
-          "letter": "e",
+          "letter": "vi",
           "phon": "/ɪ/"
         },
         {
-          "letter": "v",
+          "letter": "sion",
           "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "Do revision for the test.",
-        "复习考试。"
+        "This book needs a revision.",
+        "这本书需要修订。"
       ]
     },
     {
-      "word": "invasion",
-      "phonetic": "/ɪnˈveɪʒən/",
-      "definition": "n. 入侵",
+      "word": "collision",
+      "phonetic": "/kəˈlɪʒn/",
+      "definition": "n. 碰撞",
       "breakdown": [
         {
-          "letter": "in",
-          "phon": "/ɪn/"
+          "letter": "col",
+          "phon": ""
         },
         {
-          "letter": "v",
-          "phon": "/v/"
+          "letter": "li",
+          "phon": ""
         },
         {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
+          "letter": "sion",
+          "phon": ""
         }
       ],
       "sentences": [
-        "The invasion was stopped.",
-        "入侵被阻止了。"
+        "There was a car collision on the road.",
+        "路上发生了一起汽车相撞事故。"
       ]
     },
     {
       "word": "division",
       "phonetic": "/dɪˈvɪʒən/",
-      "definition": "n. 除法；划分",
+      "definition": "n. 分开，划分",
       "breakdown": [
         {
-          "letter": "d",
+          "letter": "di",
           "phon": "/d/"
         },
         {
-          "letter": "i",
+          "letter": "vi",
           "phon": "/ɪ/"
         },
         {
-          "letter": "v",
+          "letter": "sion",
           "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "Learn division in math.",
-        "数学学除法。"
-      ]
-    },
-    {
-      "word": "conclusion",
-      "phonetic": "/kənˈkluːʒən/",
-      "definition": "n. 结论",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "u",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "Draw a conclusion.",
-        "得出结论。"
+        "The division of tasks is fair.",
+        "任务的分配是公平的。"
       ]
     },
     {
       "word": "explosion",
       "phonetic": "/ɪkˈspləʊʒən/",
-      "definition": "n. 爆炸",
+      "definition": "n. 爆炸；爆发",
       "breakdown": [
         {
-          "letter": "e",
-          "phon": "/ɪk/"
+          "letter": "ex",
+          "phon": "/ɪ/"
         },
         {
-          "letter": "x",
-          "phon": "/s/"
+          "letter": "plo",
+          "phon": "/ks/"
         },
         {
-          "letter": "pl",
+          "letter": "sion",
           "phon": "/pl/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "si",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "on",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "The explosion is loud.",
-        "爆炸声很大。"
-      ]
-    },
-    {
-      "word": "rosier",
-      "phonetic": "/ˈrəʊziə/",
-      "definition": "adj. 更美好的",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The future is rosier.",
-        "未来更美好。"
+        "We heard a loud explosion.",
+        "我们听到一声巨响。"
       ]
     },
     {
@@ -499,52 +278,17 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 车库",
       "breakdown": [
         {
-          "letter": "g",
+          "letter": "ga",
           "phon": "/ɡ/"
         },
         {
-          "letter": "a",
+          "letter": "rage",
           "phon": "/æ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "age",
-          "phon": "/ɑːʒ/"
         }
       ],
       "sentences": [
-        "Park in the garage.",
-        "停在车库里。"
-      ]
-    },
-    {
-      "word": "mirage",
-      "phonetic": "/ˈmɪrɑːʒ/",
-      "definition": "n. 海市蜃楼",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "age",
-          "phon": "/ɑːʒ/"
-        }
-      ],
-      "sentences": [
-        "The mirage is not real.",
-        "海市蜃楼不是真的。"
+        "My car is in the garage.",
+        "我的车在车库里。"
       ]
     },
     {
@@ -553,160 +297,70 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 按摩",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "mas",
+          "phon": ""
         },
         {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "ss",
-          "phon": "/s/"
-        },
-        {
-          "letter": "age",
-          "phon": "/ɑːʒ/"
+          "letter": "sage",
+          "phon": ""
         }
       ],
       "sentences": [
-        "I need a massage.",
-        "我需要按摩。"
+        "She gave him a neck massage.",
+        "她给他做了颈部按摩。"
+      ]
+    },
+    {
+      "word": "mirage",
+      "phonetic": "/ˈmɪərɑːʒ/",
+      "definition": "n. 海市蜃楼",
+      "breakdown": [
+        {
+          "letter": "mi",
+          "phon": ""
+        },
+        {
+          "letter": "rage",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "The traveler saw a mirage in the desert.",
+        "旅行者在沙漠中看到了海市蜃楼。"
       ]
     },
     {
       "word": "beige",
       "phonetic": "/beɪʒ/",
-      "definition": "adj. 米色的",
+      "definition": "n. 米色",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ei",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ge",
-          "phon": "/ʒ/"
+          "letter": "beige",
+          "phon": ""
         }
       ],
       "sentences": [
-        "I like beige shoes.",
-        "我喜欢米色鞋。"
+        "She bought a beige coat.",
+        "她买了一件米色外套。"
       ]
     },
     {
-      "word": "rouge",
-      "phonetic": "/ruːʒ/",
-      "definition": "n. 胭脂",
+      "word": "genre",
+      "phonetic": "/ˈʒɒnrə/",
+      "definition": "n. （艺术、文学或音乐的）类型，体裁",
       "breakdown": [
         {
-          "letter": "r",
-          "phon": "/r/"
+          "letter": "gen",
+          "phon": ""
         },
         {
-          "letter": "ou",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "ge",
-          "phon": "/ʒ/"
+          "letter": "re",
+          "phon": ""
         }
       ],
       "sentences": [
-        "She wears rouge.",
-        "她涂了胭脂。"
-      ]
-    },
-    {
-      "word": "barrage",
-      "phonetic": "/ˈbærɑːʒ/",
-      "definition": "n. 弹幕",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "rr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "age",
-          "phon": "/ɑːʒ/"
-        }
-      ],
-      "sentences": [
-        "The barrage is heavy.",
-        "弹幕很密集。"
-      ]
-    },
-    {
-      "word": "prestige",
-      "phonetic": "/preˈstiːʒ/",
-      "definition": "n. 威望",
-      "breakdown": [
-        {
-          "letter": "pr",
-          "phon": "/pr/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "i",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "ge",
-          "phon": "/ʒ/"
-        }
-      ],
-      "sentences": [
-        "The school has prestige.",
-        "学校有威望。"
-      ]
-    },
-    {
-      "word": "courier",
-      "phonetic": "/ˈkʊriə/",
-      "definition": "n. 快递员",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/i/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The courier delivers packages.",
-        "快递员送包裹。"
+        "What is your favorite music genre?",
+        "你最喜欢的音乐流派是什么？"
       ]
     },
     {
@@ -715,613 +369,282 @@ window.PHONICS_DAY_34 = {
       "definition": "n. 政权",
       "breakdown": [
         {
-          "letter": "r",
-          "phon": "/r/"
+          "letter": "re",
+          "phon": ""
         },
         {
-          "letter": "e",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "me",
-          "phon": "/m/"
+          "letter": "gime",
+          "phon": ""
         }
       ],
       "sentences": [
-        "The regime changed.",
-        "政权更迭了。"
+        "The old regime was unpopular.",
+        "旧政权不受欢迎。"
       ]
     },
     {
-      "word": "genre",
-      "phonetic": "/ˈʒɒnrə/",
-      "definition": "n. 类型",
+      "word": "camouflage",
+      "phonetic": "/ˈkæməflɑːʒ/",
+      "definition": "n. 伪装；保护色",
       "breakdown": [
         {
-          "letter": "g",
-          "phon": "/ʒ/"
+          "letter": "cam",
+          "phon": ""
         },
         {
-          "letter": "e",
-          "phon": "/ɒ/"
+          "letter": "ou",
+          "phon": ""
         },
         {
-          "letter": "nr",
-          "phon": "/n/"
-        },
-        {
-          "letter": "e",
-          "phon": "/rə/"
+          "letter": "flage",
+          "phon": ""
         }
       ],
       "sentences": [
-        "What genre do you like?",
-        "你喜欢什么类型？"
+        "The chameleon uses camouflage to hide.",
+        "变色龙利用伪装来隐藏自己。"
       ]
     },
     {
-      "word": "gigolo",
-      "phonetic": "/ˈdʒɪɡələʊ/",
-      "definition": "n. 舞男",
+      "word": "casual",
+      "phonetic": "/ˈkæʒuəl/",
+      "definition": "adj. 休闲的；非正式的",
       "breakdown": [
         {
-          "letter": "g",
-          "phon": "/dʒ/"
+          "letter": "cas",
+          "phon": "/k/"
         },
         {
-          "letter": "i",
+          "letter": "u",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "Wear casual clothes today.",
+        "今天穿休闲的衣服。"
+      ]
+    },
+    {
+      "word": "visual",
+      "phonetic": "/ˈvɪʒuəl/",
+      "definition": "adj. 视觉的",
+      "breakdown": [
+        {
+          "letter": "vis",
+          "phon": "/v/"
+        },
+        {
+          "letter": "u",
           "phon": "/ɪ/"
         },
         {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "lo",
-          "phon": "/ləʊ/"
-        }
-      ],
-      "sentences": [
-        "Not a common word.",
-        "不常见的词。"
-      ]
-    },
-    {
-      "word": "beige",
-      "phonetic": "/beɪʒ/",
-      "definition": "adj. 米色",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ei",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ge",
+          "letter": "al",
           "phon": "/ʒ/"
         }
       ],
       "sentences": [
-        "The beige wall looks nice.",
-        "米色墙很好看。"
+        "We use visual aids.",
+        "我们使用视觉辅助工具。"
+      ]
+    },
+    {
+      "word": "unusual",
+      "phonetic": "/ʌnˈjuːʒuəl/",
+      "definition": "adj. 不寻常的；独特的",
+      "breakdown": [
+        {
+          "letter": "un",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "u",
+          "phon": "/n/"
+        },
+        {
+          "letter": "su",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "al",
+          "phon": "/z/"
+        }
+      ],
+      "sentences": [
+        "That is an unusual bird.",
+        "那是一只不寻常的鸟。"
+      ]
+    },
+    {
+      "word": "Asia",
+      "phonetic": "/ˈeɪʃə/",
+      "definition": "n. 亚洲",
+      "breakdown": [
+        {
+          "letter": "A",
+          "phon": "/ˈeɪʒə/"
+        },
+        {
+          "letter": "sia",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "Asia is a large continent.",
+        "亚洲是一个大洲。"
+      ]
+    },
+    {
+      "word": "Persian",
+      "phonetic": "/ˈpɜːrʒn/",
+      "definition": "adj. 波斯的；波斯人的；波斯语的",
+      "breakdown": [
+        {
+          "letter": "Per",
+          "phon": ""
+        },
+        {
+          "letter": "sian",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "This is a Persian cat.",
+        "这是一只波斯猫。"
+      ]
+    },
+    {
+      "word": "version",
+      "phonetic": "/ˈvɜːʃən/",
+      "definition": "n. 版本；型号",
+      "breakdown": [
+        {
+          "letter": "ver",
+          "phon": "/v/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/ɜː/"
+        }
+      ],
+      "sentences": [
+        "This is a new version of the game.",
+        "这是游戏的新版本。"
+      ]
+    },
+    {
+      "word": "confusion",
+      "phonetic": "/kənˈfjuːʒən/",
+      "definition": "n. 困惑；混乱",
+      "breakdown": [
+        {
+          "letter": "con",
+          "phon": "/k/"
+        },
+        {
+          "letter": "fu",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "There was much confusion.",
+        "有很多困惑。"
+      ]
+    },
+    {
+      "word": "conclusion",
+      "phonetic": "/kənˈkluːʒən/",
+      "definition": "n. 结论，结束",
+      "breakdown": [
+        {
+          "letter": "con",
+          "phon": "/k/"
+        },
+        {
+          "letter": "clu",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "sion",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "This is the conclusion.",
+        "这是结论。"
+      ]
+    },
+    {
+      "word": "intrusion",
+      "phonetic": "/ɪnˈtruːʒən/",
+      "definition": "n. 闯入",
+      "breakdown": [
+        {
+          "letter": "in",
+          "phon": ""
+        },
+        {
+          "letter": "tru",
+          "phon": ""
+        },
+        {
+          "letter": "sion",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "I hope this is not an intrusion.",
+        "我希望这不算是一种打扰。"
       ]
     },
     {
       "word": "seizure",
       "phonetic": "/ˈsiːʒə/",
-      "definition": "n. 没收",
+      "definition": "n. 癫痫发作，抽搐",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
+          "letter": "sei",
+          "phon": ""
         },
         {
-          "letter": "ei",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "z",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "zure",
+          "phon": ""
         }
       ],
       "sentences": [
-        "The seizure was legal.",
-        "没收是合法的。"
+        "He had a seizure and fell down.",
+        "他癫痫发作，倒下了。"
       ]
     },
     {
-      "word": "leisure",
-      "phonetic": "/ˈleʒə/",
-      "definition": "n. 休闲",
+      "word": "exposure",
+      "phonetic": "/ɪkˈspəʊʒə(r)/",
+      "definition": "n. 暴露",
       "breakdown": [
         {
-          "letter": "l",
-          "phon": "/l/"
+          "letter": "ex",
+          "phon": ""
         },
         {
-          "letter": "ei",
-          "phon": "/e/"
+          "letter": "po",
+          "phon": ""
         },
         {
-          "letter": "s",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "sure",
+          "phon": ""
         }
       ],
       "sentences": [
-        "I enjoy my leisure time.",
-        "我享受休闲时光。"
+        "Long exposure to the sun can be harmful.",
+        "长时间暴露在阳光下可能有害。"
       ]
-    },
-    {
-      "word": "azure",
-      "phonetic": "/ˈæʒə/",
-      "definition": "adj. 蔚蓝的",
-      "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "z",
-          "phon": "/ʒ/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The azure sky is beautiful.",
-        "蔚蓝的天空很美。"
-      ]
-    },
-{
-    "word": "occasion",
-    "phonetic": "/əˈkeɪʒən/",
-    "definition": "n. 场合",
-    "breakdown": [
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a occasion.",
-          "我看到一个场合。"
-    ]
-},
-{
-    "word": "collision",
-    "phonetic": "/kəˈlɪʒən/",
-    "definition": "n. 碰撞",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a collision.",
-          "我看到一个碰撞。"
-    ]
-},
-{
-    "word": "camouflage",
-    "phonetic": "/ˈkæ.məˌflɑːʒ/",
-    "definition": "n. 伪装",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "ou",
-                "phon": "/aʊ/"
-          },
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "ge",
-                "phon": "/ʒ/"
-          }
-    ],
-    "sentences": [
-          "I see a camouflage.",
-          "我看到一个伪装。"
-    ]
-},
-{
-    "word": "unusual",
-    "phonetic": "/ʌnˈjuːʒuəl/",
-    "definition": "adj. 不寻常的",
-    "breakdown": [
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "It is very unusual.",
-          "它非常不寻常的。"
-    ]
-},
-{
-    "word": "asia",
-    "phonetic": "/ˈeɪʒə/",
-    "definition": "n. 亚洲",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          }
-    ],
-    "sentences": [
-          "I see a asia.",
-          "我看到一个亚洲。"
-    ]
-},
-{
-    "word": "persian",
-    "phonetic": "/ˈpɜːʒn/",
-    "definition": "adj. 波斯的",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "It is very persian.",
-          "它非常波斯的。"
-    ]
-},
-{
-    "word": "version",
-    "phonetic": "/ˈvɜːʃən/",
-    "definition": "n. 版本",
-    "breakdown": [
-          {
-                "letter": "v",
-                "phon": "/v/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a version.",
-          "我看到一个版本。"
-    ]
-},
-{
-    "word": "confusion",
-    "phonetic": "/kənˈfjuːʒən/",
-    "definition": "n. 混乱；困惑",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a confusion.",
-          "我看到一个混乱。"
-    ]
-},
-{
-    "word": "intrusion",
-    "phonetic": "/ɪnˈtɹuːʒən/",
-    "definition": "n. 闯入；侵扰",
-    "breakdown": [
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "si",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a intrusion.",
-          "我看到一个闯入。"
-    ]
-},
-{
-    "word": "exposure",
-    "phonetic": "/ɪkˈspoʊʒɚ/",
-    "definition": "n. 暴露；曝光",
-    "breakdown": [
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "x",
-                "phon": "/ks/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a exposure.",
-          "我看到一个暴露。"
-    ]
-},
-{
-    "word": "usually",
-    "phonetic": "/ˈjuːʒuəli/",
-    "definition": "adv. 通常",
-    "breakdown": [
-          {
-                "letter": "u",
-                "phon": "/ʒ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "He runs usually.",
-          "他通常地跑。"
-    ]
-}
+    }
   ]
-};
+}

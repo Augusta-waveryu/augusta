@@ -10,17 +10,13 @@ window.PHONICS_DAY_37 = {
       "definition": "n. 椅子",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "chair",
           "phon": "/tʃ/"
-        },
-        {
-          "letter": "air",
-          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "Sit on the chair.",
-        "坐椅子上。"
+        "Sit on the comfy chair.",
+        "坐在舒适的椅子上。"
       ]
     },
     {
@@ -29,43 +25,42 @@ window.PHONICS_DAY_37 = {
       "definition": "n. 孩子",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "child",
           "phon": "/tʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
         }
       ],
       "sentences": [
-        "The child is happy.",
-        "孩子很开心。"
+        "The child plays.",
+        "孩子在玩。"
+      ]
+    },
+    {
+      "word": "chicken",
+      "phonetic": "/ˈtʃɪkɪn/",
+      "definition": "n. 鸡；鸡肉",
+      "breakdown": [
+        {
+          "letter": "chick",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "en",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "The chicken is small.",
+        "这只鸡很小。"
       ]
     },
     {
       "word": "cheese",
       "phonetic": "/tʃiːz/",
-      "definition": "n. 奶酪",
+      "definition": "n. 奶酪；芝士",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "cheese",
           "phon": "/tʃ/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
@@ -74,39 +69,12 @@ window.PHONICS_DAY_37 = {
       ]
     },
     {
-      "word": "chicken",
-      "phonetic": "/ˈtʃɪkɪn/",
-      "definition": "n. 鸡",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        },
-        {
-          "letter": "en",
-          "phon": "/ən/"
-        }
-      ],
-      "sentences": [
-        "The chicken is small.",
-        "鸡很小。"
-      ]
-    },
-    {
       "word": "chocolate",
       "phonetic": "/ˈtʃɒklət/",
       "definition": "n. 巧克力",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "choc",
           "phon": "/tʃ/"
         },
         {
@@ -114,171 +82,28 @@ window.PHONICS_DAY_37 = {
           "phon": "/ɒ/"
         },
         {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "o",
-          "phon": "/l/"
-        },
-        {
-          "letter": "la",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "te",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I love chocolate.",
-        "我爱巧克力。"
-      ]
-    },
-    {
-      "word": "choose",
-      "phonetic": "/tʃuːz/",
-      "definition": "v. 选择",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Choose one.",
-        "选一个。"
-      ]
-    },
-    {
-      "word": "change",
-      "phonetic": "/tʃeɪndʒ/",
-      "definition": "v. 改变",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "nge",
-          "phon": "/ndʒ/"
-        }
-      ],
-      "sentences": [
-        "Change your clothes.",
-        "换衣服。"
-      ]
-    },
-    {
-      "word": "chase",
-      "phonetic": "/tʃeɪs/",
-      "definition": "v. 追赶",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The dog chases the cat.",
-        "狗追猫。"
-      ]
-    },
-    {
-      "word": "cheap",
-      "phonetic": "/tʃiːp/",
-      "definition": "adj. 便宜的",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "This book is cheap.",
-        "这本书很便宜。"
-      ]
-    },
-    {
-      "word": "check",
-      "phonetic": "/tʃek/",
-      "definition": "v. 检查",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ck",
+          "letter": "late",
           "phon": "/k/"
         }
       ],
       "sentences": [
-        "Check your answers.",
-        "检查答案。"
+        "I eat chocolate.",
+        "我吃巧克力。"
       ]
     },
     {
-      "word": "chop",
-      "phonetic": "/tʃɒp/",
-      "definition": "v. 剁",
+      "word": "chip",
+      "phonetic": "/tʃɪp/",
+      "definition": "n. 薯片；碎片",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "chip",
           "phon": "/tʃ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
         }
       ],
       "sentences": [
-        "Chop the onions.",
-        "剁洋葱。"
+        "I like chips.",
+        "我喜欢薯片。"
       ]
     },
     {
@@ -287,177 +112,241 @@ window.PHONICS_DAY_37 = {
       "definition": "n. 下巴",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "chin",
           "phon": "/tʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "Rub your chin.",
-        "摸下巴。"
+        "Touch your chin.",
+        "摸摸你的下巴。"
       ]
     },
     {
-      "word": "chip",
-      "phonetic": "/tʃɪp/",
-      "definition": "n. 薯条",
+      "word": "chat",
+      "phonetic": "/tʃæt/",
+      "definition": "v. 聊天；闲谈",
       "breakdown": [
         {
-          "letter": "ch",
+          "letter": "chat",
           "phon": "/tʃ/"
+        }
+      ],
+      "sentences": [
+        "Let's chat for a while.",
+        "我们聊一会儿吧。"
+      ]
+    },
+    {
+      "word": "chop",
+      "phonetic": "/tʃɒp/",
+      "definition": "v. 砍；切",
+      "breakdown": [
+        {
+          "letter": "chop",
+          "phon": "/tʃ/"
+        }
+      ],
+      "sentences": [
+        "Chop the wood.",
+        "砍木头。"
+      ]
+    },
+    {
+      "word": "church",
+      "phonetic": "/tʃɜːtʃ/",
+      "definition": "n. 教堂",
+      "breakdown": [
+        {
+          "letter": "church",
+          "phon": "/tʃ/"
+        }
+      ],
+      "sentences": [
+        "We go to church.",
+        "我们去教堂。"
+      ]
+    },
+    {
+      "word": "lunch",
+      "phonetic": "/lʌntʃ/",
+      "definition": "n. 午餐",
+      "breakdown": [
+        {
+          "letter": "lunch",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "I eat lunch.",
+        "我吃午饭。"
+      ]
+    },
+    {
+      "word": "teacher",
+      "phonetic": "/ˈtiːtʃər/",
+      "definition": "n. 教师，老师",
+      "breakdown": [
+        {
+          "letter": "teach",
+          "phon": "/t/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
+          "letter": "er",
+          "phon": "/iː/"
+        }
+      ],
+      "sentences": [
+        "My teacher is nice.",
+        "我的老师很好。"
+      ]
+    },
+    {
+      "word": "beach",
+      "phonetic": "/biːtʃ/",
+      "definition": "n. 海滩",
+      "breakdown": [
         {
-          "letter": "p",
+          "letter": "beach",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "Let's play on the beach.",
+        "我们去海滩玩吧。"
+      ]
+    },
+    {
+      "word": "peach",
+      "phonetic": "/piːtʃ/",
+      "definition": "n. 桃子",
+      "breakdown": [
+        {
+          "letter": "peach",
           "phon": "/p/"
         }
       ],
       "sentences": [
-        "I eat chips.",
-        "我吃薯条。"
+        "This peach is sweet.",
+        "这个桃子很甜。"
       ]
     },
     {
-      "word": "cheek",
-      "phonetic": "/tʃiːk/",
-      "definition": "n. 脸颊",
+      "word": "much",
+      "phonetic": "/mʌtʃ/",
+      "definition": "adv. 很多，非常",
       "breakdown": [
         {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
+          "letter": "much",
+          "phon": "/m/"
         }
       ],
       "sentences": [
-        "Her cheeks are red.",
-        "她的脸颊红红的。"
+        "I like ice cream very much.",
+        "我非常喜欢冰淇淋。"
       ]
     },
     {
-      "word": "cheer",
-      "phonetic": "/tʃɪə/",
-      "definition": "v. 欢呼",
+      "word": "which",
+      "phonetic": "/wɪtʃ/",
+      "definition": "pron. 哪一个",
       "breakdown": [
         {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "eer",
-          "phon": "/ɪə/"
+          "letter": "which",
+          "phon": "/w/"
         }
       ],
       "sentences": [
-        "Cheer for the team.",
-        "为队伍加油。"
+        "Which book do you like?",
+        "你喜欢哪本书？"
+      ]
+    },
+    {
+      "word": "rich",
+      "phonetic": "/rɪtʃ/",
+      "definition": "adj. 富有的；肥沃的",
+      "breakdown": [
+        {
+          "letter": "rich",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "He is a very rich man.",
+        "他是一个很富有的人。"
+      ]
+    },
+    {
+      "word": "touch",
+      "phonetic": "/tʌtʃ/",
+      "definition": "v. 触摸；接触",
+      "breakdown": [
+        {
+          "letter": "touch",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Don't touch the hot stove.",
+        "不要摸热炉子。"
       ]
     },
     {
       "word": "watch",
       "phonetic": "/wɒtʃ/",
-      "definition": "v. 观看",
+      "definition": "n. 手表",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "watch",
           "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "tch",
-          "phon": "/tʃ/"
         }
       ],
       "sentences": [
-        "I watch TV.",
-        "我看电视。"
-      ]
-    },
-    {
-      "word": "match",
-      "phonetic": "/mætʃ/",
-      "definition": "n. 比赛",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "tch",
-          "phon": "/tʃ/"
-        }
-      ],
-      "sentences": [
-        "We win the match.",
-        "我们赢了比赛。"
+        "I watch the birds fly.",
+        "我看小鸟飞。"
       ]
     },
     {
       "word": "catch",
       "phonetic": "/kætʃ/",
-      "definition": "v. 接住",
+      "definition": "v. 抓住；捕捉",
       "breakdown": [
         {
-          "letter": "c",
+          "letter": "catch",
           "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "tch",
-          "phon": "/tʃ/"
         }
       ],
       "sentences": [
-        "Catch the ball.",
-        "接球。"
+        "Catch the ball!",
+        "接住球！"
+      ]
+    },
+    {
+      "word": "match",
+      "phonetic": "/mætʃ/",
+      "definition": "v. 匹配",
+      "breakdown": [
+        {
+          "letter": "match",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "This color does not match.",
+        "这个颜色不搭配。"
       ]
     },
     {
       "word": "kitchen",
-      "phonetic": "/ˈkɪtʃɪn/",
+      "phonetic": "/ˈkɪtʃən/",
       "definition": "n. 厨房",
       "breakdown": [
         {
-          "letter": "k",
+          "letter": "kitch",
           "phon": "/k/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "tch",
-          "phon": "/tʃ/"
-        },
-        {
           "letter": "en",
-          "phon": "/ən/"
+          "phon": "/ɪ/"
         }
       ],
       "sentences": [
@@ -466,832 +355,136 @@ window.PHONICS_DAY_37 = {
       ]
     },
     {
-      "word": "stretch",
-      "phonetic": "/stretʃ/",
-      "definition": "v. 伸展",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "tch",
-          "phon": "/tʃ/"
-        }
-      ],
-      "sentences": [
-        "Stretch your arms.",
-        "伸展手臂。"
-      ]
-    },
-    {
       "word": "picture",
-      "phonetic": "/ˈpɪktʃə/",
-      "definition": "n. 图片",
+      "phonetic": "/ˈpɪktʃər/",
+      "definition": "n. 图画；照片",
       "breakdown": [
         {
-          "letter": "p",
+          "letter": "pic",
           "phon": "/p/"
         },
         {
-          "letter": "i",
+          "letter": "ture",
           "phon": "/ɪ/"
-        },
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
-        "Draw a picture.",
-        "画一幅画。"
+        "Draw a big red picture.",
+        "画一幅大的红色图画。"
       ]
     },
     {
-      "word": "nature",
-      "phonetic": "/ˈneɪtʃə/",
-      "definition": "n. 自然",
+      "word": "teacher's",
+      "phonetic": "/ˈtiːtʃəz/",
+      "definition": "adj. 教师的",
       "breakdown": [
         {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "teacher's",
+          "phon": ""
         }
       ],
       "sentences": [
-        "I love nature.",
-        "我爱自然。"
+        "This is the teacher's book on the desk.",
+        "这是桌上老师的书。"
       ]
     },
     {
-      "word": "future",
-      "phonetic": "/ˈfjuːtʃə/",
-      "definition": "n. 未来",
+      "word": "patch",
+      "phonetic": "/pætʃ/",
+      "definition": "n. 补丁",
       "breakdown": [
         {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "u",
-          "phon": "/juː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Think about the future.",
-        "想想未来。"
-      ]
-    },
-    {
-      "word": "lecture",
-      "phonetic": "/ˈlektʃə/",
-      "definition": "n. 讲座",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Attend the lecture.",
-        "参加讲座。"
-      ]
-    },
-    {
-      "word": "capture",
-      "phonetic": "/ˈkæptʃə/",
-      "definition": "v. 捕捉",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "p",
+          "letter": "patch",
           "phon": "/p/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
-        "Capture the moment.",
-        "捕捉瞬间。"
+        "She sewed a patch onto her old jeans.",
+        "她在旧牛仔裤上缝了一个补丁。"
       ]
     },
     {
-      "word": "adventure",
-      "phonetic": "/ədˈventʃə/",
-      "definition": "n. 冒险",
+      "word": "branch",
+      "phonetic": "/brɑːntʃ/",
+      "definition": "n. 树枝；分支",
       "breakdown": [
         {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "en",
-          "phon": "/en/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "branch",
+          "phon": "/br/"
         }
       ],
       "sentences": [
-        "We love adventure.",
-        "我们爱冒险。"
+        "A bird sits on the branch.",
+        "一只鸟坐在树枝上。"
       ]
     },
     {
-      "word": "furniture",
-      "phonetic": "/ˈfɜːnɪtʃə/",
-      "definition": "n. 家具",
+      "word": "chest",
+      "phonetic": "/tʃest/",
+      "definition": "n. 胸部；箱子",
       "breakdown": [
         {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ure",
-          "phon": "/tʃə/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "chest",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
-        "Buy new furniture.",
-        "买新家具。"
+        "My chest is big.",
+        "我的胸部很大。"
       ]
     },
     {
-      "word": "question",
-      "phonetic": "/ˈkwestʃən/",
-      "definition": "n. 问题",
+      "word": "check",
+      "phonetic": "/tʃek/",
+      "definition": "v. 检查；核对",
       "breakdown": [
         {
-          "letter": "qu",
-          "phon": "/kw/"
-        },
+          "letter": "check",
+          "phon": "/tʃ/"
+        }
+      ],
+      "sentences": [
+        "Please check your work.",
+        "请检查你的作业。"
+      ]
+    },
+    {
+      "word": "children",
+      "phonetic": "/ˈtʃɪldrən/",
+      "definition": "n.孩子，儿童",
+      "breakdown": [
         {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "io",
+          "letter": "chil",
           "phon": "/tʃ/"
         },
         {
-          "letter": "n",
-          "phon": "/ən/"
+          "letter": "dren",
+          "phon": "/ɪ/"
         }
       ],
       "sentences": [
-        "Answer the question.",
-        "回答问题。"
+        "The children are playing in the park.",
+        "孩子们正在公园里玩耍。"
       ]
     },
     {
-      "word": "situation",
-      "phonetic": "/ˌsɪtʃuˈeɪʃən/",
-      "definition": "n. 情况",
+      "word": "sandwich",
+      "phonetic": "/ˈsænwɪdʒ/",
+      "definition": "n. 三明治",
       "breakdown": [
         {
-          "letter": "s",
+          "letter": "sand",
           "phon": "/s/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "u",
-          "phon": "/u/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "tio",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "wich",
+          "phon": "/æ/"
         }
       ],
       "sentences": [
-        "The situation is bad.",
-        "情况很糟。"
+        "I like a sandwich.",
+        "我喜欢三明治。"
       ]
-    },
-    {
-      "word": "fortune",
-      "phonetic": "/ˈfɔːtʃuːn/",
-      "definition": "n. 财富",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "une",
-          "phon": "/tʃuːn/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "He has a fortune.",
-        "他有一笔财富。"
-      ]
-    },
-{
-    "word": "chips",
-    "phonetic": "/tʃɪps/",
-    "definition": "n. 薯条；薯片",
-    "breakdown": [
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "I see a chips.",
-          "我看到一个薯条。"
-    ]
-},
-{
-    "word": "chat",
-    "phonetic": "/tʃæt/",
-    "definition": "v. 聊天",
-    "breakdown": [
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "Please chat it.",
-          "请聊天它。"
-    ]
-},
-{
-    "word": "church",
-    "phonetic": "/t͡ʃɜːt͡ʃ/",
-    "definition": "n. 教堂",
-    "breakdown": [
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "ur",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a church.",
-          "我看到一个教堂。"
-    ]
-},
-{
-    "word": "lunch",
-    "phonetic": "/lʌnt͡ʃ/",
-    "definition": "n. 午餐",
-    "breakdown": [
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a lunch.",
-          "我看到一个午餐。"
-    ]
-},
-{
-    "word": "teacher",
-    "phonetic": "/ˈtiːt͡ʃə/",
-    "definition": "n. 老师",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a teacher.",
-          "我看到一个老师。"
-    ]
-},
-{
-    "word": "peach",
-    "phonetic": "/piːt͡ʃ/",
-    "definition": "n. 桃子",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a peach.",
-          "我看到一个桃子。"
-    ]
-},
-{
-    "word": "much",
-    "phonetic": "/mʌt͡ʃ/",
-    "definition": "adj. 许多的",
-    "breakdown": [
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "It is very much.",
-          "它非常许多的。"
-    ]
-},
-{
-    "word": "which",
-    "phonetic": "/wɪt͡ʃ/",
-    "definition": "pron. 哪一个",
-    "breakdown": [
-          {
-                "letter": "wh",
-                "phon": "/w/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "Which is here.",
-          "哪一个在这里。"
-    ]
-},
-{
-    "word": "rich",
-    "phonetic": "/ɹɪt͡ʃ/",
-    "definition": "adj. 富有的",
-    "breakdown": [
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "It is very rich.",
-          "它非常富有的。"
-    ]
-},
-{
-    "word": "touch",
-    "phonetic": "/tʌtʃ/",
-    "definition": "v. 触摸",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ou",
-                "phon": "/aʊ/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "Please touch it.",
-          "请触摸它。"
-    ]
-},
-{
-    "word": "patch",
-    "phonetic": "/pætʃ/",
-    "definition": "n. 补丁；小块",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "tch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a patch.",
-          "我看到一个补丁。"
-    ]
-},
-{
-    "word": "branch",
-    "phonetic": "/bɹæntʃ/",
-    "definition": "n. 树枝；分支",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a branch.",
-          "我看到一个树枝。"
-    ]
-},
-{
-    "word": "chest",
-    "phonetic": "/t͡ʃɛst/",
-    "definition": "n. 胸部；箱子",
-    "breakdown": [
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a chest.",
-          "我看到一个胸部。"
-    ]
-},
-{
-    "word": "children",
-    "phonetic": "/ˈt͡ʃʊld̠ɹ̠ ̝ʷən/",
-    "definition": "n. 孩子们",
-    "breakdown": [
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a children.",
-          "我看到一个孩子们。"
-    ]
-},
-{
-    "word": "sandwich",
-    "phonetic": "/ˈsæmwɪd͡ʒ/",
-    "definition": "n. 三明治",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          },
-          {
-                "letter": "w",
-                "phon": "/w/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a sandwich.",
-          "我看到一个三明治。"
-    ]
-},
-{
-    "word": "beach",
-    "phonetic": "/biːtʃ/",
-    "definition": "n. 海滩",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "This is beach.",
-          "这是海滩。"
-    ]
-},
-{
-    "word": "teacher's",
-    "phonetic": "/ˈtiːtʃəz/",
-    "definition": "n. 老师的",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "This is teacher's.",
-          "这是老师的。"
-    ]
-}
+    }
   ]
-};
+}

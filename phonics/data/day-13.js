@@ -5,400 +5,153 @@ window.PHONICS_DAY_13 = {
   "pdfImage": "/phonics/images/day-13.jpg",
   "words": [
     {
-      "word": "day",
-      "phonetic": "/deɪ/",
-      "definition": "n. 天",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "Have a nice day!",
-        "祝你有美好的一天！"
-      ]
-    },
-    {
-      "word": "say",
-      "phonetic": "/seɪ/",
-      "definition": "v. 说",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "What did you say?",
-        "你说什么？"
-      ]
-    },
-    {
-      "word": "may",
-      "phonetic": "/meɪ/",
-      "definition": "v. 可以",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "May I come in?",
-        "我可以进来吗？"
-      ]
-    },
-    {
-      "word": "play",
-      "phonetic": "/pleɪ/",
-      "definition": "v. 玩",
-      "breakdown": [
-        {
-          "letter": "pl",
-          "phon": "/pl/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "We play in the park.",
-        "我们在公园玩。"
-      ]
-    },
-    {
-      "word": "way",
-      "phonetic": "/weɪ/",
-      "definition": "n. 路",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "This is the right way.",
-        "这是对的路。"
-      ]
-    },
-    {
-      "word": "stay",
-      "phonetic": "/steɪ/",
-      "definition": "v. 停留",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "Stay here for a while.",
-        "在这里待一会儿。"
-      ]
-    },
-    {
-      "word": "pay",
-      "phonetic": "/peɪ/",
-      "definition": "v. 付款",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "I pay for the lunch.",
-        "我付午餐钱。"
-      ]
-    },
-    {
-      "word": "tray",
-      "phonetic": "/treɪ/",
-      "definition": "n. 托盘",
-      "breakdown": [
-        {
-          "letter": "tr",
-          "phon": "/tr/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "Put the cups on the tray.",
-        "把杯子放在托盘上。"
-      ]
-    },
-    {
-      "word": "gray",
-      "phonetic": "/ɡreɪ/",
-      "definition": "adj. 灰色的",
-      "breakdown": [
-        {
-          "letter": "gr",
-          "phon": "/gr/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "The sky is gray today.",
-        "今天天空是灰色的。"
-      ]
-    },
-    {
-      "word": "clay",
-      "phonetic": "/kleɪ/",
-      "definition": "n. 黏土",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "I make a pot with clay.",
-        "我用黏土做了一个罐子。"
-      ]
-    },
-    {
       "word": "cake",
       "phonetic": "/keɪk/",
       "definition": "n. 蛋糕",
       "breakdown": [
         {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ke",
+          "letter": "cake",
           "phon": "/k/"
         }
       ],
       "sentences": [
-        "I bake a cake.",
-        "我烤了一个蛋糕。"
+        "I want a big cake.",
+        "我想要一个大蛋糕。"
       ]
     },
     {
-      "word": "make",
-      "phonetic": "/meɪk/",
-      "definition": "v. 制作",
+      "word": "date",
+      "phonetic": "/deɪt/",
+      "definition": "n. 日期；约会",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ke",
-          "phon": "/k/"
+          "letter": "date",
+          "phon": "/d/"
         }
       ],
       "sentences": [
-        "Let's make a card.",
-        "我们做一张卡片吧。"
+        "What is today's date?",
+        "今天的日期是什么？"
       ]
     },
     {
-      "word": "take",
-      "phonetic": "/teɪk/",
-      "definition": "v. 拿",
+      "word": "face",
+      "phonetic": "/feɪs/",
+      "definition": "n. 脸；面孔",
       "breakdown": [
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ke",
-          "phon": "/k/"
+          "letter": "face",
+          "phon": "/f/"
         }
       ],
       "sentences": [
-        "Take this bag, please.",
-        "请拿这个包。"
-      ]
-    },
-    {
-      "word": "lake",
-      "phonetic": "/leɪk/",
-      "definition": "n. 湖",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ke",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "We swim in the lake.",
-        "我们在湖里游泳。"
-      ]
-    },
-    {
-      "word": "snake",
-      "phonetic": "/sneɪk/",
-      "definition": "n. 蛇",
-      "breakdown": [
-        {
-          "letter": "sn",
-          "phon": "/sn/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ke",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The snake is long.",
-        "蛇很长。"
-      ]
-    },
-    {
-      "word": "name",
-      "phonetic": "/neɪm/",
-      "definition": "n. 名字",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "me",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "My name is Tom.",
-        "我的名字叫汤姆。"
+        "My face is clean.",
+        "我的脸很干净。"
       ]
     },
     {
       "word": "game",
       "phonetic": "/ɡeɪm/",
-      "definition": "n. 游戏",
+      "definition": "n. 游戏，比赛",
       "breakdown": [
         {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
+          "letter": "game",
+          "phon": "/g/"
+        }
+      ],
+      "sentences": [
+        "Let's play a fun game.",
+        "我们来玩一个有趣的游戏。"
+      ]
+    },
+    {
+      "word": "hate",
+      "phonetic": "/heɪt/",
+      "definition": "v. 憎恨；讨厌",
+      "breakdown": [
         {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
+          "letter": "hate",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "I hate loud noise.",
+        "我讨厌嘈杂的声音。"
+      ]
+    },
+    {
+      "word": "make",
+      "phonetic": "/meɪk/",
+      "definition": "v. 制作；使",
+      "breakdown": [
         {
-          "letter": "me",
+          "letter": "make",
           "phon": "/m/"
         }
       ],
       "sentences": [
-        "We play a game together.",
-        "我们一起玩游戏。"
+        "I make a cake.",
+        "我做一个蛋糕。"
       ]
     },
     {
-      "word": "plate",
-      "phonetic": "/pleɪt/",
-      "definition": "n. 盘子",
+      "word": "name",
+      "phonetic": "/neɪm/",
+      "definition": "n. 名字，名称",
       "breakdown": [
         {
-          "letter": "pl",
-          "phon": "/pl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "te",
-          "phon": "/t/"
+          "letter": "name",
+          "phon": "/n/"
         }
       ],
       "sentences": [
-        "Put the food on the plate.",
-        "把食物放在盘子上。"
+        "What is your name?",
+        "你叫什么名字？"
       ]
     },
     {
-      "word": "late",
-      "phonetic": "/leɪt/",
-      "definition": "adj. 迟的",
+      "word": "page",
+      "phonetic": "/peɪdʒ/",
+      "definition": "n. 页",
       "breakdown": [
         {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "te",
-          "phon": "/t/"
+          "letter": "page",
+          "phon": "/p/"
         }
       ],
       "sentences": [
-        "I am late for school.",
-        "我上学迟到了。"
+        "Turn to page three.",
+        "翻到第三页。"
+      ]
+    },
+    {
+      "word": "race",
+      "phonetic": "/reɪs/",
+      "definition": "n. 比赛，种族",
+      "breakdown": [
+        {
+          "letter": "race",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "Let's race to the tree!",
+        "我们向那棵树赛跑！"
+      ]
+    },
+    {
+      "word": "same",
+      "phonetic": "/seɪm/",
+      "definition": "adj. 相同的，一样的",
+      "breakdown": [
+        {
+          "letter": "same",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "We have the same toy.",
+        "我们有相同的玩具。"
       ]
     },
     {
@@ -407,90 +160,118 @@ window.PHONICS_DAY_13 = {
       "definition": "n. 大门",
       "breakdown": [
         {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "te",
-          "phon": "/t/"
+          "letter": "gate",
+          "phon": "/g/"
         }
       ],
       "sentences": [
-        "Open the gate for me.",
-        "帮我打开大门。"
+        "Open the gate, please.",
+        "请开门。"
       ]
     },
     {
-      "word": "face",
-      "phonetic": "/feɪs/",
-      "definition": "n. 脸",
+      "word": "late",
+      "phonetic": "/leɪt/",
+      "definition": "adj. 迟的；晚的",
       "breakdown": [
         {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ce",
-          "phon": "/s/"
+          "letter": "late",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "Wash your face in the morning.",
-        "早上洗脸。"
+        "Don't be late for school.",
+        "上学不要迟到。"
       ]
     },
     {
-      "word": "place",
-      "phonetic": "/pleɪs/",
-      "definition": "n. 地方",
+      "word": "lake",
+      "phonetic": "/leɪk/",
+      "definition": "n. 湖",
       "breakdown": [
         {
-          "letter": "pl",
+          "letter": "lake",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "We swim in the lake.",
+        "我们在湖里游泳。"
+      ]
+    },
+    {
+      "word": "wake",
+      "phonetic": "/weɪk/",
+      "definition": "v. 醒来",
+      "breakdown": [
+        {
+          "letter": "wake",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "Wake up, sleepyhead!",
+        "醒醒，懒虫！"
+      ]
+    },
+    {
+      "word": "plane",
+      "phonetic": "/pleɪn/",
+      "definition": "n. 飞机",
+      "breakdown": [
+        {
+          "letter": "plane",
           "phon": "/pl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ce",
-          "phon": "/s/"
         }
       ],
       "sentences": [
-        "This is a nice place.",
-        "这是个好地方。"
+        "I see a big plane.",
+        "我看到一架大飞机。"
       ]
     },
     {
-      "word": "race",
-      "phonetic": "/reɪs/",
-      "definition": "n. 比赛",
+      "word": "plate",
+      "phonetic": "/pleɪt/",
+      "definition": "n. 盘子；碟子",
       "breakdown": [
         {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ce",
-          "phon": "/s/"
+          "letter": "plate",
+          "phon": "/pl/"
         }
       ],
       "sentences": [
-        "Who wins the race?",
-        "谁赢了比赛？"
+        "Eat food on your plate.",
+        "在你的盘子里吃饭。"
+      ]
+    },
+    {
+      "word": "grape",
+      "phonetic": "/ɡreɪp/",
+      "definition": "n. 葡萄",
+      "breakdown": [
+        {
+          "letter": "grape",
+          "phon": "/gr/"
+        }
+      ],
+      "sentences": [
+        "I like to eat grapes.",
+        "我喜欢吃葡萄。"
+      ]
+    },
+    {
+      "word": "snake",
+      "phonetic": "/sneɪk/",
+      "definition": "n. 蛇",
+      "breakdown": [
+        {
+          "letter": "snake",
+          "phon": "/sn/"
+        }
+      ],
+      "sentences": [
+        "A snake can crawl.",
+        "蛇会爬行。"
       ]
     },
     {
@@ -499,21 +280,43 @@ window.PHONICS_DAY_13 = {
       "definition": "n. 雨",
       "breakdown": [
         {
-          "letter": "r",
+          "letter": "rain",
           "phon": "/r/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "The rain is heavy.",
-        "雨很大。"
+        "The rain falls down.",
+        "雨落下来。"
+      ]
+    },
+    {
+      "word": "tail",
+      "phonetic": "/teɪl/",
+      "definition": "n. 尾巴",
+      "breakdown": [
+        {
+          "letter": "tail",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "The dog wags its tail.",
+        "狗狗摇它的尾巴。"
+      ]
+    },
+    {
+      "word": "pain",
+      "phonetic": "/peɪn/",
+      "definition": "n. 疼痛",
+      "breakdown": [
+        {
+          "letter": "pain",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "I feel pain in my leg.",
+        "我腿疼。"
       ]
     },
     {
@@ -522,67 +325,103 @@ window.PHONICS_DAY_13 = {
       "definition": "n. 火车",
       "breakdown": [
         {
-          "letter": "tr",
+          "letter": "train",
           "phon": "/tr/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "I take the train to work.",
-        "我坐火车上班。"
+        "Let's ride the train.",
+        "我们坐火车吧。"
       ]
     },
     {
-      "word": "wait",
-      "phonetic": "/weɪt/",
-      "definition": "v. 等待",
+      "word": "plain",
+      "phonetic": "/pleɪn/",
+      "definition": "adj. 简单的，朴素的",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "plain",
+          "phon": "/pl/"
         }
       ],
       "sentences": [
-        "Please wait for me.",
-        "请等我一下。"
+        "The shirt is plain.",
+        "这件衬衫是素色的。"
       ]
     },
     {
-      "word": "paint",
-      "phonetic": "/peɪnt/",
-      "definition": "v. 画",
+      "word": "may",
+      "phonetic": "/meɪ/",
+      "definition": "aux.可能；可以；或许",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
+          "letter": "May",
+          "phon": "/m/"
         }
       ],
       "sentences": [
-        "I paint a picture.",
-        "我画了一幅画。"
+        "It may rain tomorrow.",
+        "明天可能会下雨。"
+      ]
+    },
+    {
+      "word": "say",
+      "phonetic": "/seɪ/",
+      "definition": "v. 说；讲",
+      "breakdown": [
+        {
+          "letter": "say",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Say hello to Mom.",
+        "和妈妈说你好。"
+      ]
+    },
+    {
+      "word": "play",
+      "phonetic": "/pleɪ/",
+      "definition": "v. 玩；演奏",
+      "breakdown": [
+        {
+          "letter": "play",
+          "phon": "/pl/"
+        }
+      ],
+      "sentences": [
+        "Let's play with the ball.",
+        "我们玩球吧。"
+      ]
+    },
+    {
+      "word": "day",
+      "phonetic": "/deɪ/",
+      "definition": "n. 天，白天",
+      "breakdown": [
+        {
+          "letter": "day",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "Today is a good day.",
+        "今天是一个好日子。"
+      ]
+    },
+    {
+      "word": "hey",
+      "phonetic": "/heɪ/",
+      "definition": "int. 嘿，喂",
+      "breakdown": [
+        {
+          "letter": "hey",
+          "phon": "/h/"
+        }
+      ],
+      "sentences": [
+        "Hey! Look at me.",
+        "嘿！看我。"
       ]
     },
     {
@@ -591,17 +430,13 @@ window.PHONICS_DAY_13 = {
       "definition": "num. 八",
       "breakdown": [
         {
-          "letter": "eigh",
+          "letter": "eight",
           "phon": "/eɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "I am eight years old.",
-        "我八岁了。"
+        "I have eight red balls.",
+        "我有八个红色的球。"
       ]
     },
     {
@@ -610,384 +445,14 @@ window.PHONICS_DAY_13 = {
       "definition": "v. 称重",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "weigh",
           "phon": "/w/"
-        },
-        {
-          "letter": "eigh",
-          "phon": "/eɪ/"
         }
       ],
       "sentences": [
-        "Weigh the apples, please.",
-        "请称一下苹果。"
+        "Weigh the apple.",
+        "称一下这个苹果。"
       ]
-    },
-    {
-      "word": "they",
-      "phonetic": "/ðeɪ/",
-      "definition": "pron. 他们",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "ey",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "They are my friends.",
-        "他们是我的朋友。"
-      ]
-    },
-{
-    "word": "june",
-    "phonetic": "/dʒuːn/",
-    "definition": "n. 六月",
-    "breakdown": [
-          {
-                "letter": "j",
-                "phon": "/dʒ/"
-          },
-          {
-                "letter": "u",
-                "phon": "/ʌ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a june.",
-          "我看到一个六月。"
-    ]
-},
-{
-    "word": "hate",
-    "phonetic": "/heɪt/",
-    "definition": "v. 讨厌；憎恨",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "a",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "Please hate it.",
-          "请讨厌它。"
-    ]
-},
-{
-    "word": "hello",
-    "phonetic": "/həˈləʊ/",
-    "definition": "int. 你好",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          }
-    ],
-    "sentences": [
-          "Hello!",
-          "你好！"
-    ]
-},
-{
-    "word": "same",
-    "phonetic": "/seɪm/",
-    "definition": "adj. 相同的",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "a",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "m",
-                "phon": "/m/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "It is very same.",
-          "它非常相同的。"
-    ]
-},
-{
-    "word": "wake",
-    "phonetic": "/ˈweɪk/",
-    "definition": "v. 醒来",
-    "breakdown": [
-          {
-                "letter": "w",
-                "phon": "/w/"
-          },
-          {
-                "letter": "a",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "k",
-                "phon": "/k/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "Please wake it.",
-          "请醒来它。"
-    ]
-},
-{
-    "word": "plane",
-    "phonetic": "/pleɪn/",
-    "definition": "n. 飞机",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "a",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a plane.",
-          "我看到一个飞机。"
-    ]
-},
-{
-    "word": "grape",
-    "phonetic": "/ɡɹeɪp/",
-    "definition": "n. 葡萄",
-    "breakdown": [
-          {
-                "letter": "g",
-                "phon": "/g/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "a",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "I see a grape.",
-          "我看到一个葡萄。"
-    ]
-},
-{
-    "word": "tail",
-    "phonetic": "/teɪl/",
-    "definition": "n. 尾巴",
-    "breakdown": [
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ai",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "I see a tail.",
-          "我看到一个尾巴。"
-    ]
-},
-{
-    "word": "pain",
-    "phonetic": "/peɪn/",
-    "definition": "n. 疼痛",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "ai",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "I see a pain.",
-          "我看到一个疼痛。"
-    ]
-},
-{
-    "word": "plain",
-    "phonetic": "/pleɪn/",
-    "definition": "adj. 朴素的；平坦的",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/p/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "ai",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          }
-    ],
-    "sentences": [
-          "It is very plain.",
-          "它非常朴素的。"
-    ]
-},
-{
-    "word": "hey",
-    "phonetic": "/heɪ/",
-    "definition": "int. 嘿",
-    "breakdown": [
-          {
-                "letter": "h",
-                "phon": "/h/"
-          },
-          {
-                "letter": "ey",
-                "phon": "/eɪ/"
-          }
-    ],
-    "sentences": [
-          "Hey!",
-          "嘿！"
-    ]
-},
-{
-    "word": "date",
-    "phonetic": "/deɪt/",
-    "definition": "n. 日期",
-    "breakdown": [
-          {
-                "letter": "d",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "This is date.",
-          "这是日期。"
-    ]
-},
-{
-    "word": "page",
-    "phonetic": "/peɪdʒ/",
-    "definition": "n. 页",
-    "breakdown": [
-          {
-                "letter": "p",
-                "phon": "/eɪ/"
-          },
-          {
-                "letter": "a",
-                "phon": "/æ/"
-          },
-          {
-                "letter": "g",
-                "phon": "/g/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "This is page.",
-          "这是页。"
-    ]
-}
+    }
   ]
-};
+}

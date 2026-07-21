@@ -7,461 +7,16 @@ window.PHONICS_DAY_09 = {
     {
       "word": "hot",
       "phonetic": "/hɒt/",
-      "definition": "adj. 热的",
+      "definition": "adj. 热的；辣的",
       "breakdown": [
         {
-          "letter": "h",
+          "letter": "hot",
           "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The water is hot.",
-        "水很热。"
-      ]
-    },
-    {
-      "word": "pot",
-      "phonetic": "/pɒt/",
-      "definition": "n. 锅",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The pot is on the stove.",
-        "锅在炉子上。"
-      ]
-    },
-    {
-      "word": "got",
-      "phonetic": "/ɡɒt/",
-      "definition": "v. 得到（过去式）",
-      "breakdown": [
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I got a new bike.",
-        "我得到了一辆新自行车。"
-      ]
-    },
-    {
-      "word": "lot",
-      "phonetic": "/lɒt/",
-      "definition": "n. 很多",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I have a lot of friends.",
-        "我有很多朋友。"
-      ]
-    },
-    {
-      "word": "not",
-      "phonetic": "/nɒt/",
-      "definition": "adv. 不",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I am not tired.",
-        "我不累。"
-      ]
-    },
-    {
-      "word": "box",
-      "phonetic": "/bɒks/",
-      "definition": "n. 盒子",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "x",
-          "phon": "/ks/"
-        }
-      ],
-      "sentences": [
-        "The box is empty.",
-        "盒子是空的。"
-      ]
-    },
-    {
-      "word": "fox",
-      "phonetic": "/fɒks/",
-      "definition": "n. 狐狸",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "x",
-          "phon": "/ks/"
-        }
-      ],
-      "sentences": [
-        "The fox is very clever.",
-        "狐狸很聪明。"
-      ]
-    },
-    {
-      "word": "top",
-      "phonetic": "/tɒp/",
-      "definition": "n. 顶部",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "The book is on the top shelf.",
-        "书在顶层架子上。"
-      ]
-    },
-    {
-      "word": "hop",
-      "phonetic": "/hɒp/",
-      "definition": "v. 跳",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "The rabbit hops fast.",
-        "兔子跳得很快。"
-      ]
-    },
-    {
-      "word": "mop",
-      "phonetic": "/mɒp/",
-      "definition": "n. 拖把",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Clean the floor with a mop.",
-        "用拖把擦地板。"
-      ]
-    },
-    {
-      "word": "pop",
-      "phonetic": "/pɒp/",
-      "definition": "v. 弹出",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "The balloon popped.",
-        "气球爆了。"
-      ]
-    },
-    {
-      "word": "drop",
-      "phonetic": "/drɒp/",
-      "definition": "v. 掉下",
-      "breakdown": [
-        {
-          "letter": "dr",
-          "phon": "/dr/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Don't drop the glass.",
-        "别摔了杯子。"
-      ]
-    },
-    {
-      "word": "stop",
-      "phonetic": "/stɒp/",
-      "definition": "v. 停止",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Stop at the red light.",
-        "红灯停。"
-      ]
-    },
-    {
-      "word": "shop",
-      "phonetic": "/ʃɒp/",
-      "definition": "n. 商店",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "I go to the shop for milk.",
-        "我去商店买牛奶。"
-      ]
-    },
-    {
-      "word": "block",
-      "phonetic": "/blɒk/",
-      "definition": "n. 街区",
-      "breakdown": [
-        {
-          "letter": "bl",
-          "phon": "/bl/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Walk one block east.",
-        "向东走一个街区。"
-      ]
-    },
-    {
-      "word": "clock",
-      "phonetic": "/klɒk/",
-      "definition": "n. 钟",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The clock is on the wall.",
-        "钟在墙上。"
-      ]
-    },
-    {
-      "word": "sock",
-      "phonetic": "/sɒk/",
-      "definition": "n. 袜子",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "I lost one sock.",
-        "我丢了一只袜子。"
-      ]
-    },
-    {
-      "word": "rock",
-      "phonetic": "/rɒk/",
-      "definition": "n. 岩石",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The rock is very heavy.",
-        "岩石很重。"
-      ]
-    },
-    {
-      "word": "lock",
-      "phonetic": "/lɒk/",
-      "definition": "n. 锁",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Lock the door when you leave.",
-        "离开时锁门。"
-      ]
-    },
-    {
-      "word": "frog",
-      "phonetic": "/frɒɡ/",
-      "definition": "n. 青蛙",
-      "breakdown": [
-        {
-          "letter": "fr",
-          "phon": "/fr/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "The frog jumps high.",
-        "青蛙跳得很高。"
+        "The sun is hot today.",
+        "今天的太阳很热。"
       ]
     },
     {
@@ -470,182 +25,358 @@ window.PHONICS_DAY_09 = {
       "definition": "n. 狗",
       "breakdown": [
         {
-          "letter": "d",
+          "letter": "dog",
           "phon": "/d/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "My dog is very cute.",
+        "My dog is cute.",
         "我的狗很可爱。"
       ]
     },
     {
-      "word": "log",
-      "phonetic": "/lɒɡ/",
-      "definition": "n. 木头",
+      "word": "fox",
+      "phonetic": "/fɒks/",
+      "definition": "n. 狐狸",
       "breakdown": [
         {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        }
-      ],
-      "sentences": [
-        "Sit on the log.",
-        "坐在木头上。"
-      ]
-    },
-    {
-      "word": "fog",
-      "phonetic": "/fɒɡ/",
-      "definition": "n. 雾",
-      "breakdown": [
-        {
-          "letter": "f",
+          "letter": "fox",
           "phon": "/f/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "The fog is very thick today.",
-        "今天雾很大。"
+        "The fox runs fast.",
+        "狐狸跑得很快。"
       ]
     },
     {
-      "word": "jog",
-      "phonetic": "/dʒɒɡ/",
-      "definition": "v. 慢跑",
+      "word": "box",
+      "phonetic": "/bɒks/",
+      "definition": "n. 盒子；箱",
       "breakdown": [
         {
-          "letter": "j",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
+          "letter": "box",
+          "phon": "/b/"
         }
       ],
       "sentences": [
-        "I jog in the park every day.",
-        "我每天在公园慢跑。"
+        "Put toys in the box.",
+        "把玩具放进盒子里。"
       ]
     },
     {
-      "word": "nod",
-      "phonetic": "/nɒd/",
-      "definition": "v. 点头",
+      "word": "cost",
+      "phonetic": "/kɒst/",
+      "definition": "n. 费用，价格",
       "breakdown": [
         {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
+          "letter": "cost",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "She nods her head.",
-        "她点点头。"
-      ]
-    },
-    {
-      "word": "rod",
-      "phonetic": "/rɒd/",
-      "definition": "n. 杆",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "The fishing rod is long.",
-        "鱼竿很长。"
+        "How much does it cost?",
+        "它多少钱？"
       ]
     },
     {
       "word": "shot",
       "phonetic": "/ʃɒt/",
-      "definition": "n. 射击",
+      "definition": "n. 射击；投篮",
       "breakdown": [
         {
-          "letter": "sh",
+          "letter": "shot",
           "phon": "/ʃ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "He took a shot at the goal.",
-        "他射门了。"
+        "He took a good shot.",
+        "他投了一个好球。"
       ]
     },
     {
-      "word": "spot",
-      "phonetic": "/spɒt/",
-      "definition": "n. 斑点",
+      "word": "top",
+      "phonetic": "/tɒp/",
+      "definition": "n. 顶部；陀螺",
       "breakdown": [
         {
-          "letter": "sp",
-          "phon": "/sp/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "t",
+          "letter": "top",
           "phon": "/t/"
         }
       ],
       "sentences": [
-        "The dog has black spots.",
-        "狗身上有黑斑。"
+        "The bird is on the top.",
+        "鸟在顶部。"
+      ]
+    },
+    {
+      "word": "stop",
+      "phonetic": "/stɒp/",
+      "definition": "v. 停止；停下",
+      "breakdown": [
+        {
+          "letter": "stop",
+          "phon": "/st/"
+        }
+      ],
+      "sentences": [
+        "Please stop running now.",
+        "请现在停止跑步。"
+      ]
+    },
+    {
+      "word": "crop",
+      "phonetic": "/krɒp/",
+      "definition": "n. 庄稼；收成",
+      "breakdown": [
+        {
+          "letter": "crop",
+          "phon": "/kr/"
+        }
+      ],
+      "sentences": [
+        "The farmer grows crops.",
+        "农民种植庄稼。"
+      ]
+    },
+    {
+      "word": "long",
+      "phonetic": "/lɒŋ/",
+      "definition": "adj. 长的；远的",
+      "breakdown": [
+        {
+          "letter": "long",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "The snake is very long.",
+        "这条蛇很长。"
+      ]
+    },
+    {
+      "word": "wrong",
+      "phonetic": "/rɒŋ/",
+      "definition": "adj. 错误的",
+      "breakdown": [
+        {
+          "letter": "wrong",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "That answer is wrong.",
+        "那个答案是错的。"
+      ]
+    },
+    {
+      "word": "boss",
+      "phonetic": "/bɒs/",
+      "definition": "n. 老板；上司",
+      "breakdown": [
+        {
+          "letter": "boss",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "My dad is the boss.",
+        "我爸爸是老板。"
+      ]
+    },
+    {
+      "word": "loss",
+      "phonetic": "/lɒs/",
+      "definition": "n. 损失",
+      "breakdown": [
+        {
+          "letter": "loss",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Losing a toy is a loss.",
+        "失去一个玩具是一种损失。"
+      ]
+    },
+    {
+      "word": "lot",
+      "phonetic": "/lɒt/",
+      "definition": "n. 许多",
+      "breakdown": [
+        {
+          "letter": "lot",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "I have a lot of toys.",
+        "我有很多玩具。"
+      ]
+    },
+    {
+      "word": "not",
+      "phonetic": "/nɒt/",
+      "definition": "adv. 不，没",
+      "breakdown": [
+        {
+          "letter": "not",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "I am not sad.",
+        "我一点也不难过。"
+      ]
+    },
+    {
+      "word": "nod",
+      "phonetic": "/nɒd/",
+      "definition": "v. 点头；打瞌睡",
+      "breakdown": [
+        {
+          "letter": "nod",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "He will nod his head.",
+        "他会点头。"
+      ]
+    },
+    {
+      "word": "sod",
+      "phonetic": "/sɒd/",
+      "definition": "n. 草皮",
+      "breakdown": [
+        {
+          "letter": "sod",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "We laid new sod in the garden.",
+        "我们在花园里铺了新草皮。"
+      ]
+    },
+    {
+      "word": "cock",
+      "phonetic": "/kɒk/",
+      "definition": "n. 公鸡",
+      "breakdown": [
+        {
+          "letter": "cock",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "The cock crowed loudly in the morning.",
+        "公鸡早上大声啼叫。"
+      ]
+    },
+    {
+      "word": "lock",
+      "phonetic": "/lɒk/",
+      "definition": "v. 锁住；上锁",
+      "breakdown": [
+        {
+          "letter": "lock",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Please lock the door.",
+        "请锁门。"
+      ]
+    },
+    {
+      "word": "sock",
+      "phonetic": "/sɒk/",
+      "definition": "n. 短袜",
+      "breakdown": [
+        {
+          "letter": "sock",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "I wear a red sock.",
+        "我穿一只红袜子。"
+      ]
+    },
+    {
+      "word": "rock",
+      "phonetic": "/rɒk/",
+      "definition": "n. 岩石；石头",
+      "breakdown": [
+        {
+          "letter": "rock",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "This is a big rock.",
+        "这是一块大石头。"
+      ]
+    },
+    {
+      "word": "block",
+      "phonetic": "/blɒk/",
+      "definition": "n. 积木；街区",
+      "breakdown": [
+        {
+          "letter": "block",
+          "phon": "/bl/"
+        }
+      ],
+      "sentences": [
+        "Build a tower with blocks.",
+        "用积木搭一个塔。"
+      ]
+    },
+    {
+      "word": "knock",
+      "phonetic": "/nɒk/",
+      "definition": "v. 敲；打",
+      "breakdown": [
+        {
+          "letter": "knock",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "Knock on the door.",
+        "敲门。"
+      ]
+    },
+    {
+      "word": "song",
+      "phonetic": "/sɒŋ/",
+      "definition": "n. 歌曲",
+      "breakdown": [
+        {
+          "letter": "song",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Sing a happy song.",
+        "唱一首快乐的歌。"
+      ]
+    },
+    {
+      "word": "wash",
+      "phonetic": "/wɒʃ/",
+      "definition": "v. 洗涤",
+      "breakdown": [
+        {
+          "letter": "wash",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "Let's wash our hands.",
+        "我们洗手吧。"
       ]
     },
     {
@@ -654,407 +385,86 @@ window.PHONICS_DAY_09 = {
       "definition": "v. 想要",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "want",
           "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
         }
       ],
       "sentences": [
-        "I want an apple.",
-        "我想要一个苹果。"
+        "I want a new toy.",
+        "我想要一个新玩具。"
       ]
     },
     {
-      "word": "wash",
-      "phonetic": "/wɒʃ/",
-      "definition": "v. 洗",
+      "word": "watch",
+      "phonetic": "/wɒtʃ/",
+      "definition": "n. 手表",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "watch",
           "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
         }
       ],
       "sentences": [
-        "Wash your hands before eating.",
-        "饭前洗手。"
+        "I watch the birds fly.",
+        "我看小鸟飞。"
       ]
     },
-{
-    "word": "cost",
-    "phonetic": "/ˈkɑst/",
-    "definition": "n. 费用；成本",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a cost.",
-          "我看到一个费用。"
-    ]
-},
-{
-    "word": "crop",
-    "phonetic": "/kɹɒp/",
-    "definition": "n. 庄稼",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "p",
-                "phon": "/p/"
-          }
-    ],
-    "sentences": [
-          "I see a crop.",
-          "我看到一个庄稼。"
-    ]
-},
-{
-    "word": "long",
-    "phonetic": "/ˈlɔːŋ/",
-    "definition": "adj. 长的",
-    "breakdown": [
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "It is very long.",
-          "它非常长的。"
-    ]
-},
-{
-    "word": "wrong",
-    "phonetic": "/ɹɒŋ/",
-    "definition": "adj. 错误的",
-    "breakdown": [
-          {
-                "letter": "w",
-                "phon": "/w/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "It is very wrong.",
-          "它非常错误的。"
-    ]
-},
-{
-    "word": "boss",
-    "phonetic": "/bɑs/",
-    "definition": "n. 老板",
-    "breakdown": [
-          {
-                "letter": "b",
-                "phon": "/b/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "I see a boss.",
-          "我看到一个老板。"
-    ]
-},
-{
-    "word": "loss",
-    "phonetic": "/lɑs/",
-    "definition": "n. 损失",
-    "breakdown": [
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "s",
-                "phon": "/s/"
-          }
-    ],
-    "sentences": [
-          "I see a loss.",
-          "我看到一个损失。"
-    ]
-},
-{
-    "word": "sod",
-    "phonetic": "/sɒd/",
-    "definition": "n. 草皮",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "d",
-                "phon": "/d/"
-          }
-    ],
-    "sentences": [
-          "I see a sod.",
-          "我看到一个草皮。"
-    ]
-},
-{
-    "word": "cock",
-    "phonetic": "/kɒk/",
-    "definition": "n. 公鸡",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ck",
-                "phon": "/k/"
-          }
-    ],
-    "sentences": [
-          "I see a cock.",
-          "我看到一个公鸡。"
-    ]
-},
-{
-    "word": "knock",
-    "phonetic": "/nɒk/",
-    "definition": "v. 敲",
-    "breakdown": [
-          {
-                "letter": "k",
-                "phon": "/k/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ck",
-                "phon": "/k/"
-          }
-    ],
-    "sentences": [
-          "Please knock it.",
-          "请敲它。"
-    ]
-},
-{
-    "word": "song",
-    "phonetic": "/sɒŋ/",
-    "definition": "n. 歌曲",
-    "breakdown": [
-          {
-                "letter": "s",
-                "phon": "/s/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "I see a song.",
-          "我看到一个歌曲。"
-    ]
-},
-{
-    "word": "watch",
-    "phonetic": "/wɒt͡ʃ/",
-    "definition": "n. 手表；观看",
-    "breakdown": [
-          {
-                "letter": "wa",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "ch",
-                "phon": "/tʃ/"
-          }
-    ],
-    "sentences": [
-          "I see a watch.",
-          "我看到一个手表。"
-    ]
-},
-{
-    "word": "what",
-    "phonetic": "/wɔt/",
-    "definition": "pron. 什么",
-    "breakdown": [
-          {
-                "letter": "wh",
-                "phon": "/w/"
-          },
-          {
-                "letter": "a",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "What is here.",
-          "什么在这里。"
-    ]
-},
-{
-    "word": "quality",
-    "phonetic": "/ˈkwɒlɪti/",
-    "definition": "n. 质量",
-    "breakdown": [
-          {
-                "letter": "qua",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          }
-    ],
-    "sentences": [
-          "I see a quality.",
-          "我看到一个质量。"
-    ]
-},
-{
-    "word": "quarrel",
-    "phonetic": "/ˈkwɒɹəl/",
-    "definition": "n. 争吵",
-    "breakdown": [
-          {
-                "letter": "qua",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          }
-    ],
-    "sentences": [
-          "I see a quarrel.",
-          "我看到一个争吵。"
-    ]
-}
+    {
+      "word": "what",
+      "phonetic": "/wɒt/",
+      "definition": "pron. 什么",
+      "breakdown": [
+        {
+          "letter": "what",
+          "phon": "/w/"
+        }
+      ],
+      "sentences": [
+        "What is this?",
+        "这是什么？"
+      ]
+    },
+    {
+      "word": "quality",
+      "phonetic": "/ˈkwɒləti/",
+      "definition": "n. 质量，品质",
+      "breakdown": [
+        {
+          "letter": "qual",
+          "phon": "/kw/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ty",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Good food has good quality.",
+        "好食物有好的品质。"
+      ]
+    },
+    {
+      "word": "quarrel",
+      "phonetic": "/ˈkwɒrəl/",
+      "definition": "n. 争吵，争执",
+      "breakdown": [
+        {
+          "letter": "quar",
+          "phon": "/kw/"
+        },
+        {
+          "letter": "rel",
+          "phon": "/ɒ/"
+        }
+      ],
+      "sentences": [
+        "Don't quarrel with your friends.",
+        "不要和你的朋友争吵。"
+      ]
+    }
   ]
-};
+}

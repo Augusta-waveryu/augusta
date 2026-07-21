@@ -5,179 +5,33 @@ window.PHONICS_DAY_32 = {
   "pdfImage": "/phonics/images/day-32.jpg",
   "words": [
     {
-      "word": "the",
-      "phonetic": "/ðə/",
-      "definition": "art. 这；那",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The book is on the desk.",
-        "书在桌上。"
-      ]
-    },
-    {
       "word": "this",
       "phonetic": "/ðɪs/",
-      "definition": "pron. 这个",
+      "definition": "pron. 这",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "this",
           "phon": "/ð/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/"
         }
       ],
       "sentences": [
-        "This is my pen.",
-        "这是我的笔。"
+        "This is my book.",
+        "这是我的书。"
       ]
     },
     {
       "word": "that",
       "phonetic": "/ðæt/",
-      "definition": "pron. 那个",
+      "definition": "pron. 那；那个",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "that",
           "phon": "/ð/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
         }
       ],
       "sentences": [
-        "That is a big tree.",
-        "那是棵大树。"
-      ]
-    },
-    {
-      "word": "they",
-      "phonetic": "/ðeɪ/",
-      "definition": "pron. 他们",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "ey",
-          "phon": "/eɪ/"
-        }
-      ],
-      "sentences": [
-        "They are my friends.",
-        "他们是我的朋友。"
-      ]
-    },
-    {
-      "word": "them",
-      "phonetic": "/ðem/",
-      "definition": "pron. 他们（宾格）",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "I help them.",
-        "我帮助他们。"
-      ]
-    },
-    {
-      "word": "their",
-      "phonetic": "/ðeə/",
-      "definition": "pron. 他们的",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "ir",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "This is their house.",
-        "这是他们的房子。"
-      ]
-    },
-    {
-      "word": "there",
-      "phonetic": "/ðeə/",
-      "definition": "adv. 那里",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "re",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The book is there.",
-        "书在那里。"
-      ]
-    },
-    {
-      "word": "then",
-      "phonetic": "/ðen/",
-      "definition": "adv. 然后",
-      "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "First wash, then eat.",
-        "先洗手再吃饭。"
+        "Look at that red car!",
+        "看那辆红色的车！"
       ]
     },
     {
@@ -186,16 +40,8 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 这些",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "these",
           "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
         }
       ],
       "sentences": [
@@ -209,48 +55,118 @@ window.PHONICS_DAY_32 = {
       "definition": "pron. 那些",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "those",
           "phon": "/ð/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
         }
       ],
       "sentences": [
-        "Those are your shoes.",
-        "那些是你的鞋。"
+        "Those are my friends.",
+        "那些是我的朋友。"
+      ]
+    },
+    {
+      "word": "they",
+      "phonetic": "/ðeɪ/",
+      "definition": "pron. 他们；她们；它们",
+      "breakdown": [
+        {
+          "letter": "they",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "They play in the park.",
+        "他们在公园玩。"
+      ]
+    },
+    {
+      "word": "them",
+      "phonetic": "/ðem/",
+      "definition": "pron. 他们；她们；它们",
+      "breakdown": [
+        {
+          "letter": "them",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "I see them playing.",
+        "我看到他们在玩。"
+      ]
+    },
+    {
+      "word": "their",
+      "phonetic": "/ðeə/",
+      "definition": "pron. 他们的；她们的；它们的",
+      "breakdown": [
+        {
+          "letter": "their",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "This is their ball.",
+        "这是他们的球。"
+      ]
+    },
+    {
+      "word": "there",
+      "phonetic": "/ðeə/",
+      "definition": "adv. 在那里；到那里",
+      "breakdown": [
+        {
+          "letter": "there",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "Look over there!",
+        "看那边！"
+      ]
+    },
+    {
+      "word": "then",
+      "phonetic": "/ðen/",
+      "definition": "adv. 然后；那时",
+      "breakdown": [
+        {
+          "letter": "then",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "First this, then that.",
+        "先这个，然后那个。"
       ]
     },
     {
       "word": "than",
       "phonetic": "/ðæn/",
-      "definition": "conj. 比",
+      "definition": "conj. 比；除了",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "than",
           "phon": "/ð/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "He is taller than me.",
-        "他比我高。"
+        "I am taller than you.",
+        "我比你高。"
+      ]
+    },
+    {
+      "word": "though",
+      "phonetic": "/ðəʊ/",
+      "definition": "conj. 虽然；尽管",
+      "breakdown": [
+        {
+          "letter": "though",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "It's cold, though sunny.",
+        "天气很冷，虽然有阳光。"
       ]
     },
     {
@@ -259,182 +175,88 @@ window.PHONICS_DAY_32 = {
       "definition": "adv. 因此",
       "breakdown": [
         {
-          "letter": "th",
+          "letter": "thus",
           "phon": "/ð/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/"
         }
       ],
       "sentences": [
-        "Thus we finish the task.",
-        "这样我们完成了任务。"
-      ]
-    },
-    {
-      "word": "although",
-      "phonetic": "/ɔːlˈðəʊ/",
-      "definition": "conj. 虽然",
-      "breakdown": [
-        {
-          "letter": "al",
-          "phon": "/ɔːl/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "Although it rains, we go.",
-        "虽然下雨，我们还是去了。"
-      ]
-    },
-    {
-      "word": "other",
-      "phonetic": "/ˈʌðə/",
-      "definition": "adj. 其他的",
-      "breakdown": [
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The other book is better.",
-        "另一本书更好。"
-      ]
-    },
-    {
-      "word": "mother",
-      "phonetic": "/ˈmʌðə/",
-      "definition": "n. 母亲",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "My mother is kind.",
-        "我妈妈很善良。"
+        "It was cold, thus I wore a coat.",
+        "天气很冷，因此我穿了外套。"
       ]
     },
     {
       "word": "father",
-      "phonetic": "/ˈfɑːðə/",
+      "phonetic": "/ˈfɑːðər/",
       "definition": "n. 父亲",
       "breakdown": [
         {
-          "letter": "f",
+          "letter": "fa",
           "phon": "/f/"
         },
         {
-          "letter": "a",
+          "letter": "ther",
           "phon": "/ɑː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
         }
       ],
       "sentences": [
         "My father is tall.",
-        "我爸爸很高。"
+        "我的爸爸很高。"
+      ]
+    },
+    {
+      "word": "mother",
+      "phonetic": "/ˈmʌðər/",
+      "definition": "n. 母亲；妈妈",
+      "breakdown": [
+        {
+          "letter": "moth",
+          "phon": "/m/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ʌ/"
+        }
+      ],
+      "sentences": [
+        "My mother loves me.",
+        "我的妈妈爱我。"
       ]
     },
     {
       "word": "brother",
-      "phonetic": "/ˈbrʌðə/",
+      "phonetic": "/ˈbrʌðər/",
       "definition": "n. 兄弟",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
+          "letter": "broth",
+          "phon": "/br/"
         },
         {
           "letter": "er",
-          "phon": "/ə/"
+          "phon": "/ʌ/"
         }
       ],
       "sentences": [
-        "My brother is older.",
-        "我哥哥比我大。"
+        "He is my brother.",
+        "他是我的兄弟。"
       ]
     },
     {
       "word": "together",
-      "phonetic": "/təˈɡeðə/",
+      "phonetic": "/təˈɡeðər/",
       "definition": "adv. 一起",
       "breakdown": [
         {
-          "letter": "t",
+          "letter": "to",
           "phon": "/t/"
         },
         {
-          "letter": "o",
+          "letter": "geth",
           "phon": "/ə/"
-        },
-        {
-          "letter": "g",
-          "phon": "/ɡ/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
         },
         {
           "letter": "er",
-          "phon": "/ə/"
+          "phon": "/g/"
         }
       ],
       "sentences": [
@@ -443,637 +265,258 @@ window.PHONICS_DAY_32 = {
       ]
     },
     {
-      "word": "without",
-      "phonetic": "/wɪˈðaʊt/",
-      "definition": "prep. 没有",
+      "word": "weather",
+      "phonetic": "/ˈweðər/",
+      "definition": "n. 天气",
       "breakdown": [
         {
-          "letter": "w",
+          "letter": "weath",
           "phon": "/w/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I can't do it without you.",
-        "没有你我做不到。"
-      ]
-    },
-    {
-      "word": "within",
-      "phonetic": "/wɪˈðɪn/",
-      "definition": "prep. 在…之内",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "in",
-          "phon": "/ɪn/"
-        }
-      ],
-      "sentences": [
-        "Finish within an hour.",
-        "一小时内完成。"
-      ]
-    },
-    {
-      "word": "breathe",
-      "phonetic": "/briːð/",
-      "definition": "v. 呼吸",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Breathe slowly and deeply.",
-        "慢慢深呼吸。"
-      ]
-    },
-    {
-      "word": "bathe",
-      "phonetic": "/beɪð/",
-      "definition": "v. 洗澡",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Bathe the baby carefully.",
-        "小心给宝宝洗澡。"
-      ]
-    },
-    {
-      "word": "clothe",
-      "phonetic": "/kləʊð/",
-      "definition": "v. 穿衣",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Clothe the baby warmly.",
-        "给宝宝穿暖。"
-      ]
-    },
-    {
-      "word": "soothe",
-      "phonetic": "/suːð/",
-      "definition": "v. 安慰",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "Mom soothes the crying baby.",
-        "妈妈安慰哭泣的宝宝。"
-      ]
-    },
-    {
-      "word": "writhe",
-      "phonetic": "/raɪð/",
-      "definition": "v. 扭动",
-      "breakdown": [
-        {
-          "letter": "wr",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        }
-      ],
-      "sentences": [
-        "The worm writhes on the ground.",
-        "虫子在地上扭动。"
-      ]
-    },
-    {
-      "word": "further",
-      "phonetic": "/ˈfɜːðə/",
-      "definition": "adv. 更远",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
         },
         {
           "letter": "er",
-          "phon": "/ə/"
+          "phon": "/e/"
         }
       ],
       "sentences": [
-        "Go further down the road.",
-        "沿路走更远。"
+        "The weather is sunny today.",
+        "今天天气晴朗。"
       ]
     },
     {
-      "word": "northern",
-      "phonetic": "/ˈnɔːðən/",
-      "definition": "adj. 北方的",
+      "word": "feather",
+      "phonetic": "/ˈfeðər/",
+      "definition": "n. 羽毛",
       "breakdown": [
         {
-          "letter": "n",
+          "letter": "feath",
+          "phon": "/f/"
+        },
+        {
+          "letter": "er",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "A bird has a soft feather.",
+        "鸟有柔软的羽毛。"
+      ]
+    },
+    {
+      "word": "leather",
+      "phonetic": "/ˈleðər/",
+      "definition": "n. 皮革；皮革制品",
+      "breakdown": [
+        {
+          "letter": "leath",
+          "phon": "/l/"
+        },
+        {
+          "letter": "er",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "My shoes are made of leather.",
+        "我的鞋子是皮革做的。"
+      ]
+    },
+    {
+      "word": "another",
+      "phonetic": "/əˈnʌðər/",
+      "definition": "det. 另外的；pron. 另一个",
+      "breakdown": [
+        {
+          "letter": "an",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "oth",
           "phon": "/n/"
         },
         {
-          "letter": "or",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "ern",
-          "phon": "/ən/"
+          "letter": "er",
+          "phon": "/ʌ/"
         }
       ],
       "sentences": [
-        "The northern wind is cold.",
-        "北风很冷。"
+        "I want another cookie.",
+        "我想要另一块饼干。"
       ]
     },
     {
-      "word": "southern",
-      "phonetic": "/ˈsʌðən/",
-      "definition": "adj. 南方的",
+      "word": "other",
+      "phonetic": "/ˈʌðər/",
+      "definition": "adj. 另外的；其他的",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "ou",
+          "letter": "oth",
           "phon": "/ʌ/"
         },
         {
-          "letter": "th",
+          "letter": "er",
           "phon": "/ð/"
-        },
-        {
-          "letter": "ern",
-          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "The southern city is warm.",
-        "南方城市很暖。"
+        "Do you have any other toys?",
+        "你还有其他玩具吗？"
+      ]
+    },
+    {
+      "word": "either",
+      "phonetic": "/ˈaɪðər/",
+      "definition": "adv. 也（不）",
+      "breakdown": [
+        {
+          "letter": "ei",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ther",
+          "phon": "/ð/"
+        }
+      ],
+      "sentences": [
+        "I don't like it either.",
+        "我也不喜欢它。"
+      ]
+    },
+    {
+      "word": "neither",
+      "phonetic": "/ˈnaɪðər/",
+      "definition": "det. 两者都不",
+      "breakdown": [
+        {
+          "letter": "nei",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ther",
+          "phon": "/aɪ/"
+        }
+      ],
+      "sentences": [
+        "Neither is correct.",
+        "两个都不对。"
+      ]
+    },
+    {
+      "word": "without",
+      "phonetic": "/wɪˈðaʊt/",
+      "definition": "prep. 没有；不带",
+      "breakdown": [
+        {
+          "letter": "with",
+          "phon": "/w/"
+        },
+        {
+          "letter": "out",
+          "phon": "/ɪ/"
+        }
+      ],
+      "sentences": [
+        "I play without my shoes.",
+        "我玩的时候不穿鞋。"
       ]
     },
     {
       "word": "smooth",
       "phonetic": "/smuːð/",
-      "definition": "adj. 光滑的",
+      "definition": "adj. 光滑的；平稳的",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
+          "letter": "smooth",
+          "phon": "/sm/"
         }
       ],
       "sentences": [
-        "The surface is smooth.",
-        "表面很光滑。"
+        "The stone is very smooth.",
+        "这块石头很光滑。"
+      ]
+    },
+    {
+      "word": "breathe",
+      "phonetic": "/briːð/",
+      "definition": "v. 呼吸；吸入",
+      "breakdown": [
+        {
+          "letter": "breathe",
+          "phon": "/br/"
+        }
+      ],
+      "sentences": [
+        "Fish breathe in water.",
+        "鱼在水里呼吸。"
+      ]
+    },
+    {
+      "word": "clothing",
+      "phonetic": "/ˈkləʊðɪŋ/",
+      "definition": "n. 服装，衣服",
+      "breakdown": [
+        {
+          "letter": "cloth",
+          "phon": "/kl/"
+        },
+        {
+          "letter": "ing",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "We need warm clothing.",
+        "我们需要保暖的衣服。"
       ]
     },
     {
       "word": "worthy",
       "phonetic": "/ˈwɜːði/",
-      "definition": "adj. 值得的",
+      "definition": "adj. 值得的；有价值的",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/"
+          "letter": "wor",
+          "phon": ""
         },
         {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
+          "letter": "thy",
+          "phon": ""
         }
       ],
       "sentences": [
-        "He is a worthy hero.",
-        "他是个值得尊敬的英雄。"
+        "He is a worthy winner.",
+        "他是一位当之无愧的赢家。"
       ]
     },
-{
-    "word": "et",
-    "phonetic": "/ɛt/",
-    "definition": "abbr. 外星人（ET）",
-    "breakdown": [
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "t",
-                "phon": "/t/"
-          }
-    ],
-    "sentences": [
-          "I see a et.",
-          "我看到一个外星人（ET）。"
-    ]
-},
-{
-    "word": "though",
-    "phonetic": "/ðəʊ/",
-    "definition": "conj. 虽然",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "ou",
-                "phon": "/aʊ/"
-          },
-          {
-                "letter": "g",
-                "phon": "/g/"
-          },
-          {
-                "letter": "h",
-                "phon": "/h/"
-          }
-    ],
-    "sentences": [
-          "You though me.",
-          "你虽然我。"
-    ]
-},
-{
-    "word": "or",
-    "phonetic": "/ɔː(ɹ)/",
-    "definition": "conj. 或者",
-    "breakdown": [
-          {
-                "letter": "or",
-                "phon": "/ɔː/"
-          }
-    ],
-    "sentences": [
-          "You or me.",
-          "你或者我。"
-    ]
-},
-{
-    "word": "weather",
-    "phonetic": "/ˈwɛðə/",
-    "definition": "n. 天气",
-    "breakdown": [
-          {
-                "letter": "w",
-                "phon": "/w/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "th",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a weather.",
-          "我看到一个天气。"
-    ]
-},
-{
-    "word": "feather",
-    "phonetic": "/ˈfɛð.ə(ɹ)/",
-    "definition": "n. 羽毛",
-    "breakdown": [
-          {
-                "letter": "f",
-                "phon": "/f/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "th",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "I see a feather.",
-          "我看到一个羽毛。"
-    ]
-},
-{
-    "word": "clothing",
-    "phonetic": "/ˈkləʊðɪŋ/",
-    "definition": "n. 衣服",
-    "breakdown": [
-          {
-                "letter": "c",
-                "phon": "/k/"
-          },
-          {
-                "letter": "l",
-                "phon": "/l/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "ng",
-                "phon": "/ŋ/"
-          }
-    ],
-    "sentences": [
-          "I see a clothing.",
-          "我看到一个衣服。"
-    ]
-},
-{
-    "word": "leather",
-    "phonetic": "/ˈleðə/",
-    "definition": "n. 皮革",
-    "breakdown": [
-          {
-                "letter": "l",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "ea",
-                "phon": "/iː/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "This is leather.",
-          "这是皮革。"
-    ]
-},
-{
-    "word": "another",
-    "phonetic": "/əˈnʌðə/",
-    "definition": "pron. 另一个",
-    "breakdown": [
-          {
-                "letter": "a",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "n",
-                "phon": "/n/"
-          },
-          {
-                "letter": "o",
-                "phon": "/ɒ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "Another is here.",
-          "另一个在这里。"
-    ]
-},
-{
-    "word": "either",
-    "phonetic": "/ˈaɪðə/",
-    "definition": "pron. 两者之一",
-    "breakdown": [
-          {
-                "letter": "e",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "Either is here.",
-          "两者之一在这里。"
-    ]
-},
-{
-    "word": "neither",
-    "phonetic": "/ˈnaɪðə/",
-    "definition": "pron. 两者都不",
-    "breakdown": [
-          {
-                "letter": "n",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "i",
-                "phon": "/ɪ/"
-          },
-          {
-                "letter": "th",
-                "phon": "/θ/"
-          },
-          {
-                "letter": "er",
-                "phon": "/ɜː/"
-          }
-    ],
-    "sentences": [
-          "Neither is here.",
-          "两者都不在这里。"
-    ]
-},
-{
-    "word": "they're",
-    "phonetic": "/ðeə/",
-    "definition": "pron. 他们是",
-    "breakdown": [
-          {
-                "letter": "th",
-                "phon": "/ð/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          },
-          {
-                "letter": "y",
-                "phon": "/j/"
-          },
-          {
-                "letter": "r",
-                "phon": "/r/"
-          },
-          {
-                "letter": "e",
-                "phon": "/e/"
-          }
-    ],
-    "sentences": [
-          "They're is here.",
-          "他们是在这里。"
-    ]
-}
+    {
+      "word": "bathe",
+      "phonetic": "/beɪð/",
+      "definition": "v. (在水中)沐浴，洗澡",
+      "breakdown": [
+        {
+          "letter": "bathe",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "I like to bathe in the warm water.",
+        "我喜欢在温暖的水中洗澡。"
+      ]
+    },
+    {
+      "word": "they're",
+      "phonetic": "/ðeə/",
+      "definition": "contr. contraction of 'they are'",
+      "breakdown": [
+        {
+          "letter": "they're",
+          "phon": ""
+        }
+      ],
+      "sentences": [
+        "They're my friends.",
+        "他们是我的朋友。"
+      ]
+    }
   ]
-};
+}

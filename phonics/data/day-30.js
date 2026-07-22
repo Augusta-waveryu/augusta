@@ -209,7 +209,7 @@ window.PHONICS_DAY_30 = {
       "breakdown": [
         {
           "letter": "co",
-          "phon": "/ˈkəʊ/"
+          "phon": "/kəʊ/"
         },
         {
           "letter": "zy",

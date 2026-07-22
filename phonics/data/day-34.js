@@ -612,7 +612,11 @@ window.PHONICS_DAY_34 = {
       "breakdown": [
         {
           "letter": "A",
-          "phon": "/ˈeɪʒə/"
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "sia",
+          "phon": "/ʒə/"
         }
       ],
       "sentences": [

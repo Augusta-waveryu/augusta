@@ -534,7 +534,11 @@ window.PHONICS_DAY_20 = {
       "breakdown": [
         {
           "letter": "Eur",
-          "phon": "/ˈjʊərəp/"
+          "phon": "/jʊə/"
+        },
+        {
+          "letter": "ope",
+          "phon": "/əp/"
         }
       ],
       "sentences": [

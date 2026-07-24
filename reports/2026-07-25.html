@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-07-25</title>
+<style>
+:root {
+  --bg: #fff; --text: #1a1a1a; --muted: #888; --border: #eee;
+  --card-bg: #fafafa; --chip-bg: #f0f0f0; --link: #0066cc;
+  --gradient-start: #ff6b35; --gradient-end: #c41e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0a; --text: #e0e0e0; --muted: #666; --border: #222; --card-bg: #111; --chip-bg: #1a1a1a; --link: #5aadff; }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--link); text-decoration: none; }
+.back-link { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); }
+.back-link:hover { color: var(--link); }
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+.hero .date { font-size: 15px; opacity: 0.85; margin-top: 8px; }
+.hero .stats { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat-num { font-size: 28px; font-weight: 700; }
+.hero .stat-label { font-size: 12px; opacity: 0.8; }
+.nav-bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .nav-bar { background: rgba(10,10,10,0.92); } }
+.nav-bar a { color: var(--muted); padding: 4px 12px; border-radius: 20px; transition: all 0.2s; }
+.nav-bar a:hover, .nav-bar a.active { color: #fff; background: var(--gradient-start); }
+main { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--gradient-start); display: inline-block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s; opacity: 0; transform: translateY(20px); }
+.card.visible { opacity: 1; transform: translateY(0); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.card-num { font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.card-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.card-source { font-size: 12px; background: var(--chip-bg); padding: 2px 8px; border-radius: 10px; color: var(--muted); }
+.card-time { font-size: 12px; color: var(--muted); }
+.card-summary { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 10px; }
+.card-link { font-size: 13px; font-weight: 500; }
+.footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero .stats { gap: 12px; }
+  .hero .stat-num { font-size: 22px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>AI 晨报 · 2026-07-25</h1>
+  <p class="date">星期六 · 覆盖 48 小时 · 精选 30 条</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">模型发布</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">产品更新</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">行业动态</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">论文研究</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">技巧观点</div></div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a href="#models" class="active">模型</a>
+  <a href="#products">产品</a>
+  <a href="#industry">行业</a>
+  <a href="#papers">论文</a>
+  <a href="#tips">观点</a>
+</nav>
+
+<main>
+  <a href="../" class="back-link">← 返回首页</a>
+
+  <section class="section" id="models">
+    <h2 class="section-title">模型发布 / 更新</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">01</div>
+        <h3 class="card-title"><a href="https://www.anthropic.com/news/claude-opus-5" target="_blank">Anthropic 发布 Claude Opus 5</a></h3>
+        <div class="card-meta"><span class="card-source">Anthropic</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">旗舰模型 Opus 5 性能逼近 Fable 5 但价格砍半，Frontier-Bench v0.1 超 Opus 4.8 两倍，ARC-AGI 3 得分约次优模型三倍。即日起成为 Claude Max 默认模型和 Claude Pro 最强模型。</p>
+        <a href="https://www.anthropic.com/news/claude-opus-5" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">02</div>
+        <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g" target="_blank">蚂蚁百灵发布 Ling-3.0-flash 原生混合推理模型</a></h3>
+        <div class="card-meta"><span class="card-source">蚂蚁百灵</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">总参数 124B、激活仅 5.1B，采用原生混合线性注意力 + 1/64 稀疏 MoE，长输入下 TTFT 降低 60%-80%，对标甚至超越上一代旗舰 Ring-2.6-1T。</p>
+        <a href="https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">03</div>
+        <h3 class="card-title"><a href="https://updates.midjourney.com/version-8-2" target="_blank">Midjourney V8.2 发布</a></h3>
+        <div class="card-meta"><span class="card-source">Midjourney</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">聚焦美学质量提升与个性化理解，低质量图像出现频率显著降低。个性化配置文件拥有更大更优的图像选择池，建议用户尝试新旧配置文件体验最新版本。</p>
+        <a href="https://updates.midjourney.com/version-8-2" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">04</div>
+        <h3 class="card-title"><a href="https://aitoolsrecap.com/Blog/ai-news-july-24-2026" target="_blank">DeepSeek V4 稳定版发布，旧 API 别名今日废止</a></h3>
+        <div class="card-meta"><span class="card-source">DeepSeek</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">deepseek-chat 和 deepseek-reasoner 别名于今日 15:59 UTC 正式退役。替换为 v4-flash（默认开启思考）和 v4-pro（需显式调用）。注意 reasoner 默认映射 Flash 而非 Pro。</p>
+        <a href="https://aitoolsrecap.com/Blog/ai-news-july-24-2026" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">05</div>
+        <h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2080751885192212556" target="_blank">GPT-5.6 Sol 在 DeepSWE 领先 Opus 5</a></h3>
+        <div class="card-meta"><span class="card-source">X / Rohan Paul</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">GPT-5.6 Sol 在 DeepSWE 基准取得 72.7%，领先 Claude Opus 5 的 68.8%。该基准测试模型在陌生代码库中自主完成功能开发或 Bug 修复的能力。</p>
+        <a href="https://x.com/rohanpaul_ai/status/2080751885192212556" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">06</div>
+        <h3 class="card-title"><a href="https://x.com/berryxia/status/2080782132717437038" target="_blank">Grok 4.6 两周后发布，4.7 紧随其后</a></h3>
+        <div class="card-meta"><span class="card-source">X / Berry Xia</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">xAI 加速迭代：Grok 4.6 预计两周后发布，4.7 再隔四周。当前 Grok 4.5 在速度和质量上已获好评，节奏施压 OpenAI 和 Anthropic。</p>
+        <a href="https://x.com/berryxia/status/2080782132717437038" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <h2 class="section-title">产品发布 / 更新</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">07</div>
+        <h3 class="card-title"><a href="https://x.com/perplexity_ai/status/2080778151962214575" target="_blank">Perplexity 上线 Claude Opus 5</a></h3>
+        <div class="card-meta"><span class="card-source">Perplexity</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">Opus 5 现已在 Perplexity 和 Perplexity Computer 中可用。WANDR 评估中表现优于除 Fable 5 外所有模型，同时成本低 57%。</p>
+        <a href="https://x.com/perplexity_ai/status/2080778151962214575" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">08</div>
+        <h3 class="card-title"><a href="https://x.com/runwayml/status/2080649234672439389" target="_blank">Runway Agent 推出自然语言工作流</a></h3>
+        <div class="card-meta"><span class="card-source">Runway</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">在 Runway Agent 中引入节点式工作流，用户可通过自然语言构建、运行或编辑工作流，大规模解锁高质量输出。点击下方链接调用 / Workflow 技能即可尝试。</p>
+        <a href="https://x.com/runwayml/status/2080649234672439389" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">09</div>
+        <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/HRySK1LU53clPe2I_M-Fug" target="_blank">百度搭子更新：电脑手机接力、桌面端内嵌浏览器</a></h3>
+        <div class="card-meta"><span class="card-source">百度智能云</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">支持电脑与手机双端互联接力，同步任务上下文与执行进度。桌面端内嵌浏览器正式上线，自动打开多网页执行调研、下载等操作。任务耗时降低 20%，Token 利用率提升 25%。</p>
+        <a href="https://mp.weixin.qq.com/s/HRySK1LU53clPe2I_M-Fug" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">10</div>
+        <h3 class="card-title"><a href="https://x.com/dotey/status/2080770347977113983" target="_blank">BaoCut 新增视频画面翻译功能</a></h3>
+        <div class="card-meta"><span class="card-source">宝玉 (@dotey)</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">BaoCut v0.8.2 上线视频画面翻译，对视频帧进行 OCR 识别并叠加翻译字幕。支持 Agent（推荐 Codex）自动化操作，翻译结果可导出至 CapCut 二次处理。</p>
+        <a href="https://x.com/dotey/status/2080770347977113983" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">11</div>
+        <h3 class="card-title"><a href="https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/" target="_blank">Cognition 收购 AI 社交应用 Poke</a></h3>
+        <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">Devin 母公司 Cognition 以低九位数金额收购 AI 社交应用 Poke，将「像朋友一样对话」的交互模型融入编程 Agent。预示 AI 产品竞争从模型能力转向交互体验。</p>
+        <a href="https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">12</div>
+        <h3 class="card-title"><a href="https://github.com/citrolabs/ego-lite" target="_blank">ego-lite：人机协作浏览器</a></h3>
+        <div class="card-meta"><span class="card-source">GitHub Trending</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">AI Agent 在独立 Space 中并行处理浏览器任务，不打扰用户当前标签页，登录状态直接共享无需重复配置。相比 browser-use 让 Agent 更接近「同事」而非「机器人」。</p>
+        <a href="https://github.com/citrolabs/ego-lite" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">13</div>
+        <h3 class="card-title"><a href="https://openrouter.ai/blog/announcements/classifiers" target="_blank">OpenRouter 推出 Classifiers 测试版</a></h3>
+        <div class="card-meta"><span class="card-source">OpenRouter</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别。分类异步运行不增加推理延迟，推荐 Gemini 3.5 Flash Lite 作为分类模型。</p>
+        <a href="https://openrouter.ai/blog/announcements/classifiers" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="industry">
+    <h2 class="section-title">行业动态</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">14</div>
+        <h3 class="card-title"><a href="https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html" target="_blank">英伟达、微软和 Meta 联合警告：避免对开放权重模型过度监管</a></h3>
+        <div class="card-meta"><span class="card-source">CNBC</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">三巨头联合签署公开信，警告对开放权重 AI 模型的过度监管将削弱美国 AI 竞争力。指出开放权重模型能促进创新、降低准入门槛并支持学术研究。OpenAI 和 Anthropic 未签署该信函。</p>
+        <a href="https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">15</div>
+        <h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2080746553573245301" target="_blank">黄仁勋：知识蒸馏是智能的基础</a></h3>
+        <div class="card-meta"><span class="card-source">Axios / X</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">英伟达 CEO 黄仁勋接受 Axios 采访回应蒸馏争议，称「蒸馏是智能的基础」，AI 必须从其他来源学习。指出未来互联网可能 99% 由 AI 生成内容，更智能的 AI 也更安全。此前发布首条推文签署开源 AI 公开信。</p>
+        <a href="https://x.com/rohanpaul_ai/status/2080746553573245301" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">16</div>
+        <h3 class="card-title"><a href="https://aitoolsrecap.com/Blog/ai-news-july-24-2026" target="_blank">FLI AI 安全指数：无人及格</a></h3>
+        <div class="card-meta"><span class="card-source">Future of Life Institute</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">2026 夏季 AI 安全指数报告：Anthropic C+ 最高，OpenAI 和 Google C，Meta D+，xAI/DeepSeek/Mistral 不及格。评审团指出各实验室正悄然退缩此前的安全承诺，无一家将安全实践与模型能力匹配。</p>
+        <a href="https://aitoolsrecap.com/Blog/ai-news-july-24-2026" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">17</div>
+        <h3 class="card-title"><a href="https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-marc-pincus-in-talks-to-raise-100m" target="_blank">Prentis 以 10 亿美元估值洽谈融资 1 亿</a></h3>
+        <div class="card-meta"><span class="card-source">TechCrunch</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">专注计算机使用模型的 AI 实验室 Prentis 由 Reid Hoffman 和 Marc Pincus 联合创立。其 Hive-32B 在两项基准超越 GPT-5.4 与 Opus 4.6，单任务成本比前沿 API 低约 10 倍，已签最高 5000 万美元客户合同。</p>
+        <a href="https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-marc-pincus-in-talks-to-raise-100m" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">18</div>
+        <h3 class="card-title"><a href="https://twitter.com/fried_rice/status/2080059356322918777" target="_blank">Kimi K3 利用最新 Redis 服务器漏洞</a></h3>
+        <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">Kimi K3 被曝利用最新 Redis 服务器漏洞进行攻击，未打补丁的 Redis 实例可被远程执行代码。目前尚无官方补丁发布，用户需立即升级或限制 Redis 公网访问。</p>
+        <a href="https://twitter.com/fried_rice/status/2080059356322918777" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">19</div>
+        <h3 class="card-title"><a href="https://new.qq.com/rain/a/20260725A02QMQ00" target="_blank">英特尔 Q2 财报：营收 161 亿美元，创 15 年最高增幅</a></h3>
+        <div class="card-meta"><span class="card-source">腾讯新闻</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">英特尔公布 2026 年 Q2 财报，总营收 161 亿美元同比增长 25%，创近 15 年最高单季营收增幅，大幅超出市场预期。AI 算力红利全面释放。</p>
+        <a href="https://new.qq.com/rain/a/20260725A02QMQ00" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">20</div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/980/890.htm" target="_blank">佛州男子因信 ChatGPT 拒绝就医险丧命</a></h3>
+        <div class="card-meta"><span class="card-source">IT 之家</span><span class="card-time">7月23日</span></div>
+        <p class="card-summary">美国佛罗里达州 55 岁男子 Scott Winters 起诉 OpenAI，称 ChatGPT-4o 多次建议其无需就医，导致双肺血栓引发大面积肺栓塞一度濒临死亡。诉状指控 OpenAI 存在疏忽和「无证行医」，要求暂停 ChatGPT Health 服务。</p>
+        <a href="https://www.ithome.com/0/980/890.htm" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="papers">
+    <h2 class="section-title">论文研究</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">21</div>
+        <h3 class="card-title"><a href="https://www.anthropic.com/research/project-pilot" target="_blank">Drone-Bench：评估 AI 自主操控无人机</a></h3>
+        <div class="card-meta"><span class="card-source">Anthropic × Andon Labs</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">Anthropic 联合 Andon Labs 推出 Drone-Bench，测试 AI 模型自主操控四旋翼无人机在室内环境中定位并追踪指定人员。任务分解为 3D 地图重建、定位、导航、目标检测与跟踪五子任务，通过软件复现实现快速评估。</p>
+        <a href="https://www.anthropic.com/research/project-pilot" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">22</div>
+        <h3 class="card-title"><a href="https://x.com/omarsar0/status/2080775791395340313" target="_blank">Agentic Context Management 五大原语</a></h3>
+        <div class="card-meta"><span class="card-source">DAIR.AI</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">论文指出生产级 AI 智能体失败更多源于上下文管理而非推理能力，提出架构、摄取、范围界定、预测和压缩五大原语。参考实现在 LongMemEval 和 LoCoMo 基准分别达 92% 和 93.2% 准确率。</p>
+        <a href="https://x.com/omarsar0/status/2080775791395340313" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">23</div>
+        <h3 class="card-title"><a href="https://github.com/shiyu-coder/Kronos" target="_blank">Kronos：首个开源金融 K 线基础模型</a></h3>
+        <div class="card-meta"><span class="card-source">GitHub Trending</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">专为金融 K 线（蜡烛图）训练的开源基础模型，覆盖超过 45 家全球交易所数据，已被 AAAI 2026 收录。量化开发者终于可以 fine-tune 金融时序专用大模型，而非将通用 LLM 硬用在结构化价格数据上。</p>
+        <a href="https://github.com/shiyu-coder/Kronos" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">24</div>
+        <h3 class="card-title"><a href="https://huggingface.co/papers/2607.21553" target="_blank">SANA-Video 2.0：单 GPU 跑 720p 视频生成</a></h3>
+        <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">用混合线性注意力机制（O(N) 复杂度 + 周期性 Softmax 锚点）在 5B/14B 规模下实现单 GPU 生成 720p 视频，质量媲美全 Softmax 架构。独立开发者无需多卡集群也能跑高清视频生成。</p>
+        <a href="https://huggingface.co/papers/2607.21553" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">25</div>
+        <h3 class="card-title"><a href="https://huggingface.co/papers/2607.21051" target="_blank">Agent 经验样本高效学习</a></h3>
+        <div class="card-meta"><span class="card-source">HuggingFace Papers</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">提出将 Agent 自身交互历史通过上下文蒸馏内化进模型权重，解决「上下文清空后经验归零」的问题。Agent 可跨会话积累真正有用的经验，而非每次重新出发。</p>
+        <a href="https://huggingface.co/papers/2607.21051" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="tips">
+    <h2 class="section-title">技巧与观点</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-num">26</div>
+        <h3 class="card-title"><a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank">Claude 5 上下文工程新规则</a></h3>
+        <div class="card-meta"><span class="card-source">Anthropic Blog</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">Anthropic 为 Opus 5 和 Fable 5 等新一代模型删除了 Claude Code 超过 80% 的系统提示词，且编码评测无显著损失。核心原则：系统提示词应只存储偏好信息，而非替代模型功能。</p>
+        <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">27</div>
+        <h3 class="card-title"><a href="https://github.com/izeigerman/claude-thermos" target="_blank">Claude-thermos：保持会话缓存热度</a></h3>
+        <div class="card-meta"><span class="card-source">GitHub / Show HN</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">本地反向代理监控 Claude Code 会话，在主智能体因子智能体而空闲超过 5 分钟时自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。</p>
+        <a href="https://github.com/izeigerman/claude-thermos" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">28</div>
+        <h3 class="card-title"><a href="https://lucumr.pocoo.org/2026/7/24/codeberg-divides" target="_blank">Codeberg 禁止 AI 生成代码项目</a></h3>
+        <div class="card-meta"><span class="card-source">Hacker News</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">Codeberg 更新服务条款，禁止托管主要由生成式 AI 编写的项目。政策定义模糊（「大部分」难以量化），实际执行可能依赖社区规范。开源社区正因 LLM 和智能体工具加速分裂。</p>
+        <a href="https://lucumr.pocoo.org/2026/7/24/codeberg-divides" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">29</div>
+        <h3 class="card-title"><a href="https://x.com/dotey/status/2080770347977113983" target="_blank">宝玉：DeepSeek 至今不支持多模态</a></h3>
+        <div class="card-meta"><span class="card-source">超级个体 · 宝玉</span><span class="card-time">7月24日</span></div>
+        <p class="card-summary">博主 @dotey 指出 DeepSeek 至今仍不支持多模态功能，令人难以理解。尽管其创始人梁文锋此前曾看不上 Coding Agent（现已改变看法），但多模态的缺失仍是明显短板。</p>
+        <a href="https://x.com/dotey/status/2080770347977113983" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-num">30</div>
+        <h3 class="card-title"><a href="https://aihot.virxact.com/items/cmryx4qpj065vrolgti8j0pm2" target="_blank">Orange AI：AI 驯化人类</a></h3>
+        <div class="card-meta"><span class="card-source">超级个体 · Orange AI</span><span class="card-time">7月23日</span></div>
+        <p class="card-summary">Orange AI 在播客中反思 AI 对生活的控制：AI 并未带来真正丰饶，反而像「人类简史」里的小麦一样驯化了人类。许多人被 AI 的「5 小时重置时间」锁死生活节奏，有人拿 AI 生成方案应聘声称解决模型幻觉。</p>
+        <a href="https://aihot.virxact.com/items/cmryx4qpj065vrolgti8j0pm2" target="_blank" class="card-link">阅读原文 →</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div class="footer">
+  <p>Augusta · AI 晨报 · 数据来源：AI HOT / Jason Zhu 快讯 / WebSearch</p>
+  <p>时效窗口：过去 48 小时 · 自动生成</p>
+</div>
+
+<script>
+// Scroll reveal animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), index * 50);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+// Nav bar active state
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-bar a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.pageYOffset >= sectionTop) {
+      current = section.id;
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

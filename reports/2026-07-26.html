@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 晨报 · 2026-07-26</title>
+  <style>
+    :root {
+      --bg: #fff8f5;
+      --surface: #ffffff;
+      --text: #1a120b;
+      --muted: #6b5b50;
+      --accent: #e85933;
+      --accent-2: #c2185b;
+      --card-shadow: 0 2px 8px rgba(232, 89, 51, 0.08);
+      --radius: 14px;
+      --max-width: 880px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a120b;
+        --surface: #261c15;
+        --text: #fff8f5;
+        --muted: #b8a89c;
+        --accent: #ff7a55;
+        --accent-2: #ff6090;
+        --card-shadow: 0 2px 10px rgba(0,0,0,0.35);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-bottom: 80px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .hero {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+      color: #fff;
+      padding: 72px 20px 56px;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; letter-spacing: -0.02em; }
+    .hero .subtitle { opacity: 0.92; margin-top: 12px; font-size: 1.05rem; }
+    .hero .stats { margin-top: 18px; font-size: 0.95rem; opacity: 0.9; }
+    .back { display: inline-block; margin-top: 22px; padding: 8px 18px; border: 1px solid rgba(255,255,255,0.45); border-radius: 999px; font-size: 0.9rem; transition: background .2s; }
+    .back:hover { background: rgba(255,255,255,0.15); }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 248, 245, 0.86);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(232, 89, 51, 0.12);
+      padding: 12px 20px;
+      overflow-x: auto;
+      white-space: nowrap;
+      text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      nav { background: rgba(26, 18, 11, 0.86); border-color: rgba(255,255,255,0.08); }
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      transition: all .2s;
+    }
+    nav a:hover { background: rgba(232, 89, 51, 0.1); color: var(--accent); }
+    main { max-width: var(--max-width); margin: 0 auto; padding: 32px 18px; }
+    .section { margin-bottom: 44px; opacity: 0; transform: translateY(18px); animation: fadeInUp .6s forwards; }
+    .section:nth-child(2) { animation-delay: .08s; }
+    .section:nth-child(3) { animation-delay: .16s; }
+    .section:nth-child(4) { animation-delay: .24s; }
+    .section:nth-child(5) { animation-delay: .32s; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    .section-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .section-title .count { font-size: 0.85rem; font-weight: 500; background: rgba(232, 89, 51, 0.12); color: var(--accent); padding: 2px 10px; border-radius: 999px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 18px 18px 16px;
+      display: flex;
+      gap: 12px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(232, 89, 51, 0.12); }
+    .card-index {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .card-body { flex: 1; min-width: 0; }
+    .card h3 { font-size: 1rem; font-weight: 650; line-height: 1.45; }
+    .card h3 a { color: var(--text); }
+    .card h3 a:hover { color: var(--accent); }
+    .summary { font-size: 0.9rem; color: var(--muted); margin-top: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .meta { display: flex; justify-content: space-between; margin-top: 12px; font-size: 0.78rem; color: var(--muted); }
+    .source { max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    footer { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>AI 晨报 · 2026-07-26</h1>
+    <p class="subtitle">过去 24 小时值得关注的 AI 动态</p>
+    <p class="stats">共 40 条 · 模型发布/更新 3 · 产品发布/更新 10 · 行业动态 10 · 论文研究 7 · 技巧与观点 10</p>
+    <a class="back" href="../">← 返回首页</a>
+  </header>
+  <nav>
+    <a href="#model">模型发布/更新</a> <a href="#product">产品发布/更新</a> <a href="#industry">行业动态</a> <a href="#paper">论文研究</a> <a href="#tip">技巧与观点</a>
+  </nav>
+  <main>
+    
+      <section id="model" class="section">
+        <h2 class="section-title">模型发布/更新 <span class="count">3</span></h2>
+        <div class="grid">
+          
+            <article class="card" data-title="马斯克预告 Grok 4.6 与 4.7 发布时间">
+              <span class="card-index">01</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/testingcatalog/status/2081148852695093410" target="_blank" rel="noopener">马斯克预告 Grok 4.6 与 4.7 发布时间</a></h3>
+                <p class="summary">SPACEXAI 🔥：据埃隆·马斯克透露，Grok 4.6 模型预计将在两周内发布。 &gt; 下一代 SpaceXAI 模型预计基于 2T 参数（Grok 4.5 为 1.5T），…</p>
+                <div class="meta">
+                  <span class="source">X：Testing Catalog (@testingcatalog)</span>
+                  <span class="time" title="07/25 22:45">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="LLaDA 2.2 扩散LLM实现智能体工作">
+              <span class="card-index">02</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/omarsar0/status/2081078811236380861" target="_blank" rel="noopener">LLaDA 2.2 扩散LLM实现智能体工作</a></h3>
+                <p class="summary">扩散大语言模型现在可以处理真实的智能体工作。 LLaDA 2.2 是首个大规模扩散大语言模型，旨在作为真正的智能体运行，能够规划、调用工具并在长程多轮轨迹中自我修正，同时保留了…</p>
+                <div class="meta">
+                  <span class="source">X：Elvis Saravia (@omarsar0, DAIR.AI)</span>
+                  <span class="time" title="07/25 18:07">5 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Anthropic 称 Opus 5 几乎免疫浏览器提示词注入，攻击成功率降至零">
+              <span class="card-index">03</span>
+              <div class="card-body">
+                <h3><a href="https://the-decoder.com/opus-5-may-have-solved-browser-based-prompt-injection-the-biggest-security-flaw-haunting-ai-agents" target="_blank" rel="noopener">Anthropic 称 Opus 5 几乎免疫浏览器提示词注入，攻击成功率降至零</a></h3>
+                <p class="summary">Anthropic 称其 Opus 5 模型在自家软件中几乎免疫提示词注入攻击。在 129 个浏览器智能体测试场景中，攻击成功率为零；在 Gray Swan 通用提示词注入测试…</p>
+                <div class="meta">
+                  <span class="source">The Decoder：AI News（RSS）</span>
+                  <span class="time" title="07/25 10:43">12 小时前</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="product" class="section">
+        <h2 class="section-title">产品发布/更新 <span class="count">10</span></h2>
+        <div class="grid">
+          
+            <article class="card" data-title="Buzz：Block 开源的人机 Agent 共处协作工作区平台">
+              <span class="card-index">04</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-26" target="_blank" rel="noopener">Buzz：Block 开源的人机 Agent 共处协作工作区平台</a></h3>
+                <p class="summary">支付公司 Block（Square 母公司）开源协作平台 Buzz，允许人类与 AI Agent 在同一房间（频道）内实时共建。基于可自托管的 Relay 架构，数据完全由用户…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/26 00:00">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Prentis：Reid Hoffman 与 Mark Pincus 联合创办 AI 新实验室，融资 $100M">
+              <span class="card-index">05</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-26" target="_blank" rel="noopener">Prentis：Reid Hoffman 与 Mark Pincus 联合创办 AI 新实验室，融资 $100M</a></h3>
+                <p class="summary">LinkedIn 联合创始人 Reid Hoffman 与 Zynga 创始人 Mark Pincus 联手创办 AI 实验室 Prentis，正在洽谈 $100M 融资。核心…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/26 00:00">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Claude Opus 5 用户两日实测：更详尽、更「爱说教」，值不值溢价？">
+              <span class="card-index">06</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-26" target="_blank" rel="noopener">Claude Opus 5 用户两日实测：更详尽、更「爱说教」，值不值溢价？</a></h3>
+                <p class="summary">Opus 5 上线第二天，知名 AI 观察者 bindureddy 分享实测：输出更详尽深入，但模型会主动给建议、有点「说教感」。整体认为比其他 Opus 版本上手更快，社区采…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/26 00:00">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Ruff v0.16.0 发布：默认规则从 59 条增至 413 条">
+              <span class="card-index">07</span>
+              <div class="card-body">
+                <h3><a href="https://simonwillison.net/2026/Jul/25/ruff" target="_blank" rel="noopener">Ruff v0.16.0 发布：默认规则从 59 条增至 413 条</a></h3>
+                <p class="summary">Astral 于 7 月 23 日发布 Python 代码检查工具 Ruff v0.16.0，默认启用规则从 59 条增至 413 条，覆盖语法错误和运行时错误等严重问题。作者…</p>
+                <div class="meta">
+                  <span class="source">Simon Willison 博客</span>
+                  <span class="time" title="07/25 22:44">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Airtap 推出 iMessage/RCS 对话式 AI 智能体">
+              <span class="card-index">08</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/testingcatalog/status/2081141554639519776" target="_blank" rel="noopener">Airtap 推出 iMessage/RCS 对话式 AI 智能体</a></h3>
+                <p class="summary">Airtap 已推出一款 AI 智能体，用户可通过 iMessage 或 RCS 与之对话。 Airtap AI 智能体专注于通常完全在移动应用内运行的任务，允许用户定期运行这…</p>
+                <div class="meta">
+                  <span class="source">X：Testing Catalog (@testingcatalog)</span>
+                  <span class="time" title="07/25 22:16">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="ChatGPT 网页端支持分享自定义宠物">
+              <span class="card-index">09</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/testingcatalog/status/2081129980650573963" target="_blank" rel="noopener">ChatGPT 网页端支持分享自定义宠物</a></h3>
+                <p class="summary">ICYMI 👀：ChatGPT 用户现在可以通过可分享链接，直接从 ChatGPT 网页端分享他们的自定义宠物。 &amp;gt； 设置 &amp;gt； 个性化 &amp;gt； 复制链接 目前仅限…</p>
+                <div class="meta">
+                  <span class="source">X：Testing Catalog (@testingcatalog)</span>
+                  <span class="time" title="07/25 21:30">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="CrowdReply MCP 让对话修复 AI 搜索排名">
+              <span class="card-index">10</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081116609238986924" target="_blank" rel="noopener">CrowdReply MCP 让对话修复 AI 搜索排名</a></h3>
+                <p class="summary">CrowdReply MCP 连接 Claude 后，可分析网站在 ChatGPT、Gemini、Claude 等 AI 搜索中的可见性，并自动修复排名漏洞。该工具将原本需 $…</p>
+                <div class="meta">
+                  <span class="source">X：Rohan Paul (@rohanpaul_ai)</span>
+                  <span class="time" title="07/25 20:37">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Reactor 发布 Open Dreamer：JAX/Flax 复现 Dreamer 4 世界模型管线">
+              <span class="card-index">11</span>
+              <div class="card-body">
+                <h3><a href="https://www.marktechpost.com/2026/07/25/meet-open-dreamer-a-jax-flax-reproduction-of-the-dreamer-4-world-model-pipeline-with-the-full-training-recipe-published" target="_blank" rel="noopener">Reactor 发布 Open Dreamer：JAX/Flax 复现 Dreamer 4 世界模型管线</a></h3>
+                <p class="summary">Reactor 团队发布 Open Dreamer，在 JAX/Flax NNX 中完整复现 Dreamer 4 世界模型管线并公开训练配置。该实现包含一个基于 Transfo…</p>
+                <div class="meta">
+                  <span class="source">MarkTechPost（RSS）</span>
+                  <span class="time" title="07/25 18:59">4 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="OpenRouter 新发现页上线，Opus 5 领跑">
+              <span class="card-index">12</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/OpenRouter/status/2081067901168034163" target="_blank" rel="noopener">OpenRouter 新发现页上线，Opus 5 领跑</a></h3>
+                <p class="summary">全新的发现页：探索 AI 模型的新方式 Opus 5 总榜领先，GPT 5.6 Sol 在编程方面领先，还有越来越多的路由器助你发现更多！</p>
+                <div class="meta">
+                  <span class="source">X：OpenRouter (@OpenRouter)</span>
+                  <span class="time" title="07/25 17:23">6 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="MouthPad：一款通过舌头控制的触控板">
+              <span class="card-index">13</span>
+              <div class="card-body">
+                <h3><a href="https://www.augmental.tech/" target="_blank" rel="noopener">MouthPad：一款通过舌头控制的触控板</a></h3>
+                <p class="summary">Augmental 推出 MouthPad，一款定制贴合上颚的触控板，用户可用舌头免提控制手机、平板和电脑。</p>
+                <div class="meta">
+                  <span class="source">Hacker News 热门（buzzing.cc 中文翻译）</span>
+                  <span class="time" title="07/25 17:14">6 小时前</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="industry" class="section">
+        <h2 class="section-title">行业动态 <span class="count">10</span></h2>
+        <div class="grid">
+          
+            <article class="card" data-title="良配科技：前 Kimi 搜索负责人用 AI 重构婚恋匹配，获徐新 $200 万天使">
+              <span class="card-index">14</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-26" target="_blank" rel="noopener">良配科技：前 Kimi 搜索负责人用 AI 重构婚恋匹配，获徐新 $200 万天使</a></h3>
+                <p class="summary">前月之暗面 Kimi AI 搜索技术负责人曾歆勋离职后创办「良配科技」，将 AI 搜索与匹配能力移植到婚恋场景，覆盖资料采集、智能匹配、沟通辅助三环节。今日资本徐新以 $200…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/26 00:00">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Fly.io 首席执行官 Kurt Mackey 即将卸任，公司转向 AI 智能体平台 Sprites">
+              <span class="card-index">15</span>
+              <div class="card-body">
+                <h3><a href="https://fly.io/blog/kurt-scott-money-sprites" target="_blank" rel="noopener">Fly.io 首席执行官 Kurt Mackey 即将卸任，公司转向 AI 智能体平台 Sprites</a></h3>
+                <p class="summary">Fly.io 联合创始人 Kurt Mackey 宣布卸任 CEO，由 Scott Johnston 接任。公司完成新一轮融资，并推出新一代 Sprites--专为 AI 智能…</p>
+                <div class="meta">
+                  <span class="source">Hacker News 热门（buzzing.cc 中文翻译）</span>
+                  <span class="time" title="07/25 23:06">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Boris Cherny 用 Claude Code 提交 1700 次 PR">
+              <span class="card-index">16</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081144820157055410" target="_blank" rel="noopener">Boris Cherny 用 Claude Code 提交 1700 次 PR</a></h3>
+                <p class="summary">Boris Cherny 今年已合并约 1700 个拉取请求，新增 40 万行代码，删除 25 万行，全部通过 Claude Code 完成。 并使用了 80 亿个模型 tok…</p>
+                <div class="meta">
+                  <span class="source">X：Rohan Paul (@rohanpaul_ai)</span>
+                  <span class="time" title="07/25 22:29">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="开源AI盛会：500名开发者齐聚支持开放权重运动">
+              <span class="card-index">17</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/swyx/status/2081142196510843374" target="_blank" rel="noopener">开源AI盛会：500名开发者齐聚支持开放权重运动</a></h3>
+                <p class="summary">笑死，@ClementDelangue 在搞🇳🇴</p>
+                <div class="meta">
+                  <span class="source">X：swyx (@swyx)</span>
+                  <span class="time" title="07/25 22:19">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Codex 与 ChatGPT Work 重置使用上限">
+              <span class="card-index">18</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081119568261750793" target="_blank" rel="noopener">Codex 与 ChatGPT Work 重置使用上限</a></h3>
+                <p class="summary">Codex 和 ChatGPT Work 再次重置，付费用户每周限额全部恢复。</p>
+                <div class="meta">
+                  <span class="source">X：Rohan Paul (@rohanpaul_ai)</span>
+                  <span class="time" title="07/25 20:49">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Cognition 收购 Poke 交易引热议">
+              <span class="card-index">19</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/swyx/status/2081118746949878141" target="_blank" rel="noopener">Cognition 收购 Poke 交易引热议</a></h3>
+                <p class="summary">Cognition 收购 Poke 是那种 @ScottWu46 的快速收购，随着时间推移越来越合理。</p>
+                <div class="meta">
+                  <span class="source">X：swyx (@swyx)</span>
+                  <span class="time" title="07/25 20:45">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Anthropic 未加入 OpenAI 联盟">
+              <span class="card-index">20</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/kimmonismus/status/2081115195091431581" target="_blank" rel="noopener">Anthropic 未加入 OpenAI 联盟</a></h3>
+                <p class="summary">然而：未见 Anthropic 加入 OpenAI 联盟的迹象。</p>
+                <div class="meta">
+                  <span class="source">X：Kim (@kimmonismus)</span>
+                  <span class="time" title="07/25 20:31">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="OpenAI 重置 ChatGPT Work 与 Codex 使用限制">
+              <span class="card-index">21</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/testingcatalog/status/2081110907942314081" target="_blank" rel="noopener">OpenAI 重置 ChatGPT Work 与 Codex 使用限制</a></h3>
+                <p class="summary">OPENAI 🔥：ChatGPT Work 和 Codex 已应用新的使用限制重置！ 附：如果你还没尝试通过新的语音模式操作 Codex，那绝对值得一试。这是我们一直期待的&quot;新…</p>
+                <div class="meta">
+                  <span class="source">X：Testing Catalog (@testingcatalog)</span>
+                  <span class="time" title="07/25 20:14">3 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="硅谷集体对抗Anthropic">
+              <span class="card-index">22</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081109709390827602" target="_blank" rel="noopener">硅谷集体对抗Anthropic</a></h3>
+                <p class="summary">现在整个硅谷都在对抗Anthropic。</p>
+                <div class="meta">
+                  <span class="source">X：Rohan Paul (@rohanpaul_ai)</span>
+                  <span class="time" title="07/25 20:09">3 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="OpenAI 因故障重置使用限制">
+              <span class="card-index">23</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/kimmonismus/status/2081109464099229953" target="_blank" rel="noopener">OpenAI 因故障重置使用限制</a></h3>
+                <p class="summary">你不得不爱 Tibo。我的使用率已降至 12%，而这位大神因宕机按下了重置按钮。 【引用 @thsottiaux】：我们已重置所有 Codex 和 ChatGPT Work 用…</p>
+                <div class="meta">
+                  <span class="source">X：Kim (@kimmonismus)</span>
+                  <span class="time" title="07/25 20:08">3 小时前</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="paper" class="section">
+        <h2 class="section-title">论文研究 <span class="count">7</span></h2>
+        <div class="grid">
+          
+            <article class="card" data-title="OpenForgeRL：首个支持 Claude Code 类推理框架端到端训练的开源 RL 框架">
+              <span class="card-index">24</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-26" target="_blank" rel="noopener">OpenForgeRL：首个支持 Claude Code 类推理框架端到端训练的开源 RL 框架</a></h3>
+                <p class="summary">Claude Code、Codex 等 Agent 依赖复杂的「推理框架（harness）」驱动多轮工具调用，但现有 SFT/RL 训练栈无法原生支持这类有状态的多进程推理过程…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/26 00:00">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="FinanceComplexQA：专为 Agent 处理工业级金融文档设计的推理基准">
+              <span class="card-index">25</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-26" target="_blank" rel="noopener">FinanceComplexQA：专为 Agent 处理工业级金融文档设计的推理基准</a></h3>
+                <p class="summary">论文提出 Finance-LaTeX SKILL 和 FinanceComplexQA 基准，专门测试 Agent 在真实金融文档（复杂排版、大规模信息整合）上的推理能力。数据…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/26 00:00">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="英国AISI与美国CAISI联合评估：月之暗面Kimi K3网络能力显著低于前沿模型">
+              <span class="card-index">26</span>
+              <div class="card-body">
+                <h3><a href="https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities" target="_blank" rel="noopener">英国AISI与美国CAISI联合评估：月之暗面Kimi K3网络能力显著低于前沿模型</a></h3>
+                <p class="summary">英国AISI与美国CAISI联合评估了月之暗面7月16日发布的Kimi K3，发现其网络能力显著低于前沿模型。在ExploitBench上Kimi K3得分为32%，高于GLM…</p>
+                <div class="meta">
+                  <span class="source">Hacker News 热门（buzzing.cc 中文翻译）</span>
+                  <span class="time" title="07/25 15:38">7 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Kronos：首个开源金融 K 线基础模型，覆盖全球 45 家交易所">
+              <span class="card-index">27</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-25" target="_blank" rel="noopener">Kronos：首个开源金融 K 线基础模型，覆盖全球 45 家交易所</a></h3>
+                <p class="summary">Kronos 是首个专为金融 K 线（蜡烛图）训练的开源基础模型，覆盖超过 45 家全球交易所数据，已被 AAAI 2026 收录。对量化开发者来说，这意味着终于有了一个可以 …</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/25 00:00">23 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Agent 经验样本高效学习：让 LLM Agent 真正「记住」过去的教训">
+              <span class="card-index">28</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-25" target="_blank" rel="noopener">Agent 经验样本高效学习：让 LLM Agent 真正「记住」过去的教训</a></h3>
+                <p class="summary">这篇论文提出将 Agent 自身交互历史通过上下文蒸馏内化进模型权重，解决「上下文清空后经验归零」的问题。对构建长期运行 AI Agent 的开发者来说，这意味着 Agent …</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/25 00:00">23 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="DocOps：专为 Agent 操作复杂文档设计的可验证基准">
+              <span class="card-index">29</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-24" target="_blank" rel="noopener">DocOps：专为 Agent 操作复杂文档设计的可验证基准</a></h3>
+                <p class="summary">DocOps 提出了一套可确定性验证的 Agent 文档操作评估框架，将现实工作场景中的文档操作分解为原子维度和递进复杂度。对开发者的意义：如果你在构建能处理 Word/PDF…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/24 00:00">昨天</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="超网络注入知识的 Scaling Law：LoRA 适配器让模型精准记住新事实">
+              <span class="card-index">30</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-24" target="_blank" rel="noopener">超网络注入知识的 Scaling Law：LoRA 适配器让模型精准记住新事实</a></h3>
+                <p class="summary">研究发现，训练一个超网络（Hypernetwork）来生成 LoRA 适配器，可以在训练阶段高效向 LLM 注入大规模事实知识，并且遵循清晰的 Scaling Law。对开发者…</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time" title="07/24 00:00">昨天</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="tip" class="section">
+        <h2 class="section-title">技巧与观点 <span class="count">10</span></h2>
+        <div class="grid">
+          
+            <article class="card" data-title="OpenAI 获 Jason Liu 米其林星认可">
+              <span class="card-index">31</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/jxnlco/status/2081151309554618480" target="_blank" rel="noopener">OpenAI 获 Jason Liu 米其林星认可</a></h3>
+                <p class="summary">Tibos 是 OpenAI 获得我们米其林星的原因。</p>
+                <div class="meta">
+                  <span class="source">X：Jason Liu (@jxnlco)</span>
+                  <span class="time" title="07/25 22:55">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="代码成本崩盘后的工程管理：一位工程总监的反思">
+              <span class="card-index">32</span>
+              <div class="card-body">
+                <h3><a href="https://karimjedda.com/engineering-management-after-cost-of-code-collapse" target="_blank" rel="noopener">代码成本崩盘后的工程管理：一位工程总监的反思</a></h3>
+                <p class="summary">一位工程总监基于过去一年的笔记指出，代码生产成本已崩溃且不会回升，但AI工具是否让工程团队显著提速尚无定论。管理实践应基于其底层假设是否成立来评估：依赖代码编写成本的做法需重新…</p>
+                <div class="meta">
+                  <span class="source">Hacker News 热门（buzzing.cc 中文翻译）</span>
+                  <span class="time" title="07/25 22:34">刚刚</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Sam Altman 43分钟深度访谈要点">
+              <span class="card-index">33</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/jxnlco/status/2081140203985527295" target="_blank" rel="noopener">Sam Altman 43分钟深度访谈要点</a></h3>
+                <p class="summary">Jason Liu 分享了一段 43 分钟的 Sam Altman 访谈。Altman 在访谈中讨论了创业、指数增长、创造充裕智能、OpenAI 早期经历、关闭 Sora 聚焦…</p>
+                <div class="meta">
+                  <span class="source">X：Jason Liu (@jxnlco)</span>
+                  <span class="time" title="07/25 22:11">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Sam Altman称已进入奇点时代">
+              <span class="card-index">34</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/kimmonismus/status/2081136411340656689" target="_blank" rel="noopener">Sam Altman称已进入奇点时代</a></h3>
+                <p class="summary">Sam Altman &quot;我们现在已处于奇点之中&quot; 然而，在我们这个小圈子之外，99%的人并不明白正在发生什么。</p>
+                <div class="meta">
+                  <span class="source">X：Kim (@kimmonismus)</span>
+                  <span class="time" title="07/25 21:56">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="黄仁勋推文在X平台互动量远超领英">
+              <span class="card-index">35</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/cb_doge/status/2081132743162015939" target="_blank" rel="noopener">黄仁勋推文在X平台互动量远超领英</a></h3>
+                <p class="summary">NVIDIA CEO 黄仁勋在 X 和 LinkedIn 发布了相同的公告 X 5400 万次观看 | 15.7 万次点赞 | 3.7 万次转发 | 1.5 万条评论 Link…</p>
+                <div class="meta">
+                  <span class="source">X：cb_doge (@cb_doge)</span>
+                  <span class="time" title="07/25 21:41">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Anthropic员工嘲讽黄仁勋开源言论">
+              <span class="card-index">36</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/dotey/status/2081131024021352623" target="_blank" rel="noopener">Anthropic员工嘲讽黄仁勋开源言论</a></h3>
+                <p class="summary">这阴阳怪气的 Member of Technical Staff at Anthropic</p>
+                <div class="meta">
+                  <span class="source">X：宝玉 (@dotey)</span>
+                  <span class="time" title="07/25 21:34">1 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Thomas Wolf 在 ICM2026 谈数学与 AI 未来">
+              <span class="card-index">37</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/Thom_Wolf/status/2081129385730449660" target="_blank" rel="noopener">Thomas Wolf 在 ICM2026 谈数学与 AI 未来</a></h3>
+                <p class="summary">暂别网络，在费城 #ICM2026 与 Terence 及数学家同行探讨数学与 AI 的未来。</p>
+                <div class="meta">
+                  <span class="source">X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)</span>
+                  <span class="time" title="07/25 21:28">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Sam Altman确认人类已进入奇点时刻">
+              <span class="card-index">38</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/kimmonismus/status/2081127066259345721" target="_blank" rel="noopener">Sam Altman确认人类已进入奇点时刻</a></h3>
+                <p class="summary">Sama确认：我们正处于奇点之中。它已经来临。&quot;我们现在正处于奇点--就是此刻&quot; 当我看到所有快速进展和突破时，我相信这一点。而后果是无法预见的。</p>
+                <div class="meta">
+                  <span class="source">X：Kim (@kimmonismus)</span>
+                  <span class="time" title="07/25 21:18">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Sam Altman 与 Morse 精彩对谈视频">
+              <span class="card-index">39</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/jxnlco/status/2081127015747362897" target="_blank" rel="noopener">Sam Altman 与 Morse 精彩对谈视频</a></h3>
+                <p class="summary">@sama 和 @ti_morse 的精彩视频</p>
+                <div class="meta">
+                  <span class="source">X：Jason Liu (@jxnlco)</span>
+                  <span class="time" title="07/25 21:18">2 小时前</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="GPT-5.6 Pro 推翻数学猜想，加速科学复兴">
+              <span class="card-index">40</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/gdb/status/2081126711786418660" target="_blank" rel="noopener">GPT-5.6 Pro 推翻数学猜想，加速科学复兴</a></h3>
+                <p class="summary">我们正看到科学、医学和数学发现复兴的前沿--从而加速了人类历史上提高生活水平最持久的力量。 【引用 @prz_chojecki】：关于 CP^n 上每个复拓扑向量丛都是代数的猜…</p>
+                <div class="meta">
+                  <span class="source">X：Greg Brockman (@gdb)</span>
+                  <span class="time" title="07/25 21:17">2 小时前</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <p>由 Augusta 的 AI 晨报机器人自动生成 · 来源：AI HOT + 超级个体 + Web 搜索</p>
+  </footer>
+</body>
+</html>

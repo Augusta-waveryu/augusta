@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 晨报 · 2026-07-27</title>
+  <style>
+    :root {
+      --bg: #fff8f5;
+      --surface: #ffffff;
+      --text: #1a120b;
+      --muted: #6b5b50;
+      --accent: #e85933;
+      --accent-2: #c2185b;
+      --card-shadow: 0 2px 8px rgba(232, 89, 51, 0.08);
+      --radius: 14px;
+      --max-width: 880px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a120b;
+        --surface: #261c15;
+        --text: #fff8f5;
+        --muted: #b8a89c;
+        --accent: #ff7a55;
+        --accent-2: #ff6090;
+        --card-shadow: 0 2px 10px rgba(0,0,0,0.35);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-bottom: 80px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .hero {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+      color: #fff;
+      padding: 72px 20px 56px;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; letter-spacing: -0.02em; }
+    .hero .subtitle { opacity: 0.92; margin-top: 12px; font-size: 1.05rem; }
+    .hero .stats { margin-top: 18px; font-size: 0.95rem; opacity: 0.9; }
+    .back { display: inline-block; margin-top: 22px; padding: 8px 18px; border: 1px solid rgba(255,255,255,0.45); border-radius: 999px; font-size: 0.9rem; transition: background .2s; }
+    .back:hover { background: rgba(255,255,255,0.15); }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 248, 245, 0.86);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(232, 89, 51, 0.12);
+      padding: 12px 20px;
+      overflow-x: auto;
+      white-space: nowrap;
+      text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      nav { background: rgba(26, 18, 11, 0.86); border-color: rgba(255,255,255,0.08); }
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      transition: all .2s;
+    }
+    nav a:hover { background: rgba(232, 89, 51, 0.1); color: var(--accent); }
+    main { max-width: var(--max-width); margin: 0 auto; padding: 32px 18px; }
+    .section { margin-bottom: 44px; opacity: 0; transform: translateY(18px); animation: fadeInUp .6s forwards; }
+    .section:nth-child(2) { animation-delay: .08s; }
+    .section:nth-child(3) { animation-delay: .16s; }
+    .section:nth-child(4) { animation-delay: .24s; }
+    .section:nth-child(5) { animation-delay: .32s; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    .section-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .section-title .count { font-size: 0.85rem; font-weight: 500; background: rgba(232, 89, 51, 0.12); color: var(--accent); padding: 2px 10px; border-radius: 999px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 18px 18px 16px;
+      display: flex;
+      gap: 12px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(232, 89, 51, 0.12); }
+    .card-index {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .card-body { flex: 1; min-width: 0; }
+    .card h3 { font-size: 1rem; font-weight: 650; line-height: 1.45; }
+    .card h3 a { color: var(--text); }
+    .card h3 a:hover { color: var(--accent); }
+    .summary { font-size: 0.9rem; color: var(--muted); margin-top: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .meta { display: flex; justify-content: space-between; margin-top: 12px; font-size: 0.78rem; color: var(--muted); }
+    .source { max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    footer { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>AI 晨报 · 2026-07-27</h1>
+    <p class="subtitle">过去 24 小时值得关注的 AI 动态</p>
+    <p class="stats">共 38 条 · 模型发布/更新 4 · 产品发布/更新 10 · 行业动态 9 · 论文研究 6 · 技巧与观点 9</p>
+    <a class="back" href="../">← 返回首页</a>
+  </header>
+  <nav>
+    <a href="#model">模型发布/更新</a> <a href="#product">产品发布/更新</a> <a href="#industry">行业动态</a> <a href="#paper">论文研究</a> <a href="#tip">技巧与观点</a>
+  </nav>
+  <main>
+
+      <section id="model" class="section">
+        <h2 class="section-title">模型发布/更新 <span class="count">4</span></h2>
+        <div class="grid">
+            <article class="card" data-title="Kimi K3 今晚 11 点开源，2.8 万亿参数登陆 HuggingFace">
+              <span class="card-index">01</span>
+              <div class="card-body">
+                <h3><a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener">Kimi K3 今晚 11 点开源，2.8 万亿参数登陆 HuggingFace</a></h3>
+                <p class="summary">月之暗面兑现开源承诺：2.8T 参数 Kimi K3 今晚 23 点发布开放权重，HuggingFace 已上线倒计时页，或引发 Opus 5 用户迁移潮。</p>
+                <div class="meta">
+                  <span class="source">HuggingFace · moonshotai</span>
+                  <span class="time">07/27 16:09</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="皮查伊确认 Gemini 4 已投入训练，预计年底发布">
+              <span class="card-index">02</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/982/040.htm" target="_blank" rel="noopener">皮查伊确认 Gemini 4 已投入训练，预计年底发布</a></h3>
+                <p class="summary">谷歌 CEO 皮查伊确认 Gemini 4 预训练已启动，目标年底上线，延续 Gemini 月活 9.5 亿的强势节奏。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 14:47</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Meta 预告将发布硬核开源模型">
+              <span class="card-index">03</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/kimmonismus/status/2081658417568010422" target="_blank" rel="noopener">Meta 预告将发布硬核开源模型</a></h3>
+                <p class="summary">Meta 表态将推出重量级开源模型回应社区期待，正值硅谷开源与闭源阵营论战升温之际，具体参数与时间待官宣。</p>
+                <div class="meta">
+                  <span class="source">X：@kimmonismus</span>
+                  <span class="time">07/27 16:30</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="阿里云助力 Ophilus 发布首个多人世界模型 Khora">
+              <span class="card-index">04</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/alibaba_cloud/status/2081679713056297018" target="_blank" rel="noopener">阿里云助力 Ophilus 发布首个多人世界模型 Khora</a></h3>
+                <p class="summary">Khora 是首个支持多人同时交互的世界模型，由阿里云提供算力支撑，将世界模型从单人模拟推进到多智能体共享场景。</p>
+                <div class="meta">
+                  <span class="source">X：Alibaba Cloud</span>
+                  <span class="time">07/27 17:54</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+
+      <section id="product" class="section">
+        <h2 class="section-title">产品发布/更新 <span class="count">10</span></h2>
+        <div class="grid">
+            <article class="card" data-title="阿里千问办公官网上线，整合三条 Agent 产品线">
+              <span class="card-index">05</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/982.htm" target="_blank" rel="noopener">阿里千问办公官网上线，整合三条 Agent 产品线</a></h3>
+                <p class="summary">千问办公提供 Windows/macOS 及鸿蒙电脑 Beta 下载，由钉钉 CEO 牵头整合三条 Agent 线，阿里正式进军 AI 办公入口。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 12:32</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="美团发布全场景 AI Agent 平台 CatPaw">
+              <span class="card-index">06</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/934.htm" target="_blank" rel="noopener">美团发布全场景 AI Agent 平台 CatPaw</a></h3>
+                <p class="summary">CatPaw 覆盖开发、办公、经营全场景，已在美团内部大规模落地，是继「小团」之后美团 Agent 体系的又一落子。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 11:36</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="美团 AI「小团」升级代理执行：从规划到直接下单">
+              <span class="card-index">07</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/982/080.htm" target="_blank" rel="noopener">美团 AI「小团」升级代理执行：从规划到直接下单</a></h3>
+                <p class="summary">「小团」获得代理执行能力，可从行程规划直接完成打车、订座等操作，本地生活 Agent 从建议者变为执行者。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 15:42</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="企业微信智能助理「大圆」开启内测">
+              <span class="card-index">08</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/982/082.htm" target="_blank" rel="noopener">企业微信智能助理「大圆」开启内测</a></h3>
+                <p class="summary">企业微信内测智能助理「大圆」，左滑即可唤起，支持会话总结与任务处理，腾讯办公场景 AI 入口再加一员。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 15:43</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="腾讯 WorkBuddy 鸿蒙版上线「碰一碰」分享">
+              <span class="card-index">09</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/985.htm" target="_blank" rel="noopener">腾讯 WorkBuddy 鸿蒙版上线「碰一碰」分享</a></h3>
+                <p class="summary">WorkBuddy 成为鸿蒙平台首个桌面办公智能体，新增「碰一碰」跨设备分享，打通鸿蒙生态的文件与任务流转。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 12:54</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Suno 推出 MIDI 导出等多项新功能，哼唱即可成歌">
+              <span class="card-index">10</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/suno/status/2081443050312843765" target="_blank" rel="noopener">Suno 推出 MIDI 导出等多项新功能，哼唱即可成歌</a></h3>
+                <p class="summary">Suno 新版支持 MIDI 导出、分轨编辑与哼唱翻唱：哼一段旋律即可生成完整歌曲，专业制作流与玩法门槛同步下探。</p>
+                <div class="meta">
+                  <span class="source">X：Suno</span>
+                  <span class="time">07/26 02:14</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="百度 Apollo Go 在香港开启全无人驾驶试运营">
+              <span class="card-index">11</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/Baidu_Inc/status/2081665433560911891" target="_blank" rel="noopener">百度 Apollo Go 在香港开启全无人驾驶试运营</a></h3>
+                <p class="summary">萝卜快跑在中国香港启动全无人商业化试运营，成为当地首个全无人 Robotaxi 服务，出海版图再下一城。</p>
+                <div class="meta">
+                  <span class="source">X：Baidu Inc.</span>
+                  <span class="time">07/27 16:58</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="荣耀 Robot Phone 定档 8 月 12 日发布">
+              <span class="card-index">12</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/843.htm" target="_blank" rel="noopener">荣耀 Robot Phone 定档 8 月 12 日发布</a></h3>
+                <p class="summary">荣耀首款 Robot Phone 搭载第五代骁龙 8 至尊版、与阿莱联合研发影像，主打 AI 智能体形态的「机器人手机」。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 09:43</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="阿里开源 OpenCodeReview：亿级代码量实战验证的 AI 代码审查工具">
+              <span class="card-index">13</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-27" target="_blank" rel="noopener">阿里开源 OpenCodeReview：亿级代码量实战验证的 AI 代码审查工具</a></h3>
+                <p class="summary">经阿里内部亿级代码量验证后开源，提供可直接接入 CI 的审查流水线，补上开源生态在代码审查环节的空白。</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time">07/27</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="OpenMinis 开源 iOS/Android 双端 AI Agent 完整代码">
+              <span class="card-index">14</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/shao__meng/status/2081562462537777457" target="_blank" rel="noopener">OpenMinis 开源 iOS/Android 双端 AI Agent 完整代码</a></h3>
+                <p class="summary">OpenMinis 放出移动双端 Agent 完整实现，含语音、工具调用与本地记忆，为移动端 Agent 开发提供可直接复用的脚手架。</p>
+                <div class="meta">
+                  <span class="source">X：@shao__meng</span>
+                  <span class="time">07/27 10:08</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+
+      <section id="industry" class="section">
+        <h2 class="section-title">行业动态 <span class="count">9</span></h2>
+        <div class="grid">
+            <article class="card" data-title="英伟达拟为 OpenAI「全球最大」数据中心提供 2500 亿美元担保">
+              <span class="card-index">15</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/835.htm" target="_blank" rel="noopener">英伟达拟为 OpenAI「全球最大」数据中心提供 2500 亿美元担保</a></h3>
+                <p class="summary">双方洽谈由英伟达担保 2500 亿美元帮助 OpenAI 租赁算力，若成行将是 AI 基建史上最大规模的信用背书。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 09:04</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对">
+              <span class="card-index">16</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/797.htm" target="_blank" rel="noopener">OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对</a></h3>
+                <p class="summary">两家闭源巨头推动出口管制式限制，黄仁勋与马斯克公开唱反调，开源与闭源的路线之争升级为政策博弈。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/26 20:54</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="OpenAI 遭「首次自主 Agent 网络攻击」，HuggingFace CEO 呼吁彻底透明">
+              <span class="card-index">17</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-27" target="_blank" rel="noopener">OpenAI 遭「首次自主 Agent 网络攻击」，HuggingFace CEO 呼吁彻底透明</a></h3>
+                <p class="summary">OpenAI 披露遭遇由自主 Agent 发起的网络攻击，HF CEO 呼吁公开全部技术细节，Agent 安全进入实战对抗阶段。</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time">07/27</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Claude 对话分享链接被谷歌收录，用户隐私内容曝光">
+              <span class="card-index">18</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/982/112.htm" target="_blank" rel="noopener">Claude 对话分享链接被谷歌收录，用户隐私内容曝光</a></h3>
+                <p class="summary">因分享页缺少 noindex 标签，部分 Claude 共享对话被搜索引擎短暂索引，Anthropic 已修复但隐私争议发酵。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 16:26</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="微软全年 1900 亿美元资本支出仍不够，面临整体算力吃紧">
+              <span class="card-index">19</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/996.htm" target="_blank" rel="noopener">微软全年 1900 亿美元资本支出仍不够，面临整体算力吃紧</a></h3>
+                <p class="summary">消息称微软内部算力全面吃紧，即使全年 1900 亿美元资本开支也无法满足需求，AI 算力荒从训练蔓延到推理。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 13:55</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="上周全球调用量前五均为中国大模型，小米 MiMo-V2.5 升至第一">
+              <span class="card-index">20</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/981/979.htm" target="_blank" rel="noopener">上周全球调用量前五均为中国大模型，小米 MiMo-V2.5 升至第一</a></h3>
+                <p class="summary">徐洁云披露全球模型调用量榜前五被中国模型包揽，小米 MiMo-V2.5 登顶，开源+低价策略重塑全球用量格局。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 12:02</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Anthropic 收入 run-rate 从 90 亿飙至 470 亿美元">
+              <span class="card-index">21</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-27" target="_blank" rel="noopener">Anthropic 收入 run-rate 从 90 亿飙至 470 亿美元</a></h3>
+                <p class="summary">Menlo Ventures 称 25 年未见如此增速：Anthropic 年化收入一年内从 $9B 增至 $47B，企业级 AI 商业化全面提速。</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time">07/27</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="眸深智能两月内二度融资，端侧具身大脑估值暴涨 10 倍">
+              <span class="card-index">22</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-27" target="_blank" rel="noopener">眸深智能两月内二度融资，端侧具身大脑估值暴涨 10 倍</a></h3>
+                <p class="summary">Pre-A+ 轮近 5 亿元在途，两个月内估值涨 10 倍，端侧具身智能「大脑」成为机器人赛道最热标的。</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time">07/27</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="X 平台清除全部 AI 回复机器人">
+              <span class="card-index">23</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-27" target="_blank" rel="noopener">X 平台清除全部 AI 回复机器人</a></h3>
+                <p class="summary">X 宣布批量清除 AI 回复机器人，让人机比例重新向人类倾斜，社交平台开始正面处理 AI 内容污染问题。</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time">07/27</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+
+      <section id="paper" class="section">
+        <h2 class="section-title">论文研究 <span class="count">6</span></h2>
+        <div class="grid">
+            <article class="card" data-title="持续记忆智能体研究：遗忘与恢复机制严重缺失">
+              <span class="card-index">24</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081636454485102753" target="_blank" rel="noopener">持续记忆智能体研究：遗忘与恢复机制严重缺失</a></h3>
+                <p class="summary">系统评测显示当前记忆型 Agent 普遍缺少可控遗忘与错误恢复机制，长期运行后记忆污染显著拖累任务表现。</p>
+                <div class="meta">
+                  <span class="source">X：@rohanpaul_ai</span>
+                  <span class="time">07/27 15:03</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="世界动作模型综述：从反应到预判">
+              <span class="card-index">25</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081627897735840117" target="_blank" rel="noopener">世界动作模型综述：从反应到预判</a></h3>
+                <p class="summary">综述梳理世界动作模型从被动反应到主动预判的演进路径，指出预测式行动建模是具身智能的关键跃迁。</p>
+                <div class="meta">
+                  <span class="source">X：@rohanpaul_ai</span>
+                  <span class="time">07/27 14:29</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Google 解剖 Gemini 对话：86% 与工作无关">
+              <span class="card-index">26</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/xiaohu/status/2081617947664261343" target="_blank" rel="noopener">Google 解剖 Gemini 对话：86% 与工作无关</a></h3>
+                <p class="summary">Google 对 Gemini 真实对话的大规模分析显示，86% 的使用发生在生活场景而非工作，与「AI 生产力工具」叙事形成反差。</p>
+                <div class="meta">
+                  <span class="source">X：@xiaohu</span>
+                  <span class="time">07/27 13:49</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="AI 代码审查提速但牺牲多样性">
+              <span class="card-index">27</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/rohanpaul_ai/status/2081570981613867100" target="_blank" rel="noopener">AI 代码审查提速但牺牲多样性</a></h3>
+                <p class="summary">实证研究发现 AI 辅助代码审查显著加快合并速度，但审查意见同质化加剧，长期或削弱代码库的设计多样性。</p>
+                <div class="meta">
+                  <span class="source">X：@rohanpaul_ai</span>
+                  <span class="time">07/27 10:42</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Dataset Distillation 新方法 Inf-Match：参数影响对齐替代梯度对齐">
+              <span class="card-index">28</span>
+              <div class="card-body">
+                <h3><a href="https://jasonzhu.ai/zh/news/2026-07-27" target="_blank" rel="noopener">Dataset Distillation 新方法 Inf-Match：参数影响对齐替代梯度对齐</a></h3>
+                <p class="summary">Inf-Match 用「参数影响」对齐替代传统梯度对齐，数据集蒸馏质量与稳定性同步提升，小数据训练再进一步。</p>
+                <div class="meta">
+                  <span class="source">Jason Zhu 快讯</span>
+                  <span class="time">07/27</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Berkeley RDI 提出软件自主开发三级框架">
+              <span class="card-index">29</span>
+              <div class="card-body">
+                <h3><a href="https://rdi.berkeley.edu/blog/auto-software-dev" target="_blank" rel="noopener">Berkeley RDI 提出软件自主开发三级框架</a></h3>
+                <p class="summary">当编码不再是瓶颈：Berkeley RDI 将软件自主开发划分为辅助、协作、自主三级，为评估 Agent 工程能力提供统一标尺。</p>
+                <div class="meta">
+                  <span class="source">Berkeley RDI</span>
+                  <span class="time">07/27 15:51</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+
+      <section id="tip" class="section">
+        <h2 class="section-title">技巧与观点 <span class="count">9</span></h2>
+        <div class="grid">
+            <article class="card" data-title="卡兹克开源 Leader.skill：用「目标七问」治 Agent 长程跑偏">
+              <span class="card-index">30</span>
+              <div class="card-body">
+                <h3><a href="https://mp.weixin.qq.com/s/AwOk3di8m6eVeIUjzNftgg" target="_blank" rel="noopener">卡兹克开源 Leader.skill：用「目标七问」治 Agent 长程跑偏</a></h3>
+                <p class="summary">浪费 20 亿 Token 后的教训：在任务启动前用七个问题帮 Agent 定义目标边界，长程执行跑偏率显著下降。</p>
+                <div class="meta">
+                  <span class="source">微信公众号 · 卡兹克</span>
+                  <span class="time">07/27 08:12</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Anthropic Opus 5 提示指南：删减而非添加">
+              <span class="card-index">31</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/xiaohu/status/2081618086990688762" target="_blank" rel="noopener">Anthropic Opus 5 提示指南：删减而非添加</a></h3>
+                <p class="summary">官方提示工程指南核心转向：对 Opus 5 应删减冗余指令而非堆叠约束，强模型时代提示词越简洁效果越好。</p>
+                <div class="meta">
+                  <span class="source">X：@xiaohu</span>
+                  <span class="time">07/27 13:50</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Claude Design 作者自述十条最佳实践">
+              <span class="card-index">32</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/shao__meng/status/2081609024911581558" target="_blank" rel="noopener">Claude Design 作者自述十条最佳实践</a></h3>
+                <p class="summary">作者总结使用 Claude Design 的十条经验：先定风格基线、小步迭代、用截图反馈等，设计 Agent 的实操手册。</p>
+                <div class="meta">
+                  <span class="source">X：@shao__meng</span>
+                  <span class="time">07/27 13:14</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="自媒体内容创作全流程开源：9 个 Skill 仅占 394 token">
+              <span class="card-index">33</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/berryxia/status/2081647385684689352" target="_blank" rel="noopener">自媒体内容创作全流程开源：9 个 Skill 仅占 394 token</a></h3>
+                <p class="summary">从选题、撰写到排版发布的 9 个 Skill 全流程开源，总占用仅 394 token，极简 Skill 设计的教科书案例。</p>
+                <div class="meta">
+                  <span class="source">X：@berryxia</span>
+                  <span class="time">07/27 15:46</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="用 AI Skill 自动生成可协作 HTML PPT">
+              <span class="card-index">34</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/vista8/status/2081568902241513786" target="_blank" rel="noopener">用 AI Skill 自动生成可协作 HTML PPT</a></h3>
+                <p class="summary">一个 Skill 将文档直接转为可多人协作编辑的 HTML PPT，跳过传统幻灯片工具，演示文稿工作流被重新定义。</p>
+                <div class="meta">
+                  <span class="source">X：@vista8</span>
+                  <span class="time">07/27 10:34</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="奥尔特曼：AI 无法缩短大多数人的工作时间">
+              <span class="card-index">35</span>
+              <div class="card-body">
+                <h3><a href="https://www.ithome.com/0/982/057.htm" target="_blank" rel="noopener">奥尔特曼：AI 无法缩短大多数人的工作时间</a></h3>
+                <p class="summary">Altman 泼冷水：超级智能时代人们只会更忙碌，AI 提升的是产出预期而非闲暇，与「AI 解放人类」叙事相左。</p>
+                <div class="meta">
+                  <span class="source">IT之家</span>
+                  <span class="time">07/27 15:13</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="Sam Altman：ChatGPT Voice 将催生新型计算机">
+              <span class="card-index">36</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/sama/status/2081513071135346814" target="_blank" rel="noopener">Sam Altman：ChatGPT Voice 将催生新型计算机</a></h3>
+                <p class="summary">Altman 称语音交互将成为全新计算形态的入口，暗示 OpenAI 硬件将围绕 Voice 构建而非屏幕优先。</p>
+                <div class="meta">
+                  <span class="source">X：@sama</span>
+                  <span class="time">07/27 06:52</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="前 Anthropic 员工：开源模型已能用于黑客攻击">
+              <span class="card-index">37</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/Thom_Wolf/status/2081577118526263548" target="_blank" rel="noopener">前 Anthropic 员工：开源模型已能用于黑客攻击</a></h3>
+                <p class="summary">前员工警告当前开源模型的网络攻击能力已跨过实用门槛，与英美 AISI 对 Kimi K3 的评估结论形成对照。</p>
+                <div class="meta">
+                  <span class="source">X：@Thom_Wolf</span>
+                  <span class="time">07/27 11:07</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-title="2026 年 AI Agent 基建爆发：10 个 GitHub 高增速项目盘点">
+              <span class="card-index">38</span>
+              <div class="card-body">
+                <h3><a href="https://x.com/AYi_AInotes/status/2081543116478107927" target="_blank" rel="noopener">2026 年 AI Agent 基建爆发：10 个 GitHub 高增速项目盘点</a></h3>
+                <p class="summary">盘点增速最快的 10 个 Agent 基建项目，覆盖记忆、编排、沙箱与评测，Agent 工具链正在完成「乐高化」。</p>
+                <div class="meta">
+                  <span class="source">X：@AYi_AInotes</span>
+                  <span class="time">07/27 08:52</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+  </main>
+  <footer>AI 晨报 · 数据来源：AI HOT / Jason Zhu 快讯 / 各来源官方账号 · 生成于 2026-07-27</footer>
+</body>
+</html>

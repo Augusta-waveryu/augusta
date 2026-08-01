@@ -1,157 +1,139 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香氛趋势日报 · 2026-07-29</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 24px; }
-        .header h1 { font-size: 24px; margin-bottom: 8px; }
-        .header .date { opacity: 0.9; font-size: 14px; }
-        .header .stats { display: flex; gap: 20px; margin-top: 16px; font-size: 13px; }
-        .header .stat { background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; }
-        .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        .section h2 { font-size: 18px; color: #667eea; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
-        .trend-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
-        .trend-item:last-child { border-bottom: none; }
-        .trend-title { font-weight: 500; flex: 1; }
-        .trend-heat { color: #e74c3c; font-weight: 600; font-size: 14px; margin-left: 12px; }
-        .trend-link { color: #667eea; text-decoration: none; font-size: 12px; margin-left: 8px; }
-        .trend-link:hover { text-decoration: underline; }
-        .tag { display: inline-block; background: #f0f0f0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 6px; margin-bottom: 4px; }
-        .tag.hot { background: #ffeaa7; color: #d63031; }
-        .tag.new { background: #dfe6e9; color: #636e72; }
-        .insight-card { background: #f8f9fa; border-left: 4px solid #667eea; padding: 16px; margin: 12px 0; border-radius: 0 8px 8px 0; }
-        .insight-card strong { color: #667eea; }
-        .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
-        .product-item { background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 14px; }
-        .product-item .name { font-weight: 600; margin-bottom: 4px; }
-        .product-item .meta { color: #666; font-size: 12px; }
-        .footer { text-align: center; color: #999; font-size: 12px; padding: 20px; }
-        @media (max-width: 600px) { .product-grid { grid-template-columns: 1fr; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>香氛趋势日报 · 2026-07-29</title>
+<style>
+:root{--bg:#fdf8f3;--c:#2c2417;--m:#8a7968;--a:#c2185b;--al:#f8e1eb;--b:#ede5db}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--c);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--a);text-decoration:none}
+a:hover{opacity:0.8}
+.hero{background:linear-gradient(160deg,#e91e63 0%,#c2185b 60%,#880e4f 100%);color:#fff;padding:60px 24px 50px;text-align:center}
+.hero h1{font-size:26px;font-weight:700;margin-bottom:8px}
+.hero .date{font-size:13px;opacity:0.85;margin-top:12px}
+.hero-stats{display:flex;justify-content:center;gap:28px;margin-top:24px;flex-wrap:wrap}
+.hero-stats .s{text-align:center}
+.hero-stats .n{font-size:24px;font-weight:700}
+.hero-stats .l{font-size:11px;opacity:0.8;margin-top:4px}
+main{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+section{margin-bottom:48px}
+.sl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--a);font-weight:600;margin-bottom:8px}
+.st{font-size:20px;font-weight:700;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b)}
+.card{background:#fff;border:1px solid var(--b);border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.card h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--c)}
+.card .meta{font-size:12px;color:var(--m);margin-bottom:8px}
+.card .tags{margin-top:8px}
+.kw-tag{display:inline-block;font-size:11px;background:var(--al);color:var(--a);padding:2px 10px;border-radius:10px;margin-right:4px;margin-bottom:4px}
+.type-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:8px;margin-left:6px;font-weight:600}
+.type-tag.video{background:#fff3e0;color:#e65100}
+.type-tag.image{background:#e8f5e9;color:#2e7d32}
+.signal-row{display:flex;align-items:center;gap:12px;padding:8px 0}
+.signal-name{width:90px;font-size:14px;font-weight:500}
+.signal-bar{height:8px;background:linear-gradient(90deg,#e91e63,#c2185b);border-radius:4px;min-width:4px}
+.signal-num{font-size:13px;color:var(--m);font-weight:600}
+.footer{border-top:1px solid var(--b);padding-top:28px;margin-top:40px;font-size:12px;color:var(--m);text-align:center;line-height:2}
+.back{display:block;margin-bottom:24px;font-size:14px;color:var(--m)}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>香氛趋势日报</h1>
-            <div class="date">2026年7月29日 · 禾川香料</div>
-            <div class="stats">
-                <span class="stat">40 条新采集</span>
-                <span class="stat">136 条累计</span>
-                <span class="stat">7.6万 最高热度</span>
-            </div>
-        </div>
+<div class="hero">
+  <h1>香氛趋势日报</h1>
+  <div class="date">2026 年 7 月 29 日 · 禾川香料</div>
+  <div class="hero-stats">
+    <div class="s"><div class="n">16</div><div class="l">今日采集</div></div>
+    <div class="s"><div class="n">4</div><div class="l">视频笔记</div></div>
+    <div class="s"><div class="n">7.6万</div><div class="l">最高热度</div></div>
+  </div>
+</div>
+<main>
+<p class="back"><a href="/perfume/">← 返回香氛研究</a></p>
 
-        <div class="section">
-            <h2>🔥 今日热议</h2>
-            
-            <div class="trend-item">
-                <span class="trend-title">王嘉尔同款香薰蜡烛 · 冷门但好好闻</span>
-                <span class="trend-heat">7.6万赞</span>
-                <a href="https://www.xiaohongshu.com/explore/5f8179b900000000010022ef" class="trend-link" target="_blank">查看</a>
-            </div>
-            
-            <div class="trend-item">
-                <span class="trend-title">伴手礼定制 · 年底给客户送礼安排这款</span>
-                <span class="trend-heat">1.8万赞</span>
-                <a href="https://www.xiaohongshu.com/explore/68ff19170000000007008d6c" class="trend-link" target="_blank">查看</a>
-            </div>
-            
-            <div class="trend-item">
-                <span class="trend-title">肆野系列香氛木挂 · 一闻就沦陷</span>
-                <span class="trend-heat">7900赞</span>
-                <a href="https://www.xiaohongshu.com/explore/62d620e2000000000e0046f8" class="trend-link" target="_blank">查看</a>
-            </div>
-        </div>
+<section>
+  <div class="sl">HOT WORDS</div>
+  <div class="st">今日热词</div>
+  <div><span class="kw-tag" style="font-size:13px;padding:4px 14px">冷门但是 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">好好闻的 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">香薰蜡烛 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">王嘉尔的 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">味道 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">伴手礼定 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">年底给客 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">户送礼 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">安排这款 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">就够了 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">一闻就沦 1</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">肆野系列 1</span></div>
+</section>
 
-        <div class="section">
-            <h2>📊 热词趋势</h2>
-            <div>
-                <span class="tag hot">冷门好闻</span>
-                <span class="tag hot">王嘉尔同款</span>
-                <span class="tag hot">伴手礼定制</span>
-                <span class="tag">一闻沦陷</span>
-                <span class="tag new">招财香气</span>
-                <span class="tag new">助眠香薰</span>
-            </div>
-        </div>
+<section>
+  <div class="sl">SIGNALS</div>
+  <div class="st">产品形态信号</div>
+  <div class="signal-row"><span class="signal-name">无火</span><span class="signal-bar" style="width:60%"></span><span class="signal-num">6</span></div><div class="signal-row"><span class="signal-name">蜡烛</span><span class="signal-bar" style="width:50%"></span><span class="signal-num">5</span></div><div class="signal-row"><span class="signal-name">车载</span><span class="signal-bar" style="width:40%"></span><span class="signal-num">4</span></div><div class="signal-row"><span class="signal-name">香水</span><span class="signal-bar" style="width:20%"></span><span class="signal-num">2</span></div><div class="signal-row"><span class="signal-name">线香</span><span class="signal-bar" style="width:20%"></span><span class="signal-num">2</span></div><div class="signal-row"><span class="signal-name">木挂</span><span class="signal-bar" style="width:20%"></span><span class="signal-num">2</span></div>
+</section>
 
-        <div class="section">
-            <h2>🎯 产品形态热度</h2>
-            
-            <div class="trend-item">
-                <span class="trend-title">香薰蜡烛</span>
-                <span class="trend-heat">7.6万赞</span>
-            </div>
-            <div class="trend-item">
-                <span class="trend-title">伴手礼/礼盒</span>
-                <span class="trend-heat">1.8万赞</span>
-            </div>
-            <div class="trend-item">
-                <span class="trend-title">香氛木挂 <span class="tag new" style="font-size: 10px;">新形态</span></span>
-                <span class="trend-heat">7900赞</span>
-            </div>
-            <div class="trend-item">
-                <span class="trend-title">助眠香薰 <span class="tag new" style="font-size: 10px;">新场景</span></span>
-                <span class="trend-heat">4274赞</span>
-            </div>
-        </div>
+<section>
+  <div class="sl">PAIN POINTS</div>
+  <div class="st">用户痛点信号</div>
+  <div class="signal-row"><span class="signal-name">价格敏感</span><span class="signal-bar" style="width:40%"></span><span class="signal-num">4</span></div><div class="signal-row"><span class="signal-name">明星同款</span><span class="signal-bar" style="width:20%"></span><span class="signal-num">2</span></div><div class="signal-row"><span class="signal-name">气味踩雷</span><span class="signal-bar" style="width:10%"></span><span class="signal-num">1</span></div>
+</section>
 
-        <div class="section">
-            <h2>💡 对禾川的启发</h2>
-            
-            <div class="insight-card">
-                <strong>新形态：香氛木挂</strong><br>
-                木挂+香氛结合，差异化明显，可探索车载/家居两用场景
-            </div>
-            
-            <div class="insight-card">
-                <strong>新场景：助眠香薰</strong><br>
-                睡眠经济细分，10种天然香气助眠，轻养生概念
-            </div>
-            
-            <div class="insight-card">
-                <strong>情绪价值：招财/运势香</strong><br>
-                玄学赛道，情绪价值驱动，年轻群体接受度高
-            </div>
-            
-            <div class="insight-card">
-                <strong>持续验证：送礼场景</strong><br>
-                伴手礼定制 1.8万赞，年底送礼季临近，需求持续
-            </div>
-        </div>
+<section>
+  <div class="sl">SCENARIOS</div>
+  <div class="st">使用场景信号</div>
+  <div class="signal-row"><span class="signal-name">送礼</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">11</span></div><div class="signal-row"><span class="signal-name">车载</span><span class="signal-bar" style="width:40%"></span><span class="signal-num">4</span></div><div class="signal-row"><span class="signal-name">居家</span><span class="signal-bar" style="width:20%"></span><span class="signal-num">2</span></div><div class="signal-row"><span class="signal-name">玄学</span><span class="signal-bar" style="width:10%"></span><span class="signal-num">1</span></div><div class="signal-row"><span class="signal-name">助眠</span><span class="signal-bar" style="width:10%"></span><span class="signal-num">1</span></div><div class="signal-row"><span class="signal-name">职场</span><span class="signal-bar" style="width:10%"></span><span class="signal-num">1</span></div>
+</section>
 
-        <div class="section">
-            <h2>🔗 代表产品速览</h2>
-            
-            <div class="product-grid">
-                <div class="product-item">
-                    <div class="name">王嘉尔同款香薰蜡烛</div>
-                    <div class="meta">冷门好闻 · 明星同款 · 7.6万赞</div>
-                </div>
-                <div class="product-item">
-                    <div class="name">伴手礼定制香薰</div>
-                    <div class="meta">年底送礼 · 客户维护 · 1.8万赞</div>
-                </div>
-                <div class="product-item">
-                    <div class="name">肆野香氛木挂</div>
-                    <div class="meta">新品形态 · 木挂扩香 · 7900赞</div>
-                </div>
-                <div class="product-item">
-                    <div class="name">助眠天然香气</div>
-                    <div class="meta">睡眠场景 · 轻养生 · 4274赞</div>
-                </div>
-            </div>
-        </div>
+<section>
+  <div class="sl">TOP NOTES</div>
+  <div class="st">今日热门笔记 TOP 10</div>
+  
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/5f8179b900000000010022ef?xsec_token=ABtJ56h68UuyKMfaUIW23Hi0DT__My6B8kDj3IqJbiIag=&xsec_source=pc_search" target="_blank">靠！冷门但是好好闻的香薰蜡烛！王嘉尔的味道</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 7.6万 · 藏 4.9万 · 评 680 · 香薰</div>
+    <div class="tags"><span class="kw-tag">蜡烛</span><span class="kw-tag">香水</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/68ff19170000000007008d6c?xsec_token=ABBc0FEv5F7dIlLoYTm5MpM1jwS65u6ofM15Hrc3hFuOg=&xsec_source=pc_search" target="_blank">伴手礼定制|年底给客户送礼,安排这款就够了</a><span class="type-tag video">视频</span></h3>
+    <div class="meta">赞 1.8万 · 藏 7730 · 评 187 · 香薰</div>
+    <div class="tags"><span class="kw-tag">蜡烛</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/62d620e2000000000e0046f8?xsec_token=ABSYWIVsjRa0RRdQlWYZBCUOloY0lR3Z__KpQ8MxnusVk=&xsec_source=pc_search" target="_blank">一闻就沦陷！肆野系列香氛木挂</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 7900 · 藏 5105 · 评 213 · 香薰</div>
+    <div class="tags"><span class="kw-tag">车载</span><span class="kw-tag">无火</span><span class="kw-tag">线香</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/6a1ec348000000003502b106?xsec_token=ABk8YLUfm-PTA5c7sFTm0moCIse6gzxL-S9tw9kzPHCcA=&xsec_source=pc_search" target="_blank">招财香气指南，赶紧收藏</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 6413 · 藏 3439 · 评 72 · 香薰</div>
+    <div class="tags"><span class="kw-tag">无火</span><span class="kw-tag">木挂</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/6a535ff8000000002101b5be?xsec_token=ABuYejjJraHP3PP-6NhbwEhDqJ85JnfcHVc956g964G8A=&xsec_source=pc_search" target="_blank">生活好物分享</a><span class="type-tag video">视频</span></h3>
+    <div class="meta">赞 6282 · 藏 1860 · 评 502 · 香薰</div>
+    <div class="tags"></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/63859021000000001f009c98?xsec_token=AB_a3_b5MKFvxx7qVy3xfLhVP04OUX6BW3gP8SJuQiPkE=&xsec_source=pc_search" target="_blank">朋友说我是懂送礼的🎂</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 4855 · 藏 1765 · 评 25 · 香薰</div>
+    <div class="tags"><span class="kw-tag">无火</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/69b0eed8000000001d025bf2?xsec_token=ABc6597IwTvXccJ0s38C1zRzjuVRJ3rgAOOSa3VaEwBWQ=&xsec_source=pc_search" target="_blank">🧁打开瞬间不想送人了…</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 4291 · 藏 753 · 评 38 · 香薰</div>
+    <div class="tags"><span class="kw-tag">蜡烛</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/6879b2b40000000012020bad?xsec_token=ABWdjZtEaRyZom9uhiFVkawhvg479zM3chNUfJ3B4kgSY=&xsec_source=pc_search" target="_blank">轻养生 | 10种帮助你深度睡眠的天然香气</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 4274 · 藏 2694 · 评 86 · 香薰</div>
+    <div class="tags"><span class="kw-tag">线香</span></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/677bda7f000000000b00fc63?xsec_token=AB9KsfaYRZtmY4VA4sxiMIj54LtA3RxZtwWoagsQV1NBM=&xsec_source=pc_search" target="_blank">在首尔🇰🇷花过zui值的一笔钱。。。。</a><span class="type-tag image">图文</span></h3>
+    <div class="meta">赞 4142 · 藏 6024 · 评 78 · 香薰</div>
+    <div class="tags"></div>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.xiaohongshu.com/explore/68246351000000002300ee25?xsec_token=ABtxl-ABgaSCEvl07OA5_jvta59antNK02dhTWw-MIi9M=&xsec_source=pc_search" target="_blank">这椰壳香薰蜡烛太治愈了！适合送闺蜜的礼物</a><span class="type-tag video">视频</span></h3>
+    <div class="meta">赞 3952 · 藏 967 · 评 92 · 香薰</div>
+    <div class="tags"><span class="kw-tag">蜡烛</span></div>
+  </div>
+</section>
 
-        <div class="footer">
-            数据来自小红书 MediaCrawler 采集 · 仅供趋势参考<br>
-            禾川香料 · 香氛趋势雷达
-        </div>
-    </div>
+<div class="footer">
+  数据来自小红书 MediaCrawler 采集 · 仅供趋势参考<br>
+  禾川香料 · 香氛趋势雷达 · 2026-07-29
+</div>
+</main>
 </body>
 </html>

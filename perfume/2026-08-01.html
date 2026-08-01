@@ -21,136 +21,146 @@ main{max-width:860px;margin:0 auto;padding:48px 24px 80px}
 section{margin-bottom:48px}
 .sl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--a);font-weight:600;margin-bottom:8px}
 .st{font-size:20px;font-weight:700;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b)}
-.card{background:#fff;border:1px solid var(--b);border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.card{background:#fff;border:1px solid var(--b);border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.card-main{flex:1}
 .card h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--c)}
 .card .meta{font-size:12px;color:var(--m);margin-bottom:8px}
 .card .summary{font-size:14px;color:var(--m);line-height:1.7;margin-bottom:8px}
 .card .tags{margin-top:8px}
-.kw-tag{display:inline-block;font-size:11px;background:var(--al);color:var(--a);padding:2px 10px;border-radius:10px;margin-right:4px;margin-bottom:4px}
+.qr{flex-shrink:0;text-align:center}
+.qr img{border-radius:8px;border:1px solid var(--b)}
+.qr-hint{font-size:10px;color:var(--m);margin-top:4px}
 .type-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:8px;margin-left:6px;font-weight:600}
 .type-tag.video{background:#fff3e0;color:#e65100}
 .type-tag.image{background:#e8f5e9;color:#2e7d32}
-.num{display:inline-block;background:var(--al);color:var(--a);font-weight:700;font-size:11px;padding:3px 10px;border-radius:8px;margin-right:8px}
+.signal-row{display:flex;align-items:center;gap:12px;padding:8px 0}
+.signal-name{width:90px;font-size:14px;font-weight:500}
+.signal-bar{height:8px;background:linear-gradient(90deg,#e91e63,#c2185b);border-radius:4px;min-width:4px}
+.signal-num{font-size:13px;color:var(--m);font-weight:600}
 .footer{border-top:1px solid var(--b);padding-top:28px;margin-top:40px;font-size:12px;color:var(--m);text-align:center;line-height:2}
 .back{display:block;margin-bottom:24px;font-size:14px;color:var(--m)}
-.insight-card{background:#fff;border-left:4px solid var(--a);padding:16px;margin:12px 0;border-radius:0 8px 8px 0}
-.insight-card strong{color:var(--a)}
-table{width:100%;border-collapse:collapse;margin:16px 0}
-th,td{padding:10px;text-align:left;border-bottom:1px solid var(--b);font-size:14px}
-th{font-weight:600;color:var(--m)}
 </style>
 </head>
 <body>
 <div class="hero">
   <h1>香氛趋势日报</h1>
-  <div class="date">2026年8月1日 · 禾川香料</div>
+  <div class="date">2026 年 8 月 1 日 · 禾川香料</div>
   <div class="hero-stats">
     <div class="s"><div class="n">190</div><div class="l">今日采集</div></div>
-    <div class="s"><div class="n">9.8万</div><div class="l">最高热度</div></div>
-    <div class="s"><div class="n">7</div><div class="l">关键词覆盖</div></div>
+    <div class="s"><div class="n">96</div><div class="l">视频笔记</div></div>
+    <div class="s"><div class="n">10.0万</div><div class="l">最高热度</div></div>
   </div>
 </div>
 <main>
 <p class="back"><a href="/perfume/">← 返回香氛研究</a></p>
 
 <section>
-  <div class="sl">TOP DISCUSSIONS</div>
-  <div class="st">什么引起热议</div>
-  
-  <div class="card">
-    <h3><a href="https://www.xiaohongshu.com/explore/6937ebfa000000001e002c3c" target="_blank">共赴一段旅程</a><span class="type-tag image">图文</span></h3>
-    <div class="meta">赞 9.8万 · 藏 1.3万 · 评 1.1万 · 车载香薰</div>
-    <div class="summary">车载香薰情感化叙事，旅程场景引发共鸣</div>
-  </div>
-  
-  <div class="card">
-    <h3><a href="https://www.xiaohongshu.com/explore/67ef698e000000001c010f7e" target="_blank">零成本车载柠檬香薰</a><span class="type-tag video">视频</span></h3>
-    <div class="meta">赞 8.6万 · 藏 2.1万 · 车载香薰</div>
-    <div class="summary">DIY 零成本柠檬香薰，实用导向收藏极高</div>
-  </div>
-  
-  <div class="card">
-    <h3><a href="https://www.xiaohongshu.com/explore/68fcbf2400000000030226ef" target="_blank">手工小记｜超好闻的橘子皮塔香</a><span class="type-tag video">视频</span></h3>
-    <div class="meta">赞 6.7万 · 藏 5.9万 · 家居香氛</div>
-    <div class="summary">厨房边角料做香薰，收藏 > 赞，实用需求强烈</div>
-  </div>
-  
-  <div class="card">
-    <h3><a href="https://www.xiaohongshu.com/explore/68a05076000000001c03f730" target="_blank">22.8拿下1740的自由之水❓赚疯了❗❗</a><span class="type-tag video">视频</span></h3>
-    <div class="meta">赞 4.3万 · 藏 5.4万 · 平价香水</div>
-    <div class="summary">平价替代真实存在，收藏远超点赞</div>
-  </div>
-</section>
-
-<section>
   <div class="sl">HOT WORDS</div>
-  <div class="st">热词分析</div>
-  <div>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">零成本</span>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">平价/便宜</span>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">车载</span>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">小众</span>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">世界观</span>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">干货</span>
-    <span class="kw-tag" style="font-size:13px;padding:4px 14px">平替</span>
-  </div>
+  <div class="st">今日热词</div>
+  <div><span class="kw-tag" style="font-size:13px;padding:4px 14px">香水 5</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">的香水 5</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">香薰 5</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">大牌香水 4</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">载香薰 4</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">全世界最 3</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">平价香水 3</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">我的 3</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">平替 2</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">拿下 2</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">最好闻的 2</span><span class="kw-tag" style="font-size:13px;padding:4px 14px">的平价香 2</span></div>
 </section>
 
 <section>
-  <div class="sl">PRODUCT FORMS</div>
-  <div class="st">产品形态被广泛接受</div>
-  
-  <table>
-    <tr><th>形态</th><th>代表</th><th>热度信号</th></tr>
-    <tr><td><strong>车载香薰</strong></td><td>共赴旅程、柠檬香薰</td><td>赞 9.8万/8.6万，收藏 1.3万/2.1万</td></tr>
-    <tr><td><strong>DIY/零成本</strong></td><td>橘子皮塔香</td><td>藏 5.9万 > 赞 6.7万，实用导向</td></tr>
-    <tr><td><strong>平价香水</strong></td><td>22.8 自由之水</td><td>藏 5.4万 > 赞 4.3万</td></tr>
-    <tr><td><strong>小众香水</strong></td><td>世界观营销</td><td>赞 1.3-1.4万，讨论度高</td></tr>
-    <tr><td><strong>无火香薰</strong></td><td>HOOGA、MUJI</td><td>稳定热度，家居场景</td></tr>
-  </table>
-  
-  <div class="insight-card">
-    <strong>关键发现：收藏 > 赞 = 实用需求</strong><br>
-    DIY、平价替代类收藏远超点赞，说明用户想"码住以后买/做"
-  </div>
-  
-  <div class="insight-card">
-    <strong>车载场景爆发</strong><br>
-    3 条进 TOP 5，且情感化（共赴旅程）+ 实用化（零成本）并存
-  </div>
-  
-  <div class="insight-card">
-    <strong>平价 ≠ 低质</strong><br>
-    22.8 元买 1740 元自由之水，用户追求"性价比"而非单纯便宜
-  </div>
+  <div class="sl">SIGNALS</div>
+  <div class="st">产品形态信号</div>
+  <div class="signal-row"><span class="signal-name">香水</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">110</span></div><div class="signal-row"><span class="signal-name">车载</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">36</span></div><div class="signal-row"><span class="signal-name">无火</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">36</span></div><div class="signal-row"><span class="signal-name">线香</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">17</span></div><div class="signal-row"><span class="signal-name">平替</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">14</span></div><div class="signal-row"><span class="signal-name">蜡烛</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">11</span></div>
 </section>
 
 <section>
-  <div class="sl">RECOMMENDATIONS</div>
-  <div class="st">对禾川的方向建议</div>
+  <div class="sl">PAIN POINTS</div>
+  <div class="st">用户痛点信号</div>
+  <div class="signal-row"><span class="signal-name">价格敏感</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">42</span></div><div class="signal-row"><span class="signal-name">气味踩雷</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">31</span></div><div class="signal-row"><span class="signal-name">持久留香</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">24</span></div><div class="signal-row"><span class="signal-name">明星同款</span><span class="signal-bar" style="width:60%"></span><span class="signal-num">6</span></div><div class="signal-row"><span class="signal-name">安全顾虑</span><span class="signal-bar" style="width:50%"></span><span class="signal-num">5</span></div>
+</section>
+
+<section>
+  <div class="sl">SCENARIOS</div>
+  <div class="st">使用场景信号</div>
+  <div class="signal-row"><span class="signal-name">送礼</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">42</span></div><div class="signal-row"><span class="signal-name">车载</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">36</span></div><div class="signal-row"><span class="signal-name">居家</span><span class="signal-bar" style="width:100%"></span><span class="signal-num">25</span></div><div class="signal-row"><span class="signal-name">职场</span><span class="signal-bar" style="width:60%"></span><span class="signal-num">6</span></div><div class="signal-row"><span class="signal-name">助眠</span><span class="signal-bar" style="width:40%"></span><span class="signal-num">4</span></div>
+</section>
+
+<section>
+  <div class="sl">TOP NOTES</div>
+  <div class="st">今日热门笔记 TOP 10</div>
   
   <div class="card">
-    <h3>短期（验证需求）</h3>
-    <div class="summary">
-      <strong>车载香薰补充液</strong> — 车载场景爆发，但补充液供给少。DIY 柠檬香薰说明用户愿意"自制"，但更方便的"补充装"有市场<br><br>
-      <strong>平价替代小样</strong> — 22.8 自由之水收藏 5.4万，"大牌平替"需求真实。禾川可做"平替小样"试水
+    <div class="card-main">
+      <h3>大牌香水平替！怒省1000➕<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 10.0万 · 藏 10.0万 · 评 3305 · 香水</div>
+      <div class="tags"><span class="kw-tag">香水</span><span class="kw-tag">平替</span></div>
     </div>
+    
   </div>
-  
   <div class="card">
-    <h3>中期（产品线）</h3>
-    <div class="summary">
-      <strong>DIY 香薰材料包</strong> — 橘子皮塔香收藏 5.9万，DIY 是趋势。可提供"基底 + 香精"材料包，降低 DIY 门槛<br><br>
-      <strong>车载香薰礼盒</strong> — 共赴旅程 9.8万赞，情感化车载场景。可结合"旅程"主题做礼盒
+    <div class="card-main">
+      <h3>冷门清冷少女香！<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 10.0万 · 藏 10.0万 · 评 1448 · 香水</div>
+      <div class="tags"><span class="kw-tag">香水</span></div>
     </div>
+    
   </div>
-  
   <div class="card">
-    <h3>长期（品牌）</h3>
-    <div class="summary">
-      <strong>"世界观"内容营销</strong> — 小众香水靠世界观涨粉 100W。禾川可打造"原料溯源"世界观（从产地到配方）<br><br>
-      <strong>"零成本" 反向定位</strong> — 用户一边 DIY 零成本，一边买 22.8 平替。禾川可定位"专业级平价"——比 DIY 专业，比大牌便宜
+    <div class="card-main">
+      <h3>低欲望社会的5个爆款赛道：<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 10.0万 · 藏 7.5万 · 评 2842 · 香氛</div>
+      <div class="tags"></div>
     </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>柜姐认证，几十块钱就能get几千块的香水！<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 10.0万 · 藏 8.8万 · 评 1158 · 平价香水</div>
+      <div class="tags"><span class="kw-tag">香水</span><span class="kw-tag">平替</span></div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>共赴⼀段旅程<span class="type-tag image">图文</span></h3>
+      <div class="meta">赞 9.8万 · 藏 1.3万 · 评 1.1万 · 车载香薰</div>
+      <div class="tags"><span class="kw-tag">车载</span></div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>零成本车载柠檬香薰<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 8.6万 · 藏 2.1万 · 评 2791 · 车载香薰</div>
+      <div class="tags"><span class="kw-tag">车载</span><span class="kw-tag">无火</span></div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>手工小记｜🍊超好闻的橘子皮塔香<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 6.7万 · 藏 5.9万 · 评 852 · 家居香氛</div>
+      <div class="tags"><span class="kw-tag">线香</span></div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>比干噎酸奶更噎的干货来了<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 4.3万 · 藏 2.9万 · 评 216 · 平价香水</div>
+      <div class="tags"></div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>22.8拿下1740的自由之水❓赚疯了❗❗<span class="type-tag video">视频</span></h3>
+      <div class="meta">赞 4.3万 · 藏 5.4万 · 评 59 · 平价香水</div>
+      <div class="tags"><span class="kw-tag">香水</span><span class="kw-tag">平替</span></div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <div class="card-main">
+      <h3>马吉拉香氛实用香调分类合集|收藏<span class="type-tag image">图文</span></h3>
+      <div class="meta">赞 3.2万 · 藏 1.8万 · 评 723 · 香氛</div>
+      <div class="tags"><span class="kw-tag">香水</span></div>
+    </div>
+    
   </div>
 </section>
 

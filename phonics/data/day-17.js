@@ -5,111 +5,13 @@ window.PHONICS_DAY_17 = {
   "pdfImage": "/phonics/images/day-17.jpg",
   "words": [
     {
-      "word": "hole",
-      "phonetic": "/həʊl/",
-      "definition": "n. 洞，孔",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "There is a hole.",
-        "有一个洞。"
-      ]
-    },
-    {
-      "word": "cold",
-      "phonetic": "/kəʊld/",
-      "definition": "adj. 寒冷的；感冒的",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
-        }
-      ],
-      "sentences": [
-        "It is very cold today.",
-        "今天很冷。"
-      ]
-    },
-    {
-      "word": "open",
-      "phonetic": "/ˈəʊpən/",
-      "definition": "v. 打开；开始",
-      "breakdown": [
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "Please open the door.",
-        "请开门。"
-      ]
-    },
-    {
-      "word": "close",
-      "phonetic": "/kləʊz/",
-      "definition": "v. 关闭，合上",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Please close the door.",
-        "请关门。"
-      ]
-    },
-    {
       "word": "go",
       "phonetic": "/ɡəʊ/",
-      "definition": "v. 去；走",
+      "definition": "v. 去",
       "breakdown": [
         {
           "letter": "g",
-          "phon": "/g/"
+          "phon": "/ɡ/"
         },
         {
           "letter": "o",
@@ -117,14 +19,33 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "Let's go now.",
-        "我们现在走吧。"
+        "I go to school by bus.",
+        "我坐公交去学校。"
+      ]
+    },
+    {
+      "word": "no",
+      "phonetic": "/nəʊ/",
+      "definition": "adv. 不",
+      "breakdown": [
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "No, thank you.",
+        "不，谢谢。"
       ]
     },
     {
       "word": "so",
       "phonetic": "/səʊ/",
-      "definition": "adv. 如此；很",
+      "definition": "adv. 所以",
       "breakdown": [
         {
           "letter": "s",
@@ -136,31 +57,192 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "It is so cold today.",
-        "今天真冷。"
+        "I am so happy.",
+        "我太高兴了。"
       ]
     },
     {
-      "word": "road",
-      "phonetic": "/rəʊd/",
-      "definition": "n. 道路；公路",
+      "word": "toe",
+      "phonetic": "/təʊ/",
+      "definition": "n. 脚趾",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "oe",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "I stub my toe on the chair.",
+        "脚趾撞到了椅子。"
+      ]
+    },
+    {
+      "word": "rose",
+      "phonetic": "/rəʊz/",
+      "definition": "n. 玫瑰",
       "breakdown": [
         {
           "letter": "r",
           "phon": "/r/"
         },
         {
-          "letter": "oa",
+          "letter": "o",
           "phon": "/əʊ/"
         },
         {
-          "letter": "d",
-          "phon": "/d/"
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
         }
       ],
       "sentences": [
-        "The car is on the road.",
-        "汽车在路上。"
+        "The rose is very red.",
+        "玫瑰很红。"
+      ]
+    },
+    {
+      "word": "bone",
+      "phonetic": "/bəʊn/",
+      "definition": "n. 骨头",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "Dogs like to chew bones.",
+        "狗喜欢啃骨头。"
+      ]
+    },
+    {
+      "word": "home",
+      "phonetic": "/həʊm/",
+      "definition": "n. 家",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "me",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "I go home at five.",
+        "我五点回家。"
+      ]
+    },
+    {
+      "word": "hope",
+      "phonetic": "/həʊp/",
+      "definition": "v. 希望",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "pe",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "I hope you feel better.",
+        "希望你感觉好些。"
+      ]
+    },
+    {
+      "word": "rope",
+      "phonetic": "/rəʊp/",
+      "definition": "n. 绳子",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "pe",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Tie the rope to the tree.",
+        "把绳子系在树上。"
+      ]
+    },
+    {
+      "word": "note",
+      "phonetic": "/nəʊt/",
+      "definition": "n. 笔记",
+      "breakdown": [
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Write a note to your mom.",
+        "给妈妈写张便条。"
+      ]
+    },
+    {
+      "word": "vote",
+      "phonetic": "/vəʊt/",
+      "definition": "v. 投票",
+      "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Vote for your favorite.",
+        "为你最喜欢的投票。"
       ]
     },
     {
@@ -182,85 +264,104 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "Put on your warm coat.",
-        "穿上你的暖和外套。"
+        "Wear your coat, it's cold.",
+        "穿上外套，很冷。"
       ]
     },
     {
-      "word": "goal",
-      "phonetic": "/ɡəʊl/",
-      "definition": "n. 目标；球门",
+      "word": "goat",
+      "phonetic": "/ɡəʊt/",
+      "definition": "n. 山羊",
       "breakdown": [
         {
           "letter": "g",
-          "phon": "/g/"
+          "phon": "/ɡ/"
         },
         {
           "letter": "oa",
           "phon": "/əʊ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "He scored a goal.",
-        "他进了一个球。"
+        "The goat eats grass.",
+        "山羊吃草。"
       ]
     },
     {
-      "word": "soul",
-      "phonetic": "/səʊl/",
-      "definition": "n. 灵魂；心灵",
+      "word": "boat",
+      "phonetic": "/bəʊt/",
+      "definition": "n. 船",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
+          "letter": "b",
+          "phon": "/b/"
         },
         {
-          "letter": "ou",
+          "letter": "oa",
           "phon": "/əʊ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "He is a kind soul.",
-        "他是一个善良的人。"
+        "We row the boat on the lake.",
+        "我们在湖上划船。"
       ]
     },
     {
-      "word": "shoulder",
-      "phonetic": "/ˈʃəʊldər/",
-      "definition": "n. 肩膀",
+      "word": "float",
+      "phonetic": "/fləʊt/",
+      "definition": "v. 漂浮",
       "breakdown": [
         {
-          "letter": "sh",
-          "phon": "/ʃ/"
+          "letter": "fl",
+          "phon": "/fl/"
         },
         {
-          "letter": "ou",
+          "letter": "oa",
           "phon": "/əʊ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "My bag is on my shoulder.",
-        "我的包在我的肩膀上。"
+        "The boat floats on the water.",
+        "船浮在水面上。"
+      ]
+    },
+    {
+      "word": "throat",
+      "phonetic": "/θrəʊt/",
+      "definition": "n. 喉咙",
+      "breakdown": [
+        {
+          "letter": "th",
+          "phon": "/θ/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oa",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "My throat hurts.",
+        "我的喉咙疼。"
       ]
     },
     {
@@ -283,13 +384,13 @@ window.PHONICS_DAY_17 = {
       ]
     },
     {
-      "word": "show",
-      "phonetic": "/ʃəʊ/",
-      "definition": "v. 展示；给...看",
+      "word": "snow",
+      "phonetic": "/snəʊ/",
+      "definition": "n. 雪",
       "breakdown": [
         {
-          "letter": "sh",
-          "phon": "/ʃ/"
+          "letter": "sn",
+          "phon": "/sn/"
         },
         {
           "letter": "ow",
@@ -297,14 +398,52 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "I will show you my toy.",
-        "我会给你看我的玩具。"
+        "The snow is white.",
+        "雪是白色的。"
+      ]
+    },
+    {
+      "word": "blow",
+      "phonetic": "/bləʊ/",
+      "definition": "v. 吹",
+      "breakdown": [
+        {
+          "letter": "bl",
+          "phon": "/bl/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "Blow out the candles.",
+        "吹灭蜡烛。"
+      ]
+    },
+    {
+      "word": "flow",
+      "phonetic": "/fləʊ/",
+      "definition": "v. 流动",
+      "breakdown": [
+        {
+          "letter": "fl",
+          "phon": "/fl/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "The river flows to the sea.",
+        "河流向大海。"
       ]
     },
     {
       "word": "grow",
       "phonetic": "/ɡrəʊ/",
-      "definition": "v. 生长；种植",
+      "definition": "v. 生长",
       "breakdown": [
         {
           "letter": "gr",
@@ -316,19 +455,18 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "Plants grow from seeds.",
-        "植物从种子生长。"
+        "Plants grow in spring.",
+        "植物在春天生长。"
       ]
     },
     {
       "word": "know",
       "phonetic": "/nəʊ/",
-      "definition": "v. 知道；认识",
+      "definition": "v. 知道",
       "breakdown": [
         {
-          "letter": "n",
-          "phon": "/n/",
-          "silent": "k"
+          "letter": "kn",
+          "phon": "/n/"
         },
         {
           "letter": "ow",
@@ -341,51 +479,13 @@ window.PHONICS_DAY_17 = {
       ]
     },
     {
-      "word": "bowl",
-      "phonetic": "/bəʊl/",
-      "definition": "n. 碗；一碗",
+      "word": "show",
+      "phonetic": "/ʃəʊ/",
+      "definition": "v. 展示",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "Eat soup from a bowl.",
-        "从碗里喝汤。"
-      ]
-    },
-    {
-      "word": "sow",
-      "phonetic": "/səʊ/",
-      "definition": "v. 播种",
-      "breakdown": [
-        {
-          "letter": "sow",
-          "phon": ""
-        }
-      ],
-      "sentences": [
-        "Farmers sow seeds in the spring.",
-        "农民在春天播种。"
-      ]
-    },
-    {
-      "word": "blow",
-      "phonetic": "/bləʊ/",
-      "definition": "v. 吹；刮风",
-      "breakdown": [
-        {
-          "letter": "bl",
-          "phon": "/bl/"
+          "letter": "sh",
+          "phon": "/ʃ/"
         },
         {
           "letter": "ow",
@@ -393,26 +493,22 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "Blow out the candle.",
-        "吹灭蜡烛。"
+        "Show me your picture.",
+        "给我看你的画。"
       ]
     },
     {
-      "word": "follow",
-      "phonetic": "/ˈfɒləʊ/",
-      "definition": "v. 跟随",
+      "word": "throw",
+      "phonetic": "/θrəʊ/",
+      "definition": "v. 扔",
       "breakdown": [
         {
-          "letter": "f",
-          "phon": "/f/"
+          "letter": "th",
+          "phon": "/θ/"
         },
         {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
+          "letter": "r",
+          "phon": "/r/"
         },
         {
           "letter": "ow",
@@ -420,8 +516,8 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "Please follow me.",
-        "请跟着我。"
+        "Throw the ball to me.",
+        "把球扔给我。"
       ]
     },
     {
@@ -438,9 +534,8 @@ window.PHONICS_DAY_17 = {
           "phon": "/e/"
         },
         {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
+          "letter": "ll",
+          "phon": "/l/"
         },
         {
           "letter": "ow",
@@ -453,22 +548,13 @@ window.PHONICS_DAY_17 = {
       ]
     },
     {
-      "word": "pillow",
-      "phonetic": "/ˈpɪləʊ/",
-      "definition": "n. 枕头",
+      "word": "low",
+      "phonetic": "/ləʊ/",
+      "definition": "adj. 低的",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
           "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
+          "phon": "/l/"
         },
         {
           "letter": "ow",
@@ -476,134 +562,79 @@ window.PHONICS_DAY_17 = {
         }
       ],
       "sentences": [
-        "My head is on the pillow.",
-        "我的头在枕头上。"
+        "The table is very low.",
+        "桌子很低。"
       ]
     },
     {
-      "word": "home",
-      "phonetic": "/həʊm/",
-      "definition": "n. 家，住宅",
+      "word": "own",
+      "phonetic": "/əʊn/",
+      "definition": "pron. 自己的",
       "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
         {
           "letter": "o",
           "phon": "/əʊ/"
         },
         {
-          "letter": "m",
-          "phon": "/m/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Let's go home.",
-        "我们回家吧。"
-      ]
-    },
-    {
-      "word": "joke",
-      "phonetic": "/dʒəʊk/",
-      "definition": "n. 笑话",
-      "breakdown": [
-        {
-          "letter": "j",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "He told a funny joke.",
-        "他讲了一个有趣的笑话。"
-      ]
-    },
-    {
-      "word": "rose",
-      "phonetic": "/rəʊz/",
-      "definition": "n. 玫瑰",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "This is a red rose.",
-        "这是一朵红色的玫瑰。"
-      ]
-    },
-    {
-      "word": "role",
-      "phonetic": "/rəʊl/",
-      "definition": "n. 角色；作用",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "What is your role in the play?",
-        "你在剧中的角色是什么？"
-      ]
-    },
-    {
-      "word": "nose",
-      "phonetic": "/nəʊz/",
-      "definition": "n. 鼻子",
-      "breakdown": [
-        {
-          "letter": "n",
+          "letter": "wn",
           "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "I have my own room.",
+        "我有自己的房间。"
+      ]
+    },
+    {
+      "word": "road",
+      "phonetic": "/rəʊd/",
+      "definition": "n. 路",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oa",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "The road is very long.",
+        "路很长。"
+      ]
+    },
+    {
+      "word": "stone",
+      "phonetic": "/stəʊn/",
+      "definition": "n. 石头",
+      "breakdown": [
+        {
+          "letter": "st",
+          "phon": "/st/"
         },
         {
           "letter": "o",
           "phon": "/əʊ/"
         },
         {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
+          "letter": "ne",
+          "phon": "/n/"
         }
       ],
       "sentences": [
-        "This is my nose.",
-        "这是我的鼻子。"
+        "The stone is very heavy.",
+        "石头很重。"
       ]
     },
     {
       "word": "phone",
       "phonetic": "/fəʊn/",
-      "definition": "n. 电话；手机",
+      "definition": "n. 电话",
       "breakdown": [
         {
           "letter": "ph",
@@ -614,88 +645,446 @@ window.PHONICS_DAY_17 = {
           "phon": "/əʊ/"
         },
         {
-          "letter": "n",
-          "phon": "/n/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I talk on the phone.",
-        "我用电话说话。"
-      ]
-    },
-    {
-      "word": "whole",
-      "phonetic": "/həʊl/",
-      "definition": "adj. 整个的；全部的",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/",
-          "silent": "w"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I ate the whole apple.",
-        "我吃了整个苹果。"
-      ]
-    },
-    {
-      "word": "note",
-      "phonetic": "/nəʊt/",
-      "definition": "n. 便条，笔记",
-      "breakdown": [
-        {
-          "letter": "n",
+          "letter": "ne",
           "phon": "/n/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "I write a note.",
-        "我写了一张便条。"
+        "I answer the phone.",
+        "我接电话。"
       ]
     },
-    {
-      "word": "smoke",
-      "phonetic": "/sməʊk/",
-      "definition": "n. 烟",
-      "breakdown": [
-        {
-          "letter": "sm",
-          "phon": "/sm/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I see smoke from the fire.",
-        "我看到火冒出的烟。"
-      ]
-    }
-  ]
+{
+    "word": "hole",
+    "phonetic": "/həʊl/",
+    "definition": "n. 洞",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a hole.",
+          "我看到一个洞。"
+    ]
+},
+{
+    "word": "cold",
+    "phonetic": "/kɔʊld/",
+    "definition": "adj. 冷的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very cold.",
+          "它非常冷的。"
+    ]
+},
+{
+    "word": "open",
+    "phonetic": "/ˈəʊ.pən/",
+    "definition": "v. 打开",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please open it.",
+          "请打开它。"
+    ]
+},
+{
+    "word": "close",
+    "phonetic": "/kləʊz/",
+    "definition": "v. 关；关闭",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please close it.",
+          "请关它。"
+    ]
+},
+{
+    "word": "goal",
+    "phonetic": "/ɡɒʊl/",
+    "definition": "n. 目标；进球",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "oa",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a goal.",
+          "我看到一个目标。"
+    ]
+},
+{
+    "word": "soul",
+    "phonetic": "/səʊl/",
+    "definition": "n. 灵魂",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a soul.",
+          "我看到一个灵魂。"
+    ]
+},
+{
+    "word": "shoulder",
+    "phonetic": "/ˈʃəʊldə/",
+    "definition": "n. 肩膀",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a shoulder.",
+          "我看到一个肩膀。"
+    ]
+},
+{
+    "word": "bowl",
+    "phonetic": "/bəʊɫ/",
+    "definition": "n. 碗",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a bowl.",
+          "我看到一个碗。"
+    ]
+},
+{
+    "word": "follow",
+    "phonetic": "/ˈfɒləʊ/",
+    "definition": "v. 跟随",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/əʊ/"
+          }
+    ],
+    "sentences": [
+          "Please follow it.",
+          "请跟随它。"
+    ]
+},
+{
+    "word": "pillow",
+    "phonetic": "/ˈpɪləʊ/",
+    "definition": "n. 枕头",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/əʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a pillow.",
+          "我看到一个枕头。"
+    ]
+},
+{
+    "word": "role",
+    "phonetic": "/ɹəʊl/",
+    "definition": "n. 角色",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a role.",
+          "我看到一个角色。"
+    ]
+},
+{
+    "word": "nose",
+    "phonetic": "/nəʊz/",
+    "definition": "n. 鼻子",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a nose.",
+          "我看到一个鼻子。"
+    ]
+},
+{
+    "word": "whole",
+    "phonetic": "/həʊl/",
+    "definition": "adj. 整个的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very whole.",
+          "它非常整个的。"
+    ]
+},
+{
+    "word": "smoke",
+    "phonetic": "/sməʊk/",
+    "definition": "n. 烟",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "o",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a smoke.",
+          "我看到一个烟。"
+    ]
+},
+{
+    "word": "sow",
+    "phonetic": "/səʊ/",
+    "definition": "v. 播种",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "Please sow it.",
+          "请播种它。"
+    ]
+},
+{
+    "word": "joke",
+    "phonetic": "/dʒəʊk/",
+    "definition": "n. 笑话",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is joke.",
+          "这是笑话。"
+    ]
 }
+  ]
+};

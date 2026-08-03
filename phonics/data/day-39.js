@@ -5,9 +5,105 @@ window.PHONICS_DAY_39 = {
   "pdfImage": "/phonics/images/day-39.jpg",
   "words": [
     {
+      "word": "look",
+      "phonetic": "/lʊk/",
+      "definition": "v. 看",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "Look at me.",
+        "看着我。"
+      ]
+    },
+    {
+      "word": "like",
+      "phonetic": "/laɪk/",
+      "definition": "v. 喜欢",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ke",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I like apples.",
+        "我喜欢苹果。"
+      ]
+    },
+    {
+      "word": "love",
+      "phonetic": "/lʌv/",
+      "definition": "v. 爱",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "I love you.",
+        "我爱你。"
+      ]
+    },
+    {
+      "word": "long",
+      "phonetic": "/lɒŋ/",
+      "definition": "adj. 长的",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ng",
+          "phon": "/ŋ/"
+        }
+      ],
+      "sentences": [
+        "The snake is long.",
+        "蛇很长。"
+      ]
+    },
+    {
       "word": "leg",
       "phonetic": "/leɡ/",
-      "definition": "n. 腿；支架",
+      "definition": "n. 腿",
       "breakdown": [
         {
           "letter": "l",
@@ -19,12 +115,12 @@ window.PHONICS_DAY_39 = {
         },
         {
           "letter": "g",
-          "phon": "/g/"
+          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "A dog has four legs.",
-        "狗有四条腿。"
+        "My leg hurts.",
+        "腿疼。"
       ]
     },
     {
@@ -46,139 +142,14 @@ window.PHONICS_DAY_39 = {
         }
       ],
       "sentences": [
-        "She has red lips.",
-        "她有红色的嘴唇。"
-      ]
-    },
-    {
-      "word": "lamp",
-      "phonetic": "/læmp/",
-      "definition": "n. 灯",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "mp",
-          "phon": "/mp/"
-        }
-      ],
-      "sentences": [
-        "Turn on the lamp.",
-        "打开灯。"
-      ]
-    },
-    {
-      "word": "leaf",
-      "phonetic": "/liːf/",
-      "definition": "n. 叶子；纸张",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        }
-      ],
-      "sentences": [
-        "A tree has green leaves.",
-        "树有绿色的叶子。"
-      ]
-    },
-    {
-      "word": "lion",
-      "phonetic": "/ˈlaɪən/",
-      "definition": "n. 狮子",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "The lion is a big cat.",
-        "狮子是一种大猫。"
-      ]
-    },
-    {
-      "word": "little",
-      "phonetic": "/ˈlɪtl/",
-      "definition": "adj. 小的；少的",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "t"
-        },
-        {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I have a little dog.",
-        "我有一只小狗。"
-      ]
-    },
-    {
-      "word": "long",
-      "phonetic": "/lɒŋ/",
-      "definition": "adj. 长的；远的",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ng",
-          "phon": "/ŋ/"
-        }
-      ],
-      "sentences": [
-        "The snake is very long.",
-        "这条蛇很长。"
+        "I bite my lip.",
+        "咬嘴唇。"
       ]
     },
     {
       "word": "light",
       "phonetic": "/laɪt/",
-      "definition": "n. 光；灯",
+      "definition": "n. 灯",
       "breakdown": [
         {
           "letter": "l",
@@ -194,32 +165,8 @@ window.PHONICS_DAY_39 = {
         }
       ],
       "sentences": [
-        "The sun gives us light.",
-        "太阳给我们光。"
-      ]
-    },
-    {
-      "word": "line",
-      "phonetic": "/laɪn/",
-      "definition": "n. 线；排队",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Draw a straight line.",
-        "画一条直线。"
+        "Turn on the light.",
+        "开灯。"
       ]
     },
     {
@@ -236,141 +183,19 @@ window.PHONICS_DAY_39 = {
           "phon": "/eɪ/"
         },
         {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
+          "letter": "ke",
+          "phon": "/k/"
         }
       ],
       "sentences": [
         "We swim in the lake.",
-        "我们在湖里游泳。"
-      ]
-    },
-    {
-      "word": "lock",
-      "phonetic": "/lɒk/",
-      "definition": "v. 锁住；上锁",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Please lock the door.",
-        "请锁门。"
-      ]
-    },
-    {
-      "word": "look",
-      "phonetic": "/lʊk/",
-      "definition": "v. 看；看起来",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Look at the bird!",
-        "看那只鸟！"
-      ]
-    },
-    {
-      "word": "lunch",
-      "phonetic": "/lʌntʃ/",
-      "definition": "n. 午餐",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        }
-      ],
-      "sentences": [
-        "I eat lunch.",
-        "我吃午饭。"
-      ]
-    },
-    {
-      "word": "love",
-      "phonetic": "/lʌv/",
-      "definition": "v. 爱",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I love my mom.",
-        "我爱我的妈妈。"
-      ]
-    },
-    {
-      "word": "live",
-      "phonetic": "/lɪv/",
-      "definition": "v. 居住；生活",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I live in a house.",
-        "我住在一个房子里。"
+        "在湖里游泳。"
       ]
     },
     {
       "word": "late",
       "phonetic": "/leɪt/",
-      "definition": "adj. 迟的；晚的",
+      "definition": "adj. 迟的",
       "breakdown": [
         {
           "letter": "l",
@@ -381,176 +206,109 @@ window.PHONICS_DAY_39 = {
           "phon": "/eɪ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
+          "letter": "te",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "Don't be late for school.",
-        "上学不要迟到。"
+        "I am late.",
+        "我迟到了。"
       ]
     },
     {
-      "word": "lucky",
-      "phonetic": "/ˈlʌki/",
-      "definition": "adj. 幸运的",
+      "word": "leave",
+      "phonetic": "/liːv/",
+      "definition": "v. 离开",
       "breakdown": [
         {
           "letter": "l",
           "phon": "/l/"
         },
         {
-          "letter": "u",
-          "phon": "/ʌ/"
+          "letter": "ea",
+          "phon": "/iː/"
         },
         {
-          "letter": "ck",
-          "phon": "/k/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
+          "letter": "ve",
+          "phon": "/v/"
         }
       ],
       "sentences": [
-        "I am a lucky boy.",
-        "我是一个幸运的男孩。"
-      ]
-    },
-    {
-      "word": "yellow",
-      "phonetic": "/ˈjeləʊ/",
-      "definition": "adj. 黄色的",
-      "breakdown": [
-        {
-          "letter": "y",
-          "phon": "/j/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
-        },
-        {
-          "letter": "ow",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "The sun is yellow.",
-        "太阳是黄色的。"
-      ]
-    },
-    {
-      "word": "hello",
-      "phonetic": "/həˈləʊ/",
-      "definition": "int. 你好",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "Hello! I am Tom.",
-        "你好！我是汤姆。"
-      ]
-    },
-    {
-      "word": "balloon",
-      "phonetic": "/bəˈluːn/",
-      "definition": "n. 气球",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "The red balloon flies high.",
-        "红气球飞得很高。"
-      ]
-    },
-    {
-      "word": "doll",
-      "phonetic": "/dɒl/",
-      "definition": "n. 玩偶；玩具娃娃",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
-        }
-      ],
-      "sentences": [
-        "She plays with a doll.",
-        "她玩一个玩偶。"
+        "I leave at six.",
+        "我六点离开。"
       ]
     },
     {
       "word": "ball",
       "phonetic": "/bɔːl/",
-      "definition": "n. 球；舞会",
+      "definition": "n. 球",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "a",
+          "letter": "al",
           "phon": "/ɔː/"
         },
         {
-          "letter": "ll",
-          "phon": "/əl/"
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "Play with the big ball.",
-        "玩那个大球。"
+        "Throw the ball.",
+        "扔球。"
+      ]
+    },
+    {
+      "word": "tall",
+      "phonetic": "/tɔːl/",
+      "definition": "adj. 高的",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "He is tall.",
+        "他很高。"
+      ]
+    },
+    {
+      "word": "small",
+      "phonetic": "/smɔːl/",
+      "definition": "adj. 小的",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "The cat is small.",
+        "猫很小。"
       ]
     },
     {
@@ -563,46 +321,69 @@ window.PHONICS_DAY_39 = {
           "phon": "/w/"
         },
         {
-          "letter": "a",
+          "letter": "al",
           "phon": "/ɔː/"
         },
         {
-          "letter": "ll",
+          "letter": "l",
           "phon": "/l/"
         }
       ],
       "sentences": [
-        "There is a picture on the wall.",
-        "墙上有一幅画。"
+        "The wall is white.",
+        "墙是白色的。"
       ]
     },
     {
-      "word": "small",
-      "phonetic": "/smɔːl/",
-      "definition": "adj. 小的",
+      "word": "fall",
+      "phonetic": "/fɔːl/",
+      "definition": "v. 掉落",
       "breakdown": [
         {
-          "letter": "sm",
-          "phon": "/sm/"
+          "letter": "f",
+          "phon": "/f/"
         },
         {
-          "letter": "a",
+          "letter": "al",
           "phon": "/ɔː/"
         },
         {
-          "letter": "ll",
+          "letter": "l",
           "phon": "/l/"
         }
       ],
       "sentences": [
-        "This is a small dog.",
-        "这是一只小狗。"
+        "Leaves fall in autumn.",
+        "秋天落叶。"
+      ]
+    },
+    {
+      "word": "call",
+      "phonetic": "/kɔːl/",
+      "definition": "v. 叫",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Call me later.",
+        "晚点打给我。"
       ]
     },
     {
       "word": "bell",
       "phonetic": "/bel/",
-      "definition": "n. 铃；钟",
+      "definition": "n. 铃",
       "breakdown": [
         {
           "letter": "b",
@@ -618,18 +399,60 @@ window.PHONICS_DAY_39 = {
         }
       ],
       "sentences": [
-        "The bell rings loud.",
-        "铃铛响亮。"
+        "The bell rings.",
+        "铃响了。"
       ]
     },
     {
-      "word": "shell",
-      "phonetic": "/ʃel/",
-      "definition": "n. 贝壳；外壳",
+      "word": "ill",
+      "phonetic": "/ɪl/",
+      "definition": "adj. 生病的",
       "breakdown": [
         {
-          "letter": "sh",
-          "phon": "/ʃ/"
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "I feel ill.",
+        "我觉得不舒服。"
+      ]
+    },
+    {
+      "word": "hill",
+      "phonetic": "/hɪl/",
+      "definition": "n. 小山",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ll",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Climb the hill.",
+        "爬山。"
+      ]
+    },
+    {
+      "word": "sell",
+      "phonetic": "/sel/",
+      "definition": "v. 卖",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
         },
         {
           "letter": "e",
@@ -641,37 +464,37 @@ window.PHONICS_DAY_39 = {
         }
       ],
       "sentences": [
-        "We found a pretty shell.",
-        "我们找到一个漂亮的贝壳。"
+        "They sell fruit.",
+        "他们卖水果。"
       ]
     },
     {
-      "word": "milk",
-      "phonetic": "/mɪlk/",
-      "definition": "n. 牛奶",
+      "word": "apple",
+      "phonetic": "/ˈæpəl/",
+      "definition": "n. 苹果",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "a",
+          "phon": "/æ/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
+          "letter": "pp",
+          "phon": "/p/"
         },
         {
-          "letter": "lk",
-          "phon": "/lk/"
+          "letter": "le",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "I like to drink milk.",
-        "我喜欢喝牛奶。"
+        "I eat an apple.",
+        "我吃苹果。"
       ]
     },
     {
       "word": "table",
-      "phonetic": "/ˈteɪbl/",
-      "definition": "n. 桌子；餐桌",
+      "phonetic": "/ˈteɪbəl/",
+      "definition": "n. 桌子",
       "breakdown": [
         {
           "letter": "t",
@@ -686,62 +509,673 @@ window.PHONICS_DAY_39 = {
           "phon": "/b/"
         },
         {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "We eat dinner at the table.",
-        "我们在桌子旁吃晚饭。"
-      ]
-    },
-    {
-      "word": "school",
-      "phonetic": "/skuːl/",
-      "definition": "n. 学校",
-      "breakdown": [
-        {
-          "letter": "sch",
-          "phon": "/sk/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "l",
+          "letter": "le",
           "phon": "/əl/"
         }
       ],
       "sentences": [
-        "I go to school every day.",
-        "我每天都去学校。"
+        "The book is on the table.",
+        "书在桌上。"
       ]
     },
     {
-      "word": "smile",
-      "phonetic": "/smaɪl/",
-      "definition": "v. 微笑",
+      "word": "bottle",
+      "phonetic": "/ˈbɒtəl/",
+      "definition": "n. 瓶子",
       "breakdown": [
         {
-          "letter": "sm",
-          "phon": "/sm/"
+          "letter": "b",
+          "phon": "/b/"
         },
         {
-          "letter": "i",
-          "phon": "/aɪ/"
+          "letter": "o",
+          "phon": "/ɒ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "Please smile for the photo.",
-        "请对着照片微笑。"
+        "Drink from the bottle.",
+        "用瓶子喝。"
       ]
-    }
-  ]
+    },
+    {
+      "word": "candle",
+      "phonetic": "/ˈkændəl/",
+      "definition": "n. 蜡烛",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "Light the candle.",
+        "点蜡烛。"
+      ]
+    },
+    {
+      "word": "circle",
+      "phonetic": "/ˈsɜːkəl/",
+      "definition": "n. 圆",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/s/"
+        },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "Draw a circle.",
+        "画圆。"
+      ]
+    },
+    {
+      "word": "eagle",
+      "phonetic": "/ˈiːɡəl/",
+      "definition": "n. 鹰",
+      "breakdown": [
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "The eagle flies.",
+        "鹰飞翔。"
+      ]
+    },
+    {
+      "word": "middle",
+      "phonetic": "/ˈmɪdəl/",
+      "definition": "n. 中间",
+      "breakdown": [
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "dd",
+          "phon": "/d/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "Stand in the middle.",
+        "站中间。"
+      ]
+    },
+    {
+      "word": "purple",
+      "phonetic": "/ˈpɜːpəl/",
+      "definition": "adj. 紫色的",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "I like purple.",
+        "我喜欢紫色。"
+      ]
+    },
+    {
+      "word": "slow",
+      "phonetic": "/sləʊ/",
+      "definition": "adj. 慢的",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/əʊ/"
+        }
+      ],
+      "sentences": [
+        "The turtle is slow.",
+        "乌龟很慢。"
+      ]
+    },
+    {
+      "word": "sleep",
+      "phonetic": "/sliːp/",
+      "definition": "v. 睡觉",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "I sleep at nine.",
+        "我九点睡觉。"
+      ]
+    },
+{
+    "word": "lamp",
+    "phonetic": "/læmp/",
+    "definition": "n. 灯",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a lamp.",
+          "我看到一个灯。"
+    ]
+},
+{
+    "word": "leaf",
+    "phonetic": "/liːf/",
+    "definition": "n. 树叶",
+    "breakdown": [
+          {
+                "letter": "le",
+                "phon": "/l/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a leaf.",
+          "我看到一个树叶。"
+    ]
+},
+{
+    "word": "lion",
+    "phonetic": "/ˈlaɪən/",
+    "definition": "n. 狮子",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a lion.",
+          "我看到一个狮子。"
+    ]
+},
+{
+    "word": "little",
+    "phonetic": "/ˈlɪ.ɾɫ̩/",
+    "definition": "adj. 小的；少的",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "le",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very little.",
+          "它非常小的。"
+    ]
+},
+{
+    "word": "line",
+    "phonetic": "/laɪn/",
+    "definition": "n. 线；队伍",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a line.",
+          "我看到一个线。"
+    ]
+},
+{
+    "word": "lock",
+    "phonetic": "/lɒk/",
+    "definition": "n. 锁",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a lock.",
+          "我看到一个锁。"
+    ]
+},
+{
+    "word": "lunch",
+    "phonetic": "/lʌnt͡ʃ/",
+    "definition": "n. 午餐",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a lunch.",
+          "我看到一个午餐。"
+    ]
+},
+{
+    "word": "live",
+    "phonetic": "/lɪv/",
+    "definition": "v. 居住；生活",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please live it.",
+          "请居住它。"
+    ]
+},
+{
+    "word": "lucky",
+    "phonetic": "/ˈlʌki/",
+    "definition": "adj. 幸运的",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very lucky.",
+          "它非常幸运的。"
+    ]
+},
+{
+    "word": "yellow",
+    "phonetic": "/jɛlə/",
+    "definition": "adj. 黄色的",
+    "breakdown": [
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ll",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "It is very yellow.",
+          "它非常黄色的。"
+    ]
+},
+{
+    "word": "hello",
+    "phonetic": "/həˈləʊ/",
+    "definition": "int. 你好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ll",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Hello!",
+          "你好！"
+    ]
+},
+{
+    "word": "balloon",
+    "phonetic": "/bəˈluːn/",
+    "definition": "n. 气球",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ll",
+                "phon": "/l/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a balloon.",
+          "我看到一个气球。"
+    ]
+},
+{
+    "word": "doll",
+    "phonetic": "/dɒl/",
+    "definition": "n. 玩偶",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ll",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a doll.",
+          "我看到一个玩偶。"
+    ]
+},
+{
+    "word": "shell",
+    "phonetic": "/ʃɛl/",
+    "definition": "n. 贝壳",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ll",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a shell.",
+          "我看到一个贝壳。"
+    ]
+},
+{
+    "word": "milk",
+    "phonetic": "/mɛlk/",
+    "definition": "n. 牛奶",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a milk.",
+          "我看到一个牛奶。"
+    ]
+},
+{
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "definition": "n. 学校",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a school.",
+          "我看到一个学校。"
+    ]
+},
+{
+    "word": "smile",
+    "phonetic": "/ˈsmaɪ.əl/",
+    "definition": "v. 微笑",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "le",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "Please smile it.",
+          "请微笑它。"
+    ]
 }
+  ]
+};

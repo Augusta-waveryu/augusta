@@ -5,22 +5,26 @@ window.PHONICS_DAY_23 = {
   "pdfImage": "/phonics/images/day-23.jpg",
   "words": [
     {
-      "word": "tea",
-      "phonetic": "/tiː/",
-      "definition": "n. 茶，茶叶",
+      "word": "top",
+      "phonetic": "/tɒp/",
+      "definition": "n. 顶部",
       "breakdown": [
         {
           "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ea",
-          "phon": "/iː/"
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
         }
       ],
       "sentences": [
-        "I like to drink tea.",
-        "我喜欢喝茶。"
+        "The book is on the top.",
+        "书在顶部。"
       ]
     },
     {
@@ -47,14 +51,82 @@ window.PHONICS_DAY_23 = {
       ]
     },
     {
+      "word": "tip",
+      "phonetic": "/tɪp/",
+      "definition": "n. 尖端",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "The tip is sharp.",
+        "尖端很锋利。"
+      ]
+    },
+    {
+      "word": "tap",
+      "phonetic": "/tæp/",
+      "definition": "v. 轻拍",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        }
+      ],
+      "sentences": [
+        "Tap the screen.",
+        "轻触屏幕。"
+      ]
+    },
+    {
+      "word": "tea",
+      "phonetic": "/tiː/",
+      "definition": "n. 茶",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/iː/"
+        }
+      ],
+      "sentences": [
+        "I drink tea every day.",
+        "我每天喝茶。"
+      ]
+    },
+    {
       "word": "two",
       "phonetic": "/tuː/",
       "definition": "num. 二",
       "breakdown": [
         {
           "letter": "t",
-          "phon": "/t/",
-          "silent": "w"
+          "phon": "/t/"
+        },
+        {
+          "letter": "w",
+          "phon": "/w/"
         },
         {
           "letter": "o",
@@ -62,27 +134,127 @@ window.PHONICS_DAY_23 = {
         }
       ],
       "sentences": [
-        "I have two red apples.",
-        "我有两个红苹果。"
+        "I have two eyes.",
+        "我有两只眼睛。"
       ]
     },
     {
-      "word": "toy",
-      "phonetic": "/tɔɪ/",
-      "definition": "n. 玩具",
+      "word": "tree",
+      "phonetic": "/triː/",
+      "definition": "n. 树",
       "breakdown": [
         {
           "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "ee",
+          "phon": "/iː/"
         }
       ],
       "sentences": [
-        "My favorite toy is a car.",
-        "我最喜欢的玩具是小汽车。"
+        "The tree is very tall.",
+        "树很高。"
+      ]
+    },
+    {
+      "word": "time",
+      "phonetic": "/taɪm/",
+      "definition": "n. 时间",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "me",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "What time is it?",
+        "几点了？"
+      ]
+    },
+    {
+      "word": "talk",
+      "phonetic": "/tɔːk/",
+      "definition": "v. 说话",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "Let's talk about it.",
+        "我们谈谈吧。"
+      ]
+    },
+    {
+      "word": "tall",
+      "phonetic": "/tɔːl/",
+      "definition": "adj. 高的",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "al",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "He is very tall.",
+        "他很高。"
+      ]
+    },
+    {
+      "word": "table",
+      "phonetic": "/ˈteɪbəl/",
+      "definition": "n. 桌子",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "The book is on the table.",
+        "书在桌上。"
       ]
     },
     {
@@ -100,7 +272,7 @@ window.PHONICS_DAY_23 = {
         },
         {
           "letter": "g",
-          "phon": "/g/"
+          "phon": "/ɡ/"
         },
         {
           "letter": "er",
@@ -108,228 +280,76 @@ window.PHONICS_DAY_23 = {
         }
       ],
       "sentences": [
-        "A tiger is a big cat.",
-        "老虎是一种大猫。"
+        "The tiger is strong.",
+        "老虎很强壮。"
       ]
     },
     {
-      "word": "table",
-      "phonetic": "/ˈteɪbl/",
-      "definition": "n. 桌子；餐桌",
+      "word": "today",
+      "phonetic": "/təˈdeɪ/",
+      "definition": "adv. 今天",
       "breakdown": [
         {
           "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "a",
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ay",
           "phon": "/eɪ/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "We eat dinner at the table.",
-        "我们在桌子旁吃晚饭。"
+        "Today is sunny.",
+        "今天是晴天。"
       ]
     },
     {
-      "word": "tail",
-      "phonetic": "/teɪl/",
-      "definition": "n. 尾巴",
+      "word": "together",
+      "phonetic": "/təˈɡeðə/",
+      "definition": "adv. 一起",
       "breakdown": [
         {
           "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ai",
-          "phon": "/eɪ/"
+          "letter": "o",
+          "phon": "/ə/"
         },
         {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "The dog wags its tail.",
-        "狗狗摇它的尾巴。"
-      ]
-    },
-    {
-      "word": "time",
-      "phonetic": "/taɪm/",
-      "definition": "n. 时间；次数",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "What time is it?",
-        "现在几点了？"
-      ]
-    },
-    {
-      "word": "tell",
-      "phonetic": "/tel/",
-      "definition": "v. 告诉，讲述",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "g",
+          "phon": "/ɡ/"
         },
         {
           "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "ll",
-          "phon": "/l/"
+          "letter": "th",
+          "phon": "/ð/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "Please tell me a story.",
-        "请给我讲个故事。"
-      ]
-    },
-    {
-      "word": "take",
-      "phonetic": "/teɪk/",
-      "definition": "v. 拿；取；带",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Please take this book.",
-        "请拿走这本书。"
-      ]
-    },
-    {
-      "word": "tall",
-      "phonetic": "/tɔːl/",
-      "definition": "adj. 高的",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "ll",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "The tree is very tall.",
-        "这棵树很高。"
-      ]
-    },
-    {
-      "word": "tree",
-      "phonetic": "/triː/",
-      "definition": "n. 树",
-      "breakdown": [
-        {
-          "letter": "tr",
-          "phon": "/tr/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        }
-      ],
-      "sentences": [
-        "Look at the big tree.",
-        "看那棵大树。"
-      ]
-    },
-    {
-      "word": "train",
-      "phonetic": "/tɹeɪn/",
-      "definition": "n. 火车",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "I see a train.",
-        "我看到一个火车。"
-      ]
-    },
-    {
-      "word": "trip",
-      "phonetic": "/trɪp/",
-      "definition": "n. 旅行；绊倒",
-      "breakdown": [
-        {
-          "letter": "tr",
-          "phon": "/tr/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Let's go on a trip!",
-        "我们去旅行吧！"
+        "We play together.",
+        "我们一起玩。"
       ]
     },
     {
       "word": "tomato",
-      "phonetic": "/təˈmɑːtə/",
-      "definition": "n. 番茄，西红柿",
+      "phonetic": "/təˈmɑːtəʊ/",
+      "definition": "n. 西红柿",
       "breakdown": [
         {
           "letter": "t",
@@ -348,109 +368,19 @@ window.PHONICS_DAY_23 = {
           "phon": "/ɑː/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
+          "letter": "to",
+          "phon": "/təʊ/"
         }
       ],
       "sentences": [
-        "She added a slice of fresh tomato to her sandwich.",
-        "她在三明治里加了一片新鲜番茄。"
-      ]
-    },
-    {
-      "word": "teacher",
-      "phonetic": "/ˈtiːtʃər/",
-      "definition": "n. 教师，老师",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "My teacher is nice.",
-        "我的老师很好。"
-      ]
-    },
-    {
-      "word": "ticket",
-      "phonetic": "/ˈtɪkɪt/",
-      "definition": "n. 票",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I have a ticket.",
-        "我有一张票。"
-      ]
-    },
-    {
-      "word": "turtle",
-      "phonetic": "/tɜːtəl/",
-      "definition": "n.乌龟",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The turtle slowly made its way to the water.",
-        "这只乌龟慢慢地爬向水边。"
+        "I like tomatoes.",
+        "我喜欢西红柿。"
       ]
     },
     {
       "word": "little",
-      "phonetic": "/ˈlɪtl/",
-      "definition": "adj. 小的；少的",
+      "phonetic": "/ˈlɪtəl/",
+      "definition": "adj. 小的",
       "breakdown": [
         {
           "letter": "l",
@@ -461,24 +391,76 @@ window.PHONICS_DAY_23 = {
           "phon": "/ɪ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "t"
+          "letter": "tt",
+          "phon": "/t/"
         },
         {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
+          "letter": "le",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "I have a little dog.",
-        "我有一只小狗。"
+        "The baby is little.",
+        "宝宝很小。"
+      ]
+    },
+    {
+      "word": "kitten",
+      "phonetic": "/ˈkɪtən/",
+      "definition": "n. 小猫",
+      "breakdown": [
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "en",
+          "phon": "/ən/"
+        }
+      ],
+      "sentences": [
+        "The kitten is cute.",
+        "小猫很可爱。"
+      ]
+    },
+    {
+      "word": "button",
+      "phonetic": "/ˈbʌtən/",
+      "definition": "n. 纽扣",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "on",
+          "phon": "/ən/"
+        }
+      ],
+      "sentences": [
+        "Press the button.",
+        "按下按钮。"
       ]
     },
     {
       "word": "bottle",
-      "phonetic": "/ˈbɒtl/",
+      "phonetic": "/ˈbɒtəl/",
       "definition": "n. 瓶子",
       "breakdown": [
         {
@@ -490,24 +472,103 @@ window.PHONICS_DAY_23 = {
           "phon": "/ɒ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "t"
+          "letter": "tt",
+          "phon": "/t/"
         },
         {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
+          "letter": "le",
+          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "Drink water from the bottle.",
-        "从瓶子里喝水。"
+        "Drink from the bottle.",
+        "用瓶子喝。"
+      ]
+    },
+    {
+      "word": "cotton",
+      "phonetic": "/ˈkɒtən/",
+      "definition": "n. 棉花",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "on",
+          "phon": "/ən/"
+        }
+      ],
+      "sentences": [
+        "The shirt is made of cotton.",
+        "衬衫是棉的。"
+      ]
+    },
+    {
+      "word": "butter",
+      "phonetic": "/ˈbʌtə/",
+      "definition": "n. 黄油",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "Spread butter on bread.",
+        "在面包上涂黄油。"
+      ]
+    },
+    {
+      "word": "letter",
+      "phonetic": "/ˈletə/",
+      "definition": "n. 信",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "tt",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "I write a letter.",
+        "我写了一封信。"
       ]
     },
     {
       "word": "better",
-      "phonetic": "/ˈbetər/",
+      "phonetic": "/ˈbetə/",
       "definition": "adj. 更好的",
       "breakdown": [
         {
@@ -529,49 +590,21 @@ window.PHONICS_DAY_23 = {
       ],
       "sentences": [
         "I feel better now.",
-        "我现在感觉好多了。"
+        "我好多了。"
       ]
     },
     {
-      "word": "pretty",
-      "phonetic": "/ˈprɪti/",
-      "definition": "adj. 漂亮的；可爱的",
+      "word": "matter",
+      "phonetic": "/ˈmætə/",
+      "definition": "n. 事情",
       "breakdown": [
         {
-          "letter": "pr",
-          "phon": "/pr/"
+          "letter": "m",
+          "phon": "/m/"
         },
         {
-          "letter": "e",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "t"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "The flower is pretty.",
-        "这朵花很漂亮。"
-      ]
-    },
-    {
-      "word": "bitter",
-      "phonetic": "/ˈbɪtər/",
-      "definition": "adj. 苦的；痛苦的",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
+          "letter": "a",
+          "phon": "/æ/"
         },
         {
           "letter": "tt",
@@ -583,69 +616,14 @@ window.PHONICS_DAY_23 = {
         }
       ],
       "sentences": [
-        "The medicine tastes very bitter.",
-        "这药尝起来很苦。"
+        "What's the matter?",
+        "怎么了？"
       ]
     },
     {
-      "word": "letter",
-      "phonetic": "/ˈletər/",
-      "definition": "n. 字母；信件",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "t"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "A is a letter.",
-        "A是一个字母。"
-      ]
-    },
-    {
-      "word": "butter",
-      "phonetic": "/ˈbʌtər/",
-      "definition": "n. 黄油",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "tt",
-          "phon": "/t/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "Put some butter on the bread.",
-        "在面包上放些黄油。"
-      ]
-    },
-    {
-      "word": "kitten",
-      "phonetic": "/ˈkɪtn/",
-      "definition": "n. 小猫",
+      "word": "kite",
+      "phonetic": "/kaɪt/",
+      "definition": "n. 风筝",
       "breakdown": [
         {
           "letter": "k",
@@ -653,109 +631,122 @@ window.PHONICS_DAY_23 = {
         },
         {
           "letter": "i",
-          "phon": "/ɪ/"
+          "phon": "/aɪ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "t"
-        },
-        {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "te",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The kitten is cute.",
-        "小猫很可爱。"
+        "I fly a kite in spring.",
+        "春天放风筝。"
       ]
     },
     {
-      "word": "cotton",
-      "phonetic": "/ˈkɒtn/",
-      "definition": "n. 棉花；棉布",
+      "word": "gate",
+      "phonetic": "/ɡeɪt/",
+      "definition": "n. 大门",
+      "breakdown": [
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Open the gate.",
+        "打开大门。"
+      ]
+    },
+    {
+      "word": "plate",
+      "phonetic": "/pleɪt/",
+      "definition": "n. 盘子",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Put food on the plate.",
+        "把食物放盘上。"
+      ]
+    },
+    {
+      "word": "white",
+      "phonetic": "/waɪt/",
+      "definition": "adj. 白色的",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "I have a white cat.",
+        "我有只白猫。"
+      ]
+    },
+    {
+      "word": "cooked",
+      "phonetic": "/kʊkt/",
+      "definition": "v. 做饭（过去式）",
       "breakdown": [
         {
           "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "o",
-          "phon": "/ɒ/"
+          "letter": "oo",
+          "phon": "/ʊ/"
         },
         {
-          "letter": "tton",
-          "phon": "/tn/"
-        }
-      ],
-      "sentences": [
-        "My shirt is made of cotton.",
-        "我的衬衫是棉的。"
-      ]
-    },
-    {
-      "word": "button",
-      "phonetic": "/ˈbʌtn/",
-      "definition": "n. 按钮；纽扣",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "k",
+          "phon": "/k/"
         },
         {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "t",
-          "phon": "",
-          "silent": "t"
-        },
-        {
-          "letter": "ton",
-          "phon": "/tn/"
-        }
-      ],
-      "sentences": [
-        "Press the button to start.",
-        "按下按钮即可开始。"
-      ]
-    },
-    {
-      "word": "city",
-      "phonetic": "/ˈsɪti/",
-      "definition": "n. 城市",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/s/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
+          "letter": "ed",
           "phon": "/t/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
         }
       ],
       "sentences": [
-        "This is a big city.",
-        "这是一个大城市。"
+        "Mom cooked dinner.",
+        "妈妈做了晚饭。"
       ]
     },
     {
-      "word": "water",
-      "phonetic": "/ˈwɔːtər/",
-      "definition": "n. 水",
+      "word": "washed",
+      "phonetic": "/wɒʃt/",
+      "definition": "v. 洗（过去式）",
       "breakdown": [
         {
           "letter": "w",
@@ -763,21 +754,399 @@ window.PHONICS_DAY_23 = {
         },
         {
           "letter": "a",
-          "phon": "/ɔː/"
+          "phon": "/ɒ/"
         },
         {
-          "letter": "t",
+          "letter": "sh",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ed",
           "phon": "/t/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "Drink fresh water every day.",
-        "每天喝新鲜的水。"
+        "I washed my hands.",
+        "我洗了手。"
       ]
-    }
-  ]
+    },
+{
+    "word": "toy",
+    "phonetic": "/tɔɪ/",
+    "definition": "n. 玩具",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oy",
+                "phon": "/ɔɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a toy.",
+          "我看到一个玩具。"
+    ]
+},
+{
+    "word": "tail",
+    "phonetic": "/teɪl/",
+    "definition": "n. 尾巴",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a tail.",
+          "我看到一个尾巴。"
+    ]
+},
+{
+    "word": "tell",
+    "phonetic": "/tɛl/",
+    "definition": "v. 告诉",
+    "breakdown": [
+          {
+                "letter": "te",
+                "phon": "/t/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "Please tell it.",
+          "请告诉它。"
+    ]
+},
+{
+    "word": "take",
+    "phonetic": "/teɪk/",
+    "definition": "v. 拿；带走",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please take it.",
+          "请拿它。"
+    ]
+},
+{
+    "word": "train",
+    "phonetic": "/tɹeɪn/",
+    "definition": "n. 火车",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a train.",
+          "我看到一个火车。"
+    ]
+},
+{
+    "word": "trip",
+    "phonetic": "/tɹɪp/",
+    "definition": "n. 旅行",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a trip.",
+          "我看到一个旅行。"
+    ]
+},
+{
+    "word": "teacher",
+    "phonetic": "/ˈtiːt͡ʃə/",
+    "definition": "n. 老师",
+    "breakdown": [
+          {
+                "letter": "te",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a teacher.",
+          "我看到一个老师。"
+    ]
+},
+{
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "definition": "v. 承认",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please admit it.",
+          "请承认它。"
+    ]
+},
+{
+    "word": "turtle",
+    "phonetic": "/ˈtɜːtəl/",
+    "definition": "n. 乌龟",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a turtle.",
+          "我看到一个乌龟。"
+    ]
+},
+{
+    "word": "pretty",
+    "phonetic": "/ˈpɹɪti/",
+    "definition": "adj. 漂亮的",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "tt",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very pretty.",
+          "它非常漂亮的。"
+    ]
+},
+{
+    "word": "bitter",
+    "phonetic": "/ˈbɪtə/",
+    "definition": "adj. 苦的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "tt",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "It is very bitter.",
+          "它非常苦的。"
+    ]
+},
+{
+    "word": "city",
+    "phonetic": "/sɪtɪ/",
+    "definition": "n. 城市",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a city.",
+          "我看到一个城市。"
+    ]
+},
+{
+    "word": "water",
+    "phonetic": "/ˈwoːtə/",
+    "definition": "n. 水",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "te",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a water.",
+          "我看到一个水。"
+    ]
+},
+{
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "definition": "n. 票",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "This is ticket.",
+          "这是票。"
+    ]
 }
+  ]
+};

@@ -5,70 +5,9 @@ window.PHONICS_DAY_16 = {
   "pdfImage": "/phonics/images/day-16.jpg",
   "words": [
     {
-      "word": "now",
-      "phonetic": "/naʊ/",
-      "definition": "adv. 现在，目前",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/aʊ/"
-        }
-      ],
-      "sentences": [
-        "Let's play now.",
-        "我们现在玩吧。"
-      ]
-    },
-    {
-      "word": "town",
-      "phonetic": "/taʊn/",
-      "definition": "n. 城镇；市镇",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "I live in a small town.",
-        "我住在一个小城镇。"
-      ]
-    },
-    {
-      "word": "plow",
-      "phonetic": "/plaʊ/",
-      "definition": "n. 犁",
-      "breakdown": [
-        {
-          "letter": "pl",
-          "phon": "/pl/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/aʊ/"
-        }
-      ],
-      "sentences": [
-        "The farmer used a plow to prepare the field.",
-        "农民用犁来耕地。"
-      ]
-    },
-    {
       "word": "cow",
       "phonetic": "/kaʊ/",
-      "definition": "n. 奶牛",
+      "definition": "n. 牛",
       "breakdown": [
         {
           "letter": "c",
@@ -80,123 +19,84 @@ window.PHONICS_DAY_16 = {
         }
       ],
       "sentences": [
-        "The cow says 'moo'.",
-        "奶牛说“哞”。"
+        "The cow eats grass.",
+        "牛吃草。"
       ]
     },
     {
-      "word": "tower",
-      "phonetic": "/ˈtaʊər/",
-      "definition": "n. 塔；高楼",
+      "word": "how",
+      "phonetic": "/haʊ/",
+      "definition": "adv. 怎么",
       "breakdown": [
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ower",
-          "phon": "/aʊə/"
-        }
-      ],
-      "sentences": [
-        "Look at the tall tower.",
-        "看那座高塔。"
-      ]
-    },
-    {
-      "word": "power",
-      "phonetic": "/ˈpaʊər/",
-      "definition": "n. 力量；权力",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "h",
+          "phon": "/h/"
         },
         {
           "letter": "ow",
           "phon": "/aʊ/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "The robot has much power.",
-        "机器人有很多能量。"
+        "How are you?",
+        "你好吗？"
       ]
     },
     {
-      "word": "flower",
-      "phonetic": "/ˈflaʊər/",
-      "definition": "n. 花朵",
+      "word": "now",
+      "phonetic": "/naʊ/",
+      "definition": "adv. 现在",
       "breakdown": [
-        {
-          "letter": "fl",
-          "phon": "/fl/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The flower is red.",
-        "这朵花是红色的。"
-      ]
-    },
-    {
-      "word": "brown",
-      "phonetic": "/braʊn/",
-      "definition": "adj. 棕色的",
-      "breakdown": [
-        {
-          "letter": "br",
-          "phon": "/br/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/aʊ/"
-        },
         {
           "letter": "n",
           "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "The dog has brown fur.",
-        "这只狗有棕色的毛。"
-      ]
-    },
-    {
-      "word": "powder",
-      "phonetic": "/ˈpaʊdər/",
-      "definition": "n. 粉末",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
         },
         {
           "letter": "ow",
           "phon": "/aʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "This is white powder.",
-        "这是白色粉末。"
+        "I am busy now.",
+        "我现在很忙。"
+      ]
+    },
+    {
+      "word": "wow",
+      "phonetic": "/waʊ/",
+      "definition": "interj. 哇",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        }
+      ],
+      "sentences": [
+        "Wow, that's amazing!",
+        "哇，太棒了！"
+      ]
+    },
+    {
+      "word": "bow",
+      "phonetic": "/baʊ/",
+      "definition": "v. 鞠躬",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        }
+      ],
+      "sentences": [
+        "Bow to the teacher.",
+        "向老师鞠躬。"
       ]
     },
     {
@@ -218,18 +118,18 @@ window.PHONICS_DAY_16 = {
         }
       ],
       "sentences": [
-        "Go down the stairs.",
-        "下楼梯。"
+        "Sit down, please.",
+        "请坐下。"
       ]
     },
     {
-      "word": "drown",
-      "phonetic": "/draʊn/",
-      "definition": "v. 溺水；淹没",
+      "word": "town",
+      "phonetic": "/taʊn/",
+      "definition": "n. 城镇",
       "breakdown": [
         {
-          "letter": "dr",
-          "phon": "/dr/"
+          "letter": "t",
+          "phon": "/t/"
         },
         {
           "letter": "ow",
@@ -241,46 +141,296 @@ window.PHONICS_DAY_16 = {
         }
       ],
       "sentences": [
-        "Be careful, don't drown.",
-        "小心，别溺水。"
+        "I live in a small town.",
+        "我住在一个小镇。"
       ]
     },
     {
-      "word": "how",
-      "phonetic": "/haʊ/",
-      "definition": "adv. 怎样；如何",
+      "word": "brown",
+      "phonetic": "/braʊn/",
+      "definition": "adj. 棕色的",
+      "breakdown": [
+        {
+          "letter": "br",
+          "phon": "/br/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "I have brown hair.",
+        "我有棕色的头发。"
+      ]
+    },
+    {
+      "word": "crown",
+      "phonetic": "/kraʊn/",
+      "definition": "n. 王冠",
+      "breakdown": [
+        {
+          "letter": "cr",
+          "phon": "/kr/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "The king wears a crown.",
+        "国王戴着王冠。"
+      ]
+    },
+    {
+      "word": "clown",
+      "phonetic": "/klaʊn/",
+      "definition": "n. 小丑",
+      "breakdown": [
+        {
+          "letter": "cl",
+          "phon": "/kl/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "The clown is very funny.",
+        "小丑很有趣。"
+      ]
+    },
+    {
+      "word": "frown",
+      "phonetic": "/fraʊn/",
+      "definition": "v. 皱眉",
+      "breakdown": [
+        {
+          "letter": "fr",
+          "phon": "/fr/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "Don't frown at me.",
+        "别对我皱眉。"
+      ]
+    },
+    {
+      "word": "gown",
+      "phonetic": "/ɡaʊn/",
+      "definition": "n. 长袍",
+      "breakdown": [
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "She wears a beautiful gown.",
+        "她穿着美丽的长袍。"
+      ]
+    },
+    {
+      "word": "flower",
+      "phonetic": "/ˈflaʊə/",
+      "definition": "n. 花",
+      "breakdown": [
+        {
+          "letter": "fl",
+          "phon": "/fl/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "The flower is red.",
+        "花是红色的。"
+      ]
+    },
+    {
+      "word": "power",
+      "phonetic": "/ˈpaʊə/",
+      "definition": "n. 力量",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "Knowledge is power.",
+        "知识就是力量。"
+      ]
+    },
+    {
+      "word": "shower",
+      "phonetic": "/ˈʃaʊə/",
+      "definition": "n. 淋浴",
+      "breakdown": [
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "I take a shower every day.",
+        "我每天洗澡。"
+      ]
+    },
+    {
+      "word": "tower",
+      "phonetic": "/ˈtaʊə/",
+      "definition": "n. 塔",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "The tower is very tall.",
+        "塔很高。"
+      ]
+    },
+    {
+      "word": "mouse",
+      "phonetic": "/maʊs/",
+      "definition": "n. 老鼠",
+      "breakdown": [
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "A mouse runs fast.",
+        "老鼠跑得快。"
+      ]
+    },
+    {
+      "word": "house",
+      "phonetic": "/haʊs/",
+      "definition": "n. 房子",
       "breakdown": [
         {
           "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "ow",
+          "letter": "ou",
           "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
         }
       ],
       "sentences": [
-        "How are you today?",
-        "你今天怎么样？"
+        "My house is big.",
+        "我的房子很大。"
       ]
     },
     {
-      "word": "out",
-      "phonetic": "/aʊt/",
-      "definition": "adv. 在外，向外",
+      "word": "blouse",
+      "phonetic": "/blaʊz/",
+      "definition": "n. 女衬衫",
       "breakdown": [
+        {
+          "letter": "bl",
+          "phon": "/bl/"
+        },
         {
           "letter": "ou",
           "phon": "/aʊ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
         }
       ],
       "sentences": [
-        "Let's go out and play.",
-        "我们出去玩吧。"
+        "She wears a white blouse.",
+        "她穿着白色衬衫。"
       ]
     },
     {
@@ -302,8 +452,8 @@ window.PHONICS_DAY_16 = {
         }
       ],
       "sentences": [
-        "The music is loud.",
-        "音乐很吵。"
+        "The music is too loud.",
+        "音乐太吵了。"
       ]
     },
     {
@@ -325,38 +475,60 @@ window.PHONICS_DAY_16 = {
         }
       ],
       "sentences": [
-        "Look at the white cloud.",
-        "看那朵白云。"
+        "The cloud is white.",
+        "云是白色的。"
       ]
     },
     {
-      "word": "house",
-      "phonetic": "/haʊs/",
-      "definition": "n. 房子，住宅",
+      "word": "proud",
+      "phonetic": "/praʊd/",
+      "definition": "adj. 骄傲的",
       "breakdown": [
         {
-          "letter": "h",
-          "phon": "/h/"
+          "letter": "pr",
+          "phon": "/pr/"
         },
         {
           "letter": "ou",
           "phon": "/aʊ/"
         },
         {
-          "letter": "s",
-          "phon": "/s/",
-          "silent": "e"
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
-        "This is my house.",
-        "这是我的房子。"
+        "I am proud of you.",
+        "我为你骄傲。"
+      ]
+    },
+    {
+      "word": "crowd",
+      "phonetic": "/kraʊd/",
+      "definition": "n. 人群",
+      "breakdown": [
+        {
+          "letter": "cr",
+          "phon": "/kr/"
+        },
+        {
+          "letter": "ow",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "The crowd is very big.",
+        "人群很大。"
       ]
     },
     {
       "word": "mouth",
       "phonetic": "/maʊθ/",
-      "definition": "n. 嘴巴",
+      "definition": "n. 嘴",
       "breakdown": [
         {
           "letter": "m",
@@ -372,152 +544,54 @@ window.PHONICS_DAY_16 = {
         }
       ],
       "sentences": [
-        "Open your mouth wide.",
-        "把你的嘴巴张大。"
+        "Open your mouth.",
+        "张开嘴。"
       ]
     },
     {
-      "word": "about",
-      "phonetic": "/əˈbaʊt/",
-      "definition": "prep. 关于",
+      "word": "south",
+      "phonetic": "/saʊθ/",
+      "definition": "n. 南方",
       "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Tell me about your day.",
-        "告诉我你今天的事情。"
-      ]
-    },
-    {
-      "word": "shout",
-      "phonetic": "/ʃaʊt/",
-      "definition": "v. 叫喊；大声说",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Do not shout.",
-        "不要大喊。"
-      ]
-    },
-    {
-      "word": "found",
-      "phonetic": "/faʊnd/",
-      "definition": "v. 找到 (find的过去式和过去分词)",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
-        }
-      ],
-      "sentences": [
-        "I found a red ball.",
-        "我找到一个红色的球。"
-      ]
-    },
-    {
-      "word": "mouse",
-      "phonetic": "/maʊs/",
-      "definition": "n. 老鼠",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
         {
           "letter": "s",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The mouse ran fast.",
-        "老鼠跑得很快。"
-      ]
-    },
-    {
-      "word": "ground",
-      "phonetic": "/ɡraʊnd/",
-      "definition": "n. 地面；土地",
-      "breakdown": [
-        {
-          "letter": "gr",
-          "phon": "/gr/"
+          "phon": "/s/"
         },
         {
           "letter": "ou",
           "phon": "/aʊ/"
         },
         {
-          "letter": "nd",
-          "phon": "/nd/"
+          "letter": "th",
+          "phon": "/θ/"
         }
       ],
       "sentences": [
-        "The ball fell on the ground.",
-        "球掉在了地上。"
+        "The south is warm in winter.",
+        "南方冬天很暖和。"
       ]
     },
     {
-      "word": "blouse",
-      "phonetic": "/blaʊz/",
-      "definition": "n. 女衬衫；短上衣",
+      "word": "count",
+      "phonetic": "/kaʊnt/",
+      "definition": "v. 数数",
       "breakdown": [
         {
-          "letter": "bl",
-          "phon": "/bl/"
+          "letter": "c",
+          "phon": "/k/"
         },
         {
           "letter": "ou",
           "phon": "/aʊ/"
         },
         {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
+          "letter": "nt",
+          "phon": "/nt/"
         }
       ],
       "sentences": [
-        "She wore a white blouse with her skirt.",
-        "她穿着一件白色女衬衫配她的裙子。"
+        "Count from one to ten.",
+        "从一数到十。"
       ]
     },
     {
@@ -544,9 +618,9 @@ window.PHONICS_DAY_16 = {
       ]
     },
     {
-      "word": "south",
-      "phonetic": "/saʊθ/",
-      "definition": "n. 南方",
+      "word": "sound",
+      "phonetic": "/saʊnd/",
+      "definition": "n. 声音",
       "breakdown": [
         {
           "letter": "s",
@@ -557,146 +631,291 @@ window.PHONICS_DAY_16 = {
           "phon": "/aʊ/"
         },
         {
-          "letter": "th",
-          "phon": "/θ/"
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
-        "Birds fly south.",
-        "鸟儿向南飞。"
+        "I hear a strange sound.",
+        "我听到一个奇怪的声音。"
       ]
     },
     {
-      "word": "doubt",
-      "phonetic": "/daʊt/",
-      "definition": "v. 怀疑",
+      "word": "found",
+      "phonetic": "/faʊnd/",
+      "definition": "v. 找到（过去式）",
       "breakdown": [
         {
-          "letter": "d",
-          "phon": "/d/"
+          "letter": "f",
+          "phon": "/f/"
         },
         {
           "letter": "ou",
           "phon": "/aʊ/"
         },
         {
-          "letter": "b",
-          "phon": "",
-          "silent": "b"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
-        "I doubt it is true.",
-        "我怀疑那是不是真的。"
+        "I found my keys.",
+        "我找到了钥匙。"
       ]
     },
     {
-      "word": "count",
-      "phonetic": "/kaʊnt/",
-      "definition": "v. 数数；计算",
+      "word": "ground",
+      "phonetic": "/ɡraʊnd/",
+      "definition": "n. 地面",
       "breakdown": [
         {
-          "letter": "c",
-          "phon": "/k/"
+          "letter": "gr",
+          "phon": "/gr/"
         },
         {
           "letter": "ou",
           "phon": "/aʊ/"
         },
         {
-          "letter": "nt",
-          "phon": "/nt/"
+          "letter": "nd",
+          "phon": "/nd/"
         }
       ],
       "sentences": [
-        "I can count to ten.",
-        "我能数到十。"
+        "The ball is on the ground.",
+        "球在地上。"
       ]
     },
-    {
-      "word": "couch",
-      "phonetic": "/kaʊtʃ/",
-      "definition": "n. 长沙发；睡椅",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        }
-      ],
-      "sentences": [
-        "I like to sit on the couch and watch TV.",
-        "我喜欢坐在沙发上看电视。"
-      ]
-    },
-    {
-      "word": "proud",
-      "phonetic": "/praʊd/",
-      "definition": "adj. 骄傲的；自豪的",
-      "breakdown": [
-        {
-          "letter": "pr",
-          "phon": "/pr/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I am proud of you.",
-        "我为你感到骄傲。"
-      ]
-    },
-    {
-      "word": "mountain",
-      "phonetic": "/ˈmaʊntɪn/",
-      "definition": "n. 山",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ai",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "We climbed a big mountain.",
-        "我们爬了一座大山。"
-      ]
-    }
-  ]
+{
+    "word": "plow",
+    "phonetic": "/plaʊ/",
+    "definition": "n. 犁",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "I see a plow.",
+          "我看到一个犁。"
+    ]
+},
+{
+    "word": "powder",
+    "phonetic": "/ˈpaʊ.də(ɹ)/",
+    "definition": "n. 粉末",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a powder.",
+          "我看到一个粉末。"
+    ]
+},
+{
+    "word": "drown",
+    "phonetic": "/dɹaʊn/",
+    "definition": "v. 溺水",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please drown it.",
+          "请溺水它。"
+    ]
+},
+{
+    "word": "out",
+    "phonetic": "/æɔt/",
+    "definition": "adv. 出去",
+    "breakdown": [
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "He runs out.",
+          "他出去地跑。"
+    ]
+},
+{
+    "word": "about",
+    "phonetic": "/əˈbɛʊt/",
+    "definition": "prep. 关于",
+    "breakdown": [
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "The book is about the desk.",
+          "书在桌子的关于。"
+    ]
+},
+{
+    "word": "shout",
+    "phonetic": "/ʃaʊt/",
+    "definition": "v. 喊叫",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please shout it.",
+          "请喊叫它。"
+    ]
+},
+{
+    "word": "doubt",
+    "phonetic": "/dʌʊt/",
+    "definition": "n. 怀疑",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a doubt.",
+          "我看到一个怀疑。"
+    ]
+},
+{
+    "word": "couch",
+    "phonetic": "/kaʊtʃ/",
+    "definition": "n. 沙发",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a couch.",
+          "我看到一个沙发。"
+    ]
+},
+{
+    "word": "mountain",
+    "phonetic": "/ˈmaʊntɪn/",
+    "definition": "n. 山",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ai",
+                "phon": "/eɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a mountain.",
+          "我看到一个山。"
+    ]
 }
+  ]
+};

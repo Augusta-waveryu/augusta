@@ -19,22 +19,49 @@ window.PHONICS_DAY_44 = {
         }
       ],
       "sentences": [
-        "We play together happily.",
-        "我们开心地一起玩。"
+        "We are friends.",
+        "我们是朋友。"
       ]
     },
     {
-      "word": "wet",
-      "phonetic": "/wet/",
-      "definition": "adj. 湿的",
+      "word": "water",
+      "phonetic": "/ˈwɔːtə/",
+      "definition": "n. 水",
       "breakdown": [
         {
           "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "e",
-          "phon": "/e/"
+          "letter": "a",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "I drink water.",
+        "我喝水。"
+      ]
+    },
+    {
+      "word": "wait",
+      "phonetic": "/weɪt/",
+      "definition": "v. 等待",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "ai",
+          "phon": "/eɪ/"
         },
         {
           "letter": "t",
@@ -42,31 +69,77 @@ window.PHONICS_DAY_44 = {
         }
       ],
       "sentences": [
-        "My dog is wet.",
-        "我的狗是湿的。"
+        "Wait for me.",
+        "等我。"
       ]
     },
     {
-      "word": "win",
-      "phonetic": "/wɪn/",
-      "definition": "v. 赢；获胜",
+      "word": "walk",
+      "phonetic": "/wɔːk/",
+      "definition": "v. 走",
       "breakdown": [
         {
           "letter": "w",
           "phon": "/w/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
+          "letter": "al",
+          "phon": "/ɔː/"
         },
         {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "We will win the game.",
-        "我们会赢得比赛。"
+        "I walk to school.",
+        "我走路上学。"
+      ]
+    },
+    {
+      "word": "want",
+      "phonetic": "/wɒnt/",
+      "definition": "v. 想要",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
+        }
+      ],
+      "sentences": [
+        "I want an apple.",
+        "我要苹果。"
+      ]
+    },
+    {
+      "word": "wash",
+      "phonetic": "/wɒʃ/",
+      "definition": "v. 洗",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
+        }
+      ],
+      "sentences": [
+        "Wash your hands.",
+        "洗手。"
       ]
     },
     {
@@ -88,14 +161,14 @@ window.PHONICS_DAY_44 = {
         }
       ],
       "sentences": [
-        "The sun feels warm.",
-        "阳光感觉很温暖。"
+        "The water is warm.",
+        "水是温的。"
       ]
     },
     {
-      "word": "water",
-      "phonetic": "/ˈwɔːtər/",
-      "definition": "n. 水",
+      "word": "watch",
+      "phonetic": "/wɒtʃ/",
+      "definition": "v. 观看",
       "breakdown": [
         {
           "letter": "w",
@@ -103,20 +176,62 @@ window.PHONICS_DAY_44 = {
         },
         {
           "letter": "a",
-          "phon": "/ɔː/"
+          "phon": "/ɒ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
+          "letter": "tch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
-        "Drink fresh water every day.",
-        "每天喝新鲜的水。"
+        "I watch TV.",
+        "我看电视。"
+      ]
+    },
+    {
+      "word": "wave",
+      "phonetic": "/weɪv/",
+      "definition": "n. 波浪",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The wave is big.",
+        "波浪很大。"
+      ]
+    },
+    {
+      "word": "wake",
+      "phonetic": "/weɪk/",
+      "definition": "v. 醒来",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ke",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I wake up at seven.",
+        "我七点醒。"
       ]
     },
     {
@@ -129,17 +244,17 @@ window.PHONICS_DAY_44 = {
           "phon": "/w/"
         },
         {
-          "letter": "a",
+          "letter": "al",
           "phon": "/ɔː/"
         },
         {
-          "letter": "ll",
+          "letter": "l",
           "phon": "/l/"
         }
       ],
       "sentences": [
-        "There is a picture on the wall.",
-        "墙上有一幅画。"
+        "The wall is white.",
+        "墙是白的。"
       ]
     },
     {
@@ -169,205 +284,13 @@ window.PHONICS_DAY_44 = {
         }
       ],
       "sentences": [
-        "Open the window, please.",
-        "请打开窗户。"
-      ]
-    },
-    {
-      "word": "woman",
-      "phonetic": "/ˈwʊmən/",
-      "definition": "n. 女人",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "She is a kind woman.",
-        "她是一个和善的女人。"
-      ]
-    },
-    {
-      "word": "wash",
-      "phonetic": "/wɒʃ/",
-      "definition": "v. 洗涤",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        }
-      ],
-      "sentences": [
-        "Let's wash our hands.",
-        "我们洗手吧。"
-      ]
-    },
-    {
-      "word": "walk",
-      "phonetic": "/wɔːk/",
-      "definition": "v. 走路",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "al",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Let's walk to the park.",
-        "我们走去公园吧。"
-      ]
-    },
-    {
-      "word": "watch",
-      "phonetic": "/wɒtʃ/",
-      "definition": "n. 手表",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "tch",
-          "phon": "/tʃ/"
-        }
-      ],
-      "sentences": [
-        "I watch the birds fly.",
-        "我看小鸟飞。"
-      ]
-    },
-    {
-      "word": "work",
-      "phonetic": "/wɜːk/",
-      "definition": "v. 工作；运转",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "I work at school.",
-        "我在学校工作。"
-      ]
-    },
-    {
-      "word": "word",
-      "phonetic": "/wɜːd/",
-      "definition": "n. 单词；言语",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "Say a new word.",
-        "说一个新单词。"
-      ]
-    },
-    {
-      "word": "world",
-      "phonetic": "/wɜːld/",
-      "definition": "n. 世界",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
-        }
-      ],
-      "sentences": [
-        "The world is big.",
-        "世界很大。"
-      ]
-    },
-    {
-      "word": "week",
-      "phonetic": "/wiːk/",
-      "definition": "n. 星期；周",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "There are seven days in a week.",
-        "一周有七天。"
+        "Open the window.",
+        "开窗。"
       ]
     },
     {
       "word": "winter",
-      "phonetic": "/ˈwɪntər/",
+      "phonetic": "/ˈwɪntə/",
       "definition": "n. 冬天",
       "breakdown": [
         {
@@ -399,7 +322,7 @@ window.PHONICS_DAY_44 = {
     {
       "word": "white",
       "phonetic": "/waɪt/",
-      "definition": "n. 白色",
+      "definition": "adj. 白色的",
       "breakdown": [
         {
           "letter": "wh",
@@ -410,106 +333,13 @@ window.PHONICS_DAY_44 = {
           "phon": "/aɪ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
+          "letter": "te",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "The clouds are white.",
-        "云是白色的。"
-      ]
-    },
-    {
-      "word": "whale",
-      "phonetic": "/weɪl/",
-      "definition": "n. 鲸鱼",
-      "breakdown": [
-        {
-          "letter": "wh",
-          "phon": "/w/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "A whale is a big fish.",
-        "鲸鱼是一种大鱼。"
-      ]
-    },
-    {
-      "word": "wheel",
-      "phonetic": "/wiːl/",
-      "definition": "n. 轮子",
-      "breakdown": [
-        {
-          "letter": "wh",
-          "phon": "/w/"
-        },
-        {
-          "letter": "ee",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "A car has four wheels.",
-        "一辆车有四个轮子。"
-      ]
-    },
-    {
-      "word": "when",
-      "phonetic": "/wen/",
-      "definition": "adv. 何时",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/",
-          "silent": "h"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "When do you sleep?",
-        "你什么时候睡觉？"
-      ]
-    },
-    {
-      "word": "where",
-      "phonetic": "/weə/",
-      "definition": "adv. 哪里",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/",
-          "silent": "h"
-        },
-        {
-          "letter": "er",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Where is my toy?",
-        "我的玩偶在哪里？"
+        "I have a white cat.",
+        "我有白猫。"
       ]
     },
     {
@@ -536,6 +366,52 @@ window.PHONICS_DAY_44 = {
       ]
     },
     {
+      "word": "when",
+      "phonetic": "/wen/",
+      "definition": "adv. 什么时候",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "When do you get up?",
+        "你什么时候起床？"
+      ]
+    },
+    {
+      "word": "where",
+      "phonetic": "/weə/",
+      "definition": "adv. 哪里",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "re",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "Where is my book?",
+        "我的书在哪？"
+      ]
+    },
+    {
       "word": "why",
       "phonetic": "/waɪ/",
       "definition": "adv. 为什么",
@@ -550,77 +426,127 @@ window.PHONICS_DAY_44 = {
         }
       ],
       "sentences": [
-        "Why are you sad?",
-        "你为什么伤心？"
+        "Why are you late?",
+        "你为什么迟到？"
       ]
     },
     {
-      "word": "who",
-      "phonetic": "/huː/",
-      "definition": "pron. 谁",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/",
-          "silent": "w"
-        },
-        {
-          "letter": "o",
-          "phon": "/uː/"
-        }
-      ],
-      "sentences": [
-        "Who is that girl?",
-        "那个女孩是谁？"
-      ]
-    },
-    {
-      "word": "whose",
-      "phonetic": "/huːz/",
-      "definition": "pron. 谁的",
+      "word": "which",
+      "phonetic": "/wɪtʃ/",
+      "definition": "pron. 哪个",
       "breakdown": [
         {
           "letter": "wh",
-          "phon": "/h/"
+          "phon": "/w/"
         },
         {
-          "letter": "o",
-          "phon": "/uː/"
+          "letter": "i",
+          "phon": "/ɪ/"
         },
         {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
+          "letter": "ch",
+          "phon": "/tʃ/"
         }
       ],
       "sentences": [
-        "Whose toy is this?",
-        "这是谁的玩具？"
+        "Which one do you like?",
+        "你喜欢哪个？"
       ]
     },
     {
-      "word": "whole",
-      "phonetic": "/həʊl/",
-      "definition": "adj. 整个的；全部的",
+      "word": "wheel",
+      "phonetic": "/wiːl/",
+      "definition": "n. 轮子",
       "breakdown": [
         {
-          "letter": "h",
-          "phon": "/h/",
-          "silent": "w"
+          "letter": "wh",
+          "phon": "/w/"
         },
         {
-          "letter": "o",
-          "phon": "/əʊ/"
+          "letter": "ee",
+          "phon": "/iː/"
         },
         {
           "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "I ate the whole apple.",
-        "我吃了整个苹果。"
+        "The wheel turns.",
+        "轮子转。"
+      ]
+    },
+    {
+      "word": "whale",
+      "phonetic": "/weɪl/",
+      "definition": "n. 鲸鱼",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "le",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "The whale is huge.",
+        "鲸鱼很大。"
+      ]
+    },
+    {
+      "word": "whisper",
+      "phonetic": "/ˈwɪspə/",
+      "definition": "v. 低语",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "sp",
+          "phon": "/sp/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "Whisper in my ear.",
+        "在我耳边低语。"
+      ]
+    },
+    {
+      "word": "whistle",
+      "phonetic": "/ˈwɪsəl/",
+      "definition": "n. 口哨",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "stle",
+          "phon": "/səl/"
+        }
+      ],
+      "sentences": [
+        "Blow the whistle.",
+        "吹口哨。"
       ]
     },
     {
@@ -629,9 +555,8 @@ window.PHONICS_DAY_44 = {
       "definition": "n. 小麦",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/",
-          "silent": "h"
+          "letter": "wh",
+          "phon": "/w/"
         },
         {
           "letter": "ea",
@@ -644,102 +569,427 @@ window.PHONICS_DAY_44 = {
       ],
       "sentences": [
         "Bread is made from wheat.",
-        "面包是用小麦做的。"
+        "面包是小麦做的。"
       ]
     },
     {
-      "word": "whisper",
-      "phonetic": "/ˈwɪspər/",
-      "definition": "v. 低语",
+      "word": "quick",
+      "phonetic": "/kwɪk/",
+      "definition": "adj. 快的",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/",
-          "silent": "h"
+          "letter": "qu",
+          "phon": "/kw/"
         },
         {
           "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "Please whisper quietly.",
-        "请小声耳语。"
+        "Be quick!",
+        "快点！"
       ]
     },
     {
-      "word": "wonderful",
-      "phonetic": "/ˈwʌndəfəl/",
-      "definition": "adj. 极好的；精彩的",
+      "word": "queen",
+      "phonetic": "/kwiːn/",
+      "definition": "n. 命王",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/"
+          "letter": "qu",
+          "phon": "/kw/"
         },
         {
-          "letter": "o",
-          "phon": "/ʌ/"
+          "letter": "ee",
+          "phon": "/iː/"
         },
         {
           "letter": "n",
           "phon": "/n/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ul",
-          "phon": "/əl/"
         }
       ],
       "sentences": [
-        "What a wonderful day!",
-        "多么美好的一天啊！"
+        "The queen has a crown.",
+        "女王有王冠。"
       ]
     },
     {
-      "word": "wait",
-      "phonetic": "/weɪt/",
-      "definition": "v. 等待",
+      "word": "quiet",
+      "phonetic": "/ˈkwaɪət/",
+      "definition": "adj. 安静的",
       "breakdown": [
         {
-          "letter": "w",
-          "phon": "/w/"
+          "letter": "qu",
+          "phon": "/kw/"
         },
         {
-          "letter": "ai",
-          "phon": "/eɪ/"
+          "letter": "i",
+          "phon": "/aɪ/"
         },
         {
-          "letter": "t",
+          "letter": "et",
+          "phon": "/ət/"
+        }
+      ],
+      "sentences": [
+        "Please be quiet.",
+        "请安静。"
+      ]
+    },
+    {
+      "word": "quite",
+      "phonetic": "/kwaɪt/",
+      "definition": "adv. 相当",
+      "breakdown": [
+        {
+          "letter": "qu",
+          "phon": "/kw/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "te",
           "phon": "/t/"
         }
       ],
       "sentences": [
-        "Please wait for me.",
-        "请等我。"
+        "It's quite good.",
+        "相当好。"
       ]
-    }
-  ]
+    },
+    {
+      "word": "one",
+      "phonetic": "/wʌn/",
+      "definition": "num. 一",
+      "breakdown": [
+        {
+          "letter": "o",
+          "phon": "/w/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/ʌn/"
+        }
+      ],
+      "sentences": [
+        "I have one apple.",
+        "我有一个苹果。"
+      ]
+    },
+    {
+      "word": "once",
+      "phonetic": "/wʌns/",
+      "definition": "adv. 一次",
+      "breakdown": [
+        {
+          "letter": "o",
+          "phon": "/w/"
+        },
+        {
+          "letter": "nce",
+          "phon": "/ʌns/"
+        }
+      ],
+      "sentences": [
+        "I go there once a week.",
+        "我每周去一次。"
+      ]
+    },
+{
+    "word": "wet",
+    "phonetic": "/wɛt/",
+    "definition": "adj. 湿的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very wet.",
+          "它非常湿的。"
+    ]
+},
+{
+    "word": "win",
+    "phonetic": "/wɪn/",
+    "definition": "v. 赢",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please win it.",
+          "请赢它。"
+    ]
+},
+{
+    "word": "woman",
+    "phonetic": "/ˈwʊmɘn/",
+    "definition": "n. 女人",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a woman.",
+          "我看到一个女人。"
+    ]
+},
+{
+    "word": "work",
+    "phonetic": "/wɜːk/",
+    "definition": "n. 工作",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a work.",
+          "我看到一个工作。"
+    ]
+},
+{
+    "word": "word",
+    "phonetic": "/wɜːd/",
+    "definition": "n. 单词",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a word.",
+          "我看到一个单词。"
+    ]
+},
+{
+    "word": "world",
+    "phonetic": "/wɝld/",
+    "definition": "n. 世界",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "I see a world.",
+          "我看到一个世界。"
+    ]
+},
+{
+    "word": "who",
+    "phonetic": "/huː/",
+    "definition": "pron. 谁",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Who is here.",
+          "谁在这里。"
+    ]
+},
+{
+    "word": "whose",
+    "phonetic": "/huːz/",
+    "definition": "pron. 谁的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Whose is here.",
+          "谁的在这里。"
+    ]
+},
+{
+    "word": "whole",
+    "phonetic": "/həʊl/",
+    "definition": "adj. 整个的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very whole.",
+          "它非常整个的。"
+    ]
+},
+{
+    "word": "wonderful",
+    "phonetic": "/ˈwʌn.də.fl/",
+    "definition": "adj. 精彩的；美妙的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "It is very wonderful.",
+          "它非常精彩的。"
+    ]
+},
+{
+    "word": "week",
+    "phonetic": "/wiːk/",
+    "definition": "n. 星期；周",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ee",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "This is week.",
+          "这是星期。"
+    ]
 }
+  ]
+};

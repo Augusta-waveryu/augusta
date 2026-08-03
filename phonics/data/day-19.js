@@ -7,7 +7,7 @@ window.PHONICS_DAY_19 = {
     {
       "word": "air",
       "phonetic": "/eə/",
-      "definition": "n. 空气；天空",
+      "definition": "n. 空气",
       "breakdown": [
         {
           "letter": "air",
@@ -15,14 +15,14 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "We breathe fresh air.",
-        "我们呼吸新鲜空气。"
+        "The air is fresh today.",
+        "今天空气很清新。"
       ]
     },
     {
       "word": "hair",
       "phonetic": "/heə/",
-      "definition": "n. 头发；毛发",
+      "definition": "n. 头发",
       "breakdown": [
         {
           "letter": "h",
@@ -34,33 +34,14 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "My hair is soft.",
-        "我的头发很软。"
-      ]
-    },
-    {
-      "word": "fair",
-      "phonetic": "/feə/",
-      "definition": "adj. 公平的；美丽的",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "air",
-          "phon": "/eə/"
-        }
-      ],
-      "sentences": [
-        "It's a fair game.",
-        "这是公平的游戏。"
+        "I brush my hair every morning.",
+        "我每天早上梳头。"
       ]
     },
     {
       "word": "pair",
-      "phonetic": "/peər/",
-      "definition": "n. 一双；一对",
+      "phonetic": "/peə/",
+      "definition": "n. 一双",
       "breakdown": [
         {
           "letter": "p",
@@ -73,7 +54,26 @@ window.PHONICS_DAY_19 = {
       ],
       "sentences": [
         "I have a pair of shoes.",
-        "我有一双鞋子。"
+        "我有一双鞋。"
+      ]
+    },
+    {
+      "word": "fair",
+      "phonetic": "/feə/",
+      "definition": "adj. 公平的",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "That is not fair.",
+        "那不公平。"
       ]
     },
     {
@@ -91,14 +91,14 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "Sit on the comfy chair.",
-        "坐在舒适的椅子上。"
+        "Sit on the chair.",
+        "坐在椅子上。"
       ]
     },
     {
       "word": "stair",
       "phonetic": "/steə/",
-      "definition": "n. 楼梯",
+      "definition": "n. 台阶",
       "breakdown": [
         {
           "letter": "st",
@@ -110,34 +110,33 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "Be careful on the stairs.",
-        "小心楼梯。"
+        "Walk up the stairs slowly.",
+        "慢慢上楼梯。"
       ]
     },
     {
       "word": "care",
       "phonetic": "/keə/",
-      "definition": "n. 关心；照顾",
+      "definition": "v. 关心",
       "breakdown": [
         {
           "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "I care for my dog.",
-        "我关心我的狗。"
+        "I care about you.",
+        "我关心你。"
       ]
     },
     {
       "word": "dare",
       "phonetic": "/deə/",
-      "definition": "v. 敢；挑战",
+      "definition": "v. 敢",
       "breakdown": [
         {
           "letter": "d",
@@ -149,86 +148,8 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "I dare to try.",
-        "我敢于尝试。"
-      ]
-    },
-    {
-      "word": "fare",
-      "phonetic": "/feə/",
-      "definition": "n. 费用",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "are",
-          "phon": "/eə/"
-        }
-      ],
-      "sentences": [
-        "The bus fare is cheap.",
-        "公交车费很便宜。"
-      ]
-    },
-    {
-      "word": "rare",
-      "phonetic": "/reə/",
-      "definition": "adj. 稀有的；罕见的",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "are",
-          "phon": "/eə/"
-        }
-      ],
-      "sentences": [
-        "This coin is very rare.",
-        "这枚硬币非常稀有。"
-      ]
-    },
-    {
-      "word": "share",
-      "phonetic": "/ʃeə/",
-      "definition": "v. 分享",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Let's share our toys.",
-        "我们分享玩具吧。"
-      ]
-    },
-    {
-      "word": "spare",
-      "phonetic": "/speə/",
-      "definition": "adj. 多余的；备用的",
-      "breakdown": [
-        {
-          "letter": "sp",
-          "phon": "/sp/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Do you have a spare toy?",
-        "你有多余的玩具吗？"
+        "I dare to try new things.",
+        "我敢于尝试新事物。"
       ]
     },
     {
@@ -241,97 +162,127 @@ window.PHONICS_DAY_19 = {
           "phon": "/h/"
         },
         {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "A hare is faster than a rabbit.",
-        "野兔比家兔跑得快。"
+        "The hare runs very fast.",
+        "野兔跑得很快。"
+      ]
+    },
+    {
+      "word": "rare",
+      "phonetic": "/reə/",
+      "definition": "adj. 稀有的",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "This is a rare bird.",
+        "这是一种稀有的鸟。"
+      ]
+    },
+    {
+      "word": "share",
+      "phonetic": "/ʃeə/",
+      "definition": "v. 分享",
+      "breakdown": [
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "Let's share the cake.",
+        "我们分享蛋糕吧。"
+      ]
+    },
+    {
+      "word": "spare",
+      "phonetic": "/speə/",
+      "definition": "v. 留出",
+      "breakdown": [
+        {
+          "letter": "sp",
+          "phon": "/sp/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "Can you spare some time?",
+        "你能抽出一些时间吗？"
+      ]
+    },
+    {
+      "word": "square",
+      "phonetic": "/skweə/",
+      "definition": "n. 广场",
+      "breakdown": [
+        {
+          "letter": "squ",
+          "phon": "/skw/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "We meet at the square.",
+        "我们在广场见面。"
+      ]
+    },
+    {
+      "word": "scare",
+      "phonetic": "/skeə/",
+      "definition": "v. 惊吓",
+      "breakdown": [
+        {
+          "letter": "sc",
+          "phon": "/sk/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "Don't scare the cat.",
+        "别吓猫。"
       ]
     },
     {
       "word": "stare",
       "phonetic": "/steə/",
-      "definition": "v. 凝视；盯着看",
+      "definition": "v. 凝视",
       "breakdown": [
         {
           "letter": "st",
           "phon": "/st/"
         },
         {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
         "Don't stare at people.",
         "不要盯着别人看。"
-      ]
-    },
-    {
-      "word": "scare",
-      "phonetic": "/skeə/",
-      "definition": "v. 惊吓；使害怕",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Don't scare the cat.",
-        "不要吓唬那只猫。"
-      ]
-    },
-    {
-      "word": "bare",
-      "phonetic": "/beə/",
-      "definition": "adj. 赤裸的；空的",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "His feet were bare.",
-        "他的脚是光着的。"
-      ]
-    },
-    {
-      "word": "bear",
-      "phonetic": "/beə/",
-      "definition": "n. 熊",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/eə/"
-        }
-      ],
-      "sentences": [
-        "A big bear eats honey.",
-        "一只大熊吃蜂蜜。"
       ]
     },
     {
@@ -349,14 +300,14 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "This is a juicy pear.",
-        "这是一个多汁的梨。"
+        "I eat a sweet pear.",
+        "我吃了一个甜梨。"
       ]
     },
     {
       "word": "wear",
       "phonetic": "/weə/",
-      "definition": "v. 穿；戴",
+      "definition": "v. 穿",
       "breakdown": [
         {
           "letter": "w",
@@ -368,18 +319,18 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "I wear my new shoes.",
-        "我穿我的新鞋。"
+        "I wear a red hat.",
+        "我戴着一顶红帽子。"
       ]
     },
     {
-      "word": "swear",
-      "phonetic": "/sweə(r)/",
-      "definition": "v. 发誓",
+      "word": "bear",
+      "phonetic": "/beə/",
+      "definition": "n. 熊",
       "breakdown": [
         {
-          "letter": "sw",
-          "phon": "/sw/"
+          "letter": "b",
+          "phon": "/b/"
         },
         {
           "letter": "ear",
@@ -387,63 +338,41 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "I swear I can do it.",
-        "我发誓我能做到。"
+        "The bear is very big.",
+        "熊很大。"
       ]
     },
     {
-      "word": "there",
-      "phonetic": "/ðeə/",
-      "definition": "adv. 在那里；到那里",
+      "word": "tear",
+      "phonetic": "/teə/",
+      "definition": "v. 撕",
       "breakdown": [
         {
-          "letter": "th",
-          "phon": "/ð/"
+          "letter": "t",
+          "phon": "/t/"
         },
         {
-          "letter": "er",
-          "phon": "/eə/",
-          "silent": "e"
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "Look over there!",
-        "看那边！"
+        "Don't tear the paper.",
+        "不要撕纸。"
       ]
     },
     {
-      "word": "where",
-      "phonetic": "/weə/",
-      "definition": "adv. 哪里",
+      "word": "aware",
+      "phonetic": "/əˈweə/",
+      "definition": "adj. 意识到",
       "breakdown": [
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
         {
           "letter": "w",
-          "phon": "/w/",
-          "silent": "h"
-        },
-        {
-          "letter": "er",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Where is my toy?",
-        "我的玩偶在哪里？"
-      ]
-    },
-    {
-      "word": "square",
-      "phonetic": "/skweə/",
-      "definition": "n. 正方形；广场",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "qu",
-          "phon": "/kw/"
+          "phon": "/w/"
         },
         {
           "letter": "are",
@@ -451,46 +380,14 @@ window.PHONICS_DAY_19 = {
         }
       ],
       "sentences": [
-        "A square has four equal sides.",
-        "正方形有四条相等的边。"
-      ]
-    },
-    {
-      "word": "compare",
-      "phonetic": "/kəmˈpeə/",
-      "definition": "v. 比较，对照",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Let's compare the two apples.",
-        "让我们比较这两个苹果。"
+        "I am aware of the problem.",
+        "我意识到了问题。"
       ]
     },
     {
       "word": "prepare",
       "phonetic": "/prɪˈpeə/",
-      "definition": "v. 准备；预备",
+      "definition": "v. 准备",
       "breakdown": [
         {
           "letter": "pr",
@@ -505,20 +402,146 @@ window.PHONICS_DAY_19 = {
           "phon": "/p/"
         },
         {
-          "letter": "ar",
-          "phon": "/eə/",
-          "silent": "e"
+          "letter": "are",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "Let's prepare for the party.",
-        "我们为派对做准备吧。"
+        "Prepare for the test.",
+        "为考试做准备。"
+      ]
+    },
+    {
+      "word": "compare",
+      "phonetic": "/kəmˈpeə/",
+      "definition": "v. 比较",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "mp",
+          "phon": "/mp/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "Compare the two pictures.",
+        "比较这两张图。"
+      ]
+    },
+    {
+      "word": "declare",
+      "phonetic": "/dɪˈkleə/",
+      "definition": "v. 宣布",
+      "breakdown": [
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "e",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "cl",
+          "phon": "/kl/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "They declare the results.",
+        "他们宣布了结果。"
+      ]
+    },
+    {
+      "word": "somewhere",
+      "phonetic": "/ˈsʌmweə/",
+      "definition": "adv. 某处",
+      "breakdown": [
+        {
+          "letter": "some",
+          "phon": "/sʌm/"
+        },
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "ere",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "I left it somewhere.",
+        "我把它放在某处了。"
+      ]
+    },
+    {
+      "word": "anywhere",
+      "phonetic": "/ˈeniweə/",
+      "definition": "adv. 任何地方",
+      "breakdown": [
+        {
+          "letter": "any",
+          "phon": "/eni/"
+        },
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "ere",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "You can sit anywhere.",
+        "你可以坐任何地方。"
+      ]
+    },
+    {
+      "word": "airplane",
+      "phonetic": "/ˈeəpleɪn/",
+      "definition": "n. 飞机",
+      "breakdown": [
+        {
+          "letter": "air",
+          "phon": "/eə/"
+        },
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "ane",
+          "phon": "/eɪn/"
+        }
+      ],
+      "sentences": [
+        "The airplane flies high.",
+        "飞机飞得很高。"
       ]
     },
     {
       "word": "careful",
-      "phonetic": "/ˈkeəfʊl/",
-      "definition": "adj. 小心的；仔细的",
+      "phonetic": "/ˈkeəfəl/",
+      "definition": "adj. 小心的",
       "breakdown": [
         {
           "letter": "c",
@@ -533,130 +556,341 @@ window.PHONICS_DAY_19 = {
           "phon": "/f/"
         },
         {
-          "letter": "u",
-          "phon": "/ʊ/"
+          "letter": "ul",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "Be careful on the road.",
+        "路上小心。"
+      ]
+    },
+    {
+      "word": "careless",
+      "phonetic": "/ˈkeələs/",
+      "definition": "adj. 粗心的",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "are",
+          "phon": "/eə/"
         },
         {
           "letter": "l",
           "phon": "/l/"
+        },
+        {
+          "letter": "ess",
+          "phon": "/əs/"
         }
       ],
       "sentences": [
-        "Be careful! The floor is wet.",
-        "小心！地板是湿的。"
+        "He is a careless boy.",
+        "他是个粗心的男孩。"
       ]
     },
     {
-      "word": "fairy",
-      "phonetic": "/ˈfeəri/",
-      "definition": "n. 仙女；小精灵",
+      "word": "haircut",
+      "phonetic": "/ˈheəkʌt/",
+      "definition": "n. 理发",
       "breakdown": [
         {
-          "letter": "f",
-          "phon": "/f/"
+          "letter": "h",
+          "phon": "/h/"
         },
         {
-          "letter": "ai",
+          "letter": "air",
           "phon": "/eə/"
         },
         {
-          "letter": "ry",
-          "phon": "/rɪ/"
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ut",
+          "phon": "/ʌt/"
         }
       ],
       "sentences": [
-        "A fairy has magical powers.",
-        "仙女拥有魔法力量。"
+        "I need a haircut.",
+        "我需要理发了。"
       ]
     },
     {
-      "word": "parent",
-      "phonetic": "/ˈpeərənt/",
-      "definition": "n. 父母",
+      "word": "repair",
+      "phonetic": "/rɪˈpeə/",
+      "definition": "v. 修理",
       "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eə/"
-        },
         {
           "letter": "r",
           "phon": "/r/"
         },
         {
           "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
-        }
-      ],
-      "sentences": [
-        "My parent loves me.",
-        "我的父母爱我。"
-      ]
-    },
-    {
-      "word": "various",
-      "phonetic": "/ˈveərɪəs/",
-      "definition": "adj. 各种各样的；不同的",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/eə/"
-        },
-        {
-          "letter": "i",
           "phon": "/ɪ/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "She has various interests, including music and art.",
-        "她有各种各样的兴趣，包括音乐和艺术。"
-      ]
-    },
-    {
-      "word": "airport",
-      "phonetic": "/ˈeəpɔːt/",
-      "definition": "n. 机场",
-      "breakdown": [
-        {
-          "letter": "air",
-          "phon": "/eə/"
         },
         {
           "letter": "p",
           "phon": "/p/"
         },
         {
-          "letter": "or",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "air",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "We go to the airport.",
-        "我们去机场。"
+        "Repair the broken chair.",
+        "修理坏椅子。"
       ]
-    }
-  ]
+    },
+{
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "definition": "n. 票",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a ticket.",
+          "我看到一个票。"
+    ]
+},
+{
+    "word": "bare",
+    "phonetic": "/bɛə(ɹ)/",
+    "definition": "adj. 光秃的；赤裸的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "are",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "It is very bare.",
+          "它非常光秃的。"
+    ]
+},
+{
+    "word": "swear",
+    "phonetic": "/swɛə/",
+    "definition": "v. 发誓",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "Please swear it.",
+          "请发誓它。"
+    ]
+},
+{
+    "word": "there",
+    "phonetic": "/ðeː(ɹ)/",
+    "definition": "adv. 那里",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ere",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "He runs there.",
+          "他那里地跑。"
+    ]
+},
+{
+    "word": "where",
+    "phonetic": "/wɛə(ɹ)/",
+    "definition": "adv. 哪里",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/w/"
+          },
+          {
+                "letter": "ere",
+                "phon": "/eə/"
+          }
+    ],
+    "sentences": [
+          "He runs where.",
+          "他哪里地跑。"
+    ]
+},
+{
+    "word": "fairy",
+    "phonetic": "/ˈfɛə̯ɹi/",
+    "definition": "n. 仙女",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "air",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a fairy.",
+          "我看到一个仙女。"
+    ]
+},
+{
+    "word": "various",
+    "phonetic": "/ˈvɛə.ɹi.əs/",
+    "definition": "adj. 各种各样的",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ou",
+                "phon": "/aʊ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "It is very various.",
+          "它非常各种各样的。"
+    ]
+},
+{
+    "word": "airport",
+    "phonetic": "/ˈɛə.pɔːt/",
+    "definition": "n. 机场",
+    "breakdown": [
+          {
+                "letter": "air",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "or",
+                "phon": "/ɔː/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a airport.",
+          "我看到一个机场。"
+    ]
+},
+{
+    "word": "fare",
+    "phonetic": "/feə/",
+    "definition": "n. 费用；票价",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "This is fare.",
+          "这是费用。"
+    ]
+},
+{
+    "word": "parent",
+    "phonetic": "/ˈpeərənt/",
+    "definition": "n. 父（母）亲",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/eə/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "This is parent.",
+          "这是父（母）亲。"
+    ]
 }
+  ]
+};

@@ -23,74 +23,8 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "My cat loves to play.",
-        "我的猫喜欢玩耍。"
-      ]
-    },
-    {
-      "word": "cap",
-      "phonetic": "/kæp/",
-      "definition": "n. 帽子；盖子",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/"
-        }
-      ],
-      "sentences": [
-        "Wear your red cap.",
-        "戴上你的红帽子。"
-      ]
-    },
-    {
-      "word": "car",
-      "phonetic": "/kɑː/",
-      "definition": "n. 汽车",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        }
-      ],
-      "sentences": [
-        "Look! A big red car.",
-        "看！一辆红色的大汽车。"
-      ]
-    },
-    {
-      "word": "cake",
-      "phonetic": "/keɪk/",
-      "definition": "n. 蛋糕",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I want a big cake.",
-        "我想要一个大蛋糕。"
+        "The cat is on the mat.",
+        "猫在垫子上。"
       ]
     },
     {
@@ -112,50 +46,96 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "Drink water from your cup.",
-        "从你的杯子里喝水。"
+        "I drink from a cup.",
+        "我用杯子喝水。"
       ]
     },
     {
-      "word": "cow",
-      "phonetic": "/kaʊ/",
-      "definition": "n. 奶牛",
+      "word": "car",
+      "phonetic": "/kɑː/",
+      "definition": "n. 汽车",
       "breakdown": [
         {
           "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "ow",
-          "phon": "/aʊ/"
+          "letter": "ar",
+          "phon": "/ɑː/"
         }
       ],
       "sentences": [
-        "The cow says 'moo'.",
-        "奶牛说“哞”。"
+        "I drive a car.",
+        "我开车。"
       ]
     },
     {
-      "word": "coat",
-      "phonetic": "/kəʊt/",
-      "definition": "n. 外套",
+      "word": "cook",
+      "phonetic": "/kʊk/",
+      "definition": "v. 做饭",
       "breakdown": [
         {
           "letter": "c",
           "phon": "/k/"
         },
         {
-          "letter": "oa",
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I cook dinner.",
+        "我做晚饭。"
+      ]
+    },
+    {
+      "word": "cold",
+      "phonetic": "/kəʊld/",
+      "definition": "adj. 冷的",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "o",
           "phon": "/əʊ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "ld",
+          "phon": "/ld/"
         }
       ],
       "sentences": [
-        "Put on your warm coat.",
-        "穿上你的暖和外套。"
+        "It is cold in winter.",
+        "冬天很冷。"
+      ]
+    },
+    {
+      "word": "cake",
+      "phonetic": "/keɪk/",
+      "definition": "n. 蛋糕",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ke",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I like cake.",
+        "我喜欢蛋糕。"
       ]
     },
     {
@@ -172,14 +152,32 @@ window.PHONICS_DAY_25 = {
           "phon": "/aɪ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
+          "letter": "te",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "We fly a colorful kite.",
-        "我们放一个彩色风筝。"
+        "I fly a kite.",
+        "我放风筝。"
+      ]
+    },
+    {
+      "word": "key",
+      "phonetic": "/kiː/",
+      "definition": "n. 钥匙",
+      "breakdown": [
+        {
+          "letter": "k",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/iː/"
+        }
+      ],
+      "sentences": [
+        "I lost my key.",
+        "我丢了钥匙。"
       ]
     },
     {
@@ -202,13 +200,13 @@ window.PHONICS_DAY_25 = {
       ],
       "sentences": [
         "The kid is playing.",
-        "小孩在玩耍。"
+        "小孩在玩。"
       ]
     },
     {
-      "word": "kiss",
-      "phonetic": "/kɪs/",
-      "definition": "v. 亲吻",
+      "word": "kick",
+      "phonetic": "/kɪk/",
+      "definition": "v. 踢",
       "breakdown": [
         {
           "letter": "k",
@@ -219,88 +217,65 @@ window.PHONICS_DAY_25 = {
           "phon": "/ɪ/"
         },
         {
-          "letter": "ss",
-          "phon": "/s/"
+          "letter": "ck",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "Mom gives a kiss.",
-        "妈妈给了一个吻。"
+        "Kick the ball.",
+        "踢球。"
       ]
     },
     {
-      "word": "milk",
-      "phonetic": "/mɪlk/",
-      "definition": "n. 牛奶",
+      "word": "king",
+      "phonetic": "/kɪŋ/",
+      "definition": "n. 国王",
       "breakdown": [
         {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "k",
+          "phon": "/k/"
         },
         {
           "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "lk",
-          "phon": "/lk/"
+          "letter": "ng",
+          "phon": "/ŋ/"
         }
       ],
       "sentences": [
-        "I like to drink milk.",
-        "我喜欢喝牛奶。"
+        "The king has a crown.",
+        "国王有王冠。"
       ]
     },
     {
-      "word": "book",
-      "phonetic": "/bʊk/",
-      "definition": "n. 书；书籍",
+      "word": "back",
+      "phonetic": "/bæk/",
+      "definition": "n. 背",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "oo",
-          "phon": "/ʊ/"
+          "letter": "a",
+          "phon": "/æ/"
         },
         {
-          "letter": "k",
+          "letter": "ck",
           "phon": "/k/"
         }
       ],
       "sentences": [
-        "I like to read a book.",
-        "我喜欢看书。"
-      ]
-    },
-    {
-      "word": "desk",
-      "phonetic": "/desk/",
-      "definition": "n. 书桌；办公桌",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "sk",
-          "phon": "/sk/"
-        }
-      ],
-      "sentences": [
-        "My book is on the desk.",
-        "我的书在书桌上。"
+        "My back hurts.",
+        "我背疼。"
       ]
     },
     {
       "word": "black",
       "phonetic": "/blæk/",
-      "definition": "adj. 黑色的；黑暗的",
+      "definition": "adj. 黑色的",
       "breakdown": [
         {
           "letter": "b",
@@ -320,8 +295,35 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "The cat is black.",
-        "这只猫是黑色的。"
+        "I have a black pen.",
+        "我有黑笔。"
+      ]
+    },
+    {
+      "word": "clock",
+      "phonetic": "/klɒk/",
+      "definition": "n. 钟",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "The clock is on the wall.",
+        "钟在墙上。"
       ]
     },
     {
@@ -343,37 +345,14 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "Look! A yellow duck.",
-        "看！一只黄色的鸭子。"
-      ]
-    },
-    {
-      "word": "clock",
-      "phonetic": "/klɒk/",
-      "definition": "n. 钟",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Look at the big clock.",
-        "看那个大钟。"
+        "The duck swims.",
+        "鸭子游泳。"
       ]
     },
     {
       "word": "sock",
       "phonetic": "/sɒk/",
-      "definition": "n. 短袜",
+      "definition": "n. 袜子",
       "breakdown": [
         {
           "letter": "s",
@@ -389,22 +368,22 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "I wear a red sock.",
-        "我穿一只红袜子。"
+        "I put on my socks.",
+        "我穿上袜子。"
       ]
     },
     {
-      "word": "back",
-      "phonetic": "/bæk/",
-      "definition": "n. 背部；后面",
+      "word": "rock",
+      "phonetic": "/rɒk/",
+      "definition": "n. 岩石",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "r",
+          "phon": "/r/"
         },
         {
-          "letter": "a",
-          "phon": "/æ/"
+          "letter": "o",
+          "phon": "/ɒ/"
         },
         {
           "letter": "ck",
@@ -412,22 +391,22 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "Come back home now.",
-        "现在回家。"
+        "The rock is heavy.",
+        "岩石很重。"
       ]
     },
     {
-      "word": "pick",
-      "phonetic": "/pɪk/",
-      "definition": "v. 挑选；采摘",
+      "word": "lock",
+      "phonetic": "/lɒk/",
+      "definition": "n. 锁",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "l",
+          "phon": "/l/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
+          "letter": "o",
+          "phon": "/ɒ/"
         },
         {
           "letter": "ck",
@@ -435,62 +414,8 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "Please pick a red apple.",
-        "请选一个红苹果。"
-      ]
-    },
-    {
-      "word": "truck",
-      "phonetic": "/trʌk/",
-      "definition": "n. 卡车",
-      "breakdown": [
-        {
-          "letter": "tr",
-          "phon": "/tr/"
-        },
-        {
-          "letter": "u",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Look! A big red truck.",
-        "看！一辆大红卡车。"
-      ]
-    },
-    {
-      "word": "chicken",
-      "phonetic": "/ˈtʃɪkɪn/",
-      "definition": "n. 鸡；鸡肉",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ck",
-          "phon": "/k/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "The chicken is small.",
-        "这只鸡很小。"
+        "Lock the door.",
+        "锁门。"
       ]
     },
     {
@@ -499,8 +424,12 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 学校",
       "breakdown": [
         {
-          "letter": "sch",
-          "phon": "/sk/"
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "ch",
+          "phon": "/k/"
         },
         {
           "letter": "oo",
@@ -508,86 +437,12 @@ window.PHONICS_DAY_25 = {
         },
         {
           "letter": "l",
-          "phon": "/əl/"
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "I go to school every day.",
-        "我每天都去学校。"
-      ]
-    },
-    {
-      "word": "chemistry",
-      "phonetic": "/ˈkemɪstri/",
-      "definition": "n. 化学；化学作用",
-      "breakdown": [
-        {
-          "letter": "Ch",
-          "phon": "/k/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "str",
-          "phon": "/str/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "Chemistry is fun.",
-        "化学很有趣。"
-      ]
-    },
-    {
-      "word": "character",
-      "phonetic": "/ˈkærəktər/",
-      "definition": "n. 性格，特点",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The book has a funny character.",
-        "这本书里有个有趣的角色。"
+        "I go to school by bus.",
+        "我坐公交上学。"
       ]
     },
     {
@@ -596,16 +451,8 @@ window.PHONICS_DAY_25 = {
       "definition": "n. 圣诞节",
       "breakdown": [
         {
-          "letter": "C",
-          "phon": "/k/"
-        },
-        {
-          "letter": "h",
-          "phon": ""
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
+          "letter": "Chr",
+          "phon": "/kr/"
         },
         {
           "letter": "i",
@@ -616,9 +463,27 @@ window.PHONICS_DAY_25 = {
           "phon": "/s/"
         },
         {
-          "letter": "t",
-          "phon": "",
-          "silent": "t"
+          "letter": "tmas",
+          "phon": "/məs/"
+        }
+      ],
+      "sentences": [
+        "Merry Christmas!",
+        "圣诞快乐！"
+      ]
+    },
+    {
+      "word": "stomach",
+      "phonetic": "/ˈstʌmək/",
+      "definition": "n. 胃",
+      "breakdown": [
+        {
+          "letter": "st",
+          "phon": "/st/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
         },
         {
           "letter": "m",
@@ -629,41 +494,95 @@ window.PHONICS_DAY_25 = {
           "phon": "/ə/"
         },
         {
-          "letter": "s",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "Merry Christmas everyone!",
-        "大家圣诞快乐！"
-      ]
-    },
-    {
-      "word": "quick",
-      "phonetic": "/kwɪk/",
-      "definition": "adj. 快的，迅速的",
-      "breakdown": [
-        {
-          "letter": "qu",
-          "phon": "/kw/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ck",
+          "letter": "ch",
           "phon": "/k/"
         }
       ],
       "sentences": [
-        "Be quick, or you will be late.",
-        "快点，不然你会迟到。"
+        "My stomach hurts.",
+        "我胃疼。"
+      ]
+    },
+    {
+      "word": "chorus",
+      "phonetic": "/ˈkɔːrəs/",
+      "definition": "n. 合唱",
+      "breakdown": [
+        {
+          "letter": "ch",
+          "phon": "/k/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "us",
+          "phon": "/əs/"
+        }
+      ],
+      "sentences": [
+        "Join the chorus.",
+        "加入合唱团。"
+      ]
+    },
+    {
+      "word": "account",
+      "phonetic": "/əˈkaʊnt/",
+      "definition": "n. 账户",
+      "breakdown": [
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "cc",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "nt",
+          "phon": "/nt/"
+        }
+      ],
+      "sentences": [
+        "Open a bank account.",
+        "开银行账户。"
+      ]
+    },
+    {
+      "word": "occur",
+      "phonetic": "/əˈkɜː/",
+      "definition": "v. 发生",
+      "breakdown": [
+        {
+          "letter": "o",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "cc",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        }
+      ],
+      "sentences": [
+        "Errors occur sometimes.",
+        "错误有时会发生。"
       ]
     },
     {
       "word": "queen",
-      "phonetic": "/kwɪːn/",
+      "phonetic": "/kwiːn/",
       "definition": "n. 女王",
       "breakdown": [
         {
@@ -680,14 +599,37 @@ window.PHONICS_DAY_25 = {
         }
       ],
       "sentences": [
-        "The queen lives in a big castle.",
-        "女王住在一座大城堡里。"
+        "The queen has a crown.",
+        "女王有王冠。"
+      ]
+    },
+    {
+      "word": "quick",
+      "phonetic": "/kwɪk/",
+      "definition": "adj. 快的",
+      "breakdown": [
+        {
+          "letter": "qu",
+          "phon": "/kw/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ck",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "Be quick, we're late.",
+        "快点，我们迟到了。"
       ]
     },
     {
       "word": "quiet",
       "phonetic": "/ˈkwaɪət/",
-      "definition": "adj. 安静的，宁静的",
+      "definition": "adj. 安静的",
       "breakdown": [
         {
           "letter": "qu",
@@ -698,80 +640,458 @@ window.PHONICS_DAY_25 = {
           "phon": "/aɪ/"
         },
         {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "et",
+          "phon": "/ət/"
         }
       ],
       "sentences": [
-        "Please be quiet in the library.",
-        "请在图书馆保持安静。"
+        "Please be quiet.",
+        "请安静。"
       ]
     },
     {
-      "word": "check",
-      "phonetic": "/tʃek/",
-      "definition": "v. 检查；核对",
+      "word": "mosquito",
+      "phonetic": "/mɒˈskiːtəʊ/",
+      "definition": "n. 蚊子",
       "breakdown": [
         {
-          "letter": "ch",
-          "phon": "/tʃ/"
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "qu",
+          "phon": "/k/"
+        },
+        {
+          "letter": "i",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "to",
+          "phon": "/təʊ/"
+        }
+      ],
+      "sentences": [
+        "The mosquito bites me.",
+        "蚊子咬我。"
+      ]
+    },
+    {
+      "word": "technique",
+      "phonetic": "/tekˈniːk/",
+      "definition": "n. 技巧",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
         },
         {
           "letter": "e",
           "phon": "/e/"
         },
         {
-          "letter": "ck",
+          "letter": "chn",
+          "phon": "/kn/"
+        },
+        {
+          "letter": "i",
+          "phon": "/iː/"
+        },
+        {
+          "letter": "que",
           "phon": "/k/"
         }
       ],
       "sentences": [
-        "Please check your work.",
-        "请检查你的作业。"
+        "Learn a new technique.",
+        "学新技巧。"
       ]
     },
     {
-      "word": "kangaroo",
-      "phonetic": "/ˌkæŋɡəˈruː/",
-      "definition": "n. 袋鼠",
+      "word": "milk",
+      "phonetic": "/mɪlk/",
+      "definition": "n. 牛奶",
       "breakdown": [
         {
-          "letter": "K",
-          "phon": "/k/"
+          "letter": "m",
+          "phon": "/m/"
         },
         {
-          "letter": "a",
-          "phon": "/æ/"
+          "letter": "i",
+          "phon": "/ɪ/"
         },
         {
-          "letter": "n",
-          "phon": "/ŋ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/g/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
+          "letter": "lk",
+          "phon": "/lk/"
         }
       ],
       "sentences": [
-        "A kangaroo can jump far.",
-        "袋鼠能跳得很远。"
+        "I drink milk every day.",
+        "我每天喝牛奶。"
       ]
-    }
-  ]
+    },
+{
+    "word": "cap",
+    "phonetic": "/kæp/",
+    "definition": "n. 帽子",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a cap.",
+          "我看到一个帽子。"
+    ]
+},
+{
+    "word": "coat",
+    "phonetic": "/kəʊt/",
+    "definition": "n. 外套",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "oa",
+                "phon": "/əʊ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a coat.",
+          "我看到一个外套。"
+    ]
+},
+{
+    "word": "kiss",
+    "phonetic": "/kɪs/",
+    "definition": "v. 亲吻",
+    "breakdown": [
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Please kiss it.",
+          "请亲吻它。"
+    ]
+},
+{
+    "word": "book",
+    "phonetic": "/buːk/",
+    "definition": "n. 书",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a book.",
+          "我看到一个书。"
+    ]
+},
+{
+    "word": "desk",
+    "phonetic": "/dɛsk/",
+    "definition": "n. 书桌",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a desk.",
+          "我看到一个书桌。"
+    ]
+},
+{
+    "word": "pick",
+    "phonetic": "/pɪk/",
+    "definition": "v. 摘；挑选",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "Please pick it.",
+          "请摘它。"
+    ]
+},
+{
+    "word": "truck",
+    "phonetic": "/tɹʌk/",
+    "definition": "n. 卡车",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a truck.",
+          "我看到一个卡车。"
+    ]
+},
+{
+    "word": "chicken",
+    "phonetic": "/ˈt͡ʃɪkɪn/",
+    "definition": "n. 鸡；鸡肉",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a chicken.",
+          "我看到一个鸡。"
+    ]
+},
+{
+    "word": "chemistry",
+    "phonetic": "/ˈkɛm.ɪ.stɹi/",
+    "definition": "n. 化学",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a chemistry.",
+          "我看到一个化学。"
+    ]
+},
+{
+    "word": "character",
+    "phonetic": "/ˈkæɹəktə/",
+    "definition": "n. 性格；角色",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a character.",
+          "我看到一个性格。"
+    ]
+},
+{
+    "word": "check",
+    "phonetic": "/t͡ʃɛk/",
+    "definition": "v. 检查",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ck",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "Please check it.",
+          "请检查它。"
+    ]
+},
+{
+    "word": "kangaroo",
+    "phonetic": "/kaŋ.ɡə.ˈɹuː/",
+    "definition": "n. 袋鼠",
+    "breakdown": [
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          }
+    ],
+    "sentences": [
+          "I see a kangaroo.",
+          "我看到一个袋鼠。"
+    ]
+},
+{
+    "word": "cow",
+    "phonetic": "/kaʊ/",
+    "definition": "n. 奶牛",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "ow",
+                "phon": "/aʊ/"
+          }
+    ],
+    "sentences": [
+          "This is cow.",
+          "这是奶牛。"
+    ]
 }
+  ]
+};

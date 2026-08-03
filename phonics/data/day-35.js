@@ -5,6 +5,175 @@ window.PHONICS_DAY_35 = {
   "pdfImage": "/phonics/images/day-35.jpg",
   "words": [
     {
+      "word": "hat",
+      "phonetic": "/hæt/",
+      "definition": "n. 帽子",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "I wear a hat.",
+        "我戴帽子。"
+      ]
+    },
+    {
+      "word": "hot",
+      "phonetic": "/hɒt/",
+      "definition": "adj. 热的",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ɒ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "The water is hot.",
+        "水很热。"
+      ]
+    },
+    {
+      "word": "house",
+      "phonetic": "/haʊs/",
+      "definition": "n. 房子",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ou",
+          "phon": "/aʊ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "My house is big.",
+        "我的房子很大。"
+      ]
+    },
+    {
+      "word": "hand",
+      "phonetic": "/hænd/",
+      "definition": "n. 手",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "nd",
+          "phon": "/nd/"
+        }
+      ],
+      "sentences": [
+        "Raise your hand.",
+        "举手。"
+      ]
+    },
+    {
+      "word": "head",
+      "phonetic": "/hed/",
+      "definition": "n. 头",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "I nod my head.",
+        "我点头。"
+      ]
+    },
+    {
+      "word": "happy",
+      "phonetic": "/ˈhæpi/",
+      "definition": "adj. 开心的",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "pp",
+          "phon": "/p/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
+        }
+      ],
+      "sentences": [
+        "I am very happy.",
+        "我很开心。"
+      ]
+    },
+    {
+      "word": "have",
+      "phonetic": "/hæv/",
+      "definition": "v. 有",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "I have a pen.",
+        "我有一支笔。"
+      ]
+    },
+    {
       "word": "he",
       "phonetic": "/hiː/",
       "definition": "pron. 他",
@@ -19,14 +188,14 @@ window.PHONICS_DAY_35 = {
         }
       ],
       "sentences": [
-        "He is a nice boy.",
-        "他是一个好男孩。"
+        "He is my friend.",
+        "他是我的朋友。"
       ]
     },
     {
       "word": "her",
       "phonetic": "/hɜː/",
-      "definition": "pron. 她的；她（宾格）",
+      "definition": "pron. 她的",
       "breakdown": [
         {
           "letter": "h",
@@ -40,6 +209,29 @@ window.PHONICS_DAY_35 = {
       "sentences": [
         "This is her book.",
         "这是她的书。"
+      ]
+    },
+    {
+      "word": "him",
+      "phonetic": "/hɪm/",
+      "definition": "pron. 他（宾格）",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "I help him.",
+        "我帮他。"
       ]
     },
     {
@@ -61,79 +253,33 @@ window.PHONICS_DAY_35 = {
         }
       ],
       "sentences": [
-        "This is his ball.",
-        "这是他的球。"
+        "This is his bag.",
+        "这是他的包。"
       ]
     },
     {
-      "word": "hand",
-      "phonetic": "/hænd/",
-      "definition": "n. 手；指针",
+      "word": "how",
+      "phonetic": "/haʊ/",
+      "definition": "adv. 怎么",
       "breakdown": [
         {
           "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "nd",
-          "phon": "/nd/"
+          "letter": "ow",
+          "phon": "/aʊ/"
         }
       ],
       "sentences": [
-        "Give me your hand.",
-        "把你的手给我。"
+        "How are you?",
+        "你好吗？"
       ]
     },
     {
-      "word": "hair",
-      "phonetic": "/heə/",
-      "definition": "n. 头发；毛发",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "air",
-          "phon": "/eə/"
-        }
-      ],
-      "sentences": [
-        "My hair is soft.",
-        "我的头发很软。"
-      ]
-    },
-    {
-      "word": "hat",
-      "phonetic": "/hæt/",
-      "definition": "n. 帽子",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Put on your hat.",
-        "戴上你的帽子。"
-      ]
-    },
-    {
-      "word": "hen",
-      "phonetic": "/hen/",
-      "definition": "n. 母鸡",
+      "word": "here",
+      "phonetic": "/hɪə/",
+      "definition": "adv. 这里",
       "breakdown": [
         {
           "letter": "h",
@@ -141,112 +287,16 @@ window.PHONICS_DAY_35 = {
         },
         {
           "letter": "e",
-          "phon": "/e/"
+          "phon": "/ɪə/"
         },
         {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "re",
+          "phon": "/r/"
         }
       ],
       "sentences": [
-        "The hen lays eggs.",
-        "母鸡下蛋。"
-      ]
-    },
-    {
-      "word": "hill",
-      "phonetic": "/hɪl/",
-      "definition": "n. 小山，山丘",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
-        }
-      ],
-      "sentences": [
-        "The ball rolled down the hill.",
-        "球滚下了小山。"
-      ]
-    },
-    {
-      "word": "home",
-      "phonetic": "/həʊm/",
-      "definition": "n. 家，住宅",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Let's go home.",
-        "我们回家吧。"
-      ]
-    },
-    {
-      "word": "house",
-      "phonetic": "/haʊs/",
-      "definition": "n. 房子，住宅",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "ou",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "This is my house.",
-        "这是我的房子。"
-      ]
-    },
-    {
-      "word": "horse",
-      "phonetic": "/hɔːs/",
-      "definition": "n. 马",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɔː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "A horse can run very fast.",
-        "马能跑得非常快。"
+        "Come here.",
+        "来这里。"
       ]
     },
     {
@@ -268,70 +318,110 @@ window.PHONICS_DAY_35 = {
         }
       ],
       "sentences": [
-        "Can you help me?",
-        "你能帮助我吗？"
+        "Help me, please.",
+        "请帮帮我。"
       ]
     },
     {
-      "word": "happy",
-      "phonetic": "/ˈhæpi/",
-      "definition": "adj. 快乐的；幸福的",
+      "word": "hope",
+      "phonetic": "/həʊp/",
+      "definition": "v. 希望",
       "breakdown": [
         {
           "letter": "h",
           "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "p",
-          "phon": "/p/",
-          "silent": "p"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "I am a happy boy.",
-        "我是一个快乐的男孩。"
-      ]
-    },
-    {
-      "word": "hello",
-      "phonetic": "/həˈləʊ/",
-      "definition": "int. 你好",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
         },
         {
           "letter": "o",
           "phon": "/əʊ/"
+        },
+        {
+          "letter": "pe",
+          "phon": "/p/"
         }
       ],
       "sentences": [
-        "Hello! I am Tom.",
-        "你好！我是汤姆。"
+        "I hope so.",
+        "我希望如此。"
       ]
     },
     {
-      "word": "hungry",
-      "phonetic": "/ˈhʌŋɡri/",
-      "definition": "adj. 饥饿的",
+      "word": "home",
+      "phonetic": "/həʊm/",
+      "definition": "n. 家",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "me",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "I go home.",
+        "我回家。"
+      ]
+    },
+    {
+      "word": "horse",
+      "phonetic": "/hɔːs/",
+      "definition": "n. 马",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "The horse runs fast.",
+        "马跑得快。"
+      ]
+    },
+    {
+      "word": "hurt",
+      "phonetic": "/hɜːt/",
+      "definition": "v. 伤害",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "My leg hurts.",
+        "腿疼。"
+      ]
+    },
+    {
+      "word": "hug",
+      "phonetic": "/hʌɡ/",
+      "definition": "v. 拥抱",
       "breakdown": [
         {
           "letter": "h",
@@ -342,197 +432,42 @@ window.PHONICS_DAY_35 = {
           "phon": "/ʌ/"
         },
         {
-          "letter": "n",
-          "phon": "/ŋ/"
-        },
-        {
           "letter": "g",
-          "phon": "/g/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
+          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "I am very hungry.",
-        "我非常饿。"
+        "Give me a hug.",
+        "给我一个拥抱。"
       ]
     },
     {
-      "word": "hobby",
-      "phonetic": "/ˈhɒbi/",
-      "definition": "n. 爱好，业余爱好",
+      "word": "hill",
+      "phonetic": "/hɪl/",
+      "definition": "n. 小山",
       "breakdown": [
         {
           "letter": "h",
           "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "bb",
-          "phon": "/b/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "My hobby is drawing.",
-        "我的爱好是画画。"
-      ]
-    },
-    {
-      "word": "hospital",
-      "phonetic": "/ˈhɒspɪtl/",
-      "definition": "n. 医院",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "sp",
-          "phon": "/sp/"
         },
         {
           "letter": "i",
           "phon": "/ɪ/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "al",
-          "phon": "/əl/"
-        }
-      ],
-      "sentences": [
-        "Doctors work in a hospital.",
-        "医生在医院工作。"
-      ]
-    },
-    {
-      "word": "holiday",
-      "phonetic": "/ˈhɒlədeɪ/",
-      "definition": "n. 假期，节日",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ɒ/"
-        },
-        {
-          "letter": "l",
+          "letter": "ll",
           "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
         }
       ],
       "sentences": [
-        "We go on holiday.",
-        "我们去度假。"
-      ]
-    },
-    {
-      "word": "honey",
-      "phonetic": "/ˈhʌni/",
-      "definition": "n. 蜂蜜；宝贝",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ey",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "Bees make sweet honey.",
-        "蜜蜂酿造甜美的蜂蜜。"
+        "We climb the hill.",
+        "我们爬山。"
       ]
     },
     {
       "word": "heart",
       "phonetic": "/hɑːt/",
-      "definition": "n. 心脏；内心",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "My heart beats fast.",
-        "我的心跳得很快。"
-      ]
-    },
-    {
-      "word": "hear",
-      "phonetic": "/hɪə/",
-      "definition": "v. 听见；听说",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɪə/"
-        }
-      ],
-      "sentences": [
-        "Can you hear me?",
-        "你能听见我吗？"
-      ]
-    },
-    {
-      "word": "heavy",
-      "phonetic": "/ˈhevi/",
-      "definition": "adj. 重的；大量的",
+      "definition": "n. 心",
       "breakdown": [
         {
           "letter": "h",
@@ -540,43 +475,81 @@ window.PHONICS_DAY_35 = {
         },
         {
           "letter": "ea",
-          "phon": "/e/"
+          "phon": "/ɑː/"
         },
         {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
+          "letter": "rt",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "This box is heavy.",
-        "这个盒子很重。"
+        "My heart beats fast.",
+        "心跳得很快。"
       ]
     },
     {
-      "word": "hot",
-      "phonetic": "/hɒt/",
-      "definition": "adj. 热的；辣的",
+      "word": "hard",
+      "phonetic": "/hɑːd/",
+      "definition": "adj. 困难的",
       "breakdown": [
         {
           "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "o",
-          "phon": "/ɒ/"
+          "letter": "ar",
+          "phon": "/ɑː/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
-        "The sun is hot today.",
-        "今天的太阳很热。"
+        "This is hard.",
+        "这很难。"
+      ]
+    },
+    {
+      "word": "hear",
+      "phonetic": "/hɪə/",
+      "definition": "v. 听见",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ɪə/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        }
+      ],
+      "sentences": [
+        "I can hear you.",
+        "我能听见你。"
+      ]
+    },
+    {
+      "word": "hair",
+      "phonetic": "/heə/",
+      "definition": "n. 头发",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "air",
+          "phon": "/eə/"
+        }
+      ],
+      "sentences": [
+        "I brush my hair.",
+        "我梳头。"
       ]
     },
     {
@@ -594,8 +567,31 @@ window.PHONICS_DAY_35 = {
         }
       ],
       "sentences": [
-        "The bird flies high.",
-        "小鸟飞得很高。"
+        "The mountain is high.",
+        "山很高。"
+      ]
+    },
+    {
+      "word": "heavy",
+      "phonetic": "/ˈhevi/",
+      "definition": "adj. 重的",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "vy",
+          "phon": "/vi/"
+        }
+      ],
+      "sentences": [
+        "The bag is heavy.",
+        "包很重。"
       ]
     },
     {
@@ -604,91 +600,63 @@ window.PHONICS_DAY_35 = {
       "definition": "pron. 谁",
       "breakdown": [
         {
-          "letter": "h",
-          "phon": "/h/",
-          "silent": "w"
-        },
-        {
-          "letter": "o",
-          "phon": "/uː/"
-        }
-      ],
-      "sentences": [
-        "Who is that girl?",
-        "那个女孩是谁？"
-      ]
-    },
-    {
-      "word": "whom",
-      "phonetic": "/huːm/",
-      "definition": "pron. 谁（who的宾格）",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/",
-          "silent": "w"
-        },
-        {
-          "letter": "o",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "Whom did you see?",
-        "你看到谁了？"
-      ]
-    },
-    {
-      "word": "whose",
-      "phonetic": "/huːz/",
-      "definition": "pron. 谁的",
-      "breakdown": [
-        {
           "letter": "wh",
-          "phon": "/h/"
+          "phon": "/w/"
         },
         {
           "letter": "o",
           "phon": "/uː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "Whose toy is this?",
-        "这是谁的玩具？"
+        "Who are you?",
+        "你是谁？"
       ]
     },
     {
       "word": "whole",
       "phonetic": "/həʊl/",
-      "definition": "adj. 整个的；全部的",
+      "definition": "adj. 整个的",
       "breakdown": [
         {
-          "letter": "h",
-          "phon": "/h/",
-          "silent": "w"
+          "letter": "wh",
+          "phon": "/w/"
         },
         {
           "letter": "o",
           "phon": "/əʊ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
+          "letter": "le",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "I ate the whole apple.",
-        "我吃了整个苹果。"
+        "I eat the whole cake.",
+        "我吃了整个蛋糕。"
+      ]
+    },
+    {
+      "word": "while",
+      "phonetic": "/waɪl/",
+      "definition": "conj. 当…时",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "le",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Wait while I finish.",
+        "等我做完。"
       ]
     },
     {
@@ -705,39 +673,316 @@ window.PHONICS_DAY_35 = {
           "phon": "/eɪ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
+          "letter": "le",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "A whale is a big fish.",
-        "鲸鱼是一种大鱼。"
+        "The whale is huge.",
+        "鲸鱼很大。"
       ]
     },
-    {
-      "word": "white",
-      "phonetic": "/waɪt/",
-      "definition": "n. 白色",
-      "breakdown": [
-        {
-          "letter": "wh",
-          "phon": "/w/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The clouds are white.",
-        "云是白色的。"
-      ]
-    }
-  ]
+{
+    "word": "hen",
+    "phonetic": "/hɛn/",
+    "definition": "n. 母鸡",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a hen.",
+          "我看到一个母鸡。"
+    ]
+},
+{
+    "word": "hello",
+    "phonetic": "/həˈləʊ/",
+    "definition": "int. 你好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "Hello!",
+          "你好！"
+    ]
+},
+{
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋ.ɡɹi/",
+    "definition": "adj. 饥饿的",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very hungry.",
+          "它非常饥饿的。"
+    ]
+},
+{
+    "word": "hobby",
+    "phonetic": "/ˈhɒ.bi/",
+    "definition": "n. 爱好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a hobby.",
+          "我看到一个爱好。"
+    ]
+},
+{
+    "word": "hospital",
+    "phonetic": "/ˈhɒs.pɪ.tl̩/",
+    "definition": "n. 医院",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a hospital.",
+          "我看到一个医院。"
+    ]
+},
+{
+    "word": "holiday",
+    "phonetic": "/ˈhɒlɪdeɪ/",
+    "definition": "n. 假日",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a holiday.",
+          "我看到一个假日。"
+    ]
+},
+{
+    "word": "whose",
+    "phonetic": "/huːz/",
+    "definition": "pron. 谁的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Whose is here.",
+          "谁的在这里。"
+    ]
+},
+{
+    "word": "white",
+    "phonetic": "/waɪt/",
+    "definition": "adj. 白色的",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/h/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very white.",
+          "它非常白色的。"
+    ]
+},
+{
+    "word": "honey",
+    "phonetic": "/ˈhʌni/",
+    "definition": "n. 蜂蜜",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "This is honey.",
+          "这是蜂蜜。"
+    ]
+},
+{
+    "word": "whom",
+    "phonetic": "/huːm/",
+    "definition": "pron. 谁（宾格）",
+    "breakdown": [
+          {
+                "letter": "wh",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "Whom is here.",
+          "谁（宾格）在这里。"
+    ]
 }
+  ]
+};

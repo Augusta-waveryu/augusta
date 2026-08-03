@@ -5,75 +5,6 @@ window.PHONICS_DAY_05 = {
   "pdfImage": "/phonics/images/day-05.jpg",
   "words": [
     {
-      "word": "shirt",
-      "phonetic": "/ʃɜːt/",
-      "definition": "n. 衬衫",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ir",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "My dad wears a blue shirt.",
-        "我爸爸穿一件蓝色衬衫。"
-      ]
-    },
-    {
-      "word": "girl",
-      "phonetic": "/ɡɜːl/",
-      "definition": "n. 女孩",
-      "breakdown": [
-        {
-          "letter": "g",
-          "phon": "/g/"
-        },
-        {
-          "letter": "ir",
-          "phon": "/əlː/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "She is a happy girl.",
-        "她是一个快乐的女孩。"
-      ]
-    },
-    {
-      "word": "skirt",
-      "phonetic": "/skɜːt/",
-      "definition": "n. 裙子",
-      "breakdown": [
-        {
-          "letter": "sk",
-          "phon": "/sk/"
-        },
-        {
-          "letter": "ir",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "She wears a pink skirt.",
-        "她穿一条粉红色的裙子。"
-      ]
-    },
-    {
       "word": "bird",
       "phonetic": "/bɜːd/",
       "definition": "n. 鸟",
@@ -92,125 +23,83 @@ window.PHONICS_DAY_05 = {
         }
       ],
       "sentences": [
-        "A little bird sings a song.",
-        "一只小鸟唱着歌。"
+        "The bird sings in the tree.",
+        "鸟在树上唱歌。"
       ]
     },
     {
-      "word": "sir",
-      "phonetic": "/sɜː/",
-      "definition": "n. 先生（用于称呼男性）",
+      "word": "girl",
+      "phonetic": "/ɡɜːl/",
+      "definition": "n. 女孩",
       "breakdown": [
         {
-          "letter": "S",
-          "phon": "/s/"
+          "letter": "g",
+          "phon": "/ɡ/"
         },
         {
           "letter": "ir",
           "phon": "/ɜː/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "Excuse me, sir, can you help me?",
-        "打扰一下，先生，您能帮我吗？"
+        "The girl has long hair.",
+        "女孩有一头长发。"
       ]
     },
     {
-      "word": "thirty",
-      "phonetic": "/ˈθɜːti/",
-      "definition": "num. 三十",
+      "word": "turn",
+      "phonetic": "/tɜːn/",
+      "definition": "v. 转动",
       "breakdown": [
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "ir",
-          "phon": "/ɜː/"
-        },
         {
           "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "My dad is thirty.",
-        "我爸爸三十岁。"
-      ]
-    },
-    {
-      "word": "mercy",
-      "phonetic": "/ˈmɜːsi/",
-      "definition": "n. 怜悯；仁慈",
-      "breakdown": [
-        {
-          "letter": "mer",
-          "phon": ""
-        },
-        {
-          "letter": "cy",
-          "phon": ""
-        }
-      ],
-      "sentences": [
-        "They asked for mercy, but received none.",
-        "他们请求怜悯，但什么也没得到。"
-      ]
-    },
-    {
-      "word": "herb",
-      "phonetic": "/hɜːb/",
-      "definition": "n. 香草；草本植物",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "er",
+          "letter": "ur",
           "phon": "/ɜː/"
         },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "Turn left at the corner.",
+        "在拐角处左转。"
+      ]
+    },
+    {
+      "word": "burn",
+      "phonetic": "/bɜːn/",
+      "definition": "v. 燃烧",
+      "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
-        }
-      ],
-      "sentences": [
-        "This herb smells good.",
-        "这株香草闻起来很香。"
-      ]
-    },
-    {
-      "word": "term",
-      "phonetic": "/tɜːm/",
-      "definition": "n. 学期，术语",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
         },
         {
-          "letter": "er",
+          "letter": "ur",
           "phon": "/ɜː/"
         },
         {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "n",
+          "phon": "/n/"
         }
       ],
       "sentences": [
-        "School term starts soon.",
-        "学校学期很快就开始了。"
+        "Don't burn the food.",
+        "别把食物烧焦了。"
       ]
     },
     {
       "word": "her",
       "phonetic": "/hɜː/",
-      "definition": "pron. 她的；她（宾格）",
+      "definition": "pron. 她的",
       "breakdown": [
         {
           "letter": "h",
@@ -227,314 +116,47 @@ window.PHONICS_DAY_05 = {
       ]
     },
     {
-      "word": "person",
-      "phonetic": "/ˈpɜːsən/",
-      "definition": "n. 人",
+      "word": "fur",
+      "phonetic": "/fɜː/",
+      "definition": "n. 毛皮",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "f",
+          "phon": "/f/"
         },
         {
-          "letter": "er",
+          "letter": "ur",
           "phon": "/ɜː/"
-        },
-        {
-          "letter": "son",
-          "phon": "/sn/"
         }
       ],
       "sentences": [
-        "He is a good person.",
-        "他是一个好人。"
+        "The cat has soft fur.",
+        "猫有柔软的毛。"
       ]
     },
     {
-      "word": "service",
-      "phonetic": "/ˈsɜːrvɪs/",
-      "definition": "n. 服务；效劳",
+      "word": "sir",
+      "phonetic": "/sɜː/",
+      "definition": "n. 先生",
       "breakdown": [
         {
           "letter": "s",
           "phon": "/s/"
         },
         {
-          "letter": "er",
+          "letter": "ir",
           "phon": "/ɜː/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "Good service here.",
-        "这里的服务很好。"
-      ]
-    },
-    {
-      "word": "work",
-      "phonetic": "/wɜːk/",
-      "definition": "v. 工作；运转",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "I work at school.",
-        "我在学校工作。"
-      ]
-    },
-    {
-      "word": "word",
-      "phonetic": "/wɜːd/",
-      "definition": "n. 单词；言语",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "Say a new word.",
-        "说一个新单词。"
-      ]
-    },
-    {
-      "word": "world",
-      "phonetic": "/wɜːld/",
-      "definition": "n. 世界",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "or",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "ld",
-          "phon": "/ld/"
-        }
-      ],
-      "sentences": [
-        "The world is big.",
-        "世界很大。"
-      ]
-    },
-    {
-      "word": "turn",
-      "phonetic": "/tɜːn/",
-      "definition": "v. 转动，旋转",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "Turn around and smile!",
-        "转过身来笑一笑！"
-      ]
-    },
-    {
-      "word": "burn",
-      "phonetic": "/bɜːn/",
-      "definition": "v. 燃烧；烧伤",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "Be careful, don't burn your hand.",
-        "小心，不要烧到你的手。"
-      ]
-    },
-    {
-      "word": "nurse",
-      "phonetic": "/nɜːs/",
-      "definition": "n. 护士",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ur",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "s",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The nurse helps people.",
-        "护士帮助人们。"
-      ]
-    },
-    {
-      "word": "early",
-      "phonetic": "/ˈɜːli/",
-      "definition": "adv. 早地",
-      "breakdown": [
-        {
-          "letter": "ear",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "I wake up early.",
-        "我起得很早。"
-      ]
-    },
-    {
-      "word": "earth",
-      "phonetic": "/ɜːθ/",
-      "definition": "n. 地球",
-      "breakdown": [
-        {
-          "letter": "ear",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "We live on Earth.",
-        "我们住在地球上。"
-      ]
-    },
-    {
-      "word": "learn",
-      "phonetic": "/lɜːn/",
-      "definition": "v. 学习；学会",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "I want to learn English.",
-        "我想学习英语。"
-      ]
-    },
-    {
-      "word": "journey",
-      "phonetic": "/ˈdʒɜːni/",
-      "definition": "n. 旅行",
-      "breakdown": [
-        {
-          "letter": "j",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "our",
-          "phon": "/ɜː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "ey",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "We went on a long journey.",
-        "我们进行了一次长途旅行。"
-      ]
-    },
-    {
-      "word": "journal",
-      "phonetic": "/ˈdʒɜːnl/",
-      "definition": "n. 日记，日志",
-      "breakdown": [
-        {
-          "letter": "jour",
-          "phon": ""
-        },
-        {
-          "letter": "nal",
-          "phon": ""
-        }
-      ],
-      "sentences": [
-        "He writes in his journal every day.",
-        "他每天都写日记。"
+        "Excuse me, sir.",
+        "打扰了，先生。"
       ]
     },
     {
       "word": "first",
       "phonetic": "/fɜːst/",
-      "definition": "adj. 第一的",
+      "definition": "num. 第一",
       "breakdown": [
         {
           "letter": "f",
@@ -550,8 +172,8 @@ window.PHONICS_DAY_05 = {
         }
       ],
       "sentences": [
-        "I am first in line.",
-        "我排在第一位。"
+        "She came in first.",
+        "她第一个到。"
       ]
     },
     {
@@ -573,49 +195,110 @@ window.PHONICS_DAY_05 = {
         }
       ],
       "sentences": [
-        "I am third in line.",
-        "我排在第三。"
+        "I sit in the third row.",
+        "我坐在第三排。"
       ]
     },
     {
-      "word": "birthday",
-      "phonetic": "/ˈbɜːθdeɪ/",
-      "definition": "n. 生日",
+      "word": "shirt",
+      "phonetic": "/ʃɜːt/",
+      "definition": "n. 衬衫",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "sh",
+          "phon": "/ʃ/"
         },
         {
           "letter": "ir",
           "phon": "/ɜː/"
         },
         {
-          "letter": "th",
-          "phon": "/θ/"
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "He wears a white shirt.",
+        "他穿着白衬衫。"
+      ]
+    },
+    {
+      "word": "skirt",
+      "phonetic": "/skɜːt/",
+      "definition": "n. 裙子",
+      "breakdown": [
+        {
+          "letter": "sk",
+          "phon": "/sk/"
         },
+        {
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Her skirt is blue.",
+        "她的裙子是蓝色的。"
+      ]
+    },
+    {
+      "word": "dirt",
+      "phonetic": "/dɜːt/",
+      "definition": "n. 泥土",
+      "breakdown": [
         {
           "letter": "d",
           "phon": "/d/"
         },
         {
-          "letter": "ay",
-          "phon": "/eɪ/"
+          "letter": "ir",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "Happy birthday to you!",
-        "祝你生日快乐！"
+        "Wash the dirt off your hands.",
+        "洗掉手上的泥土。"
       ]
     },
     {
-      "word": "Thursday",
-      "phonetic": "/ˈθɜːzdeɪ/",
-      "definition": "n. 星期四",
+      "word": "hurt",
+      "phonetic": "/hɜːt/",
+      "definition": "v. 伤害",
       "breakdown": [
         {
-          "letter": "Th",
-          "phon": "/θ/"
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "My leg hurts.",
+        "我的腿疼。"
+      ]
+    },
+    {
+      "word": "nurse",
+      "phonetic": "/nɜːs/",
+      "definition": "n. 护士",
+      "breakdown": [
+        {
+          "letter": "n",
+          "phon": "/n/"
         },
         {
           "letter": "ur",
@@ -623,41 +306,117 @@ window.PHONICS_DAY_05 = {
         },
         {
           "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "ay",
-          "phon": "/eɪ/"
+          "phon": "/s/"
         }
       ],
       "sentences": [
-        "Today is Thursday.",
-        "今天星期四。"
+        "The nurse is very kind.",
+        "护士很友善。"
       ]
     },
     {
-      "word": "return",
-      "phonetic": "/rɪˈtɜːn/",
-      "definition": "v. 返回；归还",
+      "word": "purse",
+      "phonetic": "/pɜːs/",
+      "definition": "n. 钱包",
       "breakdown": [
         {
-          "letter": "r",
-          "phon": "/r/"
+          "letter": "p",
+          "phon": "/p/"
         },
         {
-          "letter": "e",
-          "phon": "/ɪ/"
+          "letter": "ur",
+          "phon": "/ɜː/"
         },
+        {
+          "letter": "s",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "I lost my purse.",
+        "我丢了钱包。"
+      ]
+    },
+    {
+      "word": "curve",
+      "phonetic": "/kɜːv/",
+      "definition": "n. 曲线",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ur",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The road has a sharp curve.",
+        "路有个急弯。"
+      ]
+    },
+    {
+      "word": "serve",
+      "phonetic": "/sɜːv/",
+      "definition": "v. 服务",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "They serve lunch at noon.",
+        "他们中午供应午餐。"
+      ]
+    },
+    {
+      "word": "term",
+      "phonetic": "/tɜːm/",
+      "definition": "n. 学期",
+      "breakdown": [
         {
           "letter": "t",
           "phon": "/t/"
         },
         {
-          "letter": "ur",
+          "letter": "er",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "The new term starts in September.",
+        "新学期九月开始。"
+      ]
+    },
+    {
+      "word": "fern",
+      "phonetic": "/fɜːn/",
+      "definition": "n. 蕨类植物",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "er",
           "phon": "/ɜː/"
         },
         {
@@ -666,60 +425,587 @@ window.PHONICS_DAY_05 = {
         }
       ],
       "sentences": [
-        "Please return the book to me.",
-        "请把书还给我。"
+        "Ferns grow in the shade.",
+        "蕨类植物长在阴凉处。"
       ]
     },
     {
-      "word": "church",
-      "phonetic": "/tʃɜːtʃ/",
-      "definition": "n. 教堂",
+      "word": "herd",
+      "phonetic": "/hɜːd/",
+      "definition": "n. 兽群",
       "breakdown": [
         {
-          "letter": "ch",
-          "phon": "/tʃ/"
+          "letter": "h",
+          "phon": "/h/"
         },
         {
-          "letter": "ur",
+          "letter": "er",
           "phon": "/ɜː/"
         },
         {
-          "letter": "ch",
-          "phon": "/tʃ/"
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
-        "We go to church.",
-        "我们去教堂。"
+        "A herd of cows is on the hill.",
+        "山上有一群牛。"
       ]
     },
     {
-      "word": "purple",
-      "phonetic": "/ˈpɜːpl/",
-      "definition": "n. 紫色",
+      "word": "word",
+      "phonetic": "/wɜːd/",
+      "definition": "n. 单词",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "w",
+          "phon": "/w/"
         },
         {
-          "letter": "ur",
+          "letter": "or",
           "phon": "/ɜː/"
         },
         {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "Learn five words a day.",
+        "每天学五个单词。"
+      ]
+    },
+    {
+      "word": "work",
+      "phonetic": "/wɜːk/",
+      "definition": "v. 工作",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
         },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I work in a school.",
+        "我在学校工作。"
+      ]
+    },
+    {
+      "word": "worm",
+      "phonetic": "/wɜːm/",
+      "definition": "n. 虫子",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "The bird eats a worm.",
+        "鸟吃了一条虫子。"
+      ]
+    },
+    {
+      "word": "world",
+      "phonetic": "/wɜːld/",
+      "definition": "n. 世界",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "or",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "ld",
+          "phon": "/ld/"
+        }
+      ],
+      "sentences": [
+        "The world is very big.",
+        "世界很大。"
+      ]
+    },
+    {
+      "word": "earth",
+      "phonetic": "/ɜːθ/",
+      "definition": "n. 地球",
+      "breakdown": [
+        {
+          "letter": "ea",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "rth",
+          "phon": "/θ/"
+        }
+      ],
+      "sentences": [
+        "The earth goes around the sun.",
+        "地球绕着太阳转。"
+      ]
+    },
+    {
+      "word": "early",
+      "phonetic": "/ˈɜːli/",
+      "definition": "adv. 早",
+      "breakdown": [
+        {
+          "letter": "ea",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "ly",
+          "phon": "/li/"
+        }
+      ],
+      "sentences": [
+        "I get up early every day.",
+        "我每天早起。"
+      ]
+    },
+    {
+      "word": "learn",
+      "phonetic": "/lɜːn/",
+      "definition": "v. 学习",
+      "breakdown": [
         {
           "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
+          "phon": "/l/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "rn",
+          "phon": "/n/"
         }
       ],
       "sentences": [
-        "My favourite colour is purple.",
-        "我最喜欢的颜色是紫色。"
+        "I learn English at school.",
+        "我在学校学英语。"
       ]
-    }
-  ]
+    },
+    {
+      "word": "pearl",
+      "phonetic": "/pɜːl/",
+      "definition": "n. 珍珠",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "rl",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "She wears a pearl necklace.",
+        "她戴着珍珠项链。"
+      ]
+    },
+    {
+      "word": "search",
+      "phonetic": "/sɜːtʃ/",
+      "definition": "v. 搜索",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "rch",
+          "phon": "/tʃ/"
+        }
+      ],
+      "sentences": [
+        "Search for the answer online.",
+        "在网上搜索答案。"
+      ]
+    },
+    {
+      "word": "journey",
+      "phonetic": "/ˈdʒɜːni/",
+      "definition": "n. 旅程",
+      "breakdown": [
+        {
+          "letter": "j",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "our",
+          "phon": "/ɜː/"
+        },
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "ey",
+          "phon": "/i/"
+        }
+      ],
+      "sentences": [
+        "The journey takes two hours.",
+        "旅程需要两个小时。"
+      ]
+    },
+{
+    "word": "thirty",
+    "phonetic": "/ˈθɜːti/",
+    "definition": "num. 三十",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I have thirty apples.",
+          "我有三十个苹果。"
+    ]
+},
+{
+    "word": "mercy",
+    "phonetic": "/ˈmɜːsi/",
+    "definition": "n. 仁慈；怜悯",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a mercy.",
+          "我看到一个仁慈。"
+    ]
+},
+{
+    "word": "herb",
+    "phonetic": "/hɜːb/",
+    "definition": "n. 草本植物；香草",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          }
+    ],
+    "sentences": [
+          "I see a herb.",
+          "我看到一个草本植物。"
+    ]
+},
+{
+    "word": "person",
+    "phonetic": "/ˈpɜːsən/",
+    "definition": "n. 人",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a person.",
+          "我看到一个人。"
+    ]
+},
+{
+    "word": "service",
+    "phonetic": "/ˈsɜːvɪs/",
+    "definition": "n. 服务",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a service.",
+          "我看到一个服务。"
+    ]
+},
+{
+    "word": "journal",
+    "phonetic": "/ˈd͡ʒɜːnəl/",
+    "definition": "n. 日志；期刊",
+    "breakdown": [
+          {
+                "letter": "j",
+                "phon": "/dʒ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a journal.",
+          "我看到一个日志。"
+    ]
+},
+{
+    "word": "birthday",
+    "phonetic": "/ˈbɜːθ.deɪ/",
+    "definition": "n. 生日",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a birthday.",
+          "我看到一个生日。"
+    ]
+},
+{
+    "word": "return",
+    "phonetic": "/ɹɪˈtɜːn/",
+    "definition": "v. 返回",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "Please return it.",
+          "请返回它。"
+    ]
+},
+{
+    "word": "church",
+    "phonetic": "/t͡ʃɜːt͡ʃ/",
+    "definition": "n. 教堂",
+    "breakdown": [
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "I see a church.",
+          "我看到一个教堂。"
+    ]
+},
+{
+    "word": "purple",
+    "phonetic": "/ˈpɜː(ɹ).pəl/",
+    "definition": "adj. 紫色的",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very purple.",
+          "它非常紫色的。"
+    ]
+},
+{
+    "word": "Thursday",
+    "phonetic": "/ˈθɜːzdeɪ/",
+    "definition": "n. 星期四",
+    "breakdown": [
+          {
+                "letter": "th",
+                "phon": "/ɜ:/"
+          },
+          {
+                "letter": "ur",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "ay",
+                "phon": "/eɪ/"
+          }
+    ],
+    "sentences": [
+          "This is Thursday.",
+          "这是星期四。"
+    ]
 }
+  ]
+};

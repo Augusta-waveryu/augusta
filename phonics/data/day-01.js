@@ -1,3 +1,4 @@
+// Day 1 详细数据（含音标、拼读、例句、翻译）
 window.PHONICS_DAY_01 = {
   "day": 1,
   "ipa": "/i:/",
@@ -367,8 +368,8 @@ window.PHONICS_DAY_01 = {
         }
       ],
       "sentences": [
-        "Please take your seat.",
-        "请坐下。"
+        "Please take a seat.",
+        "请坐。"
       ]
     },
     {
@@ -566,8 +567,8 @@ window.PHONICS_DAY_01 = {
         }
       ],
       "sentences": [
-        "Give the ball to me.",
-        "把球给我。"
+        "Come with me.",
+        "跟我来。"
       ]
     },
     {
@@ -604,8 +605,7 @@ window.PHONICS_DAY_01 = {
         },
         {
           "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -614,7 +614,7 @@ window.PHONICS_DAY_01 = {
       ]
     },
     {
-      "word": "police",
+      "word": "po",
       "phonetic": "/pəˈliːs/",
       "definition": "n. 警察；警方",
       "breakdown": [
@@ -636,8 +636,7 @@ window.PHONICS_DAY_01 = {
         },
         {
           "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
+          "phon": "/s/"
         }
       ],
       "sentences": [
@@ -663,6 +662,41 @@ window.PHONICS_DAY_01 = {
         "I have new skis.",
         "我有新滑雪板。"
       ]
-    }
-  ]
+    },
+{
+    "word": "police",
+    "phonetic": "/pəˈliːs/",
+    "definition": "n. 警察",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/iː/"
+          }
+    ],
+    "sentences": [
+          "I see a police.",
+          "我看到一个警察。"
+    ]
 }
+  ]
+};

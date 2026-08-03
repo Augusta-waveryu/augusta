@@ -7,7 +7,7 @@ window.PHONICS_DAY_28 = {
     {
       "word": "van",
       "phonetic": "/væn/",
-      "definition": "n. 货车，面包车",
+      "definition": "n. 厢式货车",
       "breakdown": [
         {
           "letter": "v",
@@ -23,38 +23,41 @@ window.PHONICS_DAY_28 = {
         }
       ],
       "sentences": [
-        "The van is big.",
-        "这辆货车很大。"
+        "The van is blue.",
+        "货车是蓝色的。"
       ]
     },
     {
-      "word": "vase",
-      "phonetic": "/vɑːz/",
-      "definition": "n. 花瓶",
+      "word": "very",
+      "phonetic": "/ˈveri/",
+      "definition": "adv. 非常",
       "breakdown": [
         {
           "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "a",
-          "phon": "/ɑː/"
+          "letter": "e",
+          "phon": "/e/"
         },
         {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
-        "Put flowers in the vase.",
-        "把花放进花瓶里。"
+        "I am very happy.",
+        "我非常开心。"
       ]
     },
     {
       "word": "vest",
       "phonetic": "/vest/",
-      "definition": "n. 背心；马甲",
+      "definition": "n. 背心",
       "breakdown": [
         {
           "letter": "v",
@@ -70,8 +73,8 @@ window.PHONICS_DAY_28 = {
         }
       ],
       "sentences": [
-        "He wore a warm vest under his coat.",
-        "他在外套里面穿了一件保暖背心。"
+        "He wears a vest.",
+        "他穿背心。"
       ]
     },
     {
@@ -93,72 +96,14 @@ window.PHONICS_DAY_28 = {
         }
       ],
       "sentences": [
-        "We saw a vet today.",
-        "我们今天去看兽医了。"
-      ]
-    },
-    {
-      "word": "very",
-      "phonetic": "/ˈveri/",
-      "definition": "adv. 很，非常",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "The dog is very big.",
-        "这只狗非常大。"
-      ]
-    },
-    {
-      "word": "video",
-      "phonetic": "/ˈvɪdiəʊ/",
-      "definition": "n. 视频；录像",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "e",
-          "phon": "/i/"
-        },
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        }
-      ],
-      "sentences": [
-        "Let's watch a fun video.",
-        "我们来看一个有趣的视频。"
+        "The vet helps animals.",
+        "兽医帮助动物。"
       ]
     },
     {
       "word": "voice",
       "phonetic": "/vɔɪs/",
-      "definition": "n. 声音；嗓音",
+      "definition": "n. 声音",
       "breakdown": [
         {
           "letter": "v",
@@ -169,55 +114,19 @@ window.PHONICS_DAY_28 = {
           "phon": "/ɔɪ/"
         },
         {
-          "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
+          "letter": "ce",
+          "phon": "/s/"
         }
       ],
       "sentences": [
-        "She has a soft voice.",
-        "她有一个温柔的声音。"
-      ]
-    },
-    {
-      "word": "violin",
-      "phonetic": "/ˌvaɪəˈlɪn/",
-      "definition": "n. 小提琴",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "She plays the violin.",
-        "她拉小提琴。"
+        "I hear your voice.",
+        "我听到你的声音。"
       ]
     },
     {
       "word": "visit",
       "phonetic": "/ˈvɪzɪt/",
-      "definition": "v. 拜访；参观",
+      "definition": "v. 拜访",
       "breakdown": [
         {
           "letter": "v",
@@ -232,17 +141,63 @@ window.PHONICS_DAY_28 = {
           "phon": "/z/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "it",
+          "phon": "/ɪt/"
         }
       ],
       "sentences": [
-        "We visit the zoo.",
-        "我们参观动物园。"
+        "I visit my grandma.",
+        "我拜访奶奶。"
+      ]
+    },
+    {
+      "word": "vine",
+      "phonetic": "/vaɪn/",
+      "definition": "n. 藤蔓",
+      "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "The vine grows on the wall.",
+        "藤蔓长在墙上。"
+      ]
+    },
+    {
+      "word": "vase",
+      "phonetic": "/vɑːz/",
+      "definition": "n. 花瓶",
+      "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "Put flowers in the vase.",
+        "把花放花瓶里。"
       ]
     },
     {
@@ -263,25 +218,55 @@ window.PHONICS_DAY_28 = {
           "phon": "/l/"
         },
         {
-          "letter": "a",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/dʒ/",
-          "silent": "e"
+          "letter": "age",
+          "phon": "/ɪdʒ/"
         }
       ],
       "sentences": [
-        "My grandma lives in a small village.",
-        "我奶奶住在一个小村庄里。"
+        "I live in a village.",
+        "我住在村庄里。"
       ]
     },
     {
-      "word": "vegetable",
-      "phonetic": "/ˈvedʒtəbəl/",
-      "definition": "n. 蔬菜",
+      "word": "violin",
+      "phonetic": "/ˌvaɪəˈlɪn/",
+      "definition": "n. 小提琴",
       "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "io",
+          "phon": "/aɪə/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "in",
+          "phon": "/ɪn/"
+        }
+      ],
+      "sentences": [
+        "She plays the violin.",
+        "她拉小提琴。"
+      ]
+    },
+    {
+      "word": "love",
+      "phonetic": "/lʌv/",
+      "definition": "v. 爱",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
         {
           "letter": "v",
           "phon": "/v/"
@@ -289,133 +274,41 @@ window.PHONICS_DAY_28 = {
         {
           "letter": "e",
           "phon": "/e/"
-        },
-        {
-          "letter": "ge",
-          "phon": "/dʒ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "l",
-          "phon": "/əl/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "Eat your vegetables.",
-        "吃你的蔬菜。"
+        "I love my family.",
+        "我爱我的家人。"
       ]
     },
     {
-      "word": "vacation",
-      "phonetic": "/vəˈkeɪʃn/",
-      "definition": "n. 假期；休假",
+      "word": "give",
+      "phonetic": "/ɡɪv/",
+      "definition": "v. 给",
       "breakdown": [
         {
-          "letter": "v",
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "ve",
           "phon": "/v/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "ti",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
         }
       ],
       "sentences": [
-        "We are planning a vacation to the beach.",
-        "我们正在计划去海滩度假。"
+        "Give me the book.",
+        "给我书。"
       ]
     },
     {
-      "word": "value",
-      "phonetic": "/ˈvæljuː/",
-      "definition": "n. 价值，价格",
+      "word": "live",
+      "phonetic": "/lɪv/",
+      "definition": "v. 居住",
       "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "u",
-          "phon": "/juː/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I value my toys.",
-        "我珍视我的玩具。"
-      ]
-    },
-    {
-      "word": "view",
-      "phonetic": "/vjuː/",
-      "definition": "n. 景色；视图",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "iew",
-          "phon": "/juː/"
-        }
-      ],
-      "sentences": [
-        "What a beautiful view!",
-        "多么美丽的景色！"
-      ]
-    },
-    {
-      "word": "valid",
-      "phonetic": "/ˈvælɪd/",
-      "definition": "adj. 有效的，正当的",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
         {
           "letter": "l",
           "phon": "/l/"
@@ -425,74 +318,365 @@ window.PHONICS_DAY_28 = {
           "phon": "/ɪ/"
         },
         {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "I live in a house.",
+        "我住在房子里。"
+      ]
+    },
+    {
+      "word": "have",
+      "phonetic": "/hæv/",
+      "definition": "v. 有",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "I have a pen.",
+        "我有一支笔。"
+      ]
+    },
+    {
+      "word": "five",
+      "phonetic": "/faɪv/",
+      "definition": "num. 五",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "I am five years old.",
+        "我五岁。"
+      ]
+    },
+    {
+      "word": "drive",
+      "phonetic": "/draɪv/",
+      "definition": "v. 开车",
+      "breakdown": [
+        {
           "letter": "d",
           "phon": "/d/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
         }
       ],
       "sentences": [
-        "This ticket is valid.",
-        "这张票是有效的。"
+        "I drive to work.",
+        "我开车上班。"
       ]
     },
     {
-      "word": "event",
-      "phonetic": "/ɪˈvent/",
-      "definition": "n. 事件；活动",
+      "word": "dive",
+      "phonetic": "/daɪv/",
+      "definition": "v. 潜水",
       "breakdown": [
         {
-          "letter": "e",
-          "phon": "/ɪ/"
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "I dive into the pool.",
+        "我跳入泳池。"
+      ]
+    },
+    {
+      "word": "save",
+      "phonetic": "/seɪv/",
+      "definition": "v. 保存",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "Save water every day.",
+        "每天节约用水。"
+      ]
+    },
+    {
+      "word": "wave",
+      "phonetic": "/weɪv/",
+      "definition": "n. 波浪",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The wave is very big.",
+        "波浪很大。"
+      ]
+    },
+    {
+      "word": "cave",
+      "phonetic": "/keɪv/",
+      "definition": "n. 洞穴",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The bear sleeps in a cave.",
+        "熊在洞里睡觉。"
+      ]
+    },
+    {
+      "word": "brave",
+      "phonetic": "/breɪv/",
+      "definition": "adj. 勇敢的",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "a",
+          "phon": "/eɪ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The brave boy saves the cat.",
+        "勇敢的男孩救了猫。"
+      ]
+    },
+    {
+      "word": "move",
+      "phonetic": "/muːv/",
+      "definition": "v. 移动",
+      "breakdown": [
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "o",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "Move the chair here.",
+        "把椅子搬到这里。"
+      ]
+    },
+    {
+      "word": "prove",
+      "phonetic": "/pruːv/",
+      "definition": "v. 证明",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "o",
+          "phon": "/uː/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "Prove you are right.",
+        "证明你是对的。"
+      ]
+    },
+    {
+      "word": "glove",
+      "phonetic": "/ɡlʌv/",
+      "definition": "n. 手套",
+      "breakdown": [
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "Wear gloves in winter.",
+        "冬天戴手套。"
+      ]
+    },
+    {
+      "word": "stove",
+      "phonetic": "/stəʊv/",
+      "definition": "n. 炉子",
+      "breakdown": [
+        {
+          "letter": "st",
+          "phon": "/st/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The pot is on the stove.",
+        "锅在炉子上。"
+      ]
+    },
+    {
+      "word": "above",
+      "phonetic": "/əˈbʌv/",
+      "definition": "prep. 在…上方",
+      "breakdown": [
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "ve",
+          "phon": "/v/"
+        }
+      ],
+      "sentences": [
+        "The plane flies above.",
+        "飞机在上方飞。"
+      ]
+    },
+    {
+      "word": "govern",
+      "phonetic": "/ˈɡʌvən/",
+      "definition": "v. 治理",
+      "breakdown": [
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "o",
+          "phon": "/ʌ/"
         },
         {
           "letter": "v",
           "phon": "/v/"
         },
         {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
+          "letter": "ern",
+          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "It was a big event.",
-        "那是一个大事件。"
-      ]
-    },
-    {
-      "word": "evening",
-      "phonetic": "/ˈiːvnɪŋ/",
-      "definition": "n. 晚上；傍晚",
-      "breakdown": [
-        {
-          "letter": "e",
-          "phon": "/iː/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "e",
-          "phon": "",
-          "silent": "e"
-        },
-        {
-          "letter": "n",
-          "phon": "/ɪŋ/"
-        }
-      ],
-      "sentences": [
-        "Good evening, everyone!",
-        "晚上好，大家！"
+        "They govern the country.",
+        "他们治理国家。"
       ]
     },
     {
       "word": "seven",
       "phonetic": "/ˈsevən/",
-      "definition": "num.七；七个",
+      "definition": "num. 七",
       "breakdown": [
         {
           "letter": "s",
@@ -507,17 +691,13 @@ window.PHONICS_DAY_28 = {
           "phon": "/v/"
         },
         {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "en",
+          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "There are seven days in a week.",
-        "一周有七天。"
+        "I am seven years old.",
+        "我七岁。"
       ]
     },
     {
@@ -542,278 +722,22 @@ window.PHONICS_DAY_28 = {
           "phon": "/v/"
         },
         {
-          "letter": "e",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "en",
+          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "I have eleven toys.",
-        "我有十一个玩具。"
+        "I am eleven years old.",
+        "我十一岁。"
       ]
     },
     {
-      "word": "over",
-      "phonetic": "/ˈəʊvər/",
-      "definition": "prep. 在…上方，越过",
+      "word": "even",
+      "phonetic": "/ˈiːvən/",
+      "definition": "adv. 甚至",
       "breakdown": [
-        {
-          "letter": "o",
-          "phon": "/əʊ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The bird flew over the house.",
-        "小鸟飞过房子。"
-      ]
-    },
-    {
-      "word": "river",
-      "phonetic": "/ˈrɪvə/",
-      "definition": "n. 河；江",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "Fish swim in the river.",
-        "鱼在河里游泳。"
-      ]
-    },
-    {
-      "word": "never",
-      "phonetic": "/ˈnevər/",
-      "definition": "adv. 从不；绝不",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
         {
           "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "I never saw a purple cow.",
-        "我从没见过紫色的奶牛。"
-      ]
-    },
-    {
-      "word": "clever",
-      "phonetic": "/ˈklevər/",
-      "definition": "adj. 聪明的，灵巧的",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "The fox is very clever.",
-        "这只狐狸很聪明。"
-      ]
-    },
-    {
-      "word": "give",
-      "phonetic": "/ɡɪv/",
-      "definition": "v. 给；赠送",
-      "breakdown": [
-        {
-          "letter": "g",
-          "phon": "/g/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Please give me the book.",
-        "请把书给我。"
-      ]
-    },
-    {
-      "word": "five",
-      "phonetic": "/faɪv/",
-      "definition": "num. 五",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I have five apples.",
-        "我有五个苹果。"
-      ]
-    },
-    {
-      "word": "live",
-      "phonetic": "/lɪv/",
-      "definition": "v. 居住；生活",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I live in a house.",
-        "我住在一个房子里。"
-      ]
-    },
-    {
-      "word": "love",
-      "phonetic": "/lʌv/",
-      "definition": "v. 爱",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I love my mom.",
-        "我爱我的妈妈。"
-      ]
-    },
-    {
-      "word": "have",
-      "phonetic": "/hæv/",
-      "definition": "v. 有；吃",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I have a red ball.",
-        "我有一个红色的球。"
-      ]
-    },
-    {
-      "word": "move",
-      "phonetic": "/muːv/",
-      "definition": "v. 移动；搬家",
-      "breakdown": [
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "o",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Let's move the chair.",
-        "让我们移动椅子。"
-      ]
-    },
-    {
-      "word": "leave",
-      "phonetic": "/liːv/",
-      "definition": "v. 离开；留下",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ea",
           "phon": "/iː/"
         },
         {
@@ -821,14 +745,409 @@ window.PHONICS_DAY_28 = {
           "phon": "/v/"
         },
         {
-          "letter": "e",
-          "phon": ""
+          "letter": "en",
+          "phon": "/ən/"
         }
       ],
       "sentences": [
-        "I leave school at three.",
-        "我三点离开学校。"
+        "Even a child can do it.",
+        "连小孩都能做。"
       ]
-    }
-  ]
+    },
+{
+    "word": "video",
+    "phonetic": "/ˈvɪ.di.əʊ/",
+    "definition": "n. 视频",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          }
+    ],
+    "sentences": [
+          "I see a video.",
+          "我看到一个视频。"
+    ]
+},
+{
+    "word": "vegetable",
+    "phonetic": "/ˈvɛd͡ʒtəbəl/",
+    "definition": "n. 蔬菜",
+    "breakdown": [
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a vegetable.",
+          "我看到一个蔬菜。"
+    ]
+},
+{
+    "word": "vacation",
+    "phonetic": "/veɪˈkeɪʃ(ə)n/",
+    "definition": "n. 假期",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          }
+    ],
+    "sentences": [
+          "I see a vacation.",
+          "我看到一个假期。"
+    ]
+},
+{
+    "word": "value",
+    "phonetic": "/ˈvæljuː/",
+    "definition": "n. 价值",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a value.",
+          "我看到一个价值。"
+    ]
+},
+{
+    "word": "view",
+    "phonetic": "/vjuː/",
+    "definition": "n. 景色；观点",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "w",
+                "phon": "/w/"
+          }
+    ],
+    "sentences": [
+          "I see a view.",
+          "我看到一个景色。"
+    ]
+},
+{
+    "word": "valid",
+    "phonetic": "/ˈvælɪd/",
+    "definition": "adj. 有效的",
+    "breakdown": [
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          }
+    ],
+    "sentences": [
+          "It is very valid.",
+          "它非常有效的。"
+    ]
+},
+{
+    "word": "event",
+    "phonetic": "/əˈvɛnt/",
+    "definition": "n. 事件",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a event.",
+          "我看到一个事件。"
+    ]
+},
+{
+    "word": "evening",
+    "phonetic": "/ˈivnɪŋ/",
+    "definition": "n. 傍晚",
+    "breakdown": [
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ng",
+                "phon": "/ŋ/"
+          }
+    ],
+    "sentences": [
+          "I see a evening.",
+          "我看到一个傍晚。"
+    ]
+},
+{
+    "word": "over",
+    "phonetic": "/ˈəʊ.və(ɹ)/",
+    "definition": "prep. 在…上方；结束",
+    "breakdown": [
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "The book is over the desk.",
+          "书在桌子的在…上方。"
+    ]
+},
+{
+    "word": "river",
+    "phonetic": "/ˈɹɪvə/",
+    "definition": "n. 河流",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "I see a river.",
+          "我看到一个河流。"
+    ]
+},
+{
+    "word": "never",
+    "phonetic": "/ˈnɛv.ə(ɹ)/",
+    "definition": "adv. 从不",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          }
+    ],
+    "sentences": [
+          "He runs never.",
+          "他从不地跑。"
+    ]
+},
+{
+    "word": "leave",
+    "phonetic": "/liːv/",
+    "definition": "v. 离开；留下",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "ve",
+                "phon": "/v/"
+          }
+    ],
+    "sentences": [
+          "Please leave it.",
+          "请离开它。"
+    ]
+},
+{
+    "word": "clever",
+    "phonetic": "/ˈklevə/",
+    "definition": "adj. 聪明的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "v",
+                "phon": "/v/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "It is very clever.",
+          "它非常聪明的。"
+    ]
 }
+  ]
+};

@@ -5,26 +5,45 @@ window.PHONICS_DAY_22 = {
   "pdfImage": "/phonics/images/day-22.jpg",
   "words": [
     {
-      "word": "bag",
-      "phonetic": "/bæɡ/",
-      "definition": "n. 包；袋",
+      "word": "boy",
+      "phonetic": "/bɔɪ/",
+      "definition": "n. 男孩",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "a",
-          "phon": "/æ/"
-        },
-        {
-          "letter": "g",
-          "phon": "/g/"
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
-        "Put it in the bag.",
-        "把它放进包里。"
+        "The boy is tall.",
+        "男孩很高。"
+      ]
+    },
+    {
+      "word": "big",
+      "phonetic": "/bɪɡ/",
+      "definition": "adj. 大的",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        }
+      ],
+      "sentences": [
+        "I have a big apple.",
+        "我有一个大苹果。"
       ]
     },
     {
@@ -46,31 +65,54 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "I sleep in my bed.",
-        "我在我的床上睡觉。"
+        "I go to bed at nine.",
+        "我九点上床。"
       ]
     },
     {
-      "word": "big",
-      "phonetic": "/bɪɡ/",
-      "definition": "adj. 大的；重要的",
+      "word": "bag",
+      "phonetic": "/bæɡ/",
+      "definition": "n. 包",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "i",
-          "phon": "/ɪ/"
+          "letter": "a",
+          "phon": "/æ/"
         },
         {
           "letter": "g",
-          "phon": "/g/"
+          "phon": "/ɡ/"
         }
       ],
       "sentences": [
-        "The elephant is very big.",
-        "大象非常大。"
+        "My bag is heavy.",
+        "我的包很重。"
+      ]
+    },
+    {
+      "word": "bat",
+      "phonetic": "/bæt/",
+      "definition": "n. 球拍",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "a",
+          "phon": "/æ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Hit the ball with a bat.",
+        "用球拍击球。"
       ]
     },
     {
@@ -92,37 +134,14 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "I ride the bus to school.",
-        "我乘公共汽车去学校。"
-      ]
-    },
-    {
-      "word": "book",
-      "phonetic": "/bʊk/",
-      "definition": "n. 书；书籍",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/ʊ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "I like to read a book.",
-        "我喜欢看书。"
+        "I take the bus to school.",
+        "我坐公交上学。"
       ]
     },
     {
       "word": "box",
       "phonetic": "/bɒks/",
-      "definition": "n. 盒子；箱",
+      "definition": "n. 盒子",
       "breakdown": [
         {
           "letter": "b",
@@ -138,112 +157,54 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "Put toys in the box.",
-        "把玩具放进盒子里。"
+        "The box is empty.",
+        "盒子是空的。"
       ]
     },
     {
-      "word": "boy",
-      "phonetic": "/bɔɪ/",
-      "definition": "n. 男孩",
+      "word": "book",
+      "phonetic": "/bʊk/",
+      "definition": "n. 书",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
         }
       ],
       "sentences": [
-        "He is a happy boy.",
-        "他是一个快乐的男孩。"
-      ]
-    },
-    {
-      "word": "baby",
-      "phonetic": "/ˈbeɪbi/",
-      "definition": "n. 婴儿；宝贝",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/eɪ/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
-        }
-      ],
-      "sentences": [
-        "She has a cute baby.",
-        "她有一个可爱的宝宝。"
+        "I read a book.",
+        "我读一本书。"
       ]
     },
     {
       "word": "ball",
       "phonetic": "/bɔːl/",
-      "definition": "n. 球；舞会",
+      "definition": "n. 球",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "a",
+          "letter": "al",
           "phon": "/ɔː/"
         },
         {
-          "letter": "ll",
-          "phon": "/əl/"
+          "letter": "l",
+          "phon": "/l/"
         }
       ],
       "sentences": [
-        "Play with the big ball.",
-        "玩那个大球。"
-      ]
-    },
-    {
-      "word": "banana",
-      "phonetic": "/bəˈnɑːnə/",
-      "definition": "n. 香蕉",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "I like to eat banana.",
-        "我喜欢吃香蕉。"
+        "Throw the ball to me.",
+        "把球扔给我。"
       ]
     },
     {
@@ -265,42 +226,22 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "A little bird sings a song.",
-        "一只小鸟唱着歌。"
+        "The bird sings.",
+        "鸟在唱歌。"
       ]
     },
     {
-      "word": "bike",
-      "phonetic": "/baɪk/",
-      "definition": "n. 自行车",
+      "word": "blue",
+      "phonetic": "/bluː/",
+      "definition": "adj. 蓝色的",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "My new bike is red.",
-        "我的新自行车是红色的。"
-      ]
-    },
-    {
-      "word": "blue",
-      "phonetic": "/bluː/",
-      "definition": "adj. 蓝色的；忧郁的",
-      "breakdown": [
-        {
-          "letter": "bl",
-          "phon": "/bl/"
+          "letter": "l",
+          "phon": "/l/"
         },
         {
           "letter": "ue",
@@ -315,7 +256,7 @@ window.PHONICS_DAY_22 = {
     {
       "word": "black",
       "phonetic": "/blæk/",
-      "definition": "adj. 黑色的；黑暗的",
+      "definition": "adj. 黑色的",
       "breakdown": [
         {
           "letter": "b",
@@ -335,8 +276,35 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "The cat is black.",
-        "这只猫是黑色的。"
+        "I have a black pen.",
+        "我有一支黑笔。"
+      ]
+    },
+    {
+      "word": "bread",
+      "phonetic": "/bred/",
+      "definition": "n. 面包",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/e/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "I eat bread for breakfast.",
+        "我早餐吃面包。"
       ]
     },
     {
@@ -345,8 +313,12 @@ window.PHONICS_DAY_22 = {
       "definition": "adj. 棕色的",
       "breakdown": [
         {
-          "letter": "br",
-          "phon": "/br/"
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "r",
+          "phon": "/r/"
         },
         {
           "letter": "ow",
@@ -358,207 +330,77 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "The dog has brown fur.",
-        "这只狗有棕色的毛。"
+        "I have brown hair.",
+        "我有棕色头发。"
       ]
     },
     {
-      "word": "bread",
-      "phonetic": "/bred/",
-      "definition": "n. 面包",
-      "breakdown": [
-        {
-          "letter": "br",
-          "phon": "/br/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "I like to eat bread.",
-        "我喜欢吃面包。"
-      ]
-    },
-    {
-      "word": "breakfast",
-      "phonetic": "/ˈbrekfəst/",
-      "definition": "n. 早餐",
-      "breakdown": [
-        {
-          "letter": "br",
-          "phon": "/br/"
-        },
-        {
-          "letter": "ea",
-          "phon": "/e/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        }
-      ],
-      "sentences": [
-        "I eat eggs for breakfast.",
-        "我早餐吃鸡蛋。"
-      ]
-    },
-    {
-      "word": "brother",
-      "phonetic": "/ˈbrʌðər/",
-      "definition": "n. 兄弟",
-      "breakdown": [
-        {
-          "letter": "br",
-          "phon": "/br/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ʌ/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "He is my brother.",
-        "他是我的兄弟。"
-      ]
-    },
-    {
-      "word": "bathroom",
-      "phonetic": "/ˈbɑːθruːm/",
-      "definition": "n. 浴室；卫生间",
+      "word": "bear",
+      "phonetic": "/beə/",
+      "definition": "n. 熊",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "ear",
+          "phon": "/eə/"
         }
       ],
       "sentences": [
-        "Where is the bathroom?",
-        "卫生间在哪里？"
+        "The bear is big.",
+        "熊很大。"
       ]
     },
     {
-      "word": "bedroom",
-      "phonetic": "/ˈbedruːm/",
-      "definition": "n. 卧室",
+      "word": "boat",
+      "phonetic": "/bəʊt/",
+      "definition": "n. 船",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "oo",
-          "phon": "/uː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "My bed is in the bedroom.",
-        "我的床在卧室里。"
-      ]
-    },
-    {
-      "word": "basketball",
-      "phonetic": "/ˈbɑːskɪtbɔːl/",
-      "definition": "n. 篮球；篮球运动",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "sk",
-          "phon": "/sk/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪ/"
+          "letter": "oa",
+          "phon": "/əʊ/"
         },
         {
           "letter": "t",
           "phon": "/t/"
-        },
+        }
+      ],
+      "sentences": [
+        "We row the boat.",
+        "我们划船。"
+      ]
+    },
+    {
+      "word": "baby",
+      "phonetic": "/ˈbeɪbi/",
+      "definition": "n. 婴儿",
+      "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
           "letter": "a",
-          "phon": "/ɔː/"
+          "phon": "/eɪ/"
         },
         {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "l"
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "y",
+          "phon": "/i/"
         }
       ],
       "sentences": [
-        "Let's play basketball.",
-        "我们来打篮球。"
+        "The baby is sleeping.",
+        "宝宝在睡觉。"
       ]
     },
     {
@@ -575,9 +417,8 @@ window.PHONICS_DAY_22 = {
           "phon": "/æ/"
         },
         {
-          "letter": "b",
-          "phon": "/b/",
-          "silent": "b"
+          "letter": "bb",
+          "phon": "/b/"
         },
         {
           "letter": "i",
@@ -589,35 +430,89 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "The rabbit likes to hop.",
-        "兔子喜欢跳。"
+        "The rabbit hops fast.",
+        "兔子跳得快。"
       ]
     },
     {
-      "word": "hobby",
-      "phonetic": "/ˈhɒbi/",
-      "definition": "n. 爱好，业余爱好",
+      "word": "rubber",
+      "phonetic": "/ˈrʌbə/",
+      "definition": "n. 橡胶",
       "breakdown": [
         {
-          "letter": "h",
-          "phon": "/h/"
+          "letter": "r",
+          "phon": "/r/"
         },
         {
-          "letter": "o",
-          "phon": "/ɒ/"
+          "letter": "u",
+          "phon": "/ʌ/"
         },
         {
           "letter": "bb",
           "phon": "/b/"
         },
         {
-          "letter": "y",
-          "phon": "/i/"
+          "letter": "er",
+          "phon": "/ə/"
         }
       ],
       "sentences": [
-        "My hobby is drawing.",
-        "我的爱好是画画。"
+        "I erase with rubber.",
+        "我用橡皮擦。"
+      ]
+    },
+    {
+      "word": "ribbon",
+      "phonetic": "/ˈrɪbən/",
+      "definition": "n. 丝带",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/ɪ/"
+        },
+        {
+          "letter": "bb",
+          "phon": "/b/"
+        },
+        {
+          "letter": "on",
+          "phon": "/ən/"
+        }
+      ],
+      "sentences": [
+        "Tie a ribbon on the gift.",
+        "在礼物上系丝带。"
+      ]
+    },
+    {
+      "word": "bubble",
+      "phonetic": "/ˈbʌbəl/",
+      "definition": "n. 泡泡",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "u",
+          "phon": "/ʌ/"
+        },
+        {
+          "letter": "bb",
+          "phon": "/b/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "The bubble pops.",
+        "泡泡破了。"
       ]
     },
     {
@@ -634,49 +529,70 @@ window.PHONICS_DAY_22 = {
           "phon": "/æ/"
         },
         {
-          "letter": "b",
-          "phon": "",
-          "silent": "b"
-        },
-        {
-          "letter": "b",
+          "letter": "bb",
           "phon": "/b/"
         },
         {
-          "letter": "a",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "ge",
-          "phon": "/dʒ/"
+          "letter": "age",
+          "phon": "/ɪdʒ/"
         }
       ],
       "sentences": [
-        "I like to eat cabbage.",
-        "我喜欢吃卷心菜。"
+        "I eat cabbage for dinner.",
+        "我晚餐吃卷心菜。"
       ]
     },
     {
-      "word": "rubber",
-      "phonetic": "/ˈrʌbər/",
-      "definition": "n. 橡胶；橡皮",
+      "word": "pebble",
+      "phonetic": "/ˈpebəl/",
+      "definition": "n. 鹅卵石",
       "breakdown": [
         {
-          "letter": "r",
-          "phon": "/r/"
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        },
+        {
+          "letter": "bb",
+          "phon": "/b/"
+        },
+        {
+          "letter": "le",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "I pick up a pebble.",
+        "我捡起一块鹅卵石。"
+      ]
+    },
+    {
+      "word": "cucumber",
+      "phonetic": "/ˈkjuːkʌmbə/",
+      "definition": "n. 黄瓜",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "c",
+          "phon": "/k/"
         },
         {
           "letter": "u",
           "phon": "/ʌ/"
         },
         {
-          "letter": "b",
-          "phon": "",
-          "silent": "b"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "mb",
+          "phon": "/m/"
         },
         {
           "letter": "er",
@@ -684,62 +600,87 @@ window.PHONICS_DAY_22 = {
         }
       ],
       "sentences": [
-        "This is a rubber duck.",
-        "这是一只橡皮鸭。"
+        "I like cucumber salad.",
+        "我喜欢黄瓜沙拉。"
       ]
     },
     {
-      "word": "ribbon",
-      "phonetic": "/ˈrɪbən/",
-      "definition": "n. 丝带",
+      "word": "tube",
+      "phonetic": "/tjuːb/",
+      "definition": "n. 管子",
       "breakdown": [
         {
-          "letter": "rib",
-          "phon": ""
-        },
-        {
-          "letter": "bon",
-          "phon": ""
-        }
-      ],
-      "sentences": [
-        "She tied a ribbon in her hair.",
-        "她在头发上系了一条丝带。"
-      ]
-    },
-    {
-      "word": "bubble",
-      "phonetic": "/ˈbʌbəl/",
-      "definition": "n.泡泡",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "t",
+          "phon": "/t/"
         },
         {
           "letter": "u",
-          "phon": "/ʌ/"
+          "phon": "/juː/"
         },
         {
-          "letter": "b",
-          "phon": "/b/",
-          "silent": "b"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/",
-          "silent": "e"
+          "letter": "be",
+          "phon": "/b/"
         }
       ],
       "sentences": [
-        "The child blew a bubble.",
-        "那个孩子吹了一个泡泡。"
+        "Squeeze the tube gently.",
+        "轻轻挤管子。"
       ]
     },
     {
-      "word": "rob",
-      "phonetic": "/rɒb/",
-      "definition": "v. 抢劫，盗窃",
+      "word": "cube",
+      "phonetic": "/kjuːb/",
+      "definition": "n. 立方体",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "u",
+          "phon": "/juː/"
+        },
+        {
+          "letter": "be",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "The ice cube melts.",
+        "冰块融化了。"
+      ]
+    },
+    {
+      "word": "globe",
+      "phonetic": "/ɡləʊb/",
+      "definition": "n. 地球仪",
+      "breakdown": [
+        {
+          "letter": "g",
+          "phon": "/ɡ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "o",
+          "phon": "/əʊ/"
+        },
+        {
+          "letter": "be",
+          "phon": "/b/"
+        }
+      ],
+      "sentences": [
+        "The globe shows the world.",
+        "地球仪展示世界。"
+      ]
+    },
+    {
+      "word": "robe",
+      "phonetic": "/rəʊb/",
+      "definition": "n. 长袍",
       "breakdown": [
         {
           "letter": "r",
@@ -747,63 +688,412 @@ window.PHONICS_DAY_22 = {
         },
         {
           "letter": "o",
-          "phon": "/ɒ/"
+          "phon": "/əʊ/"
         },
         {
-          "letter": "b",
+          "letter": "be",
           "phon": "/b/"
         }
       ],
       "sentences": [
-        "He was afraid someone might rob him.",
-        "他担心有人会抢劫他。"
+        "He wears a bath robe.",
+        "他穿着浴袍。"
       ]
     },
     {
-      "word": "busy",
-      "phonetic": "/ˈbɪzi/",
-      "definition": "adj. 忙碌的",
+      "word": "doubt",
+      "phonetic": "/daʊt/",
+      "definition": "n. 怀疑",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "d",
+          "phon": "/d/"
         },
         {
-          "letter": "u",
-          "phon": "/ɪ/"
+          "letter": "ou",
+          "phon": "/aʊ/"
         },
         {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "y",
-          "phon": "/i/"
+          "letter": "bt",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "I am busy playing now.",
-        "我正在忙着玩。"
+        "I have a doubt about this.",
+        "我对此有疑问。"
       ]
     },
     {
-      "word": "bye",
-      "phonetic": "/baɪ/",
-      "definition": "int. 再见",
+      "word": "debt",
+      "phonetic": "/det/",
+      "definition": "n. 债务",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
+          "letter": "de",
+          "phon": "/d/"
         },
         {
-          "letter": "ye",
-          "phon": "/aɪ/"
+          "letter": "bt",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "Bye bye, see you soon.",
-        "再见，很快再见。"
+        "He pays off his debt.",
+        "他还清了债务。"
       ]
-    }
-  ]
+    },
+{
+    "word": "banana",
+    "phonetic": "/bəˈnɑːnə/",
+    "definition": "n. 香蕉",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          }
+    ],
+    "sentences": [
+          "I see a banana.",
+          "我看到一个香蕉。"
+    ]
+},
+{
+    "word": "bike",
+    "phonetic": "/bɐɪk/",
+    "definition": "n. 自行车",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a bike.",
+          "我看到一个自行车。"
+    ]
+},
+{
+    "word": "breakfast",
+    "phonetic": "/ˈbɹɛkfəst/",
+    "definition": "n. 早餐",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "ea",
+                "phon": "/iː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a breakfast.",
+          "我看到一个早餐。"
+    ]
+},
+{
+    "word": "brother",
+    "phonetic": "/ˈbɹɐðɘ(ɹ)/",
+    "definition": "n. 兄弟",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a brother.",
+          "我看到一个兄弟。"
+    ]
+},
+{
+    "word": "bathroom",
+    "phonetic": "/ˈbæθ.ɹuːm/",
+    "definition": "n. 浴室",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a bathroom.",
+          "我看到一个浴室。"
+    ]
+},
+{
+    "word": "bedroom",
+    "phonetic": "/ˈbɛdɹʊm/",
+    "definition": "n. 卧室",
+    "breakdown": [
+          {
+                "letter": "be",
+                "phon": "/b/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "oo",
+                "phon": "/uː/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "I see a bedroom.",
+          "我看到一个卧室。"
+    ]
+},
+{
+    "word": "basketball",
+    "phonetic": "/ˈbɑːs.kɪt.bɔːl/",
+    "definition": "n. 篮球",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "a",
+                "phon": "/æ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "I see a basketball.",
+          "我看到一个篮球。"
+    ]
+},
+{
+    "word": "hobby",
+    "phonetic": "/ˈhɒ.bi/",
+    "definition": "n. 爱好",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "bb",
+                "phon": "/b/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a hobby.",
+          "我看到一个爱好。"
+    ]
+},
+{
+    "word": "rob",
+    "phonetic": "/ɹɒb/",
+    "definition": "v. 抢劫",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "b",
+                "phon": "/b/"
+          }
+    ],
+    "sentences": [
+          "Please rob it.",
+          "请抢劫它。"
+    ]
+},
+{
+    "word": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "definition": "adj. 忙的",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "u",
+                "phon": "/ʌ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "It is very busy.",
+          "它非常忙的。"
+    ]
+},
+{
+    "word": "bye",
+    "phonetic": "/baɪ/",
+    "definition": "int. 再见",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Bye!",
+          "再见！"
+    ]
 }
+  ]
+};

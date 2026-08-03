@@ -5,28 +5,307 @@ window.PHONICS_DAY_10 = {
   "pdfImage": "/phonics/images/day-10.jpg",
   "words": [
     {
-      "word": "arm",
-      "phonetic": "/ɑːm/",
-      "definition": "n. 手臂；胳膊",
+      "word": "car",
+      "phonetic": "/kɑː/",
+      "definition": "n. 汽车",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        }
+      ],
+      "sentences": [
+        "I drive a red car.",
+        "我开一辆红色的车。"
+      ]
+    },
+    {
+      "word": "far",
+      "phonetic": "/fɑː/",
+      "definition": "adv. 远",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        }
+      ],
+      "sentences": [
+        "How far is the school?",
+        "学校有多远？"
+      ]
+    },
+    {
+      "word": "bar",
+      "phonetic": "/bɑː/",
+      "definition": "n. 吧台",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        }
+      ],
+      "sentences": [
+        "We meet at the bar.",
+        "我们在酒吧见面。"
+      ]
+    },
+    {
+      "word": "jar",
+      "phonetic": "/dʒɑː/",
+      "definition": "n. 罐子",
+      "breakdown": [
+        {
+          "letter": "j",
+          "phon": "/dʒ/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        }
+      ],
+      "sentences": [
+        "The jar is full of candy.",
+        "罐子里装满了糖果。"
+      ]
+    },
+    {
+      "word": "star",
+      "phonetic": "/stɑː/",
+      "definition": "n. 星星",
+      "breakdown": [
+        {
+          "letter": "st",
+          "phon": "/st/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        }
+      ],
+      "sentences": [
+        "I see a star in the sky.",
+        "我看到天上一颗星。"
+      ]
+    },
+    {
+      "word": "park",
+      "phonetic": "/pɑːk/",
+      "definition": "n. 公园",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "We play in the park.",
+        "我们在公园里玩。"
+      ]
+    },
+    {
+      "word": "dark",
+      "phonetic": "/dɑːk/",
+      "definition": "adj. 黑暗的",
+      "breakdown": [
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "It is dark at night.",
+        "晚上很黑。"
+      ]
+    },
+    {
+      "word": "bark",
+      "phonetic": "/bɑːk/",
+      "definition": "v. 吠",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "The dog barks loudly.",
+        "狗大声叫。"
+      ]
+    },
+    {
+      "word": "mark",
+      "phonetic": "/mɑːk/",
+      "definition": "n. 标记",
+      "breakdown": [
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "k",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "Put a mark on the page.",
+        "在页上做个标记。"
+      ]
+    },
+    {
+      "word": "smart",
+      "phonetic": "/smɑːt/",
+      "definition": "adj. 聪明的",
+      "breakdown": [
+        {
+          "letter": "sm",
+          "phon": "/sm/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "She is a smart girl.",
+        "她是个聪明的女孩。"
+      ]
+    },
+    {
+      "word": "art",
+      "phonetic": "/ɑːt/",
+      "definition": "n. 艺术",
       "breakdown": [
         {
           "letter": "ar",
           "phon": "/ɑː/"
         },
         {
-          "letter": "m",
-          "phon": "/m/"
+          "letter": "t",
+          "phon": "/t/"
         }
       ],
       "sentences": [
-        "He hurt his arm.",
-        "他伤了他的手臂。"
+        "I like art class.",
+        "我喜欢美术课。"
+      ]
+    },
+    {
+      "word": "part",
+      "phonetic": "/pɑːt/",
+      "definition": "n. 部分",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "This is my favorite part.",
+        "这是我最喜欢的部分。"
+      ]
+    },
+    {
+      "word": "cart",
+      "phonetic": "/kɑːt/",
+      "definition": "n. 手推车",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Put the items in the cart.",
+        "把东西放进购物车。"
+      ]
+    },
+    {
+      "word": "heart",
+      "phonetic": "/hɑːt/",
+      "definition": "n. 心",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "ea",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "rt",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "My heart beats fast.",
+        "我的心跳得很快。"
       ]
     },
     {
       "word": "card",
       "phonetic": "/kɑːd/",
-      "definition": "n. 卡片；扑克牌",
+      "definition": "n. 卡片",
       "breakdown": [
         {
           "letter": "c",
@@ -42,469 +321,54 @@ window.PHONICS_DAY_10 = {
         }
       ],
       "sentences": [
-        "Let's play a card game.",
-        "我们来玩纸牌游戏吧。"
+        "I send a birthday card.",
+        "我寄了一张生日卡。"
       ]
     },
     {
-      "word": "park",
-      "phonetic": "/pɑːk/",
-      "definition": "n. 公园；停车场",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Let's play in the park.",
-        "我们去公园玩吧。"
-      ]
-    },
-    {
-      "word": "far",
-      "phonetic": "/fɑː/",
-      "definition": "adv. 远地",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        }
-      ],
-      "sentences": [
-        "The park is not far.",
-        "公园不远。"
-      ]
-    },
-    {
-      "word": "star",
-      "phonetic": "/stɑː/",
-      "definition": "n. 星星；明星",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        }
-      ],
-      "sentences": [
-        "Look at the bright star.",
-        "看那颗明亮的星星。"
-      ]
-    },
-    {
-      "word": "large",
-      "phonetic": "/lɑːdʒ/",
-      "definition": "adj. 大的；宽大的",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "g",
-          "phon": "/dʒ/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The elephant is very large.",
-        "大象非常大。"
-      ]
-    },
-    {
-      "word": "grass",
-      "phonetic": "/ɡrɑːs/",
-      "definition": "n. 草",
-      "breakdown": [
-        {
-          "letter": "gr",
-          "phon": "/gr/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "ss",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "The green grass is soft.",
-        "绿色的草地很柔软。"
-      ]
-    },
-    {
-      "word": "class",
-      "phonetic": "/klɑːs/",
-      "definition": "n. 班级",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "ss",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "My class is fun.",
-        "我的班级很有趣。"
-      ]
-    },
-    {
-      "word": "path",
-      "phonetic": "/pɑːθ/",
-      "definition": "n. 小路，路径",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/θ/"
-        }
-      ],
-      "sentences": [
-        "This is a small path.",
-        "这是一条小路。"
-      ]
-    },
-    {
-      "word": "pass",
-      "phonetic": "/pɑːs/",
-      "definition": "v. 通过；经过",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "ss",
-          "phon": "/s/"
-        }
-      ],
-      "sentences": [
-        "Please pass me the ball.",
-        "请把球传给我。"
-      ]
-    },
-    {
-      "word": "past",
-      "phonetic": "/pɑːst/",
-      "definition": "n. 过去；昔日",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        }
-      ],
-      "sentences": [
-        "The dog ran past me.",
-        "狗狗从我身边跑过。"
-      ]
-    },
-    {
-      "word": "father",
-      "phonetic": "/ˈfɑːðər/",
-      "definition": "n. 父亲",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "th",
-          "phon": "/ð/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "My father is tall.",
-        "我的爸爸很高。"
-      ]
-    },
-    {
-      "word": "calm",
-      "phonetic": "/kɑːm/",
-      "definition": "adj. 平静的",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "al",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        }
-      ],
-      "sentences": [
-        "The sea is calm.",
-        "大海很平静。"
-      ]
-    },
-    {
-      "word": "half",
-      "phonetic": "/hɑːf/",
-      "definition": "n. 一半",
+      "word": "hard",
+      "phonetic": "/hɑːd/",
+      "definition": "adj. 困难的",
       "breakdown": [
         {
           "letter": "h",
           "phon": "/h/"
         },
         {
-          "letter": "al",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        }
-      ],
-      "sentences": [
-        "I ate half an apple.",
-        "我吃了一半苹果。"
-      ]
-    },
-    {
-      "word": "calf",
-      "phonetic": "/kɑːf/",
-      "definition": "n. 小牛",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "l",
-          "phon": "",
-          "silent": "l"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/"
-        }
-      ],
-      "sentences": [
-        "The cow has a calf.",
-        "这头牛有一只小牛。"
-      ]
-    },
-    {
-      "word": "aunt",
-      "phonetic": "/ɑːnt/",
-      "definition": "n. 姑妈；阿姨",
-      "breakdown": [
-        {
-          "letter": "au",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "nt",
-          "phon": "/nt/"
-        }
-      ],
-      "sentences": [
-        "My aunt visits us.",
-        "我的姑妈来看我们。"
-      ]
-    },
-    {
-      "word": "heart",
-      "phonetic": "/hɑːt/",
-      "definition": "n. 心脏；内心",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "ear",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "My heart beats fast.",
-        "我的心跳得很快。"
-      ]
-    },
-    {
-      "word": "hearth",
-      "phonetic": "/hɑːθ/",
-      "definition": "n. 壁炉；炉床",
-      "breakdown": [
-        {
-          "letter": "hearth",
-          "phon": ""
-        }
-      ],
-      "sentences": [
-        "The family gathered around the hearth.",
-        "一家人围坐在壁炉旁。"
-      ]
-    },
-    {
-      "word": "clerk",
-      "phonetic": "/klɑːk/",
-      "definition": "n. 办事员；店员",
-      "breakdown": [
-        {
-          "letter": "cl",
-          "phon": "/kl/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The clerk helped me find the book.",
-        "办事员帮我找到了那本书。"
-      ]
-    },
-    {
-      "word": "car",
-      "phonetic": "/kɑː/",
-      "definition": "n. 汽车",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        }
-      ],
-      "sentences": [
-        "Look! A big red car.",
-        "看！一辆红色的大汽车。"
-      ]
-    },
-    {
-      "word": "bar",
-      "phonetic": "/bɑː/",
-      "definition": "n. 酒吧；棒",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        }
-      ],
-      "sentences": [
-        "The candy bar is sweet.",
-        "这块糖果棒很甜。"
-      ]
-    },
-    {
-      "word": "art",
-      "phonetic": "/ɑːt/",
-      "definition": "n. 艺术；美术",
-      "breakdown": [
-        {
           "letter": "ar",
           "phon": "/ɑː/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
-        "She loves to draw art.",
-        "她喜欢画画。"
+        "This question is hard.",
+        "这个问题很难。"
       ]
     },
     {
-      "word": "part",
-      "phonetic": "/pɑːt/",
-      "definition": "n. 部分；角色",
+      "word": "yard",
+      "phonetic": "/jɑːd/",
+      "definition": "n. 院子",
       "breakdown": [
         {
-          "letter": "p",
-          "phon": "/p/"
+          "letter": "y",
+          "phon": "/j/"
         },
         {
           "letter": "ar",
           "phon": "/ɑː/"
         },
         {
-          "letter": "t",
-          "phon": "/t/"
+          "letter": "d",
+          "phon": "/d/"
         }
       ],
       "sentences": [
-        "I want a part of the cake.",
-        "我想要一部分蛋糕。"
+        "We play in the yard.",
+        "我们在院子里玩。"
       ]
     },
     {
@@ -526,129 +390,33 @@ window.PHONICS_DAY_10 = {
         }
       ],
       "sentences": [
-        "We visit a big farm.",
-        "我们参观一个大农场。"
+        "There are many animals on the farm.",
+        "农场里有很多动物。"
       ]
     },
     {
-      "word": "dark",
-      "phonetic": "/dɑːk/",
-      "definition": "adj. 黑暗的；深色的",
+      "word": "arm",
+      "phonetic": "/ɑːm/",
+      "definition": "n. 手臂",
       "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
         {
           "letter": "ar",
           "phon": "/ɑː/"
         },
         {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "It is dark at night.",
-        "晚上是黑暗的。"
-      ]
-    },
-    {
-      "word": "shark",
-      "phonetic": "/ʃɑːk/",
-      "definition": "n. 鲨鱼",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "Look, a big shark!",
-        "看，一条大鲨鱼！"
-      ]
-    },
-    {
-      "word": "bark",
-      "phonetic": "/bɑːk/",
-      "definition": "n. 狗叫；树皮",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/"
-        }
-      ],
-      "sentences": [
-        "The dog likes to bark.",
-        "这只狗喜欢叫。"
-      ]
-    },
-    {
-      "word": "march",
-      "phonetic": "/mɑːtʃ/",
-      "definition": "n. 三月",
-      "breakdown": [
-        {
-          "letter": "M",
+          "letter": "m",
           "phon": "/m/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
         }
       ],
       "sentences": [
-        "My birthday is in March.",
-        "我的生日在三月。"
+        "I hurt my arm.",
+        "我伤了手臂。"
       ]
     },
     {
-      "word": "start",
-      "phonetic": "/stɑːt/",
-      "definition": "v. 开始；启动",
-      "breakdown": [
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "ar",
-          "phon": "/ɑː/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Let's start the game now.",
-        "我们现在开始游戏吧。"
-      ]
-    },
-    {
-      "word": "hard",
-      "phonetic": "/hɑːd/",
-      "definition": "adj. 坚硬的；困难的",
+      "word": "harm",
+      "phonetic": "/hɑːm/",
+      "definition": "v. 伤害",
       "breakdown": [
         {
           "letter": "h",
@@ -659,14 +427,614 @@ window.PHONICS_DAY_10 = {
           "phon": "/ɑː/"
         },
         {
-          "letter": "d",
-          "phon": "/d/"
+          "letter": "m",
+          "phon": "/m/"
         }
       ],
       "sentences": [
-        "This rock is hard.",
-        "这块石头很硬。"
+        "Don't harm the animals.",
+        "不要伤害动物。"
       ]
-    }
-  ]
+    },
+    {
+      "word": "charm",
+      "phonetic": "/tʃɑːm/",
+      "definition": "n. 魅力",
+      "breakdown": [
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "She has a lot of charm.",
+        "她很有魅力。"
+      ]
+    },
+    {
+      "word": "warm",
+      "phonetic": "/wɔːm/",
+      "definition": "adj. 温暖的",
+      "breakdown": [
+        {
+          "letter": "w",
+          "phon": "/w/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɔː/"
+        },
+        {
+          "letter": "m",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "The water is warm.",
+        "水是温的。"
+      ]
+    },
+    {
+      "word": "large",
+      "phonetic": "/lɑːdʒ/",
+      "definition": "adj. 大的",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ge",
+          "phon": "/dʒ/"
+        }
+      ],
+      "sentences": [
+        "I have a large room.",
+        "我有一个大房间。"
+      ]
+    },
+    {
+      "word": "charge",
+      "phonetic": "/tʃɑːdʒ/",
+      "definition": "v. 充电；收费",
+      "breakdown": [
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "ar",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ge",
+          "phon": "/dʒ/"
+        }
+      ],
+      "sentences": [
+        "Charge your phone at night.",
+        "晚上给手机充电。"
+      ]
+    },
+    {
+      "word": "glass",
+      "phonetic": "/ɡlɑːs/",
+      "definition": "n. 玻璃杯",
+      "breakdown": [
+        {
+          "letter": "gl",
+          "phon": "/gl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Drink water from a glass.",
+        "用玻璃杯喝水。"
+      ]
+    },
+    {
+      "word": "class",
+      "phonetic": "/klɑːs/",
+      "definition": "n. 班级",
+      "breakdown": [
+        {
+          "letter": "cl",
+          "phon": "/kl/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Our class has thirty students.",
+        "我们班有三十个学生。"
+      ]
+    },
+    {
+      "word": "grass",
+      "phonetic": "/ɡrɑːs/",
+      "definition": "n. 草",
+      "breakdown": [
+        {
+          "letter": "gr",
+          "phon": "/gr/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "ss",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Don't walk on the grass.",
+        "不要踩草坪。"
+      ]
+    },
+    {
+      "word": "last",
+      "phonetic": "/lɑːst/",
+      "definition": "adj. 最后的",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
+        }
+      ],
+      "sentences": [
+        "He was the last one to leave.",
+        "他是最后一个离开的。"
+      ]
+    },
+    {
+      "word": "past",
+      "phonetic": "/pɑːst/",
+      "definition": "prep. 经过",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
+        }
+      ],
+      "sentences": [
+        "Walk past the school.",
+        "走过学校。"
+      ]
+    },
+    {
+      "word": "fast",
+      "phonetic": "/fɑːst/",
+      "definition": "adv. 快地",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "a",
+          "phon": "/ɑː/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
+        }
+      ],
+      "sentences": [
+        "He runs very fast.",
+        "他跑得很快。"
+      ]
+    },
+{
+    "word": "birthday",
+    "phonetic": "/ˈbɜːθ.deɪ/",
+    "definition": "n. 生日",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "ir",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a birthday.",
+          "我看到一个生日。"
+    ]
+},
+{
+    "word": "path",
+    "phonetic": "/pʰäːθ/",
+    "definition": "n. 小路",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a path.",
+          "我看到一个小路。"
+    ]
+},
+{
+    "word": "pass",
+    "phonetic": "/pʰäːs/",
+    "definition": "v. 通过；传递",
+    "breakdown": [
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          }
+    ],
+    "sentences": [
+          "Please pass it.",
+          "请通过它。"
+    ]
+},
+{
+    "word": "yesterday",
+    "phonetic": "/ˈjɛstədeɪ/",
+    "definition": "n. 昨天",
+    "breakdown": [
+          {
+                "letter": "y",
+                "phon": "/j/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "y",
+                "phon": "/j/"
+          }
+    ],
+    "sentences": [
+          "I see a yesterday.",
+          "我看到一个昨天。"
+    ]
+},
+{
+    "word": "father",
+    "phonetic": "/ˈfaːðə/",
+    "definition": "n. 父亲",
+    "breakdown": [
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "a",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          }
+    ],
+    "sentences": [
+          "I see a father.",
+          "我看到一个父亲。"
+    ]
+},
+{
+    "word": "calm",
+    "phonetic": "/kam/",
+    "definition": "adj. 平静的",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "al",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "m",
+                "phon": "/m/"
+          }
+    ],
+    "sentences": [
+          "It is very calm.",
+          "它非常平静的。"
+    ]
+},
+{
+    "word": "half",
+    "phonetic": "/hɑːf/",
+    "definition": "n. 一半",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "al",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a half.",
+          "我看到一个一半。"
+    ]
+},
+{
+    "word": "calf",
+    "phonetic": "/kæf/",
+    "definition": "n. 小牛",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "al",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a calf.",
+          "我看到一个小牛。"
+    ]
+},
+{
+    "word": "aunt",
+    "phonetic": "/ɑ(ː)nt/",
+    "definition": "n. 阿姨；姑妈",
+    "breakdown": [
+          {
+                "letter": "au",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a aunt.",
+          "我看到一个阿姨。"
+    ]
+},
+{
+    "word": "hearth",
+    "phonetic": "/hɑːθ/",
+    "definition": "n. 壁炉",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "ear",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "th",
+                "phon": "/θ/"
+          }
+    ],
+    "sentences": [
+          "I see a hearth.",
+          "我看到一个壁炉。"
+    ]
+},
+{
+    "word": "clerk",
+    "phonetic": "/klɐːk/",
+    "definition": "n. 职员；店员",
+    "breakdown": [
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "er",
+                "phon": "/ɜː/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a clerk.",
+          "我看到一个职员。"
+    ]
+},
+{
+    "word": "shark",
+    "phonetic": "/ʃɑːk/",
+    "definition": "n. 鲨鱼",
+    "breakdown": [
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "k",
+                "phon": "/k/"
+          }
+    ],
+    "sentences": [
+          "I see a shark.",
+          "我看到一个鲨鱼。"
+    ]
+},
+{
+    "word": "start",
+    "phonetic": "/stɑːt/",
+    "definition": "v. 开始",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "Please start it.",
+          "请开始它。"
+    ]
+},
+{
+    "word": "march",
+    "phonetic": "/mɑːtʃ/",
+    "definition": "n. 三月；行进",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/ɑ:/"
+          },
+          {
+                "letter": "ar",
+                "phon": "/ɑː/"
+          },
+          {
+                "letter": "ch",
+                "phon": "/tʃ/"
+          }
+    ],
+    "sentences": [
+          "This is march.",
+          "这是三月。"
+    ]
 }
+  ]
+};

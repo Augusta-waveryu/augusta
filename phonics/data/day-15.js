@@ -19,8 +19,8 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "He is a happy boy.",
-        "他是一个快乐的男孩。"
+        "The boy is playing.",
+        "男孩在玩。"
       ]
     },
     {
@@ -38,8 +38,8 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "My favorite toy is a car.",
-        "我最喜欢的玩具是小汽车。"
+        "I have many toys.",
+        "我有很多玩具。"
       ]
     },
     {
@@ -57,26 +57,18 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "Her smile brings great joy.",
-        "她的笑容带来巨大的快乐。"
+        "The gift brings me joy.",
+        "礼物给我带来快乐。"
       ]
     },
     {
-      "word": "enjoy",
-      "phonetic": "/ɪnˈdʒɔɪ/",
-      "definition": "v. 享受；喜欢",
+      "word": "soy",
+      "phonetic": "/sɔɪ/",
+      "definition": "n. 大豆",
       "breakdown": [
         {
-          "letter": "e",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "j",
-          "phon": "/dʒ/"
+          "letter": "s",
+          "phon": "/s/"
         },
         {
           "letter": "oy",
@@ -84,14 +76,33 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "I enjoy playing games.",
-        "我喜欢玩游戏。"
+        "I drink soy milk.",
+        "我喝豆浆。"
+      ]
+    },
+    {
+      "word": "oil",
+      "phonetic": "/ɔɪl/",
+      "definition": "n. 油",
+      "breakdown": [
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Cook with a little oil.",
+        "用一点油做饭。"
       ]
     },
     {
       "word": "boil",
       "phonetic": "/bɔɪl/",
-      "definition": "v. 煮沸；沸腾",
+      "definition": "v. 煮沸",
       "breakdown": [
         {
           "letter": "b",
@@ -107,8 +118,77 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "The water will boil soon.",
-        "水很快就会开。"
+        "Boil the water first.",
+        "先把水烧开。"
+      ]
+    },
+    {
+      "word": "coil",
+      "phonetic": "/kɔɪl/",
+      "definition": "n. 线圈",
+      "breakdown": [
+        {
+          "letter": "c",
+          "phon": "/k/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "The coil is made of wire.",
+        "线圈是用金属丝做的。"
+      ]
+    },
+    {
+      "word": "foil",
+      "phonetic": "/fɔɪl/",
+      "definition": "n. 锡纸",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Wrap it in foil.",
+        "用锡纸包起来。"
+      ]
+    },
+    {
+      "word": "soil",
+      "phonetic": "/sɔɪl/",
+      "definition": "n. 土壤",
+      "breakdown": [
+        {
+          "letter": "s",
+          "phon": "/s/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "l",
+          "phon": "/l/"
+        }
+      ],
+      "sentences": [
+        "Plants grow in soil.",
+        "植物在土壤里生长。"
       ]
     },
     {
@@ -130,31 +210,8 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "I have one coin.",
-        "我有一个硬币。"
-      ]
-    },
-    {
-      "word": "soil",
-      "phonetic": "/sɔɪl/",
-      "definition": "n. 泥土，土壤",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "Plants grow in the soil.",
-        "植物在泥土里生长。"
+        "I have a gold coin.",
+        "我有一枚金币。"
       ]
     },
     {
@@ -176,14 +233,14 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "Can I join your game?",
-        "我能加入你的游戏吗？"
+        "Join us for dinner.",
+        "和我们一起吃晚饭。"
       ]
     },
     {
       "word": "point",
       "phonetic": "/pɔɪnt/",
-      "definition": "n. 点；要点",
+      "definition": "v. 指向",
       "breakdown": [
         {
           "letter": "p",
@@ -199,454 +256,8 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "Point to the blue car.",
-        "指向蓝色的车。"
-      ]
-    },
-    {
-      "word": "voice",
-      "phonetic": "/vɔɪs/",
-      "definition": "n. 声音；嗓音",
-      "breakdown": [
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "She has a soft voice.",
-        "她有一个温柔的声音。"
-      ]
-    },
-    {
-      "word": "oil",
-      "phonetic": "/ɔɪl/",
-      "definition": "n. 油",
-      "breakdown": [
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "We use oil for cooking.",
-        "我们用油做饭。"
-      ]
-    },
-    {
-      "word": "choice",
-      "phonetic": "/tʃɔɪs/",
-      "definition": "n. 选择",
-      "breakdown": [
-        {
-          "letter": "ch",
-          "phon": "/tʃ/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Make a good choice.",
-        "做出一个好的选择。"
-      ]
-    },
-    {
-      "word": "noise",
-      "phonetic": "/nɔɪz/",
-      "definition": "n. 噪音；喧闹声",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The dog makes a loud noise.",
-        "狗发出很大的声音。"
-      ]
-    },
-    {
-      "word": "toilet",
-      "phonetic": "/ˈtɔɪlɪt/",
-      "definition": "n. 厕所；马桶",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "Where is the toilet?",
-        "厕所在哪里？"
-      ]
-    },
-    {
-      "word": "spoil",
-      "phonetic": "/spɔɪl/",
-      "definition": "v. 破坏，宠坏",
-      "breakdown": [
-        {
-          "letter": "sp",
-          "phon": "/sp/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "Don't spoil your dinner.",
-        "不要糟蹋你的晚餐。"
-      ]
-    },
-    {
-      "word": "coil",
-      "phonetic": "/kɔɪl/",
-      "definition": "n. 卷，线圈",
-      "breakdown": [
-        {
-          "letter": "co",
-          "phon": "/k/"
-        },
-        {
-          "letter": "i",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "The wire was in a coil.",
-        "电线是卷曲的。"
-      ]
-    },
-    {
-      "word": "foil",
-      "phonetic": "/fɔɪl/",
-      "definition": "n. 箔",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "We wrapped the food in aluminum foil.",
-        "我们用铝箔纸包食物。"
-      ]
-    },
-    {
-      "word": "moist",
-      "phonetic": "/mɔɪst/",
-      "definition": "adj. 潮湿的",
-      "breakdown": [
-        {
-          "letter": "moist",
-          "phon": ""
-        }
-      ],
-      "sentences": [
-        "The cake was very moist.",
-        "这个蛋糕很湿润。"
-      ]
-    },
-    {
-      "word": "oyster",
-      "phonetic": "/ɔɪstə/",
-      "definition": "n. 牡蛎",
-      "breakdown": [
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "st",
-          "phon": "/st/"
-        },
-        {
-          "letter": "er",
-          "phon": "/ə/"
-        }
-      ],
-      "sentences": [
-        "We ate fresh oysters by the sea.",
-        "我们在海边吃了新鲜的牡蛎。"
-      ]
-    },
-    {
-      "word": "employ",
-      "phonetic": "/ɪmˈplɔɪ/",
-      "definition": "v. 雇用；使用",
-      "breakdown": [
-        {
-          "letter": "e",
-          "phon": "/e/"
-        },
-        {
-          "letter": "m",
-          "phon": "/m/"
-        },
-        {
-          "letter": "pl",
-          "phon": "/pl/"
-        },
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        }
-      ],
-      "sentences": [
-        "They employ many people.",
-        "他们雇用很多人。"
-      ]
-    },
-    {
-      "word": "cowboy",
-      "phonetic": "/ˈkaʊbɔɪ/",
-      "definition": "n. 牛仔",
-      "breakdown": [
-        {
-          "letter": "c",
-          "phon": "/k/"
-        },
-        {
-          "letter": "ow",
-          "phon": "/aʊ/"
-        },
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        }
-      ],
-      "sentences": [
-        "The cowboy rode his horse across the plains.",
-        "牛仔骑着他的马穿过平原。"
-      ]
-    },
-    {
-      "word": "royal",
-      "phonetic": "/ˈrɔɪəl/",
-      "definition": "adj. 皇家的",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "l",
-          "phon": "/l/"
-        }
-      ],
-      "sentences": [
-        "This is a royal crown.",
-        "这是一个皇家皇冠。"
-      ]
-    },
-    {
-      "word": "loyal",
-      "phonetic": "/ˈlɔɪəl/",
-      "definition": "adj. 忠诚的",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "al",
-          "phon": "/əl/"
-        }
-      ],
-      "sentences": [
-        "My dog is loyal.",
-        "我的狗很忠诚。"
-      ]
-    },
-    {
-      "word": "destroy",
-      "phonetic": "/dɪˈstrɔɪ/",
-      "definition": "v. 破坏；摧毁",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "str",
-          "phon": "/str/"
-        },
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        }
-      ],
-      "sentences": [
-        "Don't destroy the sandcastle.",
-        "不要破坏沙堡。"
-      ]
-    },
-    {
-      "word": "annoy",
-      "phonetic": "/əˈnɔɪ/",
-      "definition": "v. 惹恼；使烦恼",
-      "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "",
-          "silent": "n"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "oy",
-          "phon": "/ɔɪ/"
-        }
-      ],
-      "sentences": [
-        "Please do not annoy her.",
-        "请不要惹恼她。"
-      ]
-    },
-    {
-      "word": "poison",
-      "phonetic": "/ˈpɔɪzn/",
-      "definition": "n. 毒药",
-      "breakdown": [
-        {
-          "letter": "p",
-          "phon": "/p/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "s",
-          "phon": "/z/"
-        },
-        {
-          "letter": "o",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
-        }
-      ],
-      "sentences": [
-        "Do not touch the poison.",
-        "不要碰毒药。"
-      ]
-    },
-    {
-      "word": "avoid",
-      "phonetic": "/əˈvɔɪd/",
-      "definition": "v. 避免；避开",
-      "breakdown": [
-        {
-          "letter": "a",
-          "phon": "/ə/"
-        },
-        {
-          "letter": "v",
-          "phon": "/v/"
-        },
-        {
-          "letter": "oi",
-          "phon": "/ɔɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/"
-        }
-      ],
-      "sentences": [
-        "Avoid the big dog.",
-        "避开那只大狗。"
+        "Point to the correct answer.",
+        "指向正确的答案。"
       ]
     },
     {
@@ -668,18 +279,95 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "My knee is a joint.",
-        "我的膝盖是一个关节。"
+        "My knee joint hurts.",
+        "我的膝关节疼。"
       ]
     },
     {
-      "word": "soy",
-      "phonetic": "/sɔɪ/",
-      "definition": "n. 大豆；酱油",
+      "word": "noise",
+      "phonetic": "/nɔɪz/",
+      "definition": "n. 噪音",
       "breakdown": [
         {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
           "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "e",
+          "phon": "/e/"
+        }
+      ],
+      "sentences": [
+        "The noise is too loud.",
+        "噪音太大了。"
+      ]
+    },
+    {
+      "word": "voice",
+      "phonetic": "/vɔɪs/",
+      "definition": "n. 声音",
+      "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "ce",
           "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "I hear your voice.",
+        "我听到你的声音。"
+      ]
+    },
+    {
+      "word": "choice",
+      "phonetic": "/tʃɔɪs/",
+      "definition": "n. 选择",
+      "breakdown": [
+        {
+          "letter": "ch",
+          "phon": "/tʃ/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "ce",
+          "phon": "/s/"
+        }
+      ],
+      "sentences": [
+        "Make your choice.",
+        "做出你的选择。"
+      ]
+    },
+    {
+      "word": "enjoy",
+      "phonetic": "/ɪnˈdʒɔɪ/",
+      "definition": "v. 享受",
+      "breakdown": [
+        {
+          "letter": "en",
+          "phon": "/ɪn/"
+        },
+        {
+          "letter": "j",
+          "phon": "/dʒ/"
         },
         {
           "letter": "oy",
@@ -687,28 +375,459 @@ window.PHONICS_DAY_15 = {
         }
       ],
       "sentences": [
-        "Soy sauce is made from soybeans.",
-        "酱油是用大豆制成的。"
+        "I enjoy reading books.",
+        "我享受阅读。"
       ]
     },
     {
-      "word": "toyshop",
-      "phonetic": "/ˈtɔɪʃɒp/",
-      "definition": "n. 玩具店",
+      "word": "annoy",
+      "phonetic": "/əˈnɔɪ/",
+      "definition": "v. 烦扰",
       "breakdown": [
         {
-          "letter": "toy",
-          "phon": "/tɔɪ/"
+          "letter": "an",
+          "phon": "/ə/"
         },
         {
-          "letter": "shop",
-          "phon": "/ʃɒp/"
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
         }
       ],
       "sentences": [
-        "I like the toyshop.",
-        "我喜欢玩具店。"
+        "Don't annoy your sister.",
+        "别烦你妹妹。"
       ]
-    }
-  ]
+    },
+    {
+      "word": "destroy",
+      "phonetic": "/dɪˈstrɔɪ/",
+      "definition": "v. 毁坏",
+      "breakdown": [
+        {
+          "letter": "de",
+          "phon": "/dɪ/"
+        },
+        {
+          "letter": "str",
+          "phon": "/str/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        }
+      ],
+      "sentences": [
+        "The storm destroys houses.",
+        "风暴毁坏了房屋。"
+      ]
+    },
+    {
+      "word": "employ",
+      "phonetic": "/ɪmˈplɔɪ/",
+      "definition": "v. 雇佣",
+      "breakdown": [
+        {
+          "letter": "em",
+          "phon": "/ɪm/"
+        },
+        {
+          "letter": "pl",
+          "phon": "/pl/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        }
+      ],
+      "sentences": [
+        "The company employs many people.",
+        "公司雇佣了很多人。"
+      ]
+    },
+    {
+      "word": "royal",
+      "phonetic": "/ˈrɔɪəl/",
+      "definition": "adj. 皇家的",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "The royal family lives in a palace.",
+        "皇室住在宫殿里。"
+      ]
+    },
+    {
+      "word": "voyage",
+      "phonetic": "/ˈvɔɪɪdʒ/",
+      "definition": "n. 航行",
+      "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "age",
+          "phon": "/ɪdʒ/"
+        }
+      ],
+      "sentences": [
+        "The ship begins its voyage.",
+        "船开始了航行。"
+      ]
+    },
+    {
+      "word": "oyster",
+      "phonetic": "/ˈɔɪstə/",
+      "definition": "n. 牡蛎",
+      "breakdown": [
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "st",
+          "phon": "/st/"
+        },
+        {
+          "letter": "er",
+          "phon": "/ə/"
+        }
+      ],
+      "sentences": [
+        "I like fried oysters.",
+        "我喜欢炸牡蛎。"
+      ]
+    },
+    {
+      "word": "cowboy",
+      "phonetic": "/ˈkaʊbɔɪ/",
+      "definition": "n. 牛仔",
+      "breakdown": [
+        {
+          "letter": "cow",
+          "phon": "/kaʊ/"
+        },
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        }
+      ],
+      "sentences": [
+        "The cowboy rides a horse.",
+        "牛仔骑着马。"
+      ]
+    },
+    {
+      "word": "ahoy",
+      "phonetic": "/əˈhɔɪ/",
+      "definition": "interj. 喂",
+      "breakdown": [
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "hoy",
+          "phon": "/hɔɪ/"
+        }
+      ],
+      "sentences": [
+        "Ahoy, mate!",
+        "喂，伙计！"
+      ]
+    },
+    {
+      "word": "loyal",
+      "phonetic": "/ˈlɔɪəl/",
+      "definition": "adj. 忠诚的",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "oy",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "al",
+          "phon": "/əl/"
+        }
+      ],
+      "sentences": [
+        "Dogs are loyal friends.",
+        "狗是忠诚的朋友。"
+      ]
+    },
+    {
+      "word": "boyhood",
+      "phonetic": "/ˈbɔɪhʊd/",
+      "definition": "n. 童年",
+      "breakdown": [
+        {
+          "letter": "boy",
+          "phon": "/bɔɪ/"
+        },
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "oo",
+          "phon": "/ʊ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "He remembers his boyhood.",
+        "他记得他的童年。"
+      ]
+    },
+    {
+      "word": "avoid",
+      "phonetic": "/əˈvɔɪd/",
+      "definition": "v. 避免",
+      "breakdown": [
+        {
+          "letter": "a",
+          "phon": "/ə/"
+        },
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "Avoid eating too much sugar.",
+        "避免吃太多糖。"
+      ]
+    },
+    {
+      "word": "void",
+      "phonetic": "/vɔɪd/",
+      "definition": "n. 空虚",
+      "breakdown": [
+        {
+          "letter": "v",
+          "phon": "/v/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "d",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "The void is empty.",
+        "空虚是空洞的。"
+      ]
+    },
+    {
+      "word": "poison",
+      "phonetic": "/ˈpɔɪzən/",
+      "definition": "n. 毒药",
+      "breakdown": [
+        {
+          "letter": "p",
+          "phon": "/p/"
+        },
+        {
+          "letter": "oi",
+          "phon": "/ɔɪ/"
+        },
+        {
+          "letter": "s",
+          "phon": "/z/"
+        },
+        {
+          "letter": "on",
+          "phon": "/ən/"
+        }
+      ],
+      "sentences": [
+        "Keep poison away from children.",
+        "把毒药远离儿童。"
+      ]
+    },
+{
+    "word": "toilet",
+    "phonetic": "/ˈtɔɪ.lət/",
+    "definition": "n. 厕所",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oi",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a toilet.",
+          "我看到一个厕所。"
+    ]
+},
+{
+    "word": "spoil",
+    "phonetic": "/spɔɪl/",
+    "definition": "v. 破坏；宠坏",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          },
+          {
+                "letter": "oi",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "l",
+                "phon": "/l/"
+          }
+    ],
+    "sentences": [
+          "Please spoil it.",
+          "请破坏它。"
+    ]
+},
+{
+    "word": "moist",
+    "phonetic": "/mɔɪst/",
+    "definition": "adj. 湿润的",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "oi",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very moist.",
+          "它非常湿润的。"
+    ]
+},
+{
+    "word": "miff",
+    "phonetic": "/mɪf/",
+    "definition": "n. 小争执",
+    "breakdown": [
+          {
+                "letter": "m",
+                "phon": "/m/"
+          },
+          {
+                "letter": "i",
+                "phon": "/ɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          }
+    ],
+    "sentences": [
+          "I see a miff.",
+          "我看到一个小争执。"
+    ]
+},
+{
+    "word": "toyshop",
+    "phonetic": "/ˈtɔɪʃɒp/",
+    "definition": "n. 玩具店",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "oy",
+                "phon": "/ɔɪ/"
+          },
+          {
+                "letter": "sh",
+                "phon": "/ʃ/"
+          },
+          {
+                "letter": "o",
+                "phon": "/ɒ/"
+          },
+          {
+                "letter": "p",
+                "phon": "/p/"
+          }
+    ],
+    "sentences": [
+          "I see a toyshop.",
+          "我看到一个玩具店。"
+    ]
 }
+  ]
+};

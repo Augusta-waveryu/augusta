@@ -5,99 +5,79 @@ window.PHONICS_DAY_14 = {
   "pdfImage": "/phonics/images/day-14.jpg",
   "words": [
     {
-      "word": "bike",
-      "phonetic": "/baɪk/",
-      "definition": "n. 自行车",
+      "word": "my",
+      "phonetic": "/maɪ/",
+      "definition": "pron. 我的",
+      "breakdown": [
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "y",
+          "phon": "/aɪ/"
+        }
+      ],
+      "sentences": [
+        "This is my book.",
+        "这是我的书。"
+      ]
+    },
+    {
+      "word": "by",
+      "phonetic": "/baɪ/",
+      "definition": "prep. 在…旁",
       "breakdown": [
         {
           "letter": "b",
           "phon": "/b/"
         },
         {
-          "letter": "i",
+          "letter": "y",
           "phon": "/aɪ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "My new bike is red.",
-        "我的新自行车是红色的。"
+        "Stand by the door.",
+        "站在门边。"
       ]
     },
     {
-      "word": "like",
-      "phonetic": "/laɪk/",
-      "definition": "v. 喜欢",
+      "word": "try",
+      "phonetic": "/traɪ/",
+      "definition": "v. 尝试",
       "breakdown": [
         {
-          "letter": "l",
-          "phon": "/l/"
+          "letter": "tr",
+          "phon": "/tr/"
         },
         {
-          "letter": "i",
+          "letter": "y",
           "phon": "/aɪ/"
-        },
-        {
-          "letter": "k",
-          "phon": "/k/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "I like to eat apples.",
-        "我喜欢吃苹果。"
+        "Try your best.",
+        "尽你最大的努力。"
       ]
     },
     {
-      "word": "site",
-      "phonetic": "/saɪt/",
-      "definition": "n. 地点",
+      "word": "fly",
+      "phonetic": "/flaɪ/",
+      "definition": "v. 飞",
       "breakdown": [
         {
-          "letter": "s",
-          "phon": "/s/"
+          "letter": "fl",
+          "phon": "/fl/"
         },
         {
-          "letter": "i",
+          "letter": "y",
           "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
         }
       ],
       "sentences": [
-        "This is a fun play site.",
-        "这是一个有趣的玩耍场所。"
-      ]
-    },
-    {
-      "word": "ride",
-      "phonetic": "/raɪd/",
-      "definition": "v. 骑；搭乘",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I want to ride a bike.",
-        "我想骑自行车。"
+        "Birds fly in the sky.",
+        "鸟在天上飞。"
       ]
     },
     {
@@ -115,18 +95,18 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "The sky is blue today.",
-        "今天天空是蓝色的。"
+        "The sky is blue.",
+        "天空是蓝色的。"
       ]
     },
     {
-      "word": "try",
-      "phonetic": "/traɪ/",
-      "definition": "v. 尝试，努力",
+      "word": "cry",
+      "phonetic": "/kraɪ/",
+      "definition": "v. 哭",
       "breakdown": [
         {
-          "letter": "tr",
-          "phon": "/tr/"
+          "letter": "cr",
+          "phon": "/kr/"
         },
         {
           "letter": "y",
@@ -134,33 +114,14 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "Let's try again!",
-        "我们再试一次！"
-      ]
-    },
-    {
-      "word": "fly",
-      "phonetic": "/flaɪ/",
-      "definition": "v. 飞，飞行",
-      "breakdown": [
-        {
-          "letter": "fl",
-          "phon": "/fl/"
-        },
-        {
-          "letter": "y",
-          "phon": "/aɪ/"
-        }
-      ],
-      "sentences": [
-        "Birds can fly high.",
-        "鸟儿能飞得很高。"
+        "Don't cry, be happy.",
+        "别哭了，开心点。"
       ]
     },
     {
       "word": "dry",
       "phonetic": "/draɪ/",
-      "definition": "adj. 干的；干燥的",
+      "definition": "adj. 干的",
       "breakdown": [
         {
           "letter": "dr",
@@ -172,45 +133,18 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "My hands are dry.",
-        "我的手是干的。"
+        "The clothes are dry.",
+        "衣服干了。"
       ]
     },
     {
-      "word": "buy",
-      "phonetic": "/baɪ/",
-      "definition": "v. 购买",
+      "word": "shy",
+      "phonetic": "/ʃaɪ/",
+      "definition": "adj. 害羞的",
       "breakdown": [
         {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "uy",
-          "phon": "/aɪ/"
-        }
-      ],
-      "sentences": [
-        "I want to buy a toy.",
-        "我想要买一个玩具。"
-      ]
-    },
-    {
-      "word": "deny",
-      "phonetic": "/dɪˈnaɪ/",
-      "definition": "v. 否认；拒绝",
-      "breakdown": [
-        {
-          "letter": "d",
-          "phon": "/d/"
-        },
-        {
-          "letter": "e",
-          "phon": "/ɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/"
+          "letter": "sh",
+          "phon": "/ʃ/"
         },
         {
           "letter": "y",
@@ -218,14 +152,401 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "He will deny the rumor.",
-        "他会否认这个谣言。"
+        "She is a shy girl.",
+        "她是个害羞的女孩。"
+      ]
+    },
+    {
+      "word": "high",
+      "phonetic": "/haɪ/",
+      "definition": "adj. 高的",
+      "breakdown": [
+        {
+          "letter": "h",
+          "phon": "/h/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        }
+      ],
+      "sentences": [
+        "The mountain is very high.",
+        "山很高。"
+      ]
+    },
+    {
+      "word": "light",
+      "phonetic": "/laɪt/",
+      "definition": "n. 灯",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Turn on the light.",
+        "打开灯。"
+      ]
+    },
+    {
+      "word": "night",
+      "phonetic": "/naɪt/",
+      "definition": "n. 夜晚",
+      "breakdown": [
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "I sleep at night.",
+        "我晚上睡觉。"
+      ]
+    },
+    {
+      "word": "right",
+      "phonetic": "/raɪt/",
+      "definition": "adj. 对的",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "You are right.",
+        "你是对的。"
+      ]
+    },
+    {
+      "word": "fight",
+      "phonetic": "/faɪt/",
+      "definition": "v. 打架",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Don't fight with others.",
+        "不要和别人打架。"
+      ]
+    },
+    {
+      "word": "might",
+      "phonetic": "/maɪt/",
+      "definition": "v. 可能",
+      "breakdown": [
+        {
+          "letter": "m",
+          "phon": "/m/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "It might rain today.",
+        "今天可能会下雨。"
+      ]
+    },
+    {
+      "word": "bright",
+      "phonetic": "/braɪt/",
+      "definition": "adj. 明亮的",
+      "breakdown": [
+        {
+          "letter": "br",
+          "phon": "/br/"
+        },
+        {
+          "letter": "igh",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "t",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "The sun is very bright.",
+        "太阳很亮。"
+      ]
+    },
+    {
+      "word": "time",
+      "phonetic": "/taɪm/",
+      "definition": "n. 时间",
+      "breakdown": [
+        {
+          "letter": "t",
+          "phon": "/t/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "me",
+          "phon": "/m/"
+        }
+      ],
+      "sentences": [
+        "What time is it?",
+        "几点了？"
+      ]
+    },
+    {
+      "word": "like",
+      "phonetic": "/laɪk/",
+      "definition": "v. 喜欢",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ke",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I like ice cream.",
+        "我喜欢冰淇淋。"
+      ]
+    },
+    {
+      "word": "bike",
+      "phonetic": "/baɪk/",
+      "definition": "n. 自行车",
+      "breakdown": [
+        {
+          "letter": "b",
+          "phon": "/b/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ke",
+          "phon": "/k/"
+        }
+      ],
+      "sentences": [
+        "I ride my bike to school.",
+        "我骑车上学。"
+      ]
+    },
+    {
+      "word": "nine",
+      "phonetic": "/naɪn/",
+      "definition": "num. 九",
+      "breakdown": [
+        {
+          "letter": "n",
+          "phon": "/n/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "I have nine pencils.",
+        "我有九支铅笔。"
+      ]
+    },
+    {
+      "word": "fine",
+      "phonetic": "/faɪn/",
+      "definition": "adj. 好的",
+      "breakdown": [
+        {
+          "letter": "f",
+          "phon": "/f/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "I am fine, thank you.",
+        "我很好，谢谢。"
+      ]
+    },
+    {
+      "word": "line",
+      "phonetic": "/laɪn/",
+      "definition": "n. 线",
+      "breakdown": [
+        {
+          "letter": "l",
+          "phon": "/l/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "Draw a straight line.",
+        "画一条直线。"
+      ]
+    },
+    {
+      "word": "shine",
+      "phonetic": "/ʃaɪn/",
+      "definition": "v. 发光",
+      "breakdown": [
+        {
+          "letter": "sh",
+          "phon": "/ʃ/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "ne",
+          "phon": "/n/"
+        }
+      ],
+      "sentences": [
+        "The sun shines bright.",
+        "太阳闪耀。"
+      ]
+    },
+    {
+      "word": "white",
+      "phonetic": "/waɪt/",
+      "definition": "adj. 白色的",
+      "breakdown": [
+        {
+          "letter": "wh",
+          "phon": "/w/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "I have a white cat.",
+        "我有一只白猫。"
+      ]
+    },
+    {
+      "word": "write",
+      "phonetic": "/raɪt/",
+      "definition": "v. 写",
+      "breakdown": [
+        {
+          "letter": "wr",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "te",
+          "phon": "/t/"
+        }
+      ],
+      "sentences": [
+        "Write your name here.",
+        "在这里写你的名字。"
+      ]
+    },
+    {
+      "word": "ride",
+      "phonetic": "/raɪd/",
+      "definition": "v. 骑",
+      "breakdown": [
+        {
+          "letter": "r",
+          "phon": "/r/"
+        },
+        {
+          "letter": "i",
+          "phon": "/aɪ/"
+        },
+        {
+          "letter": "de",
+          "phon": "/d/"
+        }
+      ],
+      "sentences": [
+        "I ride a horse.",
+        "我骑马。"
       ]
     },
     {
       "word": "pie",
       "phonetic": "/paɪ/",
-      "definition": "n. 馅饼",
+      "definition": "n. 派",
       "breakdown": [
         {
           "letter": "p",
@@ -237,14 +558,14 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "I love apple pie.",
-        "我爱苹果派。"
+        "I like apple pie.",
+        "我喜欢苹果派。"
       ]
     },
     {
       "word": "tie",
       "phonetic": "/taɪ/",
-      "definition": "v. 系，捆绑",
+      "definition": "n. 领带",
       "breakdown": [
         {
           "letter": "t",
@@ -256,14 +577,33 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "Tie your shoelaces.",
-        "系好你的鞋带。"
+        "He wears a blue tie.",
+        "他戴着蓝色领带。"
+      ]
+    },
+    {
+      "word": "die",
+      "phonetic": "/daɪ/",
+      "definition": "v. 死",
+      "breakdown": [
+        {
+          "letter": "d",
+          "phon": "/d/"
+        },
+        {
+          "letter": "ie",
+          "phon": "/aɪ/"
+        }
+      ],
+      "sentences": [
+        "Plants die without water.",
+        "没有水植物会枯死。"
       ]
     },
     {
       "word": "lie",
       "phonetic": "/laɪ/",
-      "definition": "v. 躺；平放",
+      "definition": "v. 躺",
       "breakdown": [
         {
           "letter": "l",
@@ -275,410 +615,432 @@ window.PHONICS_DAY_14 = {
         }
       ],
       "sentences": [
-        "The cat likes to lie down",
-        "猫喜欢躺下。"
+        "Lie down on the bed.",
+        "躺在床上。"
       ]
     },
     {
-      "word": "guy",
-      "phonetic": "/ɡaɪ/",
-      "definition": "n. 家伙；人",
+      "word": "eye",
+      "phonetic": "/aɪ/",
+      "definition": "n. 眼睛",
       "breakdown": [
         {
-          "letter": "g",
-          "phon": "/g/"
-        },
-        {
-          "letter": "uy",
+          "letter": "eye",
           "phon": "/aɪ/"
         }
       ],
       "sentences": [
-        "That guy is my friend.",
-        "那个家伙是我的朋友。"
+        "I close my eyes.",
+        "我闭上眼睛。"
       ]
     },
-    {
-      "word": "sight",
-      "phonetic": "/saɪt/",
-      "definition": "n. 视力；景象",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "igh",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "I can see a funny sight.",
-        "我能看到一个有趣的景象。"
-      ]
-    },
-    {
-      "word": "tight",
-      "phonetic": "/taɪt/",
-      "definition": "adj. 紧的",
-      "breakdown": [
-        {
-          "letter": "t",
-          "phon": "/t/"
-        },
-        {
-          "letter": "igh",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "This shirt is tight.",
-        "这件衬衫很紧。"
-      ]
-    },
-    {
-      "word": "light",
-      "phonetic": "/laɪt/",
-      "definition": "n. 光；灯",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "igh",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/"
-        }
-      ],
-      "sentences": [
-        "The sun gives us light.",
-        "太阳给我们光。"
-      ]
-    },
-    {
-      "word": "rice",
-      "phonetic": "/raɪs/",
-      "definition": "n. 米饭；稻米",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I like to eat rice.",
-        "我喜欢吃米饭。"
-      ]
-    },
-    {
-      "word": "nice",
-      "phonetic": "/naɪs/",
-      "definition": "adj. 好的；友好的",
-      "breakdown": [
-        {
-          "letter": "n",
-          "phon": "/n/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "c",
-          "phon": "/s/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "You are a nice person.",
-        "你是一个好人。"
-      ]
-    },
-    {
-      "word": "side",
-      "phonetic": "/saɪd/",
-      "definition": "n. 侧面；边",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Look at the other side.",
-        "看另一边。"
-      ]
-    },
-    {
-      "word": "wide",
-      "phonetic": "/waɪd/",
-      "definition": "adj. 宽的；广阔的",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The river is wide.",
-        "这条河很宽。"
-      ]
-    },
-    {
-      "word": "hide",
-      "phonetic": "/haɪd/",
-      "definition": "v. 隐藏；躲藏",
-      "breakdown": [
-        {
-          "letter": "h",
-          "phon": "/h/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "d",
-          "phon": "/d/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Let's hide and seek.",
-        "我们玩捉迷藏。"
-      ]
-    },
-    {
-      "word": "wife",
-      "phonetic": "/waɪf/",
-      "definition": "n. 妻子",
-      "breakdown": [
-        {
-          "letter": "w",
-          "phon": "/w/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "She is his wife.",
-        "她是他的妻子。"
-      ]
-    },
-    {
-      "word": "life",
-      "phonetic": "/laɪf/",
-      "definition": "n. 生命；生活",
-      "breakdown": [
-        {
-          "letter": "l",
-          "phon": "/l/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "f",
-          "phon": "/f/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "Life is beautiful.",
-        "生命是美好的。"
-      ]
-    },
-    {
-      "word": "fine",
-      "phonetic": "/faɪn/",
-      "definition": "adj. 好的；健康的",
-      "breakdown": [
-        {
-          "letter": "f",
-          "phon": "/f/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I feel fine today.",
-        "我今天感觉很好。"
-      ]
-    },
-    {
-      "word": "shine",
-      "phonetic": "/ʃaɪn/",
-      "definition": "v. 发光；照耀",
-      "breakdown": [
-        {
-          "letter": "sh",
-          "phon": "/ʃ/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "n",
-          "phon": "/n/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The sun will shine brightly.",
-        "太阳会明亮地照耀。"
-      ]
-    },
-    {
-      "word": "bite",
-      "phonetic": "/baɪt/",
-      "definition": "v. 咬；叮",
-      "breakdown": [
-        {
-          "letter": "b",
-          "phon": "/b/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "The dog did not bite me.",
-        "狗没有咬我。"
-      ]
-    },
-    {
-      "word": "kite",
-      "phonetic": "/kaɪt/",
-      "definition": "n. 风筝",
-      "breakdown": [
-        {
-          "letter": "k",
-          "phon": "/k/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "We fly a colorful kite.",
-        "我们放一个彩色风筝。"
-      ]
-    },
-    {
-      "word": "write",
-      "phonetic": "/raɪt/",
-      "definition": "v. 写",
-      "breakdown": [
-        {
-          "letter": "r",
-          "phon": "/r/",
-          "silent": "w"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "t",
-          "phon": "/t/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "I like to write my name.",
-        "我喜欢写我的名字。"
-      ]
-    },
-    {
-      "word": "size",
-      "phonetic": "/saɪz/",
-      "definition": "n. 尺寸；大小",
-      "breakdown": [
-        {
-          "letter": "s",
-          "phon": "/s/"
-        },
-        {
-          "letter": "i",
-          "phon": "/aɪ/"
-        },
-        {
-          "letter": "z",
-          "phon": "/z/",
-          "silent": "e"
-        }
-      ],
-      "sentences": [
-        "What size is your shoe?",
-        "你的鞋子是什么尺码？"
-      ]
-    }
-  ]
+{
+    "word": "site",
+    "phonetic": "/saɪt/",
+    "definition": "n. 地点；网站",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a site.",
+          "我看到一个地点。"
+    ]
+},
+{
+    "word": "buy",
+    "phonetic": "/baɪ/",
+    "definition": "v. 买",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "uy",
+                "phon": "/aɪ/"
+          }
+    ],
+    "sentences": [
+          "Please buy it.",
+          "请买它。"
+    ]
+},
+{
+    "word": "deny",
+    "phonetic": "/dɪˈnaɪ/",
+    "definition": "v. 否认",
+    "breakdown": [
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          },
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "y",
+                "phon": "/aɪ/"
+          }
+    ],
+    "sentences": [
+          "Please deny it.",
+          "请否认它。"
+    ]
+},
+{
+    "word": "guy",
+    "phonetic": "/ɡaɪ/",
+    "definition": "n. 家伙；小伙子",
+    "breakdown": [
+          {
+                "letter": "g",
+                "phon": "/g/"
+          },
+          {
+                "letter": "uy",
+                "phon": "/aɪ/"
+          }
+    ],
+    "sentences": [
+          "I see a guy.",
+          "我看到一个家伙。"
+    ]
+},
+{
+    "word": "sight",
+    "phonetic": "/saɪt/",
+    "definition": "n. 视力；景象",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "igh",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "I see a sight.",
+          "我看到一个视力。"
+    ]
+},
+{
+    "word": "tight",
+    "phonetic": "/taɪt/",
+    "definition": "adj. 紧的",
+    "breakdown": [
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "igh",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          }
+    ],
+    "sentences": [
+          "It is very tight.",
+          "它非常紧的。"
+    ]
+},
+{
+    "word": "rice",
+    "phonetic": "/ɹaɪs/",
+    "definition": "n. 米饭；大米",
+    "breakdown": [
+          {
+                "letter": "r",
+                "phon": "/r/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a rice.",
+          "我看到一个米饭。"
+    ]
+},
+{
+    "word": "nice",
+    "phonetic": "/naɪs/",
+    "definition": "adj. 好的；友善的",
+    "breakdown": [
+          {
+                "letter": "n",
+                "phon": "/n/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "c",
+                "phon": "/k/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very nice.",
+          "它非常好的。"
+    ]
+},
+{
+    "word": "side",
+    "phonetic": "/saɪd/",
+    "definition": "n. 边；侧面",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a side.",
+          "我看到一个边。"
+    ]
+},
+{
+    "word": "wide",
+    "phonetic": "/wɑed/",
+    "definition": "adj. 宽的",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "It is very wide.",
+          "它非常宽的。"
+    ]
+},
+{
+    "word": "hide",
+    "phonetic": "/haɪd/",
+    "definition": "v. 隐藏",
+    "breakdown": [
+          {
+                "letter": "h",
+                "phon": "/h/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "d",
+                "phon": "/d/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please hide it.",
+          "请隐藏它。"
+    ]
+},
+{
+    "word": "wife",
+    "phonetic": "/waɪf/",
+    "definition": "n. 妻子",
+    "breakdown": [
+          {
+                "letter": "w",
+                "phon": "/w/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a wife.",
+          "我看到一个妻子。"
+    ]
+},
+{
+    "word": "life",
+    "phonetic": "/laɪf/",
+    "definition": "n. 生活；生命",
+    "breakdown": [
+          {
+                "letter": "l",
+                "phon": "/l/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "f",
+                "phon": "/f/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a life.",
+          "我看到一个生活。"
+    ]
+},
+{
+    "word": "bite",
+    "phonetic": "/bʌɪt/",
+    "definition": "v. 咬",
+    "breakdown": [
+          {
+                "letter": "b",
+                "phon": "/b/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "Please bite it.",
+          "请咬它。"
+    ]
+},
+{
+    "word": "kite",
+    "phonetic": "/kaɪt/",
+    "definition": "n. 风筝",
+    "breakdown": [
+          {
+                "letter": "k",
+                "phon": "/k/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "t",
+                "phon": "/t/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a kite.",
+          "我看到一个风筝。"
+    ]
+},
+{
+    "word": "size",
+    "phonetic": "/saɪz/",
+    "definition": "n. 尺寸；大小",
+    "breakdown": [
+          {
+                "letter": "s",
+                "phon": "/s/"
+          },
+          {
+                "letter": "i",
+                "phon": "/aɪ/"
+          },
+          {
+                "letter": "z",
+                "phon": "/z/"
+          },
+          {
+                "letter": "e",
+                "phon": "/e/"
+          }
+    ],
+    "sentences": [
+          "I see a size.",
+          "我看到一个尺寸。"
+    ]
 }
+  ]
+};

@@ -98,7 +98,7 @@ article:last-child { border-bottom: none; }
 .tag-blog { background: #e3f2fd; color: #1565c0; }
 .tag-workbuddy { background: #e8f5e9; color: #2e7d32; }
 .tag-perfume { background: #fce4ec; color: #c2185b; }
-.tag-fde { background: #eef0ff; color: #3949ab; }
+.tag-phonics { background: #fef3c7; color: #b45309; }
 .post-title {
   font-size: 20px;
   font-weight: 600;
@@ -148,7 +148,7 @@ article:last-child { border-bottom: none; }
   .tag-blog { background: #0d2538; color: #64b5f6; }
   .tag-workbuddy { background: #1b3621; color: #66bb6a; }
   .tag-perfume { background: #311b24; color: #f48fb1; }
-  .tag-fde { background: #1f2452; color: #aeb5ff; }
+  .tag-phonics { background: #422006; color: #fbbf24; }
   article { border-bottom-color: #1a1a1a; }
 }
 </style>
@@ -162,8 +162,8 @@ article:last-child { border-bottom: none; }
     <a href="/" class="active">首页</a>
     <a href="/reports/">晨报</a>
     <a href="/perfume/">香氛研究</a>
+    <a href="/phonics/">英语音标</a>
     <a href="/workbuddy/">WorkBuddy</a>
-    <a href="/fde/">FDE</a>
     <a href="/about.html">关于</a>
   </nav>
 </header>
@@ -172,19 +172,18 @@ article:last-child { border-bottom: none; }
   <button class="filter-tab active" onclick="filterPosts('all')">全部</button>
   <button class="filter-tab" onclick="filterPosts('report')">🌅 晨报</button>
   <button class="filter-tab" onclick="filterPosts('perfume')">🌹 香氛研究</button>
+  <button class="filter-tab" onclick="filterPosts('phonics')">🎯 英语音标</button>
   <button class="filter-tab" onclick="filterPosts('workbuddy')">🧭 WorkBuddy</button>
-  <button class="filter-tab" onclick="filterPosts('fde')">🧩 FDE</button>
 </div>
 
 <main id="post-list">
-  <article data-tag="fde" data-date="2026-08-27">
+<article data-tag="report" data-date="2026-08-28">
     <div class="post-meta">
-      <span class="post-date">2026 年 8 月 27 日</span>
-      <span class="post-tag tag-fde">FDE 课程</span>
+      <span class="post-date">2026 年 8 月 28 日</span>
+      <span class="post-tag tag-report">晨报</span>
     </div>
-    <h2 class="post-title"><a href="/fde/course-design.html">FDE课程体系设计：从客户问题到可采用方案</a></h2>
-    <p class="post-excerpt">公开 FDE 的课程设计理念：它不等同于 AI 工程师，课程围绕客户发现、场景判断、原型验证、交付采用和持续运营组织；学生线分为基础、Echo、Delta、Foundry，行业线分为通用课程和场景解决方案，WorkBuddy 作为首个平台适配案例。</p>
-    <a class="post-link" href="/fde/course-design.html">查看课程设计 →</a>
+    <h2 class="post-title"><a href="/reports/2026-08-28.html">AI 晨报 · 2026-08-28</a></h2>
+    <p class="post-excerpt">MiniMax H3 助力 fal 打造 H3 Max · MiniMax 开源 H3 基础模型，生态后训练登顶 · Gemini Omni 1.1 Flash 支持视频续写扩展场景 · Anthropic 推出模型硬件标准，让 AI 智能体控制物理世界 · 英伟达预计 2028 财年销售额达 6730 亿美元 · 诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 · Google Earth AI 推出行星预测引擎：自动化全球地理空间建模 · 线束工程：如何用确定性工具与智能体审查约束 AI 生成代码 · 学者遭遇AI伪造论文冒名精选 64 条，覆盖模型 10 / 产品 15 / 行业 15 / 论文 9 / 观点 15。</p>
   </article>
 
 <article data-tag="report" data-date="2026-08-27">
@@ -457,7 +456,18 @@ article:last-child { border-bottom: none; }
     <a class="post-link" href="/reports/2026-07-20.html">阅读全文 →</a>
   </article>
 
-  <article data-tag="perfume" data-date="2026-07-18">
+  <article data-tag="phonics" data-date="2026-07-18">
+    <div class="post-meta">
+      <span class="post-date">2026 年 7 月 18 日</span>
+      <span class="post-tag tag-phonics">英语音标</span>
+    </div>
+    <h2 class="post-title"><a href="/phonics/">🎯 48 国际音标打卡 · Day 1 /i:/</a></h2>
+    <p class="post-excerpt">暑期 48 天音标学习计划正式上线 · 包含 20 元音 + 28 辅音 · PDF 卡片 + 互动点击发音 + 拼读后连读 · 源自《48 Phonics Check Cards》</p>
+    <a class="post-link" href="/phonics/">进入音标列表 →</a>
+  </article>
+
+  
+              <article data-tag="perfume" data-date="2026-07-18">
     <div class="post-meta">
       <span class="post-date">2026 年 07 月 18 日</span>
       <span class="post-tag tag-perfume">香氛研究</span>
@@ -683,7 +693,7 @@ article:last-child { border-bottom: none; }
 </footer>
 
 <script>
-var tagOrder = { 'fde': 0, 'report': 1, 'perfume': 2, 'workbuddy': 3 };
+var tagOrder = { 'report': 0, 'perfume': 1, 'workbuddy': 2 };
 
 function sortPosts() {
   var container = document.getElementById('post-list');

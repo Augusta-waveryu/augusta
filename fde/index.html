@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FDE 能力体系 - Augusta</title>
+<meta name="description" content="FDE 能力体系与课程设计：从客户问题到可采用的解决方案。">
+<link rel="stylesheet" href="/workbuddy/assets/workbuddy.css">
+<style>
+:root { --mint: #5865d8; --mint-deep: #3949ab; --mint-pale: #eef0ff; --gold: #e0a229; }
+.hero { background: linear-gradient(180deg, #eef0ff 0%, var(--paper) 100%); }
+.eyebrow { color: var(--mint-deep); }
+.eyebrow::before { background: var(--mint); }
+.track-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 34px 0 48px; }
+.track-card { display: block; padding: 26px; border: 1px solid var(--line); border-top: 4px solid var(--mint); background: var(--panel); box-shadow: var(--shadow); }
+.track-card.article { border-top-color: var(--gold); }
+.track-card h2 { margin: 8px 0 10px; font-size: 26px; }
+.track-card p { margin: 0 0 18px; color: var(--muted); }
+.track-card .arrow { color: var(--mint-deep); font-weight: 700; }
+.section-title { margin: 54px 0 12px; font-size: 27px; }
+.ability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0 30px; }
+.ability { padding: 18px; border: 1px solid var(--line); background: var(--panel); }
+.ability b { display: block; margin-bottom: 6px; }
+.ability span { color: var(--muted); font-size: 14px; line-height: 1.6; }
+.notice { margin: 30px 0; padding: 20px 22px; border-left: 4px solid var(--mint); background: var(--mint-pale); }
+@media (max-width: 760px) {
+  .hero-grid, .track-grid { grid-template-columns: 1fr; }
+  .ability-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) { .ability-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">Augusta <span>/ FDE</span></a>
+    <nav class="nav">
+      <a href="/">首页</a><a href="/reports/">晨报</a><a href="/perfume/">香氛研究</a><a href="/phonics/">英语音标</a><a href="/workbuddy/">WorkBuddy</a><a class="active" href="/fde/">FDE</a><a href="/about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="header-inner hero-grid">
+    <div>
+      <span class="eyebrow">企业 AI 落地能力</span>
+      <h1>FDE：把客户问题做成可采用的方案</h1>
+      <p>FDE 不是 AI 工程师的换名，也不是工具教学的加长版。它训练的是从客户发现、场景判断，到原型验证、交付采用和持续运营的一整条工作闭环。</p>
+      <p class="hero-kicker">当前以 WorkBuddy 作为首个平台适配案例，方法可以迁移到天翼云或客户指定的 Agent 平台。</p>
+    </div>
+    <div class="notice"><strong>这个专栏分成两条内容线</strong><br>文章线：整理公众号与实战复盘，后续持续补充。<br>课程线：公开当前的能力图谱、课程结构、训练方法和评价方式。</div>
+  </div>
+</section>
+
+<main class="page-shell">
+  <div class="track-grid">
+    <a class="track-card article" href="/fde/articles/">
+      <span class="eyebrow">FDE 文章</span>
+      <h2>从现场经验中学习</h2>
+      <p>后续发布公众号文章整理、客户问题拆解、方案复盘和失败案例。文章会标注材料来源与验证状态。</p>
+      <span class="arrow">文章线即将补充 →</span>
+    </a>
+    <a class="track-card" href="/fde/course-design.html">
+      <span class="eyebrow">FDE 课程</span>
+      <h2>从能力地图到训练任务</h2>
+      <p>了解学生线 Basic / Echo / Delta / Foundry、行业线通用课程与场景解决方案，以及 WorkBuddy 的平台适配位置。</p>
+      <span class="arrow">查看课程设计理念 →</span>
+    </a>
+  </div>
+
+  <h2 class="section-title">FDE 能力图谱</h2>
+  <p>课程先锁定工作能力和交付证据，再选择工具、平台和行业素材。AI 是加速器，人的判断、沟通和承诺仍由 FDE 负责。</p>
+  <div class="ability-grid">
+    <div class="ability"><b>客户发现与沟通</b><span>访谈、追问、确认、预期管理</span></div>
+    <div class="ability"><b>业务理解与场景判断</b><span>流程、角色、约束、优先级</span></div>
+    <div class="ability"><b>方案与架构设计</b><span>边界、路径、系统和分期</span></div>
+    <div class="ability"><b>快速构建与集成</b><span>Agent、API、数据、部署</span></div>
+    <div class="ability"><b>评测、风险与治理</b><span>测试集、权限、人工接管</span></div>
+    <div class="ability"><b>交付、采用与运营</b><span>上线、培训、反馈、复用</span></div>
+  </div>
+
+  <div class="notice"><strong>设计判断</strong><br>学生线用于系统培养一组可迁移的 FDE 能力；行业线围绕一个真实场景压缩训练并交付一份可讨论成果。两条线共用方法层，按平台和行业替换实训素材。</div>
+</main>
+<footer class="site-footer"><div class="site-footer-inner">© 2026 Augusta · FDE 专栏会随真实项目与课程验证持续更新。</div></footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FDE 课程设计理念 - Augusta</title>
+<meta name="description" content="FDE 课程设计理念、能力图谱、学生线与行业线、WorkBuddy 平台适配和训练评价。">
+<link rel="stylesheet" href="/workbuddy/assets/workbuddy.css">
+<style>
+:root { --mint: #5865d8; --mint-deep: #3949ab; --mint-pale: #eef0ff; --gold: #e0a229; }
+.case-hero { background: #eef0ff; }
+.eyebrow { color: var(--mint-deep); }
+.eyebrow::before { background: var(--mint); }
+.statement { border-left-color: var(--mint); background: var(--mint-pale); }
+.flow-item { border-top-color: var(--mint); }
+.worksheet-cell { border-top-color: var(--mint); }
+.compare-table { width: 100%; border-collapse: collapse; margin: 22px 0 30px; font-size: 14px; }
+.compare-table th, .compare-table td { padding: 13px 14px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.compare-table th { background: var(--mint-pale); color: var(--ink); }
+.module-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0 32px; }
+.module { padding: 20px; border: 1px solid var(--line); background: var(--panel); }
+.module h3 { margin: 0 0 6px; font-size: 19px; }
+.module .module-line { color: var(--mint-deep); font-weight: 700; font-size: 14px; }
+.module p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+.evidence-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0 32px; }
+.evidence { padding: 18px; border: 1px solid var(--line); background: var(--panel); }
+.evidence b { display: block; margin-bottom: 7px; }
+.evidence span { color: var(--muted); font-size: 14px; line-height: 1.65; }
+.source-box { margin-top: 48px; }
+@media (max-width: 760px) { .module-grid, .evidence-grid { grid-template-columns: 1fr; } .compare-table { font-size: 13px; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">Augusta <span>/ FDE 课程</span></a>
+    <nav class="nav"><a href="/">首页</a><a href="/workbuddy/">WorkBuddy</a><a href="/fde/">FDE 首页</a><a class="active" href="/fde/course-design.html">课程设计</a><a href="/about.html">关于</a></nav>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="header-inner">
+    <span class="eyebrow">FDE 课程设计理念 · v0.2</span>
+    <h1>从客户问题，到可采用的解决方案</h1>
+    <p class="dek">这套课程面向企业 AI 落地场景。学员要学会的不是把某个平台的按钮点一遍，而是把一个模糊的客户问题推进到可验证、可交付、可继续使用的成果。</p>
+    <div class="case-meta"><span>GPDI · 企业 AI 落地服务</span><span>学生线 + 行业线</span><span>WorkBuddy 首个平台适配</span></div>
+  </div>
+</section>
+
+<main class="article-shell">
+  <article class="article-body">
+    <div class="case-disclosure"><strong>先说边界：</strong>FDE 与 AI 工程师有交集，但责任不同。AI 工程师更偏模型、代码和系统组件；FDE 从客户现场出发，对问题定义、方案取舍、验证、交付和采用负责。</div>
+
+    <h2>1. 课程要训练什么</h2>
+    <p class="lead">每个模块都围绕一条交付闭环组织：客户背景 → 需求发现 → 场景选择 → 方案设计 → 原型/PoC → 集成上线 → 采用运营。</p>
+    <div class="flow">
+      <div class="flow-item"><b>发现</b><span>识别利益相关者，区分事实、推断和待确认。</span></div>
+      <div class="flow-item"><b>判断</b><span>明确价值假设、成功标准和技术边界。</span></div>
+      <div class="flow-item"><b>构建</b><span>用最小成本做出原型，验证是否值得继续。</span></div>
+      <div class="flow-item"><b>交付</b><span>处理集成、验收、培训、运营和复用。</span></div>
+    </div>
+    <div class="statement"><strong>判断标准</strong>课程结业不以“听完了没有”为准，而以学员能否留下问题定义、场景方案、原型/演示、风险边界和交接材料为准。</div>
+
+    <h2>2. FDE 能力图谱</h2>
+    <div class="worksheet-grid">
+      <div class="worksheet-cell"><b>客户发现与沟通</b><p>访谈、追问、确认、预期管理。</p></div>
+      <div class="worksheet-cell"><b>业务理解与场景判断</b><p>流程、角色、约束、优先级。</p></div>
+      <div class="worksheet-cell"><b>方案与架构设计</b><p>边界、路径、系统和分期。</p></div>
+      <div class="worksheet-cell"><b>快速构建与集成</b><p>Agent、API、数据、部署。</p></div>
+      <div class="worksheet-cell"><b>评测、风险与治理</b><p>测试集、权限、人工接管。</p></div>
+      <div class="worksheet-cell"><b>交付、采用与运营</b><p>上线、培训、反馈、复用。</p></div>
+    </div>
+
+    <h2>3. 学生线：四个模块，覆盖同一条闭环</h2>
+    <p>学生线用于系统培养一组可迁移能力。每个模块可以独立成课，也可以按岗位组合；当前不预设长周期，先验证最小可售的课程单元。</p>
+    <div class="module-grid">
+      <section class="module"><h3>基础</h3><div class="module-line">云计算与 AIDC 工程基础</div><p>资源、网络、存储、安全、算力、数据、模型、推理、API、权限和部署。目标是能做技术可行性判断。</p></section>
+      <section class="module"><h3>Echo</h3><div class="module-line">客户洞察与场景规划</div><p>从客户愿望走到问题定义、价值假设、成功标准、PoC 边界和分期路径。目标是把问题讲明白。</p></section>
+      <section class="module"><h3>Delta</h3><div class="module-line">场景方案与 Agent 落地</div><p>从架构、任务拆解、知识来源、工作流和提示词，到原型、集成、部署和验收。目标是做出可讨论的版本。</p></section>
+      <section class="module"><h3>Foundry</h3><div class="module-line">数据与持续运营</div><p>数据准备、知识库、评测、安全、日志、人工接管、交接和迭代。目标是让成果持续运行，而不是停在 Demo。</p></section>
+    </div>
+
+    <h2>4. 行业线：压缩方法，跑通一个真实场景</h2>
+    <table class="compare-table">
+      <thead><tr><th>课程单元</th><th>训练重点</th><th>应交付成果</th></tr></thead>
+      <tbody>
+        <tr><td>通用课程</td><td>FDE 角色、场景判断、AI 辅助、PoC 与评测</td><td>共同语言、问题定义模板、任务验收标准</td></tr>
+        <tr><td>场景解决方案</td><td>材料阅读、需求分析、方案原型、演示验收</td><td>一份可讨论的场景方案和风险交接清单</td></tr>
+      </tbody>
+    </table>
+    <p>行业线不重复讲完四个学生模块，而是围绕一个真实行业问题，验证通用方法是否能在现场工作。</p>
+
+    <h2>5. 训练方法：一张六格工作单</h2>
+    <p>所有实训先填六格工作单，把“问 AI”变成“交办 AI”。这也是从 WorkBuddy 迁移到天翼云或客户指定 Agent 平台时不变的方法资产。</p>
+    <div class="worksheet-grid">
+      <div class="worksheet-cell"><b>目标</b><p>要完成什么具体成果。</p></div>
+      <div class="worksheet-cell"><b>资料</b><p>AI 可以依据哪些材料。</p></div>
+      <div class="worksheet-cell"><b>步骤</b><p>先做什么，再做什么。</p></div>
+      <div class="worksheet-cell"><b>格式</b><p>结果要长什么样。</p></div>
+      <div class="worksheet-cell"><b>验收</b><p>什么情况能用，什么情况不能用。</p></div>
+      <div class="worksheet-cell"><b>沉淀</b><p>下次如何复用，由谁维护。</p></div>
+    </div>
+
+    <h2>6. WorkBuddy 的位置：首个平台适配案例</h2>
+    <p>平台承担资料处理、任务执行和成果初稿；FDE 方法负责问题定义、人工判断、客户沟通和交付承诺。课程结构不绑定单一产品，未来可以替换执行层。</p>
+    <div class="evidence-grid">
+      <div class="evidence"><b>资料层</b><span>企业材料、政策、历史方案；先确认来源和权限。</span></div>
+      <div class="evidence"><b>执行层</b><span>WorkBuddy、天翼云或其他 Agent 平台；分阶段产出。</span></div>
+      <div class="evidence"><b>协同与沉淀</b><span>任务单、人工验收、Obsidian 或企业知识体系。</span></div>
+    </div>
+
+    <h2>7. 评价：看证据，不看出勤</h2>
+    <p>评价包至少包含六类证据：客户发现记录、事实/推断/待确认表、场景与 PoC 方案、原型或演示、评测与风险边界、岗位工作流卡。</p>
+    <ul class="checklist">
+      <li>客户和业务理解：能否把客户语言转成可验证问题。</li>
+      <li>方案和技术判断：能否说明边界、条件、取舍和实施路径。</li>
+      <li>构建和交付质量：能否做出可演示、可复现、可交接的成果。</li>
+      <li>评测和风险意识：能否设计测试、权限、人工接管和失败处理。</li>
+      <li>沟通和复用：能否让客户理解，并把一次成果沉淀为下一次资产。</li>
+    </ul>
+
+    <h2>8. 第一版建设建议</h2>
+    <p>先做一个完整案例，不先铺开全部行业。用同一份脱敏材料同时生产课程课件、讲师脚本、实训环境、任务单、评价表和演示成果，再邀请天翼云和省邮校共同评审。</p>
+    <div class="statement"><strong>需要共同确认的四个问题</strong><br>第一，天翼云最急需哪类 FDE 角色和场景；第二，第一案例使用哪些真实材料、平台账号和验收标准；第三，GPDI 与省邮校分别输出哪些师资、课程和认证资源；第四，哪些证据可以进入企业培训结业评价。</div>
+
+    <div class="source-box"><h2>内容状态</h2><p>这是课程设计理念的公开版，具体课时、行业案例、平台操作和认证合作仍需通过真实项目与合作方评审验证。公众号文章整理将单独进入 FDE 文章线。</p></div>
+  </article>
+</main>
+<footer class="site-footer"><div class="site-footer-inner">© 2026 Augusta · FDE 课程设计理念</div></footer>
+</body>
+</html>

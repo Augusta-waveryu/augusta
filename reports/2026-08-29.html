@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026年8月29日</title>
+<style>
+:root {
+  --bg:#0e0b09; --panel:#17110d; --panel2:#1f1611;
+  --ink:#f7efe9; --muted:#b7a89c; --line:#2c201a;
+  --c1:#ff7a18; --c2:#ff3d2e; --c3:#ffb347;
+  --model:#ff7a18; --product:#ff5e3a; --industry:#ffb347; --paper:#7ad0ff; --tip:#b98bff;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--ink); font-family:var(--font); line-height:1.6; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+.wrap { max-width:1120px; margin:0 auto; padding:0 20px 80px; }
+
+/* Hero */
+.hero { background:linear-gradient(135deg,var(--c2) 0%,var(--c1) 55%,var(--c3) 100%); padding:74px 20px 56px; text-align:center; position:relative; overflow:hidden; }
+.hero::after { content:""; position:absolute; inset:0; background:radial-gradient(circle at 20% 20%, rgba(255,255,255,.18), transparent 45%), radial-gradient(circle at 80% 70%, rgba(0,0,0,.18), transparent 50%); }
+.hero-inner { position:relative; z-index:1; max-width:900px; margin:0 auto; }
+.kicker { letter-spacing:.32em; font-size:13px; font-weight:700; color:rgba(255,255,255,.85); text-transform:uppercase; }
+.hero h1 { font-size:clamp(40px,8vw,76px); font-weight:800; margin:10px 0 6px; color:#fff; letter-spacing:-.02em; }
+.hero .date { font-size:18px; color:rgba(255,255,255,.92); font-weight:600; }
+.hero .sub { margin-top:10px; color:rgba(255,255,255,.8); font-size:14px; }
+.stats { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-top:30px; }
+.stat { background:rgba(0,0,0,.22); border:1px solid rgba(255,255,255,.25); border-radius:14px; padding:12px 22px; min-width:96px; backdrop-filter:blur(4px); }
+.stat-num { display:block; font-size:26px; font-weight:800; color:#fff; }
+.stat-label { font-size:13px; color:rgba(255,255,255,.82); }
+
+/* Nav */
+.nav-wrap { position:sticky; top:0; z-index:20; background:rgba(14,11,9,.86); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+.nav { max-width:1120px; margin:0 auto; display:flex; align-items:center; gap:8px; padding:10px 20px; flex-wrap:wrap; }
+.nav .brand { font-weight:800; color:var(--c3); margin-right:auto; font-size:15px; }
+.nav-chip { font-size:13px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); color:var(--muted); transition:.2s; }
+.nav-chip:hover { color:#fff; border-color:var(--c1); }
+.chip-count { margin-left:6px; font-size:11px; color:var(--c3); font-weight:700; }
+.back { font-size:13px; padding:6px 12px; border-radius:999px; background:linear-gradient(135deg,var(--c2),var(--c1)); color:#fff; font-weight:700; }
+.back:hover { opacity:.9; }
+
+/* Sections */
+.sec { margin-top:46px; }
+.sec-head { display:flex; align-items:baseline; gap:12px; border-left:4px solid var(--c1); padding-left:14px; margin-bottom:18px; }
+.sec-head h2 { font-size:24px; font-weight:800; }
+.sec-count { color:var(--muted); font-size:14px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:16px; }
+
+/* Card */
+.card { background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; transition:transform .2s, border-color .2s; display:flex; flex-direction:column; }
+.card:hover { transform:translateY(-3px); border-color:var(--c1); }
+.card-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
+.num { font-size:13px; font-weight:800; color:var(--c3); font-variant-numeric:tabular-nums; }
+.card-tag { font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; }
+.tag-model { background:rgba(255,122,24,.16); color:var(--model); }
+.tag-product { background:rgba(255,94,58,.16); color:var(--product); }
+.tag-industry { background:rgba(255,179,71,.16); color:var(--industry); }
+.tag-paper { background:rgba(122,208,255,.16); color:var(--paper); }
+.tag-tip { background:rgba(185,139,255,.16); color:var(--tip); }
+.card-title { font-size:16.5px; font-weight:700; line-height:1.4; margin-bottom:8px; }
+.card-title a:hover { color:var(--c3); }
+.card-sum { color:var(--muted); font-size:13.5px; flex:1; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.card-meta { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; padding-top:10px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+.card-meta .src { color:var(--c3); }
+.card-meta .heat { margin-left:auto; color:var(--c2); font-weight:700; }
+
+/* Reveal */
+.reveal { opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in { opacity:1; transform:none; }
+
+footer { margin-top:60px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:12.5px; text-align:center; line-height:1.9; }
+footer a { color:var(--c3); }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">AI Morning Brief</div>
+    <h1>AI 晨报</h1>
+    <div class="date">2026年8月29日 · 星期六</div>
+    <div class="sub">滚动时间窗 · 仅收录 48 小时内新鲜资讯 · 共 66 条</div>
+    <div class="stats"><div class="stat"><span class="stat-num">11</span><span class="stat-label">模型发布</span></div><div class="stat"><span class="stat-num">16</span><span class="stat-label">产品发布</span></div><div class="stat"><span class="stat-num">15</span><span class="stat-label">行业动态</span></div><div class="stat"><span class="stat-num">10</span><span class="stat-label">论文研究</span></div><div class="stat"><span class="stat-num">14</span><span class="stat-label">技巧与观点</span></div></div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <nav class="nav">
+    <span class="brand">🧭 AI 晨报</span>
+    <a class="nav-chip" href="#sec-models">模型发布<span class="chip-count">11</span></a><a class="nav-chip" href="#sec-products">产品发布<span class="chip-count">16</span></a><a class="nav-chip" href="#sec-industry">行业动态<span class="chip-count">15</span></a><a class="nav-chip" href="#sec-paper">论文研究<span class="chip-count">10</span></a><a class="nav-chip" href="#sec-tip">技巧与观点<span class="chip-count">14</span></a>
+    <a class="back" href="../">← 返回首页</a>
+  </nav>
+</div>
+
+<main class="wrap">
+  <section class="sec" id="sec-models">
+    <div class="sec-head">
+      <h2>模型发布 / 更新</h2>
+      <span class="sec-count">11 条</span>
+    </div>
+    <div class="grid">
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">01</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&amp;mid=2247498484&amp;idx=1&amp;sn=0db140a12b8e18601ac933788045c831" target="_blank" rel="noopener">腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线</a></h3>
+        <p class="card-sum">腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾…</p>
+        <div class="card-meta">
+          <span class="src">公众号：腾讯混元</span>
+          <span class="time">昨天 14:03</span>
+          <span class="heat">热度 82</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">02</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/jietang/status/2092850258573471936" target="_blank" rel="noopener">唐杰宣布GLM-5.3 Flash AA登顶OpenRouter</a></h3>
+        <p class="card-sum">Ox Alpha = GLM-5.3 Flash AA = 57，以1/100的前沿价格，  由纯国产芯片驱动。在Ope…</p>
+        <div class="card-meta">
+          <span class="src">唐杰（@jietang）</span>
+          <span class="time">08月27日 13:42</span>
+          <span class="heat">热度 71</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">03</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/alibaba_cloud/status/2093226022623957372" target="_blank" rel="noopener">Qwen3.8-Flash上线GMI Cloud，Qwen4架构预览</a></h3>
+        <p class="card-sum">Qwen3.8-Flash 现已在 @gmi_cloud 上线--这是一款多模态 MoE 模型，也是 Qwen4 架构的…</p>
+        <div class="card-meta">
+          <span class="src">阿里云 / Alibaba Cloud (@alibaba_cloud)</span>
+          <span class="time">昨天 14:35</span>
+          <span class="heat">热度 66</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">04</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/Zai_org/status/2093354097122455713" target="_blank" rel="noopener">GLM-5.3 开源权重，智能体编码与网防最强</a></h3>
+        <p class="card-sum">GLM-5.3 现已开放权重。  我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。  权重：https:…</p>
+        <div class="card-meta">
+          <span class="src">智谱 Z.ai (@Zai_org)</span>
+          <span class="time">昨天 23:04</span>
+          <span class="heat">热度 65</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">05</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://updates.midjourney.com/edit-model-for-v8" target="_blank" rel="noopener">Midjourney 开放 V8.2 图像编辑模型测试</a></h3>
+        <p class="card-sum">Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用…</p>
+        <div class="card-meta">
+          <span class="src">Midjourney：Updates（RSS）</span>
+          <span class="time">昨天 07:32</span>
+          <span class="heat">热度 64</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">06</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/SiliconFlowAI/status/2093367252519395816" target="_blank" rel="noopener">GLM-5.3 开源上线硅基流动</a></h3>
+        <p class="card-sum">来自 @Zai_org 的 GLM-5.3 现已开源--并已在 SiliconFlow 上线。🚀 一如既往地提供 Day…</p>
+        <div class="card-meta">
+          <span class="src">硅基流动 SiliconFlow (@SiliconFlowAI)</span>
+          <span class="time">昨天 23:57</span>
+          <span class="heat">热度 62</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">07</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/alibaba_cloud/status/2093272820453371985" target="_blank" rel="noopener">阿里云 Wan 3.0 上线 DeepInfra，视频音频一体</a></h3>
+        <p class="card-sum">阿里云 Wan 3.0 现已上线 DeepInfra，单模型同时支持视频与音频生成，可生成 30 秒 1080P 片段，…</p>
+        <div class="card-meta">
+          <span class="src">阿里云 / Alibaba Cloud (@alibaba_cloud)</span>
+          <span class="time">昨天 17:41</span>
+          <span class="heat">热度 62</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">08</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/alibaba_cloud/status/2093272403334087160" target="_blank" rel="noopener">万相3.0上线Pixel Dojo，附提示词指南</a></h3>
+        <p class="card-sum">Wan 3.0 现已上线 @PixelDojoAI！查看指南并开始创作吧。👇 更多 API 接入方式： • Model …</p>
+        <div class="card-meta">
+          <span class="src">阿里云 / Alibaba Cloud (@alibaba_cloud)</span>
+          <span class="time">昨天 17:40</span>
+          <span class="heat">热度 61</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">09</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/alexandr_wang/status/2093390371875414501" target="_blank" rel="noopener">Meta 模型 API 上线 Muse 图像生成</a></h3>
+        <p class="card-sum">1/ Muse 图像已在 Meta 模型 API 上线  $0.01/张--生产级用量中性价比最高的选择之一</p>
+        <div class="card-meta">
+          <span class="src">Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)</span>
+          <span class="time">今天 01:28</span>
+          <span class="heat">热度 59</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">10</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/995/033.htm" target="_blank" rel="noopener">小鹏 X-Foresight 预测世界模型首次上车，可预判未来 6 秒交通参与者行为</a></h3>
+        <p class="card-sum">小鹏在第二代 VLA 全新版本体验日宣布 X-Foresight 预测世界模型首次上车，可预判未来 6 秒周边交通参与者…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 15:32</span>
+          <span class="heat">热度 55</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-models">
+        <div class="card-top">
+          <span class="num">11</span>
+          <span class="card-tag tag-model">模型</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/OfficialLoganK/status/2093014204324417881" target="_blank" rel="noopener">Gemini Omni Flash 1.1 发布，支持视频扩展</a></h3>
+        <p class="card-sum">很高兴将 Gemini Omni Flash 1.1 带给世界，这是对我们&quot;任意输入、任意输出&quot;世界模型的更新。它现在支…</p>
+        <div class="card-meta">
+          <span class="src">Logan Kilpatrick (@OfficialLoganK)</span>
+          <span class="time">昨天 00:34</span>
+          <span class="heat">热度 54</span>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="sec" id="sec-products">
+    <div class="sec-head">
+      <h2>产品发布 / 更新</h2>
+      <span class="sec-count">16 条</span>
+    </div>
+    <div class="grid">
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">12</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://huggingface.co/blog/open-asr-leaderboard-global-south" target="_blank" rel="noopener">Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集</a></h3>
+        <p class="card-sum">Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN…</p>
+        <div class="card-meta">
+          <span class="src">Hugging Face：Blog（RSS）</span>
+          <span class="time">昨天 08:00</span>
+          <span class="heat">热度 66</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">13</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://github.com/experientiallabs/experiential" target="_blank" rel="noopener">Show HN：Experiential--开源智能体工作流网关与路由器</a></h3>
+        <p class="card-sum">Experiential 是一个面向智能体工作流的开源网关与路由器，通过一个 OpenAI 兼容 API 统一托管、BY…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 09:41</span>
+          <span class="heat">热度 66</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">14</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://platform.claude.com/docs/en/release-notes/overview#august-27-2026" target="_blank" rel="noopener">Claude Console 新增个人密钥与服务账号密钥</a></h3>
+        <p class="card-sum">Claude Console 现已支持创建个人密钥和服务账号密钥，它们以关联账户身份运行并继承相同权限，账户从组织移除后…</p>
+        <div class="card-meta">
+          <span class="src">Claude Platform：开发者版本说明（RSS）</span>
+          <span class="time">08月27日 08:00</span>
+          <span class="heat">热度 63</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">15</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/977.htm" target="_blank" rel="noopener">阿里发布全新 Qoder，从 AI 编程工具升级为智能体工作台</a></h3>
+        <p class="card-sum">阿里今日发布全新 Qoder，从 AI 编程工具升级为面向所有人的智能体工作台，核心工作从代码工程转为智能体任务，采用 …</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 13:57</span>
+          <span class="heat">热度 62</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">16</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/832.htm" target="_blank" rel="noopener">6999 元起，苹果全新 Mac Studio 与 Mac mini 今日接受预购</a></h3>
+        <p class="card-sum">苹果全新 Mac Studio 与 Mac mini 今日上午 9：00 起接受预购，9 月 22 日正式发售。Mac …</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 09:29</span>
+          <span class="heat">热度 60</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">17</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/995/007.htm" target="_blank" rel="noopener">Claude 桌面端 Cowork 新增内置浏览器，可独立完成网页操作</a></h3>
+        <p class="card-sum">Claude 为桌面应用中的 Cowork 内置了浏览器，侧边栏可自动打开，让 Claude 独立浏览网页、点击按钮和输…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 15:14</span>
+          <span class="heat">热度 59</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">18</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/967.htm" target="_blank" rel="noopener">阿里千问办公上线 Qwen3.8-Flash 及标准模式：单任务生成速度提升约 100%，Token 消耗平均减少 75%</a></h3>
+        <p class="card-sum">阿里旗下千问办公今日首发上线 Qwen3.8-Flash 模型，并推出标准模式，所有用户即日起可体验。该模型以千亿级总参…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 13:23</span>
+          <span class="heat">热度 59</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">19</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/jxnlco/status/2093421574020018290" target="_blank" rel="noopener">Rosalind Workbench 研究预览发布</a></h3>
+        <p class="card-sum">研究在工具之间的交接中会慢下来。  Rosalind workbench 现已进入研究预览：引导式任务、科学查看器，以及…</p>
+        <div class="card-meta">
+          <span class="src">Jason Liu (@jxnlco)</span>
+          <span class="time">今天 03:32</span>
+          <span class="heat">热度 58</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">20</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.marktechpost.com/2026/08/28/vercel-vgpu-webgpu-library-open-source" target="_blank" rel="noopener">Vercel 开源 vgpu：面向 AI Agent 着色器的 TypeScript WebGPU 库</a></h3>
+        <p class="card-sum">Vercel 开源了其内部用于 vercel.com 的 WebGPU 库 vgpu。该 TypeScript 库将 .…</p>
+        <div class="card-meta">
+          <span class="src">MarkTechPost（RSS）</span>
+          <span class="time">今天 01:28</span>
+          <span class="heat">热度 58</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">21</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/Baidu_Inc/status/2093170549325525218" target="_blank" rel="noopener">百度 DuMate 升级：智能引擎任务完成率超 99%</a></h3>
+        <p class="card-sum">百度在 AI Day 发布 DuMate 全新升级，目标从单步辅助转向交付可直接使用的最终成果。新版本覆盖个人与企业产品…</p>
+        <div class="card-meta">
+          <span class="src">百度 Baidu (@Baidu_Inc)</span>
+          <span class="time">昨天 10:55</span>
+          <span class="heat">热度 58</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">22</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/krea_ai/status/2093360647459475635" target="_blank" rel="noopener">Krea 上线 Gemini Omni Flash 1.1</a></h3>
+        <p class="card-sum">Gemini Omni Flash 1.1 现已上线 Krea。  可生成 360p 草稿、放大至 4K、将视频延长至 …</p>
+        <div class="card-meta">
+          <span class="src">Krea AI (@krea_ai)</span>
+          <span class="time">昨天 23:30</span>
+          <span class="heat">热度 55</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">23</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup" target="_blank" rel="noopener">Adobe 为 Photoshop 新增 AI 辅助编辑器视图及标记功能</a></h3>
+        <p class="card-sum">Adobe 为 Photoshop 推出 AI 重头更新，新增&quot;AI Assisted Editor&quot;可选界面，将提示词…</p>
+        <div class="card-meta">
+          <span class="src">The Verge：AI（RSS）</span>
+          <span class="time">08月27日 21:00</span>
+          <span class="heat">热度 55</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">24</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/cb_doge/status/2093407319652770071" target="_blank" rel="noopener">Grok 金融功能上线，可连接银行账户</a></h3>
+        <p class="card-sum">突发：Grok 的全新 Finance 功能现已上线，用户可安全连接银行与投资账户。  该功能可将你的财务信息直接带入聊…</p>
+        <div class="card-meta">
+          <span class="src">cb_doge (@cb_doge)</span>
+          <span class="time">今天 02:36</span>
+          <span class="heat">热度 54</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">25</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/AYi_AInotes/status/2092774093263098071" target="_blank" rel="noopener">MemOS 团队开源 Memmy，统一多 Agent 记忆</a></h3>
+        <p class="card-sum">MemOS 团队开源本地 Agent 记忆工具 Memmy，自动读取 Cursor、Claude Code、Codex …</p>
+        <div class="card-meta">
+          <span class="src">阿易 AI Notes (@AYi_AInotes)</span>
+          <span class="time">08月27日 08:40</span>
+          <span class="heat">热度 54</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">26</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.databricks.com/blog/object-storage-wal-lakebase-postgres-agentic-era" target="_blank" rel="noopener">Lakebase Postgres：面向智能体时代的对象存储与 WAL 架构</a></h3>
+        <p class="card-sum">Databricks 推出 Lakebase Postgres，将对象存储与 WAL 结合，解决智能体与传统 OLTP …</p>
+        <div class="card-meta">
+          <span class="src">Databricks：Blog（RSS）</span>
+          <span class="time">08月27日 15:18</span>
+          <span class="heat">热度 52</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="ai-products">
+        <div class="card-top">
+          <span class="num">27</span>
+          <span class="card-tag tag-product">产品</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/testingcatalog/status/2093439212502630667" target="_blank" rel="noopener">Meta &quot;Project Hatch&quot;超级应用曝光：浏览器与电脑操控</a></h3>
+        <p class="card-sum">Meta 内部测试中的&quot;Project Hatch&quot;超级应用将支持浏览器与电脑操控、长期目标与任务调度、持久化云端环境及…</p>
+        <div class="card-meta">
+          <span class="src">Testing Catalog (@testingcatalog)</span>
+          <span class="time">今天 04:42</span>
+          <span class="heat">热度 51</span>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="sec" id="sec-industry">
+    <div class="sec-head">
+      <h2>行业动态</h2>
+      <span class="sec-count">15 条</span>
+    </div>
+    <div class="grid">
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">28</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand" target="_blank" rel="noopener">亚马逊将英伟达芯片订单增至三倍，新增200万颗GPU</a></h3>
+        <p class="card-sum">亚马逊与英伟达宣布扩大合作，将在2027和2028年为AWS数据中心新增200万颗GPU芯片，包括Blackwell U…</p>
+        <div class="card-meta">
+          <span class="src">TechCrunch：AI（RSS）</span>
+          <span class="time">08月27日 07:47</span>
+          <span class="heat">热度 76</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">29</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge" target="_blank" rel="noopener">联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法</a></h3>
+        <p class="card-sum">美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 …</p>
+        <div class="card-meta">
+          <span class="src">Ars Technica：AI（RSS）</span>
+          <span class="time">今天 02:07</span>
+          <span class="heat">热度 71</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">30</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/813.htm" target="_blank" rel="noopener">英伟达：AI 算力供给短缺至少延续至 2028 财年末，晶圆、HBM、电力全面紧缺</a></h3>
+        <p class="card-sum">英伟达在 2027 财年第二季度财报电话会上表示，AI 算力供给短缺格局至少延续至 2028 财年末，晶圆产能、HBM …</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 08:44</span>
+          <span class="heat">热度 66</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">31</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/970.htm" target="_blank" rel="noopener">英伟达黄仁勋秀饭局影响力：&quot;我和谁吃饭，第二天股价就翻倍&quot;</a></h3>
+        <p class="card-sum">英伟达CEO黄仁勋在财报电话会上调侃称，2026年最佳美股交易策略是看他和谁吃饭，第二天对方股价就会翻倍。英伟达2027…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 13:35</span>
+          <span class="heat">热度 64</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">32</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets" target="_blank" rel="noopener">开源权重AI公司成为硅谷最热收购目标</a></h3>
+        <p class="card-sum">英伟达据报将以130亿美元收购开源模型平台Hugging Face，此前已斥资60亿美元收购Poolside，Strip…</p>
+        <div class="card-meta">
+          <span class="src">TechCrunch：AI（RSS）</span>
+          <span class="time">今天 02:19</span>
+          <span class="heat">热度 63</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">33</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/AYi_AInotes/status/2093333266552004997" target="_blank" rel="noopener">a16z 设 11 亿美元机器时代基金，押注物理基建</a></h3>
+        <p class="card-sum">a16z 新设 11 亿美元&quot;机器时代&quot;基金，明确不投聊天软件，聚焦&quot;模型以南&quot;的物理层。其指出 AI 瓶颈在物理世界：…</p>
+        <div class="card-meta">
+          <span class="src">阿易 AI Notes (@AYi_AInotes)</span>
+          <span class="time">昨天 21:41</span>
+          <span class="heat">热度 62</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">34</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/995/772.htm" target="_blank" rel="noopener">浪潮信息 2026 年上半年归母净利润 29.52 亿元，同比增长 269.59%</a></h3>
+        <p class="card-sum">浪潮信息发布 2026 年上半年财报，归母净利润 29.52 亿元，同比增长 269.59%；扣非净利润 24.19 亿…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">昨天 18:56</span>
+          <span class="heat">热度 61</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">35</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/Yuchenj_UW/status/2092814059657949231" target="_blank" rel="noopener">GLM-5.3-Flash登顶Ox Alpha，中国芯片加速AI自主</a></h3>
+        <p class="card-sum">Ox Alpha 每天处理 100T tokens，很多人以为它是 Gemini。  结果发现它是运行在中国芯片上的 G…</p>
+        <div class="card-meta">
+          <span class="src">Yuchen Jin (@Yuchenj_UW)</span>
+          <span class="time">08月27日 11:18</span>
+          <span class="heat">热度 61</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">36</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/968.htm" target="_blank" rel="noopener">北京首例 AIGC 商业秘密行政处罚案开出 10 万元罚单</a></h3>
+        <p class="card-sum">北京市朝阳区市场监管局对全市首例 AIGC 行业商业秘密行政处罚案作出处罚决定，对携密跳槽、私自复制使用原单位 AI 商…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 13:29</span>
+          <span class="heat">热度 59</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">37</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.epa.gov/newsreleases/epa-issues-permitting-guidance-further-president-trumps-agenda-promoting-data-centers" target="_blank" rel="noopener">美国环保署发布指南：数据中心离网发电可不受清洁空气法案酸雨计划约束</a></h3>
+        <p class="card-sum">美国环保署（EPA）本月发布指南，明确《清洁空气法案》酸雨计划不适用于未接入公共电网的&quot;孤岛式&quot;发电设施，为数据中心企业…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 22:44</span>
+          <span class="heat">热度 57</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">38</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/995/296.htm" target="_blank" rel="noopener">OpenAI 在印度向 ChatGPT Free 及 Go 套餐用户投放广告</a></h3>
+        <p class="card-sum">OpenAI 即日起在印度向 ChatGPT Free 和 Go 套餐用户投放广告，首批覆盖 50 个品牌，下月将上线广…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 21:19</span>
+          <span class="heat">热度 57</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">39</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/901.htm" target="_blank" rel="noopener">谷歌将AI责任团队移出DeepMind，员工担忧安全评估独立性受损</a></h3>
+        <p class="card-sum">谷歌将约90人的&quot;AI责任&quot;团队从谷歌DeepMind调离，并入负责游说与公共政策事务的全球事务部门，调整预计9月初生效…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 10:56</span>
+          <span class="heat">热度 57</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">40</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai" target="_blank" rel="noopener">Luanti 因一则毫无根据的 AI 版权通知被移除出 Google Play</a></h3>
+        <p class="card-sum">Luanti 的 Android 应用因 Tracer.AI 代表微软提交的一则毫无根据的 DMCA 通知被 Googl…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 21:24</span>
+          <span class="heat">热度 56</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">41</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/995/769.htm" target="_blank" rel="noopener">优必选 2026 财年上半年归母亏损 3.11 亿元，同比收窄 24.7%</a></h3>
+        <p class="card-sum">优必选 2026 财年上半年营收 12.69 亿元，同比增长 104.2%，归母净亏损 3.11 亿元，同比收窄 24.…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">昨天 18:47</span>
+          <span class="heat">热度 56</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="industry">
+        <div class="card-top">
+          <span class="num">42</span>
+          <span class="card-tag tag-industry">行业</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/995/346.htm" target="_blank" rel="noopener">OpenAI、微软、谷歌等 116 家企业发联名信，呼吁高度重视 AI 时代网络安全</a></h3>
+        <p class="card-sum">OpenAI、Anthropic、微软、谷歌母公司 Alphabet、亚马逊等 116 家企业和机构签署联名信，呼吁企业…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">昨天 07:23</span>
+          <span class="heat">热度 56</span>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="sec" id="sec-paper">
+    <div class="sec-head">
+      <h2>论文研究</h2>
+      <span class="sec-count">10 条</span>
+    </div>
+    <div class="grid">
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">43</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures" target="_blank" rel="noopener">Anthropic 让 Claude 自主训练模型以缓解对齐失败</a></h3>
+        <p class="card-sum">Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且…</p>
+        <div class="card-meta">
+          <span class="src">Anthropic：Research（发表成果 · 网页）</span>
+          <span class="time">今天 01:25</span>
+          <span class="heat">热度 78</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">44</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.terminal-bench-science.ai/announcement" target="_blank" rel="noopener">Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体</a></h3>
+        <p class="card-sum">斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 20:04</span>
+          <span class="heat">热度 72</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">45</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://arxiv.org/abs/2608.26993" target="_blank" rel="noopener">Aphanta：面向多模态推理的图像编辑中间结果诊断框架</a></h3>
+        <p class="card-sum">Aphanta 提出自动化任务发现与闭环诊断框架，评估&quot;多模态大模型→图像编辑器→多模态大模型&quot;流程中图像编辑器的实际效…</p>
+        <div class="card-meta">
+          <span class="src">HuggingFace Daily Papers（社区热门论文）</span>
+          <span class="time">08月27日 08:00</span>
+          <span class="heat">热度 66</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">46</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://arxiv.org/abs/2608.27345" target="_blank" rel="noopener">PAWBench：视频生成模型距离概率对齐的世界建模还有多远？</a></h3>
+        <p class="card-sum">现有视频生成模型评测多关注单条视频的合理性，未检验重复生成能否恢复正确的行为分布。为此，研究者将概率对齐形式化为世界模型…</p>
+        <div class="card-meta">
+          <span class="src">HuggingFace Daily Papers（社区热门论文）</span>
+          <span class="time">08月27日 08:00</span>
+          <span class="heat">热度 58</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">47</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.lmsys.org/blog/2026-08-28-infer-forge-loop-engineering" target="_blank" rel="noopener">Infer-forge：围绕 SGLang 的 Harness、Loop 与 Graph 工程</a></h3>
+        <p class="card-sum">Infer-forge 是一套围绕 SGLang 推理优化的内部工程系统，通过 MonoRepo、Harness、Tas…</p>
+        <div class="card-meta">
+          <span class="src">LMSYS：Blog（Chatbot Arena 团队）</span>
+          <span class="time">今天 02:25</span>
+          <span class="heat">热度 57</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">48</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA%3D%3D&amp;mid=2651783211&amp;idx=1&amp;sn=ebc6f935700052ebc5ab702911ce8449" target="_blank" rel="noopener">GeoRA：为RLVR设计的LoRA--ACL 2026杰出论文解析</a></h3>
+        <p class="card-sum">美团与北京大学提出GeoRA，将低秩适配显式对齐到RLVR的更新几何，先用谱先验与欧氏先验定位稀疏更新区域，再用SVD压…</p>
+        <div class="card-meta">
+          <span class="src">公众号：龙猫LongCat（美团）</span>
+          <span class="time">08月27日 10:24</span>
+          <span class="heat">热度 57</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">49</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://arxiv.org/abs/2608.27454" target="_blank" rel="noopener">WikiSkill：将智能体经验编译为持久知识以进化技能</a></h3>
+        <p class="card-sum">WikiSkill 提出一个将智能体技能与持久知识库（wiki）协同进化的框架，把原始执行经验、积累知识与可执行技能分离…</p>
+        <div class="card-meta">
+          <span class="src">HuggingFace Daily Papers（社区热门论文）</span>
+          <span class="time">08月27日 08:00</span>
+          <span class="heat">热度 54</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">50</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://machinelearning.apple.com/research/llms-not-consistently-bayesian" target="_blank" rel="noopener">LLM 并非（始终）符合贝叶斯：量化 LLM 概率信念的内部（不）一致性</a></h3>
+        <p class="card-sum">苹果机器学习研究团队提出一种新方法，将 LLM 视为信息处理规则，利用其与贝叶斯更新的信息处理差距，研究模型如何根据证据…</p>
+        <div class="card-meta">
+          <span class="src">Apple Machine Learning Research（RSS）</span>
+          <span class="time">昨天 08:00</span>
+          <span class="heat">热度 52</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">51</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://arxiv.org/abs/2608.27456" target="_blank" rel="noopener">UrbanGround：在真实尺度城市中从局部感知到空间智能体的测试沙箱</a></h3>
+        <p class="card-sum">UrbanGround 提出首个基于香港全域 3D 地理空间数据构建的物理约束城市沙箱，用于测试多模态大语言模型（MLL…</p>
+        <div class="card-meta">
+          <span class="src">HuggingFace Daily Papers（社区热门论文）</span>
+          <span class="time">08月27日 08:00</span>
+          <span class="heat">热度 52</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="paper">
+        <div class="card-top">
+          <span class="num">52</span>
+          <span class="card-tag tag-paper">论文</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/Meituan_LongCat/status/2093337808278794258" target="_blank" rel="noopener">前沿模型能否成为自主研究者？评测揭示三大发现</a></h3>
+        <p class="card-sum">美团LongCat在36项AI研发任务上评测7个前沿模型，覆盖756条轨迹。结果显示：强优化性能不等于真正创新，252个…</p>
+        <div class="card-meta">
+          <span class="src">美团 LongCat (@Meituan_LongCat)</span>
+          <span class="time">昨天 22:00</span>
+          <span class="heat">热度 51</span>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="sec" id="sec-tip">
+    <div class="sec-head">
+      <h2>技巧与观点</h2>
+      <span class="sec-count">14 条</span>
+    </div>
+    <div class="grid">
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">53</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://github.com/calmrocks/ai-engineer-notebooks" target="_blank" rel="noopener">AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具</a></h3>
+        <p class="card-sum">一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 16:36</span>
+          <span class="heat">热度 75</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">54</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://anil.recoil.org/notes/rumour-is-the-exploit" target="_blank" rel="noopener">安全漏洞传闻就足以让攻击者找到利用点，开源安全响应模式亟需改变</a></h3>
+        <p class="card-sum">OCaml 的 cohttp 6.3.0 修复路径遍历漏洞时，作者发现公开 PR 后几分钟内服务器即遭探测，且其智能体仅…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">今天 02:44</span>
+          <span class="heat">热度 66</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">55</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/foxshuo/status/2093283250290749885" target="_blank" rel="noopener">英伟达Q2财报：营收利润三位数增长加速</a></h3>
+        <p class="card-sum">英伟达Q2财报显示营收、利润三位数增长仍在加速，单季度收入接近千亿美元，同比增速106%，毛利率75%。数据中心贡献占比…</p>
+        <div class="card-meta">
+          <span class="src">阑夕 (@foxshuo)</span>
+          <span class="time">昨天 18:23</span>
+          <span class="heat">热度 65</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">56</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://aiandeducation.mit.edu/report" target="_blank" rel="noopener">MIT 特别委员会发布 AI 教学应用报告：提出八项原则与行动建议</a></h3>
+        <p class="card-sum">MIT 教学、学习与研究培训 AI 应用特别委员会经五个月调研，发布报告呼吁全校行动。报告指出生成式 AI 已全面渗透校…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 07:49</span>
+          <span class="heat">热度 64</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">57</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://github.com/openai/openai-python/blob/main/httpx2.md" target="_blank" rel="noopener">OpenAI Python SDK 迁移至 HTTPX2</a></h3>
+        <p class="card-sum">OpenAI Python SDK 现已改用 HTTPX2 作为同步和异步 HTTP 客户端，随 openai 自动安装…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 22:44</span>
+          <span class="heat">热度 61</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">58</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/982.htm" target="_blank" rel="noopener">英伟达 CEO 黄仁勋：在很多任务上我们已实现 AGI，该里程碑已无意义</a></h3>
+        <p class="card-sum">英伟达 CEO 黄仁勋在财报电话会上表示，对很多任务而言已实现 AGI，但这类里程碑如今已无意义。他强调行业重点是 AI…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 14:16</span>
+          <span class="heat">热度 58</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">59</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.ithome.com/0/994/943.htm" target="_blank" rel="noopener">黄仁勋驳斥&quot;循环融资&quot;质疑：AI 行业需要巨额资金，英伟达投资风险很低</a></h3>
+        <p class="card-sum">英伟达 CEO 黄仁勋周三为公司在 AI 行业的融资参与辩护，称这是首个需数百亿美元融资才能发展的初创行业，并强调英伟达…</p>
+        <div class="card-meta">
+          <span class="src">IT之家（RSS）</span>
+          <span class="time">08月27日 11:47</span>
+          <span class="heat">热度 57</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">60</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://neilalexander.dev/2026/06/30/flooding-contributions" target="_blank" rel="noopener">请别再用低质量AI内容淹没开源项目来充实简历了</a></h3>
+        <p class="card-sum">一位开源维护者指出，过去一年外部贡献模式明显变化：AI生成的PR、漏洞报告和修复建议激增，许多人正利用Claude等LL…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 14:13</span>
+          <span class="heat">热度 56</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">61</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode" target="_blank" rel="noopener">研究者发现针对 Claude Code Opus 5 自动模式的高成功率攻击</a></h3>
+        <p class="card-sum">安全研究员 Johann Rehberger 发现一种针对 Claude Code 自动模式的攻击，通过诱骗其下载并解压…</p>
+        <div class="card-meta">
+          <span class="src">Simon Willison 博客</span>
+          <span class="time">昨天 06:50</span>
+          <span class="heat">热度 55</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">62</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/AYi_AInotes/status/2092877358701174993" target="_blank" rel="noopener">微信开源 WeMM-Embedding 的三大落地场景</a></h3>
+        <p class="card-sum">微信开源的多模态模型 WeMM-Embedding 可低成本重做混合搜索，2B 版本跑分超越上一代 8B 开源顶流，25…</p>
+        <div class="card-meta">
+          <span class="src">阿易 AI Notes (@AYi_AInotes)</span>
+          <span class="time">08月27日 15:30</span>
+          <span class="heat">热度 55</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">63</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/SemiAnalysis_/status/2092780027611894235" target="_blank" rel="noopener">ABF载板2026产能满载，交期拉长至12-14个月</a></h3>
+        <p class="card-sum">SemiAnalysis指出ABF载板供应链已无余量，2026年产能全部排满，六大供应商总交期长达12-14个月。更大芯…</p>
+        <div class="card-meta">
+          <span class="src">SemiAnalysis (@SemiAnalysis_)</span>
+          <span class="time">08月27日 09:03</span>
+          <span class="heat">热度 55</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">64</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/thexpin/status/2093373903251107943" target="_blank" rel="noopener">中国批准首款商用脑机接口NEO</a></h3>
+        <p class="card-sum">中国药监局于2026年3月13日批准博睿康（Neuracle）半侵入式脑机接口NEO上市，7月13日上海医院完成全球首例…</p>
+        <div class="card-meta">
+          <span class="src">X.PIN (@thexpin)</span>
+          <span class="time">今天 00:23</span>
+          <span class="heat">热度 53</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">65</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://x.com/ArtificialAnlys/status/2093427938968666138" target="_blank" rel="noopener">Perplexity Search登顶AI搜索指数榜</a></h3>
+        <p class="card-sum">Perplexity Search在Artificial Analysis搜索指数中登顶，三种上下文版本均居榜首，其中m…</p>
+        <div class="card-meta">
+          <span class="src">Artificial Analysis (@ArtificialAnlys)</span>
+          <span class="time">今天 03:58</span>
+          <span class="heat">热度 52</span>
+        </div>
+      </article>
+      <article class="card reveal" data-tag="tip">
+        <div class="card-top">
+          <span class="num">66</span>
+          <span class="card-tag tag-tip">观点</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.bloodinthemachine.com/p/with-the-backlash-to-data-centers" target="_blank" rel="noopener">面对普遍的强烈反对，硅谷仍不愿正视现实</a></h3>
+        <p class="card-sum">美国民众对数据中心、Flock 监控摄像头及 Meta 的 AI 增强型 Ray-Ban（被广泛称为&quot;变态眼镜&quot;）普遍反…</p>
+        <div class="card-meta">
+          <span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span>
+          <span class="time">昨天 18:28</span>
+          <span class="heat">热度 52</span>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  数据来源：AI HOT 精选 / AI HOT 全量滚动语料（48 小时窗口）｜ 时效性原则：本报告仅含生成时点前 48 小时内的资讯，超期旧闻一律剔除。<br>
+  本页内容由 AI 自动聚合生成，仅供参考，不构成任何投资建议。 © 2026 Augusta · Powered by AI HOT
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{ threshold:.08 });
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

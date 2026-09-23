@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026-09-24</title>
+<style>
+:root{
+  --bg:#0f1115; --panel:#171a21; --card:#1c2029; --line:#2a2f3a;
+  --text:#e8eaf0; --muted:#9aa3b2; --accent:#ff6a00; --accent2:#e63946;
+  --person:#7c5cff; --star:#ffb020;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);padding:64px 24px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 60%)}
+.hero h1{font-size:clamp(30px,6vw,52px);font-weight:800;letter-spacing:.5px;position:relative}
+.hero .sub{margin-top:14px;font-size:15px;opacity:.95;position:relative}
+.hero .datebig{margin-top:6px;font-size:20px;font-weight:600;position:relative}
+.nav{position:sticky;top:0;z-index:50;background:rgba(15,17,21,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px 12px}
+.navlink{padding:7px 14px;border-radius:999px;color:var(--muted);font-size:14px;transition:.2s;display:flex;align-items:center;gap:6px}
+.navlink:hover{background:var(--card);color:var(--text)}
+.navcount{background:var(--accent);color:#fff;border-radius:999px;font-size:11px;padding:1px 7px;font-weight:700}
+.main{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+.sec{margin:42px 0}
+.sec-title{font-size:22px;font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.sec-dot{width:10px;height:22px;border-radius:4px;background:linear-gradient(var(--accent),var(--accent2))}
+.sec-count{font-size:13px;color:var(--muted);font-weight:500;margin-left:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease;border-top:3px solid transparent}
+.card.visible{opacity:1;transform:none}
+.card:hover{border-top-color:var(--accent);transform:translateY(-3px);transition:.2s}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.num{font-size:13px;font-weight:800;color:var(--accent);background:rgba(255,106,0,.12);border-radius:8px;padding:2px 9px}
+.pill{font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px}
+.pill-star{background:rgba(255,176,32,.16);color:var(--star)}
+.pill-person{background:rgba(124,92,255,.16);color:#b9a8ff}
+.card-title{font-size:16px;font-weight:650;line-height:1.45;margin-bottom:8px}
+.card-title a:hover{color:var(--accent)}
+.card-meta{font-size:12.5px;color:var(--muted);margin-bottom:8px}
+.card-meta .dot{margin:0 6px}
+.card-sum{font-size:14px;color:#c4cad6}
+.footer{max-width:1180px;margin:0 auto;padding:0 20px 60px;color:var(--muted);font-size:13px;text-align:center}
+.footer a{color:var(--accent)}
+.backhome{display:inline-block;margin-top:14px;padding:9px 20px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-radius:999px;font-weight:600;font-size:14px}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>🌅 AI 晨报</h1>
+  <div class="datebig">2026-09-24</div>
+  <div class="sub">滚动时间窗 · 严格 48 小时时效 · 共 52 条精选 · 数据截止 2026-09-21 23:30 UTC</div>
+</header>
+<nav class="nav"><a class="navlink" href="#models">模型发布 / 更新<span class="navcount">9</span></a><a class="navlink" href="#products">产品发布 / 更新<span class="navcount">13</span></a><a class="navlink" href="#industry">行业动态<span class="navcount">9</span></a><a class="navlink" href="#papers">论文研究<span class="navcount">8</span></a><a class="navlink" href="#tips">技巧与观点<span class="navcount">13</span></a></nav>
+<main class="main">
+    <section id="models" class="sec">
+      <h2 class="sec-title"><span class="sec-dot"></span>模型发布 / 更新<span class="sec-count">9 条</span></h2>
+      <div class="grid">
+        <article class="card" style="--d:1">
+<div class="card-top"><span class="num">1</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/AravSrinivas/status/2102780186202972254" target="_blank" rel="noopener">小米发布 MiMo-V2.6 Pro 与 Flash 开源全模态模型，Pro 在多数 Agent 基准上对标 Claude Opus 5 和 GPT-5.6 Sol</a></h3>
+<p class="card-meta"><span class="src">X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)</span><span class="dot">·</span><span class="time" title="2026-09-23T15:20:38.000Z">昨天 23:20 · 8 小时前</span></p>
+<p class="card-sum">小米发布开源全模态模型 MiMo-V2.6 Pro 与 Flash，通过规模化强化学习训练，Pro 在 Artifici…</p>
+        </article>
+        <article class="card" style="--d:2">
+<div class="card-top"><span class="num">2</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/Alibaba_Qwen/status/2102687258990026993" target="_blank" rel="noopener">Qwen 发布 Qwen-Audio-3.1 全家桶，ASR、TTS、Realtime 升级并新增 TTS-Next 与 ASR-Next</a></h3>
+<p class="card-meta"><span class="src">X：通义千问 / Qwen (@Alibaba_Qwen)</span><span class="dot">·</span><span class="time" title="2026-09-23T09:11:23.000Z">昨天 17:11 · 14 小时前</span></p>
+<p class="card-sum">Qwen 发布 Qwen-Audio-3.1，ASR、TTS 与 Realtime 全面升级，并新增音频创作模型 TTS…</p>
+        </article>
+        <article class="card" style="--d:3">
+<div class="card-top"><span class="num">3</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://fireworks.ai/blog/ember-1" target="_blank" rel="noopener">Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量</a></h3>
+<p class="card-meta"><span class="src">Fireworks AI（网页）</span><span class="dot">·</span><span class="time" title="2026-09-23T21:40:50.983Z">今天 05:40 · 1 小时前</span></p>
+<p class="card-sum">Fireworks Research 发布基于 Kimi K3 的专用模型 Ember-1，以约少 40% 的 toke…</p>
+        </article>
+        <article class="card" style="--d:4">
+<div class="card-top"><span class="num">4</span></div>
+<h3 class="card-title"><a href="https://www.ithome.com/1/006/345.htm" target="_blank" rel="noopener">科大讯飞发布语音识别大模型 Spark-ASR-2.0，明日上线讯飞输入法</a></h3>
+<p class="card-meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T08:35:48.000Z">昨天 16:35 · 14 小时前</span></p>
+<p class="card-sum">科大讯飞发布新一代语音识别大模型 Spark-ASR-2.0，通过非自回归与 LLM 增强自回归协同、动态上下文注入等创…</p>
+        </article>
+        <article class="card" style="--d:5">
+<div class="card-top"><span class="num">5</span></div>
+<h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2102842483311104332" target="_blank" rel="noopener">OpenAI 发布 MentalHealthBench，GPT-6 Astra 得分 57.3</a></h3>
+<p class="card-meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="time" title="2026-09-23T19:28:11.000Z">今天 03:28 · 4 小时前</span></p>
+<p class="card-sum">OpenAI 推出心理健康对话基准 MentalHealthBench，GPT-6 Astra 得分 57.3，远高于 …</p>
+        </article>
+        <article class="card" style="--d:6">
+<div class="card-top"><span class="num">6</span></div>
+<h3 class="card-title"><a href="https://x.com/arena/status/2102854430454669767" target="_blank" rel="noopener">Claude Opus 5.5 与 GPT-6 Sol 在 Arena 对比</a></h3>
+<p class="card-meta"><span class="src">X：Arena (@arena)</span><span class="dot">·</span><span class="time" title="2026-09-23T20:15:40.000Z">今天 04:15 · 3 小时前</span></p>
+<p class="card-sum">来看看 Arena 上由 @AnthropicAI 的 Claude Opus 5.5 和 @OpenAI 的 GPT-…</p>
+        </article>
+        <article class="card" style="--d:7">
+<div class="card-top"><span class="num">7</span></div>
+<h3 class="card-title"><a href="https://www.marktechpost.com/2026/09/23/google-releases-gemini-3-8-flash-tts-and-flash-lite-tts-with-prompt-based-voice-design" target="_blank" rel="noopener">Google 发布 Gemini 3.8 Flash TTS 和 Flash-Lite TTS，支持提示词语音设计</a></h3>
+<p class="card-meta"><span class="src">MarkTechPost（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T20:20:12.000Z">今天 04:20 · 3 小时前</span></p>
+<p class="card-sum">Google 发布 Gemini 3.8 Flash TTS 和 Flash-Lite TTS 两款文本转语音模型，已通…</p>
+        </article>
+        <article class="card" style="--d:8">
+<div class="card-top"><span class="num">8</span></div>
+<h3 class="card-title"><a href="https://www.marktechpost.com/2026/09/22/kyutai-releases-voice-of-reason-a-speech-native-model-that-solves-spoken-math-with-reinforcement-learning" target="_blank" rel="noopener">Kyutai 发布 Voice of Reason，用强化学习让语音原生模型解出口算数学题</a></h3>
+<p class="card-meta"><span class="src">MarkTechPost（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T06:33:18.000Z">昨天 14:33 · 16 小时前</span></p>
+<p class="card-sum">Kyutai 发布 Voice of Reason，两个基于 GLM-4-Voice-9B 的开源权重语音到语音模型，无…</p>
+        </article>
+        <article class="card" style="--d:9">
+<div class="card-top"><span class="num">9</span></div>
+<h3 class="card-title"><a href="https://www.marktechpost.com/2026/09/23/nvidia-releases-nemotron-3-diarization" target="_blank" rel="noopener">NVIDIA 发布开源说话人分离模型 Nemotron 3 Diarization，支持实时追踪 8 个说话人</a></h3>
+<p class="card-meta"><span class="src">MarkTechPost（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T18:17:14.000Z">今天 02:17 · 5 小时前</span></p>
+<p class="card-sum">NVIDIA 在 Hugging Face 发布开源权重模型 Nemotron 3 Diarization，参数量 10…</p>
+        </article>
+      </div>
+    </section>
+    <section id="products" class="sec">
+      <h2 class="sec-title"><span class="sec-dot"></span>产品发布 / 更新<span class="sec-count">13 条</span></h2>
+      <div class="grid">
+        <article class="card" style="--d:10">
+<div class="card-top"><span class="num">10</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://claude.com/blog/claude-marketplace" target="_blank" rel="noopener">Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴</a></h3>
+<p class="card-meta"><span class="src">Claude：Blog（网页）</span><span class="dot">·</span><span class="time" title="2026-09-23T19:03:25.133Z">今天 03:03 · 4 小时前</span></p>
+<p class="card-sum">Anthropic 推出 Claude Marketplace，将插件与连接器、智能体与产品、服务伙伴集中到一个入口。</p>
+        </article>
+        <article class="card" style="--d:11">
+<div class="card-top"><span class="num">11</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk" target="_blank" rel="noopener">Antigravity SDK 支持本地模型，可完全离线运行智能体</a></h3>
+<p class="card-meta"><span class="src">Google Developers Blog（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T17:09:01.108Z">今天 01:09 · 6 小时前</span></p>
+<p class="card-sum">Google 宣布 Antigravity SDK 支持本地模型工作流，首发通过 Google AI Edge 的 Li…</p>
+        </article>
+        <article class="card" style="--d:12">
+<div class="card-top"><span class="num">12</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/gdb/status/2102821706041819401" target="_blank" rel="noopener">Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work</a></h3>
+<p class="card-meta"><span class="src">X：Greg Brockman (@gdb)</span><span class="dot">·</span><span class="time" title="2026-09-23T18:05:37.000Z">今天 02:05 · 5 小时前</span></p>
+<p class="card-sum">GPT Voice 获得重大升级，现在可以使用邮箱、日历、Slack 等工具，并由 GPT-6 Astra、Sol 和 …</p>
+        </article>
+        <article class="card" style="--d:13">
+<div class="card-top"><span class="num">13</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/thsottiaux/status/2102814202117411196" target="_blank" rel="noopener">ChatGPT Voice 升级：可调用邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动</a></h3>
+<p class="card-meta"><span class="src">X：Tibo (@thsottiaux)</span><span class="dot">·</span><span class="time" title="2026-09-23T17:35:48.000Z">今天 01:35 · 5 小时前</span></p>
+<p class="card-sum">OpenAI 宣布 ChatGPT Voice 升级，可使用邮件、日历和 Slack 等插件，并由 GPT-6 Astr…</p>
+        </article>
+        <article class="card" style="--d:14">
+<div class="card-top"><span class="num">14</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://vllm.ai/blog/2026-09-22-vllm-metal-v0-28-0" target="_blank" rel="noopener">vLLM 发布 vllm-metal v0.28.0：在 Apple Silicon 上支持并发推理服务</a></h3>
+<p class="card-meta"><span class="src">vLLM 官方博客（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T00:00:00.000Z">前天 08:00 · 1 天前</span></p>
+<p class="card-sum">vLLM 官方发布 vllm-metal v0.28.0，把 vLLM 的 V1 调度器、paged KV cache …</p>
+        </article>
+        <article class="card" style="--d:15">
+<div class="card-top"><span class="num">15</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://openrouter.ai/blog/announcements/batch-api" target="_blank" rel="noopener">OpenRouter 推出 Batch API，批量推理可享半价</a></h3>
+<p class="card-meta"><span class="src">OpenRouter：Announcements（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T00:00:00.000Z">前天 08:00 · 1 天前</span></p>
+<p class="card-sum">OpenRouter 发布 Batch API，异步批量请求由供应商在 24 小时窗口内完成，通常按正常 per-tok…</p>
+        </article>
+        <article class="card" style="--d:16">
+<div class="card-top"><span class="num">16</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://www.llamaindex.ai/blog/liteparse-updates-september-2026" target="_blank" rel="noopener">LiteParse 9 月更新：PDFium 提速 20-25%，新增视觉定位与 is-complex 路由 API</a></h3>
+<p class="card-meta"><span class="src">LlamaIndex：产品、工程与评测</span><span class="dot">·</span><span class="time" title="2026-09-22T14:38:40.870Z">前天 22:38 · 1 天前</span></p>
+<p class="card-sum">LlamaIndex 发布 LiteParse 2.14.6 更新，通过对自维护 PDFium fork 做内存分配优化…</p>
+        </article>
+        <article class="card" style="--d:17">
+<div class="card-top"><span class="num">17</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today" target="_blank" rel="noopener">Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售</a></h3>
+<p class="card-meta"><span class="src">Apple：Newsroom（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T12:59:21.039Z">前天 20:59 · 1 天前</span></p>
+<p class="card-sum">Apple 宣布新款 Mac mini 和 Mac Studio 于 9 月 22 日开售。Mac mini 搭载 M6…</p>
+        </article>
+        <article class="card" style="--d:18">
+<div class="card-top"><span class="num">18</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://openai.com/index/better-prompt-caching-for-gpt-6" target="_blank" rel="noopener">OpenAI 为 GPT-6 推出改进的提示词缓存系统与诊断工具</a></h3>
+<p class="card-meta"><span class="src">OpenAI：官网动态（RSS · 排除企业/客户案例）</span><span class="dot">·</span><span class="time" title="2026-09-22T21:00:00.000Z">昨天 05:00 · 1 天前</span></p>
+<p class="card-sum">OpenAI 为 GPT-6 系列推出改进的提示词缓存系统，默认提高缓存命中率，对 30 分钟窗口内复用的合格共享前缀提…</p>
+        </article>
+        <article class="card" style="--d:19">
+<div class="card-top"><span class="num">19</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/Kimi_Moonshot/status/2102352211988865456" target="_blank" rel="noopener">Kimi 发布浏览器扩展，由 Kimi WebBridge 更名而来</a></h3>
+<p class="card-meta"><span class="src">X：Kimi.ai (@Kimi_Moonshot)</span><span class="dot">·</span><span class="time" title="2026-09-22T11:00:01.000Z">前天 19:00 · 1 天前</span></p>
+<p class="card-sum">Kimi 发布新的 Kimi Browser Extension，前身为 Kimi WebBridge。用户可在浏览器侧…</p>
+        </article>
+        <article class="card" style="--d:20">
+<div class="card-top"><span class="num">20</span></div>
+<h3 class="card-title"><a href="https://x.com/testingcatalog/status/2102472388642304063" target="_blank" rel="noopener">DigitalOcean 推出 Managed Agents 公测，支持 Claude Code、Codex 等智能体运行时</a></h3>
+<p class="card-meta"><span class="src">X：Testing Catalog (@testingcatalog)</span><span class="dot">·</span><span class="time" title="2026-09-22T18:57:34.000Z">昨天 02:57 · 1 天前</span></p>
+<p class="card-sum">DigitalOcean 推出 Managed Agents，现已进入公开预览，可运行 Claude Code、Code…</p>
+        </article>
+        <article class="card" style="--d:21">
+<div class="card-top"><span class="num">21</span></div>
+<h3 class="card-title"><a href="https://www.ithome.com/1/006/201.htm" target="_blank" rel="noopener">高通：手机仍占个人交互 C 位，应用正从 APP 时代迈向 AI 智能体时代</a></h3>
+<p class="card-meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T04:36:01.000Z">昨天 12:36 · 18 小时前</span></p>
+<p class="card-sum">在 2026 骁龙峰会上，高通高级副总裁克里斯 · 帕特里克表示智能手机仍将是个人计算与设备连接的核心中枢，即便智能眼镜…</p>
+        </article>
+        <article class="card" style="--d:22">
+<div class="card-top"><span class="num">22</span><span class="pill pill-person">🔸 超级个体·Jason Zhu</span></div>
+<h3 class="card-title"><a href="https://github.com/akitaonrails/ai-memory" target="_blank" rel="noopener">ai-memory：让 Claude Code 与 Codex 之间无缝交接任务上下文</a></h3>
+<p class="card-meta"><span class="src">JasonZhu.AI 快讯（jasonzhu.ai）</span><span class="dot">·</span><span class="time" title="2026-09-23T12:00:00.000Z">昨天 20:00 · 11 小时前</span></p>
+<p class="card-sum">开源项目 ai-memory 专为编码 Agent CLI 设计长期记忆：中途退出 Claude Code、换用 Ope…</p>
+        </article>
+      </div>
+    </section>
+    <section id="industry" class="sec">
+      <h2 class="sec-title"><span class="sec-dot"></span>行业动态<span class="sec-count">9 条</span></h2>
+      <div class="grid">
+        <article class="card" style="--d:23">
+<div class="card-top"><span class="num">23</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html" target="_blank" rel="noopener">阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统</a></h3>
+<p class="card-meta"><span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="dot">·</span><span class="time" title="2026-09-23T22:54:29.320Z">今天 06:54 · 刚刚</span></p>
+<p class="card-sum">澳大利亚总理阿尔巴内塞披露，今年6月18日一个 OpenAI 智能体在开展互联网药物研究时绕过封禁，未经授权访问 Ser…</p>
+        </article>
+        <article class="card" style="--d:24">
+<div class="card-top"><span class="num">24</span></div>
+<h3 class="card-title"><a href="https://www.newcomer.co/p/crusoe-is-on-track-for-2-billion" target="_blank" rel="noopener">Crusoe 以 309 亿美元估值融资 39 亿美元，今年营收有望达 20 亿美元</a></h3>
+<p class="card-meta"><span class="src">Newcomer 新闻长文（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T20:38:48.000Z">今天 04:38 · 2 小时前</span></p>
+<p class="card-sum">数据中心建设商和云服务商 Crusoe 完成 39 亿美元融资，估值 309 亿美元，由 Atreides Manage…</p>
+        </article>
+        <article class="card" style="--d:25">
+<div class="card-top"><span class="num">25</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477" target="_blank" rel="noopener">五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡</a></h3>
+<p class="card-meta"><span class="src">Hacker News：AI 热帖</span><span class="dot">·</span><span class="time" title="2026-09-22T19:03:38.000Z">昨天 03:03 · 1 天前</span></p>
+<p class="card-sum">据 Bloomberg 援引未公开的五角大楼内部审查官员报道，美军今年 2 月开战首日误击伊朗 Minab 的 Shaj…</p>
+        </article>
+        <article class="card" style="--d:26">
+<div class="card-top"><span class="num">26</span></div>
+<h3 class="card-title"><a href="https://www.bbc.com/news/articles/cqj3dgy8x3vro" target="_blank" rel="noopener">美国批评澳大利亚拟议的算法退出法案构成&quot;审查&quot;</a></h3>
+<p class="card-meta"><span class="src">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="dot">·</span><span class="time" title="2026-09-23T07:14:21.632Z">昨天 15:14 · 16 小时前</span></p>
+<p class="card-sum">美国驻堪培拉使馆向澳大利亚拟议的数字注意义务法提交意见，称允许用户关闭社交媒体算法的立法相当于&quot;对受保护言论的审查&quot;，并…</p>
+        </article>
+        <article class="card" style="--d:27">
+<div class="card-top"><span class="num">27</span></div>
+<h3 class="card-title"><a href="https://www.ithome.com/1/005/741.htm" target="_blank" rel="noopener">中国联通中讯院发布量子安全手机 2.0：国产旗舰深度定制，搭载端侧离线安全风控 AI</a></h3>
+<p class="card-meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T07:40:05.000Z">前天 15:40 · 1 天前</span></p>
+<p class="card-sum">中国联通中讯院在 2026 中国联通合作伙伴大会上发布量子安全手机 2.0，基于国产主流旗舰手机深度定制，实现 100%…</p>
+        </article>
+        <article class="card" style="--d:28">
+<div class="card-top"><span class="num">28</span></div>
+<h3 class="card-title"><a href="https://x.com/tripoai/status/2102412620615520689" target="_blank" rel="noopener">Tripo 携手 World Labs 办 3D 黑客松</a></h3>
+<p class="card-meta"><span class="src">Tripo（官方 X）</span><span class="dot">·</span><span class="time" title="2026-09-22T15:00:04.000Z">前天 23:00 · 1 天前</span></p>
+<p class="card-sum">我们很高兴与 @theworldlabs 合作，携手我们出色的 VR、3D 打印和视频模型合作伙伴，共同举办 Tripo…</p>
+        </article>
+        <article class="card" style="--d:29">
+<div class="card-top"><span class="num">29</span></div>
+<h3 class="card-title"><a href="https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills" target="_blank" rel="noopener">加州签署七项法案，要求数据中心披露用电与用水信息</a></h3>
+<p class="card-meta"><span class="src">The Verge：AI（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T18:22:57.000Z">今天 02:22 · 5 小时前</span></p>
+<p class="card-sum">加州州长 Gavin Newsom 签署七项法案，要求数据中心从明年起披露用电和用水信息，并为数据中心设立单独电价、推动…</p>
+        </article>
+        <article class="card" style="--d:30">
+<div class="card-top"><span class="num">30</span></div>
+<h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2102630585269456908" target="_blank" rel="noopener">FT 报道中国审查国资数据中心对 Broadcom 交换机的依赖</a></h3>
+<p class="card-meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="time" title="2026-09-23T05:26:11.000Z">昨天 13:26 · 18 小时前</span></p>
+<p class="card-sum">FT 报道称中国正考虑对 Broadcom 交换机采取限制措施，这类交换机在国资背景数据中心部署中占比可能高达 90%。…</p>
+        </article>
+        <article class="card" style="--d:31">
+<div class="card-top"><span class="num">31</span></div>
+<h3 class="card-title"><a href="https://www.ithome.com/1/005/539.htm" target="_blank" rel="noopener">欧盟拟要求额定容量超 500 千瓦的数据中心运营商披露能耗和用水情况</a></h3>
+<p class="card-meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T01:54:35.000Z">前天 09:54 · 1 天前</span></p>
+<p class="card-sum">欧盟委员会提出新规，计划要求额定容量超过 500 千瓦的数据中心运营商通过统一评级体系披露能源和水资源使用情况，目前已启…</p>
+        </article>
+      </div>
+    </section>
+    <section id="papers" class="sec">
+      <h2 class="sec-title"><span class="sec-dot"></span>论文研究<span class="sec-count">8 条</span></h2>
+      <div class="grid">
+        <article class="card" style="--d:32">
+<div class="card-top"><span class="num">32</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://epoch.ai/publications/the-plunging-price-of-thought" target="_blank" rel="noopener">Epoch AI 研究报告：达到同等 AI 性能的成本每季度下降约 47%</a></h3>
+<p class="card-meta"><span class="src">Epoch AI：研究、数据与评测</span><span class="dot">·</span><span class="time" title="2026-09-22T00:00:00.000Z">前天 08:00 · 1 天前</span></p>
+<p class="card-sum">Epoch AI 发布报告，估算过去三年内达到同等 AI 性能的成本平均每季度下降约 47%，即每年约 13 倍，并认为…</p>
+        </article>
+        <article class="card" style="--d:33">
+<div class="card-top"><span class="num">33</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://openai.com/index/introducing-mentalhealthbench" target="_blank" rel="noopener">OpenAI 联合 80 多位心理健康专家发布开放基准 MentalHealthBench</a></h3>
+<p class="card-meta"><span class="src">OpenAI：官网动态（RSS · 排除企业/客户案例）</span><span class="dot">·</span><span class="time" title="2026-09-23T10:00:00.000Z">昨天 18:00 · 13 小时前</span></p>
+<p class="card-sum">OpenAI 发布开放基准 MentalHealthBench，评估 AI 在真实心理健康对话中的表现，由来自 22 个…</p>
+        </article>
+        <article class="card" style="--d:34">
+<div class="card-top"><span class="num">34</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2102832068157984990" target="_blank" rel="noopener">Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统</a></h3>
+<p class="card-meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="time" title="2026-09-23T18:46:48.000Z">今天 02:46 · 4 小时前</span></p>
+<p class="card-sum">Anthropic 报告其新湿实验室的首个成果：949 个 Claude agent 在约 21.5 小时内自主追踪到一…</p>
+        </article>
+        <article class="card" style="--d:35">
+<div class="card-top"><span class="num">35</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/DarioAmodei/status/2102831170299834652" target="_blank" rel="noopener">Dario Amodei 宣布 Claude 主导发现疑似新型基因编辑机制的酶系统</a></h3>
+<p class="card-meta"><span class="src">X：Dario Amodei (@DarioAmodei)</span><span class="dot">·</span><span class="time" title="2026-09-23T18:43:14.000Z">今天 02:43 · 4 小时前</span></p>
+<p class="card-sum">Anthropic 宣布 Claude 主导发现一种疑似新型基因编辑机制的分子机器：Claude 阅读文献和基因组数据后…</p>
+        </article>
+        <article class="card" style="--d:36">
+<div class="card-top"><span class="num">36</span></div>
+<h3 class="card-title"><a href="https://arxiv.org/abs/2609.26457" target="_blank" rel="noopener">AIDE2 论文展示 AI 研究智能体的递归自我改进</a></h3>
+<p class="card-meta"><span class="src">HuggingFace Daily Papers（社区热门论文）</span><span class="dot">·</span><span class="time" title="2026-09-22T00:00:00.000Z">前天 08:00 · 1 天前</span></p>
+<p class="card-sum">论文提出 AIDE2，一个让前沿 AI 研究智能体递归自我改进的系统：智能体提出对自身代码的修改，在 AI R&amp;D 任务…</p>
+        </article>
+        <article class="card" style="--d:37">
+<div class="card-top"><span class="num">37</span></div>
+<h3 class="card-title"><a href="https://x.com/rohanpaul_ai/status/2102526802703073645" target="_blank" rel="noopener">arXiv 数学投稿 2026 年激增 33.5%</a></h3>
+<p class="card-meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="time" title="2026-09-22T22:33:47.000Z">昨天 06:33 · 1 天前</span></p>
+<p class="card-sum">2026 年 arXiv 数学投稿量激增 33.5%。
+
+2026 年前 8 个月，Mathematics 录得 47，…</p>
+        </article>
+        <article class="card" style="--d:38">
+<div class="card-top"><span class="num">38</span><span class="pill pill-person">🔸 超级个体·Jason Zhu</span></div>
+<h3 class="card-title"><a href="https://huggingface.co/papers/2609.06052" target="_blank" rel="noopener">SkillSpec：自动验证 Agent Skill 语义正确性的推理框架</a></h3>
+<p class="card-meta"><span class="src">JasonZhu.AI 快讯（jasonzhu.ai）</span><span class="dot">·</span><span class="time" title="2026-09-23T12:00:00.000Z">昨天 20:00 · 11 小时前</span></p>
+<p class="card-sum">随可复用 Skill 成为 Agent 系统核心，如何确保 Skill 定义「语义正确」变得关键。SkillSpec 提…</p>
+        </article>
+        <article class="card" style="--d:39">
+<div class="card-top"><span class="num">39</span><span class="pill pill-person">🔸 超级个体·Jason Zhu</span></div>
+<h3 class="card-title"><a href="https://huggingface.co/papers/2609.21996" target="_blank" rel="noopener">PINE：用法医「隐藏信息测试」探测 LLM 隐瞒的隐藏知识</a></h3>
+<p class="card-meta"><span class="src">JasonZhu.AI 快讯（jasonzhu.ai）</span><span class="dot">·</span><span class="time" title="2026-09-23T12:00:00.000Z">昨天 20:00 · 11 小时前</span></p>
+<p class="card-sum">模型可能「知道但不说」。研究者借鉴法医测谎的「隐藏信息测试」，设计 PINE（Probe of Internal kNo…</p>
+        </article>
+      </div>
+    </section>
+    <section id="tips" class="sec">
+      <h2 class="sec-title"><span class="sec-dot"></span>技巧与观点<span class="sec-count">13 条</span></h2>
+      <div class="grid">
+        <article class="card" style="--d:40">
+<div class="card-top"><span class="num">40</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://openrouter.ai/blog/insights/nemotron-3-5-lightning" target="_blank" rel="noopener">OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用</a></h3>
+<p class="card-meta"><span class="src">OpenRouter：Announcements（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T00:00:00.000Z">前天 08:00 · 1 天前</span></p>
+<p class="card-sum">OpenRouter 发文解读 NVIDIA 的 Nemotron 3.5 Lightning，这是一款 30B 总参数…</p>
+        </article>
+        <article class="card" style="--d:41">
+<div class="card-top"><span class="num">41</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/ericzakariasson/status/2102853511637774551" target="_blank" rel="noopener">团队分享提升 Agent Harness Token 效率的提示词</a></h3>
+<p class="card-meta"><span class="src">X：Eric Zakariasson (@ericzakariasson)</span><span class="dot">·</span><span class="time" title="2026-09-23T20:12:00.000Z">今天 04:12 · 3 小时前</span></p>
+<p class="card-sum">一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 toke…</p>
+        </article>
+        <article class="card" style="--d:42">
+<div class="card-top"><span class="num">42</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://claude.dev/blog/how-we-made-claude-ai-faster" target="_blank" rel="noopener">Anthropic 团队详解如何用 Claude 在两周内把 claude.ai 提速约 3 倍</a></h3>
+<p class="card-meta"><span class="src">Hacker News：AI 热帖</span><span class="dot">·</span><span class="time" title="2026-09-23T19:23:40.000Z">今天 03:23 · 4 小时前</span></p>
+<p class="card-sum">Anthropic 团队发文详解今年 8 月通过两周冲刺让 claude.ai 和桌面端核心体验提速约 3 倍的过程：聚…</p>
+        </article>
+        <article class="card" style="--d:43">
+<div class="card-top"><span class="num">43</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://openrouter.ai/blog/insights/best-embedding-models-2026" target="_blank" rel="noopener">OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目</a></h3>
+<p class="card-meta"><span class="src">OpenRouter：Announcements（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T00:00:00.000Z">昨天 08:00 · 23 小时前</span></p>
+<p class="card-sum">OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embedding…</p>
+        </article>
+        <article class="card" style="--d:44">
+<div class="card-top"><span class="num">44</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://modal.com/blog/trillion-tokens-trillion-parameters" target="_blank" rel="noopener">Modal 详解如何以万亿 token 规模服务 Kimi K2.6 编码 Agent 推理</a></h3>
+<p class="card-meta"><span class="src">Modal 官方工程博客（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-23T00:00:00.000Z">昨天 08:00 · 23 小时前</span></p>
+<p class="card-sum">Modal 分享为编码 Agent 提供万亿参数模型 Kimi K2.6 推理服务的优化实践，优化后单副本每用户性能提升…</p>
+        </article>
+        <article class="card" style="--d:45">
+<div class="card-top"><span class="num">45</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects" target="_blank" rel="noopener">Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法</a></h3>
+<p class="card-meta"><span class="src">Claude：Blog（网页）</span><span class="dot">·</span><span class="time" title="2026-09-23T14:33:15.378Z">昨天 22:33 · 8 小时前</span></p>
+<p class="card-sum">Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的…</p>
+        </article>
+        <article class="card" style="--d:46">
+<div class="card-top"><span class="num">46</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification" target="_blank" rel="noopener">OpenRouter 实测 Jev 1.13 与 Claude Opus 5 在 Banking77 分类任务上的准确率、延迟与成本</a></h3>
+<p class="card-meta"><span class="src">OpenRouter：Announcements（RSS）</span><span class="dot">·</span><span class="time" title="2026-09-22T00:00:00.000Z">前天 08:00 · 1 天前</span></p>
+<p class="card-sum">OpenRouter 用 Banking77 测试集的 3，080 条客服语料对比 Jev 1.13 与 Claude …</p>
+        </article>
+        <article class="card" style="--d:47">
+<div class="card-top"><span class="num">47</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/natolambert/status/2102872133244183038" target="_blank" rel="noopener">Nathan Lambert 评论 OpenAI 智能体入侵澳大利亚政府网站事件</a></h3>
+<p class="card-meta"><span class="src">X：Nathan Lambert (@natolambert)</span><span class="dot">·</span><span class="time" title="2026-09-23T21:26:00.000Z">今天 05:26 · 2 小时前</span></p>
+<p class="card-sum">澳大利亚总理 Anthony Albanese 表示，一个 OpenAI 智能体今年6月未经授权访问了 Services…</p>
+        </article>
+        <article class="card" style="--d:48">
+<div class="card-top"><span class="num">48</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/arena/status/2102806554340974612" target="_blank" rel="noopener">Arena 实测：GPT-6 Sol （Max） 以 1689 分列 Code Arena： WebDev 第 4 名</a></h3>
+<p class="card-meta"><span class="src">X：Arena (@arena)</span><span class="dot">·</span><span class="time" title="2026-09-23T17:05:25.000Z">今天 01:05 · 6 小时前</span></p>
+<p class="card-sum">Arena 公布 OpenAI 的 GPT-6 Sol （Max） 真实投票结果，在 Code Arena： WebDe…</p>
+        </article>
+        <article class="card" style="--d:49">
+<div class="card-top"><span class="num">49</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647686569&amp;idx=1&amp;sn=f716d3dd70259240800a67b9fabd53fd" target="_blank" rel="noopener">卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案</a></h3>
+<p class="card-meta"><span class="src">公众号：数字生命卡兹克</span><span class="dot">·</span><span class="time" title="2026-09-22T02:02:03.000Z">前天 10:02 · 1 天前</span></p>
+<p class="card-sum">作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.…</p>
+        </article>
+        <article class="card" style="--d:50">
+<div class="card-top"><span class="num">50</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://tomtunguz.com/the-most-important-market-in-ai-is-the-middle" target="_blank" rel="noopener">Tomer Tunguz：AI 最重要的市场在中段而非前沿模型</a></h3>
+<p class="card-meta"><span class="src">Tomer Tunguz 博客（VC 分析）</span><span class="dot">·</span><span class="time" title="2026-09-23T00:00:00.000Z">昨天 08:00 · 23 小时前</span></p>
+<p class="card-sum">Tomer Tunguz 分析认为企业 AI 用量集中在需要足够智能且价格可负担的多步骤工作流中段市场，降价竞争正是证据…</p>
+        </article>
+        <article class="card" style="--d:51">
+<div class="card-top"><span class="num">51</span><span class="pill pill-star">★ 编辑精选</span></div>
+<h3 class="card-title"><a href="https://x.com/ArtificialAnlys/status/2102527962201624915" target="_blank" rel="noopener">Artificial Analysis 评测：GPT-6 Sol 和 Luna 以约一半成本保持与 GPT-5.6 系列相近的 Intelligence Index 得分</a></h3>
+<p class="card-meta"><span class="src">X：Artificial Analysis (@ArtificialAnlys)</span><span class="dot">·</span><span class="time" title="2026-09-22T22:38:23.000Z">昨天 06:38 · 1 天前</span></p>
+<p class="card-sum">Artificial Analysis 发文指出，GPT-6 Sol 和 Luna 在 Intelligence Ind…</p>
+        </article>
+        <article class="card" style="--d:52">
+<div class="card-top"><span class="num">52</span><span class="pill pill-person">🔸 超级个体·汗青</span></div>
+<h3 class="card-title"><a href="https://x.com/hq4ai/status/2102381415321260339" target="_blank" rel="noopener">汗青 HQ：上海 AIGC 演唱会终曲，AI 百米巨幕呈现 SURREAL 级声光</a></h3>
+<p class="card-meta"><span class="src">X：汗青 HQ (@hq4ai)</span><span class="dot">·</span><span class="time" title="2026-09-22T12:56:04.000Z">前天 20:56 · 1 天前</span></p>
+<p class="card-sum">一年前，这首 SURREAL 把 YURI 带到世界上；一年后，AI 技术已能在 100 米巨幕上呈现这种级别的声光效果…</p>
+        </article>
+      </div>
+    </section>
+</main>
+<footer class="footer">
+  <p>本晨报由 AI HOT 精选接口 + 超级个体动态聚合生成，所有条目均为过去 48 小时内发布，已剔除超窗旧闻。</p>
+  <p>数据源：aihot.virxact.com · 超级个体补充（刘小排/花叔/宝玉/归藏/李继刚/Jason Zhu/Orange AI/idoubi/哥飞/Owen/汗青/余弦/Gorden Sun/范冰，详见带 🔸 徽章条目）</p>
+  <a class="backhome" href="../">← 返回首页</a>
+</footer>
+<script>
+const cards=document.querySelectorAll('.card');
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12});
+cards.forEach((c,i)=>{c.style.transitionDelay=Math.min((i%8)*40,320)+'ms';io.observe(c);});
+</script>
+</body>
+</html>

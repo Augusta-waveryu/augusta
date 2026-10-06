@@ -99,6 +99,7 @@ article:last-child { border-bottom: none; }
 .tag-workbuddy { background: #e8f5e9; color: #2e7d32; }
 .tag-perfume { background: #fce4ec; color: #c2185b; }
 .tag-phonics { background: #fef3c7; color: #b45309; }
+.tag-aoshu { background: #e8eaf6; color: #3949ab; }
 .post-title {
   font-size: 20px;
   font-weight: 600;
@@ -149,6 +150,7 @@ article:last-child { border-bottom: none; }
   .tag-workbuddy { background: #1b3621; color: #66bb6a; }
   .tag-perfume { background: #311b24; color: #f48fb1; }
   .tag-phonics { background: #422006; color: #fbbf24; }
+  .tag-aoshu { background: #1a237e; color: #c5cae9; }
   article { border-bottom-color: #1a1a1a; }
 }
 </style>
@@ -163,6 +165,7 @@ article:last-child { border-bottom: none; }
     <a href="/reports/">晨报</a>
     <a href="/perfume/">香氛研究</a>
     <a href="/phonics/">英语音标</a>
+    <a href="/aoshu/">思维树屋</a>
     <a href="/workbuddy/">WorkBuddy</a>
     <a href="/about.html">关于</a>
   </nav>
@@ -173,6 +176,7 @@ article:last-child { border-bottom: none; }
   <button class="filter-tab" onclick="filterPosts('report')">🌅 晨报</button>
   <button class="filter-tab" onclick="filterPosts('perfume')">🌹 香氛研究</button>
   <button class="filter-tab" onclick="filterPosts('phonics')">🎯 英语音标</button>
+  <button class="filter-tab" onclick="filterPosts('aoshu')">🌳 思维树屋</button>
   <button class="filter-tab" onclick="filterPosts('workbuddy')">🧭 WorkBuddy</button>
 </div>
 
@@ -939,6 +943,15 @@ article:last-child { border-bottom: none; }
     <a class="post-link" href="/reports/2026-06-25.html">阅读全文 →</a>
   </article>
 
+  <article data-tag="aoshu" data-date="2026-10-06">
+    <div class="post-meta">
+      <span class="post-date">2026 年 10 月 6 日</span>
+      <span class="post-tag tag-aoshu">思维树屋</span>
+    </div>
+    <h2 class="post-title"><a href="/aoshu/">思维树屋</a></h2>
+    <p class="post-excerpt">用互动例题探索鸡兔同笼、植树、和差与盈亏问题；继续进入数论第 1–10 天学习地图，并用 192 道题练习巩固。</p>
+    <a class="post-link" href="/aoshu/">打开思维树屋 →</a>
+  </article>
 </main>
 
 <footer class="site-footer">
@@ -946,7 +959,7 @@ article:last-child { border-bottom: none; }
 </footer>
 
 <script>
-var tagOrder = { 'report': 0, 'perfume': 1, 'workbuddy': 2 };
+var tagOrder = { 'aoshu': -1, 'report': 0, 'perfume': 1, 'workbuddy': 2 };
 
 function sortPosts() {
   var container = document.getElementById('post-list');

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="浏览数论课程与测验中的192道原题，按讲次和主题练习，并查看来源解析与逐题复核说明。">
+  <title>数论练习站｜192 道课堂题与测验题 · 思维树屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/aoshu/number-theory-practice.css">
+  <script src="/aoshu/number-theory-practice.js" defer></script>
+</head>
+<body class="practice-page">
+  <a class="skip-link" href="#practice-main">跳到练习内容</a>
+  <header class="practice-topbar">
+    <a class="practice-brand" href="/aoshu/index.html" aria-label="返回思维树屋首页">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 5 17h4v17h22V17h4L20 4Z" fill="currentColor"/><path d="M15 34V22h10v12M12 17h16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="12" r="2" fill="#ffd56a"/></svg></span>
+      <span>思维树屋 <small>小学奥数小课堂</small></span>
+    </a>
+    <nav class="practice-nav" aria-label="主导航">
+      <a href="/aoshu/index.html">首页</a>
+      <a href="/aoshu/number-theory.html">数论学习地图</a>
+      <a class="is-current" href="/aoshu/number-theory-practice.html" aria-current="page">数论练习站</a>
+    </nav>
+  </header>
+
+  <main id="practice-main">
+    <section class="practice-hero" aria-labelledby="practice-title">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-copy">
+        <span class="hero-kicker"><i aria-hidden="true"></i> 课堂原题 · 小测 · 综合测试</span>
+        <h1 id="practice-title">数论练习站<br><em>先想一想，再翻答案。</em></h1>
+        <p>从 14 份资料里整理出 192 道题。可以按讲次、主题或关键词挑题，也能随机抽一题；答案先收起来，准备好再打开。</p>
+        <div class="hero-facts"><span><b id="hero-question-count">192</b> 道题目记录</span><span><b id="hero-source-count">14</b> 份资料</span><span><b id="hero-page-count">68</b> 页 PDF</span></div>
+      </div>
+      <div class="hero-stamp" aria-label="学习小提醒"><span>✦</span><b>不怕难题</b><small>一步一步<br>找线索</small></div>
+      <div class="hero-scribble" aria-hidden="true">想 → 试 → 验</div>
+    </section>
+
+    <section class="topic-map-section page-width" aria-labelledby="topic-map-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">挑一条熟悉的线索</span><h2 id="topic-map-title">数论主题小地图</h2></div>
+        <p>点一个主题，就能筛出相关练习。</p>
+      </div>
+      <div class="topic-map" id="topic-map" aria-label="按主题筛选题目"></div>
+    </section>
+
+    <section class="practice-workspace page-width" id="practice" aria-labelledby="browse-title">
+      <div class="workspace-heading">
+        <div><span class="section-kicker">你的练习桌</span><h2 id="browse-title">找到一道题，开始试试</h2></div>
+        <p class="privacy-note"><span aria-hidden="true">ⓘ</span> 答案先在页面上收起；题库资料本身随网页一起提供，适合离线学习与复核。</p>
+      </div>
+
+      <div class="workspace-grid">
+        <aside class="filter-panel" aria-label="筛选题目">
+          <div class="filter-panel-heading"><span class="filter-icon" aria-hidden="true">⌕</span><div><b>挑题方式</b><small>可以组合筛选</small></div></div>
+          <label for="kind-filter">资料类型</label>
+          <select id="kind-filter"><option value="all">全部：课堂与测验</option><option value="lesson">课堂讲义</option><option value="test">小测与综合测试</option></select>
+          <label for="source-filter">讲次 / 测验</label>
+          <select id="source-filter"><option value="all">全部 14 份资料</option></select>
+          <label for="family-filter">主题大类</label>
+          <select id="family-filter"><option value="all">全部主题大类</option></select>
+          <label for="topic-filter">具体主题</label>
+          <select id="topic-filter"><option value="all">全部细分主题</option></select>
+          <label for="keyword-filter">关键词</label>
+          <input id="keyword-filter" type="search" placeholder="搜题面、答案或题目编号" autocomplete="off">
+          <div class="filter-actions"><button class="button button-quiet" id="reset-filters" type="button">清除筛选</button><button class="button button-random" id="random-question" type="button"><span aria-hidden="true">✦</span> 随机抽一题</button></div>
+          <p class="filter-tip">小提示：也可以用 ← → 键切换题目。</p>
+        </aside>
+
+        <div class="question-column">
+          <div class="result-bar"><p id="result-count" aria-live="polite">正在整理题目…</p><span class="result-dot" aria-hidden="true"></span><span>按原资料顺序</span></div>
+          <article class="question-card" id="question-card" aria-labelledby="question-label">
+            <div class="question-card-top"><div class="question-meta"><span class="question-kind" id="question-kind"></span><span class="question-id" id="question-id"></span></div><span class="review-badge" id="review-badge"></span></div>
+            <div class="question-source-title" id="question-source-title"></div>
+            <h3 id="question-label"></h3>
+            <div class="question-text" id="question-text"></div>
+            <div class="question-topics" id="question-topics" aria-label="题目主题"></div>
+            <div class="source-provenance" id="source-provenance"></div>
+            <div class="try-first"><span class="try-first-icon" aria-hidden="true">✎</span><p><b>先留一点思考时间</b><br>可以在纸上试算，也可以先说说你打算从哪里开始。</p></div>
+            <div class="question-controls"><button class="button button-outline" id="previous-question" type="button">← 上一题</button><button class="button button-reveal" id="reveal-answer" type="button">我想好了，看答案 <span aria-hidden="true">↓</span></button><button class="button button-outline" id="next-question" type="button">下一题 →</button></div>
+            <section class="answer-panel" id="answer-panel" hidden aria-labelledby="answer-title">
+              <div class="answer-panel-heading"><span aria-hidden="true">🌱</span><div><span class="section-kicker">现在来核对</span><h4 id="answer-title">资料答案与解题提示</h4></div></div>
+              <div id="answer-content"></div>
+              <details class="review-details" id="review-details"><summary>老师的复核小贴士与题目说明</summary><div id="review-content"></div></details>
+              <div class="related-box" id="related-box" hidden><b>同资料里的相关题目</b><div id="related-links"></div></div>
+            </section>
+          </article>
+          <div class="question-index-wrap">
+            <details class="question-index" id="question-index">
+              <summary><span>展开本次筛选的题目清单</span><b id="index-count">192 题</b></summary>
+              <div class="question-list" id="question-list"></div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="source-note page-width" aria-label="资料说明">
+      <div class="source-note-icon" aria-hidden="true">📚</div>
+      <div><b>每道题都带着它的来源</b><p>题目、原答案和原解析按原资料保留，并标出 PDF 文件名与页码。若原资料缺少解析、答案有待补充，或题面条件可能有不同理解，会在答案区用温和的小贴士说明；来源答案与复核意见分开展示。</p></div>
+      <a href="/aoshu/question-bank-source.json">查看题库数据 <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="practice-footer"><a class="practice-brand" href="/aoshu/index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>思维树屋 <small>把线索连起来</small></span></a><span>认真想一想，答案就近了一步。</span><a href="#practice-main">回到顶部 ↑</a></footer>
+  <noscript><p class="no-script">这页需要启用 JavaScript，才能加载并筛选本地题库。</p></noscript>
+</body>
+</html>

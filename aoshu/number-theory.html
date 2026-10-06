@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="数论集训课堂笔记整理：第1至10天课程，串联整除、因数结构、同余、进制转换与平方数。">
+  <title>数论集训｜从因数、同余到平方数 · 思维树屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/aoshu/styles.css">
+  <link rel="stylesheet" href="/aoshu/number-theory.css">
+  <script src="/aoshu/number-theory.js" defer></script>
+</head>
+<body class="nt-page">
+  <a class="skip-link" href="#nt-main">跳到课程内容</a>
+  <header class="topbar nt-topbar">
+    <a class="brand" href="/aoshu/index.html" aria-label="返回思维树屋首页">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 5 17h4v17h22V17h4L20 4Z" fill="currentColor"/><path d="M15 34V22h10v12M12 17h16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="12" r="2" fill="#ffd56a"/></svg></span>
+      <span>思维树屋 <small>小学奥数小课堂</small></span>
+    </a>
+    <nav class="topnav" aria-label="数论课程导航">
+      <a href="#nt-map">学习地图</a>
+      <a href="#nt-divisibility">整除</a>
+      <a href="#nt-factors">因数结构</a>
+      <a href="#nt-day03-divisor-functions">DAY 03</a>
+      <a href="#nt-identities">DAY 04</a>
+      <a href="#nt-day05">DAY 05</a>
+      <a href="#nt-day06">DAY 06</a>
+      <a href="#nt-day07">DAY 07</a>
+      <a href="#nt-day08-remainders">DAY 08</a>
+      <a href="#nt-day09-number-base">DAY 09</a>
+      <a href="#nt-day10-squares">DAY 10</a>
+    </nav>
+    <a class="nav-cta" href="/aoshu/number-theory-practice.html">练习题库 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="nt-main">
+    <section class="nt-hero" aria-labelledby="nt-title">
+      <div class="nt-hero-grid" aria-hidden="true"></div>
+      <div class="nt-hero-copy">
+        <div class="nt-eyebrow"><span></span> 集训笔记 · 已整理第 1–10 天</div>
+        <h1 id="nt-title">从“整除”出发，<br><em>搭起数论的地图。</em></h1>
+        <p>从整除和质因数出发，继续用因式分解揭开因数配对；再用同余解方程、拼余数条件，最后把零钱组合、数字进位、进制转换和平方数也连进数论地图。课堂笔记第 1–10 天已按主题核对，重叠内容回到原有课节。</p>
+        <div class="nt-hero-actions"><a class="nt-primary-button" href="#nt-map">沿路线开始 <span aria-hidden="true">↓</span></a><span class="nt-hero-note">第 1–10 天 · 互动探索</span></div>
+        <div class="nt-day-tags"><span><b>DAY 01–02</b> 整除 → 因数结构</span><span><b>DAY 03–04</b> 质数、因数函数与平方差</span><span><b>DAY 05–06</b> 因式分解 → 同余</span><span><b>DAY 07–08</b> 同余方程 → 余数拼合</span><span><b>DAY 09–10</b> 进制 → 平方数</span></div>
+      </div>
+      <div class="nt-hero-art" aria-label="由整除线索、质数和因数拼成的数论路线图">
+        <div class="nt-orbit nt-orbit-one"></div><div class="nt-orbit nt-orbit-two"></div>
+        <div class="nt-number-core"><small>从一个数开始</small><strong>2028</strong><span>2² × 3 × 13²</span></div>
+        <div class="nt-float-card nt-card-a"><small>质数因子</small><b>2 · 3 · 13</b></div>
+        <div class="nt-float-card nt-card-b"><small>因数个数</small><b>3 × 2 × 3 = 18</b></div>
+        <div class="nt-orbit-dot nt-dot-one"></div><div class="nt-orbit-dot nt-dot-two"></div><div class="nt-orbit-dot nt-dot-three"></div>
+      </div>
+    </section>
+
+    <section class="nt-map section-width" id="nt-map" aria-labelledby="nt-map-title">
+      <div class="nt-section-heading"><div><span class="nt-kicker">先看全程，再逐站探索</span><h2 id="nt-map-title">数论学习地图</h2></div><p>课堂笔记第 1–10 天均已核对。</p></div>
+      <div class="nt-map-days">
+        <div class="nt-day-label"><span>DAY 01</span><b>建立数的线索</b></div>
+        <div class="nt-map-track">
+          <a href="#nt-divisibility"><i>01</i><b>整除与余数</b><small>看数字留下的线索</small></a><span class="nt-map-arrow" aria-hidden="true">→</span>
+          <a href="#nt-primes"><i>02</i><b>质数与筛法</b><small>找出乘法的原子</small></a>
+        </div>
+        <div class="nt-day-label"><span>DAY 02</span><b>从分解走向应用</b></div>
+        <div class="nt-map-track">
+          <a href="#nt-factorization"><i>03</i><b>唯一分解</b><small>把整数拆成质数</small></a><span class="nt-map-arrow" aria-hidden="true">→</span>
+          <a href="#nt-gcd"><i>04</i><b>公因数与公倍数</b><small>指数取小与取大</small></a><span class="nt-map-arrow" aria-hidden="true">→</span>
+          <a href="#nt-factors"><i>05</i><b>因数结构</b><small>个数、连续和、阶乘</small></a><span class="nt-map-arrow" aria-hidden="true">→</span>
+          <a href="#nt-identities"><i>06</i><b>平方差</b><small>把平方差变成因数</small></a>
+        </div>
+        <div class="nt-source-days" aria-label="第3、4天笔记与课程对应关系">
+          <div class="nt-source-day"><b>DAY 03</b><p>质数无穷性与阶乘构造、唯一分解和常见分解、公因数/公倍数方法、因数函数。对应已有的质数、分解、公因数和因数结构课节；新增推导见 <a href="#nt-day03-divisor-functions">因数函数补充</a>。</p></div>
+          <div class="nt-source-day"><b>DAY 04</b><p>连续正整数和、因数个数定理与最小 18 因数问题、分数的最大公因数/最小公倍数、平方差分解。对应已有的 <a href="#nt-factors">因数结构</a>、<a href="#nt-gcd">分数公式</a>和<a href="#nt-identities">平方差例题</a>；不重复铺写已在页面中的内容。</p></div>
+        </div>
+        <div class="nt-day-label"><span>DAY 05</span><b>从公因式走到因数配对</b></div>
+        <div class="nt-map-track nt-new-track"><a href="#nt-day05"><i>07</i><b>分组与完全平方</b><small>把和式整理成乘积</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day05-remainders"><i>08</i><b>余数与记号</b><small>为同余做好准备</small></a></div>
+        <div class="nt-day-label"><span>DAY 06</span><b>用同余读出整除与周期</b></div>
+        <div class="nt-map-track nt-new-track"><a href="#nt-day06-rules"><i>09</i><b>余数特征</b><small>末位、数字和、分组</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day06"><i>10</i><b>同余与幂周期</b><small>把大数化成小余数</small></a></div>
+        <div class="nt-day-label"><span>DAY 07</span><b>同余方程与整数解</b></div>
+        <div class="nt-map-track nt-new-track"><a href="#nt-day07"><i>11</i><b>同余运算与约去</b><small>先看因子是否可逆</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day07-diophantine"><i>12</i><b>丢番图方程</b><small>余数找特解，再走通解</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day07-filter"><i>13</i><b>逐级满足法</b><small>一层层筛掉不合条件的数</small></a></div>
+        <div class="nt-day-label"><span>DAY 08</span><b>余数问题、装盒与弃九验算</b></div>
+        <div class="nt-map-track nt-new-track"><a href="#nt-day08-remainders"><i>14</i><b>余数拼合</b><small>韩信点兵与几种找法</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day08-coins"><i>15</i><b>装盒定理</b><small>两种规格能不能凑出 n</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day08-nines"><i>16</i><b>数字和与进位</b><small>看 9 的倍数与进位数</small></a></div>
+        <div class="nt-day-label"><span>DAY 09</span><b>十进制位值、数字和与进制</b></div>
+        <div class="nt-map-track nt-new-track"><a href="#nt-day09-number-base"><i>17</i><b>位值与进制转换</b><small>数字和模 9、2026 的四进制</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day09-squares"><i>18</i><b>平方数与因数配对</b><small>接回 Day 3 因数结构</small></a></div>
+        <div class="nt-day-label"><span>DAY 10</span><b>平方数的末位、余数与公式</b></div>
+        <div class="nt-map-track nt-new-track"><a href="#nt-day10-squares"><i>19</i><b>平方数末位与模余数</b><small>把平方限制在小余数里</small></a><span class="nt-map-arrow" aria-hidden="true">→</span><a href="#nt-day10-identities"><i>20</i><b>平方差与完全平方</b><small>展开或因式分解</small></a></div>
+      </div>
+      <p class="nt-map-note"><span aria-hidden="true">↳</span> 关键桥梁：质因数分解把“整除关系”翻译成指数；第 3–4 天继续看因数结构和平方差，第 5–8 天走向因式分解、同余方程、余数拼合与进位；第 9–10 天再把位值、进制、模平方余数和完全平方连起来。</p>
+      <div class="nt-hero-actions"><span class="nt-hero-note">想用课堂原题巩固？</span><a class="nt-primary-button" href="/aoshu/number-theory-practice.html">打开 192 道题练习站 <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <div class="nt-course section-width">
+      <section class="nt-lesson nt-tone-sage" id="nt-divisibility" aria-labelledby="nt-divisibility-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">01</div><div><span class="nt-kicker">DAY 01 · 从整除开始</span><h2 id="nt-divisibility-title">整除：余数为零，线索就出现了</h2><p>“b 整除 a”写作 <b>b ∣ a</b>，意思是存在整数 k，使 a = bk。先用整除把条件改写成乘法，再用数字特征缩小范围。</p></div><span class="nt-heading-symbol" aria-hidden="true">∣</span></div>
+        <div class="nt-two-column">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">四条常用线索</div>
+            <div class="nt-rule-list">
+              <div><b>2、5、10</b><span>看个位：被 2 整除时是偶数；被 5 整除时是 0 或 5；被 10 整除时是 0。</span></div>
+              <div><b>4、8</b><span>分别看末两位、末三位是否被 4、8 整除。</span></div>
+              <div><b>3、9</b><span>各位数字和分别能被 3、9 整除时，原数也能。</span></div>
+              <div><b>11</b><span>从一端开始交错相加、相减；差是 11 的倍数时，原数能被 11 整除。</span></div>
+            </div>
+            <div class="nt-insight"><b>为什么会这样？</b><span>10 ≡ 1（mod 9），所以十进制各位在除以 9 时可用数字和替代；10 ≡ −1（mod 11），所以 11 看交错和。</span></div>
+          </div>
+          <div class="nt-tool-card nt-divisibility-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 整除小雷达</span><span class="nt-live-dot">可试</span></div>
+            <label class="nt-field-label" for="nt-div-number">输入一个正整数</label>
+            <div class="nt-input-button"><input id="nt-div-number" type="number" min="1" max="999999999" value="2024" inputmode="numeric"><button type="button" id="nt-div-check">看线索</button></div>
+            <p class="nt-tool-hint" id="nt-div-summary" aria-live="polite">2024 的末两位是 24；数字和是 8；交错和是 0。</p>
+            <div class="nt-div-results" id="nt-div-results" aria-live="polite"></div>
+            <div class="nt-example-strip"><span>例：2024 可被 4 和 11 整除</span><b>2024 = 11 × 184</b></div>
+          </div>
+        </div>
+        <details class="nt-collapsible"><summary>整除关系还能怎样“传递”？</summary><div class="nt-details-grid"><p><b>传递：</b>若 a ∣ b 且 b ∣ c，则 a ∣ c。</p><p><b>加减：</b>若 a ∣ b 且 a ∣ c，则 a ∣ (b ± c)。</p><p><b>互质时可约：</b>若 a ∣ bc 且 gcd(a,b)=1，则 a ∣ c。</p><p><b>分离常数：</b>若 a 是正整数且 a+10 ∣ a−15，则 a+10 ∣ 25；又 a+10&gt;10，所以 a+10=25，a=15。</p></div></details>
+      </section>
+
+    <section class="nt-lesson nt-tone-amber" id="nt-primes" aria-labelledby="nt-primes-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">02</div><div><span class="nt-kicker">DAY 01 · 从整除到质数</span><h2 id="nt-primes-title">质数：不能再拆的小积木</h2><p>大于 1 的整数，若正因数只有 1 和它本身，就是质数；有更多正因数，就是合数。<b>1 既不是质数，也不是合数。</b></p></div><span class="nt-heading-symbol" aria-hidden="true">p</span></div>
+        <div class="nt-two-column nt-prime-layout">
+          <div class="nt-tool-card nt-sieve-card">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 一起筛掉合数</span><span class="nt-live-dot">埃拉托斯特尼筛法</span></div>
+            <p class="nt-tool-hint">从 2 开始圈出质数，再划掉它的倍数。每个合数会被它的某个质因数筛掉。</p>
+            <div class="nt-range-row"><label for="nt-sieve-range">筛到 <b id="nt-sieve-max">60</b></label><input id="nt-sieve-range" type="range" min="30" max="100" step="10" value="60" aria-label="选择筛选上限"></div>
+            <div class="nt-sieve-grid" id="nt-sieve-grid" aria-label="质数筛法网格"></div>
+            <p class="nt-sieve-caption" id="nt-sieve-caption" aria-live="polite"></p>
+          </div>
+          <div class="nt-theory-card nt-prime-facts">
+            <div class="nt-card-label">判断时记住“必要，不一定充分”</div>
+            <div class="nt-prime-fact"><b>2 是唯一的偶质数</b><span>大于 2 的质数都是奇数。</span></div>
+            <div class="nt-prime-fact"><b>大于 5 的质数</b><span>个位只能是 1、3、7、9；但符合个位条件并不能保证是质数。</span></div>
+            <div class="nt-prime-fact"><b>试除到平方根</b><span>判断 N 是否为质数，只需检查不超过 √N 的质数是否整除它。若 N 合数，至少有一个因数 ≤ √N。</span></div>
+            <div class="nt-prime-pairs"><span>双胞胎质数</span><b>(11, 13) · (29, 31) · …</b></div>
+            <label class="nt-field-label" for="nt-prime-number">试一试一个数是不是质数</label>
+            <div class="nt-input-button"><input id="nt-prime-number" type="number" min="0" max="999999" value="97" inputmode="numeric"><button type="button" id="nt-prime-check">检查</button></div>
+            <p class="nt-tool-hint nt-prime-result" id="nt-prime-result" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="nt-proof-card"><span class="nt-proof-mark" aria-hidden="true">∞</span><div><b>质数有无穷多个（欧几里得思路）</b><p>假设质数只有 p₁，p₂，…，pₙ 个，构造 N = p₁p₂…pₙ + 1。任何列出的质数除 N 都余 1；但 N 本身是质数，或有一个不在列表里的质因数，都会与“已经列全”矛盾。</p></div></div>
+        <div class="nt-proof-card nt-factorial-proof"><span class="nt-proof-mark" aria-hidden="true">n!</span><div><b>DAY 03 补充 · 阶乘法造出任意长的连续合数段</b><p>给定正整数 n，考虑 (n+1)!+2、(n+1)!+3、…、(n+1)!+(n+1)，一共 n 个数。对每个 k=2,…,n+1，(n+1)!+k = k×((n+1)!/k+1)，所以它是 k 的倍数且大于 k，必为合数。例：n=3 时得到 26、27、28。</p></div></div>
+      </section>
+
+      <section class="nt-lesson nt-tone-blue" id="nt-factorization" aria-labelledby="nt-factorization-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">03</div><div><span class="nt-kicker">DAY 02–03 · 把数拆开</span><h2 id="nt-factorization-title">唯一分解：每个整数都有自己的质数配方</h2><p>每个大于 1 的整数，都能写成质数幂的乘积；除了质因数排列顺序，写法唯一。整除问题从这里开始变得可比较。</p></div><span class="nt-heading-symbol" aria-hidden="true">×</span></div>
+        <div class="nt-two-column">
+          <div class="nt-theory-card nt-factor-example">
+            <div class="nt-card-label">从例子看唯一分解</div>
+            <div class="nt-factor-number">2028 <span>=</span> 2² × 3 × 13²</div>
+            <div class="nt-factor-tree" aria-label="2028 分解为 2 乘 2 乘 3 乘 13 乘 13"><span>2028</span><i>→</i><span>2 × 1014</span><i>→</i><span>2² × 3 × 169</span><i>→</i><b>2² × 3 × 13²</b></div>
+            <p class="nt-tool-hint">顺着因数树拆，直到每片“叶子”都是质数。验算乘回去：4 × 3 × 169 = 2028。</p>
+            <div class="nt-insight"><b>下一站的桥：</b><span>每个质数的指数，记录了这个质数在数里出现了几次。</span></div>
+          </div>
+          <div class="nt-tool-card">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 试着分解</span><span class="nt-live-dot">只分解整数</span></div>
+            <label class="nt-field-label" for="nt-factor-input">输入 2 到 1,000,000 的整数</label>
+            <div class="nt-input-button"><input id="nt-factor-input" type="number" min="2" max="1000000" value="2028" inputmode="numeric"><button type="button" id="nt-factor-button">分解</button></div>
+            <div class="nt-factor-output" id="nt-factor-output" aria-live="polite"></div>
+            <div class="nt-mini-example"><b>注意</b><span>1 没有质因数分解（空乘积约定为 1）；0 不属于质因数分解的范围。</span></div>
+          </div>
+        </div>
+        <details class="nt-collapsible nt-factorization-notes"><summary>DAY 03 笔记里的另外两个质因数分解</summary><div class="nt-details-grid"><p>999999 = 999×1001 = (3³×37)×(7×11×13) = <b>3³×7×11×13×37</b>。</p><p>142857 = <b>3³×11×13×37</b>。</p></div></details>
+      </section>
+
+      <section class="nt-lesson nt-tone-lilac" id="nt-gcd" aria-labelledby="nt-gcd-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">04</div><div><span class="nt-kicker">DAY 02–04 · 比较指数与分数</span><h2 id="nt-gcd-title">最大公因数与最小公倍数：同一张指数表</h2><p>先把两个数分解成质数幂：公因数取每个指数的较小值，公倍数取较大值。</p></div><span class="nt-heading-symbol" aria-hidden="true">(a,b)</span></div>
+        <div class="nt-two-column">
+          <div class="nt-tool-card nt-gcd-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 两个整数的公因数、公倍数</span><span class="nt-live-dot">正整数</span></div>
+            <div class="nt-pair-inputs"><label>a<input id="nt-gcd-a" type="number" min="1" max="1000000" value="84"></label><label>b<input id="nt-gcd-b" type="number" min="1" max="1000000" value="126"></label><button type="button" id="nt-gcd-button">比较</button></div>
+            <div class="nt-gcd-results" id="nt-gcd-results" aria-live="polite"></div>
+            <div class="nt-gcd-check" id="nt-gcd-check"></div>
+            <p class="nt-tool-hint">也可用辗转相除：若 a = bq + r，则 gcd(a,b)=gcd(b,r)，直到余数为 0。</p>
+            <div class="nt-euclid-example"><b>DAY 03 笔记算例：gcd(231,84)</b><span>231 = 84×2 + 63</span><span>84 = 63×1 + 21</span><span>63 = 21×3 + 0</span><strong>所以 gcd(231,84) = 21。</strong></div>
+          </div>
+          <div class="nt-theory-card nt-fraction-card">
+            <div class="nt-card-label">DAY 04 · 正分数的对应公式</div>
+            <div class="nt-fraction-formula"><b>最大公因数</b><span>gcd(a/b, c/d) = gcd(a,c) / lcm(b,d)</span></div>
+            <div class="nt-fraction-formula"><b>最小公倍数</b><span>lcm(a/b, c/d) = lcm(a,c) / gcd(b,d)</span></div>
+            <p class="nt-tool-hint">这里的分数都先化成最简正分数。这个约定很重要，否则直接套公式可能出错。</p>
+            <div class="nt-fraction-demo"><span>7/18 与 21/20</span><b>最大公因数 = 7/180</b><b>最小公倍数 = 21/2</b></div>
+          </div>
+        </div>
+        <details class="nt-collapsible"><summary>想验证一下？用 24、36、84 看指数怎么取</summary><div class="nt-details-grid nt-exp-table"><p>24 = 2³ × 3</p><p>36 = 2² × 3²</p><p>84 = 2² × 3 × 7</p><p><b>gcd = 2² × 3 = 12</b></p><p><b>lcm = 2³ × 3² × 7 = 504</b></p><p>gcd × lcm ≠ 三数乘积；熟悉的乘积关系是对两个数：gcd(a,b) × lcm(a,b) = ab。</p></div></details>
+      </section>
+
+      <section class="nt-lesson nt-tone-coral" id="nt-factors" aria-labelledby="nt-factors-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">05</div><div><span class="nt-kicker">DAY 02–04 · 指数变成计数</span><h2 id="nt-factors-title">因数结构：从指数读出“有几个”</h2><p>若 N = p₁ᵉ¹p₂ᵉ²…，每个因数都能独立选择各质数的指数，所以正因数个数 τ(N) = (e₁+1)(e₂+1)…。</p></div><span class="nt-heading-symbol" aria-hidden="true">τ</span></div>
+        <div class="nt-two-column">
+          <div class="nt-tool-card nt-divisor-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 因数个数计算器</span><span class="nt-live-dot">含 1 与自身</span></div>
+            <label class="nt-field-label" for="nt-divisor-input">输入 1 到 1,000,000 的正整数</label>
+            <div class="nt-input-button"><input id="nt-divisor-input" type="number" min="1" max="1000000" value="2028" inputmode="numeric"><button type="button" id="nt-divisor-button">数一数</button></div>
+            <div id="nt-divisor-output" class="nt-divisor-output" aria-live="polite"></div>
+            <div class="nt-minimum-card"><small>DAY 04 笔记题 · 正好有 18 个正因数的最小正整数</small><b>180 = 2² × 3² × 5</b><span>τ(180) = (2+1)(2+1)(1+1) = 18。18 的乘法拆分为 18、9×2、6×3、3×3×2；按从大到小分配指数，最小候选分别是 2¹⁷=131072、2⁸×3=768、2⁵×3²=288、2²×3²×5=180，所以最小值是 180。</span></div>
+          </div>
+          <div class="nt-theory-card nt-consecutive-card">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 连续正整数求和</span><span class="nt-live-dot">从 2 项开始找</span></div>
+            <label class="nt-field-label" for="nt-run-input">把一个数拆成连续正整数之和</label>
+            <div class="nt-input-button"><input id="nt-run-input" type="number" min="2" max="5000" value="24" inputmode="numeric"><button type="button" id="nt-run-button">找找看</button></div>
+            <div id="nt-run-output" class="nt-run-output" aria-live="polite"></div>
+            <div class="nt-insight"><b>和因数个数的联系：</b><span>若 N = 2ᵏm（m 为奇数），N 写成两个或更多连续正整数之和的种数为 τ(m)−1。若把 N 自己也算作一项，再加 1。</span></div>
+            <p class="nt-formula-small">等长为 ℓ、首项为 s：N = ℓ(2s + ℓ − 1) ÷ 2。</p>
+          </div>
+        </div>
+        <div class="nt-divisor-functions" id="nt-day03-divisor-functions">
+          <div class="nt-card-label">DAY 03 补充 · 从因数个数继续数</div>
+          <p class="nt-divisor-functions-lead">以 2024 = 2³×11×23、τ(2024)=16 为例。页面原有因数个数公式和第4天的最小 18 因数问题保留在上方；这里补上笔记中尚未出现的因数和、因数乘积与互质分子问题。</p>
+          <div class="nt-divisor-functions-grid">
+            <div><b>偶因数与 92 的倍数</b><p>偶因数有 3×2×2=<strong>12</strong> 个。92=2²×23；2024 的因数若是 92 的倍数，2 的指数可取 2 或 3，11 的指数可取 0 或 1，23 的指数只能取 1，所以共有 2×2×1=<strong>4</strong> 个。</p></div>
+            <div><b>因数和与倒数和</b><p>σ(2024)=(1+2+4+8)(1+11)(1+23)=<strong>4320</strong>。正因数倒数和为 σ(2024)/2024=<strong>540/253</strong>。</p></div>
+            <div><b>全部正因数的乘积</b><p>∏<sub>d∣2024</sub>d = 2024<sup>τ(2024)/2</sup> = 2024⁸ = 2²⁴×11⁸×23⁸。这个乘积本身有 (24+1)(8+1)(8+1)=<strong>2025</strong> 个正因数。</p></div>
+            <div><b>分母为 2024 的最简真分数</b><p>分子与 2024 互质的个数为 φ(2024)=2024(1−1/2)(1−1/11)(1−1/23)=<strong>880</strong>；把分子 k 与 2024−k 配对，这些分数的和为 <strong>440</strong>。</p></div>
+          </div>
+        </div>
+        <div class="nt-proof-card nt-legendre-card"><span class="nt-proof-mark" aria-hidden="true">n!</span><div><b>补充连接 · 阶乘里有多少个质因数 p？（勒让德计数）</b><p>在 n! 中，p 的指数 = ⌊n/p⌋ + ⌊n/p²⌋ + ⌊n/p³⌋ + …（到商为 0 为止）。先数 p 的倍数，再给 p² 的倍数多算一次，依此类推。</p><div class="nt-legendre-example">10! 中 2 的指数：5 + 2 + 1 = 8 <span>·</span> 5 的指数：2 <span>·</span> 末尾有 min(8,2)=2 个 0</div></div></div>
+      </section>
+
+      <section class="nt-lesson nt-tone-ink" id="nt-identities" aria-labelledby="nt-identities-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">06</div><div><span class="nt-kicker">DAY 02、04 · 把结构用起来</span><h2 id="nt-identities-title">平方差：一个恒等式，连起因数配对</h2><p>a² − b² = (a−b)(a+b)。已知平方差时，把它拆成两个因数；再检查奇偶性，找回 a 和 b。</p></div><span class="nt-heading-symbol" aria-hidden="true">a²−b²</span></div>
+        <div class="nt-two-column">
+          <div class="nt-theory-card nt-square-example">
+            <div class="nt-card-label">例：求 a² − b² = 24 的正整数解（a &gt; b）</div>
+            <div class="nt-square-equation">(a − b)(a + b) = 24</div>
+            <div class="nt-factor-pairs"><div><small>a−b</small><b>2</b><i>×</i><b>12</b><small>a+b</small><span>→ a=7，b=5</span></div><div><small>a−b</small><b>4</b><i>×</i><b>6</b><small>a+b</small><span>→ a=5，b=1</span></div></div>
+            <p class="nt-tool-hint">两因数必须同奇偶，才能让 a = [(a−b)+(a+b)]÷2、b = [(a+b)−(a−b)]÷2 都是整数。正解：(7,5)、(5,1)。</p>
+          </div>
+          <div class="nt-tool-card nt-identity-check">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 把因数还原成平方数</span><span class="nt-live-dot">可检查</span></div>
+            <label class="nt-field-label" for="nt-pair-choice">选一组因数，看看能不能组成整数解</label>
+            <div class="nt-choice-row"><button type="button" data-pair="1,24">1 × 24</button><button type="button" data-pair="2,12">2 × 12</button><button type="button" data-pair="3,8">3 × 8</button><button type="button" data-pair="4,6">4 × 6</button></div>
+            <p class="nt-pair-result" id="nt-pair-result" aria-live="polite">提示：先检查因数的奇偶性是否相同。</p>
+            <div class="nt-insight"><b>更大的视角：</b><span>分解不是把数字拆散，而是把隐藏的配对结构露出来。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-sage nt-advanced-lesson" id="nt-day05" aria-labelledby="nt-day05-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">05</div><div><span class="nt-kicker">DAY 05 · 从式子里找公因式</span><h2 id="nt-day05-title">分组、凑因数，再看完全平方</h2><p>前两天练习了把整数拆成因数；这一天把同一眼光用到代数式里：先分组找相同的一块，再把乘积条件转成因数配对。</p></div><span class="nt-heading-symbol" aria-hidden="true">( )( )</span></div>
+        <div class="nt-two-column nt-day5-layout">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">两种“分组凑公因式”</div>
+            <div class="nt-identity-row"><b>ab + a + b + 1</b><span>= a(b+1) + (b+1)</span><strong>= (a+1)(b+1)</strong></div>
+            <p class="nt-tool-hint">前两项提出 a，后两项也整理出 (b+1)；两组共有同一因式，就能再提出一次。</p>
+            <div class="nt-identity-row"><b>ab − a − b + 1</b><span>= a(b−1) − (b−1)</span><strong>= (a−1)(b−1)</strong></div>
+            <p class="nt-tool-hint">注意中间是减法：把 −b+1 写成 −(b−1)，括号里的共同部分才会显出来。</p>
+            <div class="nt-square-pair"><span>a² + 2ab + b² <b>= (a+b)²</b></span><span>a² − 2ab + b² <b>= (a−b)²</b></span></div>
+            <p class="nt-tool-hint">展开 (a±b)(a±b)，中间的 ab 项会出现两次，因此得到 ±2ab。</p>
+          </div>
+          <div class="nt-tool-card nt-factor-pair-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 因数配对找整数解</span><span class="nt-live-dot">切换例题</span></div>
+            <p class="nt-tool-hint">先把原式整理成“两个正整数相乘”，再列出乘积的因数对；每对因数都要满足原变量的范围。</p>
+            <div class="nt-choice-row nt-mode-row" role="group" aria-label="选择因数配对例题"><button type="button" data-factor-mode="ab" aria-pressed="true">ab = a+b+35</button><button type="button" data-factor-mode="xy" aria-pressed="false">xy+2x+3y=60</button></div>
+            <div id="nt-factor-pairs-output" class="nt-factor-pairs-output" aria-live="polite"></div>
+          </div>
+        </div>
+        <div class="nt-proof-card"><span class="nt-proof-mark" aria-hidden="true">↔</span><div><b>从整式回到整数因数</b><p>例如 ab = a+b+35，移项并补上 1：ab−a−b+1=36，所以 (a−1)(b−1)=36。若 a、b 是正整数，两个因数都为正；36 有 5 组无序正因数对，按顺序区分时对应 9 个有序解：(2,37)、(3,19)、(4,13)、(5,10)、(7,7)、(10,5)、(13,4)、(19,3)、(37,2)。</p></div></div>
+        <div class="nt-remainder-note" id="nt-day05-remainders"><span class="nt-remainder-mark">余</span><div><b>余数的标准写法</b><p>把整数 a 除以正整数 m，可写成 <strong>a = mq + r</strong>，其中 q 是商，且 <strong>0 ≤ r &lt; m</strong>。这时说 a 除以 m 余 r，也可记作 <strong>a ≡ r (mod m)</strong>；这个记号会在第 6 天反复出现。</p></div></div>
+      </section>
+
+      <section class="nt-lesson nt-tone-lilac nt-advanced-lesson" id="nt-day06" aria-labelledby="nt-day06-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">06</div><div><span class="nt-kicker">DAY 06 · 余数、同余与周期</span><h2 id="nt-day06-title">不必算出大数，也能知道它的余数</h2><p>先看一个数与另一个数相差了多少个模数；若两数相差 m 的倍数，它们除以 m 的余数就相同。这样可以逐步缩小大数计算。</p></div><span class="nt-heading-symbol" aria-hidden="true">mod m</span></div>
+        <div class="nt-theory-card nt-rule-theory" id="nt-day06-rules">
+          <div class="nt-card-label">余数特征 → 整除：看合适的“尾巴”或“和”</div>
+          <div class="nt-rule-grid">
+            <div><b>个位、末两位、末三位</b><p>除以 2 或 5，看个位；除以 4 或 25，看末两位；除以 8 或 125，看末三位。因为 10、100、1000 分别能被这些数整除，前面的位都贡献整倍数。</p></div>
+            <div><b>数字和与分组和</b><p>10 ≡ 1 (mod 9)，所以各位数字和与原数除以 9 的余数相同，也能判 3。又 100 ≡ 1 (mod 99)、1000 ≡ 1 (mod 999)，按两位或三位一组相加，可分别检验 99 或 999。</p></div>
+            <div><b>交错和与交错分组</b><p>10 ≡ −1 (mod 11)，逐位交替加减可判 11。类似地，100 ≡ −1 (mod 101)，1000 ≡ −1 (mod 1001)：按两位或三位分组后交替加减，分别检验 101 或 1001。</p></div>
+            <div><b>一个模 7 的分组例子</b><p>1000 ≡ −1 (mod 7)，所以五位数 abcde = ab×1000+cde ≡ cde−ab (mod 7)。算出 cde−ab 的余数，就知道原数除以 7 的余数。</p></div>
+          </div>
+          <div class="nt-insight"><b>为什么能“只看尾巴”？</b><span>若 10ᵏ 能被 m 整除，写成 N = 10ᵏq + r 后，第一项除以 m 余 0，所以 N 与末 k 位 r 同余。</span></div>
+        </div>
+        <div class="nt-two-column nt-day6-layout">
+          <div class="nt-tool-card nt-remainder-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 余数与同余小实验</span><span class="nt-live-dot">输入整数</span></div>
+            <div class="nt-pair-inputs nt-remainder-inputs"><label>被除数 a<input id="nt-rem-a" type="number" value="186" inputmode="numeric"></label><label>除数 m<input id="nt-rem-m" type="number" min="1" value="11" inputmode="numeric"></label><button type="button" id="nt-rem-button">算余数</button></div>
+            <div id="nt-rem-output" class="nt-rem-output" aria-live="polite"></div>
+            <div class="nt-congruence-example"><b>同余定理</b><span>a ≡ b (mod m) ⇔ m ∣ (a−b)</span><p>100 和 186 都余 5 时，m 必须整除 186−100=86；同时余数 5 必须小于 m，所以 m&gt;5。86 的正因数中，大于 5 的只有 <strong>43、86</strong>。</p></div>
+          </div>
+          <div class="nt-theory-card nt-cycle-card">
+            <div class="nt-card-label">幂的余数会循环：大指数先看周期</div>
+            <div class="nt-cycle-sequence"><span>3¹</span><i>→</i><span>3</span><i>→</i><span>9</span><i>→</i><span>5</span><i>→</i><span>4</span><i>→</i><span>1</span><i>↺</i></div>
+            <p>这些是 3 的幂除以 11 的余数：3、9、5、4、1；接着又从 3 开始，周期为 5。因为 2027 ≡ 3 (mod 11)，且 1243 = 5×248+3，<strong>2027¹²⁴³ ≡ 3³ ≡ 5 (mod 11)</strong>。</p>
+            <div class="nt-insight"><b>个位也常有周期：</b><span>任意整数 a、非负整数 k，都有 a⁽⁴ᵏ⁺⁶⁾ ≡ a² (mod 10)。个位数字在足够靠后的幂中每 4 次重复；这里指数至少为 6。</span></div>
+          </div>
+        </div>
+        <div class="nt-two-column nt-day6-tools">
+          <div class="nt-tool-card nt-power-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 大指数取余计算器</span><span class="nt-live-dot">快速重复平方</span></div>
+            <div class="nt-power-inputs"><label>底数<input id="nt-pow-base" type="number" value="2027" inputmode="numeric"></label><label>指数<input id="nt-pow-exp" type="number" min="0" value="1243" inputmode="numeric"></label><label>模数<input id="nt-pow-mod" type="number" min="2" max="1000000" value="11" inputmode="numeric"></label><button type="button" id="nt-pow-button">求余数</button></div>
+            <div id="nt-pow-output" class="nt-rem-output" aria-live="polite"></div>
+          </div>
+          <div class="nt-tool-card nt-last-digit-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 验证个位周期</span><span class="nt-live-dot">模 10</span></div>
+            <div class="nt-pair-inputs nt-remainder-inputs"><label>整数 a（0–9）<input id="nt-last-base" type="number" min="0" max="9" value="7" inputmode="numeric"></label><label>非负整数 k<input id="nt-last-k" type="number" min="0" value="3" inputmode="numeric"></label><button type="button" id="nt-last-button">验证</button></div>
+            <div id="nt-last-output" class="nt-rem-output" aria-live="polite"></div>
+          </div>
+        </div>
+        <p class="nt-source-caveat">笔记说明：第 6 天照片底部的一条模 13 大数算式有数字笔迹不清，未照抄；第 7 天“约去”一条的标题字迹不够清楚，因此按旁边的公式整理了可约条件，没有臆抄标题。新加入的方程、解集和余数拼合例题均已逐步核算。</p>
+      </section>
+
+      <section class="nt-lesson nt-tone-blue nt-advanced-lesson" id="nt-day07" aria-labelledby="nt-day07-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">07</div><div><span class="nt-kicker">DAY 07 · 同余运算、方程与整数解</span><h2 id="nt-day07-title">余数相同，也能像等式一样一步步推理</h2><p>若 m 整除 a−b，就记作 a ≡ b (mod m)。第 6 天用它简化大数；今天继续用加减、乘方和“可逆时约去”来解方程，再把答案延伸成整数解。</p></div><span class="nt-heading-symbol" aria-hidden="true">≡</span></div>
+        <div class="nt-two-column nt-day7-layout">
+          <div class="nt-theory-card nt-congruence-rules">
+            <div class="nt-card-label">同余运算守则 · 和等式相似，但约分要小心</div>
+            <div class="nt-rule-grid">
+              <div><b>三种基本性质</b><p>自反：a≡a；对称：a≡b 就有 b≡a；传递：a≡b、b≡c 可得 a≡c（都在同一模数 m 下）。</p></div>
+              <div><b>可加减</b><p>若 a≡b、c≡d (mod m)，则 a±c≡b±d (mod m)。两边可同时加上或减去同一个数。</p></div>
+              <div><b>可相乘、可乘方</b><p>ac≡bc (mod m)；并且对任意非负整数 n，aⁿ≡bⁿ (mod m)。指数从 0 开始，不把负指数算进这条规则。</p></div>
+              <div><b>没有可除性 · 互质可除，不互质只可约小模</b><p>同余没有无条件的“除法”。从 ac≡bc (mod m) 约去 c，若 gcd(c,m)=1，才能保留模数 m；若 d=gcd(c,m)，则只能保证 a≡b (mod m/d)。例如 6x≡6y (mod 10) 只能推出 x≡y (mod 5)，不一定模 10 同余。</p></div>
+            </div>
+            <div class="nt-insight"><b>解 ax≡b (mod m)</b><span>令 d=gcd(a,m)。有解当且仅当 d∣b；能同时把 a、b、m 除以 d，化成模 m/d 的方程。有解时，模 m 恰有 d 个不同的解类。</span></div>
+          </div>
+          <div class="nt-tool-card nt-linear-congruence-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 试试线性同余方程</span><span class="nt-live-dot">列出一个周期内的解</span></div>
+            <p class="nt-tool-hint">输入 a、b、m，找 0≤x&lt;m 中满足 ax≡b (mod m) 的数。观察系数和模数的最大公因数。</p>
+            <div class="nt-linear-inputs"><label>a<input id="nt-linear-a" type="number" min="0" max="99" value="7" inputmode="numeric"></label><label>b<input id="nt-linear-b" type="number" min="-999" max="999" value="6" inputmode="numeric"></label><label>模数 m<input id="nt-linear-m" type="number" min="2" max="100" value="9" inputmode="numeric"></label><button type="button" id="nt-linear-button">找解</button></div>
+            <div id="nt-linear-output" class="nt-rem-output" aria-live="polite"></div>
+            <div class="nt-residue-rail" aria-label="模 5 下 3 乘 x 的余数变化"><span><small>x=0</small><b>0</b></span><i>→</i><span><small>x=1</small><b>3</b></span><i>→</i><span><small>x=2</small><b>1</b></span><i>→</i><span><small>x=3</small><b>4</b></span><i>→</i><span class="is-hit"><small>x=4</small><b>2</b></span></div>
+            <p class="nt-tool-hint">小图：3x≡7 (mod 5)，先把 7 化成余数 2；绕一圈找到 3x 的余数 2，答案 x≡4 (mod 5)。</p>
+          </div>
+        </div>
+        <div class="nt-two-column nt-day7-layout nt-day7-equations" id="nt-day07-equations">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">例题 · 把方程改写成最容易解的样子</div>
+            <div class="nt-worked-steps"><p><b>7(x+5) ≡ 50 (mod 9)</b></p><p>展开并化余数：7x+35≡50，所以 7x≡15≡6 (mod 9)。</p><p>因 gcd(7,9)=1，7 的逆元是 4：两边乘 4，得到 x≡24≡6 (mod 9)。</p><strong>所有整数解：x=6+9k，k∈ℤ。</strong></div>
+            <div class="nt-worked-steps nt-worked-steps-soft"><p><b>再看一题：7(x−102)+2x ≡ 2026 (mod 13)</b></p><p>102≡11、2026≡11 (mod 13)，所以 9x−77≡11，化成 9x≡10 (mod 13)。</p><p>9 的逆元是 3，故 <strong>x≡4 (mod 13)</strong>，也就是 x=4+13k。</p></div>
+          </div>
+          <div class="nt-tool-card nt-cancel-card">
+            <div class="nt-card-label">约去之前先问：这个因子有逆元吗？</div>
+            <div class="nt-cancel-compare"><div><small>可以约</small><b>5x≡2 (mod 7)</b><span>gcd(5,7)=1，5 有逆元 3；x≡6 (mod 7)。</span></div><div><small>不能直接约成原模数</small><b>6x≡4 (mod 10)</b><span>gcd(6,10)=2；除以 2 后是 3x≡2 (mod 5)，所以模 10 下有 x≡4、9 两个解。</span></div></div>
+            <div class="nt-insight"><b>小心陷阱</b><span>6x≡4 (mod 10) 不能直接说 x≡? (mod 10) 并把 6 当成普通分数约掉；先算最大公因数，再同时缩小等式与模数。</span></div>
+          </div>
+        </div>
+        <div class="nt-two-column nt-day7-layout" id="nt-day07-diophantine">
+          <div class="nt-theory-card nt-diophantine-card">
+            <div class="nt-card-label">丢番图方程 · 找到一组，再沿着系数走</div>
+            <div class="nt-equation-banner">13x + 17y = 1000 <small>x、y 为正整数</small></div>
+            <p class="nt-tool-hint">先模 13：4y≡12，所以 y≡3 (mod 13)。令 y=3+13k，代回得 x=73−17k。由 x≥1 得 k=0、1、2、3、4。</p>
+            <div class="nt-solution-ladder" aria-label="方程 13x 加 17y 等于 1000 的五组正整数解"><span>(73,3)</span><i>→</i><span>(56,16)</span><i>→</i><span>(39,29)</span><i>→</i><span>(22,42)</span><i>→</i><span>(5,55)</span></div>
+            <p class="nt-tool-hint">每走一步，x 减 17、y 加 13，等式仍不变：13×(−17)+17×13=0。</p>
+          </div>
+          <div class="nt-tool-card">
+            <div class="nt-card-label">同一个“交错增减”，也能写出通解</div>
+            <div class="nt-equation-banner">13x − 17y = 1 <small>x、y 为正整数</small></div>
+            <p class="nt-tool-hint">模 13 得 −17y≡1，即 9y≡1 (mod 13)，所以 y≡3 (mod 13)。取 y=3，得 x=4。</p>
+            <div class="nt-general-solution"><span>x = 4 + 17k</span><span>y = 3 + 13k</span><b>k = 0, 1, 2, …</b></div>
+            <div class="nt-insight"><b>通用思路</b><span>先用取模消去一个变量找特解；再按系数的互相抵消规律增减，最后用正整数范围筛掉不合条件的 k。</span></div>
+          </div>
+        </div>
+        <div class="nt-tool-card nt-filter-card" id="nt-day07-filter">
+          <div class="nt-card-topline"><span class="nt-card-label">互动 · 逐级满足法：先满足容易检查的条件</span><span class="nt-live-dot">像闯关一样筛数</span></div>
+          <p class="nt-tool-hint">求最小正整数 n，使 n≡3 (mod 5)、n≡2 (mod 8)、n≡7 (mod 9)。先列出第三个条件的候选，再一关关筛。</p>
+          <div class="nt-filter-stages"><div><small>第 1 关 · 模 9 余 7</small><b>7、16、25、34、43、…、106、…、178、…</b><span>每次加 9</span></div><i>→</i><div><small>第 2 关 · 再看模 8 余 2</small><b>34、106、178、250、322、…</b><span>留下每个都通过的数</span></div><i>→</i><div class="is-finish"><small>第 3 关 · 再看模 5 余 3</small><b>最小的是 178</b><span>178 除以 5、8、9 分别余 3、2、7</span></div></div>
+          <div class="nt-answer-ribbon"><b>最小正解 n=178</b><span>三模数两两互质，周期为 5×8×9=360；所有整数解 n=178+360k，k∈ℤ，正整数解取 k≥0。</span></div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-lilac nt-advanced-lesson" id="nt-day08-remainders" aria-labelledby="nt-day08-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">08</div><div><span class="nt-kicker">DAY 08 · 余数拼合、装盒与弃九验算</span><h2 id="nt-day08-title">每个条件给一条线索，合起来就能锁定一串数</h2><p>韩信点兵一类问题，就是同时满足几条同余条件。可以逐级筛、找一个特解再加公倍周期，也可以把“差几颗”改写成整除条件。</p></div><span class="nt-heading-symbol" aria-hidden="true">CRT</span></div>
+        <div class="nt-day8-methods">
+          <div class="nt-theory-card nt-remainder-puzzle">
+            <div class="nt-card-topline"><span class="nt-card-label">例 · 韩信点兵</span><span class="nt-live-dot">先找最小正数</span></div>
+            <div class="nt-congruence-list"><span>n≡2 (mod 3)</span><span>n≡3 (mod 5)</span><span>n≡2 (mod 7)</span></div>
+            <div class="nt-number-ribbon"><small>同时满足三关的最小正整数</small><b>23</b><span>23÷3 余 2　·　23÷5 余 3　·　23÷7 余 2</span></div>
+            <p class="nt-tool-hint">三个模数两两互质，拼合后每隔 3×5×7=105 就重复一次：n≡23 (mod 105)，正整数解为 n=23+105k，k=0、1、2、…。</p>
+          </div>
+          <div class="nt-theory-card nt-remainder-methods">
+            <div class="nt-card-label">三种好上手的找法</div>
+            <div class="nt-method-row"><b>① 逐级满足</b><span>先列出一条同余的数，再按后续条件依次筛，最直观。</span></div>
+            <div class="nt-method-row"><b>② 取模消元</b><span>用前面学过的同余方程找特解，再加上最小公倍周期，写出全部解。</span></div>
+            <div class="nt-method-row"><b>③ 余数补型</b><span>如果每个余数都“差同一个数”才整除，就把这个数加上去，转成公倍数问题。</span></div>
+            <div class="nt-insight"><b>模数不互质时</b><span>两条 n≡r₁ (mod m₁)、n≡r₂ (mod m₂) 有解，当且仅当 r₁≡r₂ (mod gcd(m₁,m₂))；有解时，整体周期是 lcm(m₁,m₂)。</span></div>
+          </div>
+        </div>
+        <div class="nt-two-column nt-day8-extras">
+          <div class="nt-tool-card nt-complement-card">
+            <div class="nt-card-label">余数补型 · 差 2 就一起加 2</div>
+            <p class="nt-tool-hint">若 n 除以 5、7、9 分别余 3、5、7，那么 n+2 都能被这三个数整除。</p>
+            <div class="nt-complement-diagram" aria-label="n 加 2 同时成为 5、7、9 的公倍数"><span>n+2</span><b>能被 5 整除</b><b>能被 7 整除</b><b>能被 9 整除</b><i>→</i><strong>最小公倍数 315</strong></div>
+            <div class="nt-answer-ribbon"><b>n+2=315，所以最小正解 n=313</b><span>全部正整数解：n=313+315k，k=0、1、2、…。</span></div>
+          </div>
+          <div class="nt-tool-card nt-transform-card">
+            <div class="nt-card-label">转化型 · 把余数变成同一个倍数</div>
+            <p class="nt-tool-hint">若 n≡2 (mod 5)、n≡3 (mod 7)、n≡4 (mod 9)，把每条都乘 2 再加 1。</p>
+            <div class="nt-transform-steps"><span>2n+1≡0 (mod 5)</span><span>2n+1≡0 (mod 7)</span><span>2n+1≡0 (mod 9)</span><b>所以 2n+1 是 315 的倍数</b></div>
+            <div class="nt-answer-ribbon"><b>最小正解 n=157</b><span>令 2n+1=315(1+2k)，得到 n=157+315k，k=0、1、2、…。</span></div>
+          </div>
+        </div>
+        <div class="nt-tool-card nt-crt-tool">
+          <div class="nt-card-topline"><span class="nt-card-label">互动 · 自己拼三条余数线索</span><span class="nt-live-dot">也检查模数不互质的情况</span></div>
+          <div class="nt-crt-inputs">
+            <div class="nt-crt-pair"><label>余数 r₁<input id="nt-crt-r1" type="number" min="0" value="2" inputmode="numeric"></label><label>模数 m₁<input id="nt-crt-m1" type="number" min="2" max="99" value="3" inputmode="numeric"></label></div>
+            <div class="nt-crt-pair"><label>余数 r₂<input id="nt-crt-r2" type="number" min="0" value="3" inputmode="numeric"></label><label>模数 m₂<input id="nt-crt-m2" type="number" min="2" max="99" value="5" inputmode="numeric"></label></div>
+            <div class="nt-crt-pair"><label>余数 r₃<input id="nt-crt-r3" type="number" min="0" value="2" inputmode="numeric"></label><label>模数 m₃<input id="nt-crt-m3" type="number" min="2" max="99" value="7" inputmode="numeric"></label></div>
+            <button type="button" id="nt-crt-button">拼合</button>
+          </div>
+          <div id="nt-crt-output" class="nt-rem-output" aria-live="polite"></div>
+          <div class="nt-crt-track" aria-hidden="true"><span>条件 1</span><i>×</i><span>条件 2</span><i>×</i><span>条件 3</span><b>→</b><strong>一条周期</strong></div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-amber nt-advanced-lesson" id="nt-day08-coins" aria-labelledby="nt-day08-coins-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">08</div><div><span class="nt-kicker">DAY 08 · 装盒 / 零钱问题</span><h2 id="nt-day08-coins-title">两种规格能装出的数，最后一个“凑不到”的在哪里？</h2><p>若 a、b 是互质且都大于 1 的正整数，问 ax+by=n 能不能由两种规格拼成。这里 x、y 是非负整数，可以只用其中一种规格。</p></div><span class="nt-heading-symbol" aria-hidden="true">ax+by</span></div>
+        <div class="nt-two-column nt-coin-layout">
+          <div class="nt-theory-card nt-frobenius-card">
+            <div class="nt-card-label">互质装盒定理 · Frobenius coin theorem</div>
+            <div class="nt-frobenius-formula"><span>最大不能拼成的正整数</span><b>ab−a−b</b></div>
+            <div class="nt-frobenius-formula"><span>不能拼成的正整数共有</span><b>(a−1)(b−1)÷2</b></div>
+            <div class="nt-equation-banner">5x + 9y = n <small>x、y∈{0,1,2,…}，gcd(5,9)=1</small></div>
+            <p class="nt-tool-hint">最大凑不到的是 5×9−5−9=31；凑不到的正整数一共 (5−1)(9−1)÷2=16 个。31 不能拼，32=5×1+9×3 可以。</p>
+            <div class="nt-gap-chips" aria-label="5 与 9 两种规格凑不到的 16 个正整数"><span>1</span><span>2</span><span>3</span><span>4</span><span>6</span><span>7</span><span>8</span><span>11</span><span>12</span><span>13</span><span>16</span><span>17</span><span>21</span><span>22</span><span>26</span><span>31</span></div>
+            <p class="nt-formula-small">如果 a=1 或 b=1，任何非负整数都能拼出；若 gcd(a,b)&gt;1，则不能直接套这个公式。</p>
+          </div>
+          <div class="nt-tool-card nt-coin-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 试试两种盒子或面额</span><span class="nt-live-dot">非负整数个</span></div>
+            <div class="nt-coin-inputs"><label>规格 a<input id="nt-coin-a" type="number" min="2" max="99" value="5" inputmode="numeric"></label><label>规格 b<input id="nt-coin-b" type="number" min="2" max="99" value="9" inputmode="numeric"></label><label>目标 n<input id="nt-coin-n" type="number" min="0" max="1000000" value="31" inputmode="numeric"></label><button type="button" id="nt-coin-button">看看能否拼成</button></div>
+            <div id="nt-coin-output" class="nt-rem-output" aria-live="polite"></div>
+            <p class="nt-tool-hint">检查时只需看 0≤x≤⌊n/a⌋、0≤y≤⌊n/b⌋；正整数变量时范围会不同，不能把两种约定混在一起。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-coral nt-advanced-lesson" id="nt-day08-nines" aria-labelledby="nt-day08-nines-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">08</div><div><span class="nt-kicker">DAY 08 · 弃九验算、数字和与进位</span><h2 id="nt-day08-nines-title">加法里的每一次进位，都会让数字和少 9</h2><p>用 S(n) 表示十进制各位数字之和。因为 10≡1 (mod 9)，一个数和它的数字和除以 9 余数相同；再往前一步，还能数出加法里一共进了几次位。</p></div><span class="nt-heading-symbol" aria-hidden="true">Σ9</span></div>
+        <div class="nt-two-column nt-day8-digits">
+          <div class="nt-theory-card nt-nines-theory">
+            <div class="nt-card-label">弃九法的两条线索</div>
+            <div class="nt-rule-grid">
+              <div><b>数字和与原数同余</b><p>a≡S(a) (mod 9)，也就是 9∣a−S(a)。例如 2028 的数字和是 12，2028 与 12 除以 9 都余 3。</p></div>
+              <div><b>加法与进位</b><p>若 a+b=c，则 S(a)+S(b)=S(c)+9k；k 是十进制加法中的进位总数（每个进位单位记一次）。</p></div>
+            </div>
+            <div class="nt-carry-visual" aria-label="999 加 1 等于 1000，数字和从 28 变为 1，经过三次进位"><div><small>数字相加</small><b>999 + 1</b></div><i>→</i><div><small>结果</small><b>1000</b></div><i>→</i><div class="is-carry"><small>进位总数</small><b>3 次</b></div></div>
+            <p class="nt-tool-hint">验算 999+1：S(999)+S(1)=28，S(1000)=1，差 27=9×3，所以有 3 次进位。弃九法能快速发现一部分错误；余数对上不代表整道算式一定正确。</p>
+          </div>
+          <div class="nt-tool-card nt-digit-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 看数字和与进位</span><span class="nt-live-dot">十进制</span></div>
+            <div class="nt-digit-inputs"><label>a<input id="nt-digit-a" type="number" min="0" max="999999999" value="999" inputmode="numeric"></label><span>+</span><label>b<input id="nt-digit-b" type="number" min="0" max="999999999" value="1" inputmode="numeric"></label><span>=</span><label>c<input id="nt-digit-c" type="number" min="0" max="1999999998" value="1000" inputmode="numeric"></label><button type="button" id="nt-digit-button">验一验</button></div>
+            <div id="nt-digit-output" class="nt-rem-output" aria-live="polite"></div>
+            <p class="nt-tool-hint">试着把 999+1 改成 12+18=30，再把答案改错一次，看看数字和检查能发现什么。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-blue nt-advanced-lesson" id="nt-day09-number-base" aria-labelledby="nt-day09-number-base-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">09</div><div><span class="nt-kicker">DAY 09 · 位值、数字和与进制</span><h2 id="nt-day09-number-base-title">从十进制位值看数字和与进制</h2><p>把十进制数写成数字与 10 的幂的和，就能把数字和接回模 9；再用连续除法核验 2026 的四进制写法。这一节连接 Day 6 的同余与 Day 8 的弃九验算。</p></div><span class="nt-heading-symbol" aria-hidden="true">10ⁿ</span></div>
+        <div class="nt-two-column nt-numbering-grid">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">可确认的位值与余数线索</div>
+            <div class="nt-rule-grid">
+              <div><b>位值展开</b><p>2026=2×10<sup>3</sup>+0×10<sup>2</sup>+2×10+6；各位数字和是 2+0+2+6=10。</p></div>
+              <div><b>数字和与模 9</b><p>10≡1 (mod 9)，所以 2026≡2+0+2+6=10≡1 (mod 9)。这是 Day 8 弃九验算所用的同一条位值线索。</p></div>
+              <div><b>核验四进制</b><p>(133222)<sub>4</sub>=1×4<sup>5</sup>+3×4<sup>4</sup>+3×4<sup>3</sup>+2×4<sup>2</sup>+2×4+2=2026。</p></div>
+              <div><b>连接进制与同余</b><p>十进制和 m 进制都按“数字×底数的幂”展开；换底时记录余数，验算时再把位值与同余结合。</p></div>
+            </div>
+            <div class="nt-insight"><b>转录说明</b><span>只整理可辨的位值、模 9 和进制内容；照片开头一处原则及几处中间恒等式字迹不清，未猜写。</span></div>
+          </div>
+          <div class="nt-tool-card nt-base-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 十进制转 m 进制</span><span class="nt-live-dot">可验证位值</span></div>
+            <label class="nt-field-label" for="nt-base-value">输入一个非负十进制整数</label>
+            <div class="nt-base-controls"><input id="nt-base-value" type="number" min="0" max="999999999" value="2026" inputmode="numeric"><label for="nt-base-radix">目标进制<select id="nt-base-radix"><option value="2">2 进制</option><option value="4" selected>4 进制</option><option value="8">8 进制</option><option value="10">10 进制</option><option value="16">16 进制</option></select></label><button type="button" id="nt-base-button">转换</button></div>
+            <div id="nt-base-output" class="nt-rem-output" aria-live="polite"></div>
+            <p class="nt-tool-hint">例：2026÷4 反复取余，余数从后往前读，得到 (133222)₄；按位还原为 1×4⁵+3×4⁴+3×4³+2×4²+2×4+2=2026。</p>
+            <div class="nt-insight"><b>换底口诀</b><span>十进制转 m 进制：连续除以 m、记录余数、倒序读；m 进制转十进制：每位乘对应的 m 的幂再相加。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-amber nt-advanced-lesson" id="nt-day09-squares" aria-labelledby="nt-day09-squares-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">09</div><div><span class="nt-kicker">DAY 09 · 完全平方数与因数（衔接补充）</span><h2 id="nt-day09-squares-title">平方数的因数，总会成双出现</h2><p>这里用已核实的因数配对结论，把完全平方结构接回 Day 3 的因数函数；此处为课程衔接补充，不冒充难辨手写式的转录。</p></div><span class="nt-heading-symbol" aria-hidden="true">τ(n)</span></div>
+        <div class="nt-two-column">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">衔接补充 · 因数配对与质因数指数</div>
+            <div class="nt-rule-grid">
+              <div><b>奇数个因数</b><p>τ(N) 为奇数，当且仅当 N 是完全平方数。非平方数的因数全部两两配对；平方数多出一个不重复的平方根。</p></div>
+              <div><b>恰有 3 个因数</b><p>τ(N)=3，当且仅当 N=p² 且 p 是质数：因数恰为 1、p、p²。</p></div>
+              <div><b>从唯一分解看</b><p>完全平方数的质因数分解中，每个指数都是偶数；反过来，若每个指数都是偶数，数就是完全平方。</p></div>
+              <div><b>核验例子</b><p>144=2⁴×3²=12²，所以 τ(144)=(4+1)(2+1)=15，是奇数；49=7²，正因数只有 1、7、49，共 3 个。</p></div>
+            </div>
+          </div>
+          <div class="nt-tool-card">
+            <div class="nt-card-label">和前面的因数课节接起来</div>
+            <div class="nt-equation-banner">N=∏pᵢᵉⁱ <small>τ(N)=∏(eᵢ+1)</small></div>
+            <p class="nt-tool-hint">若每个 eᵢ 都是偶数，每个 (eᵢ+1) 都是奇数，于是 τ(N) 为奇数。反过来，只要有一个指数为奇数，因数个数乘积中就有一个偶数因子。</p>
+            <div class="nt-insight"><b>回到地图</b><span>可对照 <a href="#nt-factors">因数个数公式</a>和 <a href="#nt-day03-divisor-functions">Day 3 因数函数</a>：同一个指数公式也能识别完全平方数。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-coral nt-advanced-lesson" id="nt-day10-squares" aria-labelledby="nt-day10-squares-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">10</div><div><span class="nt-kicker">DAY 10 · 平方数末位与模余数</span><h2 id="nt-day10-squares-title">先看末位，再用小模数筛平方</h2><p>平方数的个位和末两位并非任意；把整数逐个平方后取模，还能把可能余数压缩成很短的清单。这是 Day 6–8 同余方法在平方数问题里的直接应用。</p></div><span class="nt-heading-symbol" aria-hidden="true">n²</span></div>
+        <div class="nt-two-column nt-square-grid">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">个位与十位的限制</div>
+            <div class="nt-rule-grid">
+              <div><b>可能的个位</b><p>完全平方数的个位只能是 0、1、4、5、6、9；所以末位为 2、3、7、8 的数一定不是平方数。</p></div>
+              <div><b>个位是 0 或 5</b><p>平方数个位为 0 时，十位也为 0（平方数末尾的 0 成双）；个位为 5 时，十位必为 2，末两位是 25。</p></div>
+              <div><b>个位是 6</b><p>若平方数个位为 6，十位必为奇数；末两位只能是 16、36、56、76、96。</p></div>
+              <div><b>筛数时怎么用</b><p>这些是必要的末位条件，不是“满足一个末位就一定是平方”。再结合因数分解、估平方根或模余数继续判断。</p></div>
+            </div>
+          </div>
+          <div class="nt-tool-card nt-square-residue-tool">
+            <div class="nt-card-topline"><span class="nt-card-label">互动 · 平方数可能的模余数</span><span class="nt-live-dot">枚举一个完整余数系</span></div>
+            <label class="nt-field-label" for="nt-square-modulus">选择模数</label>
+            <select id="nt-square-modulus" class="nt-square-select"><option value="3">模 3</option><option value="9">模 9</option><option value="4">模 4</option><option value="8">模 8</option><option value="16" selected>模 16</option></select>
+            <div id="nt-square-residue-output" class="nt-rem-output" aria-live="polite"></div>
+            <p class="nt-tool-hint">完整余数系里逐个平方、每步取余即可。比如模 16 时，平方余数只有 0、1、4、9；因此余数为 2、3、5、6、7、8、10、11、12、13、14、15 的数不可能是平方。</p>
+            <div class="nt-insight"><b>两个熟悉的例子</b><span>2026 的数字和为 10，所以 2026≡1 (mod 9)，从而 2026²≡1 (mod 9)；又 2026≡10 (mod 16)，所以 2026²≡4 (mod 16)。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nt-lesson nt-tone-lilac nt-advanced-lesson" id="nt-day10-identities" aria-labelledby="nt-day10-identities-title">
+        <div class="nt-lesson-heading"><div class="nt-step-number">10</div><div><span class="nt-kicker">DAY 10 · 平方差与完全平方公式</span><h2 id="nt-day10-identities-title">平方展开，也可以反过来变成因数</h2><p>这两条公式把 Day 4 的平方差因式分解重新接上来：比较两个相近的平方时，直接乘“差×和”通常比各自平方再相减更省力。</p></div><span class="nt-heading-symbol" aria-hidden="true">(a±b)²</span></div>
+        <div class="nt-two-column">
+          <div class="nt-theory-card">
+            <div class="nt-card-label">两条展开式，一条平方差</div>
+            <div class="nt-equation-banner">a²−b²=(a−b)(a+b) <small>平方差因式分解</small></div>
+            <div class="nt-equation-banner">(a±b)²=a²±2ab+b² <small>完全平方展开</small></div>
+            <p class="nt-tool-hint">加号对应 +2ab，减号对应 −2ab；中间项的符号跟括号里的符号一致。</p>
+          </div>
+          <div class="nt-tool-card">
+            <div class="nt-card-label">例题 · 选更短的路线</div>
+            <div class="nt-worked-steps"><p><b>2026²−2024²</b></p><p>=(2026−2024)(2026+2024)</p><p>=2×4050=<strong>8100</strong></p></div>
+            <div class="nt-worked-steps nt-worked-steps-soft"><p><b>103²=(100+3)²</b></p><p>=100²+2×100×3+3²</p><p>=10000+600+9=<strong>10609</strong></p></div>
+            <div class="nt-insight"><b>连接整条路线</b><span>先由进制/位值拆开数，再用模余数排除不可能的平方，最后用平方差或完全平方公式做精确计算。</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="nt-wrap-up section-width" aria-labelledby="nt-wrap-title">
+      <div><span class="nt-kicker">把已收到的路线说一遍</span><h2 id="nt-wrap-title">从因数结构走到进制与平方余数</h2></div>
+      <div class="nt-recap"><span>整除与质数</span><i>→</i><span>质因数结构</span><i>→</i><span>因式分解与因数配对</span><i>→</i><span>同余方程、余数拼合</span><i>→</i><span>进制与数字结构</span><i>→</i><span>平方余数与平方公式</span></div>
+      <p>前两天建立整除、因数结构与平方差；第 3–4 天继续补充因数函数、连续整数和及分数因数；第 5–8 天走向因式分解、同余方程、余数拼合、装盒与进位；第 9 天用数字和与模 9、进制转换继续读位值，并补一段因数配对说明连接 Day 3；第 10 天用平方余数和平方公式筛数、计算。</p>
+      <div class="nt-scope-note"><b>笔记进度</b><span>第 1–10 天笔记均已收到并整理。Day 9 按可辨内容整理十进制位值、数字和模 9、m 进制转换；2026<sub>10</sub>=(133222)<sub>4</sub> 已独立核验。照片开头一处原则和几处中间恒等式字迹不清，未猜写；因数配对段明确标为衔接补充。Day 10 覆盖平方数个位/十位限制、平方模 3、9、4、8、16 的可能余数、平方差与完全平方公式。其余早先 Day 3、Day 6、Day 7 的辨认限制及首页经典应用题均保留原状。</span></div>
+      <a class="nt-back-link" href="/aoshu/index.html#lessons">← 返回经典应用题课程</a>
+    </section>
+  </main>
+  <footer class="footer nt-footer"><a class="brand footer-brand" href="/aoshu/index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 5 17h4v17h22V17h4L20 4Z" fill="currentColor"/><path d="M15 34V22h10v12M12 17h16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>思维树屋 <small>把线索连起来</small></span></a><span>先分解，再发现。</span><a href="#nt-main">回到顶部 ↑</a></footer>
+</body>
+</html>

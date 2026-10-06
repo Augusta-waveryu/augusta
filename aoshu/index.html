@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="给小学同学的奥数思维小课堂：用小动画、互动例题和闯关练习，学会鸡兔同笼、植树问题、和差问题和盈亏问题。">
+  <title>思维树屋｜小学奥数小课堂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/aoshu/styles.css">
+  <link rel="stylesheet" href="/aoshu/number-theory.css">
+  <script src="/aoshu/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到课程内容</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="思维树屋首页">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 5 17h4v17h22V17h4L20 4Z" fill="currentColor"/><path d="M15 34V22h10v12M12 17h16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="12" r="2" fill="#ffd56a"/></svg></span>
+      <span>思维树屋 <small>小学奥数小课堂</small></span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="#lessons">知识点</a>
+      <a href="/aoshu/number-theory.html">数论集训</a>
+      <a href="/aoshu/number-theory-practice.html">数论练习</a>
+      <a href="#about">学习说明</a>
+    </nav>
+    <a class="nav-cta" href="#lessons">开始闯关 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle" aria-hidden="true">✳</span> 给好奇的小小解题家</div>
+        <h1 id="hero-title">奥数题别急着算，<br><em>先找到那条线索。</em></h1>
+        <p class="hero-text">把难题拆成几步小发现。看一看、动动手，再用自己的话讲出来——你就真的学会啦。</p>
+        <a class="button button-primary" href="#lessons">进入思维树屋 <span aria-hidden="true">→</span></a>
+        <div class="hero-proof"><span class="proof-dot" aria-hidden="true">✓</span> 4 个经典知识点 <i>·</i> 动画演示 <i>·</i> 每课一练</div>
+      </div>
+      <div class="hero-art" aria-label="小朋友们一起学习的插画">
+        <div class="art-blob blob-a"></div><div class="art-blob blob-b"></div>
+        <div class="art-note note-one"><span>✦</span> 想一想</div>
+        <div class="art-note note-two"><span>＋</span> 试一试</div>
+        <img src="/aoshu/assets/kids-learning.jpg" alt="小朋友围坐在一起学习和玩耍" width="256" height="256">
+        <div class="art-caption"><span>今日小目标</span><strong>把思路讲明白！</strong></div>
+      </div>
+      <div class="hero-squiggle" aria-hidden="true"><svg viewBox="0 0 220 36"><path d="M3 23c18-30 33 29 51 0s33 29 51 0 33 29 51 0 34 28 61-2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 8"/></svg></div>
+    </section>
+
+    <section class="nt-home-banner page-width" aria-labelledby="nt-home-title">
+      <div class="nt-home-banner-copy">
+        <span class="nt-home-badge"><i></i> 第 1–10 天笔记 · 已整理</span>
+        <h2 id="nt-home-title">数论集训：把零散线索，<em>连成一条路。</em></h2>
+        <p>从整除、因数结构走到因式分解、同余方程、余数拼合、装盒、数字和、进制转换与平方数。第 1–10 天笔记已整理，并按主题对应到原有课程；鸡兔同笼、植树、和差、盈亏四个经典应用题课程继续保留。</p>
+        <a href="/aoshu/number-theory.html">打开数论学习地图 <span aria-hidden="true">→</span></a>
+        <a href="/aoshu/number-theory-practice.html">进入 192 道题的练习站 <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="nt-home-route" aria-label="整除到应用的课程路线">
+        <span>整除</span><i>→</i><span>质数</span><i>→</i><span>因数结构</span>
+      </div>
+    </section>
+
+    <section class="lesson-index page-width" aria-labelledby="index-title">
+      <div class="section-heading compact-heading">
+        <div><span class="eyebrow">今天的探险地图</span><h2 id="index-title">挑一关，开始发现</h2></div>
+        <p>不必背公式，先看懂“为什么”。</p>
+      </div>
+      <div class="index-grid">
+        <a class="index-card index-peach" href="#chicken"><span class="index-icon">🐰</span><span><b>鸡兔同笼</b><small>用“多出来的腿”找兔子</small></span><span class="index-arrow">↗</span></a>
+        <a class="index-card index-blue" href="#trees"><span class="index-icon">🌳</span><span><b>植树问题</b><small>先数间隔，再数树</small></span><span class="index-arrow">↗</span></a>
+        <a class="index-card index-lilac" href="#sumdiff"><span class="index-icon">📏</span><span><b>和差问题</b><small>把多的一段先收起来</small></span><span class="index-arrow">↗</span></a>
+        <a class="index-card index-green" href="#profitloss"><span class="index-icon">🍬</span><span><b>盈亏问题</b><small>比较两种分法的差</small></span><span class="index-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="lesson-section page-width" id="lessons" aria-labelledby="lesson-heading">
+      <div class="section-heading lesson-title-row">
+        <div><span class="eyebrow">一步一步来</span><h2 id="lesson-heading">四个经典小方法</h2></div>
+        <div class="progress-wrap" aria-live="polite"><span class="progress-label">闯关进度</span><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><b id="progress-count">0 / 4</b></div>
+      </div>
+
+      <article class="lesson-card theme-peach" id="chicken" aria-labelledby="chicken-title">
+        <div class="lesson-head">
+          <div class="lesson-number">01</div>
+          <div class="lesson-head-copy"><div class="lesson-tags"><span>假设法</span><span>四年级起</span></div><h3 id="chicken-title">鸡兔同笼：多出来的腿，藏着兔子的答案</h3><p>先假装大家都是两条腿的鸡，再看看多出来的腿是谁带来的。</p></div>
+          <div class="lesson-doodle doodle-bunny" aria-hidden="true">🐔<span>＋</span>🐰</div>
+        </div>
+        <div class="lesson-content">
+          <div class="explainer">
+            <div class="story-label"><span class="story-icon">🧺</span> 故事题</div>
+            <p class="big-question">笼子里有 <strong>8</strong> 个头、<strong>22</strong> 条腿。鸡和兔各有几只？</p>
+            <div class="steps" id="steps-chicken">
+              <div class="step"><span>1</span><p>先把 8 只都当成鸡：一共 <b>8 × 2 = 16</b> 条腿。</p></div>
+              <div class="step"><span>2</span><p>实际多出 <b>22 − 16 = 6</b> 条腿。</p></div>
+              <div class="step"><span>3</span><p>一只鸡换成兔，只会多 2 条腿，所以兔有 <b>6 ÷ 2 = 3</b> 只；鸡有 <b>8 − 3 = 5</b> 只。</p></div>
+            </div>
+            <button class="text-button reveal-button" data-target="steps-chicken" aria-expanded="false">展开解题步骤 <span aria-hidden="true">＋</span></button>
+            <div class="answer-line"><span>答案</span><b>兔 3 只，鸡 5 只</b><span class="answer-check">头数 8，腿数 22 ✓</span></div>
+          </div>
+          <div class="play-panel">
+            <div class="panel-top"><div><span class="panel-kicker">动手试试看</span><h4>如果有 <span id="rabbit-count">0</span> 只兔，会有几条腿？</h4></div><span class="interactive-badge">互动</span></div>
+            <p class="panel-help">拖动小圆点：每把一只鸡换成兔，就会多出 2 条腿。</p>
+            <div class="rabbit-slider-row"><span>🐣 全是鸡</span><input id="rabbit-slider" type="range" min="0" max="8" value="0" aria-label="假设兔子的只数"><span>全是兔 🐰</span></div>
+            <div class="leg-meter"><div class="leg-meter-fill" id="leg-meter-fill"></div></div>
+            <div class="meter-labels"><span>16 条腿</span><b id="leg-total">16 条</b><span>32 条腿</span></div>
+            <div class="target-callout" id="leg-feedback" aria-live="polite"><span class="target-dot"></span><span>目标是 22 条腿。兔子还可以再多一些。</span></div>
+            <div class="mini-challenge"><strong>轮到你啦</strong><label for="quiz-chicken">10 个头、28 条腿，兔子有几只？</label><div class="answer-input-row"><input id="quiz-chicken" type="number" min="0" max="10" inputmode="numeric" placeholder="填只数"><button class="check-button" data-quiz="chicken">检查</button></div><p class="quiz-result" id="result-chicken" aria-live="polite"></p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson-card theme-blue" id="trees" aria-labelledby="trees-title">
+        <div class="lesson-head">
+          <div class="lesson-number">02</div>
+          <div class="lesson-head-copy"><div class="lesson-tags"><span>数间隔</span><span>三年级起</span></div><h3 id="trees-title">植树问题：树有几棵，先看路有几段</h3><p>一条直路上，树和树之间的空隙叫“间隔”。两端都种时，树会比间隔多一棵。</p></div>
+          <div class="lesson-doodle doodle-tree" aria-hidden="true">🌳<span>间隔</span>🌳</div>
+        </div>
+        <div class="lesson-content">
+          <div class="explainer">
+            <div class="story-label"><span class="story-icon">🛤️</span> 故事题</div>
+            <p class="big-question">一条 <strong>20 米</strong> 的小路，每隔 <strong>5 米</strong> 种一棵树。</p>
+            <div class="tree-mode" role="group" aria-label="选择种树场景"><button class="mode-button is-active" data-tree-mode="line" aria-pressed="true">直路两端都种</button><button class="mode-button" data-tree-mode="circle" aria-pressed="false">围成一圈</button></div>
+            <div class="tree-visual" id="tree-visual" aria-label="20 米直路分成 4 个间隔，两个端点都种树"><svg viewBox="0 0 440 120" role="img" aria-labelledby="tree-svg-title"><title id="tree-svg-title">直路上四个间隔和五棵树</title><path class="path-line" d="M36 77H404"/><g class="trees-row"><g transform="translate(36 30)"><circle class="tree-canopy" r="15"/><path class="tree-trunk" d="M-3 15h6v20h-6z"/></g><g transform="translate(128 30)"><circle class="tree-canopy" r="15"/><path class="tree-trunk" d="M-3 15h6v20h-6z"/></g><g transform="translate(220 30)"><circle class="tree-canopy" r="15"/><path class="tree-trunk" d="M-3 15h6v20h-6z"/></g><g transform="translate(312 30)"><circle class="tree-canopy" r="15"/><path class="tree-trunk" d="M-3 15h6v20h-6z"/></g><g transform="translate(404 30)"><circle class="tree-canopy" r="15"/><path class="tree-trunk" d="M-3 15h6v20h-6z"/></g></g><g class="interval-marks"><path d="M36 83v8m92-8v8m92-8v8m92-8v8m92-8v8"/><text x="82" y="110">5米</text><text x="174" y="110">5米</text><text x="266" y="110">5米</text><text x="358" y="110">5米</text></g></svg></div>
+            <div class="tree-explanation" aria-live="polite"><div class="tree-equation"><span>20 ÷ 5</span><b>=</b><strong id="interval-answer">4 段间隔</strong><span class="tree-plus" id="tree-plus">＋ 1 棵</span><b>=</b><strong class="tree-result" id="tree-result">5 棵树</strong></div><p id="tree-rule">两端都种：间隔数 + 1 = 树的棵数。</p></div>
+            <div class="steps" id="steps-trees"><div class="step"><span>1</span><p id="tree-step1">先算间隔：<b>20 ÷ 5 = 4</b> 段。</p></div><div class="step"><span>2</span><p id="tree-step2">从第 1 棵树开始，每多一个间隔就多一棵树，所以 <b>4 + 1 = 5</b> 棵。</p></div></div>
+            <button class="text-button reveal-button" data-target="steps-trees" aria-expanded="false">展开解题步骤 <span aria-hidden="true">＋</span></button>
+          </div>
+          <div class="play-panel">
+            <div class="panel-top"><div><span class="panel-kicker">记住这个小规律</span><h4>“点”和“空隙”，谁多谁少？</h4></div><span class="interactive-badge">点一点</span></div>
+            <div class="tree-rule-card"><div class="tree-rule-icon">🌲</div><div><b id="tree-rule-title">直路两端都种</b><p id="tree-rule-formula">树的棵数 = 间隔数 + 1</p></div></div>
+            <div class="visual-legend"><span><i class="legend-tree"></i>一棵树</span><span><i class="legend-gap"></i>一个间隔</span></div>
+            <p class="tip-box"><b>小心哦：</b>如果围成一圈，最后一棵树和第一棵树之间也有一个间隔，所以“棵数 = 间隔数”。</p>
+            <div class="mini-challenge"><strong>轮到你啦</strong><label for="quiz-trees">18 米小路，每 3 米种一棵，两端都种，共几棵？</label><div class="answer-input-row"><input id="quiz-trees" type="number" min="0" max="30" inputmode="numeric" placeholder="填棵数"><button class="check-button" data-quiz="trees">检查</button></div><p class="quiz-result" id="result-trees" aria-live="polite"></p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson-card theme-lilac" id="sumdiff" aria-labelledby="sumdiff-title">
+        <div class="lesson-head">
+          <div class="lesson-number">03</div>
+          <div class="lesson-head-copy"><div class="lesson-tags"><span>画线段图</span><span>三年级起</span></div><h3 id="sumdiff-title">和差问题：拿走多出的一段，平均分就行</h3><p>知道两个数的总和和相差多少，就先把“多出的部分”拿出来。</p></div>
+          <div class="lesson-doodle doodle-ruler" aria-hidden="true">▰<span>＋</span>▰</div>
+        </div>
+        <div class="lesson-content">
+          <div class="explainer">
+            <div class="story-label"><span class="story-icon">🧃</span> 故事题</div>
+            <p class="big-question">哥哥和妹妹一共有 <strong>36</strong> 张贴纸，哥哥比妹妹多 <strong>8</strong> 张。</p>
+            <div class="bar-visual" role="img" aria-label="妹妹 14 张，哥哥多 8 张，共 22 张；两人共有 36 张"><div class="bar-row"><span>哥哥</span><div class="bar-track"><div class="bar-part bar-equal"></div><div class="bar-part bar-extra"><span>多 8 张</span></div></div><b>22</b></div><div class="bar-row"><span>妹妹</span><div class="bar-track"><div class="bar-part bar-equal"></div><div class="bar-empty"></div></div><b>14</b></div><div class="bar-key"><span><i></i>一样多的部分</span><span><i></i>多出来的部分</span></div></div>
+            <div class="steps" id="steps-sumdiff"><div class="step"><span>1</span><p>先从总数里拿走哥哥多的 8 张：<b>36 − 8 = 28</b>。</p></div><div class="step"><span>2</span><p>28 张是两份一样多的贴纸：妹妹有 <b>28 ÷ 2 = 14</b> 张。</p></div><div class="step"><span>3</span><p>哥哥有 <b>14 + 8 = 22</b> 张。</p></div></div>
+            <button class="text-button reveal-button" data-target="steps-sumdiff" aria-expanded="false">展开解题步骤 <span aria-hidden="true">＋</span></button>
+            <div class="answer-line"><span>答案</span><b>哥哥 22 张，妹妹 14 张</b><span class="answer-check">22 + 14 = 36 ✓</span></div>
+          </div>
+          <div class="play-panel">
+            <div class="panel-top"><div><span class="panel-kicker">把数字放进去</span><h4>和 36，差 8</h4></div><span class="interactive-badge">拆一拆</span></div>
+            <div class="sumdiff-formula"><div><small>小的数</small><b>(36 − 8) ÷ 2</b><strong>14</strong></div><span class="formula-arrow">→</span><div><small>大的数</small><b>14 + 8</b><strong>22</strong></div></div>
+            <p class="tip-box"><b>口诀：</b>先减去相差数，平均分给两份，就得到较小的数；再把相差数加回去。</p>
+            <div class="mini-challenge"><strong>轮到你啦</strong><label for="quiz-sumdiff">两个数的和是 46，差是 10，较大的数是多少？</label><div class="answer-input-row"><input id="quiz-sumdiff" type="number" min="0" max="100" inputmode="numeric" placeholder="填答案"><button class="check-button" data-quiz="sumdiff">检查</button></div><p class="quiz-result" id="result-sumdiff" aria-live="polite"></p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson-card theme-green" id="profitloss" aria-labelledby="profitloss-title">
+        <div class="lesson-head">
+          <div class="lesson-number">04</div>
+          <div class="lesson-head-copy"><div class="lesson-tags"><span>比较差量</span><span>四年级起</span></div><h3 id="profitloss-title">盈亏问题：多出来加上不够的，就是差额</h3><p>分得少了会剩，分得多了会不够。把两种情况一比较，人数就出现啦。</p></div>
+          <div class="lesson-doodle doodle-candy" aria-hidden="true">🍬<span>?</span>🍬</div>
+        </div>
+        <div class="lesson-content">
+          <div class="explainer">
+            <div class="story-label"><span class="story-icon">🎁</span> 故事题</div>
+            <p class="big-question">糖果分给小朋友：每人 <strong>3</strong> 颗会多 <strong>8</strong> 颗；每人 <strong>5</strong> 颗会少 <strong>2</strong> 颗。</p>
+            <div class="candy-scene" aria-label="每人分 3 颗会剩 8 颗，每人分 5 颗会少 2 颗"><div class="candy-case"><div class="candy-case-head"><span>少分一点</span><b>每人 3 颗</b></div><div class="candy-row"><i>🍬</i><i>🍬</i><i>🍬</i><span>…</span><span class="surplus-pill">还多 8 颗</span></div></div><div class="candy-case case-second"><div class="candy-case-head"><span>多分一点</span><b>每人 5 颗</b></div><div class="candy-row"><i>🍬</i><i>🍬</i><i>🍬</i><i class="fade-candy">🍬</i><i class="fade-candy">🍬</i><span class="short-pill">还差 2 颗</span></div></div></div>
+            <div class="steps" id="steps-profitloss"><div class="step"><span>1</span><p>两种分法的差：多出的 8 颗，加上还差的 2 颗，共 <b>10</b> 颗。</p></div><div class="step"><span>2</span><p>每人多分 <b>5 − 3 = 2</b> 颗，所以小朋友有 <b>10 ÷ 2 = 5</b> 人。</p></div><div class="step"><span>3</span><p>糖果总数：<b>5 × 3 + 8 = 23</b> 颗。换个分法也会是 <b>5 × 5 − 2 = 23</b> 颗。</p></div></div>
+            <button class="text-button reveal-button" data-target="steps-profitloss" aria-expanded="false">展开解题步骤 <span aria-hidden="true">＋</span></button>
+            <div class="answer-line"><span>答案</span><b>5 位小朋友，共 23 颗糖</b><span class="answer-check">两种分法都对上 ✓</span></div>
+          </div>
+          <div class="play-panel">
+            <div class="panel-top"><div><span class="panel-kicker">关键的“差”</span><h4>剩下的 + 不够的</h4></div><span class="interactive-badge">想一想</span></div>
+            <div class="profit-equation"><div class="profit-token surplus-token"><span>多 8</span></div><b>＋</b><div class="profit-token short-token"><span>少 2</span></div><b>=</b><div class="profit-total"><strong>10</strong><small>颗的差额</small></div></div>
+            <div class="person-equation"><span>每人多分</span><b>5 − 3 = 2</b><span>颗</span><i>→</i><strong>10 ÷ 2 = 5 人</strong></div>
+            <p class="tip-box"><b>怎么选加减？</b>一种情况“有剩”，另一种情况“不够”，两边的差要相加。如果两种情况都是剩或都是不够，就比较两个差的大小。</p>
+            <div class="mini-challenge"><strong>轮到你啦</strong><label for="quiz-profitloss">每人 4 颗会多 6 颗；每人 6 颗会少 4 颗。有几位小朋友？</label><div class="answer-input-row"><input id="quiz-profitloss" type="number" min="0" max="100" inputmode="numeric" placeholder="填人数"><button class="check-button" data-quiz="profitloss">检查</button></div><p class="quiz-result" id="result-profitloss" aria-live="polite"></p></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing page-width" aria-labelledby="closing-title">
+      <div class="closing-star" aria-hidden="true">✦</div><div><span class="eyebrow">解题小习惯</span><h2 id="closing-title">做完别急着翻篇，<br><em>检查一下讲得通吗？</em></h2><p>把答案放回题目里试一试。每一步都对得上，才是真的找到了线索。</p></div><a class="button button-dark" href="#lessons">再选一关 <span aria-hidden="true">↑</span></a>
+      <div class="closing-decoration" aria-hidden="true"><span>2</span><span>＋</span><span>?</span></div>
+    </section>
+
+    <section class="about page-width" id="about" aria-labelledby="about-title">
+      <div><span class="eyebrow">关于这间小课堂</span><h2 id="about-title">先看懂，再动手。</h2></div>
+      <p>本页是一份互动学习小工具：用分步文字、SVG/CSS 小动画和练习题陪你理解 4 个常见题型。目前<strong>没有接入 AI 对话老师，也没有自动生成讲解或视频</strong>；练习答案由页面内置规则核对。建议和家长、老师一起讨论“为什么”。</p>
+      <p class="source-note">鸡兔同笼的假设法可继续阅读：<a href="https://www.xschu.com/zhengcezixun/85399.html" target="_blank" rel="noopener noreferrer">北京小升初网：小学奥数鸡兔同笼解题技巧</a>。本页例题与解释为面向孩子的重新编写。</p>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 5 17h4v17h22V17h4L20 4Z" fill="currentColor"/><path d="M15 34V22h10v12M12 17h16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>思维树屋 <small>让每一步都看得见</small></span></a><span>认真想一想，答案会发光。</span><a href="#top">回到顶部 ↑</a></footer>
+</body>
+</html>

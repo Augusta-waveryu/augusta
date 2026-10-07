@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="小学奥数分支专题课：知识地图、循序讲解、示范例题、互动实验、公式方法速查与分支复习。">
+  <title>奥数专题课｜思维树屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/aoshu/styles.css">
+  <link rel="stylesheet" href="/aoshu/curriculum.css">
+  <link rel="stylesheet" href="/aoshu/branch-courses.css">
+  <script src="/aoshu/curriculum.js" defer></script>
+  <script src="/aoshu/branch-course.js" defer></script>
+</head>
+<body class="curriculum-page branch-course-page">
+  <a class="skip-link" href="#bc-main">跳到课程内容</a>
+  <header class="topbar course-topbar">
+    <a class="brand" href="/aoshu/index.html" aria-label="思维树屋首页"><span class="brand-mark" aria-hidden="true">学</span><span>思维树屋 <small>小学奥数小课堂</small></span></a>
+    <nav class="topnav" aria-label="专题课导航">
+      <a href="#bc-map">知识地图</a><a href="#bc-lessons">逐点讲解</a><a href="#bc-lab">互动实验</a><a href="#bc-formulas">速查卡</a><a href="#bc-review">复习闯关</a>
+    </nav>
+    <a class="nav-cta" href="/aoshu/curriculum.html">回到知识树 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="bc-main" class="course-main bc-main">
+    <section class="bc-hero" aria-labelledby="bc-title">
+      <div class="bc-hero-copy"><span class="course-eyebrow"><i></i><span id="bc-eyebrow">系统专题课</span></span><h1 id="bc-title">从会做一道题，<br><em>到看懂一整类。</em></h1><p id="bc-intro"></p><div class="course-hero-actions"><a class="course-button" href="#bc-map">从知识地图开始 <span aria-hidden="true">↓</span></a><a class="course-text-link" href="#bc-formulas">先打开方法速查卡 ↗</a></div><div class="bc-stats"><span><b id="bc-count">0</b> 个知识点</span><span><b>3</b> 道逐点自测 / 课</span><span><b>6</b> 道分支复习题</span></div></div>
+      <aside class="bc-promise"><span class="bc-promise-icon" id="bc-icon" aria-hidden="true">学</span><b>从不会到会，走四步</b><ol><li>先听懂概念和关键词</li><li>跟着老师拆解例题</li><li>自己做三题并核对理由</li><li>最后用速查卡和复习题回顾</li></ol><div class="bc-progress"><div><span>本分支已掌握</span><b id="bc-progress-count">0 / 0</b></div><div class="bc-progress-track"><i id="bc-progress-fill"></i></div><small>学习进度保存在当前浏览器</small></div></aside>
+    </section>
+    <section class="bc-branch-switch" aria-label="八个课程分支"><span>知识树 · 8 个分支 / 56 个知识点</span><div id="bc-branch-links"></div></section>
+    <section class="bc-map-section" id="bc-map" aria-labelledby="bc-map-title"><div class="bc-heading"><div><span class="course-kicker">先看清这一支包含什么</span><h2 id="bc-map-title">知识地图</h2></div><p>点知识点名称可以跳到对应讲解。每个知识点都包含概念、例题、三道自测；不必一次学完。</p></div><div class="bc-map-grid" id="bc-map-grid"></div></section>
+    <section class="bc-method-section" aria-labelledby="bc-method-title"><div class="bc-method-heading"><span class="course-kicker">每道题都可以这样学</span><h2 id="bc-method-title">从看不懂，到能自己讲出来</h2><p id="bc-method-intro">先试自己的想法，再看示范；答错没关系，沿着线索重新走一遍。</p></div><ol class="bc-learning-steps" id="bc-learning-steps"></ol></section>
+    <section class="bc-lessons-section" id="bc-lessons" aria-labelledby="bc-lessons-title"><div class="bc-heading"><div><span class="course-kicker">逐点讲解 · 例题示范 · 三题自测</span><h2 id="bc-lessons-title">这条分支，按知识点学会</h2></div><p>每一课都给出关键概念、示范题、常见易错点和完整练习解析。遇到公式时可随时查看下方速查卡。</p></div><div class="bc-lesson-stack" id="bc-lesson-stack"></div></section>
+    <section class="bc-lab-section" id="bc-lab" aria-labelledby="bc-lab-title"><div class="bc-heading"><div><span class="course-kicker">动手改变数字，观察规则</span><h2 id="bc-lab-title">互动实验台</h2></div><p id="bc-lab-lead">改变一个条件，看结论和图形怎样跟着变。</p></div><div class="bc-lab-card" id="bc-lab-card"></div></section>
+    <section class="bc-formula-section" id="bc-formulas" aria-labelledby="bc-formulas-title"><div class="bc-heading"><div><span class="course-kicker">随时翻看 · 不必硬背</span><h2 id="bc-formulas-title">公式与方法速查</h2></div><button class="bc-print" type="button" id="bc-print">打印 / 保存速查卡</button></div><p class="bc-formula-note">先判断题目属于哪个知识点，再选工具；符号不熟悉，就回到上方那一课看示范。策略型知识点也列出可复用的解题步骤。</p><div class="bc-formula-grid" id="bc-formula-grid"></div></section>
+    <section class="bc-review-section" id="bc-review" aria-labelledby="bc-review-title"><div class="bc-heading"><div><span class="course-kicker">跨知识点回顾 · 先做，再看推理</span><h2 id="bc-review-title">分支复习闯关</h2></div><p id="bc-review-progress" aria-live="polite">答对 0 / 6</p></div><div class="bc-review-grid" id="bc-review-grid"></div><div class="bc-review-finish" id="bc-review-finish" hidden><b>这一轮全对！</b><span>用自己的话再讲一遍方法，或者回到速查卡快速复盘。</span><a href="#bc-formulas">再看速查卡 ↑</a></div></section>
+    <section class="bc-bottom"><div><span class="course-kicker">继续沿着知识树探索</span><h2>每个方法都和其他分支相连。</h2><p id="bc-bottom-copy">完成一个知识点后，可以继续学关联主题；数论训练营讲义和原题仍整合在数与规律分支中。</p></div><a href="/aoshu/curriculum.html">回到全部课程目录 <span>→</span></a></section>
+  </main>
+  <footer class="footer course-footer"><a class="brand footer-brand" href="/aoshu/index.html"><span class="brand-mark" aria-hidden="true">学</span><span>思维树屋 <small>让每一步都看得见</small></span></a><span>认真想一想，答案会发光。</span><a href="#bc-main">回到顶部 ↑</a></footer>
+</body>
+</html>

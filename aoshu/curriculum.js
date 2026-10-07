@@ -107,6 +107,19 @@
     }
   ];
 
+  window.AOSHU_CURRICULUM = curriculum;
+  if (!document.getElementById('curriculum-root')) return;
+
+  const studyLinks = {
+    number:'/aoshu/number-theory.html',
+    arithmetic:'/aoshu/branch-course.html?branch=arithmetic',
+    applications:'/aoshu/branch-course.html?branch=applications',
+    geometry:'/aoshu/branch-course.html?branch=geometry',
+    counting:'/aoshu/branch-course.html?branch=counting',
+    sequences:'/aoshu/sequences.html',
+    algebra:'/aoshu/branch-course.html?branch=algebra',
+    logic:'/aoshu/branch-course.html?branch=logic'
+  };
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const progressKey = 'siwei-curriculum-mastery-v1';
   let progress = {};
@@ -139,7 +152,8 @@
       });
       if (!lessons.length) return '';
       visibleLessons += lessons.length;
-      return `<section class="curriculum-branch branch-${escapeHtml(branch.color)}" id="branch-${escapeHtml(branch.id)}"><div class="branch-heading"><span class="branch-icon">${escapeHtml(branch.icon)}</span><div><p>${escapeHtml(branch.title)} · ${lessons.length} 个知识点</p><h2>${escapeHtml(branch.title)}</h2><span>${escapeHtml(branch.intro)}</span>${branch.studyLink ? `<a class="branch-study-link" href="${escapeHtml(branch.studyLink)}">打开完整互动专题课 <span>→</span></a>` : ''}</div></div><div class="lesson-grid">${lessons.map((lesson) => renderLesson(lesson, branch)).join('')}</div></section>`;
+      const studyLink = branch.studyLink || studyLinks[branch.id];
+      return `<section class="curriculum-branch branch-${escapeHtml(branch.color)}" id="branch-${escapeHtml(branch.id)}"><div class="branch-heading"><span class="branch-icon">${escapeHtml(branch.icon)}</span><div><p>${escapeHtml(branch.title)} · ${lessons.length} 个知识点</p><h2>${escapeHtml(branch.title)}</h2><span>${escapeHtml(branch.intro)}</span>${studyLink ? `<a class="branch-study-link" href="${escapeHtml(studyLink)}">打开完整互动专题课 <span>→</span></a>` : ''}</div></div><div class="lesson-grid">${lessons.map((lesson) => renderLesson(lesson, branch)).join('')}</div></section>`;
     }).join('');
     document.getElementById('visible-count').textContent = `显示 ${visibleLessons} / ${totalLessons} 个知识点`;
     if (!visibleLessons) root.innerHTML = '<div class="empty-state"><b>没有找到符合条件的知识点。</b><span>试试删掉搜索词，或切换到“全部分支”。</span></div>';

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="从数列是什么开始，学习等差、等比、斐波那契、图形数、差分、周期与找规律方法。含互动实验台、公式速查和复习题。">
+  <title>数列专题课：从观察到会找规律｜思维树屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/aoshu/styles.css">
+  <link rel="stylesheet" href="/aoshu/sequences.css">
+  <script src="/aoshu/sequences.js" defer></script>
+</head>
+<body class="curriculum-page sequences-page">
+  <a class="skip-link" href="#sequence-main">跳到课程内容</a>
+  <header class="topbar course-topbar">
+    <a class="brand" href="/aoshu/index.html" aria-label="思维树屋首页"><span class="brand-mark" aria-hidden="true">律</span><span>思维树屋 <small>小学奥数小课堂</small></span></a>
+    <nav class="topnav" aria-label="专题课导航">
+      <a href="#learning-map">八个知识点</a>
+      <a href="#sequence-lab">互动实验台</a>
+      <a href="#formula-card">公式速查</a>
+    </nav>
+    <a class="nav-cta" href="/aoshu/curriculum.html#branch-sequences">返回知识树 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="sequence-main" class="course-main sequence-main">
+    <section class="sequence-hero" aria-labelledby="sequence-title">
+      <div class="sequence-hero-copy">
+        <span class="course-eyebrow"><i></i> 数列、周期与规律 · 系统专题课</span>
+        <h1 id="sequence-title">不是猜答案，<br><em>是学会看见规律。</em></h1>
+        <p>从“这一串数是什么”开始，一步步认识等差、等比、斐波那契、图形数、差分和周期。每一课都有孩子能听懂的解释、拆步示范、可动手的观察和复习题。</p>
+        <div class="sequence-actions"><a class="course-button" href="#learning-map">从第一课开始 <span aria-hidden="true">↓</span></a><a class="sequence-quick-link" href="#formula-card">先看公式速查卡 ↗</a></div>
+        <div class="sequence-stats"><span><b>8</b> 个知识点</span><span><b>2</b> 个互动实验</span><span><b>6</b> 道复习题</span></div>
+      </div>
+      <aside class="sequence-promise"><span class="promise-icon" aria-hidden="true">1·2·3</span><b>从不会到会，走四步</b><p>先认清“第几项” → 再找变化 → 说成规则 → 算一项并检查。</p><a href="#detective-method">看看找规律的方法 <span>→</span></a></aside>
+      <div class="sequence-orbit" aria-hidden="true">1, 1, 2, 3, 5…</div>
+    </section>
+
+    <section class="sequence-route" aria-label="学习路线">
+      <a href="#seq-language"><i>01</i><span>认识数列</span></a><b aria-hidden="true">→</b><a href="#seq-difference"><i>02</i><span>看相邻差</span></a><b aria-hidden="true">→</b><a href="#seq-ratio"><i>03</i><span>看倍数</span></a><b aria-hidden="true">→</b><a href="#seq-fibonacci"><i>04</i><span>看递推</span></a><b aria-hidden="true">→</b><a href="#seq-figurate"><i>05</i><span>看图形</span></a><b aria-hidden="true">→</b><a href="#seq-diff-table"><i>06</i><span>看差分</span></a><b aria-hidden="true">→</b><a href="#seq-mixed"><i>07</i><span>拆开看</span></a><b aria-hidden="true">→</b><a href="#seq-cycle"><i>08</i><span>找周期</span></a>
+    </section>
+
+    <section class="learning-map" id="learning-map" aria-labelledby="map-title">
+      <div class="sequence-section-heading"><div><span class="course-kicker">先知道要学什么</span><h2 id="map-title">数列这条线，一共 8 个知识点</h2></div><p>不必一口气学完。点一个标题就能跳到那一课；学完可用实验台和复习题检验。</p></div>
+      <div class="learning-map-grid">
+        <a href="#seq-language"><i>01</i><b>数列是什么？怎样找规律</b><small>项、项数、观察顺序；学会先找证据</small></a>
+        <a href="#seq-difference"><i>02</i><b>等差数列：每次加一样多</b><small>公差、指定项、前 n 项和</small></a>
+        <a href="#seq-ratio"><i>03</i><b>等比数列：每次乘一样多</b><small>公比、与等差数列的区别</small></a>
+        <a href="#seq-fibonacci"><i>04</i><b>递推数列与斐波那契数列</b><small>前一项或前两项怎样生出下一项</small></a>
+        <a href="#seq-figurate"><i>05</i><b>图形数：三角数、平方数等</b><small>把点阵画出来，看到数字从哪来</small></a>
+        <a href="#seq-diff-table"><i>06</i><b>差上还有差：二阶差分</b><small>当相邻差也在变化时怎么办</small></a>
+        <a href="#seq-mixed"><i>07</i><b>交错数列与分组找规律</b><small>奇数项、偶数项分开看</small></a>
+        <a href="#seq-cycle"><i>08</i><b>周期数列：循环第几次</b><small>颜色、星期与余数位置</small></a>
+      </div>
+    </section>
+
+    <section class="detective-method" id="detective-method" aria-labelledby="detective-title">
+      <div><span class="course-kicker">遇到新数列时的检查顺序</span><h2 id="detective-title">小小规律侦探：先观察，再下结论</h2><p>别一上来就猜一个答案。把线索写下来，猜测才有根据。</p></div>
+      <ol class="detective-steps">
+        <li><b>先标位置</b><span>第 1 项、第 2 项……题目问“第几项”？有没有从 0 开始编号？</span></li>
+        <li><b>先看相邻差</b><span>后一项减前一项；如果一样，就是等差线索。</span></li>
+        <li><b>再看乘几</b><span>相邻项相除；如果一样，可能是等比线索（前项不能是 0）。</span></li>
+        <li><b>继续找结构</b><span>差有没有规律？奇数位和偶数位要不要分开？前两项会不会相加？</span></li>
+        <li><b>验证再预测</b><span>规则要能解释已知的每一步，最好检查三处；有限几项也可能有不止一种规则。</span></li>
+      </ol>
+      <p class="gentle-warning"><b>重要：</b>数列只给几项时，数学上不一定只有一种可能规律。做题要找最简单、最符合全部已知项的规则，并用题目情境核对。</p>
+    </section>
+
+    <section class="sequence-lab-section" id="sequence-lab" aria-labelledby="lab-title">
+      <div class="sequence-section-heading"><div><span class="course-kicker">边操作，边看变化</span><h2 id="lab-title">互动实验台：同样是数列，线索不一样</h2></div><p>换一种数列、改变要找的项数，观察规律怎样带你找到答案。</p></div>
+      <div class="lab-grid">
+        <div class="lab-controls">
+          <label for="pattern-choice">选一种数列</label>
+          <select id="pattern-choice">
+            <option value="arithmetic">等差：2，5，8，11，…</option>
+            <option value="geometric">等比：3，6，12，24，…</option>
+            <option value="fibonacci">斐波那契：1，1，2，3，5，…</option>
+            <option value="triangular">三角数：1，3，6，10，…</option>
+            <option value="square">平方数：1，4，9，16，…</option>
+            <option value="alternating">交错数列：2，5，4，7，…</option>
+          </select>
+          <label for="target-term">要找第几项？ <output id="term-output" for="target-term">8</output></label>
+          <input id="target-term" type="range" min="4" max="12" value="8">
+          <div class="lab-sequence-label">前几项</div><div class="term-strip" id="term-strip" aria-live="polite"></div>
+          <button class="lab-reveal" id="lab-reveal" type="button" aria-expanded="false">显示线索与推理</button>
+          <div class="lab-reason" id="lab-reason" hidden aria-live="polite"></div>
+        </div>
+        <div class="lab-visual" id="lab-visual" aria-live="polite"><div class="visual-label">数列在变化</div><div class="lab-bars" id="lab-bars" role="img" aria-label="数列各项大小示意"></div><p id="lab-caption">数列图会随选择更新。</p></div>
+      </div>
+    </section>
+
+    <section class="shape-lab" id="shape-lab" aria-labelledby="shape-title">
+      <div class="shape-copy"><span class="course-kicker">数字也可以摆出来</span><h2 id="shape-title">互动图形数：点一颗，为什么会多一行？</h2><p>三角数不是背出来的：第 1 层摆 1 颗，第 2 层再添 2 颗，第 3 层再添 3 颗……一层一层数，就得到 1、3、6、10……</p>
+        <label for="shape-kind">选择图形数<select id="shape-kind"><option value="triangle">三角数</option><option value="square">平方数</option></select></label>
+        <label for="shape-size">图形做到第几层？ <output id="shape-output" for="shape-size">4</output></label><input id="shape-size" type="range" min="1" max="8" value="4">
+        <div class="shape-count"><span>这一项的点数</span><b id="shape-total">10</b><small id="shape-formula">1+2+3+4 = 10</small></div>
+      </div><div class="shape-board" id="shape-board" role="img" aria-label="由点排成的图形数"></div>
+    </section>
+
+    <section class="lesson-journey" aria-labelledby="lessons-title">
+      <div class="sequence-section-heading"><div><span class="course-kicker">按顺序学，也可以跳到熟悉的部分</span><h2 id="lessons-title">8 课讲清数列里的主要规律</h2></div><p>每一课都按“先听懂 → 看老师拆解 → 记住要点”来写。</p></div>
+      <article class="topic-card" id="seq-language"><details open><summary><span>01</span><b>数列是什么？怎样找规律</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">把一些数按顺序排成一队，就叫<strong>数列</strong>。队里的每个数叫一项；它排第几，就是第几项。例如 4、7、10、13……里，4 是第 1 项，10 是第 3 项。数学常用 <strong>a₁、a₂、a₃</strong> 表示它们，<strong>aₙ</strong> 表示第 n 项。</p><div class="mini-visual" aria-label="数列与项数对应关系"><span><small>第几项 n</small><b>1</b><b>2</b><b>3</b><b>4</b></span><span><small>这一项 aₙ</small><b>4</b><b>7</b><b>10</b><b>13</b></span></div><h3>找规律时，从这些问题开始</h3><div class="clue-chips"><span>每次加或减多少？</span><span>每次乘或除多少？</span><span>差还会不会变化？</span><span>奇数位、偶数位一样吗？</span><span>前几项能不能推出下一项？</span><span>是不是固定循环？</span></div><div class="worked-box"><b>老师示范：4，7，10，13，下一项？</b><p>① 看相邻差：7−4=3，10−7=3，13−10=3。<br>② 三次变化都是“加 3”，所以先猜是每次加 3。<br>③ 继续一步：13+3=<strong>16</strong>。<br>④ 把规则放回去检查，前三次都对，才接受这个猜测。</p></div><p class="lesson-takeaway"><b>记住：</b>“下一项是 16”是答案；“每次加 3”才是规律。解释理由，比猜中更重要。</p></div></details></article>
+
+      <article class="topic-card" id="seq-difference"><details><summary><span>02</span><b>等差数列：每次加一样多</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">如果相邻两项的差总是同一个数，这就是<strong>等差数列</strong>。这个固定的差叫<strong>公差 d</strong>。公差可以是正数（往上走）、0（不变）或负数（往下走）。</p><div class="difference-demo"><span>3</span><i>+4</i><span>7</span><i>+4</i><span>11</span><i>+4</i><span>15</span></div><div class="formula-chip"><b>第 n 项</b><code>aₙ = a₁ + (n−1) × d</code><small>从第 1 项到第 n 项，走了 n−1 个间隔。</small></div><div class="worked-box"><b>例：7、11、15、19……第 10 项是多少？</b><p>公差 d=4。第 1 项到第 10 项之间有 9 个间隔。<br>a₁₀=7+9×4=7+36=<strong>43</strong>。</p></div><div class="formula-chip secondary-formula"><b>前 n 项和（配对法）</b><code>Sₙ = (a₁ + aₙ) × n ÷ 2</code><small>首尾配成同样的和：首项+末项，一共有 n 项。</small></div><p class="lesson-takeaway"><b>容易错：</b>第 10 项只加 9 次公差，不是 10 次。数清楚“间隔”最稳妥。</p></div></details></article>
+
+      <article class="topic-card" id="seq-ratio"><details><summary><span>03</span><b>等比数列：每次乘一样多</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">有些数不是每次加同一个数，而是每次<strong>乘同一个数</strong>。这个固定的乘数叫<strong>公比 r</strong>，这样的数列叫等比数列。</p><div class="difference-demo ratio-demo"><span>3</span><i>×2</i><span>6</span><i>×2</i><span>12</span><i>×2</i><span>24</span></div><div class="formula-chip"><b>第 n 项</b><code>aₙ = a₁ × rⁿ⁻¹</code><small>指数是 n−1，因为从第 1 项到第 n 项要乘 n−1 次。</small></div><div class="worked-box"><b>例：3、6、12、24……第 6 项？</b><p>相邻项都是乘 2，所以公比 r=2。<br>顺着乘：第 5 项 48，第 6 项 48×2=<strong>96</strong>。<br>用公式也可检查：3×2⁵=96。</p></div><p class="lesson-takeaway"><b>别混淆：</b>2、4、6、8 是等差（每次 +2）；2、4、8、16 是等比（每次 ×2）。先算差，再看倍数。</p></div></details></article>
+
+      <article class="topic-card" id="seq-fibonacci"><details><summary><span>04</span><b>递推数列与斐波那契数列</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain"><strong>递推</strong>就是“用已经知道的项，规定下一项怎么来”。有的看前一项，有的同时看前两项。著名的<strong>斐波那契数列</strong>从 1、1 开始，之后每一项都等于前两项相加。</p><div class="fibonacci-ribbon" aria-label="斐波那契数列前八项"><span>1</span><span>1</span><span class="sum-cell">1+1</span><span class="sum-cell">1+2</span><span class="sum-cell">2+3</span><span class="sum-cell">3+5</span><span class="sum-cell">5+8</span></div><div class="formula-chip"><b>递推规则</b><code>F₁=1，F₂=1；Fₙ=Fₙ₋₁+Fₙ₋₂（n≥3）</code><small>前两项是起点；规则从第 3 项开始使用。</small></div><div class="worked-box"><b>例：1、1、2、3、5、8……第 8 项？</b><p>第 7 项=5+8=13。<br>第 8 项=8+13=<strong>21</strong>。每次都要用“前两项”，不是只加前一项。</p></div><p class="lesson-takeaway"><b>名称也要会：</b>“前两项相加”是递推规则；“斐波那契数列”是这个经典数列的名字。不同起始项，也能用相同递推法。</p></div></details></article>
+
+      <article class="topic-card" id="seq-figurate"><details><summary><span>05</span><b>图形数：三角数、平方数和多边形数</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">有些数来自“数点点”。把点排成三角形，得到<strong>三角数</strong>；排成正方形，得到<strong>平方数</strong>。看图会发现，数字的变化不是凭空发生的。</p><div class="figure-examples"><div><span class="figure-name">三角数</span><b>1、3、6、10、15……</b><small>每次增加 2、3、4、5……</small></div><div><span class="figure-name">平方数</span><b>1、4、9、16、25……</b><small>1×1、2×2、3×3、4×4……</small></div><div><span class="figure-name">五边形数（拓展）</span><b>1、5、12、22、35……</b><small>图形每长一圈，增加的点数也有规律。</small></div></div><div class="formula-chip"><b>三角数与平方数</b><code>Tₙ = n(n+1) ÷ 2　　Qₙ = n²</code><small>三角数是 1 到 n 的和；平方数是 n 个 n 相乘。</small></div><div class="worked-box"><b>例：三角形摆到第 5 层有多少点？</b><p>按行数点：1+2+3+4+5=15。<br>公式核对：5×6÷2=<strong>15</strong>。可以打开上方“互动图形数”，亲手增加一层看总数。</p></div><p class="lesson-takeaway"><b>知道名字，才能认得出来：</b>遇到 1、3、6、10，试着画成点阵；遇到 1、4、9、16，想一想是不是边长递增的正方形。</p></div></details></article>
+
+      <article class="topic-card" id="seq-diff-table"><details><summary><span>06</span><b>差上还有差：二阶差分</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">如果第一层“相邻差”不是固定的，先别放弃。把差再排成一行，继续比较相邻差，叫<strong>看二阶差分</strong>。对于常见的二次规律，第二层差会固定。</p><div class="difference-table" aria-label="平方数 1、4、9、16、25 的差分示例"><div><b>原数</b><span>1</span><span>4</span><span>9</span><span>16</span><span>25</span></div><div><b>一阶差</b><i>　</i><span>3</span><span>5</span><span>7</span><span>9</span></div><div><b>二阶差</b><i>　</i><i>　</i><span>2</span><span>2</span><span>2</span></div></div><p class="difference-note">平方数的第一层差是 3、5、7、9……每次再加 2；第二层差都是 2。</p><div class="worked-box"><b>例：1、4、9、16、……下一项？</b><p>相邻差：3、5、7；差每次增加 2。<br>下一次差是 9，所以新的一项=16+9=<strong>25</strong>。</p></div><p class="lesson-takeaway"><b>适合什么时候：</b>看到相邻差像 2、3、4、5 这样继续变化时，再看“差的差”。小学生先会列差表、讲清步骤就够了，不用急着背复杂通项公式。</p></div></details></article>
+
+      <article class="topic-card" id="seq-mixed"><details><summary><span>07</span><b>交错数列：把奇数位、偶数位分开看</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">有的数列像两队人轮流排队：奇数位一队，偶数位一队。整串看起来乱，拆成两串就清楚了。</p><div class="split-sequence"><div><b>原数列</b><span>2、5、4、7、6、9、？</span></div><div><b>奇数位</b><span>2、4、6、<strong>8</strong></span></div><div><b>偶数位</b><span>5、7、9……</span></div></div><div class="worked-box"><b>老师示范：下一项是谁的队伍？</b><p>已知 6 项，要找第 7 项。第 7 项是奇数位，接在 2、4、6 后面，每次 +2，所以是 <strong>8</strong>。不要把两队混在一起看。</p></div><p class="lesson-takeaway"><b>线索词：</b>交替、轮流、奇数项、偶数项、每隔一项，看到这些词就试试分组。</p></div></details></article>
+
+      <article class="topic-card" id="seq-cycle"><details><summary><span>08</span><b>周期数列：循环到第几次</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">红、黄、蓝、红、黄、蓝……每隔 3 项就重来一次。重复的一段叫<strong>周期</strong>，这里周期长度是 3。星期、彩灯、动作轮换都能用同一个办法。</p><div class="cycle-wheel" aria-label="红黄蓝三种颜色循环"><span class="red-dot">红</span><span class="yellow-dot">黄</span><span class="blue-dot">蓝</span><i>再回到红……</i></div><div class="formula-chip"><b>找第 n 项的位置</b><code>用 n ÷ 周期长度，看余数</code><small>余数 1 对应周期第 1 项；余数 0 对应周期最后一项。</small></div><div class="worked-box"><b>例：红黄蓝循环，第 14 项是什么颜色？</b><p>14÷3=4……2，余数是 2，就看每轮的第 2 个颜色。答案是<strong>黄色</strong>。若刚好整除，余数 0，就看每轮最后一个。</p></div><p class="lesson-takeaway"><b>小心编号：</b>先确认题目把第一天/第一项算作第 1 项，再除周期；不要只算“过去了几天”。</p></div></details></article>
+    </section>
+
+    <section class="formula-reference" id="formula-card" aria-labelledby="formula-title">
+      <div class="formula-heading"><div><span class="course-kicker">随时翻看，不必硬背</span><h2 id="formula-title">数列公式速查卡</h2><p>先看题目属于哪类，再用公式。符号意思不清楚时，回到上面对应的一课。</p></div><button type="button" id="print-card" class="print-button">打印 / 保存公式卡</button></div>
+      <div class="formula-grid">
+        <article><span>等差数列</span><code>aₙ=a₁+(n−1)d</code><small>d 是每一步固定增加的差；n−1 是间隔数。</small></article>
+        <article><span>等差数列求和</span><code>Sₙ=(a₁+aₙ)n÷2</code><small>首尾配对；也可用“平均数 × 项数”。</small></article>
+        <article><span>等比数列</span><code>aₙ=a₁×rⁿ⁻¹</code><small>r 是相邻两项固定的倍数；共乘 n−1 次。</small></article>
+        <article><span>斐波那契递推</span><code>F₁=F₂=1，Fₙ=Fₙ₋₁+Fₙ₋₂</code><small>从第 3 项开始，每项等于前两项之和。</small></article>
+        <article><span>三角数 / 平方数</span><code>Tₙ=n(n+1)÷2　　Qₙ=n²</code><small>三角数是 1 到 n 的和；平方数是 n×n。</small></article>
+        <article><span>五边形数（拓展）</span><code>Pₙ=n(3n−1)÷2</code><small>前几项：1、5、12、22、35……可画点验证。</small></article>
+        <article><span>周期数列</span><code>位置由 n ÷ 周期长度的余数决定</code><small>余数 0 要看周期的最后一个位置。</small></article>
+        <article><span>规律侦探顺序</span><code>差 → 倍数 → 差的差 → 分组 → 递推 / 周期</code><small>每次只选能解释所有已知项的规则，并回头检验。</small></article>
+      </div>
+      <p class="formula-footnote">符号：a₁ 是第 1 项，aₙ 是第 n 项，d 是公差，r 是公比，Sₙ 是前 n 项的和。</p>
+    </section>
+
+    <section class="review-section" id="review" aria-labelledby="review-title">
+      <div class="sequence-section-heading"><div><span class="course-kicker">先自己试，再看提示</span><h2 id="review-title">复习闯关：会找理由才算会</h2></div><p id="review-progress" aria-live="polite">答对 0 / 6</p></div>
+      <div class="review-grid">
+        <article class="review-question" data-answer="17"><b>1</b><label for="review-0">5、8、11、14……下一项是多少？</label><div class="review-answer"><input id="review-0" inputmode="numeric" autocomplete="off" placeholder="填答案"><button type="button" data-review="0">检查</button></div><p class="review-feedback" aria-live="polite"></p><details><summary>提示与完整讲解</summary><p>相邻差都是 3，下一项是 14+3=17。这是等差数列，公差是 3。</p></details></article>
+        <article class="review-question" data-answer="48"><b>2</b><label for="review-1">3、6、12、24……第 5 项是多少？</label><div class="review-answer"><input id="review-1" inputmode="numeric" autocomplete="off" placeholder="填答案"><button type="button" data-review="1">检查</button></div><p class="review-feedback" aria-live="polite"></p><details><summary>提示与完整讲解</summary><p>每一项乘 2。第 5 项=24×2=48；这是公比为 2 的等比数列。</p></details></article>
+        <article class="review-question" data-answer="13"><b>3</b><label for="review-2">1、1、2、3、5、8……第 7 项是多少？</label><div class="review-answer"><input id="review-2" inputmode="numeric" autocomplete="off" placeholder="填答案"><button type="button" data-review="2">检查</button></div><p class="review-feedback" aria-live="polite"></p><details><summary>提示与完整讲解</summary><p>斐波那契数列每项等于前两项相加；第 7 项=5+8=13。</p></details></article>
+        <article class="review-question" data-answer="21"><b>4</b><label for="review-3">三角数 1、3、6、10……第 6 项是多少？</label><div class="review-answer"><input id="review-3" inputmode="numeric" autocomplete="off" placeholder="填答案"><button type="button" data-review="3">检查</button></div><p class="review-feedback" aria-live="polite"></p><details><summary>提示与完整讲解</summary><p>三角数第 n 项 Tₙ=n(n+1)÷2。T₆=6×7÷2=21；也可以从 10 开始加 5、再加 6。</p></details></article>
+        <article class="review-question" data-answer="8"><b>5</b><label for="review-4">2、5、4、7、6、9……下一项是多少？</label><div class="review-answer"><input id="review-4" inputmode="numeric" autocomplete="off" placeholder="填答案"><button type="button" data-review="4">检查</button></div><p class="review-feedback" aria-live="polite"></p><details><summary>提示与完整讲解</summary><p>奇数位是 2、4、6……，偶数位是 5、7、9……。第 7 项是奇数位的下一项，所以是 8。</p></details></article>
+        <article class="review-question" data-answer="黄"><b>6</b><label for="review-5">红、黄、蓝循环，第 14 项是什么颜色？</label><div class="review-answer"><input id="review-5" autocomplete="off" placeholder="填颜色"><button type="button" data-review="5">检查</button></div><p class="review-feedback" aria-live="polite"></p><details><summary>提示与完整讲解</summary><p>14÷3 余 2，落在每轮第 2 个位置，因此是黄色。答案可填“黄”或“黄色”。</p></details></article>
+      </div>
+      <div class="review-finish" id="review-finish" hidden><b>这一轮全对，数列规律已经能用起来了。</b><span>也可以回到上面的公式卡，做一次快速复盘。</span><a href="#formula-card">再看公式速查 ↑</a></div>
+    </section>
+
+    <section class="sequence-bottom"><div><span class="course-kicker">把这条线放回整棵知识树</span><h2>数列是“数与规律”中的一支，不是孤立的口诀。</h2><p>周期会连接到余数与同余；图形数会连接到平方和与图形；递推也会出现在计数和路线问题里。</p></div><a href="/aoshu/curriculum.html#branch-sequences">回到数列知识点目录 <span>→</span></a></section>
+  </main>
+  <footer class="footer course-footer"><a class="brand footer-brand" href="/aoshu/index.html"><span class="brand-mark" aria-hidden="true">律</span><span>思维树屋 <small>让每一步都看得见</small></span></a><span>认真想一想，答案会发光。</span><a href="#sequence-main">回到顶部 ↑</a></footer>
+</body>
+</html>

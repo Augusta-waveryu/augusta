@@ -61,3 +61,32 @@
 .bc-worked-steps p{font-size:12px}
 .bc-why-check p{font-size:11px}
 @media(max-width:650px){.bc-deep-idea p{font-size:12.5px}.bc-subtopic p,.bc-why-check p{font-size:11.5px}.bc-worked-steps p{font-size:12px}}
+
+
+/* Geometry lesson diagrams and the hands-on 3D solid explorer */
+.bc-geometry-figure{display:grid;grid-template-columns:minmax(0,1fr);justify-items:center;gap:7px;margin:10px 0 14px;padding:12px 14px 10px;border:1px solid #e5ebdf;border-radius:14px;background:linear-gradient(135deg,#fbfcf8,#f2f7ef)}
+.bc-geometry-figure svg{display:block;width:min(100%,540px);height:auto;max-height:230px;overflow:visible}
+.bc-geometry-figure figcaption{max-width:720px;margin:0;color:#5e7063;font-size:10px;line-height:1.75;text-align:center}
+.bc-solid-controls{display:grid;align-content:start;gap:13px;min-width:0}
+.bc-solid-controls>p{margin:0;color:#68766d;font-size:10px;line-height:1.85}
+.bc-solid-controls .bc-control-row{display:grid;grid-template-columns:37px minmax(60px,1fr) 35px;gap:10px}
+.bc-solid-controls .bc-control-row input[type=range]{width:100%}
+.bc-solid-controls .bc-control-row output{color:#3d7655;font-size:12px;font-weight:900;text-align:right}
+.bc-solid-actions{display:flex;flex-wrap:wrap;gap:7px}
+.bc-solid-actions .bc-lab-button{min-height:34px;padding:0 10px}
+.bc-solid-visual{min-width:0;overflow:hidden}
+#bc-solid-canvas{display:block;width:100%;height:260px;touch-action:none;cursor:grab;outline:none}
+#bc-solid-canvas:focus-visible{border-radius:10px;box-shadow:0 0 0 3px #c7dfc6}
+#bc-solid-canvas.is-dragging{cursor:grabbing}
+.bc-solid-legend{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;color:#65736a;font-size:10px}
+.bc-solid-legend span{display:flex;align-items:center;gap:5px}
+.bc-solid-legend i{display:inline-block;width:9px;height:9px;border-radius:3px;background:#bd794c}
+.bc-solid-legend .bc-legend-width{background:#6585a0}
+.bc-solid-legend .bc-legend-height{background:#507a59}
+.bc-solid-legend b{color:#365d43}
+@media(max-width:650px){.bc-geometry-figure{padding:9px 7px}.bc-geometry-figure figcaption{font-size:9px}.bc-solid-controls .bc-control-row{grid-template-columns:32px minmax(50px,1fr) 28px;gap:7px}#bc-solid-canvas{height:220px}.bc-solid-actions{gap:5px}.bc-solid-actions .bc-lab-button{padding:0 8px;font-size:9px}}
+@media(prefers-reduced-motion:reduce){#bc-solid-canvas{scroll-behavior:auto}}
+
+.bc-geometry-promise{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;color:#4b7256;font-size:10px;font-weight:900}
+.bc-geometry-promise span{padding:6px 10px;border:1px solid #dfe9d9;border-radius:999px;background:#f2f7ee}
+@media(max-width:650px){.bc-geometry-promise{font-size:9px;gap:6px}}

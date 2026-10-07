@@ -1,0 +1,202 @@
+(() => {
+  const curriculum = [
+    {
+      id: 'number', title: '数与规律', icon: '数', color: 'sage',
+      intro: '从整数的性质出发，把整除、因数、余数和数字排列连成一张网。原数论训练营的讲义例题、小测题和练习，按知识点归位在这条主线上。',
+      lessons: [
+        { id:'divisibility', title:'整除特征与倍数', level:'入门', source:'原讲义：第 1 讲', concept:'若 a=b×k（k 是整数），就说 b 整除 a，记作 b∣a。看个位能判断 2、5、10；看末两位/末三位能判断 4、8；看数字和能判断 3、9；看交错和能判断 11。先挑最省力的特征，再检查剩余条件。', example:{q:'一个四位数 3□72 能被 9 整除，□ 应填几？',solution:'数字和是 3+□+7+2=12+□。离 12 最近的 9 的倍数是 18，所以 □=6；验算数字和 18，确实能被 9 整除。'}, practice:[{q:'四位数 24□3 能被 9 整除，□ 有几种可能？',a:['2'],hint:'把已知数字相加，再找能使和成为 9 的倍数的数字。',why:'2+4+□+3=9+□。数字 □ 可以是 0 或 9，因此有 2 种可能。'},{q:'1 到 100（含 100）有多少个 8 的正倍数？',a:['12'],hint:'从 8、16、24……数到 96，或算 100÷8。',why:'⌊100÷8⌋=12，所以共有 12 个。'},{q:'数字 5、2、8、1 组成的数 5281，除以 9 的余数是多少？',a:['7'],hint:'用数字和代替原数看模 9 的余数。',why:'数字和 5+2+8+1=16，16 除以 9 余 7，所以原数也余 7。'}], link:'/aoshu/number-theory.html#nt-divisibility' },
+        { id:'parity', title:'奇偶性与整除推理', level:'入门', source:'原讲义：第 1–2 讲', concept:'偶数可写成 2k，奇数可写成 2k+1。奇+奇、偶+偶为偶，奇+偶为奇；奇×奇为奇，只要乘数里有偶数，乘积就是偶数。复杂算式先只看奇偶，常常能立刻排除一半情况。', example:{q:'三 个连续整数的和一定是奇数还是偶数？',solution:'设为 n−1、n、n+1，和是 3n。它与 n 同奇偶：n 为奇数时和为奇数，n 为偶数时和为偶数，因此不一定固定奇偶。'}, practice:[{q:'五个连续整数的和除以 5，得到的数等于中间数。中间数是 12，五数和是多少？',a:['60'],hint:'连续五数围绕中间数对称，平均数就是中间数。',why:'五个数是 10、11、12、13、14，和为 60。'},{q:'三个奇数相加，结果是奇数还是偶数？（奇数填 1，偶数填 0）',a:['1'],hint:'奇+奇先是偶，再加奇。',why:'两个奇数之和为偶数，偶数再加奇数为奇数。'},{q:'一个奇数乘一个偶数，积的个位奇偶如何？（奇数填 1，偶数填 0）',a:['0'],hint:'偶数乘任何整数仍是 2 的倍数。',why:'乘积含有因子 2，一定是偶数。'}], link:'/aoshu/number-theory.html#nt-primes' },
+        { id:'primes', title:'质数、合数与筛选', level:'入门', source:'原讲义：第 2 讲', concept:'质数只有 1 和它本身两个正因数；合数有两个以上正因数。1 既不是质数也不是合数，2 是唯一的偶质数。判断 n 是否为质数，只需试除不超过 √n 的质数；筛法则从小质数的倍数开始划掉合数。', example:{q:'判断 91 是质数还是合数。',solution:'√91≈9.5，试除 2、3、5、7；91=7×13，所以 91 是合数。'}, practice:[{q:'200 到 220 之间的质数是几？',a:['211'],hint:'先划去偶数、3 的倍数、5 的倍数，再检查剩下的数。',why:'这个范围里 211 不能被不超过 √211≈14.5 的质数 2、3、5、7、11、13 整除，因此它是质数。'},{q:'1 到 100 一共有多少个质数？',a:['25'],hint:'从 2 开始用埃拉托斯特尼筛法划掉倍数。',why:'筛去合数后，1 到 100 的质数共有 25 个。'},{q:'49 的最小质因数是多少？',a:['7'],hint:'想想 49 是哪个数的平方。',why:'49=7×7，最小质因数是 7。'}], link:'/aoshu/number-theory.html#nt-primes' },
+        { id:'factorization', title:'质因数分解与唯一性', level:'进阶', source:'原讲义：第 3 讲', concept:'每个大于 1 的整数都能唯一写成质数幂的乘积（不计因子顺序），例如 360=2³×3²×5。把数拆成质数，是比较因数、最大公因数、最小公倍数和完全平方数的共同语言。', example:{q:'把 180 分解质因数。',solution:'180=18×10=(2×3²)×(2×5)=2²×3²×5。每个质数的指数记录它出现了几次。'}, practice:[{q:'72 的质因数分解中，不同质因数有几个？',a:['2'],hint:'72=8×9。',why:'72=2³×3²，出现的不同质数是 2 和 3，共 2 个。'},{q:'360 的质因数分解中，质数 2 的指数是多少？',a:['3'],hint:'连续除以 2，直到不能再除。',why:'360=2³×3²×5，因此指数为 3。'},{q:'把 2025 分解质因数后，质数 3 的指数是多少？',a:['4'],hint:'2025=45²，45=3²×5。',why:'2025=(3²×5)²=3⁴×5²，指数是 4。'}], link:'/aoshu/number-theory.html#nt-factorization' },
+        { id:'gcd-lcm', title:'最大公因数与最小公倍数', level:'进阶', source:'原讲义：第 3–4 讲', concept:'质因数分解求最大公因数时，各质数指数取较小值；求最小公倍数时取较大值。两个正整数 a、b 满足 (a,b)×[a,b]=ab。周期相遇、齿轮转动、同时完成等问题常用最小公倍数。', example:{q:'求 18 和 24 的最大公因数与最小公倍数。',solution:'18=2×3²，24=2³×3。指数取小得最大公因数 2×3=6；指数取大得最小公倍数 2³×3²=72。'}, practice:[{q:'30 和 45 的最大公因数是多少？',a:['15'],hint:'30=2×3×5，45=3²×5。',why:'共同质因数取较小指数：3×5=15。'},{q:'8 和 12 的最小公倍数是多少？',a:['24'],hint:'8=2³，12=2²×3，指数取大。',why:'最小公倍数=2³×3=24。'},{q:'两盏灯分别每 6 分钟、每 8 分钟闪一次，刚一起闪过后，几分钟后再次一起闪？',a:['24'],hint:'寻找 6 与 8 的最小公倍数。',why:'[6,8]=24，所以 24 分钟后再次同时闪。'}], link:'/aoshu/number-theory.html#nt-gcd' },
+        { id:'divisor-structure', title:'因数个数、因数和与连续和', level:'进阶', source:'原讲义：第 3–4 讲', concept:'若 N=p^a×q^b×…，正因数个数 τ(N)=(a+1)(b+1)…；因数和把各质数幂的几何和相乘。一个数有奇数个正因数，当且仅当它是完全平方数。连续正整数和问题可用因数配对，也可先列短范围验证。', example:{q:'180=2²×3²×5，它有多少个正因数？',solution:'每个因数分别选择 2 的 0–2 次、3 的 0–2 次、5 的 0–1 次，所以共有 (2+1)(2+1)(1+1)=18 个。'}, practice:[{q:'24 有多少个正因数？',a:['8'],hint:'24=2³×3。',why:'τ(24)=(3+1)(1+1)=8。'},{q:'12 的所有正因数之和是多少？',a:['28'],hint:'先列出 1、2、3、4、6、12。',why:'1+2+3+4+6+12=28。'},{q:'15 能写成多少种“至少两项、连续正整数”的和？',a:['3'],hint:'试 1+2+3+4+5、4+5+6 和 7+8。',why:'15=1+2+3+4+5=4+5+6=7+8，共 3 种。'}], link:'/aoshu/number-theory.html#nt-factors' },
+        { id:'remainders', title:'带余除法、同余与周期', level:'进阶', source:'原讲义：第 5–6 讲', concept:'带余除法写作 a=qm+r，其中 0≤r<m。a 与 b 除以 m 余数相同，记作 a≡b (mod m)，等价于 m 整除 a−b。同余数可加、减、乘；幂的余数常按周期重复，先找周期再看指数。', example:{q:'求 2²⁰ 除以 5 的余数。',solution:'2 的幂除以 5 的余数循环为 2、4、3、1，周期 4。20 是 4 的倍数，所以余数与 2⁴ 相同，为 1。'}, practice:[{q:'2026 除以 9 的余数是多少？',a:['1'],hint:'用各位数字和替代：2+0+2+6。',why:'数字和为 10，10 除以 9 余 1。'},{q:'7¹⁰⁰ 的个位数字是多少？',a:['1'],hint:'个位按 7、9、3、1 循环，每 4 次一轮。',why:'100÷4 余 0，落在周期末项，个位是 1。'},{q:'一个数今天是星期日，100 天后是星期几？（周一至周日填 1 至 7）',a:['2'],hint:'一周 7 天，先算 100 除以 7 的余数。',why:'100=14×7+2，星期日后两天是星期二，按题目编号为 2。'}], link:'/aoshu/number-theory.html#nt-day06' },
+        { id:'congruences', title:'同余方程与余数拼合', level:'挑战', source:'原讲义：第 6–7 讲', concept:'同余方程先化简，再在模数范围内找解，并写成“一个解 + 模数×整数”。多个余数条件可先列表；若模数互质，再逐步拼合周期。约去同余两边的公因数前要核对它与模数的关系，不能像普通等式那样随意约分。', example:{q:'解 3x≡6 (mod 9)，写出最小正整数解。',solution:'3x−6 能被 9 整除，即 3(x−2) 是 9 的倍数，所以 x−2 是 3 的倍数。通解 x≡2 (mod 3)，最小正整数解是 2。'}, practice:[{q:'最小的正整数 x 满足 x≡1 (mod 3)、x≡2 (mod 5)，x 是多少？',a:['7'],hint:'依次列出除以 3 余 1 的数：1、4、7、10……',why:'7 除以 3 余 1，除以 5 余 2；比 7 小的候选 1、4 均不满足第二个条件。'},{q:'解 5x≡1 (mod 7)，最小正整数解是多少？',a:['3'],hint:'找一个数乘 5 后除以 7 余 1。',why:'5×3=15，15 除以 7 余 1，所以 x≡3 (mod 7)。'},{q:'解 2x≡4 (mod 6)，最小正整数解是多少？',a:['2'],hint:'等价于 6 整除 2x−4。',why:'2x−4=2(x−2)，要被 6 整除即 x−2 是 3 的倍数。通解 x≡2 (mod 3)，最小正整数解 2。'}], link:'/aoshu/number-theory.html#nt-day07' },
+        { id:'digits-bases', title:'数位、位值与进制', level:'进阶', source:'原讲义：第 8 讲', concept:'十进制数 abc 表示 100a+10b+c；数位移动改变位值，不是简单把数字搬家。b 进制的每一位从右向左依次乘 1、b、b²……，且每一位数字都小于 b。十进制各位和与原数模 9 同余，是“弃九验算”的根源。', example:{q:'把二进制 1101₂ 化成十进制。',solution:'从右向左按位权展开：1×2³+1×2²+0×2+1=8+4+0+1=13。'}, practice:[{q:'十进制数 2468 的数字和是多少？',a:['20'],hint:'把每一位数字相加。',why:'2+4+6+8=20。'},{q:'五进制数 23₅ 化成十进制是多少？',a:['13'],hint:'2×5+3。',why:'2×5+3=13。'},{q:'十进制数 31 写成二进制是多少？（不带下标）',a:['11111'],hint:'31=16+8+4+2+1。',why:'31=2⁴+2³+2²+2+1，所以二进制是 11111。'}], link:'/aoshu/number-theory.html#nt-day09-number-base' },
+        { id:'squares', title:'完全平方数与平方余数', level:'进阶', source:'原讲义：第 9–10 讲', concept:'完全平方数是整数的平方。平方数的质因数指数全为偶数，所以补成平方数时只需把奇数指数配成偶数；个位只可能是 0、1、4、5、6、9。用模 4、8、16 等余数还能快速判断某个数不可能是平方数。', example:{q:'最小的正整数乘 12 后成为完全平方数，是多少？',solution:'12=2²×3，只有质因数 3 的指数是奇数，再乘一个 3 得 36=6²，所以最小数是 3。'}, practice:[{q:'17² 等于多少？',a:['289'],hint:'(10+7)² 或 17×17。',why:'17×17=289。'},{q:'最小的正整数乘 18 后成为完全平方数，是多少？',a:['2'],hint:'18=2×3²，找出指数为奇数的质因数。',why:'再乘 2 得 36=6²，所以答案是 2。'},{q:'一个完全平方数除以 4，余数能是 2 吗？（能填 1，不能填 0）',a:['0'],hint:'看偶数平方和奇数平方分别除以 4 的余数。',why:'偶数平方被 4 整除，奇数平方除以 4 余 1，因此不可能余 2。'}], link:'/aoshu/number-theory.html#nt-day10-squares' },
+        { id:'factor-identities', title:'平方差、完全平方与因式分解', level:'挑战', source:'原讲义：第 4–5、10 讲', concept:'平方差 a²−b²=(a−b)(a+b)；完全平方 a²±2ab+b²=(a±b)²。遇到乘积或整数解时，可把式子改写成因数配对；配对后仍要检查变量范围、正负和题目条件。', example:{q:'计算 51²−49²。',solution:'用平方差：(51−49)(51+49)=2×100=200，比直接平方快。'}, practice:[{q:'计算 16²−14²。',a:['60'],hint:'把它写成 (16−14)(16+14)。',why:'2×30=60。'},{q:'计算 101²−99²。',a:['400'],hint:'(101−99)(101+99)。',why:'2×200=400。'},{q:'正整数 x 满足 (x+2)(x+3)=20，x 是多少？',a:['2'],hint:'找相邻整数因数对，或试 x=1、2、3。',why:'x=2 时 4×5=20，符合条件。'}], link:'/aoshu/number-theory.html#nt-day05' }
+      ]
+    },
+    {
+      id:'arithmetic', title:'计算、分数与比例', icon:'算', color:'peach',
+      intro:'练会看结构、选单位、比较数量。计算不是越快越好，能说明为什么可以这样算，才算真正掌握。',
+      lessons:[
+        {id:'order-operations',title:'运算顺序与凑整',level:'入门',concept:'先括号，再乘除，后加减；同级运算从左向右。凑整时可以交换加数、把相邻数配成整十整百，或把乘法拆成容易算的部分。',example:{q:'计算 25×17×4。',solution:'先把 25 和 4 配在一起：25×4×17=100×17=1700。'},practice:[{q:'计算 125×8×7。',a:['7000'],hint:'先算 125×8。',why:'125×8=1000，1000×7=7000。'},{q:'计算 48+199+52。',a:['299'],hint:'把 48 和 52 凑成 100。',why:'48+52+199=100+199=299。'},{q:'计算 72−18÷3。',a:['66'],hint:'先除法再减法。',why:'18÷3=6，72−6=66。'}]},
+        {id:'fractions',title:'分数的意义与运算',level:'进阶',concept:'分数表示把“1”平均分成若干份后取其中几份。加减先通分；乘法分子乘分子、分母乘分母；除以一个非零分数等于乘它的倒数。计算前先约分，结果要放回题意检查。',example:{q:'计算 1/2+1/3。',solution:'通分到 6：1/2=3/6，1/3=2/6，所以和是 5/6。'},practice:[{q:'计算 3/4−1/8，答案填分子/分母。',a:['5/8'],hint:'把 3/4 化成分母为 8。',why:'3/4=6/8，6/8−1/8=5/8。'},{q:'计算 2/3×3/5，结果是多少？',a:['2/5'],hint:'分子乘分子、分母乘分母，可先约分。',why:'(2×3)/(3×5)=2/5。'},{q:'2÷1/4 等于多少？',a:['8'],hint:'除以 1/4，等于乘 4。',why:'2×4=8。'}]},
+        {id:'ratio',title:'比、比例与按比分配',level:'进阶',concept:'a:b 表示 a 与 b 的相对关系。比例中两内项积等于两外项积。按比分配先把总份数相加，再求每一份是多少，最后按各自份数分给不同部分。',example:{q:'把 48 按 3:5 分成两份。',solution:'总份数 3+5=8，每份 48÷8=6；两份分别是 3×6=18 和 5×6=30。'},practice:[{q:'把 36 按 1:2 分成两份，较大的一份是多少？',a:['24'],hint:'一共 3 份，较大一份占 2 份。',why:'每份 36÷3=12，较大份是 12×2=24。'},{q:'4:6 化成最简整数比，后项是多少？',a:['3'],hint:'两项同时除以最大公因数。',why:'4:6=2:3，后项是 3。'},{q:'3:5=12:x，x 是多少？',a:['20'],hint:'比例交叉相乘。',why:'3x=5×12=60，所以 x=20。'}]},
+        {id:'percent',title:'百分数与折扣',level:'进阶',concept:'百分数表示“每 100 份中有多少份”。求某数的百分之几，用乘法；已知部分和百分率求总量，用除法。先分清原价、现价、降低或增加的基数，连续变化不能把两个百分数直接相加。',example:{q:'一件 80 元的物品打九折，现价多少元？',solution:'九折就是原价的 90%，80×0.9=72 元。'},practice:[{q:'200 的 15% 是多少？',a:['30'],hint:'200×15/100。',why:'200×0.15=30。'},{q:'一件衣服打八折后 64 元，原价多少元？',a:['80'],hint:'64 元是原价的 80%。',why:'原价=64÷0.8=80 元。'},{q:'50 元涨价 10% 后是多少钱？',a:['55'],hint:'涨价额是 50 的 10%。',why:'涨价 5 元，50+5=55 元。'}]},
+        {id:'average',title:'平均数与移多补少',level:'入门',concept:'平均数=总量÷份数。总量不变时，把多的移给少的，最终每份都相同；若新增或拿走数据，要先更新总量和份数，不能只看原平均数。',example:{q:'4 个数的平均数是 12，它们的总和是多少？',solution:'总和=平均数×个数=12×4=48。'},practice:[{q:'5 个数的总和是 65，平均数是多少？',a:['13'],hint:'总和除以个数。',why:'65÷5=13。'},{q:'三场比赛得分为 8、12、16 分，平均每场多少分？',a:['12'],hint:'先求总分，再除以 3。',why:'(8+12+16)÷3=36÷3=12。'},{q:'6 个数的平均数是 10，加入一个数 17 后，7 个数的平均数是多少？',a:['11'],hint:'先求原总和，再加 17。',why:'原总和 60，新总和 77，77÷7=11。'}]},
+        {id:'speed-work',title:'行程、相遇与工作效率',level:'进阶',concept:'行程问题用“路程=速度×时间”；相向而行的相遇速度相加，同向追及用速度差。工作问题把一项工作看成整体，工作量=效率×时间；多个人合作时效率相加。单位先统一。',example:{q:'甲每小时走 5 千米，走 3 小时，路程多少？',solution:'路程=速度×时间=5×3=15 千米。'},practice:[{q:'相距 36 千米的两人相向而行，速度分别是 4、5 千米/小时，几小时相遇？',a:['4'],hint:'相向速度相加，再用路程除以合速度。',why:'36÷(4+5)=4 小时。'},{q:'一件工作甲单独做需 6 小时，甲的效率是每小时完成几分之几？（填分母）',a:['6'],hint:'把整件工作看作 1。',why:'每小时完成 1/6 件，分母是 6。'},{q:'一辆车 2 小时行 120 千米，平均速度是多少千米/小时？',a:['60'],hint:'速度=路程÷时间。',why:'120÷2=60。'}]}
+      ]
+    },
+    {
+      id:'applications', title:'经典数量关系', icon:'量', color:'lilac',
+      intro:'把故事里的总量、差量、份数和变化找出来。已有互动课可以动手试，课程树里也把方法拆成可练的小关卡。',
+      lessons:[
+        {id:'sum-difference',title:'和差问题',level:'入门',concept:'已知两数和 S 与差 D：大数=(S+D)÷2，小数=(S−D)÷2。画线段图时先把多出的一段拿走，剩下两份相等。',example:{q:'两数和 36、差 8，较大的数是多少？',solution:'较大数=(36+8)÷2=22；较小数=14。'},practice:[{q:'两数和 46、差 10，较小数是多少？',a:['18'],hint:'(和−差)÷2。',why:'(46−10)÷2=18。'},{q:'两数和 52、差 12，较大的数是多少？',a:['32'],hint:'(和+差)÷2。',why:'(52+12)÷2=32。'},{q:'两数和 70、差 0，两个数各是多少？',a:['35'],hint:'差是 0，说明相等。',why:'70÷2=35。'}],link:'/aoshu/index.html#sumdiff'},
+        {id:'chicken-rabbit',title:'鸡兔同笼与假设法',level:'进阶',concept:'先假设所有动物都是腿数较少的一种，算出假设腿数；多出的腿数除以“每换一只多出的腿数”，就是另一种动物的只数。最后用头数、腿数双重验算。',example:{q:'8 个头、22 条腿，鸡兔各几只？',solution:'全当鸡有 16 条腿，多 6 条；每只兔比鸡多 2 条腿，所以兔 6÷2=3 只，鸡 5 只。'},practice:[{q:'10 个头、28 条腿，兔子有几只？',a:['4'],hint:'先全当鸡，腿数差再除以 2。',why:'28−10×2=8，8÷2=4 只兔。'},{q:'共有 12 只鸡兔，腿共 34 条，鸡有几只？',a:['7'],hint:'全当鸡后，多出的腿来自兔子。',why:'全当鸡有 24 条，多 10 条，兔 5 只，鸡 12−5=7 只。'},{q:'有鸡和兔共 9 只，腿共 26 条，兔有几只？',a:['4'],hint:'比全是鸡多 26−18 条腿。',why:'多 8 条，每只兔多 2 条，所以兔有 4 只。'}],link:'/aoshu/index.html#chicken'},
+        {id:'surplus-shortage',title:'盈亏与两次分配',level:'进阶',concept:'比较两种分法：若一种有剩、另一种不够，差额相加；若两种都剩或都不够，差额相减。再用总差额除以“每份变化量”，求人数或份数。',example:{q:'每人 3 颗会多 8 颗，每人 5 颗会少 2 颗，有几人？',solution:'差额 8+2=10；每人多分 2 颗，所以人数 10÷2=5。糖果总数 5×3+8=23。'},practice:[{q:'每人 4 本会多 6 本，每人 6 本会少 4 本，有几人？',a:['5'],hint:'总差额是 6+4，每人差 6−4。',why:'(6+4)÷(6−4)=10÷2=5 人。'},{q:'每人分 5 张会剩 12 张，每人分 7 张会剩 2 张，有几人？',a:['5'],hint:'都是有剩，差额相减。',why:'12−2=10，每人多分 2 张，10÷2=5 人。'},{q:'若 6 人每人分 4 个还剩 3 个，共有多少个？',a:['27'],hint:'人数×每人份数，再加剩下的。',why:'6×4+3=27。'}],link:'/aoshu/index.html#profitloss'},
+        {id:'planting',title:'植树与间隔',level:'入门',concept:'先数“间隔”，再数“树”。直线上两端都种：树数=间隔数+1；只种一端：树数=间隔数；围成一圈：树数=间隔数。楼梯台阶、锯木段数也可套用同一结构。',example:{q:'18 米直路，每隔 3 米种一棵，两端都种，共几棵？',solution:'间隔数=18÷3=6，树数=6+1=7 棵。'},practice:[{q:'24 米直路，每隔 4 米种树，两端都种，几棵？',a:['7'],hint:'24÷4 得间隔数，两端都种再加 1。',why:'间隔 6 段，树 7 棵。'},{q:'绕圆形花坛一周每隔 5 米放一个标记，共 8 个间隔，要放几个标记？',a:['8'],hint:'圆圈没有多出来的两个端点。',why:'围成一圈，标记数等于间隔数，即 8 个。'},{q:'把一根木头锯成 6 段，要锯几次？',a:['5'],hint:'每锯一次多一段。',why:'锯成 6 段需 6−1=5 次。'}],link:'/aoshu/index.html#trees'},
+        {id:'ages',title:'年龄、倍数与变化',level:'进阶',concept:'两人的年龄差永远不变；经过相同年数后，两人年龄各增加相同的数。遇到“几年前/几年后几倍”，设当前年龄或画线段图，再利用不变的年龄差建立关系。',example:{q:'哥哥 14 岁，妹妹 8 岁，几年后哥哥年龄是妹妹的 1.5 倍？',solution:'设 x 年后，14+x=1.5(8+x)，解得 x=4。4 年后哥哥 18 岁、妹妹 12 岁，18=1.5×12。'},practice:[{q:'甲 14 岁、乙 10 岁，5 年后两人的年龄和是多少？',a:['34'],hint:'两人都各长 5 岁。',why:'5 年后是 19 岁和 15 岁，年龄和为 34 岁。'},{q:'哥哥 15 岁、妹妹 9 岁，5 年后两人的年龄和是多少？',a:['34'],hint:'两人都各长 5 岁。',why:'5 年后是 20 岁和 14 岁，年龄和为 34 岁。'},{q:'爸爸 40 岁，孩子 10 岁，几年后爸爸年龄是孩子的 3 倍？',a:['5'],hint:'设 x 年后：40+x=3(10+x)。',why:'40+x=30+3x，10=2x，x=5。'}]}
+      ]
+    },
+    {
+      id:'geometry', title:'几何与空间', icon:'形', color:'blue',
+      intro:'图形题先标已知、找相等和直角，再画辅助线；面积题既能切开，也能补上。每道题都要把图上的理由说清楚。',
+      lessons:[
+        {id:'angles',title:'角度、平行线与多边形',level:'入门',concept:'直角 90°，平角 180°，一周 360°。三角形内角和 180°，四边形内角和 360°；n 边形内角和可分成 n−2 个三角形，为 (n−2)×180°。平行线上的同位角、内错角相等。',example:{q:'三角形两个角是 50° 和 60°，第三个角多少度？',solution:'三角形内角和 180°，所以 180−50−60=70°。'},practice:[{q:'一个平角被分成两个角，其中一个是 125°，另一个是多少度？',a:['55'],hint:'两个角相加等于 180°。',why:'180−125=55°。'},{q:'四边形三个内角是 80°、90°、110°，第四个角多少度？',a:['80'],hint:'四边形内角和 360°。',why:'360−80−90−110=80°。'},{q:'等腰三角形顶角 40°，每个底角是多少度？',a:['70'],hint:'两个底角相等，先减去顶角再平分。',why:'(180−40)÷2=70°。'}]},
+        {id:'triangle-inequality',title:'三角形边与四边形性质',level:'进阶',concept:'三角形任意两边之和大于第三边。两边为 a、b 时，第三边 x 满足 |a−b|<x<a+b。平行四边形对边相等、对角相等；长方形四角直角，菱形四边相等，正方形同时具备两者性质。',example:{q:'两边长 5、7 的三角形，第三边可以是 3 吗？',solution:'|7−5|=2，5+7=12，第三边要满足 2<x<12；3 在范围内，可以。'},practice:[{q:'三角形两边为 5 和 7，第三边取整数，有几种可能？',a:['9'],hint:'整数 x 满足 2<x<12。',why:'x 可取 3、4、5、6、7、8、9、10、11，共 9 个。'},{q:'平行四边形一边 8 厘米，对边长多少厘米？',a:['8'],hint:'平行四边形对边相等。',why:'对边同长，因此是 8 厘米。'},{q:'正方形边长 6 厘米，周长是多少厘米？',a:['24'],hint:'四条边一样长。',why:'6×4=24 厘米。'}]},
+        {id:'perimeter-area',title:'周长、面积与单位',level:'入门',concept:'周长是边界长度，面积是平面大小，单位不同。长方形周长=2×(长+宽)，面积=长×宽；三角形面积=底×高÷2。计算前确认高是对着所选底的垂直高度。',example:{q:'长方形长 8、宽 5，面积是多少？',solution:'面积=长×宽=8×5=40 平方单位。周长则是 2×(8+5)=26，不能把两者混淆。'},practice:[{q:'底 10、高 6 的三角形面积是多少？',a:['30'],hint:'底×高÷2。',why:'10×6÷2=30。'},{q:'正方形周长 32 厘米，面积是多少平方厘米？',a:['64'],hint:'先求边长，再平方。',why:'边长=32÷4=8，面积=8²=64。'},{q:'长方形长 7、宽 4，周长是多少？',a:['22'],hint:'(长+宽)×2。',why:'(7+4)×2=22。'}]},
+        {id:'composite-area',title:'组合图形：切割、补形与平移',level:'进阶',concept:'不熟悉的图形可先补成规则图，再减去多出的部分；也可沿公共边切成几个长方形、三角形。平移能把锯齿边变直，但平移前后面积不变。每条边长要从图中已知量推出来。',example:{q:'一个 10×8 的长方形挖去角上的 4×3 小长方形，剩余面积多少？',solution:'大长方形面积 80，小块面积 12，剩余 80−12=68 平方单位。'},practice:[{q:'12×9 的长方形挖去 3×4 的小块，剩余面积多少？',a:['96'],hint:'先算大矩形，再减小矩形。',why:'12×9−3×4=108−12=96。'},{q:'一个图形可切成面积 18 和 25 的两块，总面积是多少？',a:['43'],hint:'不重叠、不遗漏时面积相加。',why:'18+25=43。'},{q:'面积 48 的图形剪开再拼成另一形状，面积变了吗？（变了填 1，不变填 0）',a:['0'],hint:'剪拼不增不减材料。',why:'只做切割和平移，面积保持 48，不变。'}]},
+        {id:'area-equivalence',title:'等积变形、底高与面积关系',level:'进阶',concept:'等底等高的三角形面积相等；同底同高的平行四边形面积相等。把三角形复制一份拼成平行四边形，可理解“底×高÷2”。相似图形放大 k 倍，长度放 k 倍、面积放 k² 倍。',example:{q:'一个三角形底 12、高 5，面积是多少？',solution:'12×5÷2=30。若底变成 24、高不变，面积就变成 60。'},practice:[{q:'两个三角形同底同高，甲面积 20，乙面积是多少？',a:['20'],hint:'等底等高三角形面积相等。',why:'乙面积也是 20。'},{q:'边长放大 3 倍的正方形，面积是原来的几倍？',a:['9'],hint:'面积倍数是边长倍数的平方。',why:'3²=9 倍。'},{q:'平行四边形底 9、高 5，面积是多少？',a:['45'],hint:'底×高。',why:'9×5=45。'}]},
+        {id:'grid-symmetry',title:'格点、对称与坐标观察',level:'入门',concept:'方格纸上先数单位边长，再用公式；不要把格点数误当成格子数。对称轴两侧的对应点到轴距离相等。矩形有 2 条对称轴，正方形有 4 条；旋转 180° 后重合称中心对称。',example:{q:'一个 4 格宽、3 格高的长方形占多少个单位小格？',solution:'小格数=4×3=12。数格子时横向 4 个、纵向 3 个，乘起来。'},practice:[{q:'2 行 5 列的方格共有多少个小正方形？',a:['10'],hint:'行数×列数。',why:'2×5=10。'},{q:'正方形有几条对称轴？',a:['4'],hint:'两条中线和两条对角线。',why:'共 4 条。'},{q:'3×4 方格中，一共有多少个长方形（含正方形）？',a:['60'],hint:'横边界选两条，竖边界也选两条。',why:'横向 4 条格线选 2 条有 6 种，纵向 5 条格线选 2 条有 10 种，共 6×10=60。'}]},
+        {id:'solids',title:'立体图形、表面积与体积',level:'进阶',concept:'长方体体积=长×宽×高；正方体体积=棱长³。长方体表面积=2×(长×宽+长×高+宽×高)，正方体表面积=6×棱长²。展开图要检查面与面是否能正确折合。',example:{q:'棱长 3 厘米的正方体体积是多少？',solution:'体积=3×3×3=27 立方厘米；表面积=6×3×3=54 平方厘米，单位不同。'},practice:[{q:'棱长 4 厘米的正方体体积是多少？',a:['64'],hint:'4×4×4。',why:'4³=64 立方厘米。'},{q:'棱长 3 厘米的正方体表面积是多少？',a:['54'],hint:'六个相同正方形面的面积相加。',why:'6×3²=54 平方厘米。'},{q:'长宽高为 2、3、5 厘米的长方体体积是多少？',a:['30'],hint:'长×宽×高。',why:'2×3×5=30 立方厘米。'}]},
+        {id:'geometric-counting',title:'图形计数与面积最值',level:'挑战',concept:'数图形要按大小或起点分类，防止重复遗漏。网格中的矩形由两条横格线和两条竖格线确定；固定周长时，长宽越接近，长方形面积通常越大。先枚举边界，再证明最大或最小。',example:{q:'2 行 3 列的方格里一共有多少个矩形？',solution:'横向有 3 条格线，选 2 条有 3 种；纵向有 4 条格线，选 2 条有 6 种，共 18 个矩形。'},practice:[{q:'1 行 4 列的方格里一共有多少个矩形？',a:['10'],hint:'从左边界的每个位置开始数，长度为 1、2、3、4。',why:'1+2+3+4=10 个。'},{q:'周长 20 的长方形，若长宽都是正整数，面积最大是多少？',a:['25'],hint:'长+宽=10，找最接近的两数。',why:'5×5=25，正方形是最接近、面积最大的情形。'},{q:'3 行 3 列方格中共有多少个 1×1 小正方形？',a:['9'],hint:'行数×列数。',why:'3×3=9。'}]}
+      ]
+    },
+    {
+      id:'counting', title:'计数、组合与概率', icon:'数数', color:'lilac',
+      intro:'数“有几种”时，用分步乘法或分类加法；清单、树状图、表格能防重也防漏。遇到极端情况，可再用抽屉原理或概率的等可能模型。',
+      lessons:[
+        {id:'systematic-counting',title:'分类枚举：不重不漏',level:'入门',concept:'枚举前先定分类标准，例如按首位、大小、奇偶、是否重复。每一类内部按固定顺序列举，最后检查分类是否互斥且覆盖全部情况。',example:{q:'用 1、2、3 组成两位数，数字不能重复，共有几个？',solution:'按十位分类：十位选 1、2、3 各有 2 种个位选择，共 3×2=6 个。'},practice:[{q:'用 1、2、3、4 组成不重复的两位数，共有几个？',a:['12'],hint:'十位 4 种，个位剩 3 种。',why:'4×3=12。'},{q:'1 到 20 中，既是 2 的倍数又是 3 的倍数的数有几个？',a:['3'],hint:'它们是 6 的倍数。',why:'6、12、18，共 3 个。'},{q:'投掷一枚硬币两次，共有几种正反面结果？',a:['4'],hint:'每次有 2 种，分两步。',why:'2×2=4 种：正正、正反、反正、反反。'}]},
+        {id:'add-multiply-principle',title:'加法原理与乘法原理',level:'入门',concept:'完成一件事若有互不重叠的几类办法，用加法；若必须分成连续几步，每步都要完成，用乘法。先说清楚“分类”还是“分步”，再写算式。',example:{q:'上衣有 3 件、裤子有 2 条，搭配一套有几种？',solution:'先选上衣再选裤子，是两步都要做：3×2=6 种。'},practice:[{q:'有 4 条路到公园，另有 3 条路到图书馆，去公园或图书馆共有几种选法？',a:['7'],hint:'两种目的地互斥，按类别相加。',why:'4+3=7 种。'},{q:'数字密码由 3 位组成，每位可选 0–9，允许重复，共有多少种？',a:['1000'],hint:'三步，每步 10 种。',why:'10×10×10=1000。'},{q:'从家到学校 2 条路，从学校到公园 5 条路，经过学校有几条路线？',a:['10'],hint:'两段都要走。',why:'2×5=10 条。'}]},
+        {id:'permutations-selections',title:'排列与选择',level:'进阶',concept:'排列关心“顺序不同算不算不同”。从 n 个不同对象中选 r 个排顺序，乘 n、n−1……直到 r 个因子；若只选择不排顺序，要避免重复计算同一组选法。可用列表或树状图先验证小规模。',example:{q:'从 4 名同学中选班长和副班长，有几种不同安排？',solution:'班长有 4 种，选定后副班长有 3 种，共 4×3=12 种；交换职位算不同。'},practice:[{q:'3 本不同的书排成一列，有几种排法？',a:['6'],hint:'第一位 3 种、第二位 2 种、第三位 1 种。',why:'3×2×1=6。'},{q:'从 5 个不同水果里选 1 个，有几种选法？',a:['5'],hint:'任选其中一个。',why:'共有 5 种。'},{q:'从 4 名同学里选 2 名组成小组（不分职位），有几组？',a:['6'],hint:'先算 4×3，再除以同一组被交换顺序的 2 次。',why:'4×3÷2=6 组。'}]},
+        {id:'path-counting',title:'路线与网格走法',level:'进阶',concept:'若路线只能向右和向上，走到终点所需的右步与上步固定。可按“最后一步来自哪里”递推：到某点的走法数=左边走法数+下边走法数；也可选定不同步骤的位置。',example:{q:'从网格左下角走到右上角，需要向右 2 步、向上 1 步，共几条最短路线？',solution:'三步中选一步安排向上，其余两步向右，共 3 条路线。'},practice:[{q:'需要向右 3 步、向上 1 步，最短路线有几条？',a:['4'],hint:'四步中选哪一步向上。',why:'向上步可放在 4 个位置中的任意一个，共 4 条。'},{q:'一个网格点从左边或下边各有 2 条路到达，经过该点到终点有 1 种后续走法，合计路线数是多少？',a:['4'],hint:'先把到达该点的两类路线相加。',why:'2+2=4 条，再乘后续 1 种仍是 4 条。'},{q:'走到终点必须向右 2 步、向上 2 步，最短路线共有几条？',a:['6'],hint:'四步里选两步向上。',why:'位置组合有 4×3÷2=6 种。'}]},
+        {id:'pigeonhole',title:'抽屉原理与最坏情况',level:'挑战',concept:'把多个对象放进较少类别中，至少有一类对象不少于“对象数÷类别数向上取整”。最少保证题要从最不利情况入手：先尽量把对象分散，再看下一次取出必定发生什么。',example:{q:'5 只鸽子放进 4 个笼子，至少有一个笼子里有几只？',solution:'若每个笼子最多 1 只，只能放 4 只；第 5 只必与其中一只同笼，所以至少 2 只。'},practice:[{q:'13 个苹果放进 4 个篮子，至少一个篮子里有几只苹果？',a:['4'],hint:'⌈13÷4⌉。',why:'13÷4=3 余 1，至少一个篮子要有 4 只。'},{q:'抽屉里有红、蓝两种袜子，闭眼至少拿几只才能保证有一双同色袜？',a:['3'],hint:'最坏先拿到一红一蓝。',why:'前两只可能颜色不同，第 3 只必与其中一种同色，答案 3。'},{q:'从 1 到 10 任取 6 个整数，至少有两个数的奇偶性相同吗？（是填 1，否填 0）',a:['1'],hint:'奇偶只有两类，6 个数放进两个“抽屉”。',why:'至少两数奇偶相同，答案是是，填 1。'}]},
+        {id:'inclusion-exclusion',title:'重叠计数与容斥',level:'进阶',concept:'同时属于两类的对象被重复数了一次，所以“至少属于一类”的总数=两类分别计数之和−交集。三类时再加回三两两交集、减去三者交集。画圈或列表确认交集很重要。',example:{q:'班里 20 人会下棋，15 人会游泳，8 人两样都会。至少会一项的有多少人？',solution:'20+15 把会两项的 8 人算了两次，减去一次：20+15−8=27 人。'},practice:[{q:'喜欢苹果 18 人，喜欢梨 12 人，两种都喜欢 5 人，至少喜欢一种的有几人？',a:['25'],hint:'两组人数相加，减去重复的交集。',why:'18+12−5=25。'},{q:'1 到 30 中是 2 或 5 的倍数的数有几个？',a:['18'],hint:'数出 2 的倍数、5 的倍数，再减去 10 的倍数。',why:'15+6−3=18。'},{q:'有 10 人会游泳，7 人会骑车，3 人两样都会，至少会一项的有几人？',a:['14'],hint:'套用“甲+乙−都”。',why:'10+7−3=14。'}]},
+        {id:'probability',title:'可能性与简单概率',level:'入门',concept:'在每种结果同样可能时，概率=符合条件的结果数÷全部结果数。先列出样本空间，确保每一种基本结果机会相同；不能把“不确定”误认为“每种结果概率相同”。',example:{q:'公平骰子掷一次，掷到偶数的概率是多少？',solution:'结果为 1–6 共 6 种，偶数为 2、4、6 共 3 种，概率 3/6=1/2。'},practice:[{q:'从 1、2、3、4 中随机选一个，选到大于 2 的数，概率是多少？（填最简分数）',a:['1/2'],hint:'有 4 个等可能结果，其中 3、4 符合。',why:'2/4=1/2。'},{q:'掷公平骰子一次，掷到 6 的概率是多少？（填分母）',a:['6'],hint:'六个面机会相同，只有一个面是 6。',why:'概率为 1/6，分母是 6。'},{q:'袋中 3 个红球、1 个蓝球，摸出红球的概率是多少？（填最简分数）',a:['3/4'],hint:'红球数除以球的总数。',why:'3÷4=3/4。'}]}
+      ]
+    },
+    {
+      id:'sequences', title:'数列、周期与规律', icon:'律', color:'green',
+      intro:'先观察相邻项的差、倍数、奇偶或位置变化。找到规律后要用它预测，再用前几项回头检验，不要只凭“看起来像”。',
+      lessons:[
+        {id:'differences',title:'等差数列与相邻差',level:'入门',concept:'若相邻两项的差固定，数列是等差数列。第 n 项=首项+(n−1)×公差；前 n 项和=(首项+末项)×项数÷2。用公式前先确认项数与编号。',example:{q:'数列 3、7、11、15……第 8 项是多少？',solution:'公差是 4，第 8 项=3+(8−1)×4=31。'},practice:[{q:'2、5、8、11……第 10 项是多少？',a:['29'],hint:'首项 2，公差 3。',why:'2+9×3=29。'},{q:'1+2+3+……+10 等于多少？',a:['55'],hint:'首末配对：1+10、2+9……。',why:'(1+10)×10÷2=55。'},{q:'等差数列首项 4、公差 2，第 6 项是多少？',a:['14'],hint:'4+(6−1)×2。',why:'4+10=14。'}]},
+        {id:'recursive-patterns',title:'递推规律与图形数列',level:'进阶',concept:'有些项由前一项或前几项决定，例如每次加同一个数、翻倍再加一，或相邻两项相加。把“如何从上一项得到下一项”写成一句规则，再逐项计算并检查。',example:{q:'数列 1、1、2、3、5、8……每项从第三项开始等于前两项之和，第 7 项是多少？',solution:'依次为 1、1、2、3、5、8、13，第 7 项是 13。'},practice:[{q:'数列 2、5、11、23……每次“乘 2 再加 1”，下一项是多少？',a:['47'],hint:'23×2+1。',why:'23×2+1=47。'},{q:'1、1、2、3、5、8……第 8 项是多少？',a:['21'],hint:'继续把前两项相加。',why:'第 7 项 13，第 8 项 8+13=21。'},{q:'图形每一步增加 3 个点，第一步有 4 个点，第 5 步有多少点？',a:['16'],hint:'从 4 开始增加 4 次，每次加 3。',why:'4+4×3=16。'}]},
+        {id:'cyclic-patterns',title:'周期、循环与星期问题',level:'入门',concept:'当状态重复出现时，记录完整一轮的长度。第 n 项的位置由 n 除以周期的余数决定；余数为 0 时对应周期最后一项。星期、颜色轮换、灯闪规律都能这样算。',example:{q:'红黄蓝按顺序循环，第 14 个是什么颜色？',solution:'周期 3，14÷3 余 2，所以是每轮第 2 个，黄色。'},practice:[{q:'按 A、B、C、D 循环，第 18 个字母是第几个？（A=1…D=4，填数字）',a:['2'],hint:'18 除以周期 4 的余数。',why:'18÷4 余 2，对应 B，填 2。'},{q:'星期一开始，每 7 天回到星期一，第 10 天是星期几？（周一至周日填 1 至 7）',a:['3'],hint:'10÷7 余 3，数第一天为周一。',why:'第 8 天周一，第 10 天周三，填 3。'},{q:'1、2、3 循环排列，第 20 项是多少？',a:['2'],hint:'20÷3 余 2。',why:'余数 2 对应周期中的第 2 项，答案 2。'}]},
+        {id:'patterns-combined',title:'多层规律与找规则',level:'挑战',concept:'有些数列要交替看奇数项、偶数项；有些要看相邻差的变化或位数规律。可分别列奇数项和偶数项，或把差列成第二行，寻找更简单的规律。提出规则后至少核对三个位置。',example:{q:'数列 2、5、4、7、6、9……下一项是多少？',solution:'奇数位是 2、4、6，偶数位是 5、7、9，各自每次加 2；第 7 项是 8。'},practice:[{q:'数列 1、4、2、5、3、6……第 7 项是多少？',a:['4'],hint:'奇数位 1、2、3……；偶数位 4、5、6……。',why:'第 7 项是奇数位的第 4 项，为 4。'},{q:'数列 1、3、6、10、15……下一项是多少？',a:['21'],hint:'相邻差是 2、3、4、5，继续加 6。',why:'15+6=21。'},{q:'数列 10、20、40、80……第 6 项是多少？',a:['320'],hint:'每一项乘 2。',why:'第 5 项 160，第 6 项 320。'}]}
+      ]
+    },
+    {
+      id:'algebra', title:'代数思维与整数方程', icon:'式', color:'peach',
+      intro:'用符号把数量关系说清楚。设未知数不是为了显得复杂，而是把“变化规则”记下来，再用等量关系一步步解开。',
+      lessons:[
+        {id:'equations',title:'等量关系与一元方程',level:'入门',concept:'方程两边表示同一个量。等式两边同时加、减、乘同一个数（除数不为 0），等量关系仍成立。列方程前先说清未知数代表什么，再用代回检验。',example:{q:'一个数加 7 等于 20，这个数是多少？',solution:'设数为 x，x+7=20，两边减 7 得 x=13；代回 13+7=20。'},practice:[{q:'x−9=14，x 是多少？',a:['23'],hint:'两边同时加 9。',why:'x=14+9=23。'},{q:'4x=36，x 是多少？',a:['9'],hint:'两边同时除以 4。',why:'x=36÷4=9。'},{q:'2x+3=17，x 是多少？',a:['7'],hint:'先减 3，再除以 2。',why:'2x=14，x=7。'}]},
+        {id:'inverse-operations',title:'逆推与还原',level:'入门',concept:'从结果倒着走：加法用减法还原，乘法用除法还原；顺序要反过来。遇到“先乘再减”，先把减去的数加回，再除以乘数。最后正向代回检查。',example:{q:'一个数乘 3 再减 4 得 17，原数是多少？',solution:'倒着做：17+4=21，21÷3=7。检查 7×3−4=17。'},practice:[{q:'一个数加 8 后乘 2 得 30，原数是多少？',a:['7'],hint:'先除以 2，再减 8。',why:'30÷2=15，15−8=7。'},{q:'从一个数减 5 后得到 12，原数是多少？',a:['17'],hint:'倒着加回 5。',why:'12+5=17。'},{q:'把一个数乘 4，再加 6 得 38，原数是多少？',a:['8'],hint:'先减 6 再除以 4。',why:'(38−6)÷4=8。'}]},
+        {id:'assumption-method',title:'假设法与消去',level:'进阶',concept:'当两种对象或两组数量只差一个固定单位时，先假设全部相同，再用总量差修正；也可以比较两个方案，消去共同部分。假设必须与题意相符，修正量的单位要一致。',example:{q:'每张大票 5 元、小票 2 元，共 6 张、共 24 元，大票几张？',solution:'先假设 6 张全是 2 元，共 12 元；实际多 12 元。每换一张大票多 3 元，所以大票 12÷3=4 张。'},practice:[{q:'每件大盒 8 个、小盒 5 个，共 4 盒、共 26 个，大盒几盒？',a:['2'],hint:'全当小盒，差额除以每换一盒多出的数量。',why:'全小盒 20 个，多 6；每换一盒多 3，所以大盒 2 个。'},{q:'两种票价分别 3 元和 7 元，买 5 张共 27 元，7 元票有几张？',a:['3'],hint:'全按 3 元算，差额由较贵票贡献。',why:'全 3 元共 15 元，多 12；每张贵票多 4 元，所以 3 张。'},{q:'两种数相差 6，较大数比小数多多少？',a:['6'],hint:'题目已直接给出差。',why:'差就是 6。'}]},
+        {id:'factorization-identities',title:'恒等变形与乘法公式',level:'进阶',concept:'完全平方公式、平方差公式可用于展开和分解。看到相同项要先提公因数；看到平方差要拆成两个因数。变形前后值相同，做完可代入简单数值核验。',example:{q:'计算 49×51。',solution:'把它写成 (50−1)(50+1)=50²−1=2499。'},practice:[{q:'计算 32²−28²。',a:['240'],hint:'平方差=(32−28)(32+28)。',why:'4×60=240。'},{q:'(a+3)² 展开后中间项是几a？（只填系数）',a:['6'],hint:'中间项是 2×a×3。',why:'(a+3)²=a²+6a+9，系数 6。'},{q:'x²−25 可分解成 (x−5)(x+□)，□ 是多少？',a:['5'],hint:'平方差两因数一减一加。',why:'x²−25=(x−5)(x+5)，所以填 5。'}],link:'/aoshu/number-theory.html#nt-day05'},
+        {id:'integer-equations',title:'不定方程与整数解',level:'挑战',concept:'不定方程可能有多个整数解。先看奇偶、整除、余数缩小范围，再用因数分解或有序枚举列出候选；题目若要求正整数，必须检查每个解都大于 0 且不重复。',example:{q:'正整数 x、y 满足 x+y=7，有多少组有序解？',solution:'x 可为 1、2、3、4、5、6，对应 y=6、5、4、3、2、1，共 6 组。'},practice:[{q:'正整数 x、y 满足 x+y=9，有多少组有序解？',a:['8'],hint:'x 从 1 到 8，每个值确定唯一 y。',why:'共有 8 组。'},{q:'正整数 x、y 满足 2x+y=7，有多少组解？',a:['3'],hint:'x=1、2、3 时 y 仍为正整数。',why:'对应 y=5、3、1，共 3 组。'},{q:'用 4 元和 7 元邮票凑 18 元，有几种非负整数组合？',a:['1'],hint:'列出 7 元邮票张数 0、1、2。',why:'0 张时 18 不能被 4 整除；1 张剩 11 不行；2 张剩 4，可以，因此 1 种。'}]}
+      ]
+    },
+    {
+      id:'logic', title:'逻辑推理与解题策略', icon:'想', color:'gold',
+      intro:'逻辑题不是猜谜。把条件写进表格，或者从最后一步倒推；遇到“总是”“至少”“最大”，要用反例、最坏情况或有条理的穷举来证明。',
+      lessons:[
+        {id:'tables-logic',title:'列表、表格与条件推理',level:'入门',concept:'把“人—物—时间—位置”等关系放进表格，用已知条件逐格排除。每次排除都要说出依据，最后检查每个对象恰好对应一个结果，避免只凭直觉。',example:{q:'甲、乙分别拿红球和蓝球；甲不拿红球。甲拿什么颜色？',solution:'只有红、蓝两种，甲不能拿红球，所以甲拿蓝球，乙拿红球。'},practice:[{q:'三个人甲乙丙分别住 1、2、3 楼。甲不住 1 楼，乙住 3 楼，丙住几楼？',a:['1'],hint:'乙占 3 楼，甲只能在 2 楼。',why:'甲不住 1 且 3 楼已给乙，所以甲住 2，丙住 1。'},{q:'如果所有红球都比蓝球重，红球与蓝球比较谁更重？（红填 1，蓝填 0）',a:['1'],hint:'直接使用已知关系。',why:'红球更重，填 1。'},{q:'甲、乙、丙比赛名次不同；甲不是第一，乙是第三，谁第一？',a:['丙'],hint:'剩下第一、第二给甲和丙，甲不能第一。',why:'甲第二，丙第一。'}]},
+        {id:'work-backward',title:'从结果倒推',level:'入门',concept:'如果题目按步骤改变数量，逆推要从最后一个结果出发，按相反顺序、相反运算还原。流程题可画箭头；若有分支或余数，每一步都保留整除条件。',example:{q:'篮子里的苹果先拿走一半，再拿走 3 个，剩 5 个。原来有几个？',solution:'倒推：剩 5 个先加回 3 个得 8 个；这是原来的一半，所以原来 16 个。'},practice:[{q:'一个数先乘 2 再加 5 得 19，原数是多少？',a:['7'],hint:'先减 5，再除以 2。',why:'(19−5)÷2=7。'},{q:'某数的一半再减 4 得 6，某数是多少？',a:['20'],hint:'先加回 4，再乘 2。',why:'(6+4)×2=20。'},{q:'一堆糖先分一半给甲，再给乙 3 颗，最后 7 颗；原来有几颗？',a:['20'],hint:'先加回 3，再把剩余的一倍还原成两倍。',why:'(7+3)×2=20。'}]},
+        {id:'contradiction',title:'反证、反例与真假判断',level:'进阶',concept:'要推翻“所有……都……”的说法，找一个符合范围却不符合结论的反例就够了。要证明不可能，可先假设它能发生，再推出与条件矛盾。反例必须满足原题全部前提。',example:{q:'有人说“所有质数都是奇数”，对吗？',solution:'不对。2 是质数却是偶数，所以 2 就是反例。'},practice:[{q:'“所有偶数都能被 4 整除”是否正确？（对填 1，错填 0）',a:['0'],hint:'试试最小的正偶数。',why:'2 是偶数，但不能被 4 整除，因此说法错误，填 0。'},{q:'“每个正整数的平方都大于它本身”不正确，最小的反例是多少？',a:['1'],hint:'检查最小的正整数。',why:'1²=1，并没有大于 1，所以 1 是最小反例。'},{q:'“任意两个奇数之和是偶数”是否正确？（对填 1，错填 0）',a:['1'],hint:'把奇数写成 2a+1、2b+1。',why:'(2a+1)+(2b+1)=2(a+b+1)，是偶数，正确，填 1。'}]},
+        {id:'invariant-parity',title:'不变量、奇偶与染色',level:'挑战',concept:'操作会改变局部状态，但某些性质可能始终不变，例如总和奇偶、棋盘黑白格数量、质数因子指数的奇偶。找不变量时先比较“操作前后”；若目标状态与初始不变量冲突，就不可能到达。',example:{q:'一张棋盘每步把一枚棋子从黑格移到相邻白格。棋子颜色会怎样变化？',solution:'每步都在黑白格之间切换，所以走奇数步与起点异色，走偶数步与起点同色。'},practice:[{q:'整数每次加 2，奇偶性会改变吗？（会填 1，不会填 0）',a:['0'],hint:'偶数加到整数上。',why:'加 2 不改变奇偶性，填 0。'},{q:'从 1 开始，每次只能加 2，能得到 10 吗？（能填 1，不能填 0）',a:['0'],hint:'初始是奇数，每次操作保持奇数。',why:'10 是偶数，不可能从奇数经每次加 2 得到，填 0。'},{q:'一个偶数减去一个偶数，结果一定是偶数吗？（是填 1，否填 0）',a:['1'],hint:'2a−2b=2(a−b)。',why:'差仍是 2 的倍数，一定为偶数，填 1。'}]},
+        {id:'construction',title:'构造、分类讨论与完整证明',level:'进阶',concept:'“能不能做到”可以试着构造一个满足条件的例子；“所有情况”需要分类讨论并保证互不遗漏。证明答案不唯一时，给出两个不同的合规例子；求和或求最值时，先证明候选都符合，再证明没有漏掉更好的。',example:{q:'能否用 3 元和 5 元的邮票恰好凑出 8 元？',solution:'可以：3+5=8，直接构造出一组方案并核对总额。'},practice:[{q:'能否用 4 元和 6 元的邮票恰好凑出 7 元？（能填 1，不能填 0）',a:['0'],hint:'4、6 都是偶数，它们的和仍是偶数。',why:'7 是奇数，偶数面值相加不能得到奇数，填 0。'},{q:'用 2 元硬币恰好付 10 元，需要几枚？',a:['5'],hint:'10÷2。',why:'10÷2=5 枚。'},{q:'找一个两位数的例子，证明“有些两位数是 5 的倍数”。填写最小的两位数 5 的倍数。',a:['10'],hint:'两位数从 10 开始。',why:'10 是两位数且个位是 0，能被 5 整除。'}]},
+        {id:'extremes-optimization',title:'极端原理、最值与策略',level:'挑战',concept:'求最大最小值时，把条件转成可比较的量，先估计边界，再检查边界附近的整数。保证题从最坏情况开始；分配、切割等最优化题要说明为什么更均匀或更集中会让目标量变大/变小。',example:{q:'两个正整数和为 20，它们的乘积最大是多少？',solution:'和固定时两数越接近，乘积越大。10×10=100；任何更不平均的整数对都小于 100。'},practice:[{q:'两个正整数和为 12，乘积最大是多少？',a:['36'],hint:'尽量平均分成两个整数。',why:'6×6=36，是最大值。'},{q:'两数和固定为 18，取相差最小的两个整数，它们的乘积是多少？',a:['81'],hint:'相差最小就是相等。',why:'9×9=81。'},{q:'最坏先取 2 只袜子可能一红一蓝，保证拿到同色一双至少取几只？',a:['3'],hint:'把红、蓝看作两个抽屉。',why:'前两只可能各一色，第三只必与其中一种同色，至少 3 只。'}]}
+      ]
+    }
+  ];
+
+  const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const progressKey = 'siwei-curriculum-mastery-v1';
+  let progress = {};
+  try { progress = JSON.parse(localStorage.getItem(progressKey) || '{}') || {}; } catch { progress = {}; }
+  const totalLessons = curriculum.reduce((n, branch) => n + branch.lessons.length, 0);
+  const select = document.getElementById('branch-filter');
+  const search = document.getElementById('lesson-search');
+  const showOpen = document.getElementById('only-unmastered');
+  const root = document.getElementById('curriculum-root');
+  const normalize = (s) => String(s ?? '').toLowerCase().replace(/[\s，,。.!！?？:：=（）()]/g, '');
+
+  curriculum.forEach((branch) => select.add(new Option(`${branch.title} · ${branch.lessons.length} 个知识点`, branch.id)));
+
+  function updateProgress() {
+    const mastered = Object.keys(progress).filter((id) => progress[id]?.done).length;
+    document.getElementById('mastery-count').textContent = `${mastered} / ${totalLessons}`;
+    document.getElementById('mastery-fill').style.width = `${totalLessons ? mastered / totalLessons * 100 : 0}%`;
+    document.getElementById('mastery-caption').textContent = mastered ? `已完成 ${mastered} 个知识点的全部自测，其余可以继续探索。` : '完成任一知识点的三道自测，就会在这台设备上留下学习进度。';
+  }
+
+  function render() {
+    const chosen = select.value;
+    const term = search.value.trim().toLocaleLowerCase('zh-CN');
+    const branches = curriculum.filter((b) => chosen === 'all' || b.id === chosen);
+    let visibleLessons = 0;
+    root.innerHTML = branches.map((branch) => {
+      const lessons = branch.lessons.filter((lesson) => {
+        const hay = `${branch.title} ${branch.intro} ${lesson.title} ${lesson.level} ${lesson.concept} ${lesson.source || ''}`.toLocaleLowerCase('zh-CN');
+        return (!showOpen.checked || !progress[lesson.id]?.done) && (!term || hay.includes(term));
+      });
+      if (!lessons.length) return '';
+      visibleLessons += lessons.length;
+      return `<section class="curriculum-branch branch-${escapeHtml(branch.color)}" id="branch-${escapeHtml(branch.id)}"><div class="branch-heading"><span class="branch-icon">${escapeHtml(branch.icon)}</span><div><p>${escapeHtml(branch.title)} · ${lessons.length} 个知识点</p><h2>${escapeHtml(branch.title)}</h2><span>${escapeHtml(branch.intro)}</span></div></div><div class="lesson-grid">${lessons.map((lesson) => renderLesson(lesson, branch)).join('')}</div></section>`;
+    }).join('');
+    document.getElementById('visible-count').textContent = `显示 ${visibleLessons} / ${totalLessons} 个知识点`;
+    if (!visibleLessons) root.innerHTML = '<div class="empty-state"><b>没有找到符合条件的知识点。</b><span>试试删掉搜索词，或切换到“全部分支”。</span></div>';
+    updateProgress();
+  }
+
+  function renderLesson(lesson, branch) {
+    const passed = new Set(progress[lesson.id]?.passed || []);
+    const mastered = progress[lesson.id]?.done === true;
+    const refer = lesson.source ? `<span class="source-tag">${escapeHtml(lesson.source)} · 已归入本课程</span>` : '';
+    const link = lesson.link ? `<a class="deeper-link" href="${escapeHtml(lesson.link)}">去看互动讲解与原题 <span>↗</span></a>` : '';
+    return `<article class="lesson-unit${mastered ? ' is-mastered' : ''}" id="lesson-${escapeHtml(lesson.id)}"><details class="lesson-fold"><summary><span class="lesson-symbol">${escapeHtml(branch.icon)}</span><span class="lesson-name"><small>${escapeHtml(lesson.level)}${refer}</small><b>${escapeHtml(lesson.title)}</b></span><span class="lesson-state">${mastered ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="fold-mark" aria-hidden="true">＋</span></summary><div class="lesson-body"><div class="learn-block"><h3>这一关要学会</h3><p>${escapeHtml(lesson.concept)}</p></div><div class="example-block"><span class="block-label">老师示范</span><h3>${escapeHtml(lesson.example.q)}</h3><p>${escapeHtml(lesson.example.solution)}</p></div><div class="practice-block"><div class="practice-title"><div><span class="block-label">轮到你了</span><h3>三道自测：先做，再看推理</h3></div><span class="practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${lesson.practice.map((q,index)=>renderQuestion(q,lesson.id,index,passed.has(index))).join('')}</div>${link}<p class="mastery-note">做对本课全部 ${lesson.practice.length} 道题，就算这一关掌握了；答案与讲解可以随时展开复盘。</p></div></details></article>`;
+  }
+
+  function renderQuestion(q, lessonId, index, passed) {
+    return `<div class="question-unit" data-question="${escapeHtml(lessonId)}-${index}"><label for="ans-${escapeHtml(lessonId)}-${index}"><b>${index + 1}</b>${escapeHtml(q.q)}</label><div class="answer-row"><input id="ans-${escapeHtml(lessonId)}-${index}" type="text" inputmode="decimal" autocomplete="off" aria-label="${escapeHtml(q.q)}" placeholder="填答案"><button type="button" data-check="${escapeHtml(lessonId)}" data-index="${index}">检查</button></div><p class="answer-feedback${passed ? ' good' : ''}" aria-live="polite">${passed ? '这题已答对，可以继续或复习。' : ''}</p><details class="solution-fold"><summary>看提示与完整推理</summary><p><b>提示：</b>${escapeHtml(q.hint)}</p><p><b>讲解：</b>${escapeHtml(q.why)}</p></details></div>`;
+  }
+
+  function check(button) {
+    const id = button.dataset.check;
+    const index = Number(button.dataset.index);
+    const lesson = curriculum.flatMap((b) => b.lessons).find((l) => l.id === id);
+    const question = lesson?.practice[index];
+    if (!question) return;
+    const input = document.getElementById(`ans-${id}-${index}`);
+    const box = button.closest('.question-unit');
+    const feedback = box.querySelector('.answer-feedback');
+    const value = normalize(input.value);
+    const accepted = (question.a || []).map(normalize);
+    if (!value) {
+      feedback.textContent = '先试着填一个答案，卡住时可以打开提示。';
+      feedback.classList.remove('good');
+      input.focus();
+      return;
+    }
+    if (accepted.includes(value)) {
+      feedback.textContent = '答对了！把理由也讲一遍，再继续下一题。';
+      feedback.classList.add('good');
+      const passed = new Set(progress[id]?.passed || []);
+      passed.add(index);
+      progress[id] = { passed:[...passed].sort((a,b)=>a-b), done:passed.size === lesson.practice.length };
+      try { localStorage.setItem(progressKey, JSON.stringify(progress)); } catch { /* private browsing may block local storage */ }
+      const article = document.getElementById(`lesson-${id}`);
+      article.classList.toggle('is-mastered', progress[id].done);
+      article.querySelector('.lesson-state').textContent = progress[id].done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`;
+      article.querySelector('.practice-count').textContent = `${passed.size}/${lesson.practice.length} 完成`;
+      updateProgress();
+    } else {
+      feedback.textContent = `还差一点。提示：${question.hint}`;
+      feedback.classList.remove('good');
+    }
+  }
+
+  root.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-check]');
+    if (button) check(button);
+  });
+  root.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' && event.target.matches('.answer-row input')) event.target.nextElementSibling?.click();
+  });
+  select.addEventListener('change', render);
+  search.addEventListener('input', render);
+  showOpen.addEventListener('change', render);
+  render();
+})();

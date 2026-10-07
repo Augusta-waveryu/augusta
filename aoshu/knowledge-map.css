@@ -31,3 +31,5 @@
 .knowledge-sample[open] summary:after{content:'−'}
 .knowledge-sample p{margin:7px 0 0}
 .knowledge-sample .sample-answer{padding-top:6px;border-top:1px solid #e8ece4;color:#6a726c}
+
+.map-sequences .knowledge-icon{background:#e9f3e8;color:#4f7b55}.map-algebra .knowledge-icon{background:#fff0e8;color:#a9674a}.map-ratio .knowledge-icon{background:#f8f1dd;color:#8d7542}

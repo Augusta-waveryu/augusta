@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="给小学同学的奥数思维小课堂：用小动画、互动例题和闯关练习，学会鸡兔同笼、植树问题、和差问题和盈亏问题。">
+  <meta name="description" content="小学奥数知识地图：先按题目线索找到数与规律、数量关系、图形、计数或逻辑入口，再学习已有课程并练习。">
   <title>思维树屋｜小学奥数小课堂</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/aoshu/styles.css">
+  <link rel="stylesheet" href="/aoshu/knowledge-map.css">
   <link rel="stylesheet" href="/aoshu/number-theory.css">
   <script src="/aoshu/app.js" defer></script>
 </head>
@@ -21,12 +22,13 @@
       <span>思维树屋 <small>小学奥数小课堂</small></span>
     </a>
     <nav class="topnav" aria-label="主导航">
-      <a href="#lessons">知识点</a>
+      <a href="#knowledge-map">知识地图</a>
+      <a href="#start-here">怎么学</a>
       <a href="/aoshu/number-theory.html">数论集训</a>
       <a href="/aoshu/number-theory-practice.html">数论练习</a>
       <a href="#about">学习说明</a>
     </nav>
-    <a class="nav-cta" href="#lessons">开始闯关 <span aria-hidden="true">↗</span></a>
+    <a class="nav-cta" href="/aoshu/number-theory-practice.html">练习题库 <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
@@ -34,9 +36,9 @@
       <div class="hero-copy">
         <div class="eyebrow"><span class="sparkle" aria-hidden="true">✳</span> 给好奇的小小解题家</div>
         <h1 id="hero-title">奥数题别急着算，<br><em>先找到那条线索。</em></h1>
-        <p class="hero-text">把难题拆成几步小发现。看一看、动动手，再用自己的话讲出来——你就真的学会啦。</p>
-        <a class="button button-primary" href="#lessons">进入思维树屋 <span aria-hidden="true">→</span></a>
-        <div class="hero-proof"><span class="proof-dot" aria-hidden="true">✓</span> 4 个经典知识点 <i>·</i> 动画演示 <i>·</i> 每课一练</div>
+        <p class="hero-text">把难题拆成几步小发现。先学懂一个方法，再沿着路线练一练；不用一口气把所有题做完。</p>
+        <a class="button button-primary" href="#start-here">先看看怎么学 <span aria-hidden="true">→</span></a>
+        <div class="hero-proof"><span class="proof-dot" aria-hidden="true">✓</span> 5 类知识入口 <i>·</i> 2 条已有课程线 <i>·</i> 192 道数论练习</div>
       </div>
       <div class="hero-art" aria-label="小朋友们一起学习的插画">
         <div class="art-blob blob-a"></div><div class="art-blob blob-b"></div>
@@ -46,6 +48,75 @@
         <div class="art-caption"><span>今日小目标</span><strong>把思路讲明白！</strong></div>
       </div>
       <div class="hero-squiggle" aria-hidden="true"><svg viewBox="0 0 220 36"><path d="M3 23c18-30 33 29 51 0s33 29 51 0 33 29 51 0 34 28 61-2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 8"/></svg></div>
+    </section>
+
+    <section class="start-here page-width" id="start-here" aria-labelledby="start-here-title">
+      <div class="section-heading start-here-heading">
+        <div><span class="eyebrow">一题一条路，不用从头刷到尾</span><h2 id="start-here-title">不知道从哪开始？照这三步走</h2></div>
+        <p>先辨认题目在问什么，再学对应方法，最后用同类题检查自己是否真的懂了。</p>
+      </div>
+      <div class="start-route-grid">
+        <a class="start-route-card route-application" href="#knowledge-map">
+          <span class="start-route-number">01</span><span class="start-route-tag">先找题型</span>
+          <h3>这道题在考哪类想法？</h3><p>看题目里的关键线索：数的性质、数量变化、图形、计数，还是推理策略。</p>
+          <span class="start-route-link">按线索打开知识地图 <i aria-hidden="true">→</i></span>
+        </a>
+        <a class="start-route-card route-number" href="/aoshu/number-theory.html#learning-path">
+          <span class="start-route-number">02</span><span class="start-route-tag">再学方法</span>
+          <h3>一次只学一个小方法</h3><p>跟着例题看清每一步为什么这样做；现有课程包括 4 个应用题方法和 10 天数论主线。</p>
+          <span class="start-route-link">打开数论分阶段路线 <i aria-hidden="true">→</i></span>
+        </a>
+        <a class="start-route-card route-practice" href="/aoshu/number-theory-practice.html#practice">
+          <span class="start-route-number">03</span><span class="start-route-tag">最后做验证</span>
+          <h3>练同一类题，讲清理由</h3><p>先独立试做，再核对答案和解析；说得出思路，也能把结果放回题目检查，才算学会。</p>
+          <span class="start-route-link">进入 192 道题练习站 <i aria-hidden="true">→</i></span>
+        </a>
+      </div>
+      <p class="start-route-note"><b>记住：</b>这是一张“按题型找入口”的地图，不是规定每个人都要从第 1 课学到最后一课。已经会的部分可以跳过，卡住时再回来看例题。</p>
+    </section>
+
+    <section class="knowledge-map page-width" id="knowledge-map" aria-labelledby="knowledge-map-title">
+      <div class="section-heading knowledge-map-heading">
+        <div><span class="eyebrow">先判断题目在问什么</span><h2 id="knowledge-map-title">小学奥数知识地图</h2></div>
+        <p>把常见题目放进五个“抽屉”。先选对抽屉，再找适合的方法。</p>
+      </div>
+      <div class="knowledge-map-grid">
+        <article class="knowledge-card map-numbers">
+          <div class="knowledge-card-top"><span class="knowledge-icon" aria-hidden="true">数</span><span class="knowledge-status status-ready">课程已开放</span></div>
+          <h3>数与规律</h3><p class="knowledge-question">题目在问：这个数有什么性质？余数、因数或数字排列藏着什么规律？</p>
+          <p class="knowledge-examples">整除 · 质数 · 因数 · 余数 · 数位与进制 · 平方数</p>
+          <a href="/aoshu/number-theory.html#learning-path">从 10 天数论路线开始 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="knowledge-card map-relations">
+          <div class="knowledge-card-top"><span class="knowledge-icon" aria-hidden="true">量</span><span class="knowledge-status status-ready">4 个互动课</span></div>
+          <h3>数量关系</h3><p class="knowledge-question">题目给了总数、相差、分法或变化；把这些量之间的关系找出来。</p>
+          <p class="knowledge-examples">鸡兔同笼 · 植树 · 和差 · 盈亏</p>
+          <a href="#lessons">看例题和互动演示 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="knowledge-card map-shapes">
+          <div class="knowledge-card-top"><span class="knowledge-icon" aria-hidden="true">形</span><span class="knowledge-status status-planned">入门题可试</span></div>
+          <h3>图形与空间</h3><p class="knowledge-question">题目给了图，试着画辅助线、分割或拼合，找出看不见的相等关系。</p>
+          <p class="knowledge-examples">周长与面积 · 组合图形 · 格点 · 立体图形</p>
+          <details class="knowledge-sample"><summary>试一道周长小题</summary><p>长方形周长 22 厘米，长 7 厘米，宽是多少？</p><p class="sample-answer">先减去两条长边：22 − 7 − 7 = 8；剩下两条相等的宽各是 8 ÷ 2 = 4 厘米。</p></details>
+          <span class="knowledge-next">系统专题课仍待按“看图—分解—重组”整理</span>
+        </article>
+        <article class="knowledge-card map-counting">
+          <div class="knowledge-card-top"><span class="knowledge-icon" aria-hidden="true">数数</span><span class="knowledge-status status-bank">题库有部分练习</span></div>
+          <h3>计数与组合</h3><p class="knowledge-question">题目要数有多少种；按规则分类、分步，做到不重复也不漏掉。</p>
+          <p class="knowledge-examples">枚举 · 分类计数 · 数列规律 · 最值</p>
+          <details class="knowledge-sample"><summary>试一道分步计数题</summary><p>用 1、2、3 组成两位数，数字不能重复，一共能组成几个？</p><p class="sample-answer">十位有 3 种选法；选好后个位剩 2 种，所以 3 × 2 = 6 个。</p></details>
+          <a href="/aoshu/number-theory-practice.html?family=数列、计数、最值与应用#practice">筛选现有计数与最值题 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="knowledge-card map-logic">
+          <div class="knowledge-card-top"><span class="knowledge-icon" aria-hidden="true">想</span><span class="knowledge-status status-bank">题库有部分练习</span></div>
+          <h3>逻辑与解题策略</h3><p class="knowledge-question">条件绕、答案不明显时，先假设、列表或倒着想，再一步步排除。</p>
+          <p class="knowledge-examples">假设与验证 · 逆推 · 构造 · 反证 · 检查</p>
+          <details class="knowledge-sample"><summary>试一道逆推题</summary><p>想一个数，乘 3 再减 4 得到 17。原来的数是多少？</p><p class="sample-answer">倒着做：先加回 4 得 21，再除以 3，原数是 7。代回去：7 × 3 − 4 = 17。</p></details>
+          <a href="/aoshu/number-theory-practice.html?family=综合数论与其他专题#practice">看看现有综合题 <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <div class="knowledge-map-guide"><b>一题的学习闭环</b><span><i>①</i>圈出已知条件</span><span class="guide-arrow" aria-hidden="true">→</span><span><i>②</i>归到一个知识抽屉</span><span class="guide-arrow" aria-hidden="true">→</span><span><i>③</i>学一个对应方法</span><span class="guide-arrow" aria-hidden="true">→</span><span><i>④</i>练习并检查答案</span></div>
+      <p class="knowledge-map-note">当前系统课程是“数与规律”数论课和“数量关系”四个互动课；图形、计数、逻辑先提供入门例题与部分题库入口，完整专题课仍待整理。地图会如实标出已有内容，不把零散题目说成已经教完整。</p>
     </section>
 
     <section class="nt-home-banner page-width" aria-labelledby="nt-home-title">
@@ -76,7 +147,7 @@
 
     <section class="lesson-section page-width" id="lessons" aria-labelledby="lesson-heading">
       <div class="section-heading lesson-title-row">
-        <div><span class="eyebrow">一步一步来</span><h2 id="lesson-heading">四个经典小方法</h2></div>
+        <div><span class="eyebrow">知识地图 · 数量关系</span><h2 id="lesson-heading">先从四个经典应用题开始</h2></div>
         <div class="progress-wrap" aria-live="polite"><span class="progress-label">闯关进度</span><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><b id="progress-count">0 / 4</b></div>
       </div>
 
@@ -193,7 +264,7 @@
 
     <section class="about page-width" id="about" aria-labelledby="about-title">
       <div><span class="eyebrow">关于这间小课堂</span><h2 id="about-title">先看懂，再动手。</h2></div>
-      <p>本页是一份互动学习小工具：用分步文字、SVG/CSS 小动画和练习题陪你理解 4 个常见题型。目前<strong>没有接入 AI 对话老师，也没有自动生成讲解或视频</strong>；练习答案由页面内置规则核对。建议和家长、老师一起讨论“为什么”。</p>
+      <p>本页是一份互动学习小工具：现有课程包括 4 个数量关系题型和 10 天数论路线；首页知识地图也会标明哪些方向还没有系统课程。练习答案由页面内置规则核对，建议和家长、老师一起讨论“为什么”。</p>
       <p class="source-note">鸡兔同笼的假设法可继续阅读：<a href="https://www.xschu.com/zhengcezixun/85399.html" target="_blank" rel="noopener noreferrer">北京小升初网：小学奥数鸡兔同笼解题技巧</a>。本页例题与解释为面向孩子的重新编写。</p>
     </section>
   </main>

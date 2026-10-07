@@ -1,0 +1,33 @@
+/* Clear overview of the main elementary math-olympiad learning branches. */
+.knowledge-map{padding:30px 0 58px;scroll-margin-top:82px}
+.knowledge-map-heading{margin-bottom:20px}
+.knowledge-map-heading h2{margin:7px 0 0;font-size:30px;letter-spacing:-.04em}
+.knowledge-map-heading>p{max-width:330px;color:var(--muted);font-size:13px}
+.knowledge-map-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.knowledge-card{display:flex;min-height:250px;flex-direction:column;padding:20px 21px 18px;border:1px solid var(--line);border-radius:19px;background:var(--paper);box-shadow:0 9px 26px rgba(43,58,65,.045)}
+.knowledge-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.knowledge-icon{display:grid;width:39px;height:39px;place-items:center;border-radius:14px;background:#edf3ee;color:#426f5f;font-size:13px;font-weight:900;letter-spacing:.02em}
+.map-relations .knowledge-icon{background:#fff0e8;color:#ad6a4c}.map-shapes .knowledge-icon{background:#eaf2f7;color:#4f7890}.map-counting .knowledge-icon{background:#f2edfb;color:#7463a0}.map-logic .knowledge-icon{background:#f8f1dd;color:#8d7542}
+.knowledge-status{padding:5px 9px;border-radius:999px;font-size:10px;font-weight:900;white-space:nowrap}
+.status-ready{background:#e9f3ed;color:#38745f}.status-planned{background:#f1f0ed;color:#767a76}.status-bank{background:#f0edfa;color:#706296}
+.knowledge-card h3{margin:15px 0 7px;font-size:18px;letter-spacing:-.02em}
+.knowledge-question{margin:0;color:#52615e;font-size:12px;line-height:1.8}
+.knowledge-examples{margin:12px 0 14px;padding:9px 10px;border-radius:10px;background:#f6f6f0;color:#64716c;font-size:11px;line-height:1.65}
+.knowledge-card>a{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:6px;color:#347461;font-size:12px;font-weight:900;text-decoration:none}
+.knowledge-card>a:hover{color:#1e5548;text-decoration:underline;text-underline-offset:3px}
+.knowledge-next{margin-top:auto;padding-top:7px;color:#7c817d;font-size:11px;line-height:1.6}
+.knowledge-map-guide{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:19px;padding:14px 18px;border:1px solid #e3e9df;border-radius:15px;background:#f2f5ec;color:#53625a;font-size:11px}
+.knowledge-map-guide>b{margin-right:8px;color:#345748;font-size:12px}
+.knowledge-map-guide span{white-space:nowrap}.knowledge-map-guide i{display:inline-grid;width:20px;height:20px;margin-right:5px;place-items:center;border-radius:50%;background:#dce9dc;color:#3c705e;font-size:10px;font-style:normal;font-weight:900}
+.knowledge-map-guide .guide-arrow{color:#a1afa3;font-size:15px}
+.knowledge-map-note{max-width:850px;margin:11px auto 0;color:#707b74;font-size:11px;line-height:1.75;text-align:center}
+@media(max-width:900px){.knowledge-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.knowledge-map-guide{justify-content:flex-start}}
+@media(max-width:650px){.knowledge-map{padding:22px 0 40px}.knowledge-map-heading{align-items:flex-start;gap:8px;flex-direction:column}.knowledge-map-heading h2{font-size:25px}.knowledge-map-heading>p{max-width:none;margin:0}.knowledge-map-grid{grid-template-columns:1fr;gap:10px}.knowledge-card{min-height:0;padding:17px}.knowledge-map-guide{gap:7px;padding:12px}.knowledge-map-guide>b{width:100%;margin:0}.knowledge-map-guide .guide-arrow{font-size:12px}.knowledge-map-note{text-align:left}}
+
+.knowledge-sample{margin:0 0 13px;padding:9px 10px;border:1px solid #e6eadf;border-radius:11px;background:#fbfcf8;color:#56645d;font-size:11px;line-height:1.65}
+.knowledge-sample summary{cursor:pointer;color:#4b7365;font-weight:900;list-style:none}
+.knowledge-sample summary::-webkit-details-marker{display:none}
+.knowledge-sample summary:after{content:'＋';float:right;color:#6e9885}
+.knowledge-sample[open] summary:after{content:'−'}
+.knowledge-sample p{margin:7px 0 0}
+.knowledge-sample .sample-answer{padding-top:6px;border-top:1px solid #e8ece4;color:#6a726c}

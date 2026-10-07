@@ -302,7 +302,14 @@
       $('#hero-question-count').textContent = state.questions.length;
       $('#hero-source-count').textContent = state.data.counts.source_documents;
       $('#hero-page-count').textContent = state.data.counts.pdf_pages;
-      setupFilters(); bindEvents(); applyFilters(true);
+      setupFilters();
+      const requestedFamily = new URLSearchParams(window.location.search).get('family');
+      if (requestedFamily && state.families.some((family) => family.family === requestedFamily)) {
+        $('#family-filter').value = requestedFamily;
+        state.activeFamily = requestedFamily;
+        updateTopicOptions();
+      }
+      bindEvents(); applyFilters(true);
     } catch (error) {
       $('#result-count').textContent = '题库暂时没有载入';
       $('#question-text').textContent = '暂时读不到题库数据。请通过本地预览说明中的方式打开网页，并确认 question-bank-source.json 在 public 文件夹内。';

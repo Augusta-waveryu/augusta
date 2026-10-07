@@ -125,7 +125,7 @@
   document.title = `${branch.title}：逐点讲解、互动与速查｜思维树屋`;
   document.getElementById('bc-eyebrow').textContent = `系统专题课 · ${branch.title}`;
   document.getElementById('bc-title').innerHTML = `${esc(branch.title)}<br><em>从看懂到会应用。</em>`;
-  document.getElementById('bc-intro').textContent = `${branch.intro}本专题按 ${branch.lessons.length} 个知识点展开：每一课都有浅显解释、老师示范、常见易错点、三题自测；另有互动实验、方法速查和跨知识点复习。`;
+  document.getElementById('bc-intro').textContent = `${branch.intro}本专题按 ${branch.lessons.length} 个知识点逐课讲：先用直白语言讲清关键想法，再列出本课子知识点，用分步例题解释“为什么这样做”，最后检查易错点、完成三题自测；另有互动实验、方法速查和跨课复习。`;
   document.getElementById('bc-icon').textContent = branch.icon;
   document.getElementById('bc-count').textContent = branch.lessons.length;
   document.getElementById('bc-map-title').textContent = `${branch.title} · ${branch.lessons.length} 个知识点`;
@@ -144,8 +144,9 @@
   function renderMap() {
     document.getElementById('bc-map-grid').innerHTML = branch.lessons.map((lesson, i) => {
       const keyText = language[lesson.id]?.[0] || lesson.title;
-      const summary = lesson.concept.length > 94 ? `${lesson.concept.slice(0, 94)}…` : lesson.concept;
-      return `<a class="bc-map-card" href="#${lessonId(lesson)}"><span class="bc-map-no">${String(i + 1).padStart(2, '0')}</span><span class="bc-map-text"><b>${esc(lesson.title)}</b><small>${esc(keyText)} · ${esc(summary)}</small></span><span class="bc-map-level">${esc(lesson.level)}</span></a>`;
+      const deep = window.AOSHU_DEEP_LESSONS?.[lesson.id];
+      const visibleKeys = deep?.subtopics?.map((item) => item.name).join(' · ') || (lesson.concept.length > 94 ? `${lesson.concept.slice(0, 94)}…` : lesson.concept);
+      return `<a class="bc-map-card" href="#${lessonId(lesson)}"><span class="bc-map-no">${String(i + 1).padStart(2, '0')}</span><span class="bc-map-text"><b>${esc(lesson.title)}</b><small><strong>本课拆成：</strong>${esc(visibleKeys)}</small></span><span class="bc-map-level">${esc(lesson.level)}</span></a>`;
     }).join('');
   }
   function renderQuestion(lesson, q, index, passed) {
@@ -159,10 +160,18 @@
       const passed = new Set(progress[lesson.id]?.passed || []);
       const glossary = language[lesson.id] || [lesson.title, '抓住题目给出的条件，再选对应方法。'];
       const formula = formulas[lesson.id] || [lesson.title, lesson.concept];
+      const deep = window.AOSHU_DEEP_LESSONS?.[lesson.id];
+      const keyPreview = deep?.subtopics?.map((item) => item.name).join(' · ');
       const path = methodSteps.map((step) => step[0]);
       const practice = lesson.practice.map((q, index) => renderQuestion(lesson, q, index, passed.has(index))).join('');
       const source = lesson.source ? `<span class="bc-pill source">${esc(lesson.source)} · 已整合</span>` : '';
-      return `<details class="bc-lesson" id="${lessonId(lesson)}" data-lesson="${escapeId(lesson.id)}"${i === 0 ? ' open' : ''}><summary><span class="bc-lesson-number">${String(i + 1).padStart(2, '0')}</span><span class="bc-lesson-title"><small>${esc(lesson.level)} · 知识点 ${i + 1} / ${branch.lessons.length}</small><b>${esc(lesson.title)}</b></span><span class="bc-lesson-status">${progress[lesson.id]?.done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="bc-lesson-chevron" aria-hidden="true">＋</span></summary><div class="bc-lesson-body"><div class="bc-lesson-meta"><span class="bc-pill">关键词：${esc(glossary[0].split('·')[0].trim())}</span>${source}<span class="bc-pill">本课 3 道自测</span></div><div class="bc-concept-box"><span class="bc-section-label">先听懂 · 不只记答案</span><p>${esc(lesson.concept)}</p><div class="bc-language-row"><b>${esc(glossary[0].split('·')[0].trim())}</b><span>${esc(glossary[1])}</span></div></div><div class="bc-path-box"><b>这类题的思考路线</b><ol>${path.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></div><div class="bc-example-box"><span class="bc-section-label">老师示范 · 跟着线索一步步做</span><h4>${esc(lesson.example.q)}</h4><p class="bc-example-solution"><b>推理：</b>${esc(lesson.example.solution)}</p></div><div class="bc-trap"><strong>易错提醒</strong><span>${esc(pitfalls[lesson.id] || '每做完一步，都回到题目条件检查一次。')}</span></div><div class="bc-practice"><div class="bc-practice-top"><div><span class="bc-section-label">轮到你了 · 先想再检查</span><h4>三道自测：练方法，也讲理由</h4></div><span class="bc-practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${practice}</div><div class="bc-lesson-tools"><a href="#bc-lab" data-open-lab="${escapeId(lesson.id)}">去互动实验台试一试 →</a><a href="#bc-formulas">查本课速查卡 ↑</a></div></div></details>`;
+      const subtopics = (deep?.subtopics || []).map((item, j) => `<article class="bc-subtopic"><span>${String(j + 1).padStart(2, '0')}</span><div><b>${esc(item.name)}</b><p>${esc(item.explanation)}</p></div></article>`).join('');
+      const flow = (deep?.flow || []).map((item, j) => `<span class="bc-flow-node"><i>${j + 1}</i><b>${esc(item)}</b></span>`).join('');
+      const worked = (deep?.steps || []).map((item, j) => `<li><i>${j + 1}</i><div><b>${esc(item.title)}</b><p>${esc(item.explanation)}</p></div></li>`).join('');
+      const deepGuide = deep ? `<section class="bc-deep-guide" aria-label="${esc(lesson.title)}的详细讲解"><div class="bc-deep-head"><span>本课关键知识点</span><small>讲清楚 · 再记住</small></div><div class="bc-deep-idea"><b>先用一句话听懂</b><p>${esc(deep.idea)}</p></div><div class="bc-subtopics"><h4>把知识点拆开看</h4><div class="bc-subtopic-grid">${subtopics}</div></div><div class="bc-flow-wrap"><h4>思考路线图</h4><div class="bc-deep-flow" role="img" aria-label="${esc(deep.flow.join('，然后'))}">${flow}</div></div></section>` : '';
+      const exampleSteps = worked ? `<ol class="bc-worked-steps">${worked}</ol>` : `<p class="bc-example-solution"><b>推理：</b>${esc(lesson.example.solution)}</p>`;
+      const why = deep ? `<div class="bc-why-check"><p><b>为什么这样做有效？</b>${esc(deep.why)}</p><p><b>学完停一下：</b>${esc(deep.check)}</p></div>` : '';
+      return `<details class="bc-lesson" id="${lessonId(lesson)}" data-lesson="${escapeId(lesson.id)}"${i === 0 ? ' open' : ''}><summary><span class="bc-lesson-number">${String(i + 1).padStart(2, '0')}</span><span class="bc-lesson-title"><small>${esc(lesson.level)} · 知识点 ${i + 1} / ${branch.lessons.length}</small><b>${esc(lesson.title)}</b>${keyPreview ? `<small class="bc-lesson-key-preview">重点：${esc(keyPreview)}</small>` : ''}</span><span class="bc-lesson-status">${progress[lesson.id]?.done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="bc-lesson-chevron" aria-hidden="true">＋</span></summary><div class="bc-lesson-body"><div class="bc-lesson-meta"><span class="bc-pill">关键词：${esc(glossary[0].split('·')[0].trim())}</span>${source}<span class="bc-pill">本课 3 道自测</span></div><div class="bc-concept-box"><span class="bc-section-label">先听懂 · 不只记答案</span><p>${esc(lesson.concept)}</p><div class="bc-language-row"><b>${esc(glossary[0].split('·')[0].trim())}</b><span>${esc(glossary[1])}</span></div></div>${deepGuide}<div class="bc-path-box"><b>本分支通用的解题检查步骤</b><ol>${path.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></div><div class="bc-example-box"><span class="bc-section-label">老师示范 · 跟着线索一步步做</span><h4>${esc(lesson.example.q)}</h4>${exampleSteps}</div>${why}<div class="bc-trap"><strong>易错提醒</strong><span>${esc(pitfalls[lesson.id] || '每做完一步，都回到题目条件检查一次。')}</span></div><div class="bc-practice"><div class="bc-practice-top"><div><span class="bc-section-label">轮到你了 · 先想再检查</span><h4>三道自测：练方法，也讲理由</h4></div><span class="bc-practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${practice}</div><div class="bc-lesson-tools"><a href="#bc-lab" data-open-lab="${escapeId(lesson.id)}">去互动实验台试一试 →</a><a href="#bc-formulas">查本课速查卡 ↑</a></div></div></details>`;
     }).join('');
   }
   function renderFormulas() {

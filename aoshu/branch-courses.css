@@ -6,3 +6,58 @@
 @media(prefers-reduced-motion:reduce){.branch-course-page *{scroll-behavior:auto!important;transition:none!important}}
 
 @media(max-width:650px){.branch-course-page .topnav{display:none}}
+
+
+/* Explicit, child-friendly lesson explanations */
+.bc-lesson-key-preview{display:block;margin-top:5px;color:#567c5e!important;font-size:10px!important;line-height:1.55;font-weight:700!important;white-space:normal;max-width:760px}
+.bc-map-text small strong{color:#4d7656}
+.bc-deep-guide{margin:14px 0;padding:17px;border:1px solid #d9e7d5;border-radius:16px;background:linear-gradient(135deg,#f0f7ed,#fffefa 75%);box-shadow:inset 3px 0 #80a983}
+.bc-deep-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.bc-deep-head span{color:#355f43;font-size:14px;font-weight:900}
+.bc-deep-head small{padding:5px 9px;border-radius:99px;background:#e3efdf;color:#54765a;font-size:9px;font-weight:900}
+.bc-deep-idea{padding:13px 14px;border:1px solid #e2ebdd;border-radius:12px;background:#fffefa}
+.bc-deep-idea>b{display:block;margin-bottom:5px;color:#648363;font-size:10px;font-weight:900;letter-spacing:.04em}
+.bc-deep-idea p{margin:0;color:#394c3f;font-size:13px;line-height:1.9;font-weight:600}
+.bc-subtopics{margin-top:15px}
+.bc-subtopics>h4,.bc-flow-wrap>h4{margin:0 0 9px;color:#435b49;font-size:12px}
+.bc-subtopic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.bc-subtopic{display:flex;align-items:flex-start;gap:8px;min-height:83px;padding:11px;border:1px solid #e6ebe1;border-radius:11px;background:#fffefa}
+.bc-subtopic>span{display:grid;flex:0 0 24px;width:24px;height:24px;place-items:center;border-radius:8px;background:#edf3e9;color:#527a58;font-size:9px;font-weight:900}
+.bc-subtopic b{display:block;color:#425849;font-size:11px;line-height:1.5}
+.bc-subtopic p{margin:4px 0 0;color:#68776c;font-size:10px;line-height:1.75}
+.bc-flow-wrap{margin-top:15px}
+.bc-deep-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+.bc-flow-node{position:relative;display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 11px;border:1px solid #dce8d8;border-radius:10px;background:#f8fbf5;color:#496b50}
+.bc-flow-node:not(:last-child):after{position:absolute;right:-9px;z-index:1;width:10px;background:#f0f7ed;color:#86a586;text-align:center;content:"→";font-size:12px;font-weight:900}
+.bc-flow-node i{display:grid;flex:0 0 21px;width:21px;height:21px;place-items:center;border-radius:7px;background:#e5efe1;color:#54805c;font-size:9px;font-style:normal;font-weight:900}
+.bc-flow-node b{font-size:10px;line-height:1.5}
+.bc-worked-steps{display:grid;gap:7px;margin:10px 0 0;padding:0;list-style:none}
+.bc-worked-steps li{display:flex;align-items:flex-start;gap:9px;padding:9px 10px;border:1px solid #e9ede5;border-radius:10px;background:#fffefa}
+.bc-worked-steps li>i{display:grid;flex:0 0 22px;width:22px;height:22px;place-items:center;border-radius:7px;background:#eaf2e7;color:#4b7753;font-size:9px;font-style:normal;font-weight:900}
+.bc-worked-steps b{display:block;color:#45634b;font-size:10px;line-height:1.55}
+.bc-worked-steps p{margin:3px 0 0;color:#5f6f63;font-size:11px;line-height:1.8}
+.bc-why-check{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;padding:10px 12px;border:1px solid #e5eadd;border-radius:11px;background:#f8f9f3}
+.bc-why-check p{margin:0;color:#647266;font-size:10px;line-height:1.75}
+.bc-why-check b{display:block;margin-bottom:3px;color:#58745b;font-size:10px}
+@media(max-width:650px){
+  .bc-lesson-key-preview{font-size:9px!important;max-width:100%}
+  .bc-deep-guide{padding:13px}
+  .bc-deep-head span{font-size:13px}
+  .bc-deep-idea p{font-size:12px;line-height:1.85}
+  .bc-subtopic-grid{grid-template-columns:1fr}
+  .bc-subtopic{min-height:0;padding:10px}
+  .bc-subtopic p,.bc-worked-steps p{font-size:11px}
+  .bc-deep-flow{grid-template-columns:1fr;gap:5px}
+  .bc-flow-node{min-height:35px}
+  .bc-flow-node:not(:last-child):after{right:auto;bottom:-10px;left:50%;width:16px;content:"↓"}
+  .bc-why-check{grid-template-columns:1fr}
+}
+
+/* Readable body text for the newly expanded teaching blocks */
+.bc-deep-idea p{font-size:14px}
+.bc-subtopic b{font-size:12px}
+.bc-subtopic p{font-size:11px}
+.bc-flow-node b{font-size:11px}
+.bc-worked-steps p{font-size:12px}
+.bc-why-check p{font-size:11px}
+@media(max-width:650px){.bc-deep-idea p{font-size:12.5px}.bc-subtopic p,.bc-why-check p{font-size:11.5px}.bc-worked-steps p{font-size:12px}}

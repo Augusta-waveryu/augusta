@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/aoshu/curriculum.css">
   <link rel="stylesheet" href="/aoshu/branch-courses.css">
   <script src="/aoshu/curriculum.js" defer></script>
+  <script src="/aoshu/branch-course-depth.js" defer></script>
   <script src="/aoshu/branch-course.js" defer></script>
 </head>
 <body class="curriculum-page branch-course-page">
@@ -27,12 +28,12 @@
   <main id="bc-main" class="course-main bc-main">
     <section class="bc-hero" aria-labelledby="bc-title">
       <div class="bc-hero-copy"><span class="course-eyebrow"><i></i><span id="bc-eyebrow">系统专题课</span></span><h1 id="bc-title">从会做一道题，<br><em>到看懂一整类。</em></h1><p id="bc-intro"></p><div class="course-hero-actions"><a class="course-button" href="#bc-map">从知识地图开始 <span aria-hidden="true">↓</span></a><a class="course-text-link" href="#bc-formulas">先打开方法速查卡 ↗</a></div><div class="bc-stats"><span><b id="bc-count">0</b> 个知识点</span><span><b>3</b> 道逐点自测 / 课</span><span><b>6</b> 道分支复习题</span></div></div>
-      <aside class="bc-promise"><span class="bc-promise-icon" id="bc-icon" aria-hidden="true">学</span><b>从不会到会，走四步</b><ol><li>先听懂概念和关键词</li><li>跟着老师拆解例题</li><li>自己做三题并核对理由</li><li>最后用速查卡和复习题回顾</li></ol><div class="bc-progress"><div><span>本分支已掌握</span><b id="bc-progress-count">0 / 0</b></div><div class="bc-progress-track"><i id="bc-progress-fill"></i></div><small>学习进度保存在当前浏览器</small></div></aside>
+      <aside class="bc-promise"><span class="bc-promise-icon" id="bc-icon" aria-hidden="true">学</span><b>从不会到会，走四步</b><ol><li>先听懂关键想法与定义</li><li>拆开子知识点，看清彼此关系</li><li>跟着示范逐步推理</li><li>三题自测，再用速查卡复盘</li></ol><div class="bc-progress"><div><span>本分支已掌握</span><b id="bc-progress-count">0 / 0</b></div><div class="bc-progress-track"><i id="bc-progress-fill"></i></div><small>学习进度保存在当前浏览器</small></div></aside>
     </section>
     <section class="bc-branch-switch" aria-label="八个课程分支"><span>知识树 · 8 个分支 / 56 个知识点</span><div id="bc-branch-links"></div></section>
     <section class="bc-map-section" id="bc-map" aria-labelledby="bc-map-title"><div class="bc-heading"><div><span class="course-kicker">先看清这一支包含什么</span><h2 id="bc-map-title">知识地图</h2></div><p>点知识点名称可以跳到对应讲解。每个知识点都包含概念、例题、三道自测；不必一次学完。</p></div><div class="bc-map-grid" id="bc-map-grid"></div></section>
     <section class="bc-method-section" aria-labelledby="bc-method-title"><div class="bc-method-heading"><span class="course-kicker">每道题都可以这样学</span><h2 id="bc-method-title">从看不懂，到能自己讲出来</h2><p id="bc-method-intro">先试自己的想法，再看示范；答错没关系，沿着线索重新走一遍。</p></div><ol class="bc-learning-steps" id="bc-learning-steps"></ol></section>
-    <section class="bc-lessons-section" id="bc-lessons" aria-labelledby="bc-lessons-title"><div class="bc-heading"><div><span class="course-kicker">逐点讲解 · 例题示范 · 三题自测</span><h2 id="bc-lessons-title">这条分支，按知识点学会</h2></div><p>每一课都给出关键概念、示范题、常见易错点和完整练习解析。遇到公式时可随时查看下方速查卡。</p></div><div class="bc-lesson-stack" id="bc-lesson-stack"></div></section>
+    <section class="bc-lessons-section" id="bc-lessons" aria-labelledby="bc-lessons-title"><div class="bc-heading"><div><span class="course-kicker">一个知识点一堂小课 · 直觉解释 · 子知识点 · 分步示范</span><h2 id="bc-lessons-title">这条分支，按知识点学会</h2></div><p>展开任意一课：先听懂关键想法，再拆成明确的子知识点，跟着老师逐步做例题，最后用自测确认自己会讲理由。</p></div><div class="bc-lesson-stack" id="bc-lesson-stack"></div></section>
     <section class="bc-lab-section" id="bc-lab" aria-labelledby="bc-lab-title"><div class="bc-heading"><div><span class="course-kicker">动手改变数字，观察规则</span><h2 id="bc-lab-title">互动实验台</h2></div><p id="bc-lab-lead">改变一个条件，看结论和图形怎样跟着变。</p></div><div class="bc-lab-card" id="bc-lab-card"></div></section>
     <section class="bc-formula-section" id="bc-formulas" aria-labelledby="bc-formulas-title"><div class="bc-heading"><div><span class="course-kicker">随时翻看 · 不必硬背</span><h2 id="bc-formulas-title">公式与方法速查</h2></div><button class="bc-print" type="button" id="bc-print">打印 / 保存速查卡</button></div><p class="bc-formula-note">先判断题目属于哪个知识点，再选工具；符号不熟悉，就回到上方那一课看示范。策略型知识点也列出可复用的解题步骤。</p><div class="bc-formula-grid" id="bc-formula-grid"></div></section>
     <section class="bc-review-section" id="bc-review" aria-labelledby="bc-review-title"><div class="bc-heading"><div><span class="course-kicker">跨知识点回顾 · 先做，再看推理</span><h2 id="bc-review-title">分支复习闯关</h2></div><p id="bc-review-progress" aria-live="polite">答对 0 / 6</p></div><div class="bc-review-grid" id="bc-review-grid"></div><div class="bc-review-finish" id="bc-review-finish" hidden><b>这一轮全对！</b><span>用自己的话再讲一遍方法，或者回到速查卡快速复盘。</span><a href="#bc-formulas">再看速查卡 ↑</a></div></section>

@@ -15,7 +15,7 @@
       caption: '三角形三个内角合起来是 180°，所以 x = 180° − 50° − 60° = 70°。',
       title: '三角形内角和示意图',
       desc: '一个三角形标出两个角50度和60度，第三个角标为x，旁边标注三角形内角和180度。',
-      drawing: `<path d="M54 151 151 31 267 151Z" fill="#e8f2e5" stroke="#548366" stroke-width="3" stroke-linejoin="round"/><path d="M73 151a27 27 0 0 1 8-20M244 151a26 26 0 0 0-8-19M142 49a24 24 0 0 1 29 7" fill="none" stroke="#d48e63" stroke-width="3"/><text x="83" y="137" class="g-label">50°</text><text x="213" y="137" class="g-label">60°</text><text x="144" y="78" class="g-label">x</text><rect x="57" y="164" width="205" height="24" rx="12" fill="#f6f2e8"/><text x="159" y="181" text-anchor="middle" class="g-note">50° + 60° + x = 180°</text>`
+      drawing: `<path d="M54 151 151 31 267 151Z" fill="#e8f2e5" stroke="#548366" stroke-width="3" stroke-linejoin="round"/><path d="M78 151A24 24 0 0 0 69.09 132.34M243 151A24 24 0 0 1 250.32 133.74M138.43 46.55A20 20 0 0 0 164.9 45.38" fill="none" stroke="#d48e63" stroke-width="3"/><text x="83" y="137" class="g-label">50°</text><text x="213" y="137" class="g-label">60°</text><text x="144" y="78" class="g-label">x</text><rect x="57" y="164" width="205" height="24" rx="12" fill="#f6f2e8"/><text x="159" y="181" text-anchor="middle" class="g-note">50° + 60° + x = 180°</text>`
     },
     'triangle-inequality': {
       caption: '第三边 x 必须比两边的差更长、比两边的和更短：2 &lt; x &lt; 12。',

@@ -96,23 +96,25 @@
       if (!grade) return;
       const deep = deepLessons[lesson.id] || {};
       const practice = lesson.practice?.[0] || {};
+      const deepUnit = window.AOSHU_ELEMENTARY_DEEP_UNITS?.[`${grade}:${lesson.id}`] || null;
       const steps = (deep.steps || []).map((step) => [step.title,step.explanation].filter(Boolean).join('：'));
       advanced.push({
         grade,
         n: ++counters[grade],
         key: `g${grade}-${counters[grade]}`,
-        title: lesson.title,
+        title: deepUnit?.courseTitle || lesson.title,
         group: branch.title,
-        status: '年级主线 · 专题深练',
+        status: deepUnit ? deepUnit.label : '路线概览 · 示例与自测',
         source: `按知识递进编入${grade}年级路线；以公开目录主题作参照，不表示逐讲照抄`,
-        goal: lesson.concept,
-        idea: deep.idea || lesson.example.solution,
-        example: lesson.example.q,
-        steps: steps.length ? steps : [lesson.example.solution],
-        practice: practice.q || lesson.example.q,
-        answers: practice.a || [],
-        hint: practice.hint || '先回看例题中的关键关系，再把题目条件代入。',
-        explanation: practice.why || lesson.example.solution,
+        deepUnit,
+        goal: deepUnit?.goal || lesson.concept,
+        idea: deepUnit?.idea || deep.idea || lesson.example.solution,
+        example: deepUnit?.example.question || lesson.example.q,
+        steps: deepUnit?.example.steps || (steps.length ? steps : [lesson.example.solution]),
+        practice: deepUnit?.practices?.[0]?.question || practice.q || lesson.example.q,
+        answers: deepUnit?.practices?.[0]?.answers || practice.a || [],
+        hint: deepUnit?.practices?.[0]?.hint || practice.hint || '先回看例题中的关键关系，再把题目条件代入。',
+        explanation: deepUnit?.practices?.[0]?.explanation || practice.why || lesson.example.solution,
         href: `/aoshu/branch-course.html?branch=${branch.id}#bc-topic-${lesson.id}`,
         link: `接着学：${branch.title}专题（含三道自测）`
       });

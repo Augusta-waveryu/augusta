@@ -13,3 +13,33 @@
 @media(prefers-reduced-motion:reduce){.curriculum-page *{scroll-behavior:auto!important;transition:none!important}}
 
 .branch-study-link{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;margin-top:9px;padding:8px 10px;border:1px solid #dce8d8;border-radius:10px;background:#f1f6ed;color:#3f7653;font-size:10px;font-weight:900;text-decoration:none}.branch-study-link:hover{border-color:#b9d2b7;background:#e8f1e5}.branch-study-link span{font-size:14px}@media(max-width:650px){.branch-study-link{margin-top:8px;font-size:9px}}
+
+.curriculum-rich-math{display:block;box-sizing:border-box;width:fit-content;max-width:100%;margin:.38em 0;padding:.3em .62em;border-left:4px solid #7f9859;border-radius:0 9px 9px 0;background:#edf4e5;color:#344b38;font-size:clamp(14px,1.45vw,17px);font-weight:900;line-height:1.65;overflow-wrap:anywhere;white-space:normal;font-variant-numeric:lining-nums tabular-nums}
+.curriculum-question-text{display:block;flex:1;min-width:0}
+.example-block h3 .curriculum-rich-math{font-size:clamp(14px,1.4vw,16px)}
+.solution-fold .curriculum-rich-math{font-size:14px}
+@media(max-width:650px){.curriculum-rich-math{font-size:14px;margin:.32em 0;padding:.32em .55em}.example-block h3 .curriculum-rich-math{font-size:14px}}
+@media(max-width:650px){body.curriculum-page:not(.textbook-page):not(.branch-course-page):not(.sequences-page) .topbar{height:auto;min-height:0;padding:10px 14px;gap:8px 12px;flex-wrap:wrap}body.curriculum-page:not(.textbook-page):not(.branch-course-page):not(.sequences-page) .nav-cta{order:1;margin-left:auto;flex:0 0 auto;white-space:nowrap}body.curriculum-page:not(.textbook-page):not(.branch-course-page):not(.sequences-page) .topnav{order:2;flex:1 0 100%;width:100%;min-width:0;justify-content:flex-start;gap:14px;margin-left:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none;padding:0 0 2px}body.curriculum-page:not(.textbook-page):not(.branch-course-page):not(.sequences-page) .topnav::-webkit-scrollbar{display:none}body.curriculum-page:not(.textbook-page):not(.branch-course-page):not(.sequences-page) .topnav a{flex:0 0 auto;white-space:nowrap}}
+
+.parity-concept{margin-top:8px;padding:13px;border:1px solid #e0e9dc;border-radius:13px;background:linear-gradient(145deg,#fbfcf7,#f5f8ef)}
+.parity-intro{margin:0 0 10px;color:#435449;font-size:12px;font-weight:800;line-height:1.7}
+.parity-definition-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.parity-definition{display:flex;align-items:center;justify-content:space-between;min-width:0;padding:9px 11px;border:1px solid;border-radius:10px}
+.parity-definition span{font-size:11px;font-weight:900}
+.parity-definition strong{font-size:20px;line-height:1.35;font-variant-numeric:lining-nums}
+.parity-definition.parity-even{border-color:#cce3d8;background:#e9f4ed;color:#246d5b}
+.parity-definition.parity-odd{border-color:#f0d7c9;background:#fff0e8;color:#a65035}
+.parity-note{margin:6px 0 12px;color:#77837a;font-size:9px;line-height:1.6}
+.parity-label{margin:12px 0 7px;color:#40564a;font-size:11px;font-weight:900}
+.parity-rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.parity-rule{min-width:0;padding:9px 10px;border:1px solid #e4eade;border-radius:10px;background:#fffefa}
+.parity-rule.parity-wide{grid-column:1/-1}
+.parity-rule strong{display:block;color:#35463b;font-size:clamp(14px,4vw,17px);line-height:1.55;letter-spacing:.01em;overflow-wrap:anywhere}
+.parity-rule small{display:block;margin-top:3px;color:#748077;font-size:9px;line-height:1.6}
+.parity-odd{color:#a65035}.parity-even{color:#246d5b}
+.parity-takeaway{margin:12px 0 0;padding:9px 10px;border-left:3px solid #6c9b76;border-radius:0 9px 9px 0;background:#eaf2e7;color:#3e634c;font-size:10px;font-weight:800;line-height:1.7}
+.parity-example p{margin:6px 0;color:#647269;font-size:10px;line-height:1.7}
+.parity-example-formula{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;padding:8px 10px;border:1px solid #dce8d8;border-radius:9px;background:#eef5e9;color:#365c45;font-size:15px;line-height:1.5}
+.parity-example-formula strong{font-variant-numeric:lining-nums;overflow-wrap:anywhere}
+.parity-equation{margin-top:6px;background:#e5f1e6;font-size:16px}
+@media(max-width:380px){.parity-concept{padding:10px}.parity-definition{padding:8px}.parity-rule-grid{grid-template-columns:1fr}.parity-rule{padding:8px}.parity-rule strong{font-size:14px}.parity-example-formula{gap:7px;padding:8px 7px;font-size:14px}.parity-equation{font-size:14px}}

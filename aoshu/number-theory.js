@@ -1,5 +1,23 @@
 (() => {
   const byId = (id) => document.getElementById(id);
+  const superscriptDigits = (value) => String(value).replace(/[0-9]/g, (digit) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[Number(digit)]);
+  const standardizeMathSymbols = (value) => String(value ?? '')
+    .replace(/<=/g, '≤').replace(/>=/g, '≥').replace(/!=/g, '≠').replace(/\*/g, '×')
+    .replace(/\^(\d+)/g, (_, digits) => superscriptDigits(digits)).replace(/\^n\b/gi, 'ⁿ')
+    .replace(/([\p{L}\p{N})\]])\s*[·⋅]\s*([\p{L}\p{N}(])/gu, '$1 × $2')
+    .replace(/(?<![\p{L}\p{N}])([\p{L}]|\d+|\))\s*-\s*([\p{L}]|\d+|\()/gu, '$1 − $2')
+    .replace(/([^\s+×÷=<>≤≥≠≡∣−±≈∈∉∪∩])\s*([+×÷=<>≤≥≠≡∣−±≈∈∉∪∩])\s*([^\s+×÷=<>≤≥≠≡∣−±≈∈∉∪∩])/gu, '$1 $2 $3');
+  const normalizeTextTree = (root) => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => { if (node.parentElement?.closest('script,style,textarea,input,select')) return; const normalized = standardizeMathSymbols(node.nodeValue); if (normalized !== node.nodeValue) node.nodeValue = normalized; });
+  };
+  normalizeTextTree(document.body);
+  new MutationObserver((records) => records.forEach((record) => {
+    if (record.type === 'characterData' && !record.target.parentElement?.closest('script,style,textarea,input,select')) { const normalized = standardizeMathSymbols(record.target.nodeValue); if (normalized !== record.target.nodeValue) record.target.nodeValue = normalized; }
+    record.addedNodes.forEach((node) => { if (node.nodeType === Node.TEXT_NODE) { if (!node.parentElement?.closest('script,style,textarea,input,select')) { const normalized = standardizeMathSymbols(node.nodeValue); if (normalized !== node.nodeValue) node.nodeValue = normalized; } } else if (node.nodeType === Node.ELEMENT_NODE) normalizeTextTree(node); });
+  })).observe(document.body, {subtree:true,childList:true,characterData:true});
   const wholeNumber = (id, min, max) => {
     const raw = byId(id)?.value ?? '';
     const value = Number(raw);

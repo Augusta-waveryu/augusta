@@ -1,6 +1,119 @@
 (() => {
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const normalize = (value) => String(value ?? '').toLowerCase().replace(/[\s，,。.!！?？:：=（）()]/g, '');
+  const mathPattern = /(?:[=≠<>≤≥≡∣×÷√²³⁴⁵⁶⁷⁸⁹⁰ⁿ₀-₉^+−±≈∈∉∪∩∑∏∞°]|\b\d+\s*\/\s*\d+\b)/u;
+  const superscriptDigits = (value) => String(value).replace(/[0-9]/g, (digit) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[Number(digit)]);
+  const spaceMathOperators = (value) => {
+    const operators = new Set(['+','−','×','÷','=','<','>','≤','≥','≠','≡','∣','±','≈','∈','∉','∪','∩']);
+    const opening = new Set(['(', '[', '{']);
+    const chars = [...String(value ?? '')];
+    let output = '';
+    chars.forEach((character, index) => {
+      if (!operators.has(character)) { output += character; return; }
+      const previous = chars[index - 1], next = chars[index + 1];
+      const unaryMinus = character === '−' && (!previous || /\s/u.test(previous) || opening.has(previous) || operators.has(previous) || (/\p{Script=Han}/u.test(previous) && /[A-Za-z0-9]/u.test(next ?? '')));
+      if (previous && !/\s/u.test(previous) && !operators.has(previous) && !opening.has(previous) && !unaryMinus && !output.endsWith(' ')) output += ' ';
+      output += character;
+      if (!unaryMinus && next && !/\s/u.test(next) && !operators.has(next)) output += ' ';
+    });
+    return output.replace(/[ \t]{2,}/g, ' ');
+  };
+  const standardizeMathSymbols = (value) => spaceMathOperators(String(value ?? '')
+    .replace(/<=/g, '≤').replace(/>=/g, '≥').replace(/!=/g, '≠').replace(/\*/g, '×')
+    .replace(/\^\{?(\d+|n)\}?/gi, (_, exponent) => exponent.toLowerCase() === 'n' ? 'ⁿ' : superscriptDigits(exponent))
+    .replace(/([\p{L}\p{N})\]])\s*[·⋅]\s*([\p{L}\p{N}(])/gu, '$1 × $2')
+    .replace(/(?<![\p{L}\p{N}])([\p{L}]|\d+|\))\s*-\s*([\p{L}]|\d+|\()/gu, '$1 − $2')
+    .replace(/(^|[\s([{])-(?=\d)/g, '$1−'));
+  const mathExpressionSource = (() => {
+    const labels = [
+      '到某点的走法数','每小时靠近的距离','两类分别计数之和','长方体表面积','正方体表面积','长方体体积','正方体体积','长方形周长','长方形面积','平行四边形面积','三角形面积','三角形内角和','四边形内角和','每份变化量','符合条件的结果数','全部结果数','每人份数','每份数量','较大年龄','较小年龄','哥哥年龄','妹妹年龄','多出的腿数','实际腿数','总头数','假设腿数','假设总量','实际总量','小格总数','每行点数','每行块数','每行数量','每组数量','左边走法数','下边走法数','符合结果数','结果数','最小公倍数','保留比例','糖果总数','间隔数','标记数','较大数','较小数','追上时间','相遇时间','原距离差','总距离','相遇速度','每小时缩短量','平方差','年龄差','总差额','长宽','长高','宽高','边长','棱长','周长','表面积','面积','体积','横向','纵向','行数','列数','对象数','类别数','概率','总数','总和','总量','份数','个数','平均数','大数','小数','差额','人数','总人数','每人','每份','组数','点数','走法数','树数','棵数','腿数','乘数','因数','乘积','交集','并集','原价','现价','打九折','折后价','基数','部分量','百分率','百分比','路程','速度','时间','工作量','效率','首项','末项','公差','项数','项和','前 n 项和','内角和','n边形','一个解','模数','整数','余数','奇数','偶数','奇','偶','和','差','底','对应垂直高','垂直高','高','长','宽','第 1 项'
+    ].sort((a,b)=>b.length-a.length).map((value)=>value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|');
+    const cjkVariable = String.raw`(?:第\s*(?:\d+|n)\s*项|${labels})(?:\s*\d+)?`;
+    const unitValue = String.raw`\d+(?:\.\d+)?\s*(?:千米/小时|平方厘米|平方米|平方单位|立方厘米|立方单位|千米|厘米|小时|分钟|秒|元|角|米|个|只|人|棵|颗|段|步)`;
+    const body = String.raw`(?:\d+(?:\.\d+)?[A-Za-z□][A-Za-z0-9□₀-₉⁰¹²³⁴⁵⁶⁷⁸⁹ₐ-ₜⁿ]*|[A-Za-z□][A-Za-z0-9□₀-₉⁰¹²³⁴⁵⁶⁷⁸⁹ₐ-ₜⁿ]*|${unitValue}|√\d+(?:\.\d+)?|${cjkVariable}|\d+(?:\.\d+)?)`;
+    const term = String.raw`[+\-−]?${body}(?:[⁰¹²³⁴⁵⁶⁷⁸⁹ⁿ])?(?:%|°)?`;
+    const operator = String.raw`[+\-−×÷*/=<>≤≥≠≡∣±≈∈∉∪∩^:]`;
+    const group = String.raw`\(${term}(?:(?:\s*${operator}\s*|\s*[,，、]\s*)${term})+\)`;
+    const numericGroup = String.raw`\([+\-−]?\d+(?:\.\d+)?\)`;
+    const atom = String.raw`(?:${group}|${numericGroup}|${term})`;
+    const chain = String.raw`${atom}(?:\s*${operator}\s*${atom}|${group})+`;
+    const standalone = String.raw`(?:√\d+(?:\.\d+)?|\d+(?:\.\d+)?(?:[A-Za-z□][A-Za-z0-9□₀-₉⁰¹²³⁴⁵⁶⁷⁸⁹ₐ-ₜⁿ]*|[⁰¹²³⁴⁵⁶⁷⁸⁹ⁿ]+|[%°])|[A-Za-z][A-Za-z0-9₀-₉ⁿₐ-ₜ]*[⁰¹²³⁴⁵⁶⁷⁸⁹ₐ-ₜ₀-₉])`;
+    return String.raw`(?:${chain}(?:\s*[,，、;；]\s*${chain})*|${standalone})`;
+  })();
+  const richSpan = (math, text) => `<span class="bc-rich-line ${math ? 'bc-rich-math' : 'bc-rich-prose'}"${math ? ' role="math"' : ''}>${esc(text)}</span>`;
+  const renderRichPart = (part) => {
+    const text = standardizeMathSymbols(part);
+    const matches = [...text.matchAll(new RegExp(mathExpressionSource, 'gu'))];
+    if (!matches.length) {
+      const math = mathPattern.test(text) && !/[\u3400-\u9fff]/u.test(text);
+      return richSpan(math, text);
+    }
+    let html = '';
+    let cursor = 0;
+    matches.forEach((match, index) => {
+      if (match.index > cursor) html += richSpan(false, text.slice(cursor, match.index));
+      let end = match.index + match[0].length;
+      let formula = match[0];
+      const suffix = text.slice(end);
+      const punctuation = suffix.match(/^\s*[，、；：。？！?！]+/u)?.[0] || '';
+      if (punctuation) {
+        formula += punctuation;
+        end += punctuation.length;
+      }
+      html += richSpan(true, formula);
+      cursor = end;
+    });
+    if (cursor < text.length) html += richSpan(false, text.slice(cursor));
+    return html;
+  };
+  const renderRichText = (value) => String(value ?? '').split(/(?<=[。；：])/u).filter(Boolean).map(renderRichPart).join('');
+  const renderFormulaLines = (value) => String(value ?? '').split(/[；;]/u).filter(Boolean).map((part) => {
+    const text = standardizeMathSymbols(part.trim());
+    const isEquation = mathPattern.test(text) || text.includes('/');
+    return isEquation ? richSpan(true, text) : renderRichText(text);
+  }).join('');
+  const setRichText = (element, value) => { if (element) element.innerHTML = renderRichText(value); };
+  const normalize = (value) => String(value ?? '').normalize('NFKC').toLowerCase()
+    .replace(/[−–—]/g, '-').replace(/\*/g, '×')
+    .replace(/^[，,。.!！?？]+|[，,。.!！?？]+$/g, '')
+    .replace(/\s*([/+×÷=<>≤≥≠+\-])\s*/g, '$1').replace(/\s+/g, ' ').trim();
+  const parseRational = (value) => {
+    const text = String(value ?? '').normalize('NFKC').replace(/[−–—]/g, '-').trim().replace(/^[，,。.!！?？]+|[，,。.!！?？]+$/g, '').replace(/\s*\/\s*/g, '/').trim();
+    if (text.length > 100) return null;
+    const fraction = (numerator, denominator) => {
+      let n = BigInt(numerator);
+      let d = BigInt(denominator);
+      if (d === 0n) return null;
+      if (d < 0n) { n = -n; d = -d; }
+      return {n, d};
+    };
+    let match = text.match(/^([+-]?\d+)(?:\s+|又)(\d+)\/(\d+)$/);
+    if (match) {
+      const sign = match[1].startsWith('-') ? -1n : 1n;
+      const whole = BigInt(match[1].replace(/^[+-]/, ''));
+      return fraction(sign * (whole * BigInt(match[3]) + BigInt(match[2])), match[3]);
+    }
+    match = text.match(/^([+-]?\d+)\/([+-]?\d+)$/);
+    if (match) return fraction(match[1], match[2]);
+    match = text.match(/^([+-]?)(?:(\d+)(?:\.(\d*))?|\.(\d+))$/);
+    if (match) {
+      const sign = match[1] === '-' ? -1n : 1n;
+      const whole = match[2] || '0';
+      const decimals = match[3] ?? match[4] ?? '';
+      return fraction(sign * BigInt(`${whole}${decimals}`), 10n ** BigInt(decimals.length));
+    }
+    return null;
+  };
+  const looksNumeric = (value) => {
+    const text = String(value ?? '').normalize('NFKC').replace(/[−–—]/g, '-').trim().replace(/^[，,。.!！?？]+|[，,。.!！?？]+$/g, '').replace(/又\s+/g, '又').replace(/\s*\/\s*/g, '/');
+    return /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:(?:\s+|又)\d+\/[+-]?\d+|\/[+-]?\d+)?$/.test(text);
+  };
+  const answersMatch = (expected, actual) => {
+    const a = parseRational(expected);
+    const b = parseRational(actual);
+    if (a || b) return Boolean(a && b && a.n * b.d === b.n * a.d);
+    if (looksNumeric(expected) || looksNumeric(actual)) return false;
+    return normalize(expected) === normalize(actual);
+  };
   const curriculum = window.AOSHU_CURRICULUM || [];
   const id = new URLSearchParams(location.search).get('branch') || 'arithmetic';
   const branch = curriculum.find((item) => item.id === id);
@@ -119,7 +232,18 @@
 
   const progressKey = 'siwei-curriculum-mastery-v1';
   let progress = {};
-  try { progress = JSON.parse(localStorage.getItem(progressKey) || '{}') || {}; } catch { progress = {}; }
+  let progressStorageAvailable = true;
+  let progressReadIssue = false;
+  let reviewReadIssue = false;
+  let storedProgressRaw = null;
+  try { storedProgressRaw = localStorage.getItem(progressKey); } catch { progressStorageAvailable = false; }
+  if (storedProgressRaw !== null) {
+    try {
+      const parsed = JSON.parse(storedProgressRaw);
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) progress = parsed;
+      else progressReadIssue = true;
+    } catch { progressReadIssue = true; }
+  }
   const escapeId = (value) => String(value).replace(/[^a-zA-Z0-9_-]/g, '-');
   const methodSteps = methods[branch.id] || methods.arithmetic;
   document.title = `${branch.title}：逐点讲解、互动与速查｜思维树屋`;
@@ -140,6 +264,31 @@
     const mastered = branch.lessons.filter((lesson) => progress[lesson.id]?.done).length;
     document.getElementById('bc-progress-count').textContent = `${mastered} / ${branch.lessons.length}`;
     document.getElementById('bc-progress-fill').style.width = `${mastered / branch.lessons.length * 100}%`;
+    const status = document.querySelector('.bc-progress small');
+    if (status) {
+      status.setAttribute('aria-live', 'polite');
+      status.textContent = !progressStorageAvailable
+        ? '当前浏览器不能保存学习进度；练习可以继续，刷新后可能清零。'
+        : progressReadIssue || reviewReadIssue
+          ? '发现无法读取的旧进度；答题时会尝试先备份旧记录，再保存新进度。'
+          : '学习进度保存在当前浏览器';
+    }
+  }
+  function saveProgress() {
+    try {
+      if (progressReadIssue && storedProgressRaw !== null) {
+        const recoveryKey = `${progressKey}:recovery`;
+        if (localStorage.getItem(recoveryKey) === null) localStorage.setItem(recoveryKey, storedProgressRaw);
+      }
+      storedProgressRaw = JSON.stringify(progress);
+      localStorage.setItem(progressKey, storedProgressRaw);
+      progressReadIssue = false;
+      progressStorageAvailable = true;
+      return true;
+    } catch {
+      progressStorageAvailable = false;
+      return false;
+    }
   }
   function renderMap() {
     document.getElementById('bc-map-grid').innerHTML = branch.lessons.map((lesson, i) => {
@@ -153,38 +302,64 @@
     const safeId = escapeId(lesson.id);
     const inputId = `bc-ans-${safeId}-${index}`;
     const feedback = passed ? '这题已答对，可以继续或复习。' : '';
-    return `<div class="bc-question"><label for="${inputId}"><i>${index + 1}</i><span>${esc(q.q)}</span></label><div class="bc-answer-row"><input id="${inputId}" type="text" inputmode="decimal" autocomplete="off" placeholder="填答案"><button type="button" data-bc-check="${safeId}" data-index="${index}">检查</button></div><p class="bc-answer-feedback${passed ? ' good' : ''}" aria-live="polite">${feedback}</p><details class="bc-solution"><summary>看提示与完整推理</summary><p><b>提示：</b>${esc(q.hint)}</p><p><b>讲解：</b>${esc(q.why)}</p></details></div>`;
+    const answerValues = Array.isArray(q.a) ? q.a : [q.a];
+    const decimalOnly = answerValues.length > 0 && answerValues.every((answer) => /^[+−-]?(?:\d+(?:\.\d*)?|\.\d+)$/u.test(String(answer ?? '').trim()));
+    const placeholder = answerValues.some((answer) => String(answer ?? '').includes('/')) ? '例如 5/8' : '填答案';
+    return `<div class="bc-question"><label for="${inputId}"><i>${index + 1}</i><span class="bc-question-copy">${renderRichText(q.q)}</span></label><div class="bc-answer-row"><input id="${inputId}" type="text" inputmode="${decimalOnly ? 'decimal' : 'text'}" autocomplete="off" placeholder="${placeholder}"><button type="button" data-bc-check="${safeId}" data-index="${index}">检查</button></div><p class="bc-answer-feedback${passed ? ' good' : ''}" aria-live="polite">${feedback}</p><details class="bc-solution"><summary>看提示与完整推理</summary><p><b>提示：</b>${renderRichText(q.hint)}</p><p><b>讲解：</b>${renderRichText(q.why)}</p></details></div>`;
   }
   function renderLessons() {
     document.getElementById('bc-lesson-stack').innerHTML = branch.lessons.map((lesson, i) => {
       const passed = new Set(progress[lesson.id]?.passed || []);
       const glossary = language[lesson.id] || [lesson.title, '抓住题目给出的条件，再选对应方法。'];
       const formula = formulas[lesson.id] || [lesson.title, lesson.concept];
+      const formulaBox = `<div class="bc-lesson-formula" aria-label="${esc(lesson.title)}的公式与关键方法"><span class="bc-formula-label">本课公式 / 关键方法</span><div class=\"bc-formula-lines\">${renderFormulaLines(formula[0])}</div><div class="bc-formula-support">${renderRichText(formula[1])}</div></div>`;
       const deep = window.AOSHU_DEEP_LESSONS?.[lesson.id];
       const keyPreview = deep?.subtopics?.map((item) => item.name).join(' · ');
       const path = methodSteps.map((step) => step[0]);
       const practice = lesson.practice.map((q, index) => renderQuestion(lesson, q, index, passed.has(index))).join('');
-      const source = lesson.source ? `<span class="bc-pill source">${esc(lesson.source)} · 已整合</span>` : '';
-      const subtopics = (deep?.subtopics || []).map((item, j) => `<article class="bc-subtopic"><span>${String(j + 1).padStart(2, '0')}</span><div><b>${esc(item.name)}</b><p>${esc(item.explanation)}</p></div></article>`).join('');
+      const source = lesson.source ? `<span class="bc-pill source">${esc(lesson.source)} · 版本/页码待核，不表示逐讲对应</span>` : '';
+      const subtopics = (deep?.subtopics || []).map((item, j) => `<article class="bc-subtopic"><span>${String(j + 1).padStart(2, '0')}</span><div><b>${esc(item.name)}</b><p>${renderRichText(item.explanation)}</p></div></article>`).join('');
       const flow = (deep?.flow || []).map((item, j) => `<span class="bc-flow-node"><i>${j + 1}</i><b>${esc(item)}</b></span>`).join('');
-      const worked = (deep?.steps || []).map((item, j) => `<li><i>${j + 1}</i><div><b>${esc(item.title)}</b><p>${esc(item.explanation)}</p></div></li>`).join('');
-      const deepGuide = deep ? `<section class="bc-deep-guide" aria-label="${esc(lesson.title)}的详细讲解"><div class="bc-deep-head"><span>本课关键知识点</span><small>讲清楚 · 再记住</small></div><div class="bc-deep-idea"><b>先用一句话听懂</b><p>${esc(deep.idea)}</p></div><div class="bc-subtopics"><h4>把知识点拆开看</h4><div class="bc-subtopic-grid">${subtopics}</div></div><div class="bc-flow-wrap"><h4>思考路线图</h4><div class="bc-deep-flow" role="img" aria-label="${esc(deep.flow.join('，然后'))}">${flow}</div></div></section>` : '';
-      const exampleSteps = worked ? `<ol class="bc-worked-steps">${worked}</ol>` : `<p class="bc-example-solution"><b>推理：</b>${esc(lesson.example.solution)}</p>`;
-      const why = deep ? `<div class="bc-why-check"><p><b>为什么这样做有效？</b>${esc(deep.why)}</p><p><b>学完停一下：</b>${esc(deep.check)}</p></div>` : '';
-      return `<details class="bc-lesson" id="${lessonId(lesson)}" data-lesson="${escapeId(lesson.id)}"${i === 0 ? ' open' : ''}><summary><span class="bc-lesson-number">${String(i + 1).padStart(2, '0')}</span><span class="bc-lesson-title"><small>${esc(lesson.level)} · 知识点 ${i + 1} / ${branch.lessons.length}</small><b>${esc(lesson.title)}</b>${keyPreview ? `<small class="bc-lesson-key-preview">重点：${esc(keyPreview)}</small>` : ''}</span><span class="bc-lesson-status">${progress[lesson.id]?.done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="bc-lesson-chevron" aria-hidden="true">＋</span></summary><div class="bc-lesson-body"><div class="bc-lesson-meta"><span class="bc-pill">关键词：${esc(glossary[0].split('·')[0].trim())}</span>${source}<span class="bc-pill">本课 3 道自测</span></div><div class="bc-concept-box"><span class="bc-section-label">先听懂 · 不只记答案</span><p>${esc(lesson.concept)}</p><div class="bc-language-row"><b>${esc(glossary[0].split('·')[0].trim())}</b><span>${esc(glossary[1])}</span></div></div>${deepGuide}<div class="bc-path-box"><b>本分支通用的解题检查步骤</b><ol>${path.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></div><div class="bc-example-box"><span class="bc-section-label">老师示范 · 跟着线索一步步做</span><h4>${esc(lesson.example.q)}</h4>${exampleSteps}</div>${why}<div class="bc-trap"><strong>易错提醒</strong><span>${esc(pitfalls[lesson.id] || '每做完一步，都回到题目条件检查一次。')}</span></div><div class="bc-practice"><div class="bc-practice-top"><div><span class="bc-section-label">轮到你了 · 先想再检查</span><h4>三道自测：练方法，也讲理由</h4></div><span class="bc-practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${practice}</div><div class="bc-lesson-tools"><a href="#bc-lab" data-open-lab="${escapeId(lesson.id)}">去互动实验台试一试 →</a><a href="#bc-formulas">查本课速查卡 ↑</a></div></div></details>`;
+      const worked = (deep?.steps || []).map((item, j) => `<li><i>${j + 1}</i><div><b>${esc(item.title)}</b><p>${renderRichText(item.explanation)}</p></div></li>`).join('');
+      const deepGuide = deep ? `<section class="bc-deep-guide" aria-label="${esc(lesson.title)}的详细讲解"><div class="bc-deep-head"><span>本课关键知识点</span><small>讲清楚 · 再记住</small></div><div class="bc-deep-idea"><b>先用一句话听懂</b><p>${renderRichText(deep.idea)}</p></div><div class="bc-subtopics"><h4>把知识点拆开看</h4><div class="bc-subtopic-grid">${subtopics}</div></div><div class="bc-flow-wrap"><h4>思考路线图</h4><div class="bc-deep-flow" role="img" aria-label="${esc(deep.flow.join('，然后'))}">${flow}</div></div></section>` : '';
+      const exampleSteps = worked ? `<ol class="bc-worked-steps">${worked}</ol>` : `<div class="bc-example-solution"><b>推理：</b>${renderRichText(lesson.example.solution)}</div>`;
+      const why = deep ? `<div class="bc-why-check"><p><b>为什么这样做有效？</b>${renderRichText(deep.why)}</p><p><b>学完停一下：</b>${renderRichText(deep.check)}</p></div>` : '';
+      return `<details class="bc-lesson" id="${lessonId(lesson)}" data-lesson="${escapeId(lesson.id)}"${i === 0 ? ' open' : ''}><summary><span class="bc-lesson-number">${String(i + 1).padStart(2, '0')}</span><span class="bc-lesson-title"><small>${esc(lesson.level)} · 知识点 ${i + 1} / ${branch.lessons.length}</small><b>${esc(lesson.title)}</b>${keyPreview ? `<small class="bc-lesson-key-preview">重点：${esc(keyPreview)}</small>` : ''}</span><span class="bc-lesson-status">${progress[lesson.id]?.done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="bc-lesson-chevron" aria-hidden="true">＋</span></summary><div class="bc-lesson-body"><div class="bc-lesson-meta"><span class="bc-pill">关键词：${esc(glossary[0].split('·')[0].trim())}</span>${source}<span class="bc-pill">本课 3 道自测</span></div><div class="bc-concept-box"><span class="bc-section-label">先听懂 · 不只记答案</span><div class="bc-concept-text">${renderRichText(lesson.concept)}</div><div class="bc-language-row"><b>${esc(glossary[0].split('·')[0].trim())}</b><span>${esc(glossary[1])}</span></div></div>${formulaBox}${deepGuide}<div class="bc-path-box"><b>本分支通用的解题检查步骤</b><ol>${path.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></div><div class="bc-example-box"><span class="bc-section-label">老师示范 · 跟着线索一步步做</span><h4>${esc(lesson.example.q)}</h4>${exampleSteps}</div>${why}<div class="bc-trap"><strong>易错提醒</strong><span>${esc(pitfalls[lesson.id] || '每做完一步，都回到题目条件检查一次。')}</span></div><div class="bc-practice"><div class="bc-practice-top"><div><span class="bc-section-label">轮到你了 · 先想再检查</span><h4>三道自测：练方法，也讲理由</h4></div><span class="bc-practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${practice}</div><div class="bc-lesson-tools"><a href="#bc-lab" data-open-lab="${escapeId(lesson.id)}">去互动实验台试一试 →</a><a href="#bc-formulas">查本课速查卡 ↑</a></div></div></details>`;
     }).join('');
   }
   function renderFormulas() {
     document.getElementById('bc-formula-grid').innerHTML = branch.lessons.map((lesson, i) => {
       const card = formulas[lesson.id] || [lesson.title, lesson.concept];
-      return `<article class="bc-formula-card"><a href="#${lessonId(lesson)}">${String(i + 1).padStart(2, '0')} · ${esc(lesson.title)} ↗</a><code>${esc(card[0])}</code><p>${esc(card[1])}</p></article>`;
+      return `<article class="bc-formula-card"><a href="#${lessonId(lesson)}">${String(i + 1).padStart(2, '0')} · ${esc(lesson.title)} ↗</a><div class=\"bc-formula-lines\">${renderFormulaLines(card[0])}</div><div class="bc-formula-support">${renderRichText(card[1])}</div></article>`;
     }).join('');
   }
   function renderReview() {
     const allQuestions = branch.lessons.flatMap((lesson) => lesson.practice.map((q, index) => ({lesson, q, index})));
     const chosen = Array.from({length:6}, (_, i) => allQuestions[Math.round(i * (allQuestions.length - 1) / 5)]);
-    document.getElementById('bc-review-grid').innerHTML = chosen.map(({lesson, q, index}, i) => `<article class="bc-review-card" data-review="${i}"><small>${esc(lesson.title)} · 回顾 ${i + 1}/6</small><label for="bc-review-${i}">${esc(q.q)}</label><div class="bc-answer-row"><input id="bc-review-${i}" type="text" autocomplete="off" placeholder="填答案"><button type="button" data-bc-review="${i}">检查</button></div><p class="bc-answer-feedback" aria-live="polite"></p><details class="bc-solution"><summary>提示与完整讲解</summary><p><b>提示：</b>${esc(q.hint)}</p><p><b>讲解：</b>${esc(q.why)}</p></details></article>`).join('');
+    document.getElementById('bc-review-grid').innerHTML = chosen.map(({lesson, q, index}, i) => `<article class="bc-review-card" data-review="${i}"><small>${esc(lesson.title)} · 回顾 ${i + 1}/6</small><label for="bc-review-${i}">${renderRichText(q.q)}</label><div class="bc-answer-row"><input id="bc-review-${i}" type="text" autocomplete="off" placeholder="填答案"><button type="button" data-bc-review="${i}">检查</button></div><p class="bc-answer-feedback" aria-live="polite"></p><details class="bc-solution"><summary>提示与完整讲解</summary><p><b>提示：</b>${renderRichText(q.hint)}</p><p><b>讲解：</b>${renderRichText(q.why)}</p></details></article>`).join('');
+    const reviewKey = `siwei-branch-review-${branch.id}-v1`;
+    let reviewRaw = null;
     const passed = new Set();
+    try { reviewRaw = localStorage.getItem(reviewKey); } catch { reviewReadIssue = true; progressStorageAvailable = false; }
+    if (reviewRaw !== null) {
+      try {
+        const saved = JSON.parse(reviewRaw);
+        if (Array.isArray(saved)) saved.filter((i) => Number.isInteger(i) && i >= 0 && i < chosen.length).forEach((i) => passed.add(i));
+        else reviewReadIssue = true;
+      } catch { reviewReadIssue = true; }
+    }
+    function saveReview() {
+      try {
+        if (reviewReadIssue && reviewRaw !== null) {
+          const recoveryKey = `${reviewKey}:recovery`;
+          if (localStorage.getItem(recoveryKey) === null) localStorage.setItem(recoveryKey, reviewRaw);
+        }
+        reviewRaw = JSON.stringify([...passed].sort((a,b) => a-b));
+        localStorage.setItem(reviewKey, reviewRaw);
+        reviewReadIssue = false;
+        updateProgress();
+      } catch { progressStorageAvailable = false; }
+    }
     function updateReview() {
       document.getElementById('bc-review-progress').textContent = `答对 ${passed.size} / 6`;
       document.getElementById('bc-review-finish').hidden = passed.size !== 6;
@@ -196,8 +371,8 @@
       const input = card.querySelector('input');
       const feedback = card.querySelector('.bc-answer-feedback');
       if (!input.value.trim()) { feedback.textContent = `先试一试；需要线索可以展开提示：${record.q.hint}`; feedback.classList.remove('good'); input.focus(); return; }
-      const correct = (record.q.a || []).some((answer) => normalize(answer) === normalize(input.value));
-      if (correct) { passed.add(i); feedback.textContent = '答对了！想一想你用的是哪个知识点。'; feedback.classList.add('good'); }
+      const correct = (record.q.a || []).some((answer) => answersMatch(answer, input.value));
+      if (correct) { passed.add(i); saveReview(); feedback.textContent = '答对了！想一想你用的是哪个知识点。'; feedback.classList.add('good'); }
       else { feedback.textContent = `还差一点。提示：${record.q.hint}`; feedback.classList.remove('good'); }
       updateReview();
     }));
@@ -212,7 +387,7 @@
       applications:{lead:'拖动“兔子”的数量，看相同头数下腿数如何增加；这就是假设法里的差量。',html:`<div class="bc-lab-controls"><p><b>鸡兔同笼实验：</b>先把所有动物假设成鸡，每多换一只兔，就多 2 条腿。</p><label class="bc-control-row" for="bc-heads">动物总数 <input id="bc-heads" type="range" min="3" max="12" value="8"><output id="bc-heads-out">8</output></label><label class="bc-control-row" for="bc-rabbits">兔子数量 <input id="bc-rabbits" type="range" min="0" max="8" value="3"><output id="bc-rabbits-out">3</output></label><div class="bc-lab-foot">每把一只鸡换成兔：头数不变，腿数增加 2。你可以试试全是鸡、全是兔和中间值。</div></div><div class="bc-lab-visual"><h3>头数固定，腿数跟着兔子数变化</h3><div class="bc-animal-row" id="bc-animal-row" aria-live="polite"></div><p id="bc-animal-explain"></p><div class="bc-live-result" id="bc-animal-result"></div></div>`},
       geometry:{lead:'调整长方形的长和宽，让面积和周长同时显示；观察边长改变时，两个量如何不同。',html:`<div class="bc-lab-controls"><p><b>周长与面积实验：</b>长是横边，宽是竖边。周长绕一圈，面积铺满里面。</p><label class="bc-control-row" for="bc-rect-length">长 <input id="bc-rect-length" type="range" min="3" max="15" value="9"><output id="bc-rect-length-out">9</output></label><label class="bc-control-row" for="bc-rect-width">宽 <input id="bc-rect-width" type="range" min="2" max="10" value="5"><output id="bc-rect-width-out">5</output></label><div class="bc-lab-foot">可以让长和宽互换：面积一样，但图形方向会转过来。</div></div><div class="bc-lab-visual"><h3>矩形的边与内部</h3><svg class="bc-rect-svg" viewBox="0 0 320 190" role="img" aria-label="长方形的长宽示意图"><rect id="bc-rect-shape" x="42" y="28" width="220" height="110" rx="8" fill="#dfeede" stroke="#6e9a76" stroke-width="3"/><text id="bc-rect-label-x" x="152" y="164" text-anchor="middle" fill="#4f7357" font-size="13">长 9</text><text id="bc-rect-label-y" x="287" y="90" text-anchor="middle" fill="#4f7357" font-size="13">宽 5</text><text id="bc-rect-center" x="152" y="91" text-anchor="middle" fill="#4b7353" font-size="15">铺满里面</text></svg><div class="bc-live-result" id="bc-rect-result"></div></div>`},
       counting:{lead:'改变网格的横步和竖步，表格里的数字按“从左边来 + 从下边来”累加。',html:`<div class="bc-lab-controls"><p><b>最短路线实验：</b>只能向右或向上。到一个格点的走法数，等于它前面两个方向的走法数相加。</p><label class="bc-control-row" for="bc-path-right">向右几步 <input id="bc-path-right" type="range" min="1" max="5" value="3"><output id="bc-path-right-out">3</output></label><label class="bc-control-row" for="bc-path-up">向上几步 <input id="bc-path-up" type="range" min="1" max="5" value="2"><output id="bc-path-up-out">2</output></label><div class="bc-lab-foot">从起点出发，先在边缘标 1，再把里面的格点按两边相加填满。</div></div><div class="bc-lab-visual"><h3>格点路线数（数字越大，走法越多）</h3><div id="bc-path-table" class="bc-path-table" aria-live="polite"></div><div class="bc-live-result" id="bc-path-result"></div></div>`},
-      algebra:{lead:'先设出一个数，再看等式两边怎样保持平衡；试着输入自己的答案，并和真正解比较。',html:`<div class="bc-lab-controls"><p><b>天平方程实验：</b>方程两边像天平两端。两边做同一种运算，平衡关系不会变。</p><label class="bc-control-row" for="bc-eq-a">x 前面的数 a <input id="bc-eq-a" type="range" min="1" max="8" value="3"><output id="bc-eq-a-out">3</output></label><label class="bc-control-row" for="bc-eq-b">再加 b <input id="bc-eq-b" type="range" min="0" max="12" value="4"><output id="bc-eq-b-out">4</output></label><label class="bc-control-row" for="bc-eq-x">秘密答案 x <input id="bc-eq-x" type="range" min="0" max="12" value="5"><output id="bc-eq-x-out">5</output></label><label class="bc-control-row" for="bc-eq-guess">你的猜测 <input id="bc-eq-guess" type="number" min="0" max="24" value="5"></label><div class="bc-lab-foot">观察：a×x+b=c；解方程时先两边减 b，再两边除以 a。</div></div><div class="bc-lab-visual"><h3>等式天平</h3><div class="bc-balance"><div class="bc-balance-side" id="bc-balance-left"><b>左边</b><strong id="bc-balance-left-value">19</strong></div><div class="bc-balance-side" id="bc-balance-right"><b>右边</b><strong id="bc-balance-right-value">19</strong></div></div><p id="bc-eq-expression"></p><div class="bc-live-result" id="bc-eq-result" aria-live="polite"></div></div>`},
+      algebra:{lead:'先设出一个数，再看等式两边怎样保持平衡；试着输入自己的答案，并和真正解比较。',html:`<div class="bc-lab-controls"><p><b>天平方程实验：</b>方程两边像天平两端。两边做同一种运算，平衡关系不会变。</p><label class="bc-control-row" for="bc-eq-a">x 前面的数 a <input id="bc-eq-a" type="range" min="1" max="8" value="3"><output id="bc-eq-a-out">3</output></label><label class="bc-control-row" for="bc-eq-b">再加 b <input id="bc-eq-b" type="range" min="0" max="12" value="4"><output id="bc-eq-b-out">4</output></label><label class="bc-control-row" for="bc-eq-x">秘密答案 x <input id="bc-eq-x" type="range" min="0" max="12" value="5"><output id="bc-eq-x-out">5</output></label><label class="bc-control-row" for="bc-eq-guess">你的猜测 <input id="bc-eq-guess" type="number" min="0" max="24" value="5"></label><div class="bc-lab-foot">${renderRichText('观察：a×x+b=c；解方程时先两边减 b，再两边除以 a。')}</div></div><div class="bc-lab-visual"><h3>等式天平</h3><div class="bc-balance"><div class="bc-balance-side" id="bc-balance-left"><b>左边</b><strong id="bc-balance-left-value">19</strong></div><div class="bc-balance-side" id="bc-balance-right"><b>右边</b><strong id="bc-balance-right-value">19</strong></div></div><p id="bc-eq-expression"></p><div class="bc-live-result" id="bc-eq-result" aria-live="polite"></div></div>`},
       logic:{lead:'点“下一步”，看线索怎样逐个排除不可能，再检查答案是否同时满足全部条件。',html:`<div class="bc-lab-controls"><p><b>三人住楼实验：</b>甲、乙、丙分别住 1、2、3 楼；甲不住 1 楼，乙住 3 楼。试着自己说出丙在哪一层。</p><div class="bc-logic-board" id="bc-logic-board"><div class="bc-logic-stage active" data-stage="0"><b>线索 1：</b>乙住 3 楼，所以甲和丙不住 3 楼。</div><div class="bc-logic-stage" data-stage="1"><b>线索 2：</b>甲不住 1 楼；3 楼已给乙，所以甲只能住 2 楼。</div><div class="bc-logic-stage" data-stage="2"><b>推出：</b>剩下的 1 楼归丙。</div><div class="bc-logic-stage" data-stage="3"><b>复核：</b>甲 2 楼、乙 3 楼、丙 1 楼，各不相同并满足所有条件。</div></div><div class="bc-control-row"><span id="bc-logic-counter">第 1 / 4 步</span><button class="bc-lab-button" type="button" id="bc-logic-next">看下一步</button></div></div><div class="bc-lab-visual"><h3>条件推理不是猜楼层</h3><div class="bc-live-result" id="bc-logic-result" aria-live="polite">先记住：每个人只住一层，每层也只住一个人。</div><p>推理的关键是逐条用条件排除，最后再回到题目检查，不是凭直觉挑一个答案。</p></div>`}
     };
     const lab = labs[branch.id] || labs.arithmetic;
@@ -221,20 +396,31 @@
 
     if (branch.id === 'arithmetic') {
       const total = document.getElementById('bc-ratio-total'); const a = document.getElementById('bc-ratio-a'); const b = document.getElementById('bc-ratio-b');
-      const draw = () => { const t=Number(total.value), x=Number(a.value), y=Number(b.value), unit=t/(x+y), first=unit*x, second=t-first; document.getElementById('bc-ratio-total-out').textContent=t; document.getElementById('bc-ratio-a-out').textContent=x; document.getElementById('bc-ratio-b-out').textContent=y; document.getElementById('bc-ratio-track').innerHTML=`<span style="width:${first/t*100}%">${first}</span><span style="width:${second/t*100}%">${second}</span>`; document.getElementById('bc-ratio-explain').textContent=`${t} 按 ${x}:${y} 分，一共 ${x+y} 份；每份 ${unit}。`; document.getElementById('bc-ratio-result').textContent=`第一份 ${first}，第二份 ${second}。验算：${first}+${second}=${t}。`; };
+      const gcd = (n, d) => { while (d) { const remainder = n % d; n = d; d = remainder; } return n; };
+      const exactFraction = (n, d) => { const common = gcd(n, d); const numerator = n / common; const denominator = d / common; return denominator === 1 ? String(numerator) : `${numerator}/${denominator}`; };
+      const draw = () => {
+        const t = Number(total.value), x = Number(a.value), y = Number(b.value), parts = x + y;
+        const unit = exactFraction(t, parts), first = exactFraction(t * x, parts), second = exactFraction(t * y, parts);
+        document.getElementById('bc-ratio-total-out').textContent = t;
+        document.getElementById('bc-ratio-a-out').textContent = x;
+        document.getElementById('bc-ratio-b-out').textContent = y;
+        document.getElementById('bc-ratio-track').innerHTML = `<span style="width:${x / parts * 100}%">${first}</span><span style="width:${y / parts * 100}%">${second}</span>`;
+        document.getElementById('bc-ratio-explain').textContent = `${t} 按 ${x}:${y} 分，一共 ${parts} 份；每份 ${unit}（最简分数表示）。`;
+        setRichText(document.getElementById('bc-ratio-result'), `第一份 ${first}，第二份 ${second}。验算：${first} + ${second} = ${t}。`);
+      };
       [total,a,b].forEach((el)=>el.addEventListener('input',draw)); draw();
     } else if (branch.id === 'applications') {
       const heads=document.getElementById('bc-heads'), rabbits=document.getElementById('bc-rabbits');
-      const draw=()=>{const h=Number(heads.value); rabbits.max=h; const r=Math.min(Number(rabbits.value),h); rabbits.value=r; const legs=2*h+2*r; document.getElementById('bc-heads-out').textContent=h; document.getElementById('bc-rabbits-out').textContent=r; document.getElementById('bc-animal-row').innerHTML=`${'🐔'.repeat(h-r)}${'🐰'.repeat(r)}`; document.getElementById('bc-animal-explain').textContent=`先假设 ${h} 个头全是鸡：${h}×2=${2*h} 条腿。每换一只兔，多 2 条腿。`; document.getElementById('bc-animal-result').textContent=`现在有 ${r} 只兔，腿数 = ${h}×2 + ${r}×2 = ${legs} 条。`;}; [heads,rabbits].forEach((el)=>el.addEventListener('input',draw)); draw();
+      const draw=()=>{const h=Number(heads.value); rabbits.max=h; const r=Math.min(Number(rabbits.value),h); rabbits.value=r; const legs=2*h+2*r; document.getElementById('bc-heads-out').textContent=h; document.getElementById('bc-rabbits-out').textContent=r; document.getElementById('bc-animal-row').innerHTML=`${'🐔'.repeat(h-r)}${'🐰'.repeat(r)}`; setRichText(document.getElementById('bc-animal-explain'),`先假设 ${h} 个头全是鸡：${h} × 2 = ${2*h} 条腿。每换一只兔，多 2 条腿。`); setRichText(document.getElementById('bc-animal-result'),`现在有 ${r} 只兔，腿数 = ${h} × 2 + ${r} × 2 = ${legs} 条。`);}; [heads,rabbits].forEach((el)=>el.addEventListener('input',draw)); draw();
     } else if (branch.id === 'geometry') {
       const length=document.getElementById('bc-rect-length'), width=document.getElementById('bc-rect-width');
-      const draw=()=>{const l=Number(length.value),w=Number(width.value),svgW=220,svgH=110,max=15,ww=svgW*l/max,hh=svgH*w/max; document.getElementById('bc-rect-length-out').textContent=l;document.getElementById('bc-rect-width-out').textContent=w;const shape=document.getElementById('bc-rect-shape');shape.setAttribute('width',ww);shape.setAttribute('height',hh);shape.setAttribute('x',(320-ww)/2);shape.setAttribute('y',(160-hh)/2);document.getElementById('bc-rect-label-x').textContent=`长 ${l}`;document.getElementById('bc-rect-label-y').textContent=`宽 ${w}`;document.getElementById('bc-rect-center').setAttribute('x',160);document.getElementById('bc-rect-center').setAttribute('y',Math.max(24,(160-hh)/2+hh/2));document.getElementById('bc-rect-result').textContent=`周长 = 2×(${l}+${w}) = ${2*(l+w)}；面积 = ${l}×${w} = ${l*w} 平方单位。`;};[length,width].forEach((el)=>el.addEventListener('input',draw));draw();
+      const draw=()=>{const l=Number(length.value),w=Number(width.value),svgW=220,svgH=110,max=15,ww=svgW*l/max,hh=svgH*w/max; document.getElementById('bc-rect-length-out').textContent=l;document.getElementById('bc-rect-width-out').textContent=w;const shape=document.getElementById('bc-rect-shape');shape.setAttribute('width',ww);shape.setAttribute('height',hh);shape.setAttribute('x',(320-ww)/2);shape.setAttribute('y',(160-hh)/2);document.getElementById('bc-rect-label-x').textContent=`长 ${l}`;document.getElementById('bc-rect-label-y').textContent=`宽 ${w}`;document.getElementById('bc-rect-center').setAttribute('x',160);document.getElementById('bc-rect-center').setAttribute('y',Math.max(24,(160-hh)/2+hh/2));setRichText(document.getElementById('bc-rect-result'),`周长 = 2 × (${l} + ${w}) = ${2*(l+w)}；面积 = ${l} × ${w} = ${l*w} 平方单位。`);};[length,width].forEach((el)=>el.addEventListener('input',draw));draw();
     } else if (branch.id === 'counting') {
       const right=document.getElementById('bc-path-right'), up=document.getElementById('bc-path-up');
-      const draw=()=>{const r=Number(right.value),u=Number(up.value),dp=Array.from({length:u+1},()=>Array(r+1).fill(0));for(let y=0;y<=u;y++)for(let x=0;x<=r;x++)dp[y][x]=x===0&&y===0?1:(x?dp[y][x-1]:0)+(y?dp[y-1][x]:0);document.getElementById('bc-path-right-out').textContent=r;document.getElementById('bc-path-up-out').textContent=u;document.getElementById('bc-path-table').innerHTML=Array.from({length:u+1},(_,row)=>{const y=u-row;return `<div class="bc-path-row">${Array.from({length:r+1},(_,x)=>`<span class="bc-path-cell${x===0&&y===0?' start':''}${x===r&&y===u?' end':''}" title="到此格点有 ${dp[y][x]} 条路">${dp[y][x]}</span>`).join('')}</div>`;}).join('');document.getElementById('bc-path-result').textContent=`最短路线需要 ${r+u} 步：向右 ${r} 步、向上 ${u} 步，共 ${dp[u][r]} 条。每个格点都把左边和下边的走法相加。`;};[right,up].forEach((el)=>el.addEventListener('input',draw));draw();
+      const draw=()=>{const r=Number(right.value),u=Number(up.value),dp=Array.from({length:u+1},()=>Array(r+1).fill(0));for(let y=0;y<=u;y++)for(let x=0;x<=r;x++)dp[y][x]=x===0&&y===0?1:(x?dp[y][x-1]:0)+(y?dp[y-1][x]:0);document.getElementById('bc-path-right-out').textContent=r;document.getElementById('bc-path-up-out').textContent=u;document.getElementById('bc-path-table').innerHTML=Array.from({length:u+1},(_,row)=>{const y=u-row;return `<div class="bc-path-row">${Array.from({length:r+1},(_,x)=>`<span class="bc-path-cell${x===0&&y===0?' start':''}${x===r&&y===u?' end':''}" title="到此格点有 ${dp[y][x]} 条路">${dp[y][x]}</span>`).join('')}</div>`;}).join('');setRichText(document.getElementById('bc-path-result'),`最短路线需要 ${r+u} 步：向右 ${r} 步 + 向上 ${u} 步 = ${r+u} 步；共 ${dp[u][r]} 条。每个格点都把左边和下边的走法相加。`);};[right,up].forEach((el)=>el.addEventListener('input',draw));draw();
     } else if (branch.id === 'algebra') {
       const a=document.getElementById('bc-eq-a'),b=document.getElementById('bc-eq-b'),x=document.getElementById('bc-eq-x'),guess=document.getElementById('bc-eq-guess');
-      const draw=()=>{const av=Number(a.value),bv=Number(b.value),xv=Number(x.value),c=av*xv+bv,g=Number(guess.value||0),lhs=av*g+bv;document.getElementById('bc-eq-a-out').textContent=av;document.getElementById('bc-eq-b-out').textContent=bv;document.getElementById('bc-eq-x-out').textContent=xv;document.getElementById('bc-balance-left-value').textContent=lhs;document.getElementById('bc-balance-right-value').textContent=c;document.getElementById('bc-balance-left').classList.toggle('unbalanced',lhs!==c);document.getElementById('bc-eq-expression').textContent=`方程：${av}x + ${bv} = ${c}。先两边减 ${bv}，再除以 ${av}。`;document.getElementById('bc-eq-result').textContent=lhs===c?`猜对了：x=${xv}，等式两边都是 ${c}。`:`你的 x=${g} 时左边是 ${lhs}；真正的 x=${xv}，因为 (${c}−${bv})÷${av}=${xv}。`;};[a,b,x,guess].forEach((el)=>el.addEventListener('input',draw));draw();
+      const draw=()=>{const av=Number(a.value),bv=Number(b.value),xv=Number(x.value),c=av*xv+bv,g=Number(guess.value||0),lhs=av*g+bv;document.getElementById('bc-eq-a-out').textContent=av;document.getElementById('bc-eq-b-out').textContent=bv;document.getElementById('bc-eq-x-out').textContent=xv;document.getElementById('bc-balance-left-value').textContent=lhs;document.getElementById('bc-balance-right-value').textContent=c;document.getElementById('bc-balance-left').classList.toggle('unbalanced',lhs!==c);setRichText(document.getElementById('bc-eq-expression'),`方程：${av}x + ${bv} = ${c}。先两边减 ${bv}，再除以 ${av}。`);setRichText(document.getElementById('bc-eq-result'),lhs===c?`猜对了：x = ${xv}，等式两边都是 ${c}。`:`你的 x = ${g} 时左边是 ${lhs}；真正的 x = ${xv}，因为 (${c} − ${bv}) ÷ ${av} = ${xv}。`);};[a,b,x,guess].forEach((el)=>el.addEventListener('input',draw));draw();
     } else if (branch.id === 'logic') {
       let step=0;const show=()=>{document.querySelectorAll('.bc-logic-stage').forEach((el,i)=>{el.classList.toggle('done',i<step);el.classList.toggle('active',i===step);});document.getElementById('bc-logic-counter').textContent=`第 ${Math.min(step+1,4)} / 4 步`;document.getElementById('bc-logic-next').textContent=step>=4?'再看一次':'看下一步';document.getElementById('bc-logic-result').textContent=step===0?'先记住：每个人只住一层，每层也只住一个人。':step===1?'乙已经住 3 楼，因此 3 楼不能再给甲或丙。':step===2?'甲不能住 1 楼，也不能住 3 楼，所以甲住 2 楼。':step===3?'只剩下 1 楼，丙住 1 楼。': '答案：甲 2 楼、乙 3 楼、丙 1 楼；三人楼层不同，且甲不住 1 楼。';};document.getElementById('bc-logic-next').addEventListener('click',()=>{step=step>=4?0:step+1;show();});show();
     }
@@ -242,7 +428,7 @@
 
   document.getElementById('bc-lesson-stack').addEventListener('click',(event)=>{
     const button=event.target.closest('[data-bc-check]');
-    if(button){const rawId=button.dataset.bcCheck;const index=Number(button.dataset.index);const lesson=branch.lessons.find((item)=>escapeId(item.id)===rawId);const q=lesson?.practice[index];if(!q)return;const card=button.closest('.bc-question');const input=card.querySelector('input');const feedback=card.querySelector('.bc-answer-feedback');if(!input.value.trim()){feedback.textContent='先写一个答案；卡住时可以打开提示。';feedback.classList.remove('good');input.focus();return;}const correct=(q.a||[]).some((answer)=>normalize(answer)===normalize(input.value));if(correct){feedback.textContent='答对了！试着把用到的规律也讲出来。';feedback.classList.add('good');const passed=new Set(progress[lesson.id]?.passed||[]);passed.add(index);progress[lesson.id]={passed:[...passed].sort((a,b)=>a-b),done:passed.size===lesson.practice.length};try{localStorage.setItem(progressKey,JSON.stringify(progress));}catch{}const details=button.closest('.bc-lesson');details.querySelector('.bc-lesson-status').textContent=progress[lesson.id].done?'已掌握':`${passed.size}/${lesson.practice.length} 自测`;details.querySelector('.bc-practice-count').textContent=`${passed.size}/${lesson.practice.length} 完成`;updateProgress();}else{feedback.textContent=`还差一点。提示：${q.hint}`;feedback.classList.remove('good');}return;}
+    if(button){const rawId=button.dataset.bcCheck;const index=Number(button.dataset.index);const lesson=branch.lessons.find((item)=>escapeId(item.id)===rawId);const q=lesson?.practice[index];if(!q)return;const card=button.closest('.bc-question');const input=card.querySelector('input');const feedback=card.querySelector('.bc-answer-feedback');if(!input.value.trim()){feedback.textContent='先写一个答案；卡住时可以打开提示。';feedback.classList.remove('good');input.focus();return;}const correct=(q.a||[]).some((answer)=>answersMatch(answer,input.value));if(correct){feedback.textContent='答对了！试着把用到的规律也讲出来。';feedback.classList.add('good');const passed=new Set(progress[lesson.id]?.passed||[]);passed.add(index);progress[lesson.id]={passed:[...passed].sort((a,b)=>a-b),done:passed.size===lesson.practice.length};saveProgress();const details=button.closest('.bc-lesson');details.querySelector('.bc-lesson-status').textContent=progress[lesson.id].done?'已掌握':`${passed.size}/${lesson.practice.length} 自测`;details.querySelector('.bc-practice-count').textContent=`${passed.size}/${lesson.practice.length} 完成`;updateProgress();}else{feedback.textContent=`还差一点。提示：${q.hint}`;feedback.classList.remove('good');}return;}
     const labLink=event.target.closest('[data-open-lab]');if(labLink){document.getElementById('bc-lab').scrollIntoView({behavior:'smooth'});}
   });
   document.getElementById('bc-lesson-stack').addEventListener('keydown',(event)=>{if(event.key==='Enter'&&event.target.matches('.bc-answer-row input'))event.target.nextElementSibling?.click();});

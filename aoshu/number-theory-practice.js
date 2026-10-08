@@ -1,6 +1,24 @@
 (() => {
   const $ = (selector) => document.querySelector(selector);
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const superscriptDigits = (value) => String(value).replace(/[0-9]/g, (digit) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[Number(digit)]);
+  const mathPattern = /(?:[=≠<>≤≥≡∣×÷√²³⁴⁵⁶⁷⁸⁹⁰ⁿ₀-₉^+−±≈∈∉∪∩∑∏∞°]|\b\d+\s*\/\s*\d+\b)/u;
+  const standardizeMathSymbols = (value) => {
+    const protectedParts = [];
+    const protectedText = String(value ?? '').replace(/\b(?:\d{4}-\d{2}-\d{2}|[A-Za-z]+\d+-[A-Za-z]+\d+)\b/g, (match) => {
+      const token = `\uE000${protectedParts.length}\uE001`;
+      protectedParts.push(match);
+      return token;
+    });
+    return protectedText.replace(/<=/g,'≤').replace(/>=/g,'≥').replace(/!=/g,'≠').replace(/\*/g,'×')
+      .replace(/\^(\d+)/g, (_, digits) => superscriptDigits(digits)).replace(/\^n\b/gi,'ⁿ')
+      .replace(/([\p{L}\p{N})\]])\s*[·⋅]\s*([\p{L}\p{N}(])/gu,'$1 × $2')
+      .replace(/([\p{L}\p{N})\]])\s*-\s*([\p{L}\p{N}(])/gu,'$1 − $2')
+      .replace(/(^|[\s([{])-(?=\d)/g,'$1−')
+      .replace(/([^\s+×÷=<>≤≥≠−±≈∈∉∪∩])\s*([+×÷=<>≤≥≠−±≈∈∉∪∩])\s*([^\s+×÷=<>≤≥≠−±≈∈∉∪∩])/gu,'$1 $2 $3')
+      .replace(/\uE000(\d+)\uE001/g, (_, index) => protectedParts[Number(index)]);
+  };
+  const renderMathText = (value) => String(value ?? '').split(/(?<=[。；：\n])/u).filter(Boolean).map((part) => { const text = standardizeMathSymbols(part); const math = mathPattern.test(text); return `<span class="qbank-rich-line ${math ? 'qbank-rich-math' : 'qbank-rich-prose'}"${math ? ' role="math"' : ''}>${escapeHtml(text)}</span>`; }).join('');
   const clean = (value) => String(value ?? '').trim();
   const answerLabels = {
     verified: '答案已核过', verified_from_solution: '从资料解析核对', verified_with_caveat: '按说明理解',
@@ -120,7 +138,7 @@
     }
     list.innerHTML = state.filtered.map((q) => `
       <button type="button" data-question-id="${escapeHtml(q.id)}" class="${q.id === state.currentId ? 'is-current' : ''}" aria-current="${q.id === state.currentId ? 'true' : 'false'}">
-        <small>${escapeHtml(q.source_id)} · ${escapeHtml(q.source_question_label)}</small><b>${escapeHtml(q.id)} · ${escapeHtml((q.problem || '').replace(/\s+/g, ' ').slice(0, 43))}${(q.problem || '').length > 43 ? '…' : ''}</b>
+        <small>${escapeHtml(q.source_id)} · ${escapeHtml(q.source_question_label)}</small><b>${escapeHtml(q.id)} · ${escapeHtml(standardizeMathSymbols((q.problem || '').replace(/\s+/g, ' ').slice(0, 43)))}${(q.problem || '').length > 43 ? '…' : ''}</b>
       </button>`).join('');
     list.querySelectorAll('[data-question-id]').forEach((button) => button.addEventListener('click', () => selectQuestion(button.dataset.questionId)));
   }
@@ -151,7 +169,7 @@
     const block = document.createElement('div');
     block.className = `answer-block ${className}`;
     const h = document.createElement('h5'); h.textContent = heading;
-    const p = document.createElement('p'); p.textContent = content;
+    const p = document.createElement('p'); p.innerHTML = renderMathText(content);
     block.append(h, p); container.append(block);
   }
 
@@ -162,11 +180,11 @@
     const solutionStatus = review.solution_status || '';
     const pillClass = (isCaution) => isCaution ? 'status-pill is-caution' : 'status-pill';
     let html = `<div class="review-status-row"><span class="${pillClass(answerCaution.has(answerStatus))}">答案：${escapeHtml(safeAnswerStatus(answerStatus))}</span><span class="${pillClass(solutionCaution.has(solutionStatus))}">解析：${escapeHtml(safeSolutionStatus(solutionStatus))}</span></div>`;
-    if (isNonempty(review.note)) html += `<p class="review-callout"><strong>复核说明：</strong>${escapeHtml(review.note)}</p>`;
-    if ((q.ambiguities || []).length) html += `<p><strong>题面小提醒：</strong></p><ul>${q.ambiguities.map((note) => `<li>${escapeHtml(note)}</li>`).join('')}</ul>`;
-    if (isNonempty(q.duplicate_notes)) html += `<p><strong>重复或相关记录：</strong>${escapeHtml(q.duplicate_notes)}</p>`;
+    if (isNonempty(review.note)) html += `<p class="review-callout"><strong>复核说明：</strong>${renderMathText(review.note)}</p>`;
+    if ((q.ambiguities || []).length) html += `<p><strong>题面小提醒：</strong></p><ul>${q.ambiguities.map((note) => `<li>${renderMathText(note)}</li>`).join('')}</ul>`;
+    if (isNonempty(q.duplicate_notes)) html += `<p><strong>重复或相关记录：</strong>${renderMathText(q.duplicate_notes)}</p>`;
     const source = state.sources.get(q.source_id);
-    if (source?.source_notes?.length) html += `<p><strong>资料说明：</strong>${source.source_notes.map(escapeHtml).join('；')}</p>`;
+    if (source?.source_notes?.length) html += `<p><strong>资料说明：</strong>${source.source_notes.map(renderMathText).join('；')}</p>`;
     root.innerHTML = html || '<p>这道题目前没有额外的复核提醒。</p>';
   }
 
@@ -196,7 +214,7 @@
     const controls = ['#question-kind','#question-id','#question-source-title','#question-label','#question-text','#question-topics','#source-provenance','#review-badge'];
     if (!q) {
       controls.forEach((selector) => { $(selector).textContent = ''; });
-      $('#question-text').textContent = '没有找到符合条件的题目。试着清除一项筛选条件吧。';
+      $('#question-text').innerHTML = renderMathText('没有找到符合条件的题目。试着清除一项筛选条件吧。');
       answerPanel.hidden = true;
       revealButton.disabled = true;
       $('#previous-question').disabled = true;
@@ -211,14 +229,15 @@
     $('#question-id').textContent = q.id;
     $('#question-source-title').textContent = `${q.source_id} · ${q.lesson_or_test || source.lesson_or_test || ''}`;
     $('#question-label').textContent = q.source_question_label || '题目';
-    $('#question-text').textContent = q.problem || '原资料中的题面暂缺。';
+    $('#question-text').innerHTML = renderMathText(q.problem || '原资料中的题面暂缺。');
     $('#question-topics').innerHTML = (q.topics || []).map((topic) => `<span class="topic-chip">${escapeHtml(topic)}</span>`).join('');
     $('#source-provenance').innerHTML = `<span><b>来源 PDF：</b>${escapeHtml(q.source_filename)}</span>${renderPageRef(q)}`;
     const status = q.review?.answer_status || 'verified';
     const solutionStatus = q.review?.solution_status || '';
     const needsNote = answerCaution.has(status) || solutionCaution.has(solutionStatus) || (q.ambiguities || []).length > 0;
     const badge = $('#review-badge');
-    badge.textContent = needsNote ? '有一条解题小贴士' : '资料来源已标明';
+    const hasVerifiedCorrection = isNonempty(q.review?.verified_answer) || isNonempty(q.review?.verified_solution);
+    badge.textContent = hasVerifiedCorrection ? '已附核验答案 / 解法' : needsNote ? '有一条解题小贴士' : '资料来源已标明';
     badge.classList.toggle('badge-note', needsNote);
     answerPanel.hidden = !state.revealed;
     revealButton.disabled = false;
@@ -231,16 +250,19 @@
   function renderAnswer(q) {
     const root = $('#answer-content');
     root.replaceChildren();
+    const review = q.review || {};
+    const verifiedAnswer = review.verified_answer;
+    const verifiedSolution = review.verified_solution;
+    if (isNonempty(verifiedAnswer)) addAnswerBlock(root, 'verified-answer', '核验后的答案 / 条件说明', String(verifiedAnswer));
     const sourceAnswer = q.source_answer;
-    if (isNonempty(sourceAnswer)) addAnswerBlock(root, 'source-answer', '原资料中的答案', String(sourceAnswer));
-    else {
+    if (isNonempty(sourceAnswer)) addAnswerBlock(root, 'source-answer', isNonempty(verifiedAnswer) ? '原资料中的答案（对照核验）' : '原资料中的答案', String(sourceAnswer));
+    else if (!isNonempty(verifiedAnswer)) {
       const empty = document.createElement('p'); empty.className = 'answer-empty';
       empty.textContent = '原资料没有单列答案；下面的复核区会说明答案是怎样核对出来的。'; root.append(empty);
     }
-    const review = q.review || {};
-    if (isNonempty(review.verified_answer)) addAnswerBlock(root, 'verified-answer', '复核后的答案 / 条件说明', String(review.verified_answer));
-    if (isNonempty(q.source_solution)) addAnswerBlock(root, 'source-solution', '原资料中的解题过程', String(q.source_solution));
-    else {
+    if (isNonempty(verifiedSolution)) addAnswerBlock(root, 'verified-solution', '核验后的解题过程', String(verifiedSolution));
+    if (isNonempty(q.source_solution)) addAnswerBlock(root, 'source-solution', isNonempty(verifiedSolution) ? '原资料中的解题过程（对照核验）' : '原资料中的解题过程', String(q.source_solution));
+    else if (!isNonempty(verifiedSolution)) {
       const empty = document.createElement('p'); empty.className = 'answer-empty';
       empty.textContent = '原资料没有附可辨认的解题过程。可以先试着自己写下思路，再到“复核小贴士”看看核对说明。'; root.append(empty);
     }

@@ -9,7 +9,9 @@
     "page_refs": "problem、answer、solution分别指向PDF内从1开始的页码；同题跨页会列多个页码。",
     "review.answer_status": "verified=来源答案已核验；incorrect/partially_incorrect/incomplete=来源答案错/部分错/漏解；conditional/non_unique=依赖补充条件/存在多解；verified_from_solution=答案从来源解析读出而非独立答案栏；verified_with_caveat=按注释中的通常解释核验。",
     "review.solution_status": "consistent=未发现数学矛盾；error=解析含错误步骤；incomplete=证明/范围说明不完整；not_provided=来源无解析；transcription_uncertain=相关手写笔迹无法可靠逐字辨认。",
-    "ambiguities": "保留条件缺失、手写补充、版面或字迹相关的注意事项；最终判定和条件化答案见review。"
+    "ambiguities": "保留条件缺失、手写补充、版面或字迹相关的注意事项；最终判定和条件化答案见review。",
+    "review.verified_answer": "独立核验后的标准答案或条件化答案；不覆盖 source_answer。",
+    "review.verified_solution": "独立核验或修正后的教学解法；不覆盖 source_solution。"
   },
   "counts": {
     "source_documents": 14,
@@ -17,29 +19,32 @@
     "question_records": 192,
     "unique_exact_prompt_texts": 190,
     "topic_labels": 252,
-    "question_records_with_ambiguity_notes": 40,
+    "question_records_with_ambiguity_notes": 38,
     "answer_status_counts": {
-      "conditional": 3,
+      "conditional": 9,
       "incomplete": 1,
-      "incorrect": 2,
       "non_unique": 1,
-      "partially_incorrect": 1,
-      "verified": 177,
+      "partially_incorrect": 3,
+      "verified": 166,
       "verified_from_solution": 4,
-      "verified_with_caveat": 3
+      "verified_with_caveat": 8
     },
     "solution_status_counts": {
-      "consistent": 175,
-      "error": 10,
-      "incomplete": 3,
-      "not_provided": 3,
-      "transcription_uncertain": 1
+      "consistent": 122,
+      "error": 12,
+      "incomplete": 50,
+      "not_provided": 8
     },
     "open_or_conditional_question_ids": [
+      "S03-Q002",
+      "S03-Q015",
       "S05-Q007",
-      "S10-Q005",
+      "S07-Q002",
+      "S10-Q004",
+      "S10-Q014",
+      "S10-Q017",
       "S12-Q005",
-      "S12-Q008",
+      "S13-Q007",
       "S13-Q011"
     ]
   },
@@ -531,9 +536,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "3",
         "solution_status": "consistent",
-        "note": "奇偶位数字和之差为15−5a，a为数字时仅a=3使其为11的倍数。"
+        "note": "奇偶位数字和之差为15−5a，a为数字时仅a=3使其为11的倍数。",
+        "verified_solution": "十位数1a2a3a4a5a的奇数位数字和是1+2+3+4+5=15，偶数位数字和是5a。能被11整除，要求两组数字和之差15−5a是11的倍数。a是0到9的数字；逐个看或解这个范围内的倍数方程，只有15−5a=0时成立，所以a=3。"
       },
       "cross_reference_ids": []
     },
@@ -543,7 +549,7 @@
       "source_filename": "26数论模块训练营第一讲解析.pdf",
       "lesson_or_test": "数论方法训练营 第1讲 整除符号与性质",
       "source_question_label": "练习1",
-      "problem": "2026年，疯狂动物城警察局为了表彰表现优异的警察，给他们授予特殊的警号。这些警号是形如\\overline{2026ab}的六位数，并且都能被63整除，这样的警号有那些？",
+      "problem": "2026年，疯狂动物城警察局为了表彰表现优异的警察，给他们授予特殊的警号。这些警号是形如\\overline{a2026b}的六位数，并且都能被63整除，这样的警号有那些？",
       "source_answer": "120267，820260",
       "source_solution": "63=7×9；由9的整除性得a+b=8或17。结合7的整除性，a+b=8时a=1,8，得到120267、820260；a+b=17无解。",
       "topics": [
@@ -566,9 +572,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "120267、820260",
         "solution_status": "consistent",
-        "note": "逐一计算可得120267÷63=1909，820260÷63=13020；其余数字和分支无解。"
+        "note": "原页明确写作a2026b；题库旧题干转录把数字顺序写成2026ab，已按原页修正。独立检验确认答案120267、820260。",
+        "verified_solution": "原题的数是a2026b，a是首位数字（1到9），b是末位数字（0到9）。63=7×9。能被9整除要求a+b+10是9的倍数，因此a+b=8或17。又a2026b除以7的余数与5a+b+2相同。若a+b=8，则5a+b+2=4a+10，得到a=1或8，分别是120267和820260。若a+b=17，则得到a≡4 (mod7)，但a只能为1到9，且b=17−a也必须是0到9；唯一可能的a=4会使b=13，不是数字。因此只有120267和820260。题库原转录把数字顺序写成2026ab，现按原页改为a2026b。"
       },
       "cross_reference_ids": []
     },
@@ -607,9 +614,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "19",
         "solution_status": "consistent",
-        "note": "穷举三数字可得所填数字和范围为6至25，差19；664对应七位数1466784，确被792整除。"
+        "note": "穷举三数字可得所填数字和范围为6至25，差19；664对应七位数1466784，确被792整除。",
+        "verified_solution": "设三个空格依次为a、b、c。99=9×11。11不能整除1a9，因为它的奇偶位数字和之差在1到10之间；因此11必须整除9b7或7c1。前者要求b=5，后者要求c=8。再用9的倍数条件：若b=5，至少一个数1a9、7c1能被3整除，分别要求a+10或c+8是3的倍数。此时a+b+c最小为6（a=0、c=1），最大为22。若c=8，至少一个数1a9、9b7能被3整除；对应a+10或b+16是3的倍数，此时和最小为10，最大为25。总的最小和为6，最大和为25，差为25−6=19。"
       },
       "cross_reference_ids": []
     },
@@ -642,9 +650,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "6个",
         "solution_status": "consistent",
-        "note": "12=3×4，列出的6个a,b组合均满足两条件。"
+        "note": "12=3×4，列出的6个a,b组合均满足两条件。",
+        "verified_solution": "12=3×4，且3和4互质，所以数要同时被3和4整除。末两位是1b，能被4整除时b只能是2或6。各位数字和为a+b+20。若b=2，要被3整除就需a+22是3的倍数，a=2、5、8，共3种；若b=6，需a+26是3的倍数，a=1、4、7，也有3种。总数为6个。"
       },
       "cross_reference_ids": []
     },
@@ -679,7 +688,8 @@
         "answer_status": "verified",
         "verified_answer": "14",
         "solution_status": "consistent",
-        "note": "回看第2页原图后确认手写数为187612与182342；它们分别对应数字和14、9，来源答案14正确。此前片段把手写数误读，现已纠正。"
+        "note": "回看第2页原图后确认手写数为187612与182342；它们分别对应数字和14、9，来源答案14正确。此前片段把手写数误读，现已纠正。",
+        "verified_solution": "17和31互质，所以同时被两者整除等价于被527=17×31整除。六位数范围是180002到189992，且末位固定为2。189992除以527余272，因此低于它的最近一个527倍数是189720。后续倍数写作189720−527t；末位为2要求7t≡8 (mod10)，所以t≡4 (mod10)。在保持首两位为18的范围内只有t=4、14，得到187612、182342。它们的a+b+c分别为14和9，最大值14。"
       },
       "cross_reference_ids": []
     },
@@ -711,10 +721,11 @@
       "ambiguities": [],
       "duplicate_notes": "",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "逐一验证108284、108259、108236、108213均被23整除，且余数递变步长10，确仅4种。"
+        "answer_status": "partially_incorrect",
+        "verified_answer": "末两位15、38、61、84，共4种。",
+        "solution_status": "error",
+        "note": "来源所列84、59、36、13中只有84能被23整除；正确末两位是15、38、61、84，共4种。因此来源给出的数量正确，具体清单错误；已保留原文并记录正确列表。",
+        "verified_solution": "设末两位组成的数为x，0≤x≤99。108200除以23余8，所以108200+x能被23整除，等价于x除以23余15。范围内这样的数是15、38、61、84，共4种。逐个对应的六位数为108215、108238、108261、108284。原卷列出的84、59、36、13中，只有84正确；答案“共4种”正确，但数字清单错误。"
       },
       "cross_reference_ids": []
     },
@@ -742,15 +753,14 @@
           3
         ]
       },
-      "ambiguities": [
-        "题面横线数字与红色推导排版较密；按视觉识读为\\overline{ab2347}，代入652347=653×999成立。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "11",
         "solution_status": "consistent",
-        "note": "653×954=623? 直接计算653×953=622?；更稳妥地，665? 原题数为652347? 视觉题面为\\overline{ab2347}，来源推导明确给出ab=65；代入652347÷653=999，故a+b=11。"
+        "note": "原页视觉确认题干为\\overline{ab2347}。由N+653=1000×\\overline{ab3}且(653,1000)=1，可得\\overline{ab3}=653；故a=6、b=5，核验652347=653×999。",
+        "verified_solution": "把六位数写成N=1000×(100a+10b+3)+347? 更直接按原页构造：N=\\overline{ab2347}，N+653=\\overline{ab3000}=1000×\\overline{ab3}。若653|N，则653也整除N+653；又653与1000互质，所以653|\\overline{ab3}。\\overline{ab3}是三位数，只可能等于653，因此a=6、b=5，a+b=11。检查652347=653×999。"
       },
       "cross_reference_ids": []
     },
@@ -783,9 +793,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "15317",
         "solution_status": "consistent",
-        "note": "15317÷17=901，且1+5+3+1+7=17；按前三位递增搜索无更小可行数。"
+        "note": "15317÷17=901，且1+5+3+1+7=17；按前三位递增搜索无更小可行数。",
+        "verified_solution": "五位数可写成100×\\overline{abc}+17。若它能被17整除，由于100与17互质，\\overline{abc}也必须被17整除。数字和条件给出a+b+c=9。三位数的17倍从102、119、136、153……开始；前三个数字和分别为3、11、10，153是第一个数字和为9的数。因此最小五位数是15317；它的数字和是17且15317=17×901。"
       },
       "cross_reference_ids": []
     },
@@ -817,9 +828,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "n=3、6",
         "solution_status": "consistent",
-        "note": "506的正因数中只有11、23可写成4n−1（分别给n=3,6）。"
+        "note": "506的正因数中只有11、23可写成4n−1（分别给n=3,6）。",
+        "verified_solution": "令d=4n−1。因为n为正整数，d是正数，且d|2024n。又2024n=506(4n−1)+506，所以d|506。506=2×11×23，其正因数中余数为3 (mod4)的只有11和23，因为d=4n−1。于是4n−1=11或23，得到n=3或6；两者代回都成立。"
       },
       "cross_reference_ids": []
     },
@@ -851,9 +863,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "2个（x=1、2）",
         "solution_status": "consistent",
-        "note": "自然数取正整数时x=1,2，分式值分别为9、7。"
+        "note": "x=1、2，共2个；分式值分别是9、5。此前复核备注把x=2的值误写为7，现已更正；原卷解法给出的两个x值正确。",
+        "verified_solution": "当x为正整数时，(6x+3)/(2x−1)=3+6/(2x−1)。要使结果为正整数，奇数2x−1必须是6的正因数；它只能是1或3，所以x=1或2，共2个。代入原式分别得到9和5。即使把0算作自然数，x=0时原式为−3，也不符合正整数要求。"
       },
       "cross_reference_ids": []
     },
@@ -886,9 +899,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "190",
         "solution_status": "consistent",
-        "note": "n+10为200的正因数，最大取200；190²+100=36200可被200整除。"
+        "note": "n+10为200的正因数，最大取200；190²+100=36200可被200整除。",
+        "verified_solution": "n²+100=(n+10)(n−10)+200。因此n+10必须是200的正因数。n为正整数，故n+10>10；要让n最大，就取最大的可能因数200，得到n=190。检查190²+100=36200，确实能被200整除。"
       },
       "cross_reference_ids": []
     },
@@ -921,9 +935,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1722",
         "solution_status": "consistent",
-        "note": "自然数按正整数理解；两值均直接满足整除条件。"
+        "note": "自然数按正整数理解；两值均直接满足整除条件。",
+        "verified_solution": "令d=n+42。因为42n+1=42(n+42)−(42²−1)，若n+42能整除42n+1，就必须整除42²−1=1763=41×43。n为正整数，所以d≥43；1763的因数中不小于43的只有43和1763。于是n=1或1721，所有n的和为1722。"
       },
       "cross_reference_ids": []
     },
@@ -957,9 +972,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "10571",
         "solution_status": "consistent",
-        "note": "独立穷举1≤a<2026得到1,193,385,…,1921共11项，和10571。"
+        "note": "独立穷举1≤a<2026得到1,193,385,…,1921共11项，和10571。",
+        "verified_solution": "由192|(a³+191)可知a³≡1 (mod192)，所以分别有64|(a³−1)和3|(a³−1)。因a³−1=(a−1)(a²+a+1)，而a²+a+1总是奇数，64必须整除a−1，因此a=64k+1。再看模3，a³≡a，所以a≡1 (mod3)；代入a=64k+1得k≡0 (mod3)。于是a=192m+1。条件1≤a<2026给出m=0,1,…,10，11个数的和为11+192(0+1+…+10)=10571。"
       },
       "cross_reference_ids": []
     },
@@ -992,9 +1008,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "9585",
         "solution_status": "consistent",
-        "note": "5580与9585均满足条件，比较得最大值9585。"
+        "note": "5580与9585均满足条件，比较得最大值9585。",
+        "verified_solution": "四位数a58b要被5整除，末位b只能是0或5。各位数字和a+5+8+b必须是9的倍数。b=0时a=5，得到5580；b=5时a=9，得到9585。比较两数，最大是9585。"
       },
       "cross_reference_ids": []
     },
@@ -1005,8 +1022,8 @@
       "lesson_or_test": "数论方法训练营 第1讲 整除符号与性质",
       "source_question_label": "作业2",
       "problem": "四位数32□□能被23整除，则这个四位数最大是____，最小是____。",
-      "source_answer": "最大3299，最小3220",
-      "source_solution": "3299÷23=143…10，向下每次减23，列出3289、3266、3243、3220。故最大3299、最小3220。",
+      "source_answer": "最大3289，最小3220",
+      "source_solution": "3299÷23=143余10；从3299向下找23的倍数，依次为3289、3266、3243、3220。结合四位数32□□的范围，最大3289，最小3220。",
       "topics": [
         "整除与余数",
         "最大值与最小值"
@@ -1026,9 +1043,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "最大3289，最小3220",
         "solution_status": "consistent",
-        "note": "四个候选均为23的倍数，边界比较正确。"
+        "note": "原页红笔答案与候选列表均显示3289、3266、3243、3220；旧题库转录把3289误写为3299，现已修正source_answer和source_solution。3299÷23余10，故最大倍数是3289。",
+        "verified_solution": "四位数32□□在3200到3299之间。3299除以23余10，所以不超过3299的最大23倍数是3299−10=3289。依次减23得到3266、3243、3220；再减23会低于3200。因此最大3289、最小3220。原页手写答案是3289和3220；题库旧转录把最大值误记为3299，已按图像修正。"
       },
       "cross_reference_ids": [
         "XR-01"
@@ -1058,15 +1076,14 @@
           6
         ]
       },
-      "ambiguities": [
-        "“整数A”与解析只枚举正因数存在范围约定冲突；需确认原题是否 intended 为正整数。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "",
       "review": {
         "answer_status": "incomplete",
-        "verified_answer": "按题面“整数A”：A∈{-1721,-1,1,41,43,83,85,1805}。若只求正整数，则为1、41、43、83、85、1805。",
+        "verified_answer": "按题面“整数 A”，全部解为 A=−1721、−1、1、41、43、83、85、1805。若原意限定 A>0，则取其中六个正整数。",
         "solution_status": "error",
-        "note": "令d=A−42，则d|41×43。来源只枚举正因数并漏掉负因数；即使限正整数，A=1、41也满足。按题面“整数”应列出全部8个值。"
+        "note": "原页题干明确写“整数A”，现按全部整数作答。令d=A−42，则d|1763=41×43；正负因数都要纳入，完整解为−1721、−1、1、41、43、83、85、1805。来源仅列四个正因数对应的解，漏解。若原意只限正整数，需在题面补明。",
+        "verified_solution": "令 d=A−42（d≠0）。原条件等价于 d | 42(d+42)−1=42d+1763，因此 d |1763=41×43。整数因数为 ±1、±41、±43、±1763；逐一代入 A=42+d，得到 −1721、−1、1、41、43、83、85、1805。原题写“整数”，所以负解也须列出；若教材原意为正整数，应补条件。"
       },
       "cross_reference_ids": []
     },
@@ -1098,9 +1115,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "6个",
         "solution_status": "consistent",
-        "note": "单个数和两位数逐一检验，37、53、73为质数，其余两位排列15、35、57等合数。"
+        "note": "单个数和两位数逐一检验，37、53、73为质数，其余两位排列15、35、57等合数。",
+        "verified_solution": "三张纸片上的数是3、5、7。取一张时得到3、5、7，都是质数。取两张并按不同顺序组成两位数，六种是35、37、53、57、73、75；其中37、53、73是质数。取三张组成三位数时，数字和是3+5+7=15，能被3整除，所以都不是质数。总共有3+3=6个质数。"
       },
       "cross_reference_ids": []
     },
@@ -1132,9 +1150,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "103或15",
         "solution_status": "consistent",
-        "note": "两组分别为(p,q)=(2,101),(13,2)，和为103、15；奇质数同时代入左式为偶数，不可能等于517。"
+        "note": "两组分别为(p,q)=(2,101),(13,2)，和为103、15；奇质数同时代入左式为偶数，不可能等于517。",
+        "verified_solution": "如果p和q都是奇质数，那么3p²和5q都是奇数，和是偶数，不可能等于517。因此p或q至少一个等于2。若p=2，3×2²+5q=517，得到q=101，p+q=103。若q=2，3p²+10=517，得到p²=169、p=13，p+q=15。两组都满足条件。"
       },
       "cross_reference_ids": []
     },
@@ -1166,9 +1185,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "37",
         "solution_status": "consistent",
-        "note": "若P为奇质数，P³+5为偶数且大于2，不是质数，故P=2。"
+        "note": "若P为奇质数，P³+5为偶数且大于2，不是质数，故P=2。",
+        "verified_solution": "若P是奇质数，P³是奇数，P³+5就是大于2的偶数，不是质数。因此P只能是2。此时P³+5=13确实是质数，而P⁵+5=2⁵+5=37。"
       },
       "cross_reference_ids": []
     },
@@ -1201,9 +1221,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "7种",
         "solution_status": "consistent",
-        "note": "按公差及首项枚举，7组均为互异质数且末项≤60；含2的四项等差数列不可能。"
+        "note": "按公差及首项枚举，7组均为互异质数且末项≤60；含2的四项等差数列不可能。",
+        "verified_solution": "四项依次为p、p+d、p+2d、p+3d。它们不能含2：若d为奇数则p+2d为大于2的偶数；若d为偶数则p+d为大于2的偶数。因此四项都是奇质数，d为偶数。逐个检查不超过60的公差，符合条件的只有：d=6时(5,11,17,23)、(11,17,23,29)、(41,47,53,59)；d=12时(5,17,29,41)、(7,19,31,43)、(17,29,41,53)；d=18时(5,23,41,59)。合计7组。"
       },
       "cross_reference_ids": []
     },
@@ -1235,9 +1256,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "若c为奇质数，则a+b×c为偶数，不等于37；c=2时枚举b=3,5,7,11,13可得最大值32。"
+        "verified_answer": "32",
+        "solution_status": "error",
+        "note": "答案32正确，但来源证明“c必有偶数”不成立：还需检查b=2的情形，且b、c均为奇数时必须另查a=2。完整分类后最大值仍为32，已补独立证明。",
+        "verified_solution": "若b、c都是奇质数，bc是奇数。要使a+bc=37为奇数，a必须是偶质数2；于是bc=35，只有(b,c)=(5,7)或(7,5)，目标值分别为0、4。若b或c等于2，分开检查：c=2时，可行的(a,b)为(31,3)、(23,7)、(11,13)、(3,17)，对应a+b−c为32、28、22、18；b=2时，可行的(a,c)同为(31,3)、(23,7)、(11,13)、(3,17)，目标值为30、18、0、−12。因此最大值是32。来源解法只考虑c=2，漏掉b=2及a=2的情况；补全后可确认最大值不变。"
       },
       "cross_reference_ids": []
     },
@@ -1271,9 +1293,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": "114～123",
+        "verified_answer": "114、115、116、117、118、119、120、121、122、123（共 10 个）。",
         "solution_status": "error",
-        "note": "114～123恰为10个连续合数，来源答案成立；手写解析另写“114～126”却包含13个数，与题目要求的10个不一致，属于解析端点/计数错误。"
+        "note": "114～123恰为10个连续合数，来源答案成立；手写解析另写“114～126”却包含13个数，与题目要求的10个不一致，属于解析端点/计数错误。",
+        "verified_solution": "正确的一组是 114～123，恰好 10 个连续自然数。逐个分解：114=2×57，115=5×23，116=4×29，117=9×13，118=2×59，119=7×17，120=2×60，121=11²，122=2×61，123=3×41，均为合数。原手写“114～126”包含 13 个数，不符合题目数量。"
       },
       "cross_reference_ids": []
     },
@@ -1306,9 +1329,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "201!+2、201!+3、…、201!+201",
         "solution_status": "consistent",
-        "note": "共有200项；对2≤k≤201，201!+k可被k整除且大于k。"
+        "note": "共有200项；对2≤k≤201，201!+k可被k整除且大于k。",
+        "verified_solution": "取201!+2到201!+201。k从2到201一共有201−2+1=200个整数。201!能被每个这样的k整除，所以201!+k也能被k整除；而201!+k大于k，故它有k和另一个大于1的因数，是合数。"
       },
       "cross_reference_ids": []
     },
@@ -1340,9 +1364,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "699、698、697、696、695、694、693、692均合数；691只需检验不超过√691≈26.3的质数2,3,5,7,11,13,17,19,23，均不整除。"
+        "verified_answer": "691",
+        "solution_status": "incomplete",
+        "note": "原解列出部分较大合数，但未检查全部692—699，也未证明691是质数；独立解法已补全。",
+        "verified_solution": "699、698、697、696、695、694、693、692都不是质数：偶数直接排除；699、693能被3整除；695能被5整除；697=17×41。691只需检查不超过√691≈26.3的质数2、3、5、7、11、13、17、19、23，没有一个能整除，所以691是小于700的最大质数。"
       },
       "cross_reference_ids": []
     },
@@ -1375,9 +1400,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "四个三位数均为质数且数码和23；数码和条件排除其余P₁。"
+        "verified_answer": "3260",
+        "solution_status": "incomplete",
+        "note": "原解给出四个候选数，但没有把数码和为23的全部三位数列全；已补枚举和筛选。",
+        "verified_solution": "三位数P₃的数码和P₂最多27，所以两位质数P₂只能在10到27内。P₁是大于2的质数，且是P₂的数码和，只能是3、5、7；其中只有P₂=23满足条件。接着枚举数码和为23的三位数：599；689、698；779、788、797；869、878、887、896；959、968、977、986、995。检验这些数后，质数只有599、797、887、977，和为3260。"
       },
       "cross_reference_ids": []
     },
@@ -1410,9 +1436,10 @@
       "duplicate_notes": "与拓展2同文档重复题，题面和答案相同。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "67、201、335、469的数码和分别为13、3、11、19，均质数。该题在拓展2重复出现。"
+        "verified_answer": "67",
+        "solution_status": "incomplete",
+        "note": "原解筛出候选后没有逐一说明5倍、7倍数码和；已补完整核对，唯一答案67。",
+        "verified_solution": "设两位数为n。3n的数码和是3的倍数，又必须是质数；因3n≤297，数码和只能是3。于是3n只能是102、111、120、201、210，n候选为34、37、40、67、70。逐个检验：34的5倍数码和为8；37和40本身的数码和不是质数；70的5倍数码和为8；67的数码和为13，3倍、5倍、7倍分别为201、335、469，数码和3、11、19都为质数。因此唯一答案是67。"
       },
       "cross_reference_ids": [
         "XR-02"
@@ -1449,9 +1476,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "两位质数末位只能为1、3、7、9，因此相邻边形成的质数数目≤可用奇末位数4加特殊情形的结构上限；图示填法可实现7条质数边（逐边按横竖相邻核验）。"
+        "verified_answer": "7个",
+        "solution_status": "incomplete",
+        "note": "原解未说明“个位只有1、3、7、9”为何给出7条上限；已按原图的入边数补上严格上界与达到上界的填法。题目依赖方格图，需随题保留图形。",
+        "verified_solution": "按原图的阶梯形格子（每行1、2、3、4格）从左到右、从上到下读相邻格。两位质数个位只能是1、3、7、9。图中有3个格子各有2条指向它的相邻边、6个格子各有1条、1个格子没有进入边；四个可能的质数个位最多贡献2+2+2+1=7条质数边，所以不可能超过7。原图填法为：第一行2；第二行8、4；第三行6、1、9；第四行5、3、7、0。它形成的7个质数是41、61、19、13、97、53、37，所以上限能达到，最大就是7。此题必须保留原图或等价格子示意，只有文字题干不完整。"
       },
       "cross_reference_ids": []
     },
@@ -1484,9 +1512,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "环9-8-5-6-7-4-3-2-9的相邻和依次17、13、11、13、11、7、5、11均为质数；排除1后按首位最大及可行邻接约束可达98567432。"
+        "verified_answer": "98567432",
+        "solution_status": "incomplete",
+        "note": "原解给出构造结果，但最大性理由不够完整；已补逐位最大选择证明，并用全部圆圈穷举作独立交叉检查。",
+        "verified_solution": "相邻和为质数时，两个数字必须一奇一偶（相邻数和都大于2，同奇偶会得到偶数）。八个位置绕成圈，因此奇偶交替；1—9中有5个奇数、4个偶数，必须用完四个偶数并少用一个奇数。为让顺时针读出的数最大，先取9；后面依次取能组成质数和的最大未用数字：8（和17）、5（和13）、6（和11）、7（和13）、4（和11）、3（和7），最后剩2，且2+9=11也为质数。因此最大数是98567432。已对所有可能圆圈作穷举复核，最大值一致。"
       },
       "cross_reference_ids": []
     },
@@ -1519,9 +1548,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "质数有无穷多个",
         "solution_status": "consistent",
-        "note": "欧几里得反证法正确；N+1的任一质因数不可能是p₁,…,pₙ。"
+        "note": "欧几里得反证法正确；N+1的任一质因数不可能是p₁,…,pₙ。",
+        "verified_solution": "反过来想：假如质数只有有限个，把它们全部相乘，记为N。看N+1。任何已列出的质数都能整除N，所以除N+1时会余1；因此N+1的任一质因数都不是原列表里的质数，和“已经列完”矛盾。所以质数不可能只有有限个。"
       },
       "cross_reference_ids": []
     },
@@ -1550,15 +1580,14 @@
           4
         ]
       },
-      "ambiguities": [
-        "“在数n与n!之间”通常指严格介于；n>2时上述q满足严格不等式。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "存在质数 q 满足 n<q<n!",
         "solution_status": "consistent",
-        "note": "取所有不超过n的质数乘积时N整除n!；q不在不超过n的质数列表中，故q>n且q≤N−1<n!。"
+        "note": "取所有不超过n的质数乘积时N整除n!；q不在不超过n的质数列表中，故q>n且q≤N−1<n!。",
+        "verified_solution": "把所有不超过n的质数乘起来，记为N。因为每个这些质数都在n!里出现，所以N整除n!。N−1与N相邻，没有共同因数；因此N−1的任一质因数q都不在这份质数清单里，于是q>n。又q≤N−1<N≤n!，所以n<q<n!，q就是所求质数。"
       },
       "cross_reference_ids": []
     },
@@ -1591,9 +1620,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "命题成立",
         "solution_status": "consistent",
-        "note": "偶数n≥12时n−4≥8为偶合数；奇数n≥13时n−9≥4为偶合数，4和9均合数。"
+        "note": "偶数n≥12时n−4≥8为偶合数；奇数n≥13时n−9≥4为偶合数，4和9均合数。",
+        "verified_solution": "若n>11且为偶数，写成4+(n−4)。4是合数，n−4是至少8的偶数，也是假合数。若n为奇数，则n≥13，写成9+(n−9)：9是合数，n−9是至少4的偶数，也是合数。因此每个大于11的整数都能写成两个合数之和。"
       },
       "cross_reference_ids": []
     },
@@ -1626,9 +1656,10 @@
       "duplicate_notes": "与练习4为同文档重复题，题面几乎完全相同。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "67",
         "solution_status": "consistent",
-        "note": "同练习4；67满足全部条件。"
+        "note": "同练习4；67满足全部条件。",
+        "verified_solution": "与本讲练习4是同一道题。设两位数为n。3n的数码和既是3的倍数又是质数，只能是3；所以3n只能是102、111、120、201、210，n候选为34、37、40、67、70。逐一核对n及3n、5n、7n的数码和后，只有67满足：13、3、11、19都是质数。"
       },
       "cross_reference_ids": [
         "XR-02"
@@ -1663,9 +1694,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "奇偶性迫使a或b为2；2¹¹+11=2059，且2057不是平方数。"
+        "verified_answer": "22",
+        "solution_status": "incomplete",
+        "note": "原解正确指出奇偶性分支，但未检查a=2时较小的质数b=2、3、5、7；已补有限枚举与b>11的单调性界。",
+        "verified_solution": "若a、b都是奇质数，aᵇ是奇数，aᵇ+b为偶数，不可能等于2059。因此a或b为2。若a=2，检查b为质数的可能值：b=2、3、5、7、11时，2ᵇ+b分别为6、11、37、135、2059；更大的质数b会使数值更大，所以只能b=11。若b=2，则a²=2057；因为45²=2025、46²=2116，2057不是平方数。故(a,b)=(2,11)，ab=22。"
       },
       "cross_reference_ids": []
     },
@@ -1698,9 +1730,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "5",
         "solution_status": "consistent",
-        "note": "模5考察A+14、A+18、A+32、A+36的余数，A≠5时必有一个为5的倍数且大于5；A=5逐项成立。"
+        "note": "答案正确；已将原末位筛选写成模5余数的完整论证。",
+        "verified_solution": "A=5时四个数是19、23、37、41，都是质数。若A不是5，质数A除以5的余数只能是1、2、3、4；四个偏移量14、18、32、36除以5的余数正好是4、3、2、1。无论A余几，总有一个偏移量与它相加后能被5整除，而且这个数大于5，因此不是质数。故只能A=5。"
       },
       "cross_reference_ids": []
     },
@@ -1733,9 +1766,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "示例中2、3、5、7、61、89均质数且使用全部数字；上界由末位为偶数或5的多位数必合数、以及可用末位奇数资源限制得到。"
+        "verified_answer": "6",
+        "solution_status": "incomplete",
+        "note": "来源给出6个质数的构造，但未证明最大性；已补用数字数作上界：7个质数至少需要10个数字，与仅有8个数字矛盾。",
+        "verified_solution": "这8个数字里，能单独成为质数的只有2、3、5、7，一共4个。其他任何质数都至少要用2个数字。假如要拼出7个质数，即使把4个单独的质数全用上，还剩下3个质数必须各用至少2个数字，总共至少要4+2×3=10个数字；如果单独使用的质数更少，需要的数字只会更多。可是我们只有8个数字，所以不可能有7个，最多只能有6个。达到6个的方法是2、3、5、7、61、89：它们全是质数，而且恰好用完1、2、3、5、6、7、8、9。"
       },
       "cross_reference_ids": []
     },
@@ -1746,7 +1780,7 @@
       "lesson_or_test": "数论方法训练营第3讲 唯一分解定理",
       "source_question_label": "例题1",
       "problem": "把下列数分解质因数并写成标准式：（1）2024，2025，999999，142857；（2）101，1001，10001，10101，111，1111，11111，111111。",
-      "source_answer": "2024=2^3×11×23；2025=3^4×5^2；999999=3^3×7×11×13×37；142857=3×11×13×37；101=101；1001=7×11×13；10001=73×137；10101=3×7×13×37；111=3×37；1111=11×101；11111=41×271；111111=3×7×11×13×37。",
+      "source_answer": "2024=2^3×11×23；2025=3^4×5^2；999999=3^3×7×11×13×37；142857=3^3×11×13×37；101=101；1001=7×11×13；10001=73×137；10101=3×7×13×37；111=3×37；1111=11×101；11111=41×271；111111=3×7×11×13×37。",
       "source_solution": "原页以红笔逐项写出上述质因数分解，无额外文字推导。",
       "topics": [
         "质因数分解",
@@ -1767,9 +1801,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "2024=2^3×11×23；2025=3^4×5^2；999999=3^3×7×11×13×37；142857=3^3×11×13×37；101=101；1001=7×11×13；10001=73×137；10101=3×7×13×37；111=3×37；1111=11×101；11111=41×271；111111=3×7×11×13×37。",
         "solution_status": "consistent",
-        "note": "逐项乘法/质因数检验均成立。"
+        "note": "逐项独立分解并检验均成立。原PDF第1页手写142857=3^3×11×13×37；题库旧转录误写为3×11×13×37，已更正source_answer。",
+        "verified_solution": "先把一个数拆成小质数的乘积；直到每个因数都是质数，就完成了质因数分解。相同的质因数要写成幂，例如2×2×2写成2^3。逐项结果是：2024=2^3×11×23；2025=3^4×5^2；999999=3^3×7×11×13×37；142857=3^3×11×13×37；101是质数；1001=7×11×13；10001=73×137；10101=3×7×13×37；111=3×37；1111=11×101；11111=41×271；111111=3×7×11×13×37。每个等式右边相乘都等于左边，而且列出的每个因数本身都是质数。"
       },
       "cross_reference_ids": []
     },
@@ -1798,13 +1833,16 @@
           1
         ]
       },
-      "ambiguities": [],
+      "ambiguities": [
+        "题目只写“四个连续奇数”，没有说明是正奇数。若允许负奇数，-25、-23、-21、-19的乘积同样是229425，但和为-88；因此答案88依赖“正奇数”这一未写明的条件。"
+      ],
       "duplicate_notes": "无",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "19×21×23×25=229425，和确为88。"
+        "answer_status": "conditional",
+        "verified_answer": "若题意限定为四个连续正奇数，答案是88（19+21+23+25）。若允许负奇数，还可取-25、-23、-21、-19，和为-88；原题需补“正”才能唯一。",
+        "solution_status": "incomplete",
+        "note": "原卷第1页给出19、21、23、25并算得88；该序列确实满足乘积条件。题干未限定正数，故按整数解释不唯一。",
+        "verified_solution": "先检查原卷给出的四个正奇数：19×21×23×25=229425，和是19+21+23+25=88。对正奇数来说，连续四项的乘积会随第一项变大而变大，所以这个正数解不会有第二组。可是题目没写“正奇数”：负数序列-25、-23、-21、-19的乘积也等于229425，和却是-88。为保证答案唯一，题干应改成“四个连续正奇数”。"
       },
       "cross_reference_ids": []
     },
@@ -1837,9 +1875,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "各组GCD/LCM及两次欧几里得算法结果均正确。"
+        "verified_answer": "（1）288与360：最大公因数72，最小公倍数1440；60、96、144：最大公因数12，最小公倍数1440。（2）A=20、B=30：最大公因数10，最小公倍数60；8!与2025：最大公因数45，最小公倍数1814400。（3）(3569,2407)=83；(1273,1541)=67。",
+        "solution_status": "incomplete",
+        "note": "所有数值经质因数分解或辗转相除独立复算一致；原卷对多数组合只列结果，补入逐步说明。",
+        "verified_solution": "两个数求最大公因数时，找它们共同拥有的质因数，并取较小的指数；求最小公倍数时，把出现过的质因数都取上，并取较大的指数。例如288=2^5×3^2、360=2^3×3^2×5，所以最大公因数是2^3×3^2=72，最小公倍数是2^5×3^2×5=1440。60、96、144的质因数分解分别为2^2×3×5、2^5×3、2^4×3^2，因此最大公因数为2^2×3=12，最小公倍数为2^5×3^2×5=1440。A=20、B=30，故最大公因数10、最小公倍数60。8!=40320=2^7×3^2×5×7，而2025=3^4×5^2，所以最大公因数为3^2×5=45，最小公倍数为2^7×3^4×5^2×7=1814400。最后两组用辗转相除：3569=2407+1162，2407=2×1162+83，1162=14×83，所以最大公因数是83；1541=1273+268，1273=4×268+201，268=201+67，201=3×67，所以最大公因数是67。"
       },
       "cross_reference_ids": []
     },
@@ -1872,9 +1911,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "30与72的GCD/LCM为6/360；21+24=45且LCM=168。"
+        "verified_answer": "（1）B=72。（2）这两个正整数是21和24（交换次序也可以）。",
+        "solution_status": "incomplete",
+        "note": "两问答案均正确；原解析称m=1时无解但未展示排除过程，补入易读的因数检查。",
+        "verified_solution": "（1）两个数相乘，等于它们的最大公因数乘最小公倍数，所以30×B=6×360，B=72。回代可得最大公因数6、最小公倍数360。（2）设最大公因数是m。m既整除45（两数的和），也整除168（它们的最小公倍数），所以m只能是1或3。若m=1，两数乘积就等于168，但和为45：较小的数只能是1、2、3或4，对应较大的数为44、43、42或41，乘积分别是44、86、126、164，都不是168。若m=3，把两数写成3a和3b，则a+b=15，且最小公倍数是3ab=168，所以ab=56。56中和为15的一对因数是7和8，因此两数是21和24。"
       },
       "cross_reference_ids": []
     },
@@ -1908,9 +1948,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "2024有16个因数；偶因数12个；92的倍数因数4个；所有因数和4320；倒数和540/253；因数乘积2024^8=2^24×11^8×23^8；该乘积有2025个因数；以2024为分母的最简真分数有880个，分数和为440。",
         "solution_status": "consistent",
-        "note": "全部数值由质因数分解、σ函数、φ函数及因数成对性质复算一致。"
+        "note": "全部结果独立复算：2024=2^3×11×23；按质因数指数计数、因数和公式及互质分数配对得到相同答案。",
+        "verified_solution": "先分解2024=2^3×11×23。它的因数都可写成2^a×11^b×23^c，其中a可选0、1、2、3，b、c各可选0或1，所以共有4×2×2=16个。（1）偶因数要至少有一个2，指数有3种选法，故有3×2×2=12个；92=2^2×23，作为因数必须带有2^2或2^3，并且含23，11可选可不选，所以有2×2=4个。（2）因数和为(1+2+4+8)(1+11)(1+23)=4320。所有因数倒数相加等于因数和除以2024，因此是4320/2024=540/253。（3）把每个因数和它的配对因数相乘，得到2024；16个因数共有8对，所以乘积是2024^8=2^24×11^8×23^8。这个乘积的因数个数是(24+1)(8+1)(8+1)=2025。（4）分子与2024没有公因数的分数才是最简分数。这样的分子有2024×(1−1/2)(1−1/11)(1−1/23)=880个。每个分子a都能和2024−a配成一对，两份分数相加为1；880个分数分成440对，所以总和是440。"
       },
       "cross_reference_ids": []
     },
@@ -1942,9 +1983,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "240有20个因数；因数和为744；所有因数的倒数和为31/10。",
         "solution_status": "consistent",
-        "note": "复算一致。"
+        "note": "由240=2^4×3×5独立复算，三个结果均与原卷相同。",
+        "verified_solution": "240=2^4×3×5。因数可以从2的0至4次方中选一种，再决定是否乘3、是否乘5，所以因数个数是5×2×2=20。因数和按各质因数分别相加再相乘：(1+2+4+8+16)(1+3)(1+5)=31×4×6=744。所有因数的倒数和等于744/240，约分后是31/10。"
       },
       "cross_reference_ids": []
     },
@@ -1977,9 +2019,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "按正起点a及长度n>1逐一检验，确为5种。"
+        "verified_answer": "5种：675+676+677；250+251+…+257；150+151+…+162；73+74+…+96；33+34+…+71。",
+        "solution_status": "incomplete",
+        "note": "答案5正确。原卷只写“2×3−1=5种”，没有列出奇因数如何对应连续和，已补出全部五种。",
+        "verified_solution": "设首个自然数是a、共有n项，把等差数列求和式乘2，得 n(2a+n−1)=4056=2^3×3×13^2。两个因数n与2a+n−1一奇一偶，而且后者比n大。4056的奇因数是1、3、13、39、169、507；每个奇因数与4056相除得到一个因数对。奇因数1对应n=1，只有一项，不符合题意。其余因数对给出五组连续自然数：675—677、250—257、150—162、73—96、33—71。把每组首尾项求和再乘项数的一半，都得到2028，所以共有5种。"
       },
       "cross_reference_ids": []
     },
@@ -2012,9 +2055,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "54×(54+22−1)=54×75=4050，起点11为自然数；无更大可行因数长度。"
+        "verified_answer": "最多54个，具体为11+12+…+64=2025。",
+        "solution_status": "incomplete",
+        "note": "来源给出的54项构造正确，但原解没有证明不存在更长的表示，已补长度上界与候选检查。",
+        "verified_solution": "设从a开始连续取n个自然数，则 n(2a+n−1)=2×2025=4050。由于a≥1，第二个因数比n大，所以n<√4050<64，即n≤63；同时n必须整除4050=2×3^4×5^2。55到63之间的数都不是4050的因数：55、57、59、61含有因数11、19或自身质数；56、58、62含有因数7、29或31；60需要两个因数2，但4050只有一个2；63含有因数7。因此比54大的项数都不行。54可行，因为4050÷54=75，故2a+54−1=75，得a=11。于是11+12+…+64共有54项，和为54×(11+64)÷2=2025。"
       },
       "cross_reference_ids": []
     },
@@ -2047,9 +2091,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "30的指数分拆按降序指数配最小质数，最小候选为2^4×3^2×5=720。"
+        "verified_answer": "最小值为720。",
+        "solution_status": "incomplete",
+        "note": "30个因数对应的指数分组均已检查；原解列出候选但未说明为何指数应按降序配最小质数，已补最小性理由。",
+        "verified_solution": "若N的质因数分解为 p1^e1×…×pk^ek，因数个数是(e1+1)…(ek+1)=30。30的乘法分组对应指数：29；14、1；9、2；5、4；4、2、1。要使N最小，先用最小的质数2、3、5，并把较大的指数给较小的质数；否则交换两个质数的指数会使乘积变小。各组最小候选依次为2^29、2^14×3、2^9×3^2、2^5×3^4、2^4×3^2×5=720。比较后720最小，且其因数个数为(4+1)(2+1)(1+1)=30。"
       },
       "cross_reference_ids": []
     },
@@ -2082,9 +2127,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "337为质数，2022=2×3×337且τ=8；其他指数结构给出更大值。"
+        "verified_answer": "2022。",
+        "solution_status": "incomplete",
+        "note": "2022=2×3×337且因数数为8；已分类比较337的指数1、3、7与其余质因数分组，补出最小性。",
+        "verified_solution": "337是质数。若N能被337整除且有8个因数，337的指数加1只能是8的因数2、4或8，所以337的指数只能是1、3或7。指数为1时，剩余部分的因数个数需为4：最小的“一个质数的三次方”是2^3=8；最小的“两个不同质数各一次”是2×3=6，所以更小的是6，得N=337×2×3=2022。指数为3时，剩余部分至少还要贡献2个因数，最小也要乘2，得到2×337^3，比2022大；指数为7时，N至少为337^7，更大。检查2022=2×3×337的因数个数为(1+1)^3=8，故最小值是2022。"
       },
       "cross_reference_ids": []
     },
@@ -2117,9 +2163,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "分类讨论完整；a≠2、11时三质因子指数为3、1、5，结果48。"
+        "verified_answer": "48。",
+        "solution_status": "incomplete",
+        "note": "按因数个数10的两种指数结构分类后，条件唯一推出N=11^4×q且q不是2或11，结果48；原解省略了分类理由，已补全。",
+        "verified_solution": "设N的质因数指数结构。因数个数10只可能来自N=p^9或N=p^4q（p、q为不同质数）。若N=p^9，11N的因数个数只能是11（p=11）或20（p≠11），不可能是12。若N=p^4q，11N有12个因数只在p=11时成立，于是N=11^4q，其中q是不同于11的质数。此时22N=2×11^5×q。若q=2，因数个数是(2+1)(5+1)=18，不是24，所以q不能是2；q也不能是11。因此88N=2^3×11^5×q，三个质因数指数分别为3、5、1，因数个数为(3+1)(5+1)(1+1)=48。"
       },
       "cross_reference_ids": []
     },
@@ -2129,9 +2176,9 @@
       "source_filename": "26数论模块训练营第三讲解析(1).pdf",
       "lesson_or_test": "数论方法训练营第3讲 唯一分解定理",
       "source_question_label": "拓展（1）",
-      "problem": "求11/49和9/56的最小公倍数和最大公因数。",
+      "problem": "求11/49和2又9/56的最小公倍数和最大公因数。",
       "source_answer": "原解析写：最大公因数11/392，最小公倍数121/7。",
-      "source_solution": "原页先将第二个分数的分子误写成12，随后按分数GCD=GCD(分子)/LCM(分母)、LCM=LCM(分子)/GCD(分母)计算。",
+      "source_solution": "原页把混合数2又9/56化成121/56；按分数最大公因数=分子最大公因数/分母最小公倍数、分数最小公倍数=分子最小公倍数/分母最大公因数计算。",
       "topics": [
         "分数的最大公因数与最小公倍数",
         "分数约分"
@@ -2148,14 +2195,16 @@
         ]
       },
       "ambiguities": [
-        "第5页第（1）题解析处把题面分子9写成12，属于题面与解析不一致。"
+        "原题第二个数是带分数2又9/56；题库旧题干漏掉整数部分2，现已按原页更正。原页手写将其化为121/56，题库旧解析转录将121误成12，现已修正。",
+        "题目未先定义分数的最大公因数和最小公倍数；以下按原解析采用的常见竞赛约定核验。"
       ],
       "duplicate_notes": "无",
       "review": {
-        "answer_status": "incorrect",
-        "verified_answer": "最大公因数=1/392；最小公倍数=99/7。",
-        "solution_status": "error",
-        "note": "按题面11/49与9/56计算：分数最大公因数为gcd(11,9)/lcm(49,56)=1/392；分数最小公倍数为lcm(11,9)/gcd(49,56)=99/7。来源解析把分子9误写成12，导致两项答案错误。"
+        "answer_status": "verified_with_caveat",
+        "verified_answer": "按原卷采用的分数最大公因数/最小公倍数约定：最大公因数=11/392，最小公倍数=121/7。",
+        "solution_status": "consistent",
+        "note": "原PDF第5页印刷题面为11/49与混合数2又9/56，手写将后者化为121/56；题库旧转录漏了整数部分2并把121误写为12，均已纠正。按原卷所用分数公因数/公倍数约定，结果11/392与121/7正确；题干本身未解释该约定。",
+        "verified_solution": "先把混合数化成假分数：2又9/56=(2×56+9)/56=121/56。按原卷的分数公因数和公倍数约定，分数最大公因数用“分子最大公因数÷分母最小公倍数”，分数最小公倍数用“分子最小公倍数÷分母最大公因数”。11和121的最大公因数是11、最小公倍数是121；49和56的最大公因数是7、最小公倍数是392。因此分数最大公因数为11/392，最小公倍数为121/7。"
       },
       "cross_reference_ids": []
     },
@@ -2182,13 +2231,16 @@
           5
         ]
       },
-      "ambiguities": [],
+      "ambiguities": [
+        "原题未定义分数的最大公因数和最小公倍数；按原卷采用的竞赛常见约定核验。"
+      ],
       "duplicate_notes": "无",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "gcd(2,4,8)/lcm(15,21,35)=2/105；lcm(2,4,8)/gcd(15,21,35)=8。"
+        "answer_status": "verified_with_caveat",
+        "verified_answer": "按原卷采用的分数公因数/公倍数约定：最大公因数=2/105，最小公倍数=8。",
+        "solution_status": "incomplete",
+        "note": "按原页所用约定独立复算，结果正确；原解析只列结果，已补计算。",
+        "verified_solution": "三个分数均为最简分数。分数最大公因数按“分子最大公因数÷分母最小公倍数”计算：gcd(2,4,8)=2，lcm(15,21,35)=105，所以是2/105。分数最小公倍数按“分子最小公倍数÷分母最大公因数”计算：lcm(2,4,8)=8，gcd(15,21,35)=1，所以是8。原题未说明分数公因数/公倍数的定义，以上沿用原卷约定。"
       },
       "cross_reference_ids": []
     },
@@ -2216,13 +2268,16 @@
           5
         ]
       },
-      "ambiguities": [],
+      "ambiguities": [
+        "原题未定义分数的最大公因数和最小公倍数；按原卷采用的竞赛常见约定核验。"
+      ],
       "duplicate_notes": "无",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "gcd(3,15,21)/lcm(28,56,20)=3/280；lcm(3,15,21)/gcd(28,56,20)=105/4。"
+        "answer_status": "verified_with_caveat",
+        "verified_answer": "按原卷采用的分数公因数/公倍数约定：最大公因数=3/280，最小公倍数=105/4。",
+        "solution_status": "incomplete",
+        "note": "将1又1/20化成21/20后按原页约定复算，结果正确；原解析只列结果，已补计算。",
+        "verified_solution": "先把带分数化成假分数：1又1/20=(1×20+1)/20=21/20。分子3、15、21的最大公因数是3，分母28、56、20的最小公倍数是280，所以分数最大公因数为3/280。分子最小公倍数是105，分母最大公因数是4，所以分数最小公倍数为105/4。原题未说明分数公因数/公倍数的定义，以上沿用原卷约定。"
       },
       "cross_reference_ids": []
     },
@@ -2251,13 +2306,16 @@
           7
         ]
       },
-      "ambiguities": [],
+      "ambiguities": [
+        "第（1）问只写“四个连续偶数”，未限定为正偶数；负数序列−12、−10、−8、−6也满足乘积条件，平均数为−9。"
+      ],
       "duplicate_notes": "无",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "乘积、平均数及GCD/LCM均复算正确。"
+        "answer_status": "conditional",
+        "verified_answer": "（1）若为四个连续正偶数，平均数为9；若允许负偶数，还有−12、−10、−8、−6这一组，平均数为−9，因此原题按整数解释不唯一。（2）最大公因数6，最小公倍数90。",
+        "solution_status": "incomplete",
+        "note": "（1）原卷的正偶数列6、8、10、12乘积为5760，平均数9；但题干未限定正数，负数列−12、−10、−8、−6也满足、平均数−9。（2）两数30与18的最大公因数和最小公倍数为6和90。建议题干补“正偶数”。",
+        "verified_solution": "（1）检查原卷列出的6、8、10、12：乘积为5760，平均数=(6+8+10+12)÷4=9。若四个数都要求为正，随着最小的偶数变大，四数乘积也会变大，所以这一组唯一。可是题干没有写“正偶数”；−12、−10、−8、−6的乘积同样是5760，平均数是−9。要让9成为唯一答案，题干应写“四个连续正偶数”。（2）甲数=2×3×5=30，乙数=2×3^2=18。共同质因数取较小指数得最大公因数2×3=6；全部质因数取较大指数得最小公倍数2×3^2×5=90。"
       },
       "cross_reference_ids": []
     },
@@ -2292,9 +2350,10 @@
       "duplicate_notes": "无",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）2520有48个因数，其中36个偶因数；所有因数倒数和为26/7。（2）这两个自然数是4和60，或12和20（交换顺序也可）。",
         "solution_status": "consistent",
-        "note": "2520的质因数分解及两组数的乘积/最小公倍数均正确。"
+        "note": "2520的质因数分解、因数个数、偶因数个数和倒数和均正确；乘积240且最小公倍数60的无序数对恰为(4,60)、(12,20)。",
+        "verified_solution": "（1）2520=2^3×3^2×5×7。因数个数为(3+1)(2+1)(1+1)(1+1)=48。偶因数至少含一个2，指数有3种选法，所以有3×3×2×2=36个。所有因数和为(1+2+4+8)(1+3+9)(1+5)(1+7)=9360；因数倒数和等于9360÷2520=26/7。（2）设最大公因数为m，两数写成ma、mb，且a、b没有大于1的公因数。最小公倍数mab=60，乘积m^2ab=240，所以m=4、ab=15。15的互质因数对为1×15和3×5，得到(4,60)与(12,20)。代回两组乘积都是240，最小公倍数都是60。"
       },
       "cross_reference_ids": []
     },
@@ -2327,9 +2386,10 @@
       "duplicate_notes": "与例题5同属最小值构造主题，但题目条件（16个因数）不同，不是重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "按指数降序分配最小质数，2^3×3×5=120为最小。"
+        "verified_answer": "最小值为120。",
+        "solution_status": "incomplete",
+        "note": "16个因数对应的指数分组均已检查；原解析列出候选但未说明指数如何分配给最小质数，已补最小性理由。",
+        "verified_solution": "因数个数公式要求质因数指数加1的乘积为16。指数分组只有15；7和1；3和3；3、1、1；1、1、1、1。要让数最小，使用最小质数2、3、5、7，并把较大指数给较小质数。各组最小候选为2^15=32768，2^7×3=384，2^3×3^3=216，2^3×3×5=120，2×3×5×7=210。最小的是120；它的因数个数为(3+1)(1+1)(1+1)=16。"
       },
       "cross_reference_ids": []
     },
@@ -2361,9 +2421,10 @@
       "duplicate_notes": "文档内未发现重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "4",
         "solution_status": "consistent",
-        "note": "各位数字和为14+a；要被9整除需14+a=18，故a=4，且为数字，答案正确。"
+        "note": "各位数字和为14+a；要被9整除需14+a=18，故a=4，且为数字，答案正确。",
+        "verified_solution": "9的倍数有一个小窍门：各位数字相加也要是9的倍数。已知数字相加为1+2+3+8=14，所以方框里的数字要让14+a成为9的倍数。a只能是0到9，14+a在14到23之间；这个范围里只有18是9的倍数，因此a=4。"
       },
       "cross_reference_ids": []
     },
@@ -2398,9 +2459,10 @@
       "duplicate_notes": "文档内未发现重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "9720。",
         "solution_status": "not_provided",
-        "note": "36=4×9。为使a72b最大先取a=9；9的倍数条件给出18+b为9的倍数，b∈{0,9}；末两位为20或29时仅20能被4整除，因此得9720，且9720÷36=270。原文有解析标题但未提供解析内容。"
+        "note": "36=4×9。为使a72b最大先取a=9；9的倍数条件给出18+b为9的倍数，b∈{0,9}；末两位为20或29时仅20能被4整除，因此得9720，且9720÷36=270。原文有解析标题但未提供解析内容。",
+        "verified_solution": "要使四位数最大，先取千位 a=9。能被 9 整除要求 9+7+2+b=18+b 为 9 的倍数，所以 b=0 或 9。末两位 20 能被 4 整除，29 不能，因此 b=0，最大数为 9720；9720÷36=270。"
       },
       "cross_reference_ids": []
     },
@@ -2433,9 +2495,10 @@
       "duplicate_notes": "文档内未发现重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1749",
         "solution_status": "consistent",
-        "note": "1799=53×33+50，减去余数得1749=53×33；在1700至1799范围内，53的倍数只有53×33=1749，答案正确。"
+        "note": "1799=53×33+50，减去余数得1749=53×33；在1700至1799范围内，53的倍数只有53×33=1749，答案正确。",
+        "verified_solution": "四位数17□□在1700到1799之间。53×32=1696，比1700小；53×33=1749，在范围内；53×34=1802，比1799大。因此唯一的四位数是1749。"
       },
       "cross_reference_ids": []
     },
@@ -2468,9 +2531,10 @@
       "duplicate_notes": "文档内未发现重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "n=1 或 n=3。",
         "solution_status": "not_provided",
-        "note": "令d=2n−1。因gcd(2n−1,n)=1，且d∣20n，所以d∣20；d为正奇数，故d∈{1,5}，分别得n=1,3，答案正确。逐一代入亦成立。原文仅给出答案，未给出解析。"
+        "note": "令d=2n−1。因gcd(2n−1,n)=1，且d∣20n，所以d∣20；d为正奇数，故d∈{1,5}，分别得n=1,3，答案正确。逐一代入亦成立。原文仅给出答案，未给出解析。",
+        "verified_solution": "令 d=2n−1。因 gcd(2n−1,n)=1，且 d |20n，所以 d |20。d 是正奇数，只能为 1 或 5；由 n=(d+1)/2，得 n=1 或 3。代回原式都成立。"
       },
       "cross_reference_ids": []
     },
@@ -2502,9 +2566,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "逐一考察两位数及其数字倒置同时为质数的情形，最大可行首数为97，对应79，和为176。"
+        "verified_answer": "176",
+        "solution_status": "incomplete",
+        "note": "来源解析只列出97+79=176，未证明最大性。本轮独立复核：数字和18只能取9+9，得到99不是质数；数字和17只能取8和9，倒置数98是大于2的偶数，不是质数；数字和16可由79和97实现且两者都是质数。",
+        "verified_solution": "设两个倒置数的数字为 x、y，则它们的和为 11(x+y)。若 x+y=18，只能是9+9，得到99，不是质数；若 x+y=17，只能是8和9，倒置数中98是大于2的偶数，也不是质数。因此 x+y≤16。取7和9，得到79、97，两者都是质数，和为176，所以最大值是176。"
       },
       "cross_reference_ids": []
     },
@@ -2536,9 +2601,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "211",
         "solution_status": "consistent",
-        "note": "200—220内除211外的奇数均可由题解所列小质因数整除；211不被不超过√211的质数2、3、5、7、11、13整除，确为质数。"
+        "note": "200—220内除211外的奇数均可由题解所列小质因数整除；211不被不超过√211的质数2、3、5、7、11、13整除，确为质数。",
+        "verified_solution": "200到220之间的偶数都大于2，所以不是质数。奇数候选除211外都能被小质数整除：201、207、213、219能被3整除；203、217能被7整除；205、215能被5整除；209能被11整除。检查211：它不被2、3、5、7、11或13整除，而这些是小于√211的所有质数，所以211是质数，也是区间里唯一的质数。"
       },
       "cross_reference_ids": []
     },
@@ -2573,9 +2639,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "42",
         "solution_status": "consistent",
-        "note": "b不能为2（左式为偶数而2035为奇数），故b为奇质数；由奇偶性a或c为2。a=2时b=5、11、37分别不给出质数c；c=2时b=37给出2a^a+1=55，即a^a=27、a=3，故和为42。"
+        "note": "b不能为2（左式为偶数而2035为奇数），故b为奇质数；由奇偶性a或c为2。a=2时b=5、11、37分别不给出质数c；c=2时b=37给出2a^a+1=55，即a^a=27、a=3，故和为42。",
+        "verified_solution": "2035=5×11×37，而且是奇数。b不能是2，否则左边两项都是偶数；因此b是奇质数。为了两项相加得到奇数2035，a或c必须是偶质数2。若a=2，方程变成b(4c+1)=2035；把b取5、11、37逐一代入，都不能得到质数c。于是c=2，方程变为b(2a^a+1)=2035。b只能是5、11、37；前两种会要求a^a分别等于203或92，都不是质数的自身幂。b=37时得到a^a=27，所以a=3。三数是3、37、2，和为42。"
       },
       "cross_reference_ids": []
     },
@@ -2608,9 +2675,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "93",
         "solution_status": "consistent",
-        "note": "2132的两位数因数对中，满足一奇一偶的为41和52；其和为93。其他因数对不同时为两位数或为偶偶。"
+        "note": "2132的两位数因数对中，满足一奇一偶的为41和52；其和为93。其他因数对不同时为两位数或为偶偶。",
+        "verified_solution": "2132=2²×13×41。把因数两两配成乘积2132，且都要是两位数，可能的因数对只有26×82和41×52。第一组都是偶数，和是偶数；第二组一奇一偶，和是奇数。因此所求和是41+52=93。"
       },
       "cross_reference_ids": []
     },
@@ -2642,9 +2710,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "144",
         "solution_status": "consistent",
-        "note": "对自然数A、B恒有AB=gcd(A,B)×lcm(A,B)，故lcm=1728÷12=144。"
+        "note": "对自然数A、B恒有AB=gcd(A,B)×lcm(A,B)，故lcm=1728÷12=144。",
+        "verified_solution": "两个数相乘，等于它们的最大公因数乘最小公倍数：A×B=gcd(A,B)×lcm(A,B)。所以lcm(A,B)=1728÷12=144。"
       },
       "cross_reference_ids": []
     },
@@ -2677,9 +2746,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "A=14，B=6，C=21",
         "solution_status": "consistent",
-        "note": "啮合齿轮每圈经过的齿数相同，故3A=7B=2C；取公共值lcm(3,7,2)=42得A=14、B=6、C=21，且三者不能同时再缩小。"
+        "note": "啮合齿轮每圈经过的齿数相同，故3A=7B=2C；取公共值lcm(3,7,2)=42得A=14、B=6、C=21，且三者不能同时再缩小。",
+        "verified_solution": "齿轮咬合时，接触处经过的齿数相同。A转3圈、B转7圈、C转2圈，因此3A=7B=2C。这个共同的齿数必须同时是3、7、2的倍数，最小是它们的最小公倍数42。于是A=42÷3=14，B=42÷7=6，C=42÷2=21。"
       },
       "cross_reference_ids": []
     },
@@ -2714,9 +2784,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "conditional",
-        "verified_answer": "按现有题面不能唯一确定：m为正整数且gcd(m,10)=2；此时最小公倍数为30m。若另补“m为质数”，才得到m=2、最小公倍数60。",
+        "verified_answer": "按正整数 m 理解：gcd(10,m)=2，最小公倍数=30m，解不唯一。只有另补“m 为质数”时，才有 m=2、最小公倍数 60。",
         "solution_status": "error",
-        "note": "题面没有“m为质数”条件。来源解答自行补入该条件；例如m=4时a=60、b=24，最大公因数仍为12，但最小公倍数为120。"
+        "note": "题面没有“m为质数”条件。来源解答自行补入该条件；例如m=4时a=60、b=24，最大公因数仍为12，但最小公倍数为120。 本轮独立复核（原PDF第2页，2026-10-08）：目视确认题干未出现“m为质数”；独立验算m=4、6等也满足最大公因数为12，故来源的m=2、最小公倍数60仅在补充“m为质数”时成立。",
+        "verified_solution": "a=60，b=6m。gcd(a,b)=gcd(60,6m)=6·gcd(10,m)=12，故 gcd(10,m)=2；这并不推出 m=2，例如 m=4、6、8 都满足。最小公倍数为 ab/gcd(a,b)=60×6m/12=30m。若原题漏印“m 为质数”，才可进一步得 m=2、最小公倍数 60。"
       },
       "cross_reference_ids": []
     },
@@ -2747,9 +2818,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "C（4）。",
         "solution_status": "consistent",
-        "note": "恒等式正确，4对任意正整数n均整除。"
+        "note": "恒等变形为4(n+4)(n−1)，故任意正整数n都被4整除；其他选项可用n=2或3排除。",
+        "verified_solution": "(2n+3)^2−25=(2n+3−5)(2n+3+5)=(2n−2)(2n+8)=4(n−1)(n+4)，因此总能被4整除。要排除其他选项，取n=3时原式为56，不能被3或6整除；取n=2时原式为24，不能被5整除。所以只有4一定能整除。"
       },
       "cross_reference_ids": []
     },
@@ -2781,9 +2853,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "B（63和65）。",
         "solution_status": "consistent",
-        "note": "63=2^6−1及65=2^6+1均整除2^48−1。"
+        "note": "因式分解与原式相等；63、65均为60到70间的因数，选项其余项分别被奇偶性或模运算排除。",
+        "verified_solution": "反复使用平方差公式：2^48−1=(2^24−1)(2^24+1)=(2^12−1)(2^12+1)(2^24+1)=(2^6−1)(2^6+1)(2^12+1)(2^24+1)。其中2^6−1=63、2^6+1=65，所以两数都整除原数，并都在60到70之间。选项A中的61余33，选项C中的67余61；选项D含偶数64，而2^48−1是奇数。因此只有B正确。"
       },
       "cross_reference_ids": []
     },
@@ -2815,9 +2888,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "601。",
         "solution_status": "consistent",
-        "note": "代入原条件及差值均成立。"
+        "note": "由质数指数比较，a=m^6、b=m^7、c=n^2、d=n^3；因数分解得到唯一正整数解m=2、n=9。",
+        "verified_solution": "若a^7=b^6，比较两边每个质因数的指数，因为6与7互质，可写成a=m^6、b=m^7。类似地，c^3=d^2可写成c=n^2、d=n^3。代入c−a=17，得到(n−m^3)(n+m^3)=17。17是质数，两个正因数只能是1和17，所以n−m^3=1、n+m^3=17，解得n=9、m^3=8、m=2。于是b=128、d=729，d−b=601。"
       },
       "cross_reference_ids": []
     },
@@ -2849,9 +2923,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "5组：(2,11)、(6,9)、(10,8)、(18,7)、(42,6)。",
         "solution_status": "consistent",
-        "note": "48的正因数配对数为5，且对应x、y均为正整数。"
+        "note": "变形为正整数因数对；要求x+6≥7，48的正因数对恰给出5组。",
+        "verified_solution": "把原式移项并分组：xy−5x+6y−78=0，等价于(x+6)(y−5)=48。因为x为正整数，x+6≥7；等式右边为正，所以y−5也为正。48的因数对中，满足第一因数至少为7的有(8,6)、(12,4)、(16,3)、(24,2)、(48,1)，对应(x,y)分别为(2,11)、(6,9)、(10,8)、(18,7)、(42,6)，共5组。"
       },
       "cross_reference_ids": []
     },
@@ -2880,15 +2955,14 @@
           2
         ]
       },
-      "ambiguities": [
-        "第2页右上(b)解析的因式分解与原方程不等价，虽最终两组答案可直接验算成立。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": "(a)3组；(b)2组，(b)解为(x,y)=(1,92),(6,2)。",
-        "solution_status": "error",
-        "note": "两组解代回原方程均成立且穷举可得只有这两组；但来源(b)的因式分解不等价于原式，最终答案正确、解析步骤错误。"
+        "verified_answer": "(a) 3组：(3,3)、(6,2)、(18,1)；(b) 2组：(1,92)、(6,2)。",
+        "solution_status": "consistent",
+        "note": "回看原PDF第2页，(xy−4)(2x−1)=88展开后正好等价于原方程，先前“因式分解不等价”的复核结论是误判，已撤销；两部分答案穷尽后均正确。",
+        "verified_solution": "(a) 原式等价于(x+2)(3y−1)=40。令u=x+2、v=3y−1，则u≥3，v为正且v除以3余2。40的有序因数对中符合条件的是(5,8)、(8,5)、(20,2)，得到(3,3)、(6,2)、(18,1)，共3组。(b) 原方程等价于xy(2x−1)=8x+84；两边同减4(2x−1)，得到(xy−4)(2x−1)=88。因为x、y为正整数，两个因数都为正数；2x−1是88的奇因数，只能是1或11。取1得x=1、y=92；取11得x=6、y=2。故恰有2组。"
       },
       "cross_reference_ids": []
     },
@@ -2920,9 +2994,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "2组：(4,5)、(16,4)。",
         "solution_status": "consistent",
-        "note": "正整数约束下仅有2组。"
+        "note": "等价于(x+8)(y−3)=24；正整数约束下只允许因数对(12,2)、(24,1)，代回均成立。",
+        "verified_solution": "把xy−3x+8y=48移项整理：x(y−3)+8(y−3)=24，所以(x+8)(y−3)=24。因x>0，x+8≥9；因乘积为正，y−3>0。24中第一因数至少为9的正因数对只有(12,2)和(24,1)，对应(x,y)=(4,5)和(16,4)，共2组。代回原式均成立。"
       },
       "cross_reference_ids": []
     },
@@ -2954,9 +3029,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "对整数a、b的因式约束筛选后唯一解为(9,6)。"
+        "verified_answer": "a=9、b=6，a+b=15。",
+        "solution_status": "incomplete",
+        "note": "将原方程化为(3a+5)(2b−3)=288。须同时使用2b−3为奇数和3a+5≡2(mod 3)筛选带符号因数；原解析只写出一组未证明唯一。",
+        "verified_solution": "令u=3a+5、v=2b−3。原式等价于uv=288。因为v是奇数，288=2^5×9中的全部2因子都在u里，所以u只能是±32、±96、±288。又u=3a+5，故u除以3余2；上述数中只有u=32符合。于是v=288/32=9，解得a=9、b=6，和为15。"
       },
       "cross_reference_ids": []
     },
@@ -2990,9 +3066,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "自然数按正整数理解时最大和为16+240=256；a、b交换不影响和。"
+        "verified_answer": "最大值为256，在(a,b)=(16,240)或(240,16)时取得。",
+        "solution_status": "incomplete",
+        "note": "变形正确。原解析指出因数对1与225，但未说明最大和理由；已用正因数和的不等式补足。",
+        "verified_solution": "由1/15=1/a+1/b，通分得ab=15a+15b，即(a−15)(b−15)=225。因为a、b是正整数，且两个正倒数之和为1/15，所以a、b都大于15。令r=a−15、s=b−15，则r、s为正整数且rs=225。由(r−1)(s−1)≥0可得r+s≤rs+1=226，因此a+b=30+r+s≤256。取r=1、s=225（或交换），即a=16、b=240，确实达到256。"
       },
       "cross_reference_ids": [
         "XR-05"
@@ -3029,9 +3106,10 @@
       "duplicate_notes": "第3页再次完整呈现与第2页末尾相同的练习3，标记为文档重复/跨页重复，仅计1道独立题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "无序解为(9,72)、(10,40)、(12,24)；每组交换次序也成立。",
         "solution_status": "consistent",
-        "note": "三组无序解及其交换均满足原等式且a≠b。"
+        "note": "由因数分解得到三组不同自然数，交换顺序后共6个有序解；原页列出的数对正确。",
+        "verified_solution": "由1/8=1/a+1/b得ab−8a−8b=0，即(a−8)(b−8)=64。因为两个正倒数之和为1/8，a、b都大于8，所以两个因数为正。64的正因数配对为1×64、2×32、4×16、8×8；最后一对会得到a=b=16，违反“不同”。其余三对给出无序解(9,72)、(10,40)、(12,24)，各自交换a、b也成立。"
       },
       "cross_reference_ids": [
         "XR-03"
@@ -3065,9 +3143,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "正整数解与2025^2的正因数配对一一对应，计数22。"
+        "verified_answer": "22组不同的正整数解。",
+        "solution_status": "incomplete",
+        "note": "因数计数45及答案22正确；原解析未充分说明正解与小于2025的因数一一对应，已补出双向对应。",
+        "verified_solution": "整理方程可得(2025+y)(2025−x)=2025^2。由于x、y为正整数，因数2025−x必须是小于2025的正因数；反过来，每个小于2025的正因数d都唯一给出x=2025−d、y=2025^2/d−2025，且二者为正整数。因此解数等于2025^2的正因数中小于平方根2025的个数。2025^2=3^8×5^4，共有(8+1)(4+1)=45个因数；其中1个等于2025，其余44个两两成互补因数对，故小于2025的有22个，解也有22组。"
       },
       "cross_reference_ids": []
     },
@@ -3099,9 +3178,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "按x≥y≥z分类后排列数计算正确，总数15。"
+        "verified_answer": "15组正整数有序解。",
+        "solution_status": "incomplete",
+        "note": "总数15正确；原手写在z=2、3的因数配对处把x−常数与y−常数的标签顺序写反，但最终列出的三元组正确，现按x≥y≥z重排并说明排列数。",
+        "verified_solution": "不妨设x≥y≥z。若z=1，倒数和已大于5/6，不可能；又5/6≤3/z，所以z≤18/5，故z只能是2或3。z=3时，1/x+1/y=1/2，化为(x−2)(y−2)=4；按x≥y，得到(x,y)=(6,3)或(4,4)，对应三元组(6,3,3)有3种排列、(4,4,3)有3种。z=2时，1/x+1/y=1/3，化为(x−3)(y−3)=9；按x≥y，得到(12,4)或(6,6)，对应(12,4,2)有6种排列、(6,6,2)有3种。合计3+3+6+3=15组。"
       },
       "cross_reference_ids": []
     },
@@ -3130,14 +3210,15 @@
         ]
       },
       "ambiguities": [
-        "若教材将0纳入自然数，a=0时数值9为合数；原解析仅讨论a≥1。"
+        "“自然数”是否包含0存在教材约定差异；若包含0，原解析需补a=0，结果为9（合数）。"
       ],
       "duplicate_notes": "",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "因式分解及a=1、2的特例判断正确。"
+        "answer_status": "verified_with_caveat",
+        "verified_answer": "当a=1、2时分别为质数7、13；其他允许的自然数取值都得到合数。",
+        "solution_status": "incomplete",
+        "note": "因式分解正确；原解析按正自然数讨论，若“自然数”含0，须补a=0时数值9为合数。补充后结论完整。",
+        "verified_solution": "a^4−3a^2+9=(a^2+3)^2−(3a)^2=(a^2−3a+3)(a^2+3a+3)。a=1时结果7，是质数；a=2时结果13，是质数。a≥3时两个因数都大于1，所以结果是合数。若教材把0也算作自然数，则a=0时结果为9，也是合数；因此无论采用哪种自然数约定，只有a=1、2时结果为质数。"
       },
       "cross_reference_ids": []
     },
@@ -3171,10 +3252,11 @@
       ],
       "duplicate_notes": "",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "三组代入AB−A−B=gcd(A,B)+lcm(A,B)均成立。"
+        "answer_status": "verified_with_caveat",
+        "verified_answer": "按原页通常解释AB−(A+B)：无序数对为(4,6)、(3,6)、(4,4)；若区分A、B，前两组各可交换顺序。",
+        "solution_status": "incomplete",
+        "note": "三组代入AB−(A+B)=gcd(A,B)+lcm(A,B)均成立；原题“积与和之差”按AB−(A+B)理解，已在答案和解释中明示。",
+        "verified_solution": "设A=ma、B=mb，其中m=gcd(A,B)，且a、b互质，则lcm(A,B)=mab。按原题通常读法，AB−(A+B)=gcd+lcm，化为(m−1)ab=1+a+b，即m−1=1/a+1/b+1/(ab)≤3，所以m只能是2、3、4。m=2时，(a−1)(b−1)=2，得(a,b)=(2,3)或(3,2)，于是{A,B}={4,6}。m=3时，(2a−1)(2b−1)=3，得(a,b)=(1,2)或(2,1)，于是{A,B}={3,6}。m=4时，(3a−1)(3b−1)=4；两因子均除以3余2，故只能都为2，得a=b=1、A=B=4。"
       },
       "cross_reference_ids": []
     },
@@ -3206,9 +3288,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "30的正因数配对中满足正整数条件的有3组。"
+        "verified_answer": "3组：(3,6)、(8,5)、(23,4)。",
+        "solution_status": "incomplete",
+        "note": "变形正确；正整数限制下x+7≥8，只有三个可行正因数对，答案3组通过。",
+        "verified_solution": "把方程整理为(x+7)(y−3)=30。因为x为正整数，x+7至少为8；乘积为正，所以y−3也为正。30的正因数对中，第一因数不小于8的只有(10,3)、(15,2)、(30,1)，分别得到(x,y)=(3,6)、(8,5)、(23,4)，共3组。"
       },
       "cross_reference_ids": []
     },
@@ -3240,9 +3323,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "每个正因数对应一个有序解，解数为9。"
+        "verified_answer": "9个有序正整数解。",
+        "solution_status": "incomplete",
+        "note": "变形及因数个数9正确；已说明每个正因数对应一个有序解，且x=y的一组也计入。",
+        "verified_solution": "由1/x+1/y=1/77得xy−77x−77y=0，即(x−77)(y−77)=77^2=7^2×11^2。因x、y是正整数，原式每个倒数都小于1/77，所以x、y均大于77；两个因数都是正整数。任取77²的正因数d，就唯一得到有序解x=77+d、y=77+77²/d。因此解数等于77²的正因数个数：(2+1)(2+1)=9。包括x=y=154这一组。"
       },
       "cross_reference_ids": []
     },
@@ -3274,9 +3358,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "n=8时144+256=400=20^2；因子差约束排除其他正整数n。"
+        "verified_answer": "n=8。",
+        "solution_status": "incomplete",
+        "note": "平方差因式分解正确；原解没有说明为何仅有8、32这组2的幂相差24，已补唯一性证明。",
+        "verified_solution": "令完全平方数为m²。因为2^4+2^7=144=12²，故(m−12)(m+12)=2^n。m>12，所以两个因数都是正整数；乘积是2的幂，两个因数本身也必须是2的幂。设较小因数为2^r、较大为2^s（s>r），它们相差24：2^r(2^(s−r)−1)=24=8×3。括号内是奇数，因此2^r只能是8，括号为3，从而s−r=2，因数恰为8和32。于是m=20，2^n=8×32=256=2^8，得n=8。"
       },
       "cross_reference_ids": []
     },
@@ -3288,7 +3373,7 @@
       "source_question_label": "例题1",
       "problem": "已知：34+86≡7+14≡21≡2+1≡3 (mod 9)，702+20≡2+6≡8≡1 (mod 7)，仿照此形式，利用同余记号书写过程，计算下列各题最终的余数：(1)121+34 (mod 9)；(2)234−117 (mod 11)；(3)432×86 (mod 7)。",
       "source_answer": "(1)2；(2)7；(3)3。",
-      "source_solution": "(1)121≡4，34≡7 (mod 9)，故4+7≡2；(2)234≡3，117≡1 (mod 11)，故3−1=2——但页面红笔最终写为7，且直接计算234−117=117≡7 (mod 11)；(3)432≡5，86≡2 (mod 7)，故5×2≡3。",
+      "source_solution": "(1) 121≡4、34≡7 (mod 9)，4+7=11≡2；(2) 234≡3、117≡7 (mod 11)，3−7=−4≡7；(3) 432≡5、86≡2 (mod 7)，5×2=10≡3。",
       "topics": [
         "同余的加减乘运算",
         "余数计算"
@@ -3304,15 +3389,14 @@
           1
         ]
       },
-      "ambiguities": [
-        "第1页例题1(2)红笔把234、117分别写成3、1，但这两个余数实际应为3、7；最终答案7仍正确。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": "(1)2；(2)7；(3)3。",
-        "solution_status": "error",
-        "note": "来源最终答案正确；第(2)问的红笔余数把117写成1并推出错误的中间算式，正确为117≡7 (mod 11)，所以234−117≡3−7≡7 (mod 11)。"
+        "verified_answer": "(1) 2；(2) 7；(3) 3。",
+        "solution_status": "consistent",
+        "note": "原页第1页红笔实际写的是3−7，推得−4≡7；此前题库转录误把手写7识读成1，现已纠正，来源解法本身正确。",
+        "verified_solution": "(1) 模9：121≡4、34≡7，所以4+7=11≡2。(2) 模11：234≡3、117≡7，所以3−7=−4≡7。(3) 模7：432≡5、86≡2，所以5×2=10≡3。"
       },
       "cross_reference_ids": []
     },
@@ -3340,13 +3424,16 @@
           1
         ]
       },
-      "ambiguities": [],
+      "ambiguities": [
+        "题面未说明模数m是否要求大于1。若按正整数模数并允许m=1，则m为2010的16个正因数；若规定m>1，则排除1后为15种。建议明确模数范围。"
+      ],
       "duplicate_notes": "无明显重复。",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "2010有16个正约数；按通常正模数约定结论正确。"
+        "answer_status": "conditional",
+        "verified_answer": "若允许正模数m=1，共16种；若要求m>1，则15种。",
+        "solution_status": "incomplete",
+        "note": "m需为2010的正因数；来源用τ(2010)=16，隐含把m=1计入。题面未明示是否允许模1，因此保留条件化答案。",
+        "verified_solution": "2023≡13 (mod m)等价于m整除2023−13=2010。2010=2×3×5×67，共有2^4=16个正因数。如果模数允许1，答案16；若教材规定模数必须大于1，则去掉因数1，答案15。"
       },
       "cross_reference_ids": []
     },
@@ -3358,7 +3445,7 @@
       "source_question_label": "例题2",
       "problem": "(1)算式1357×2468−321×654被11除，所得余数是多少？被13除所得的余数是多少？(2)多位数A=123412341234⋯1234（共5678个1234），这个数除以25的余数是多少？这个数除以9的余数是多少？除以99的余数是多少？",
       "source_answer": "(1)除以11余6，除以13余6；(2)除以25余9，除以9余8，除以99余26。",
-      "source_solution": "(1)模11：1357≡4，2468≡4，321≡2，654≡5，A≡4×4−2×5=6；模13：1357≡5，2468≡11，321≡9，654≡4，A≡5×11−9×4=6。(2)每个1234块模25余34≡9；模9每块各位和为10≡1，5678≡8 (mod9)，故余8；模99时1234≡46，5678≡35，46×35=1610≡26。",
+      "source_solution": "(1) 模11：1357≡4、2468≡4、321≡2、654≡5，所以余6；模13：1357≡5、2468≡11、321≡9、654≡4，所以5×11−9×4=19≡6。(2) 模25时A的末两位是34，故A≡34≡9；模9时每个1234块的数位和为10，5678个块贡献5678×10≡8；模99时10^4≡1且1234≡46、5678≡35，所以A≡46×35=1610≡26。",
       "topics": [
         "同余的加减乘运算",
         "多位数与分块同余",
@@ -3382,9 +3469,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "各余数逐项重算一致；题面分块数在第2页标注为5678个1234。"
+        "verified_answer": "(1) 模11余6、模13余6；(2) 模25余9、模9余8、模99余26。",
+        "solution_status": "incomplete",
+        "note": "各余数复算正确。原页模25手写是A≡34≡9（看末两位）；题库旧转述“每个1234块模25余9”不准确，现已按原页校正并补位置值理由。",
+        "verified_solution": "(1) 模11：1357≡4、2468≡4、321≡2、654≡5，因此4×4−2×5=6。模13：对应余数为5、11、9、4，因此5×11−9×4=19≡6。(2) A是5678个1234依次拼成的数。模25时10^4≡0，所以除最右边的1234外，前面各块都贡献0；末两位34≡9，因此余9。模9时每块数字和10≡1，5678≡8，所以余8。模99时10^4≡1，故A≡5678×1234≡35×46=1610≡26。"
       },
       "cross_reference_ids": []
     },
@@ -3417,9 +3505,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": "除以7余0；除以9余0。",
-        "solution_status": "consistent",
-        "note": "题面是2026重复2025块。模7时每3块组成一个周期且周期和为0；2025=675×3。模9时每块数码和为10≡1，2025≡0 (mod 9)。来源答案及三块示例均正确。此前自动核验误把三块模7余数判为1，已撤销。"
+        "verified_answer": "被7除余0；被9除余0。",
+        "solution_status": "incomplete",
+        "note": "原题为四位数块2026重复2025次；按块长4的周期独立计算，模7、模9的余数均为0。",
+        "verified_solution": "令A为2026重复2025次。模7时2026≡3、10^4≡4、10^8≡2，因此连续三块202620262026≡3(1+4+2)=0 (mod 7)。2025=675×3，所有块可分成675组，每组模7都余0。模9时每个2026块的数位和为2+0+2+6=10≡1，2025个块合计余2025≡0。"
       },
       "cross_reference_ids": []
     },
@@ -3451,9 +3540,10 @@
       "duplicate_notes": "与练习3、作业1同属相同余数模型，但数据不同，不是重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "19。",
         "solution_status": "consistent",
-        "note": "m需为19的正因数且余数相同；m=19满足，m>1的其他因数不满足题设余数/通常题意，源结论正确。"
+        "note": "m>1且m同时整除57与38，只能取gcd(57,38)=19；直接验算三数除19余15。",
+        "verified_solution": "相同余数意味着m整除任意两数之差：300−243=57，243−205=38。两差的最大公因数gcd(57,38)=19。因为m>1，唯一可能是m=19；验算300、243、205除以19都余15，满足题意。"
       },
       "cross_reference_ids": [
         "XR-06"
@@ -3489,9 +3579,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "模数17，且a=4。",
         "solution_status": "consistent",
-        "note": "276、317、371除以17的余数依次为4、11、14，恰与a、a+7、a+10相符。差值法得到m|34且m|51，gcd(34,51)=17；因此来源答案17（a=4）正确。原页红笔未单独写出第三项验算，补充核对371=17×21+14。"
+        "note": "差值约束给出m|34且m|51，m>1故m=17；三个实际余数4、11、14符合a、a+7、a+10。",
+        "verified_solution": "设模数为m。余数依次是a、a+7、a+10，所以317−276=41? 更直接比较：276≡317−7，故m整除317−7−276=34；317−7≡371−10，故m整除371−10−(317−7)=51。于是m整除gcd(34,51)=17。题目给m>1，故m=17。直接计算276=17×16+4、317=17×18+11、371=17×21+14，余数正好为4、4+7、4+10，因此a=4。"
       },
       "cross_reference_ids": [
         "XR-06"
@@ -3522,14 +3613,15 @@
         ]
       },
       "ambiguities": [
-        "第3页由1200≡a²−3改写为1203≡a²，但a≡36 (mod m)且m=31时36²≡25、1203≡25；然而原余数a−1=4对应a=5，参数代表选择未处理。"
+        "原解推得m=31后未明确求a并回代；补算a=5，三个余数分别为4、22、10，均符合题面。"
       ],
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "31除35、1200、103分别余4、19、10；a=5时对应a−1=4、a²−3=22（余数22），与1200余19不符，故题面/源解存在数据不一致。按源解的同余消元只能推出31整除m，但不能推出题面余数成立。"
+        "verified_answer": "除数31；对应a=5。",
+        "solution_status": "incomplete",
+        "note": "m|93且m|31，故m=1或31；m=1不可能产生题面三个非负余数。m=31时35、1200、103分别余4、22、10，对应a=5，a²−3=22，2a=10。此前复核把1200的余数误写为19，现已纠正。",
+        "verified_solution": "由35≡a−1得a≡36 (mod m)；由1200≡a²−3得a²≡1203 (mod m)，所以m整除36²−1203=93。又103≡2a且a≡36，故m整除103−72=31。因此m整除gcd(93,31)=31。m=1时题面要求的余数a²−3无法为非负余数，排除；只能m=31。此时35除31余4，所以a−1=4、a=5；再验算1200除31余22=a²−3，103除31余10=2a，三项完全符合。"
       },
       "cross_reference_ids": []
     },
@@ -3539,9 +3631,9 @@
       "source_filename": "26数论模块训练营第五讲解析(1).pdf",
       "lesson_or_test": "数论方法训练营第5讲：同余与运算",
       "source_question_label": "例题5",
-      "problem": "(1)2025^1000被19除，所得的余数是多少？(2)在1～2026的所有正整数中，共有多少个整数x，使3^(3x+1)和3^x被5除的余数相同？",
+      "problem": "(1) 2025^1000被19除，所得的余数是多少？(2) 在1～2026的所有正整数中，共有多少个整数x，使3^(3x+1)和x^3被5除的余数相同？",
       "source_answer": "(1)11；(2)405个。",
-      "source_solution": "(1)2025≡11 (mod19)，11^1≡11、11^2≡7、11^3≡1，周期3；1000÷3余1，故余11。(2)写3^(3x+1)=27^x×3≡2^x×3 (mod5)，并列出x=1到20的周期表，页面标出若干位置并结论“20个一周期，有4个；2023÷20=101…3；101×4+1=405个”。",
+      "source_solution": "(1) 2025≡11 (mod 19)，11、11²≡7、11³≡1，周期为3，1000除以3余1，故余数11。(2) 原页化为3^(3x+1)≡3×2^x (mod 5)，列x=1至20的周期表，匹配x=1、12、18、19。原页末尾写2023÷20=101…3；题面范围为1～2026，应按2026÷20=101…6重算，余下6项仍只有x≡1匹配，答案仍为405。",
       "topics": [
         "幂的周期性",
         "同余方程与周期计数",
@@ -3559,14 +3651,16 @@
         ]
       },
       "ambiguities": [
-        "第3页(2)蓝色标记与红色计数之间无法对应出正确等式位置；题面本身清晰，错误在源解析与答案。"
+        "原解析末尾把题面上界2026写作2023进行除法；正确的余数段应为2021—2026，但该段与原解析采用的首3项同样仅有1个匹配，最终答案405不变。"
       ],
       "duplicate_notes": "无明显重复。",
       "review": {
-        "answer_status": "incorrect",
-        "verified_answer": "(1)11；(2)0个。",
+        "answer_status": "verified",
+        "verified_answer": "(1) 11；(2) 405个。",
         "solution_status": "error",
-        "note": "(1)正确。对(2)，同余式可除以3^x化为3^(2x+1)≡1 (mod 5)。3模5的阶为4，但2x+1恒为奇数，不可能被4整除，故1～2026内没有解；来源答案405错误。"
+        "note": "题面第二个式子是x³，不是3^x。原答案405正确；源解末尾误用2023÷20=101余3而题面上界是2026。按2026重算为101个整周期加6项，仍只有x≡1匹配，故总数仍405。此前将x³误读成3^x并判0，已撤销。",
+        "verified_solution": "(1) 2025≡11 (mod 19)，且11³≡1，所以2025^1000≡11^(1000 mod3)=11。(2) 模5下3^(3x+1)随x以4为周期变化，x³随x以5为周期变化，比较两列的共同周期20，满足条件的x模20为1、12、18、19，每20个数有4个。2026=101×20+6，前2020个数共有101×4=404个；余下x=2021到2026对应模20的1到6，只有x≡1匹配，再加1个。总数405。",
+        "source_answer": "(1)11；(2)405个。"
       },
       "cross_reference_ids": []
     },
@@ -3598,9 +3692,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "6。",
         "solution_status": "consistent",
-        "note": "直接模10计算结果为6。"
+        "note": "19^93末位为9，93^19末位为7，和末位为6。",
+        "verified_solution": "看个位即可。19的个位是9，9的个位循环为9、1；93次方的个位仍为9。93的个位是3，3的个位循环为3、9、7、1；19除以4余3，所以93^19的个位为7。9+7=16，原数末位为6。"
       },
       "cross_reference_ids": []
     },
@@ -3633,9 +3728,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "第2022项被7除余1，末位数字为6。",
         "solution_status": "consistent",
-        "note": "按题面从a1=1、a2=1开始，F2022 mod7=1、mod10=6。"
+        "note": "从F1=F2=1开始核算：模7周期16，模10周期60；2022分别余6、42。",
+        "verified_solution": "令F1=F2=1。斐波那契数列模7的周期为16，2022除以16余6，因此F2022≡F6=8≡1 (mod 7)。末位数字按模10的周期60重复，2022除以60余42；F42=267914296，个位为6。"
       },
       "cross_reference_ids": []
     },
@@ -3667,9 +3763,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "星期五。",
         "solution_status": "consistent",
-        "note": "按“以后的第N天”按N天顺延，余5对应星期五；源解析正确。"
+        "note": "星期按7天循环；47≡5 (mod7)，且37^23≡1 (mod6)，所以偏移天数模7为5。",
+        "verified_solution": "需要计算N=47^(37^23)除以7的余数。47≡5 (mod7)，而5^6≡1 (mod7)，所以只需算指数模6。37≡1 (mod6)，故37^23≡1 (mod6)，N≡5^1≡5 (mod7)。从星期日往后数5天是星期五。"
       },
       "cross_reference_ids": []
     },
@@ -3702,10 +3799,11 @@
       ],
       "duplicate_notes": "与例题3、练习3同为相同余数模型，不是同文档重复题。",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
+        "answer_status": "verified_with_caveat",
+        "verified_answer": "按正整数除数理解：m=4、6、12。",
         "solution_status": "consistent",
-        "note": "题面说“有一个整数”但答案以除数m列出；按上下文应求除数。正除数且m>3时正是4、6、12。"
+        "note": "原题措辞省略“这个整数作除数”；结合余数表达式和源解按正除数m理解。三个候选均直接满足。",
+        "verified_solution": "设正整数除数为m。余数为3要求m>3；又m须整除39−3=36、51−3=48和147−3=144，因此m整除gcd(36,48,144)=12。大于3的12的正因数只有4、6、12。逐一代入，39、51、147除以这三个数时余数都为3。"
       },
       "cross_reference_ids": [
         "XR-06"
@@ -3739,9 +3837,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "逐一检验290的正因数，只有m=29使70 mod m、110 mod m、160 mod m之和为50；m=58不满足。"
+        "verified_answer": "29。",
+        "solution_status": "incomplete",
+        "note": "m整除290且余数和为50。源解只提到29、58，漏查145、290；逐一计算后只有29满足。",
+        "verified_solution": "设正整数除数为m。三个余数之和为50，所以m整除70+110+160−50=290。每个余数都不超过m−1，故3(m−1)≥50，m≥18。290的正因数中不小于18的只有29、58、145、290。分别求余数和：m=29时12+23+15=50；m=58时12+52+44=108；m=145时70+110+15=195；m=290时70+110+160=340。只有m=29符合。"
       },
       "cross_reference_ids": []
     },
@@ -3773,9 +3872,10 @@
       "duplicate_notes": "无明显重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "10。",
         "solution_status": "consistent",
-        "note": "独立快速幂计算得10。"
+        "note": "2^6443 mod19独立快速幂为10；6443=18×357+17，且模19的2次幂序列长度为18。",
+        "verified_solution": "模19依次计算2的幂，余数从2开始循环：2、4、8、16、13、7、14、9、18、17、15、11、3、6、12、5、10、1；周期为18。6443=18×357+17，所以2^6443≡2^17≡10 (mod 19)。"
       },
       "cross_reference_ids": []
     },
@@ -3807,9 +3907,10 @@
       "duplicate_notes": "未发现与本页其他题重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "180=2²×3²×5，因数个数为(2+1)(2+1)(1+1)=18；偶数因数为2×3×2=12；因数和=(1+2+4)(1+3+9)(1+5)=546，均正确。"
+        "verified_answer": "18个因数，12个偶数因数，因数和546",
+        "solution_status": "not_provided",
+        "note": "180=2²×3²×5，因数个数为(2+1)(2+1)(1+1)=18；偶数因数为2×3×2=12；因数和=(1+2+4)(1+3+9)(1+5)=546，均正确。",
+        "verified_solution": "180=2²×3²×5。每个因数可分别选择2、3、5的指数，因此因数个数为(2+1)(2+1)(1+1)=18。偶数因数的2的指数只能为1或2，所以有2×3×2=12个。所有因数的和为(1+2+4)(1+3+9)(1+5)=7×13×6=546。"
       },
       "cross_reference_ids": []
     },
@@ -3843,8 +3944,9 @@
       "review": {
         "answer_status": "verified_with_caveat",
         "verified_answer": "按“2024除以除数d余4”理解为9个。",
-        "solution_status": "consistent",
-        "note": "题面中文语序不够明确；按通常题意d>4且d|2020，2020=2²×5×101共有12个正因数，去掉1、2、4得9个。"
+        "solution_status": "not_provided",
+        "note": "题面中文语序不够明确；按通常题意d>4且d|2020，2020=2²×5×101共有12个正因数，去掉1、2、4得9个。",
+        "verified_solution": "按“2024除以一个正整数d，余数为4”理解，必须有d>4且d整除2024−4=2020。2020=2²×5×101，共有(2+1)(1+1)(1+1)=12个正因数；其中1、2、4不大于4，不能作除数，因此有12−3=9种。原题句式仍有歧义，若不是这个意思需另核。"
       },
       "cross_reference_ids": []
     },
@@ -3875,9 +3977,10 @@
       "duplicate_notes": "未发现与本页其他题重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "12的指数分解对应形式中，最小候选为2²×3×5=60；其因数个数为(2+1)(1+1)(1+1)=12。其他形式2¹¹=2048、2⁵×3=96、2³×3²=72均更大，答案正确。"
+        "verified_answer": "60",
+        "solution_status": "not_provided",
+        "note": "12的指数分解对应形式中，最小候选为2²×3×5=60；其因数个数为(2+1)(1+1)(1+1)=12。其他形式2¹¹=2048、2⁵×3=96、2³×3²=72均更大，答案正确。",
+        "verified_solution": "若一个数的质因数分解是 p₁^a₁×p₂^a₂×…，因数个数是(a₁+1)(a₂+1)…，要等于12。指数加一的乘法分组只有12、6×2、4×3、3×2×2。各组用最小质数搭配后得到的最小数分别是2¹¹=2048、2⁵×3=96、2³×3²=72、2²×3×5=60。最小的是60。"
       },
       "cross_reference_ids": []
     },
@@ -3911,8 +4014,9 @@
       "review": {
         "answer_status": "verified_from_solution",
         "verified_answer": "分数最大公因数=3/440；分数最小公倍数=216/5。",
-        "solution_status": "consistent",
-        "note": "来源没有独立答案栏，数值由来源解析给出。核验采用小学竞赛常用的分数最大公因数/最小公倍数定义；建议题库保留该约定说明。"
+        "solution_status": "incomplete",
+        "note": "来源没有独立答案栏，数值由来源解析给出。核验采用小学竞赛常用的分数最大公因数/最小公倍数定义；来源只列数值、未给计算步骤，已补独立推导。题目未明示该定义约定，继续保留说明。",
+        "verified_solution": "按常用竞赛约定，两个分数的最大公因数=分子最大公因数/分母最小公倍数，最小公倍数=分子最小公倍数/分母最大公因数。于是最大公因数为gcd(24,27)/lcm(55,40)=3/440；最小公倍数为lcm(24,27)/gcd(55,40)=216/5。题目未说明采用哪种分数约定，结果依赖此约定。"
       },
       "cross_reference_ids": []
     },
@@ -3943,9 +4047,10 @@
       "duplicate_notes": "同一题含两个独立方程小问，按一组原题计数；未发现与其他题重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "（1）(x+1)(y+1)=21，正整数解仅对应因子对(3,7)、(7,3)，得(2,6)、(6,2)；（2）(m−n)(m+n)=24，取同奇偶正因子对(2,12)、(4,6)，得(m,n)=(7,5)、(5,1)，均正确。"
+        "verified_answer": "（1）(x,y)=(2,6)、(6,2)；（2）(m,n)=(7,5)、(5,1)",
+        "solution_status": "not_provided",
+        "note": "（1）(x+1)(y+1)=21，正整数解仅对应因子对(3,7)、(7,3)，得(2,6)、(6,2)；（2）(m−n)(m+n)=24，取同奇偶正因子对(2,12)、(4,6)，得(m,n)=(7,5)、(5,1)，均正确。",
+        "verified_solution": "（1）xy+x+y=20，两边加1得(x+1)(y+1)=21。因x、y是正整数，x+1、y+1都至少为2；只能取因数对3×7或7×3，所以(x,y)=(2,6)或(6,2)。（2）m²−n²=(m−n)(m+n)=24，且m>n>0，所以两个因数为同奇偶的正整数，较小者在前。可行因数对只有(2,12)、(4,6)，代回得(m,n)=(7,5)、(5,1)。"
       },
       "cross_reference_ids": []
     },
@@ -3977,9 +4082,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）x=4+11k；（2）x=4+13k；（3）x=9+12k，k=0,1,2,…。",
         "solution_status": "consistent",
-        "note": "三组通解分别代回原同余式均成立；第（2）式按17在模13下取逆元（17≡4，4^{-1}≡10）核验得x≡4。"
+        "note": "三组通解分别代回原同余式均成立；第（2）式按17在模13下取逆元（17≡4，4^{-1}≡10）核验得x≡4。",
+        "verified_solution": "（1）展开得9x≡3(mod11)，乘5得x≡4(mod11)。（2）17在模13下可逆，乘回17后得3x+7≡2023×17≡6，故3x≡12，x≡4(mod13)。（3）移项得21x≡9(mod36)，两边及模数同除以3，得7x≡3(mod12)；7的逆元为7，故x≡9(mod12)。列出正整数通解即可。"
       },
       "cross_reference_ids": []
     },
@@ -3991,7 +4097,7 @@
       "source_question_label": "练习1",
       "problem": "解下列同余方程，写出正整数x的通解及最小值：4(x−2)≡21−3(5−2x)(mod 17)；7x≡2x+9(mod 13)。",
       "source_answer": "第一题x=10+17k，k=0,1,2,…；第二题x=7+13k，k=0,1,2,…；最小值分别为10、7。",
-      "source_solution": "第一题：18x≡14(mod17)，60x≡56(mod17)，9x≡5(mod17)，18x≡10(mod17)，x≡10(mod17)；第二题：5x≡9(mod13)，40x≡72(mod13)，x≡7(mod13)。",
+      "source_solution": "第一题原页：15x≡14(mod17)，60x≡56(mod17)，9x≡5(mod17)，18x≡10(mod17)，x≡10(mod17)；第二题：5x≡9(mod13)，40x≡72(mod13)，x≡7(mod13)。",
       "topics": [
         "一次同余方程",
         "正整数通解与最小值"
@@ -4011,9 +4117,10 @@
       "duplicate_notes": "第一小题与例题1（1）结构相同但模数不同，不视为重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "第一题x=10+17k，最小正整数10；第二题x=7+13k，最小正整数7；k=0,1,2,…。",
         "solution_status": "consistent",
-        "note": "两式直接化简并代回，解及最小正整数均正确。"
+        "note": "两解与最小正整数均正确；放大原页确认首步为15x≡14，修正题库旧转录的18x笔误。",
+        "verified_solution": "第一题化简为−2x≡14(mod17)，等价于15x≡14；乘4得60x≡56，再化为9x≡5。乘2得18x≡10，所以x≡10(mod17)。原页首步为15x≡14，题库旧转录误作18x≡14，现已校正。第二题化为5x≡9(mod13)，乘8得x≡72≡7(mod13)。"
       },
       "cross_reference_ids": []
     },
@@ -4045,9 +4152,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）唯一正整数解(x,y)=(2,22)；（2）x=48+13k、y=8+23k，k=0,1,2,…。",
         "solution_status": "consistent",
-        "note": "第一式的正整数解确实只有(2,22)；第二式代回参数式恒等成立，k≥0时均为正整数。"
+        "note": "第一式的正整数解确实只有(2,22)；第二式代回参数式恒等成立，k≥0时均为正整数。",
+        "verified_solution": "（1）模11化为7x≡3，故x≡2(mod11)。令x=2+11t，则y=22−29t；要求x、y为正整数，只能t=0，得到(2,22)。（2）模13有10x≡1000≡12，故x≡9(mod13)。写x=9+13t，代回得y=−61+23t；正整数条件要求t≥3。令k=t−3，即得x=48+13k、y=8+23k。"
       },
       "cross_reference_ids": []
     },
@@ -4079,9 +4187,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）唯一正整数解(x,y)=(6,22)；（2）x=17+7k、y=10+19k，k=0,1,2,…。",
         "solution_status": "consistent",
-        "note": "两组参数解代回均成立，且覆盖全部正整数解。"
+        "note": "两组参数解代回均成立，且覆盖全部正整数解。",
+        "verified_solution": "（1）模17得3x≡1，所以x≡6(mod17)。令x=6+17t，代回得y=22−71t；正整数条件只允许t=0。（2）原式除以8得19x−7y=253。模7得5x≡1，所以x≡3(mod7)。写x=3+7t，代回得y=−28+19t；正整数条件要求t≥2。令k=t−2，得到x=17+7k、y=10+19k。"
       },
       "cross_reference_ids": []
     },
@@ -4113,9 +4222,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）x=14+33k；（2）x=253+390k；两题均取k=0,1,2,…。",
         "solution_status": "consistent",
-        "note": "14和253分别满足全部同余条件，模数乘积分别为33和390。"
+        "note": "14和253分别满足全部同余条件，模数乘积分别为33和390。",
+        "verified_solution": "（1）x≡2(mod3)，且x≡3(mod11)。在3、14、25……中，14是第一个也就是模33的解，故x=14+33k。（2）x≡7(mod3)等价于x≡1(mod3)。x≡3(mod10)、x≡6(mod13)并合并后，最小正解为253；因为3、10、13两两互质，所有解相差390，故x=253+390k。"
       },
       "cross_reference_ids": []
     },
@@ -4147,9 +4257,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "x=105k−2，k=1,2,3,…（等价于x=103+105t，t=0,1,2,…）。",
         "solution_status": "consistent",
-        "note": "105k−2对模3、5、7分别余1、3、5，且最小正解为103。"
+        "note": "105k−2对模3、5、7分别余1、3、5，且最小正解为103。",
+        "verified_solution": "第一式6x+3≡0(mod9)化为x≡1(mod3)；第二式3x−4≡0(mod5)化为x≡3(mod5)；第三式4x+1≡0(mod7)化为x≡5(mod7)。逐一检验得最小正解103；模数3、5、7两两互质，解每隔105重复，所以x=103+105t，t≥0，也就是x=105k−2，k≥1。"
       },
       "cross_reference_ids": []
     },
@@ -4181,9 +4292,10 @@
       "duplicate_notes": "与例题5（1）同为余数递增型，但模数和余数不同，不视为重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "最小符合条件的数为368。",
         "solution_status": "consistent",
-        "note": "368除以3、5、7、11的余数为2、3、4、5。"
+        "note": "368除以3、5、7、11的余数为2、3、4、5。",
+        "verified_solution": "前三个条件可合并：2n−1同时被3、5、7整除，故2n−1=105k，n=53+105t。再要求n≡5(mod11)：53+105t≡9+6t≡5，所以6t≡7(mod11)，t≡3(mod11)。最小t=3，得n=368；之后每隔1155重复。"
       },
       "cross_reference_ids": []
     },
@@ -4215,9 +4327,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "258、259、260。",
         "solution_status": "consistent",
-        "note": "258、259、260分别满足3、7、13的整除条件，且均在200至300之间。"
+        "note": "258、259、260分别满足3、7、13的整除条件，且均在200至300之间。",
+        "verified_solution": "令三数为n、n+1、n+2。条件变为n≡0(mod3)、n≡6(mod7)、n≡11(mod13)。在200至298之间逐步筛选，唯一满足三式的是n=258，因此三数为258、259、260。"
       },
       "cross_reference_ids": []
     },
@@ -4250,9 +4363,10 @@
       "duplicate_notes": "（1）与例题4同属余数型同余方程组，但题面不同；（2）与练习4同属连续数整除问题，但题面不同。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）最小数4507；（2）最小和的一组三数为2430、2431、2432。",
         "solution_status": "consistent",
-        "note": "（1）4507对7、9、11、13余6、7、8、9；（2）2430、2431、2432分别被15、17、19整除条件满足。"
+        "note": "（1）4507对7、9、11、13余6、7、8、9；（2）2430、2431、2432分别被15、17、19整除条件满足。",
+        "verified_solution": "（1）设数为n。四个条件分别给出2n−5被7、9、11、13整除，所以2n−5是它们最小公倍数9009的倍数。要使n为整数，倍数因子须为奇数；最小取1，n=(9009+5)/2=4507。（2）令三数为n、n+1、n+2，则n≡0(mod15)、n≡16(mod17)、n≡17(mod19)。因此2n−15同时被15、17、19整除，最小公倍数为4845。取最小可使n为整数的正奇数倍1，得n=(4845+15)/2=2430；三数和随n增大，故这是总和最小的一组。"
       },
       "cross_reference_ids": []
     },
@@ -4284,9 +4398,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "40。",
         "solution_status": "consistent",
-        "note": "40模3、7、11分别为1、5、7，故由中国剩余定理余数为40。"
+        "note": "40模3、7、11分别为1、5、7，故由中国剩余定理余数为40。",
+        "verified_solution": "231=3×7×11。2026^2027模3余1；模7时2026≡3且2027≡5(mod6)，故余数为3^5≡5；模11时2026≡2且2027≡7(mod10)，故余数为2^7≡7。40在模3、7、11下分别余1、5、7，且0≤40<231，所以所求余数为40。"
       },
       "cross_reference_ids": []
     },
@@ -4318,9 +4433,10 @@
       "duplicate_notes": "与例题6同属幂的同余，但底数、指数、模数不同，不视为重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "4。",
         "solution_status": "consistent",
-        "note": "4对3、5、7分别余1、4、4，满足三项余数条件。"
+        "note": "4对3、5、7分别余1、4、4，满足三项余数条件。",
+        "verified_solution": "105=3×5×7。2027模3、5、7分别为2、2、4。把这些数分别取2026次幂，按周期得到余数1、4、4。数4同时满足x≡1(mod3)、x≡4(mod5)、x≡4(mod7)，并且在0至104之间，所以所求余数为4。"
       },
       "cross_reference_ids": []
     },
@@ -4353,9 +4469,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "143。",
         "solution_status": "consistent",
-        "note": "独立计算7^9999 mod1000=143；页面列出的模8、模125结果均一致。"
+        "note": "独立计算7^9999 mod1000=143；页面列出的模8、模125结果均一致。",
+        "verified_solution": "先算模8：7≡−1，所以7^9999≡−1≡7(mod8)。再算模125：7^10≡−1且7^9≡107，因此7^9999=(7^10)^999×7^9≡−107≡18(mod125)。设末三位数为18+125k；它还须模8余7，即2+5k≡7(mod8)，所以k≡1(mod8)。0至999内对应k=1，得到143。"
       },
       "cross_reference_ids": []
     },
@@ -4387,9 +4504,10 @@
       "duplicate_notes": "与练习1同属一次同余方程，但题面不同。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）x=6+10k，最小正整数6；（2）x=6+9k，最小正整数6；k=0,1,2,…。",
         "solution_status": "consistent",
-        "note": "两式化简后分别得到7x≡2(mod10)和8x≡3(mod9)，解均正确。"
+        "note": "独立展开后分别化为7x≡2(mod10)与8x≡3(mod9)，两解类均为x≡6；最小正整数都是6。",
+        "verified_solution": "（1）左边化为5x−6，右边化为6−2x，所以7x≡12≡2(mod10)。7的逆元模10为3，故x≡6(mod10)。（2）展开移项得−8x≡15≡6(mod9)。−8≡1(mod9)，故x≡6(mod9)。由通解可见两题最小正整数均为6。"
       },
       "cross_reference_ids": []
     },
@@ -4419,15 +4537,15 @@
         ]
       },
       "ambiguities": [
-        "第7页题面将答案位置写作“我军有***名勇士”，星号为原文遮蔽/占位符，无法从题面读取具体数字；页面手写解析明确给出1073。",
-        "故事中的“死伤四五百人”对应页面解析采用1000<n<1100，严格自然语言范围可有边界解释差异，但不影响1073。"
+        "正文“我军有***名勇士”是待填写的答案空位，并非缺少解题条件。手写解析按死伤约400—500人推得1000<n<1100；即使端点是否包含作不同理解，该区间内同余解仍唯一为1073，答案不受影响。"
       ],
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1073名将士。",
         "solution_status": "consistent",
-        "note": "1073除以3、5、7分别余2、3、2，且落在1000至1100的范围内。"
+        "note": "同余条件给出n=23+105k；故事中1500人死伤约400—500人，手写解采用1000<n<1100。区间内唯一符合的解为1073；包含端点的解释也不改变结果。",
+        "verified_solution": "设点兵后人数为n。条件为n≡2(mod3)、n≡3(mod5)、n≡2(mod7)，中国剩余定理给出n≡23(mod105)，即n=23+105k。初始1500人减去约400—500名死伤者，剩余人数在1000至1100之间。代入通解，k=10时n=1073，且这是该区间内唯一解。"
       },
       "cross_reference_ids": []
     },
@@ -4459,9 +4577,10 @@
       "duplicate_notes": "无重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "41。",
         "solution_status": "consistent",
-        "note": "41对2、3、4、5分别余1、2、1、1，且小于41的候选不存在。"
+        "note": "通解为41+60m（m=0,1,2,…），故最小自然数为41。",
+        "verified_solution": "n≡1(mod4)且n≡1(mod5)，所以n=1+20k；这也自动满足n≡1(mod2)。再用n≡2(mod3)：1+20k≡2(mod3)，即2k≡1，所以k≡2(mod3)。因此n=41+60m，m=0,1,2,…，最小值是41。"
       },
       "cross_reference_ids": []
     },
@@ -4493,9 +4612,10 @@
       "duplicate_notes": "与练习1、作业1同属不可表示数模型，但面值不同，非重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "最大不能凑出的邮资29元；不能凑出的正整数邮资共15种。",
         "solution_status": "consistent",
-        "note": "互质正整数4、11的最大不可表示数为4×11−4−11=29，不可表示正整数个数为(3×10)/2=15。"
+        "note": "互质面额4、11的Frobenius最大不可表示数为29；不可表示正整数个数为(4−1)(11−1)/2=15，独立有限枚举同样得到这两个结果。",
+        "verified_solution": "4和11互质时，最大不能表示的正整数金额是4×11−4−11=29。不能表示的正整数金额个数是(4−1)(11−1)÷2=15；这里不把0元算作邮资，因为0元可用一张也不买。"
       },
       "cross_reference_ids": [
         "XR-07"
@@ -4529,9 +4649,10 @@
       "duplicate_notes": "与例题1、作业1为同类模型，非同文档重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "66元。",
         "solution_status": "consistent",
-        "note": "最大不可表示金额为65，因此从66起所有整数金额均可由7、12的非负整数组合表示。"
+        "note": "7元和12元互质，最大不能凑出的正整数金额65元，因此保证其上及自身均可取的最低门槛为66元。",
+        "verified_solution": "7和12互质，最大不能用它们凑出的金额为7×12−7−12=65元。因此65元仍不能保证取出；从66元起，每个整数金额都能由若干张7元和12元纸钞组成，最低取款额应设为66元。"
       },
       "cross_reference_ids": [
         "XR-07"
@@ -4562,14 +4683,15 @@
         ]
       },
       "ambiguities": [
-        "解析中的“ab−a−b≥69”未说明由何种不可表示数界推出，但结论可由穷举/模运算独立核验。"
+        "来源由ab−a−b≥69直接跳到(a,b)=(8,11)，漏查候选(9,10)；但69=9+6×10，故(9,10)不符合“69元花不完”。补全后较贵单价确为11元。"
       ],
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "正整数单价且和为19时，满足条件的无序单价为8、11；gcd(8,11)=1，69确不能表示为8x+11y（x,y为非负整数）。"
+        "verified_answer": "11元。",
+        "solution_status": "incomplete",
+        "note": "结论正确，但来源推理不完整：ab≥88仍允许(9,10)，须再用69=9+6×10排除该组。",
+        "verified_solution": "设较便宜、较贵的单价为a、b，a+b=19且互质。69元不能表示成ax+by，因此Frobenius数ab−a−b至少为69，即ab≥88。检查正整数对a+b=19后，只有(8,11)与(9,10)满足乘积条件；但69=9+6×10，所以(9,10)其实能花完69元，排除。只剩(8,11)，较贵单价为11元。"
       },
       "cross_reference_ids": []
     },
@@ -4597,13 +4719,16 @@
           2
         ]
       },
-      "ambiguities": [],
+      "ambiguities": [
+        "原题未明说0—9中选出的9个数字须互不相同且各用一次；来源解法使用45−x，依赖这一意图。按各用一次理解，缺数为5，且201+843+976=2020给出可行构造；若允许重复，答案不唯一，需补明条件。"
+      ],
       "duplicate_notes": "与作业2均为数字和/进位模型，但位数与目标和不同，非重复题。",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
+        "answer_status": "conditional",
+        "verified_answer": "若0—9中选9个不同数字并各用一次，未选数字为5；原题未明确此条件，允许重复时不唯一。",
         "solution_status": "consistent",
-        "note": "数字总和为45，和为2020的数字和为4；差为41−x且应为9的倍数，唯一数字解x=5。"
+        "note": "按来源意图的“9个不同数字各用一次”理解，数字和给出缺数5；构造201+843+976=2020验证可行。原题未明说各用一次，建议补入该条件，否则答案不唯一。",
+        "verified_solution": "按预期条件，0—9中有9个数字各用一次，总和为45−x。三个数相加等于2020，而2020的数字和为4；竖式每发生一次进位，数字和关系相差9，所以45−x=4+9k，即41−x是9的倍数。因为x在0至9之间，只有x=5。这个答案确实可实现，例如201+843+976=2020，九个数字恰好是除5外的所有数字。注意原题未写“各用一次”；若允许数字重复，缺少的数字就不唯一。"
       },
       "cross_reference_ids": []
     },
@@ -4631,15 +4756,14 @@
           2
         ]
       },
-      "ambiguities": [
-        "第2页中部红色构造例子整串数字笔迹模糊，尤其被减数、减数和结果的连续9/8/7位置无法可靠逐位确认；已按可见字符转写并保留不确定说明。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "无。",
       "review": {
-        "answer_status": "verified_with_caveat",
-        "verified_answer": "95。",
-        "solution_status": "transcription_uncertain",
-        "note": "数位和关系给出的结果95可复算；原页红笔构造例子的连续数字笔迹不够清楚，不能可靠逐位转录，已保留不确定说明。"
+        "answer_status": "verified",
+        "verified_answer": "差的数字和为95；原PDF可辨例：999997888888−599999=999997288889。",
+        "solution_status": "consistent",
+        "note": "本轮高分辨率复核原PDF第2页，手写例可辨为999997888888−599999=999997288889；独立复算两端数位和为100、50，差的数位和为95，竖式恰借位5次。来源关系式正确；面向小学生讲解时还应补一句：每次借位使这一列的差比直接相减多9。",
+        "verified_solution": "设S(X)表示各位数字之和。每借位一次，差的数位和相对“被减数数位和−减数数位和”增加9，所以S(A−B)=100−50+9×5=95。原页例子为999997888888−599999=999997288889；核算两端数位和分别为100、50，结果数位和为95，按竖式恰有5次借位。讲给小学生时，可用一列说明“借来的10减去本列多减的1，净多9”。"
       },
       "cross_reference_ids": []
     },
@@ -4671,9 +4795,10 @@
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "996。",
         "solution_status": "consistent",
-        "note": "穷举三位数满足S(n+2022)=S(n)/2者的最大值为996，且S(996)=24、S(3018)=12。"
+        "note": "逐一检查三位数共有7个满足条件，最大为996；其数字和24，3018的数字和12，符合条件。",
+        "verified_solution": "设S(n)为n的各位数字和。加上2022时，S(n+2022)=S(n)+6−9k，其中k是进位带来的9的总数。题目又要求S(n+2022)=S(n)/2，所以S(n)=18k−12。三位数的数字和最多27，因此k只能为1或2，S(n)最多24。数字和为24的最大三位数是996；检查996+2022=3018，S(3018)=12=S(996)/2，故最大值996。"
       },
       "cross_reference_ids": []
     },
@@ -4705,9 +4830,10 @@
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "108、117、207；总和432。",
         "solution_status": "consistent",
-        "note": "逐一核验三位数解为108、117、207，和为432。"
+        "note": "逐一核验三位数解为108、117、207，和为432。",
+        "verified_solution": "设数为n，S(n)为数位和。加3时S(n)+3=S(n+3)+9k，题意给S(n+3)=S(n)/3，整理得2S(n)=27k−9。因S(n)≤27，只有k=1、S(n)=9可行。一次进位要求个位至少7；解百位+十位+个位=9，得到108、117、207。分别加3后是111、120、210，数位和均为3；三数和432。"
       },
       "cross_reference_ids": []
     },
@@ -4739,9 +4865,10 @@
       "duplicate_notes": "与练习5同为乘积后四位和数码和，但数据不同，非重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "两个三位数的和为402。",
         "solution_status": "consistent",
-        "note": "143×259=37037，且数码和分别为8、16；满足五位数及后四位7037。"
+        "note": "143×259=37037，且数码和分别为8、16；满足五位数及后四位7037。",
+        "verified_solution": "设乘积为a7037。模9下，乘积的数位和余数等于两因数数位和之积：16×8≡2(mod9)。而a7037的数位和为a+17，所以a≡3(mod9)，且a是首位数字，只能为3。于是乘积为37037；枚举其因数对，唯一一组三位数且数位和分别为8与16的是143和259。它们的和为402。"
       },
       "cross_reference_ids": []
     },
@@ -4773,9 +4900,10 @@
       "duplicate_notes": "与例题5同类但数值不同，非重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "甲乙之差为30。",
         "solution_status": "consistent",
-        "note": "224×194=43456，数码和为8、14，差为30。"
+        "note": "224×194=43456，数码和为8、14，差为30。",
+        "verified_solution": "设乘积为a3456。模9下，乘积的数位和余数为8×14≡4；a3456的数位和为a+18，所以a≡4(mod9)，首位数字只能是4。乘积为43456。检查其三位数因数对，满足数位和8和14的有序因数只有224与194，故甲−乙=224−194=30。"
       },
       "cross_reference_ids": []
     },
@@ -4787,7 +4915,7 @@
       "source_question_label": "例题6",
       "problem": "对于十进制自然数n，S(n)表示n的数码和，三位数中满足S(a)=S(2a)的数a有______个。",
       "source_answer": "80个",
-      "source_solution": "S(a)+S(a)=S(2a)+9k；若S(a)=S(2a)，则S(a)=9k，即S(a)为9的倍数。三位数数码和为9的有10个、为18的有10个，数码和为27者不可能（原解析用总数100减去两类各10，得80）。",
+      "source_solution": "原页由2S(a)=S(2a)+9k和S(a)=S(2a)推出S(a)=9k。数位和为9、18、27的三位数共100个；红笔按进位情况分别排除10个（数位和9但没有进位）和10个（数位和18却发生3次进位），所以有100−10−10=80个。",
       "topics": [
         "数字和与倍乘进位",
         "三位数计数"
@@ -4804,14 +4932,15 @@
         ]
       },
       "ambiguities": [
-        "原解析中‘9k：12×9−11×9’等计数书写较简略，但结论经独立穷举核验。"
+        "原页把两个各10个的例外组用数位拆分简写；题库旧转录曾把它们错写为“数位和9共有10个、数位和18共有10个”。独立按进位分类后确认例外分别为10个和10个，答案80正确。"
       ],
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "80个。",
         "solution_status": "consistent",
-        "note": "逐一计算三位数a的条件，确有80个；等价于S(a)=9或18。"
+        "note": "重新核对原页与穷举：答案80正确。准确分类为数位和9中35个满足、数位和18中44个满足、数位和27时999这1个满足；旧题库说明将两个10例外组误写成数字和总数，现已更正。",
+        "verified_solution": "设S(a)为三位数a的数位和。乘2时每进一位，数位和关系相差9；条件S(a)=S(2a)推出S(a)是9的倍数。数位和为9、18、27的三位数分别有45、54、1个，共100个。数位和9时，有10个数乘2完全不进位，故剩35个满足；数位和18时，有10个数的三位都至少5，乘2连续进3位，故剩44个满足；数位和27只有999，乘2后为1998，数位和仍27。合计35+44+1=80。"
       },
       "cross_reference_ids": []
     },
@@ -4844,9 +4973,10 @@
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "54种。",
         "solution_status": "consistent",
-        "note": "4n无进位当且仅当每位数字属于0、1、2；四位数首位为1或2，共54个。"
+        "note": "4n无进位当且仅当每位数字属于0、1、2；四位数首位为1或2，共54个。",
+        "verified_solution": "若n乘4不发生进位，数位和会恰好扩大4倍；反过来，任何进位都会使4S(n)−S(4n)增加9，所以条件等价于各位乘4均不进位，即每个数字都只能是0、1、2。千位可选1或2，有2种；其余三位各有3种选择，因此共有2×3×3×3=54种。"
       },
       "cross_reference_ids": []
     },
@@ -4856,7 +4986,7 @@
       "source_filename": "26数论模块训练营第七讲解析(1).pdf",
       "lesson_or_test": "数论方法训练营 第7讲 不定方程综合",
       "source_question_label": "拓展1",
-      "problem": "7182的数字和为A，A的数字和为B，B的数字和为C，……，以此类推，每次计算出上一个数的数字和，直到数字和是一个一位数为止。那么得到的最终结果是多少？",
+      "problem": "数7^182的数字和为A，A的数字和为B，B的数字和为C，……，以此类推，每次计算出上一个数的数字和，直到数字和是一个一位数为止。那么得到的最终结果是多少？",
       "source_answer": "4",
       "source_solution": "7^182模9的余数循环为7、4、1；182÷3余2，故7^182≡7^2≡4 (mod 9)，最终一位数字为4。",
       "topics": [
@@ -4874,15 +5004,14 @@
           4
         ]
       },
-      "ambiguities": [
-        "题面中的‘7’带上标182，确为7^182而非普通数7182；页眉文本层将其连写为7182，视觉页面可见上标。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "4。",
         "solution_status": "consistent",
-        "note": "7182的数字根为4（7+1+8+2=18→9? 注意原题实际印刷为7^182，按题面为幂；7^182 mod9=4），与原解析一致。"
+        "note": "原页视觉上清楚显示指数182；修正旧文本层转录7182。7^182的数字根为4。",
+        "verified_solution": "反复求数位和直到剩一位，得到的结果叫数字根；它与原数模9同余。7的幂模9按7、4、1循环，182除以3余2，因此7^182≡7^2≡4(mod9)。最终一位数是4。"
       },
       "cross_reference_ids": []
     },
@@ -4915,9 +5044,10 @@
       "duplicate_notes": "无。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1,025,156组。",
         "solution_status": "consistent",
-        "note": "正整数x范围1至1012，每个x对应2027−2x−1=2026−2x组(y,z)，求和为1,025,156。"
+        "note": "按正整数x,y,z逐项计数；每个x下y、z为有序正整数对，和为1,025,156。",
+        "verified_solution": "固定正整数x后，y+z=2027−2x。正整数y、z的有序对数是2026−2x。x从1到1012，对应2024、2022、……、4、2组，等差数列求和为(2024+2)×1012÷2=1,025,156。"
       },
       "cross_reference_ids": []
     },
@@ -4951,10 +5081,11 @@
       ],
       "duplicate_notes": "无。",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
+        "answer_status": "conditional",
+        "verified_answer": "自然数含0时1711组；若自然数限定为正整数，则1653组。",
         "solution_status": "consistent",
-        "note": "按自然数取非负整数，参数化后a+b+z=57，非负解数为C(59,2)=1711。"
+        "note": "来源按自然数包含0得到1711；如课堂约定自然数从1开始，则z须为正数，答案改为1653。需明确约定。",
+        "verified_solution": "模5得y≡3(mod5)，令y=5a+3，a≥0；代回后x+7a+7z=401，因此x≡2(mod7)，令x=7b+2，b≥0。于是a+b+z=57。若z≥0，非负整数解数为C(59,2)=1711；若z≥1，令z′=z−1，则a+b+z′=56，解数为C(58,2)=1653。题面未定义自然数是否含0，故答案需按约定选用。"
       },
       "cross_reference_ids": []
     },
@@ -4986,9 +5117,10 @@
       "duplicate_notes": "与例题1、练习1为同类模型，非重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "最大不能称出的质量为191克；不能称出的正整数克数共96种。",
         "solution_status": "consistent",
-        "note": "13、17互质，最大不可表示数191，不可表示正整数个数96；单边放置对应非负组合。"
+        "note": "13克、17克互质，Frobenius公式得最大不可称质量191克，正整数不可称质量共96种；单边放置排除了差值组合。",
+        "verified_solution": "砝码只能放在天平一边，所以只能用13克和17克砝码的非负整数和称重。13、17互质；最大不能表示的质量为13×17−13−17=191克，不能表示的正整数质量数为(13−1)(17−1)÷2=96种。"
       },
       "cross_reference_ids": [
         "XR-07"
@@ -5024,9 +5156,10 @@
       "duplicate_notes": "与例题3同为数字和/进位法，但题型位数和目标数不同，非重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "未选数字为2；竖式共进4次位。",
         "solution_status": "consistent",
-        "note": "总数字和45，目标2023数码和7，故45−x−7为9的倍数；唯一x=2且进位总次数k=4。"
+        "note": "来源显式写出x=2，但未把k=4单列作答；由原页同一等式可得k=4。构造1053+874+96=2023验证题目可实现，逐列进位数为4。",
+        "verified_solution": "设未选数字为x。0至9的数字和为45，已选九个数字之和为45−x；2023的数位和为7。多位数相加时，每次进位使数位和关系相差9，因此45−x=7+9k，即38−x=9k。0≤x≤9只可能x=2，且k=4。可行构造为1053+874+96=2023，三个数恰使用除2外的所有数字；按竖式逐列共有4次进位。"
       },
       "cross_reference_ids": []
     },
@@ -5060,10 +5193,11 @@
       ],
       "duplicate_notes": "无。",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
+        "answer_status": "conditional",
+        "verified_answer": "自然数含0时40组；若自然数限定为正整数，则18组。",
         "solution_status": "consistent",
-        "note": "原解析按自然数包含0计数；x₃只能为0至3，各层非负有序对数量分别为16、12、8、4。"
+        "note": "来源按自然数包含0计得40；正整数约定下答案为18，需明确自然数定义。",
+        "verified_solution": "若x1,x2,x3均为非负整数，x3只能取0、1、2、3，对应x1+x2分别为15、11、7、3；非负有序对数分别为16、12、8、4，总数40。若三变量都必须为正整数，则x3只能取1、2、3，对应x1+x2为11、7、3；正整数有序对数分别为10、6、2，总数18。题面未定义自然数是否含0，故保留两种答案。"
       },
       "cross_reference_ids": []
     },
@@ -5095,9 +5229,10 @@
       "duplicate_notes": "未发现与文档内其他题重复。",
       "review": {
         "answer_status": "partially_incorrect",
-        "verified_answer": "(18,9)、(24,8)、(42,7)、(15,10)（不计交换次序）。",
+        "verified_answer": "无序数对为 {7,42}、{8,24}、{9,18}、{10,15}；若区分 A、B 顺序，共 8 组有序解。",
         "solution_status": "error",
-        "note": "来源列出的“42和9”应为“42和7”；其余三组正确。由(A−6)(B−6)=36枚举互异正整数解并逐组代回。"
+        "note": "来源列出的“42和9”应为“42和7”；其余三组正确。由(A−6)(B−6)=36枚举互异正整数解并逐组代回。",
+        "verified_solution": "由 1/A+1/B=1/6 得 AB−6A−6B=0，即 (A−6)(B−6)=36。正整数 A、B 必大于 6。枚举 36 的正因数配对且排除 A=B，得到无序数对 {7,42}、{8,24}、{9,18}、{10,15}；每对可交换 A、B，因此共有 8 组有序解。原答案将 42 和 9 误写为一组，正确应为 42 和 7。"
       },
       "cross_reference_ids": []
     },
@@ -5129,9 +5264,10 @@
       "duplicate_notes": "未发现与文档内其他题重复；本题含3个同余小问，按1道独立题记录。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "（1）2；（2）8；（3）1",
         "solution_status": "consistent",
-        "note": "逐项计算：185+204=389，389 mod 9=2；345−216=129，129 mod 11=8；586 mod 7=5且94 mod 7=3，乘积余1。"
+        "note": "逐项计算：185+204=389，389 mod 9=2；345−216=129，129 mod 11=8；586 mod 7=5且94 mod 7=3，乘积余1。",
+        "verified_solution": "同余计算只需先找各数除以模数后的余数。(1) 185余5，204余6，5+6=11除以9余2。(2) 345余4，216余7，4−7=−3；加上11后是8，所以余数为8。(3) 586余5，94余3，5×3=15除以7余1。"
       },
       "cross_reference_ids": []
     },
@@ -5164,9 +5300,10 @@
       "duplicate_notes": "未发现与文档内其他题重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "37",
         "solution_status": "consistent",
-        "note": "相同余数要求除数整除任意两数之差；gcd(311−200, 200−126)=gcd(111,74)=37。由于除数大于1且只能取该最大公因数的非1因数，37为唯一可能。"
+        "note": "相同余数要求除数整除任意两数之差；gcd(311−200, 200−126)=gcd(111,74)=37。由于除数大于1且只能取该最大公因数的非1因数，37为唯一可能。",
+        "verified_solution": "如果一个数除以311、200、126都得到同一个余数，那么任意两个数相减后都能被除数整除。两两相减得到111和74，它们的最大公因数是37，因为111=3×37、74=2×37。除数大于1，所以只能是37；验算时三个数除以37的余数都是15。"
       },
       "cross_reference_ids": []
     },
@@ -5199,9 +5336,10 @@
       "duplicate_notes": "未发现与文档内其他题重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "3",
         "solution_status": "consistent",
-        "note": "31≡5、30≡4 (mod13)；5^30≡12，4^31≡4，和为16≡3。源解析中的幂次压缩步骤较跳跃（使用了模13下的循环性），但结论正确。"
+        "note": "31≡5、30≡4 (mod13)；5^30≡12，4^31≡4，和为16≡3。源解析中的幂次压缩步骤较跳跃（使用了模13下的循环性），但结论正确。",
+        "verified_solution": "31≡5、30≡4 (mod 13)。因为5²≡−1，所以5³⁰=(5²)¹⁵≡(−1)¹⁵≡−1≡12。又因为4³≡−1，所以4³¹=(4³)¹⁰×4≡4。两项相加为12+4=16≡3 (mod 13)。"
       },
       "cross_reference_ids": []
     },
@@ -5236,9 +5374,10 @@
       "duplicate_notes": "未发现与文档内其他题重复。",
       "review": {
         "answer_status": "verified_with_caveat",
-        "verified_answer": "x=2+7k 或 x=4+13k，k∈Z。",
+        "verified_answer": "x=2+7k；x=4+13k，其中 k∈整数。",
         "solution_status": "incomplete",
-        "note": "来源通解正确，但未注明k取任意整数；此题是同余方程，若题目要求正整数解还需按题面范围筛选。"
+        "note": "来源通解正确，但未注明k取任意整数；此题是同余方程，若题目要求正整数解还需按题面范围筛选。",
+        "verified_solution": "第一式 4x≡1 (mod 7)，因 4 的逆元为 2，得 x≡2 (mod 7)，即 x=2+7k。第二式化为 11x≡5 (mod 13)，11 的逆元为 6，得 x≡4 (mod 13)，即 x=4+13k；两式中的 k 均取任意整数。来源答案正确，但未写出参数范围。"
       },
       "cross_reference_ids": []
     },
@@ -5271,9 +5410,10 @@
       "duplicate_notes": "未发现与文档内其他题重复。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "整数通解可写为x=33+29t，y=7−9t。正整数条件仅给出t=0和t=−1，分别得到(33,7)、(4,16)，均代入等于500。"
+        "verified_answer": "(x,y)=(33,7)、(4,16)",
+        "solution_status": "not_provided",
+        "note": "原卷只列两组答案、没有分步解析。本轮用模9独立求解：9x+29y=500，两边除以9看余数得2y≡5 (mod 9)，所以y≡7 (mod 9)。因x为正整数，29y=500−9x≤491，故y≤16；正整数且余数为7的y只能是7或16，代回得x=33或4。",
+        "verified_solution": "由9x+29y=500对9取余，29y≡2y≡500≡5 (mod 9)。乘以2的逆元5，得 y≡7 (mod 9)，所以正整数 y=7+9k（k为非负整数）。因 x≥1，29y=500−9x≤491，故 y≤16；只能取 y=7、16。代入原式分别得 x=33、4，所以全部正整数解为(33,7)、(4,16)。"
       },
       "cross_reference_ids": []
     },
@@ -5305,9 +5445,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1、2、4。",
         "solution_status": "consistent",
-        "note": "6个排列中每个数字分别出现2次在百、十、个位，和为222(a+b+c)=1554，故和为7；三个位数字须为1、2、4。"
+        "note": "六种排列中每个数字各出现在三个数位两次，总和为222(a+b+c)；三位数都不同且都须为三位数，所以数字非零，唯一组合为1、2、4。",
+        "verified_solution": "设三个不同数字为a、b、c。六个排列中，每个数字在百位、十位、个位各出现两次，所以六个数的和是222(a+b+c)=1554，得到a+b+c=7。三个不同的非零数字和为7，只能是1、2、4。"
       },
       "cross_reference_ids": []
     },
@@ -5339,9 +5480,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "139。",
         "solution_status": "consistent",
-        "note": "数字和为13。不同数字且均为三位数，最小排列应取最小非零百位1，再取2? 但在0—9中三位互异数字和13时，最小可行集合为1、3、9，最小数139；枚举可证。"
+        "note": "枚举和为13的三个不同非零数字组合，最小组合与排列为1、3、9和139。零不能使用，否则不能组成六个不同的三位数。",
+        "verified_solution": "六个三位数的和为222(a+b+c)，所以三个不同数字之和为2886÷222=13。逐一比较和为13的三个不同非零数字组合，能组成的最小数依次包括139、148、157、238、247、256、346，最小为139。"
       },
       "cross_reference_ids": []
     },
@@ -5374,9 +5516,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1099。",
         "solution_status": "consistent",
-        "note": "反序数9901−1099=8802。"
+        "note": "穷举四位数也只有1099；用相减式模10可直接得d−a=8，再推出c−b=9，唯一原数1099。",
+        "verified_solution": "设原数为abcd，反序数为dcba。相减得999(d−a)+90(c−b)=8802，即111(d−a)+10(c−b)=978。模10得d−a≡8(mod10)；因d>a且都是数字，d−a只能为1至8，故d−a=8，再得c−b=9。于是a=1、d=9、b=0、c=9，原数1099。反验9901−1099=8802。"
       },
       "cross_reference_ids": []
     },
@@ -5408,9 +5551,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1234。",
         "solution_status": "consistent",
-        "note": "1234+123+12+1=1370。"
+        "note": "独立枚举四位数也只有1234；位值展开后逐位限定a、b、c、d，答案唯一。",
+        "verified_solution": "令abcd表示四位数，则abcd+abc+ab+a=1111a+111b+11c+d=1370。若a≥2，首项1111a已超过1370，因此a=1。此时111b+11c+d=259；b只能为2，因为b≤1时左边最多219，b≥3时已超过259。于是11c+d=37，得c=3、d=4，答案1234。"
       },
       "cross_reference_ids": []
     },
@@ -5437,14 +5581,15 @@
         ]
       },
       "ambiguities": [
-        "第2页例题3（1）红笔第二行写‘l=2，̅abcde=28571’，与方程及六位数条件不符，疑为笔误。"
+        "来源红笔第二行确写l=2、abcde=28571，但按方程应为85714；旁注“26或25”对应两种正确解，题目本身有两个答案。"
       ],
       "duplicate_notes": "",
       "review": {
         "answer_status": "non_unique",
-        "verified_answer": "两种可行值：26（l=1，n=142857）与25（l=2，n=285714）。",
+        "verified_answer": "数字和有两种可能：26或25。",
         "solution_status": "error",
-        "note": "由7·overline{abcde}=299999l得overline{abcde}=42857l。l=1时数字和26；l=2时overline{abcde}=85714，数字和25。来源把第二个A误写为28571，但旁注“26或25”给出了两种结果。题目未限定唯一答案。"
+        "note": "由原式及五位数范围复核，l=1时t=42857，数字和26；l=2时t=85714，数字和25。原页红笔把第二个t误写为28571，但旁注“26或25”正确反映两个解；题目非唯一。",
+        "verified_solution": "令t=overline{abcde}。由overline{abcdel}=3·overline{labcde}得10t+l=3(100000l+t)，所以7t=299999l，t=42857l。t必须是五位数且l为非零首位数字，因此l只能为1或2：l=1时t=42857，数字和26；l=2时t=85714，数字和25。原页红笔第二行误把85714写成28571。题目有两解，不能给唯一数值。"
       },
       "cross_reference_ids": []
     },
@@ -5475,9 +5620,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1352。",
         "solution_status": "consistent",
-        "note": "x=13、y=52时2×13×52=1352，故四位数为1352；页面未在空格处明确写出最终答案，但解析足以确定。"
+        "note": "逐一考察50的奇因数并结合x、y都为两位数，只得x=13、y=52，四位数1352。",
+        "verified_solution": "令x=ab、y=cd，则四位数abcd=100x+y，题设给100x+y=2xy，整理为(2x−1)(y−50)=50。x是两位数，所以2x−1是大于19的奇因数；50的奇因数只有1、5、25，只有25符合，故x=13、y−50=2，即y=52。于是abcd=1352，代回有13×52×2=1352。"
       },
       "cross_reference_ids": []
     },
@@ -5489,7 +5635,7 @@
       "source_question_label": "练习3",
       "problem": "一个六位数，它的个位上的数字是7。如果把数字7移到第一位，所得的数是原数的5倍。这个六位数是____。",
       "source_answer": "142857",
-      "source_solution": "设原数为̅abcde7，移位后为̅7abcde：700000+̅abcde=5(10̅abcde+7)，得̅abcde=14285? 页面红笔最终写为14285并填答142857。",
+      "source_solution": "令t=overline{abcde}，原数为10t+7，移位后为700000+t。由700000+t=5(10t+7)得49t=699965，t=14285，故原数为142857。",
       "topics": [
         "位值原理",
         "循环移位与倍数关系"
@@ -5511,9 +5657,10 @@
       "duplicate_notes": "与例题3（1）同现142857循环移位结构，但不是同文档重复题。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "142857。",
         "solution_status": "consistent",
-        "note": "142857×5=714285，确为将末位7移到首位后的数。页面推导中中间横线数字书写略潦草，但最终答案可独立核验。"
+        "note": "由题意列式得t=14285，原数142857；复乘5得714285，正好把末位7移到首位。",
+        "verified_solution": "设前五位组成t。原数是10t+7，移位后是700000+t。方程700000+t=5(10t+7)化为49t=699965，所以t=14285，原数为142857。检查142857×5=714285，符合“把末位7移到第一位”。"
       },
       "cross_reference_ids": []
     },
@@ -5523,9 +5670,9 @@
       "source_filename": "26数论模块训练营第八讲解析(1).pdf",
       "lesson_or_test": "数论方法训练营 第8讲 位值与进制",
       "source_question_label": "例题4",
-      "problem": "一个三位数̅7ab，将它连续重复写2026次，成为一个多位数后能被91整除，那么这个三位数̅7ab是____。",
-      "source_answer": "9117或7007",
-      "source_solution": "̅7ab̅7ab…̅7ab=̅7ab×1000^…；因1000=91×11−1，页面用2026÷3…1并写‘91|̅7ab，为9117或7007’。",
+      "problem": "一个四位数\\overline{7ab7}，将它连续重复写2026次，成为一个多位数后能被91整除，那么这个四位数\\overline{7ab7}是____。",
+      "source_answer": "7917或7007。",
+      "source_solution": "设B=\\overline{7ab7}。每三个重复块组成的数为B(10^8+10^4+1)=B×100010001，而100010001=91×1099011。2026=3×675+1，故重复2026次的数模91与B同余；要被91整除，必须91|B。四位数B在7000至7999且末位为7，写作91k时77≤k≤87，且B末位等于k末位，因此k只能为77或87，得到B=7007或7917。",
       "topics": [
         "位值原理",
         "重复数",
@@ -5543,14 +5690,15 @@
         ]
       },
       "ambiguities": [
-        "第3页红笔把2026÷3写成‘…1’，与正确的模91周期论证不一致。"
+        "扫描页中块的末位7受红笔修改覆盖，文本层曾漏录；放大后的红笔重复式清楚写作7ab7，且答案7917、7007均与四位数条件相符。题库题面按该证据修正。"
       ],
       "duplicate_notes": "",
       "review": {
-        "answer_status": "conditional",
-        "verified_answer": "若按三位数overline{7ab}理解，则任意700～799均可（100个数）；若坚持印刷的“四位数”，横线数码少一位，题面不足以确定。",
-        "solution_status": "error",
-        "note": "第3页印刷文字称“四位数”而数码横线只有7ab；红笔似有改字但不能确定原意。按三位数读法，重复2026块的数为B(1+1000+…+1000^2025)，因1000≡−1 (mod 91)且项数为偶数，几何和被91整除，所以所有B=700～799均成立。来源列出的9117、7007既非三位数，也非完备解集。"
+        "answer_status": "verified",
+        "verified_answer": "7007或7917。",
+        "solution_status": "consistent",
+        "note": "放大原页显示重复块为四位数7ab7；按三块分组，2026=3×675+1，故大数模91与块本身同余。满足91整除、范围7000—7999且末位7的仅7007、7917。旧题库遗漏末位7并误判为3位数，已纠正。",
+        "verified_solution": "令B=7ab7。每三个连续块的值是B×(10^8+10^4+1)，括号等于100010001=91×1099011，因此每组三块都能被91整除。2026个块可分成675组三块再加1块；多位数模91的余数就是B的余数，所以B必须是91的倍数。7000至7999之间的91倍数写成91k，k只能从77到87；又因91k末位与k同余于10，末位为7要求k=77或87，故B=7007或7917。"
       },
       "cross_reference_ids": []
     },
@@ -5582,9 +5730,10 @@
       "duplicate_notes": "例题5为同一编号下的五个独立计算小题，按独立题目记录。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "28=(11100)₂。",
         "solution_status": "consistent",
-        "note": "5×11−27=28=11100₂。"
+        "note": "(101)₂=5、(1011)₂=11、(11011)₂=27，故5×11−27=28=(11100)₂。",
+        "verified_solution": "把二进制数换成十进制：101₂=5，1011₂=11，11011₂=27。计算5×11−27=28，再把28换回二进制得11100₂。"
       },
       "cross_reference_ids": []
     },
@@ -5616,9 +5765,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "(11000000)₂。",
         "solution_status": "consistent",
-        "note": "199−21÷3=192=11000000₂。"
+        "note": "11000111₂=199，10101₂=21，11₂=3；按先除后减，199−21÷3=192=11000000₂。",
+        "verified_solution": "按运算顺序先算除法：11000111₂=199，10101₂=21，11₂=3，因此原式为199−21÷3=192。192=128+64，写成二进制是11000000₂。"
       },
       "cross_reference_ids": []
     },
@@ -5650,9 +5800,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "500。",
         "solution_status": "consistent",
-        "note": "(3021)₄=201，(605)₇=299，和为500。"
+        "note": "3021₄=201，605₇=299，和为500。",
+        "verified_solution": "(3021)₄=3×4³+0×4²+2×4+1=201；(605)₇=6×7²+0×7+5=299。相加为500。"
       },
       "cross_reference_ids": []
     },
@@ -5663,8 +5814,8 @@
       "lesson_or_test": "数论方法训练营 第8讲 位值与进制",
       "source_question_label": "例题5-④",
       "problem": "(63121)₈−(1247)₈−(16034)₈−(26531)₈−(1744)₈=____。",
-      "source_answer": "(1321)₈",
-      "source_solution": "页面仅给红笔答案(1321)₈。",
+      "source_answer": "(13121)₈。",
+      "source_solution": "页面红笔答案为(13121)₈。独立换算得十进制5713，等于(13121)₈。",
       "topics": [
         "八进制",
         "进制运算"
@@ -5684,9 +5835,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "(13121)₈。",
         "solution_status": "consistent",
-        "note": "十进制结果为5713，恰为1321₈。"
+        "note": "放大原页可辨红笔答案为(13121)₈；逐项转换后十进制差为5713，换回八进制为13121₈。旧题库文本转录漏掉了数字1。",
+        "verified_solution": "逐项转成十进制：(63121)₈=26193，(1247)₈=679，(16034)₈=7196，(26531)₈=11609，(1744)₈=996。依次相减得5713。把5713转回八进制：5713=1×8⁴+3×8³+1×8²+2×8+1，因此答案是(13121)₈。"
       },
       "cross_reference_ids": []
     },
@@ -5718,9 +5870,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "n=5。",
         "solution_status": "consistent",
-        "note": "125+15=140，且n≥4，故n=5。"
+        "note": "n=5时125+15=140；在n≥4范围内左式严格递增，故唯一。",
+        "verified_solution": "按位值展开，(1030)ₙ=n³+3n=140。因为数字3出现在该数中，底数n≥4。检验n=5得125+15=140；函数n³+3n随正整数n增大而严格增大，因此解唯一。"
       },
       "cross_reference_ids": []
     },
@@ -5754,9 +5907,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "(1067)₈=(4232)₅=(1000110111)₂。",
         "solution_status": "consistent",
-        "note": "1067₈=567，4232₅=567，1000110111₂=567。"
+        "note": "三种表示各自换回十进制都等于567。",
+        "verified_solution": "先将567分别换算。八进制：567=1×8³+0×8²+6×8+7，故为1067₈。五进制：567=4×125+2×25+3×5+2，故为4232₅。二进制：567=512+32+16+4+2+1，故为1000110111₂。"
       },
       "cross_reference_ids": []
     },
@@ -5788,9 +5942,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "(234)₈。",
         "solution_status": "consistent",
-        "note": "668−302−210=156=234₈。"
+        "note": "逐项换算并相减得十进制156，换回八进制为234。",
+        "verified_solution": "在八进制中，1234₈=668，456₈=302，322₈=210（以上均为十进制值）。668−302−210=156；156=2×64+3×8+4，所以答案234₈。"
       },
       "cross_reference_ids": []
     },
@@ -5821,10 +5976,11 @@
       "ambiguities": [],
       "duplicate_notes": "",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "逐项转换十进制后结果3275，等于4473₉。"
+        "answer_status": "partially_incorrect",
+        "verified_answer": "(4438)₉。",
+        "solution_status": "error",
+        "note": "原卷只给答案4473₉，但该值为3306₁₀；算式为3275₁₀=4438₉，确认来源答案错误。",
+        "verified_solution": "逐项转为十进制：14438₉=9836，3123₉=2289，7120₉=5202，11770₉=7920，5766₉=4272。计算9836+2289−5202−7920+4272=3275。再转回九进制：3275=4×9³+4×9²+3×9+8，故为4438₉。原卷红笔答案4473₉换算为3306，和算式不符。"
       },
       "cross_reference_ids": []
     },
@@ -5857,9 +6013,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1991。",
         "solution_status": "consistent",
-        "note": "由题面差式可得a=3、b=7、c=0；(3707)₈=1991，且(7073)₈−(3707)₈=(3164)₈，源答案正确。"
+        "note": "遍历八进制数字0—7并代回差式，唯一解(a,b,c)=(3,7,0)，答案1991。",
+        "verified_solution": "设A=(abcb)₈、B=(bcba)₈。由题面枚举八进制数字并满足首位非零且a、b、c互异，只有(a,b,c)=(3,7,0)使B−A=3164₈。于是A=(3707)₈=3×512+7×64+7=1991。回代：(7073)₈−(3707)₈=(3164)₈。"
       },
       "cross_reference_ids": []
     },
@@ -5892,9 +6049,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "最大数是7543。",
         "solution_status": "consistent",
-        "note": "枚举数字集合{3,4,5,7}：升序第二个3475为5的倍数；降序第二个7534为偶数且不被4整除；升序第20个−第5个=7543−3934=3609，在3000～4000内；最大数7543。"
+        "note": "穷举所有四个互异非零数字集合及其24个排列，只有{3,4,5,7}满足条件；更正旧备注：第5个是3745、第20个是7354（差3609），7543是最大数。",
+        "verified_solution": "设四个数字由小到大为a<b<c<d。由四位数排列恰有24个可知数字都非0。按升序，第二个数是abdc，因此末位c必须为5。按降序，第二个数是dcab；它须为不被4整除的偶数，结合差值条件可枚举得到唯一数字集合{3,4,5,7}。实际列出24个排列核验：升序第2个3475能被5整除；降序第2个7534是偶数且不被4整除；升序第5个3745、第20个7354，相差3609，符合3000—4000。最大排列为7543。"
       },
       "cross_reference_ids": []
     },
@@ -5927,9 +6085,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1。",
         "solution_status": "consistent",
-        "note": "直接计算N mod7=1、N mod9=0，和为1。"
+        "note": "独立计算得N mod7=1、N mod9=0，所求为1。",
+        "verified_solution": "N=(12345654321)₈。因为8≡1(mod7)，N除以7的余数等于数字和36除以7的余数，即1。因为8≡−1(mod9)，按位交错相加减：正号位数字和18，负号位数字和18，所以N除以9的余数为0。两余数之和为1。"
       },
       "cross_reference_ids": []
     },
@@ -5961,9 +6120,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "259。",
         "solution_status": "consistent",
-        "note": "216+36+6+1=259。"
+        "note": "位值展开得216+36+6+1=259。",
+        "verified_solution": "(1111)₆=1×6³+1×6²+1×6+1=216+36+6+1=259。"
       },
       "cross_reference_ids": []
     },
@@ -5995,9 +6155,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "2。",
         "solution_status": "consistent",
-        "note": "8≡1 (mod7)，故按位数字和6+4+3+7+2+1=23≡2。"
+        "note": "各位和23，23 mod7=2。",
+        "verified_solution": "8≡1(mod7)，所以(643721)₈除以7的余数等于各位数字和除以7的余数。6+4+3+7+2+1=23，23除以7余2。"
       },
       "cross_reference_ids": []
     },
@@ -6009,7 +6170,7 @@
       "source_question_label": "作业3",
       "problem": "有4个数̅a、̅b3、̅1c26、̅d341，他们的平均数是1837，求̅acdb=____。",
       "source_answer": "8957",
-      "source_solution": "̅a+̅b3+̅1c26+̅d341=1837×4；红笔整理为̅dcba=1837×4−341−26−3−1000=5478，故̅acdb=8957。",
+      "source_solution": "红笔整理为\\overline{dcba}=1837×4−341−26−3−1000=5978，故\\overline{acdb}=8957。",
       "topics": [
         "位值原理",
         "数字方程",
@@ -6026,15 +6187,14 @@
           7
         ]
       },
-      "ambiguities": [
-        "第7页红笔中间写成‘̅dcba=5478’并随后得8957，符号整理过程较跳步；按题面逐位代数核验后答案8957正确。"
-      ],
+      "ambiguities": [],
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "8957。",
         "solution_status": "consistent",
-        "note": "总和7348；由a+̅b3+̅1c26+̅d341=7348可得a+10b+10c+1000d=5978，唯一数字解a=8,b=7,c=9,d=5，故̅acdb=8957。"
+        "note": "放大原页确认红笔中间值是5978，不是旧备注的5478。唯一数字解为a=8、b=7、c=9、d=5，答案8957。",
+        "verified_solution": "四个数的总和是4×1837=7348。把后三个数展开：b3=10b+3，1c26=1000+100c+26，d341=1000d+341。移项得a+10b+100c+1000d=5978。按十进制位值，d=5、c=9、b=7、a=8，故acdb=8957。代回四数之和为7348，平均数为1837。"
       },
       "cross_reference_ids": []
     },
@@ -6066,9 +6226,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "12个。",
         "solution_status": "consistent",
-        "note": "t=3k²且t≤500，k=1,…,12，答案为12。"
+        "note": "独立枚举1—500并检验12t是否为平方，恰得12个，均为3k²（k=1…12）。",
+        "verified_solution": "若t×12为平方数，质因数分解表明t=3k²。由3k²≤500得k≤12，故k可取1至12，共12个。直接枚举所得t为3、12、27、48、75、108、147、192、243、300、363、432，与公式一致。"
       },
       "cross_reference_ids": []
     },
@@ -6100,9 +6261,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "231。",
         "solution_status": "consistent",
-        "note": "去掉3、7、11后各质因数指数均为偶数，且这是使n最小的取法。"
+        "note": "12!/231=2,073,600=1440²；对指数奇偶逐项检查，231为最小可行n。",
+        "verified_solution": "12!=2¹⁰×3⁵×5²×7×11。要使12!/n成为整数平方，各质因数在商中的指数须为偶数。2和5的指数本来为偶数，可不除去；3、7、11的指数为奇数，各至少从分母中减去一个。取最小n=3×7×11=231；商为2¹⁰×3⁴×5²=1440²。"
       },
       "cross_reference_ids": []
     },
@@ -6134,9 +6296,10 @@
       "duplicate_notes": "与练习2使用同一平方数恒等式，但题目不同。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "7777777。",
         "solution_status": "consistent",
-        "note": "1111111×7=7777777。"
+        "note": "独立平方计算确认1111111²=1234567654321，乘7得7777777。",
+        "verified_solution": "1234567654321=1111111²，且49=7²。因此乘积=(1111111×7)²=7777777²。"
       },
       "cross_reference_ids": [
         "XR-04"
@@ -6170,9 +6333,10 @@
       "duplicate_notes": "与例题2本质重复：均为1234567654321×49=7777777²。",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "7777777。",
         "solution_status": "consistent",
-        "note": "括号内和为49=7²，结论成立。"
+        "note": "括号和为49，与题面乘数相乘得7777777²。",
+        "verified_solution": "括号内1+2+3+4+5+6+7+6+5+4+3+2+1=49=7²。又1234567654321=1111111²，所以原式=(1111111×7)²=7777777²。"
       },
       "cross_reference_ids": [
         "XR-04"
@@ -6206,9 +6370,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "逐一检验三位数的平方和表示，最大值确为997=961+36。"
+        "verified_answer": "997。",
+        "solution_status": "incomplete",
+        "note": "原页只写“999、998不可能”，未展开理由；模4排除999，模8排除998；31²+6²=997提供可行例。 来源仅写998、999“不可能”而未说明；本轮补充模4与模8的排除理由。",
+        "verified_solution": "最大的三位候选是999、998。两个平方除以4的余数只能是0或1，因此两平方之和不可能除以4余3，999不可能。平方除以8的余数只能是0、1或4，两项相加不可能余6，因此998也不可能。997=31²+6²，且两个平方不同，所以最大值为997。"
       },
       "cross_reference_ids": []
     },
@@ -6240,9 +6405,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "0至9中四个互异数字平方和为39的组合仅有{1,2,3,5}，四位数排列均不以0开头，因此24个。"
+        "verified_answer": "24个。",
+        "solution_status": "incomplete",
+        "note": "穷举0—9中四个互异数字，平方和39仅有{1,2,3,5}；24种排列均有效。 来源只列出{1,2,3,5}，未证明组合唯一；本轮独立穷举0—9的数字组合。",
+        "verified_solution": "四个不同数字平方和为39，检查数字0—9的组合，唯一集合是{1,2,3,5}（最大数字不可能小于5或大于6；最大为6时其余三数平方和仅需3，不足以由三个不同数字组成；最大为5时其余三数只能是1、2、3）。这四个数字都非0，任意排列均为四位数，共4×3×2×1=24个。"
       },
       "cross_reference_ids": []
     },
@@ -6275,10 +6441,11 @@
       "ambiguities": [],
       "duplicate_notes": "",
       "review": {
-        "answer_status": "verified",
-        "verified_answer": "2^15×3^20×5^24。",
-        "solution_status": "consistent",
-        "note": "回看第3页原图，来源其实列出了每个质因数指数的全部三个模条件；最小指数15、20、24正确。此前抽取漏掉若干条件并误判答案，现已纠正。"
+        "answer_status": "conditional",
+        "verified_answer": "若自然数包含0，最小值为0；若此题按正自然数理解，最小值为2^15×3^20×5^24。",
+        "solution_status": "incomplete",
+        "note": "印刷题干只写“自然数”且未声明是否含0；原解按正数分解，答案依约定分支保留。",
+        "verified_solution": "若N>0，设N=2^a×3^b×5^c×……。乘2后为平方、乘3后为立方、乘5后为五次方，分别要求各质因数指数满足相应模条件。对2，a为奇数且被3、5整除，最小a=15；对3，b为偶数、b≡2(mod3)且被5整除，最小b=20；对5，c为偶数、被3整除且c≡4(mod5)，最小c=24；其他质因数指数须同时被2、3、5整除，最小取0。因此正自然数分支为2^15×3^20×5^24。若0属于自然数，N=0也满足三个乘积分别为平方、立方和五次方，且是更小解。"
       },
       "cross_reference_ids": []
     },
@@ -6290,7 +6457,7 @@
       "source_question_label": "练习4",
       "problem": "有5个连续自然数，它们的和为一个平方数，中间三个数的和为立方数，则这五个数中最小数的最小值为____。",
       "source_answer": "1123",
-      "source_solution": "设五数为n−2,n−1,n,n+1,n+2；5n=a²，3n=b³。由此推出5|n、3²|n，进一步取n_min=3³×5³=1125，故最小数(n−2)_min=1123，并在页上注明‘验证成立’。",
+      "source_solution": "设五数为n−2、n−1、n、n+1、n+2。5n为平方数，故5|n；3n为立方数，故9|n。由两条幂条件合并指数奇偶/模3要求，3²×5³|n，最小n=3²×5³=1125；并验证5n=5625=75²、3n=3375=15³，所以最小数为1123。",
       "topics": [
         "连续自然数",
         "完全平方数",
@@ -6312,9 +6479,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "1123。",
         "solution_status": "consistent",
-        "note": "n=1125时5n=5625=75²，3n=3375=15³，故五数最小数为1123；指数条件也证明其最小。"
+        "note": "原页放大后确认为3²×5³=1125；旧题库把3²误录为3³，已纠正。",
+        "verified_solution": "设五数为n−2、n−1、n、n+1、n+2，则总和5n是平方数，中间三数和3n是立方数。由5n为平方可知n中5的指数为奇数；由3n为立方可知n中3的指数至少为2。合并两种幂的指数条件，最小n=3²×5³=1125；其他质因数若出现，指数需同时满足平方与立方条件，至少为6，不会使n更小。验证5n=5625=75²，3n=3375=15³。因此最小数n−2=1123。"
       },
       "cross_reference_ids": []
     },
@@ -6347,9 +6515,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "145。",
         "solution_status": "consistent",
-        "note": "三组A分别产生两数差8100、18225、32400，均为平方数，且A为两位数。"
+        "note": "穷举两位A或由405A为平方得A=5k²，候选20、45、80，和145。",
+        "verified_solution": "令两位数为A，B=6A。把B接在A左边得到100B+A=601A；接在A右边得到1000A+B=1006A；两数差为405A=81×5×A。此差为平方数当且仅当5A为平方数，即A=5k²。两位数解为20、45、80，和为145；逐个代回均得到平方差。"
       },
       "cross_reference_ids": []
     },
@@ -6382,9 +6551,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "(18,32)、(43,57)、(68,82)。",
         "solution_status": "consistent",
-        "note": "差为100的倍数等价于平方数末两位相同；三组且仅三组满足两位数范围。"
+        "note": "独立遍历全部两位数对，只有三组；平方末两位已逐一代回。",
+        "verified_solution": "设较小数为n，较大数为n+14，其中10≤n≤85。两平方末两位相同，等价于其差28(n+7)为100的倍数；化简得7(n+7)=25k。因7与25互质，n+7必须是25的倍数，范围内只有25、50、75，故n=18、43、68。对应平方末两位分别为24、49、24，全部符合。"
       },
       "cross_reference_ids": []
     },
@@ -6418,9 +6588,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "conditional",
-        "verified_answer": "若按红笔补写的“六位”理解，恰有3个：213444、289444、925444；若无六位/范围限制，则有无穷多个平方数末三位为444。",
+        "verified_answer": "若补入“六位完全平方数”的范围，答案为 3 个：213444、289444、925444；按现有无限范围题面则有无穷多个。",
         "solution_status": "incomplete",
-        "note": "原页第4页在题干上方可辨认红笔“六位”。三者答案在六位约束下正确；若只按印刷题面，不设位数上界，则n=38+500k可产生无穷多个平方数，均以444结尾。将手写补充与印刷条件分开保存。"
+        "note": "原页第4页在题干上方可辨认红笔“六位”。三者答案在六位约束下正确；若只按印刷题面，不设位数上界，则n=38+500k可产生无穷多个平方数，均以444结尾。将手写补充与印刷条件分开保存。 本轮独立复核（原PDF第4页，2026-10-08）：红笔“六位”可辨，印刷题干本身无位数上限；故3个答案仅在接受手写范围时成立。来源还直接写末三位为444，未证明为何111—999中其余重复数字不能为平方末尾；本轮补全模8与模25筛选。",
+        "verified_solution": "设平方数为n²。末三位相同且非0时，末三位只能是111、222、…、999。平方数除以8余0、1或4，先只剩444、777、888；但777除以25余2、888除以25余13，而平方数除以25可能的余数只有0、1、4、6、9、11、14、16、19、21、24，所以末三位只能是444。若接受原页红笔补充“六位”，则316≤n≤999，且n²≡444（mod 1000）。因38²≡444（mod 125），有(n−38)(n+38)≡0（mod 125）；两因数相差76，不可能同时含因数5，所以n≡38或87（mod 125）。又444≡4（mod 8），故n≡2或6（mod 8）。合并两组余数，n模1000只能为38、462、538、962；在316至999之间只有462、538、962，对应213444、289444、925444，共3个。若不接受“六位”这一手写范围，则把满足条件的平方根加上1000k仍保持末三位444，因此有无穷多个解。"
       },
       "cross_reference_ids": [],
       "handwritten_additions": [
@@ -6456,9 +6627,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "1225=1+⋯+49=35²；枚举四位平方数可确认唯一。"
+        "verified_answer": "1225。",
+        "solution_status": "incomplete",
+        "note": "检查32≤a≤99的全部四位平方，只有35²满足三角数判定；对应k=49。 来源对有限范围的“试探”未列完；本轮检验32²至99²全部候选，唯一为1225。",
+        "verified_solution": "四位完全平方数写成a²，32≤a≤99。三角数条件等价于8a²+1为奇数平方（因为8T_k+1=(2k+1)²）。逐一检验这68个a值，只有a=35通过；于是N=35²=1225=1+2+…+49。"
       },
       "cross_reference_ids": []
     },
@@ -6492,9 +6664,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "2601=51²，数字和=9，2601/9=289=17²，2601=3²×17²有9个正因数，且四位数字2、6、0、1互不相同。穷举四位数后唯一。"
+        "verified_answer": "2601。",
+        "solution_status": "incomplete",
+        "note": "独立穷举1000—9999验证唯一解为2601；其数字和9，商289=17²，正因数个数9。 来源候选筛选略去了若干排除理由；本轮补全因数个数奇偶与指数型分类。",
+        "verified_solution": "数字和d至少6且因四位数各位不同最多30；d只能是9、16或25。完全平方数的正因数个数为奇数，所以d不可能是16。若d=25，N/25为平方数，故N末两位只能是00或25：00重复数字；25则前两位数字之和需为18，但两个不同数字的最大和为17，均不行。若d=9，因数个数为9且N为平方数，指数型只能为p^8或p²q²。N又含9；p^8分支只能是3^8=6561（数字和18，不符），另一分支为N=3²q²。四位范围内q只需查11、13、17、19、23、29、31；其中只有2601=3²×17²各位不同且数字和9。最后2601/9=289=17²，因数个数(2+1)(2+1)=9，故它满足全部条件。"
       },
       "cross_reference_ids": []
     },
@@ -6526,9 +6699,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "450根。",
         "solution_status": "consistent",
-        "note": "图示每层比上一层多1根，25层等差和为450。"
+        "note": "图示为三角形堆叠，底层30根；等差和为450。",
+        "verified_solution": "共有25层。每下一层比上一层多1根，因此各层从上到下是6、7、…、30根。等差数列总和=(首项+末项)×项数÷2=(6+30)×25÷2=450。"
       },
       "cross_reference_ids": []
     },
@@ -6561,9 +6735,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "36。",
         "solution_status": "consistent",
-        "note": "x=36时N=8281=91²；要使91(x+55)为平方，最小正的x+55为91。"
+        "note": "穷举正整数x并用平方判定，最小解x=36；更大的解不影响最小值。",
+        "verified_solution": "从x+10加到x+100共91项，首末项和为2x+110，所以N=91(x+55)。因91=7×13没有平方因子，要使N成为平方数，x+55必须是91乘某个平方数，即x+55=91m²。m最小取1，得到x=36；代回N=91²=8281。"
       },
       "cross_reference_ids": []
     },
@@ -6598,7 +6773,8 @@
         "answer_status": "verified",
         "verified_answer": "16岁、24岁、25岁、64岁。",
         "solution_status": "incomplete",
-        "note": "按“倒退15年仍是这四个人的年龄”理解，年龄须至少15岁；在该自然约束下穷举且和为129的唯一四元组为16、24、25、64，来源答案正确。"
+        "note": "来源只写“枚举平方数”，未展示候选范围与唯一性；独立穷举年龄15—84内两类平方年龄，唯一四元组为16、24、25、64。",
+        "verified_solution": "倒退15年后仍是实际年龄，故四人现在都至少15岁；总和129，所以每人不超过84岁。15—84之间，现在是平方数的年龄为16、25、36、49、64、81；倒退15年是平方数的年龄为15、16、19、24、31、40、51、64、79。检查这些候选中的四个不同年龄且总和129，唯一集合为{16,24,25,64}。其中现在为平方数的是16、25、64；15年前为平方数的是1、9、49，恰各有三人。"
       },
       "cross_reference_ids": []
     },
@@ -6629,9 +6805,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "6",
         "solution_status": "consistent",
-        "note": "2+1+6=9。"
+        "note": "2+1+6=9。",
+        "verified_solution": "9的倍数有个小窍门：各位数字相加后，也要是9的倍数。2+1=3，再加6刚好等于9，所以方框里填6。"
       },
       "cross_reference_ids": []
     },
@@ -6663,9 +6840,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "AB=62",
         "solution_status": "consistent",
-        "note": "代入A=6、B=2得数为956142，且99×9658=956142，成立；来源推导中的中间表达式虽排版拥挤，结论正确。"
+        "note": "代入A=6、B=2得数为956142，且99×9658=956142，成立；来源推导中的中间表达式虽排版拥挤，结论正确。",
+        "verified_solution": "把“AB”看成两位数10A+B。95A14B=950140+1000A+B=950140+990A+(10A+B)。因为990A一定是99的倍数，只要看950140+AB。AB在10到99之间，所以这个数在950150到950239之间。这里唯一的99倍数是950202=99×9598，于是AB=950202−950140=62。检查：A=6、B=2时，95A14B=956142=99×9658。"
       },
       "cross_reference_ids": []
     },
@@ -6699,7 +6877,8 @@
         "answer_status": "verified_from_solution",
         "verified_answer": "最大3289；最小3220。",
         "solution_status": "consistent",
-        "note": "来源未单列答案栏；解析给出的最大值3289=23×143、最小值3220=23×140，均在3200～3299范围。"
+        "note": "来源未单列答案栏；解析给出的最大值3289=23×143、最小值3220=23×140，均在3200～3299范围。",
+        "verified_solution": "四位数32□□在3200到3299之间。最大值：3299÷23余10，所以从3299减去10，得到3289=23×143。最小值：3200÷23余3，再加上23−3=20，得到3220=23×140。"
       },
       "cross_reference_ids": [
         "XR-01"
@@ -6733,9 +6912,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "闰年2月可取质数日期3、5、11、17、29共5个；3、5、11月各可取日期2，共3个，合计8。"
+        "verified_answer": "8个（在闰年达到上限）",
+        "solution_status": "incomplete",
+        "note": "闰年2月可取质数日3、5、11、17、29共5个；3、5、11月各可取日期2，共3个，合计8。平年缺少2月29日，最多7个；原卷解析未明确说明闰年边界，已补独立说明。",
+        "verified_solution": "如果两个质数相加还是质数，其中一个必须是2；否则两个奇质数相加是大于2的偶数，不会是质数。闰年2月的质数日期3、5、11、17、29都可以，日期加2后仍是质数，共5天。若日期是2，月份可选3、5、11（因为7+2=9不是质数），共3天。最多5+3=8天；平年没有2月29日，最多7天。"
       },
       "cross_reference_ids": []
     },
@@ -6767,9 +6947,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "180×5=900=30²，且补足质因数5后为最小。"
+        "verified_answer": "5",
+        "solution_status": "incomplete",
+        "note": "180=2²×3²×5；为使乘积成为平方数，因数5需再补一个5，因此最小x=5且180×5=30²。来源只给质因数分解和答案，已补足最小性理由。",
+        "verified_solution": "180=2²×3²×5。要让180×x成为平方数，每种质因数都要成对出现；2和3已经成对，5还单独剩一个，所以x最少要补一个5。取x=5时，180×5=900=30²，因此最小x=5。"
       },
       "cross_reference_ids": []
     },
@@ -6800,9 +6981,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "72",
         "solution_status": "consistent",
-        "note": "30×72=2160=360×6。"
+        "note": "30×72=2160=360×6。",
+        "verified_solution": "两数相乘=最大公因数×最小公倍数，所以30×B=6×360，B=6×360÷30=72。检查：gcd(30,72)=6，lcm(30,72)=360。"
       },
       "cross_reference_ids": []
     },
@@ -6834,9 +7016,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "25个苹果",
         "solution_status": "consistent",
-        "note": "4×25/15=20/3千克，梨数为16个，重量相同且苹果数最少。"
+        "note": "最少苹果数为25；对应梨数为32（此前复核备注误写16，已更正）。两种水果的总重量均为20/3千克。",
+        "verified_solution": "设苹果有a个、梨有b个。重量相同，所以4a/15=5b/24。两边乘120，得到32a=25b。25和32没有共同因数，因此最小的正整数解是a=25、b=32。检查：25个苹果重4×25/15=20/3千克，32个梨也重5×32/24=20/3千克。题目只问苹果数，答案是25个。"
       },
       "cross_reference_ids": []
     },
@@ -6868,9 +7051,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "18个因数；因数和546",
         "solution_status": "consistent",
-        "note": "因数个数公式和约数和公式计算均正确。"
+        "note": "因数个数公式和约数和公式计算均正确。",
+        "verified_solution": "180=2²×3²×5。一个因数可从2、3、5的指数中分别选择，所以因数个数=(2+1)(2+1)(1+1)=18。所有因数的和=(1+2+4)(1+3+9)(1+5)=7×13×6=546。"
       },
       "cross_reference_ids": []
     },
@@ -6902,9 +7086,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "逐一计算余数为4、3、8。"
+        "verified_answer": "除以5余4；除以7余3；除以11余8",
+        "solution_status": "incomplete",
+        "note": "逐一计算余数为4、3、8。",
+        "verified_solution": "987654=5×197530+4，所以除以5余4；987654=7×141093+3，所以除以7余3；987654=11×89786+8，所以除以11余8。"
       },
       "cross_reference_ids": []
     },
@@ -6936,9 +7121,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "3×6=18≡7 (mod 11)。"
+        "verified_answer": "x≡6 (mod 11)",
+        "solution_status": "incomplete",
+        "note": "3×6=18≡7 (mod 11)。",
+        "verified_solution": "6x≡3x+7 (mod 11)，两边减去3x，得到3x≡7 (mod 11)。因为3×4=12≡1 (mod 11)，所以3的逆元是4；两边乘4，x≡28≡6 (mod 11)。"
       },
       "cross_reference_ids": []
     },
@@ -6968,9 +7154,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": "4。",
+        "verified_answer": "余数为 4。",
         "solution_status": "not_provided",
-        "note": "独立复算：2020≡4、2021≡5 (mod 7)；4^2021≡2、5^2020≡2，和为4。来源答案4正确，原资料未附解析。此前核验把两个底数的余数各少算1，已撤销误报。"
+        "note": "独立复算：2020≡4、2021≡5 (mod 7)；4^2021≡2、5^2020≡2，和为4。来源答案4正确，原资料未附解析。此前核验把两个底数的余数各少算1，已撤销误报。",
+        "verified_solution": "2020≡4、2021≡5 (mod 7)。4³≡1，因此 4^2021≡4²≡2；5³≡−1，因此 5^2020=(5³)^673·5≡(−1)^673·5≡−5≡2。两项相加余数为 4。原资料未附解析。"
       },
       "cross_reference_ids": []
     },
@@ -7002,9 +7189,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "三数差的最大公因数为29；除以29余数均为10。"
+        "verified_answer": "除数为29；共同余数为7",
+        "solution_status": "error",
+        "note": "d=29是满足条件的除数；三数除以29的共同余数是7。原解析最后一句把除数29误称为余数，已标记来源解法有误并保留原文。",
+        "verified_solution": "若442、297、210除以d后余数相同，那么它们两两相减都能被d整除。差分别是145、232、87，它们的最大公因数是29。因为d>1，只能取d=29。检查：442=29×15+7，297=29×10+7，210=29×7+7；因此除数是29，共同余数是7。原解析最后把“除数29”误写成“余数29”，原文保留在source_solution中。"
       },
       "cross_reference_ids": []
     },
@@ -7036,9 +7224,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "59 mod10=9、mod12=11、mod14=3，且小于100。"
+        "verified_answer": "59",
+        "solution_status": "error",
+        "note": "原解析把101列入“不超过100”的候选，又漏掉候选3；完整列出N≤100且N≡3 (mod14)的数后，仍只有59同时满足另外两个余数条件。答案59正确，来源中间枚举有误。",
+        "verified_solution": "把气球数记作N。按14人分配时“多3个”，所以N除以14余3。又N≤100，因此候选是3、17、31、45、59、73、87。按12人分配“少1个”，表示N除以12余11；候选中只有59满足。再检查59除以10余9，正好符合10人分配时少1个。因此唯一答案是59。"
       },
       "cross_reference_ids": []
     },
@@ -7072,7 +7261,8 @@
         "answer_status": "verified_from_solution",
         "verified_answer": "34。",
         "solution_status": "consistent",
-        "note": "来源未单列答案栏；三次进位使数位和总计减少3×9，36+25−27=34。"
+        "note": "来源未单列答案栏；三次进位使数位和总计减少3×9，36+25−27=34。",
+        "verified_solution": "每发生一次进位，个位数字少10、左边一位多1，数字和合起来少9。进位三次，数字和共少3×9=27。A+B的数字和是36+25−27=34。"
       },
       "cross_reference_ids": []
     },
@@ -7105,9 +7295,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
+        "verified_answer": "7",
         "solution_status": "consistent",
-        "note": "平方的因数个数为5意味着平方为p⁴；原数为p²，立方为p⁶，因数数为7。"
+        "note": "平方的因数个数为5意味着平方为p⁴；原数为p²，立方为p⁶，因数数为7。",
+        "verified_solution": "一个正整数平方的因数个数是5。因数个数为5时，平方只能是某个质数p的四次方p⁴，所以原数是p²。它的立方是p⁶，因数个数为6+1=7。"
       },
       "cross_reference_ids": []
     },
@@ -7142,9 +7333,10 @@
       "duplicate_notes": "",
       "review": {
         "answer_status": "verified",
-        "verified_answer": null,
-        "solution_status": "consistent",
-        "note": "5005=65×77，反序仍为5005；在反序数确为四位数（首位d非0）的题意下枚举唯一。"
+        "verified_answer": "5005",
+        "solution_status": "error",
+        "note": "原解析称“令a>d”后又推到a=d=5，前提与结论矛盾；独立穷尽证明确认答案唯一为5005。",
+        "verified_solution": "设四位数为abcd，反序数dcba也是四位数，所以a、d都不是0。两数都是65的倍数，特别都能被5整除；abcd的末位d和dcba的末位a因此只能是5（不能是0），故a=d=5。于是abcd=5005+100b+10c，反序数=5005+100c+10b。5005已能被65整除；余下条件等价于13整除10b+c，并且13整除10c+b。相减得9(b−c)能被13整除；因9与13没有公因数，b−c能被13整除。b、c都是0到9的数字，所以只能b=c。代回后13整除11b；11与13没有公因数，因此b=0，c=0。唯一数是5005；检查5005=65×77，反序仍是5005。原解析称“令a>d”后又取a=d，前提互相矛盾，独立证明已替代该推导。"
       },
       "cross_reference_ids": []
     },
@@ -7177,8 +7369,9 @@
       "review": {
         "answer_status": "verified",
         "verified_answer": "n=100、600。",
-        "solution_status": "consistent",
-        "note": "原页分数写法含分子5与25；按图像修复文本层漏掉的分子后，来源推导中的两个单位分数分解及答案均成立。"
+        "solution_status": "incomplete",
+        "note": "用D=n+25可化为D|625且D>25，故D只可能125或625，得到全部n=100、600；来源只列两个分数分解，未说明穷尽性。",
+        "verified_solution": "设D=n+25。因为n是正整数，所以D>25。若D能整除25n，那么它也能整除25(n+25)−25n=625。625=5⁴，且大于25的正因数只有125和625。因此D=125或625，n=D−25，得到n=100或600。代回原式，两者均满足；除此以外没有其他因数可选。"
       },
       "cross_reference_ids": []
     },
@@ -7212,8 +7405,9 @@
       "review": {
         "answer_status": "verified_from_solution",
         "verified_answer": "a+b∈{60,64,80,108,256}。",
-        "solution_status": "consistent",
-        "note": "来源未单列答案栏，解析列出全部可能和。等价于(a−15)(b−15)=225，正整数解分类后得到所列五个和。"
+        "solution_status": "incomplete",
+        "note": "完整分类为(a−15)(b−15)=225的无序因数对；来源列出了五个和，但未充分说明因数对已经穷尽。",
+        "verified_solution": "由1/15=1/a+1/b，两边乘15ab，得ab=15a+15b，也就是(a−15)(b−15)=225。右边是正数，所以两个括号同号。a、b为正整数，若两括号都为负，它们的绝对值最多14，乘积最多196，不可能等于225；因此两括号都为正。225的无序正因数对是(1,225)、(3,75)、(5,45)、(9,25)、(15,15)。分别加回15，得到(a,b)=(16,240)、(18,90)、(20,60)、(24,40)、(30,30)，所以a+b的所有可能值为256、108、80、64、60，即{60,64,80,108,256}。"
       },
       "cross_reference_ids": [
         "XR-05"

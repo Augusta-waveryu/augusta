@@ -90,3 +90,43 @@
 .bc-geometry-promise{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;color:#4b7256;font-size:10px;font-weight:900}
 .bc-geometry-promise span{padding:6px 10px;border:1px solid #dfe9d9;border-radius:999px;background:#f2f7ee}
 @media(max-width:650px){.bc-geometry-promise{font-size:9px;gap:6px}}
+
+
+/* Formula-first learning: keep equations visually separate from explanatory prose. */
+.bc-lesson-formula{margin:11px 0 14px;padding:14px 16px;border:2px solid #c9dfc6;border-radius:15px;background:linear-gradient(135deg,#edf6e9,#fffefa 82%);box-shadow:inset 4px 0 #5c9468}
+.bc-formula-label{display:block;color:#477150;font-size:10px;font-weight:900;letter-spacing:.06em}
+.bc-lesson-formula code{display:block;margin-top:6px;color:#253f30;font-family:"Nunito","Noto Sans SC",sans-serif;font-size:clamp(16px,2vw,22px);font-weight:900;line-height:1.75;white-space:normal;overflow-wrap:anywhere;word-break:normal;font-variant-numeric:lining-nums tabular-nums}
+.bc-formula-support{color:#53645a;font-size:11px;line-height:1.8}
+.bc-rich-line{display:block;min-width:0;white-space:normal;overflow-wrap:anywhere;word-break:normal}
+.bc-rich-prose{margin:0}
+.bc-rich-math{width:fit-content;max-width:100%;margin:5px 0;padding:6px 10px;border-radius:9px;background:#edf4e9;color:#2e523b;font-family:"Nunito","Noto Sans SC",sans-serif;font-size:clamp(14px,1.7vw,18px);font-weight:850;line-height:1.7;font-variant-numeric:lining-nums tabular-nums}
+.bc-concept-text{color:#526159;font-size:11px;line-height:1.9}
+.bc-concept-text .bc-rich-math{font-size:clamp(15px,1.8vw,19px)}
+.bc-question-copy{display:block;flex:1;min-width:0}
+.bc-question-copy .bc-rich-math{font-size:14px}
+.bc-example-solution{display:grid;gap:3px;margin:8px 0 0;padding:9px 10px;border-left:3px solid #78a47b;border-radius:0 9px 9px 0;background:#f1f6ed;color:#53645a;font-size:11px;line-height:1.8}
+.bc-example-solution>b{color:#426e50}
+.bc-formula-card code{font-size:16px;line-height:1.8;overflow-wrap:anywhere;word-break:normal;font-variant-numeric:lining-nums tabular-nums}
+.bc-formula-card .bc-formula-support{font-size:11px}
+.bc-formula-card .bc-rich-math{font-size:15px}
+@media(max-width:650px){
+  .bc-lesson-formula{padding:12px}
+  .bc-lesson-formula code{font-size:16px;line-height:1.7}
+  .bc-rich-math{font-size:15px;padding:7px 8px}
+  .bc-concept-text .bc-rich-math{font-size:15px}
+  .bc-formula-card code{font-size:16px}
+}
+
+/* Individual equation rows: one relationship per visual line. */
+.bc-formula-lines{display:grid;gap:6px;margin:8px 0 2px}
+.bc-formula-lines .bc-rich-math{width:auto;margin:0;padding:7px 10px;background:#e8f2e5;color:#294c36;font-size:clamp(17px,2vw,22px);font-weight:900;line-height:1.65}
+.bc-formula-lines .bc-rich-prose{padding:4px 2px;color:#365542;font-size:clamp(14px,1.6vw,18px);font-weight:850;line-height:1.7}
+.bc-formula-card .bc-formula-lines{gap:4px;margin:7px 0}
+.bc-formula-card .bc-formula-lines .bc-rich-math{padding:5px 8px;font-size:15px;line-height:1.7}
+.bc-formula-card .bc-formula-lines .bc-rich-prose{font-size:14px}
+@media(max-width:650px){.bc-formula-lines .bc-rich-math{font-size:17px;padding:7px 8px}.bc-formula-card .bc-formula-lines .bc-rich-math{font-size:16px}}
+
+.bc-live-result .bc-rich-math{display:block;width:fit-content;max-width:100%;margin:.3em 0;padding:.28em .55em;border-radius:8px;background:#f7fbf4;color:#31573c;font-size:clamp(1rem,1.8vw,1.2rem);font-weight:900;line-height:1.75;overflow-wrap:anywhere}
+.bc-live-result .bc-rich-prose,.bc-lab-foot .bc-rich-prose{display:block;line-height:1.75}
+.bc-lab-foot .bc-rich-math{display:block;width:fit-content;max-width:100%;margin:.3em 0;padding:.25em .5em;border-radius:7px;background:#fffefa;color:#3d6148;font-size:1rem;font-weight:900;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:650px){.bc-live-result .bc-rich-math,.bc-lab-foot .bc-rich-math{font-size:1.02rem;line-height:1.8}}

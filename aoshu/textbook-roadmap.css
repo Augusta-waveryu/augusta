@@ -4,4 +4,447 @@
 @media(prefers-reduced-motion:reduce){.textbook-page *{scroll-behavior:auto!important;transition:none!important}}
 
 .book-deep-unit{margin:14px 0 0;padding:14px;border:1px solid #e3e7d4;border-radius:14px;background:linear-gradient(140deg,#fafbf4,#fffefa)}.book-deep-unit header{margin-bottom:12px}.book-deep-label{display:inline-block;padding:4px 8px;border-radius:99px;background:#e9efd9;color:#536b42;font-size:9px;font-weight:900}.book-deep-unit h3{margin:8px 0 5px;color:#34483a;font-size:14px;line-height:1.55}.book-deep-unit header>p{margin:0;color:#6b776d;font-size:10px;line-height:1.75}.book-deep-concepts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.book-deep-concepts article{padding:10px;border:1px solid #eceee3;border-radius:10px;background:#fff}.book-deep-concepts article>b{color:#596744;font-size:10px}.book-deep-concepts article p{margin:5px 0 0;color:#68736a;font-size:10px;line-height:1.75}.book-model-lab{margin-top:12px;padding:12px;border-radius:12px;background:#f0f3e7}.book-model-heading{display:flex;flex-direction:column;gap:4px}.book-model-heading b{color:#43543f;font-size:11px}.book-model-heading span,.book-model-caption{color:#748071;font-size:9px;line-height:1.7}.book-model-controls{display:flex;align-items:center;gap:18px;margin:10px 0}.book-model-controls label,.book-number-control{display:flex;align-items:center;gap:8px;color:#55634f;font-size:10px;font-weight:800}.book-model-controls select{padding:6px 9px;border:1px solid #d8dfca;border-radius:8px;background:#fff;color:#45523e;font:inherit}.book-model-controls input[type=range],.book-number-control input[type=range]{width:min(240px,55vw);accent-color:#70814f}.book-fraction-bar{display:grid;grid-template-columns:repeat(var(--fraction-pieces,6),minmax(0,1fr));gap:3px;margin:10px 0 7px}.book-fraction-bar span{height:26px;border:1px solid #cfd8bf;border-radius:4px;background:#fff}.book-fraction-bar span.is-shaded{border-color:#899a61;background:linear-gradient(135deg,#aebe80,#d5dfaa)}.book-model-result{margin:5px 0 0;color:#526347;font-size:10px;font-weight:800;line-height:1.7}.book-model-lab:has([data-fraction-denominator]) .book-fraction-bar{grid-template-columns:repeat(var(--fraction-denominator,6),minmax(0,1fr))}.book-number-control{justify-content:space-between;margin:10px 0}.book-remainder-strip{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:3px}.book-remainder-strip span{display:grid;min-height:20px;place-items:center;border:1px solid #e0e5d5;border-radius:4px;background:#fff;color:#869082;font-size:8px}.book-remainder-strip span.is-match{border-color:#82965a;background:#dce8c5;color:#415532;font-weight:900}.book-remainder-strip span.is-current{outline:2px solid #526b43;outline-offset:1px}.book-model-caption{margin:7px 0 0}.book-practice-item{padding:10px 0;border-top:1px solid #eceee5}.book-practice-item:first-of-type{padding-top:5px;border-top:0}.book-practice-item.is-correct .book-question{color:#3d7655}.book-question>b{color:#68794d}.book-review{margin-top:14px;padding:12px;border:1px solid #e8eadc;border-radius:12px;background:#fafaf4}.book-review h3{margin:0 0 8px;color:#556340;font-size:11px}.book-review ol{display:grid;gap:8px;margin:0;padding-left:18px}.book-review li{padding-left:2px;color:#515f54;font-size:10px;line-height:1.7}.book-review li>p{margin:0}.book-review details{margin-top:3px;color:#6b776d}.book-review summary{width:max-content;color:#73804f;font-weight:800;cursor:pointer}.book-review details p{margin:3px 0 0}
-@media(max-width:650px){.book-deep-concepts{grid-template-columns:1fr;gap:6px}.book-deep-unit{padding:11px}.book-model-controls{gap:12px}.book-fraction-bar span{height:22px}.book-remainder-strip{grid-template-columns:repeat(10,minmax(0,1fr));gap:2px}.book-remainder-strip span{min-height:18px;font-size:7px}}
+@media(max-width:650px){.book-deep-concepts{grid-template-columns:1fr;gap:6px}.book-deep-unit{padding:11px}.book-model-controls{gap:12px}.book-fraction-bar span{height:22px}.book-remainder-strip{grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}.book-remainder-strip span{min-height:30px;font-size:.875rem}}
+
+
+/* 儿童阅读排版层级：标题突出，讲解正文保持约 15–16px，辅助信息不低于 12px。 */
+.textbook-page {
+  --book-reading: 0.98rem;
+  --book-support: 0.875rem;
+  --book-meta: 0.75rem;
+  --book-line: 1.85;
+}
+.textbook-page .course-hero-copy > p { font-size: 1rem; line-height: 1.9; }
+.textbook-page .course-kicker,
+.textbook-page .course-eyebrow { font-size: 0.8125rem; line-height: 1.55; }
+.textbook-page .book-method h2 { font-size: clamp(1.3rem, 2.2vw, 1.55rem); line-height: 1.4; }
+.textbook-page .book-method-copy > p { font-size: var(--book-reading); line-height: var(--book-line); }
+.textbook-page .book-steps span { font-size: var(--book-support); line-height: 1.75; }
+.textbook-page .book-steps b { font-size: 1rem; }
+.textbook-page .grade-tile-copy > b { font-size: 1rem; line-height: 1.55; }
+.textbook-page .grade-tile-copy > small,
+.textbook-page .grade-tile-copy > .grade-tile-count { font-size: var(--book-support); line-height: 1.65; }
+.textbook-page .book-grade-label { font-size: var(--book-meta); line-height: 1.5; }
+.textbook-page .book-heading > b { font-size: 1rem; line-height: 1.5; }
+.textbook-page .book-group-badge,
+.textbook-page .book-status { font-size: var(--book-meta); line-height: 1.4; }
+.textbook-page .book-state { font-size: 0.8125rem; }
+.textbook-page .book-source-attribution,
+.textbook-page .book-source-details { font-size: var(--book-support); line-height: 1.8; }
+.textbook-page .book-goal { font-size: var(--book-reading); line-height: var(--book-line); }
+.textbook-page .book-idea { font-size: 0.95rem; line-height: var(--book-line); }
+.textbook-page .book-example-label { font-size: 0.8125rem; line-height: 1.5; }
+.textbook-page .book-example > strong { font-size: 1.125rem; line-height: 1.75; }
+.textbook-page .book-example ol { font-size: var(--book-reading); line-height: var(--book-line); }
+.textbook-page .book-diagram { font-size: 0.9rem; line-height: 1.7; }
+.textbook-page .book-deep-label { font-size: 0.8125rem; line-height: 1.5; }
+.textbook-page .book-deep-unit h3 { font-size: 1.2rem; line-height: 1.5; }
+.textbook-page .book-deep-unit header > p { font-size: var(--book-support); line-height: 1.8; }
+.textbook-page .book-deep-concepts article > b { font-size: 0.95rem; line-height: 1.55; }
+.textbook-page .book-deep-concepts article p { font-size: var(--book-support); line-height: 1.8; }
+.textbook-page .book-model-heading b { font-size: 1rem; line-height: 1.55; }
+.textbook-page .book-model-heading span,
+.textbook-page .book-model-caption { font-size: var(--book-support); line-height: 1.75; }
+.textbook-page .book-model-controls label,
+.textbook-page .book-number-control { font-size: var(--book-support); line-height: 1.5; }
+.textbook-page .book-model-controls select { min-height: 44px; font-size: 1rem; }
+.textbook-page .book-model-result { font-size: var(--book-support); line-height: 1.8; }
+.textbook-page .book-remainder-strip span { min-height: 28px; font-size: 0.8125rem; }
+.textbook-page .book-practice-top h3,
+.textbook-page .book-review h3 { font-size: 1rem; line-height: 1.5; }
+.textbook-page .book-count { font-size: 0.8125rem; }
+.textbook-page .book-question { font-size: 1rem; line-height: var(--book-line); }
+.textbook-page .book-answer-row input { min-height: 44px; font-size: 1rem; }
+.textbook-page .book-answer-row button { min-height: 44px; padding-inline: 14px; font-size: 0.9rem; }
+.textbook-page .book-feedback,
+.textbook-page .book-hint,
+.textbook-page .book-solution,
+.textbook-page .book-review li { font-size: var(--book-support); line-height: 1.8; }
+.textbook-page .book-hint summary,
+.textbook-page .book-solution summary,
+.textbook-page .book-review summary { min-height: 36px; display: inline-flex; align-items: center; font-size: var(--book-support); }
+.textbook-page .book-related { min-height: 44px; font-size: 0.9rem; line-height: 1.5; }
+.textbook-page .book-source-note h2 { font-size: 1.35rem; line-height: 1.5; }
+.textbook-page .book-source-note p { font-size: var(--book-support); line-height: 1.8; }
+.textbook-page .book-source-note > a { min-height: 44px; font-size: 0.9rem; }
+@media (max-width: 650px) {
+  .textbook-page .course-hero-copy > p { font-size: 0.98rem; line-height: 1.85; }
+  .textbook-page .book-method-copy > p,
+  .textbook-page .book-goal,
+  .textbook-page .book-example ol,
+  .textbook-page .book-question { font-size: 0.96rem; }
+  .textbook-page .book-heading > b { font-size: 0.98rem; }
+  .textbook-page .book-state { font-size: 0.75rem; }
+  .textbook-page .book-deep-concepts article p,
+  .textbook-page .book-source-details,
+  .textbook-page .book-source-note p { font-size: 0.85rem; }
+  .textbook-page .book-answer-row input { width: min(230px, 68%); }
+  .textbook-page .book-source-details summary { min-height: 40px; display: inline-flex; align-items: center; }
+}
+
+.textbook-page .book-lesson-list { align-items: start; }
+@media (min-width: 651px) {
+  .textbook-page .book-lesson[open]:has(.book-deep-unit) { grid-column: 1 / -1; }
+}
+
+
+/* 独立审校后的移动端细节：知识正文不缩小，长标题和作答区允许舒展。 */
+.textbook-page .book-deep-diagram { margin: 12px 0; padding: 10px 12px; border: 1px solid #e7eadc; border-radius: 11px; background: #f7f8f1; }
+.textbook-page .book-deep-diagram figcaption { color: #56684b; font-size: 0.9rem; font-weight: 800; line-height: 1.6; }
+.textbook-page .book-deep-diagram .book-diagram { margin-top: 7px; }
+@media (max-width: 650px) {
+  .textbook-page .book-deep-concepts article p,
+  .textbook-page .book-model-heading span,
+  .textbook-page .book-model-caption,
+  .textbook-page .book-model-result,
+  .textbook-page .book-feedback,
+  .textbook-page .book-hint,
+  .textbook-page .book-solution,
+  .textbook-page .book-review li { font-size: 0.95rem; line-height: 1.8; }
+  .textbook-page .book-heading > b { white-space: normal; overflow: visible; text-overflow: clip; }
+  .textbook-page .book-answer-row { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .textbook-page .book-answer-row input,
+  .textbook-page .book-answer-row button { width: 100%; }
+  .textbook-page .book-answer-row input { min-height: 48px; }
+  .textbook-page .book-deep-diagram figcaption { font-size: 0.95rem; }
+  .textbook-page .book-deep-diagram .book-diagram { font-size: 0.8125rem; }
+  .textbook-page .book-grade-tile { min-height: 0; }
+}
+
+
+/* 奇偶规律图卡：先看标签，再看公式；色彩辅助理解但不替代“奇/偶”文字。 */
+.textbook-page .book-parity-board {
+  margin: 14px 0;
+  padding: clamp(13px, 2.2vw, 19px);
+  border: 2px solid #e4e7c9;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fffaf0 0%, #f7f9ee 48%, #f0f7ff 100%);
+  box-shadow: 0 8px 20px rgba(57, 75, 56, 0.07);
+}
+.textbook-page .book-parity-board-head { margin-bottom: 13px; }
+.textbook-page .book-parity-board-head > span,
+.textbook-page .book-parity-worked-head > span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: #e9efd8;
+  color: #51643e;
+  font-size: 0.8125rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+.textbook-page .book-parity-board-head h4 {
+  margin: 7px 0 3px;
+  color: #344832;
+  font-size: clamp(1.15rem, 2.1vw, 1.4rem);
+  line-height: 1.45;
+}
+.textbook-page .book-parity-board-head p {
+  margin: 0;
+  color: #5e6a5e;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.textbook-page .book-parity-definition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.textbook-page .book-parity-definition {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #e3e7db;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+}
+.textbook-page .book-parity-definition > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.textbook-page .book-parity-definition-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 3px 9px;
+  border-radius: 9px;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.textbook-page .book-parity-definition strong {
+  font-size: clamp(1.45rem, 3.2vw, 1.85rem);
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+}
+.textbook-page .book-parity-definition p {
+  margin: 7px 0 0;
+  color: #556358;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+.textbook-page .book-parity-definition.is-even .book-parity-definition-label,
+.textbook-page .book-parity-definition.is-even strong { color: #17688c; }
+.textbook-page .book-parity-definition.is-even .book-parity-definition-label { background: #e4f4fb; }
+.textbook-page .book-parity-definition.is-odd .book-parity-definition-label,
+.textbook-page .book-parity-definition.is-odd strong { color: #aa4c39; }
+.textbook-page .book-parity-definition.is-odd .book-parity-definition-label { background: #fff0e9; }
+.textbook-page .book-parity-law-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.textbook-page .book-parity-law-grid > section {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #e7eadf;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+}
+.textbook-page .book-parity-law-grid h5 {
+  margin: 0 0 8px;
+  color: #3e5141;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.textbook-page .book-parity-rule-list { display: grid; gap: 7px; }
+.textbook-page .book-parity-equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 0;
+  min-height: 49px;
+  padding: 6px 9px;
+  border: 1px solid #edf0e8;
+  border-radius: 12px;
+  background: #fff;
+}
+.textbook-page .book-parity-chip {
+  display: inline-grid;
+  min-width: 2.05em;
+  min-height: 1.55em;
+  place-items: center;
+  padding: 0 6px;
+  border-radius: 9px;
+  font-size: clamp(1.25rem, 3.4vw, 1.55rem);
+  font-weight: 900;
+  line-height: 1.3;
+}
+.textbook-page .book-parity-chip.is-odd,
+.textbook-page .book-parity-number.is-odd { background: #fff0e9; color: #a33e32; }
+.textbook-page .book-parity-chip.is-even,
+.textbook-page .book-parity-number.is-even { background: #e6f5fc; color: #14658a; }
+.textbook-page .book-parity-operator,
+.textbook-page .book-parity-equals {
+  flex: 0 0 auto;
+  color: #4b594d;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.textbook-page .book-parity-general-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 49px;
+  padding: 6px 9px;
+  border: 1px solid #edf0e8;
+  border-radius: 12px;
+  background: #fff;
+}
+.textbook-page .book-parity-general-rule b {
+  color: #46584a;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-align: center;
+}
+.textbook-page .book-parity-general-rule > span[aria-hidden="true"] {
+  color: #687654;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.textbook-page .book-parity-worked {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #e3e8d7;
+  border-radius: 14px;
+  background: linear-gradient(110deg, #fff 0%, #f8fbf2 100%);
+}
+.textbook-page .book-parity-worked-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+.textbook-page .book-parity-worked-head strong {
+  color: #334733;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.textbook-page .book-parity-worked-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.textbook-page .book-parity-worked-step {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #e8ece1;
+  border-radius: 12px;
+  background: #fff;
+}
+.textbook-page .book-parity-worked-step > b {
+  display: block;
+  margin: 0 0 5px;
+  color: #52634c;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.textbook-page .book-parity-number {
+  display: inline-flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2em;
+  min-height: 39px;
+  padding: 2px 5px;
+  border-radius: 9px;
+  line-height: 1.15;
+}
+.textbook-page .book-parity-number b { font-size: 1rem; }
+.textbook-page .book-parity-number small { font-size: 0.7rem; font-weight: 900; }
+.textbook-page .book-parity-worked-step .book-parity-equation { gap: 5px; min-height: 48px; padding: 4px; }
+.textbook-page .book-parity-worked-step .book-parity-chip { min-width: 1.9em; padding-inline: 4px; }
+.textbook-page .book-parity-worked > p {
+  margin: 9px 0 0;
+  color: #52634c;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.textbook-page .book-parity-takeaway {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-left: 4px solid #7e9a58;
+  border-radius: 0 11px 11px 0;
+  background: #edf4e4;
+  color: #40583e;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.7;
+}
+@media (max-width: 650px) {
+  .textbook-page .book-parity-board { padding: 12px; }
+  .textbook-page .book-parity-board-head h4 { font-size: 1.2rem; }
+  .textbook-page .book-parity-definition-grid { grid-template-columns: 1fr; }
+  .textbook-page .book-parity-law-grid { grid-template-columns: 1fr; gap: 9px; }
+  .textbook-page .book-parity-worked-steps { grid-template-columns: 1fr; gap: 7px; }
+  .textbook-page .book-parity-equation { gap: 6px; }
+  .textbook-page .book-parity-worked-step .book-parity-equation { justify-content: flex-start; padding-inline: 8px; }
+  .textbook-page .book-parity-definition p { font-size: 0.9rem; }
+}
+@media (max-width: 360px) {
+  .textbook-page .book-parity-definition-grid { grid-template-columns: 1fr; }
+  .textbook-page .book-parity-definition { display: block; }
+  .textbook-page .book-parity-definition > div { align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; gap: 10px; }
+  .textbook-page .book-parity-definition strong { flex: 0 0 auto; white-space: nowrap; }
+  .textbook-page .book-parity-definition p { margin: 7px 0 0; }
+  .textbook-page .book-parity-worked-step .book-parity-equation { gap: 7px; }
+}
+
+
+/* Narrow textbook header: keep the brand/action together and give navigation its own non-wrapping row. */
+@media (max-width: 650px) {
+  .textbook-page .course-topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "brand action" "nav nav";
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 5px;
+    width: 100%;
+    height: auto;
+    min-height: 76px;
+    padding: 7px 14px 6px;
+  }
+  .textbook-page .course-topbar > .brand {
+    grid-area: brand;
+    min-width: 0;
+    white-space: nowrap;
+  }
+  .textbook-page .course-topbar > .nav-cta {
+    grid-area: action;
+    justify-self: end;
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    white-space: nowrap;
+    font-size: 0.72rem;
+  }
+  .textbook-page .course-topbar > .topnav {
+    grid-area: nav;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+  .textbook-page .course-topbar > .topnav a {
+    display: flex;
+    min-height: 30px;
+    flex: 0 0 auto;
+    align-items: center;
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
+  .textbook-page .course-topbar > .topnav::-webkit-scrollbar { height: 3px; }
+}
+
+@media (max-width: 650px) {
+  .textbook-page .course-topbar > .topnav a:last-child { display: none; }
+}
+
+/* Equations are display items, not sentence fragments. Apply consistently across route lessons and models. */
+.textbook-page .book-rich-math{display:block;width:fit-content;max-width:100%;margin:.45em 0;padding:.35em .7em;border-left:4px solid #7f9859;border-radius:0 10px 10px 0;background:#edf4e5;color:#344b38;font-size:clamp(1.05rem,2.3vw,1.28rem);font-weight:900;line-height:1.75;overflow-wrap:anywhere;white-space:normal;font-variant-numeric:lining-nums tabular-nums}
+.textbook-page .book-rich-prose{color:inherit}
+.textbook-page .book-model-result .book-rich-math{font-size:clamp(1rem,2vw,1.15rem)}
+.textbook-page .book-example .book-rich-math{margin:.25em 0;font-size:clamp(1.1rem,2.5vw,1.35rem)}
+@media(max-width:650px){.textbook-page .book-rich-math{font-size:1.05rem;line-height:1.8;padding:.32em .55em}.textbook-page .book-example .book-rich-math{font-size:1.08rem}.textbook-page .book-model-result .book-rich-math{font-size:1rem}}
+
+@media (max-width: 380px) {
+  .textbook-page .book-model-controls {
+    flex-wrap: wrap;
+    min-width: 0;
+    row-gap: 7px;
+  }
+  .textbook-page .book-model-controls > label {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    flex: 1 1 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .textbook-page .book-model-controls select,
+  .textbook-page .book-model-controls input[type="range"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}

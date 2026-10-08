@@ -247,7 +247,9 @@
   });
   document.getElementById('bc-lesson-stack').addEventListener('keydown',(event)=>{if(event.key==='Enter'&&event.target.matches('.bc-answer-row input'))event.target.nextElementSibling?.click();});
   document.querySelectorAll('.bc-map-card').forEach((link)=>link.addEventListener('click',()=>{const target=document.querySelector(link.getAttribute('href'));if(target)target.open=true;}));
-  window.addEventListener('hashchange',()=>{const target=document.querySelector(location.hash);if(target?.matches('.bc-lesson'))target.open=true;});
+  function jumpToHashLesson(){const target=document.getElementById(location.hash.slice(1));if(target?.matches('.bc-lesson')){target.open=true;requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));}}
+  window.addEventListener('hashchange',jumpToHashLesson);
   document.getElementById('bc-print').addEventListener('click',()=>window.print());
   renderMap();renderLessons();renderFormulas();renderReview();renderLab();updateProgress();
+  if(location.hash)requestAnimationFrame(jumpToHashLesson);
 })();

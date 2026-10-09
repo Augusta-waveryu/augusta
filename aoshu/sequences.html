@@ -59,11 +59,11 @@
     <section class="detective-method" id="detective-method" aria-labelledby="detective-title">
       <div><span class="course-kicker">遇到新数列时的检查顺序</span><h2 id="detective-title">小小规律侦探：先观察，再下结论</h2><p>别一上来就猜一个答案。把线索写下来，猜测才有根据。</p></div>
       <ol class="detective-steps">
-        <li><b>先标位置</b><span>第 1 项、第 2 项……题目问“第几项”？有没有从 0 开始编号？</span></li>
-        <li><b>先看相邻差</b><span>后一项减前一项；如果一样，就是等差线索。</span></li>
-        <li><b>再看乘几</b><span>相邻项相除；如果一样，可能是等比线索（前项不能是 0）。</span></li>
-        <li><b>继续找结构</b><span>差有没有规律？奇数位和偶数位要不要分开？前两项会不会相加？</span></li>
-        <li><b>验证再预测</b><span>规则要能解释已知的每一步，最好检查三处；有限几项也可能有不止一种规则。</span></li>
+        <li><b>先标位置</b><span>确认第 1 项在哪；题目若从第 0 项编号，先换算位置再套以 a₁ 为起点的公式。</span></li>
+        <li><b>先看相邻差</b><span>后一项减前一项；所有相邻差都相同，才用等差数列的公差与公式。</span></li>
+        <li><b>再看乘几</b><span>前项不为 0 时比较相邻项的商；商都相同，才是固定公比的线索。</span></li>
+        <li><b>继续找结构</b><span>差在变化就列差表；也可拆奇偶位、看前几项递推，或确认是否从开头固定循环。</span></li>
+        <li><b>验证再预测</b><span>规则先要解释全部已知项；项数足够时，再检查开头、中间和末尾等至少三处。有限几项也可能有不止一种规则。</span></li>
       </ol>
       <p class="gentle-warning"><b>重要：</b>数列只给几项时，数学上不一定只有一种可能规律。做题要找最简单、最符合全部已知项的规则，并用题目情境核对。</p>
     </section>
@@ -115,7 +115,7 @@
 
       <article class="topic-card" id="seq-mixed"><details><summary><span>07</span><b>交错数列：把奇数位、偶数位分开看</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">有的数列像两队人轮流排队：奇数位一队，偶数位一队。整串看起来乱，拆成两串就清楚了。</p><div class="split-sequence"><div><b>原数列</b><span>2、5、4、7、6、9、？</span></div><div><b>奇数位</b><span>2、4、6、<strong>8</strong></span></div><div><b>偶数位</b><span>5、7、9……</span></div></div><div class="worked-box"><b>老师示范：下一项是谁的队伍？</b><p>已知 6 项，要找第 7 项。第 7 项是奇数位，接在 2、4、6 后面，每次 +2，所以是 <strong>8</strong>。不要把两队混在一起看。</p></div><p class="lesson-takeaway"><b>线索词：</b>交替、轮流、奇数项、偶数项、每隔一项，看到这些词就试试分组。</p></div></details></article>
 
-      <article class="topic-card" id="seq-cycle"><details><summary><span>08</span><b>周期数列：循环到第几次</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">红、黄、蓝、红、黄、蓝……每隔 3 项就重来一次。重复的一段叫<strong>周期</strong>，这里周期长度是 3。星期、彩灯、动作轮换都能用同一个办法。</p><div class="cycle-wheel" aria-label="红黄蓝三种颜色循环"><span class="red-dot">红</span><span class="yellow-dot">黄</span><span class="blue-dot">蓝</span><i>再回到红……</i></div><div class="formula-chip"><b>找第 n 项的位置</b><code>用 n ÷ 周期长度，看余数</code><small>余数 1 对应周期第 1 项；余数 0 对应周期最后一项。</small></div><div class="worked-box"><b>例：红黄蓝循环，第 14 项是什么颜色？</b><p>14÷3=4……2，余数是 2，就看每轮的第 2 个颜色。答案是<strong>黄色</strong>。若刚好整除，余数 0，就看每轮最后一个。</p></div><p class="lesson-takeaway"><b>小心编号：</b>先确认题目把第一天/第一项算作第 1 项，再除周期；不要只算“过去了几天”。</p></div></details></article>
+      <article class="topic-card" id="seq-cycle"><details><summary><span>08</span><b>周期数列：循环到第几次</b><i>展开这一课</i></summary><div class="topic-body"><p class="kid-explain">红、黄、蓝、红、黄、蓝……每隔 3 项就重来一次。重复的一段叫<strong>周期</strong>，这里周期长度是 3。星期、彩灯、动作轮换都能用同一个办法。</p><div class="cycle-wheel" aria-label="红黄蓝三种颜色循环"><span class="red-dot">红</span><span class="yellow-dot">黄</span><span class="blue-dot">蓝</span><i>再回到红……</i></div><div class="formula-chip"><b>找第 n 项的位置</b><code>用 n ÷ 周期长度，看余数</code><small>余数 1 对应周期第 1 项；余数 0 对应周期最后一项。</small></div><div class="worked-box"><b>例：红黄蓝循环，第 14 项是什么颜色？</b><p>14÷3=4……2，余数是 2，就看每轮的第 2 个颜色。答案是<strong>黄色</strong>。若刚好整除，余数 0，就看每轮最后一个。</p></div><p class="lesson-takeaway"><b>小心编号：</b>先确认题目把第一项算作第 1 项；这里假设循环从第 1 项开始，若前面有不循环的一段，先扣掉那段再按周期取余。</p></div></details></article>
     </section>
 
     <section class="formula-reference" id="formula-card" aria-labelledby="formula-title">
@@ -130,7 +130,7 @@
         <article><span>周期数列</span><code>位置由 n ÷ 周期长度的余数决定</code><small>余数 0 要看周期的最后一个位置。</small></article>
         <article><span>规律侦探顺序</span><code>差 → 倍数 → 差的差 → 分组 → 递推 / 周期</code><small>每次只选能解释所有已知项的规则，并回头检验。</small></article>
       </div>
-      <p class="formula-footnote">符号：a₁ 是第 1 项，aₙ 是第 n 项，d 是公差，r 是公比，Sₙ 是前 n 项的和。</p>
+      <p class="formula-footnote">符号与编号：n 是正整数，公式默认从第 1 项编号；a₁ 是首项，aₙ 是第 n 项，d 是公差，r 是公比，Sₙ 是前 n 项的和。题目若从第 0 项编号，先换算位置再使用公式。</p>
     </section>
 
     <section class="review-section" id="review" aria-labelledby="review-title">

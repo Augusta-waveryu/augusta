@@ -185,9 +185,9 @@
 
   const formulas = {
     'order-operations':['括号 → 乘除 → 加减；同级从左向右','先定顺序，再把可凑整的加数或乘数放在一起。'],
-    fractions:['a/b + c/d = (ad+bc)/bd；a/b × c/d = ac/bd；a/b ÷ c/d = a/b × d/c','加减先通分；乘除可先约分；分母不能为 0。'],
-    ratio:['a:b = a/b；a:b=c:d ⇒ ad=bc','按 a:b 分总量 T：第一份=T×a/(a+b)。'],
-    percent:['部分量=基数×百分率；基数=部分量÷百分率','打九折=原价×90%；百分数改变时先找当前基数。'],
+    fractions:['同分母：a/b ± c/b = (a ± c)/b；异分母：a/b ± c/d = (ad ± bc)/bd；乘：(a/b)×(c/d)=ac/bd；除：(a/b)÷(c/d)=(a/b)×(d/c)','分母不能为 0；除数也不能为 0。加减先统一单位份，乘法表示“求几分之几”，最后再约分。'],
+    ratio:['a:b=c:d ⇔ ad=bc（b、d≠0）；按 a:b 分总量 T：第一份=T×a/(a+b)','先对齐比的顺序并统一单位。不可拆物品按比分配后，还要检查数量是否为整数。'],
+    percent:['x%=x/100；部分量=基数×百分率；基数=部分量÷百分率；涨 p%：×(1+p/100)；降 p%：×(1−p/100)','每个百分数都要对应一个基数；连续涨跌逐步更新基数。打八折表示保留原量的 80%。'],
     average:['平均数=总量÷份数；总量=平均数×份数','新增或拿走数据后，总量和份数都要更新。'],
     'speed-work':['路程=速度×时间；工作量=效率×时间','相遇速度相加；追及速度相减；合作效率相加。'],
     'sum-difference':['大数=(和+差)÷2；小数=(和−差)÷2','先把大数多出来的“差”拿走，两份就相等。'],
@@ -231,6 +231,9 @@
     'systematic-counting':'分类标准不能重叠，否则会重复；也不能漏掉一类。','add-multiply-principle':'“任选其一”多用加法，“每一步都要完成”多用乘法。','permutations-selections':'职位有别时交换顺序算不同；组成小组通常不区分顺序。','path-counting':'只按题目允许的方向走，不能把无效路线加进去。',pigeonhole:'“至少保证”要按最不利分布算，不是平均分配。','inclusion-exclusion':'交集只能减一次；漏减就把同一对象算了两遍。',probability:'只有基本结果等可能时，才能直接用有利情况数除以总数。',
     equations:'不能只在等号一边加减；保持等式平衡。','inverse-operations':'逆推时先撤销最后一步，不是按原顺序倒着算。','assumption-method':'差额要除以“每换一个多多少”，分子分母单位要对应。','factorization-identities':'平方差要一减一加；完全平方的中间项有 2ab。','integer-equations':'把零、负数或重复的有序解误当成有效答案。','tables-logic':'已知条件不够时不要猜；保留多个可能直到新线索出现。','work-backward':'倒推的运算顺序与正向流程相反。',contradiction:'反例本身必须在原题允许范围里。','invariant-parity':'要证明“始终不可能”，必须说明每一步都保持同一性质。',construction:'找到一个例子只能证明“至少有一种”，不能证明全部情况。','extremes-optimization':'发现一个最大候选后，还要说明为什么其他选择不可能更大。'
   };
+  Object.entries(window.AOSHU_DEEP_LESSONS || {}).forEach(([lessonId, deep]) => {
+    if (deep?.pitfall) pitfalls[lessonId] = deep.pitfall;
+  });
 
   const progressKey = 'siwei-curriculum-mastery-v1';
   let progress = {};
@@ -315,6 +318,30 @@
     const rows = table.rows.map((row) => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${renderRichText(String(cell))}</th>` : `<td>${renderRichText(String(cell))}</td>`).join('')}</tr>`).join('');
     return `<div class="bc-topic-table-wrap"><table class="bc-topic-table"><caption>${renderRichText(String(table.caption || '推理记录表'))}</caption><thead><tr>${headers}</tr></thead><tbody>${rows}</tbody></table></div>`;
   }
+  function renderDeepVisual(visual) {
+    if (!visual?.type) return '';
+    let svg = '';
+    let viewBox = '0 0 420 160';
+    if (visual.type === 'fraction-equivalence') {
+      const bar = (y, denominator, shaded) => Array.from({length: denominator}, (_, i) => {
+        const width = 260 / denominator;
+        return `<rect x="${100 + i * width}" y="${y}" width="${width}" height="34" fill="${i < shaded ? '#8db595' : '#fffefa'}" stroke="#557a5b" stroke-width="2"/>`;
+      }).join('');
+      svg = `<text x="14" y="51" fill="#405d48" font-size="18" font-weight="700">1/2</text>${bar(24, 2, 1)}<text x="14" y="103" fill="#405d48" font-size="18" font-weight="700">2/4</text>${bar(76, 4, 2)}<text x="230" y="142" text-anchor="middle" fill="#617466" font-size="14">两条涂色部分一样多</text>`;
+    } else if (visual.type === 'ratio-bars') {
+      const row = (y, count, fill, totalLabel) => Array.from({length: count}, (_, i) => `<rect x="${100 + i * 39}" y="${y}" width="34" height="34" rx="4" fill="${fill}" stroke="#ffffff" stroke-width="2"/><text x="${117 + i * 39}" y="${y + 22}" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">1</text>`).join('') + `<text x="${112 + count * 39}" y="${y + 22}" fill="#506457" font-size="14">${totalLabel}</text>`;
+      svg = `<text x="14" y="59" fill="#405d48" font-size="16" font-weight="700">甲</text>${row(35, 3, '#7ea887', '3 份')}<text x="14" y="116" fill="#405d48" font-size="16" font-weight="700">乙</text>${row(92, 5, '#d49b75', '5 份')}<text x="320" y="151" fill="#718076" font-size="12">每格同样大</text>`;
+    } else if (visual.type === 'percent-grid') {
+      const cells = Array.from({length: 100}, (_, i) => {
+        const x = 16 + (i % 10) * 12;
+        const y = 18 + Math.floor(i / 10) * 12;
+        return `<rect x="${x}" y="${y}" width="10" height="10" rx="1.5" fill="${i < 25 ? '#76a981' : '#e5ebe2'}"/>`;
+      }).join('');
+      svg = `${cells}<text x="155" y="59" fill="#405d48" font-size="20" font-weight="700">25% = 25/100</text><text x="155" y="88" fill="#617466" font-size="14">100 份中的 25 份</text>`;
+      viewBox = '0 0 390 155';
+    } else return '';
+    return `<figure class="bc-topic-visual"><div class="bc-topic-visual-art"><svg viewBox="${viewBox}" role="img" aria-label="${esc(visual.alt || visual.title)}" focusable="false">${svg}</svg></div><figcaption><b>${renderRichText(visual.title)}</b><span>${renderRichText(visual.caption)}</span></figcaption></figure>`;
+  }
   function renderLessons() {
     document.getElementById('bc-lesson-stack').innerHTML = branch.lessons.map((lesson, i) => {
       const passed = new Set(progress[lesson.id]?.passed || []);
@@ -329,7 +356,7 @@
       const subtopics = (deep?.subtopics || []).map((item, j) => `<article class="bc-subtopic"><span>${String(j + 1).padStart(2, '0')}</span><div><b>${esc(item.name)}</b><p>${renderRichText(item.explanation)}</p></div></article>`).join('');
       const flow = (deep?.flow || []).map((item, j) => `<span class="bc-flow-node"><i>${j + 1}</i><b>${esc(item)}</b></span>`).join('');
       const worked = (deep?.steps || []).map((item, j) => `<li><i>${j + 1}</i><div><b>${esc(item.title)}</b><p>${renderRichText(item.explanation)}</p></div></li>`).join('');
-      const deepGuide = deep ? `<section class="bc-deep-guide" aria-label="${esc(lesson.title)}的详细讲解"><div class="bc-deep-head"><span>本课关键知识点</span><small>讲清楚 · 再记住</small></div><div class="bc-deep-idea"><b>先用一句话听懂</b><p>${renderRichText(deep.idea)}</p></div>${deep.chooseWhen ? `<div class="bc-method-choice"><b>先选方法：什么时候用这一招？</b><p>${renderRichText(deep.chooseWhen)}</p></div>` : ''}<div class="bc-subtopics"><h4>把知识点拆开看</h4><div class="bc-subtopic-grid">${subtopics}</div></div><div class="bc-flow-wrap"><h4>思考路线图</h4><div class="bc-deep-flow" role="img" aria-label="${esc(deep.flow.join('，然后'))}">${flow}</div></div>${renderTopicTable(deep.table)}</section>` : '';
+      const deepGuide = deep ? `<section class="bc-deep-guide" aria-label="${esc(lesson.title)}的详细讲解"><div class="bc-deep-head"><span>本课关键知识点</span><small>讲清楚 · 再记住</small></div><div class="bc-deep-idea"><b>先用一句话听懂</b><p>${renderRichText(deep.idea)}</p></div>${deep.chooseWhen ? `<div class="bc-method-choice"><b>先选方法：什么时候用这一招？</b><p>${renderRichText(deep.chooseWhen)}</p></div>` : ''}<div class="bc-subtopics"><h4>把知识点拆开看</h4><div class="bc-subtopic-grid">${subtopics}</div></div><div class="bc-flow-wrap"><h4>思考路线图</h4><div class="bc-deep-flow" role="img" aria-label="${esc(deep.flow.join('，然后'))}">${flow}</div></div>${renderTopicTable(deep.table)}${renderDeepVisual(deep.visual)}</section>` : '';
       const exampleSteps = worked ? `<ol class="bc-worked-steps">${worked}</ol>` : `<div class="bc-example-solution"><b>推理：</b>${renderRichText(lesson.example.solution)}</div>`;
       const why = deep ? `<div class="bc-why-check"><p><b>为什么这样做有效？</b>${renderRichText(deep.why)}</p><p><b>学完停一下：</b>${renderRichText(deep.check)}</p></div>` : '';
       return `<details class="bc-lesson" id="${lessonId(lesson)}" data-lesson="${escapeId(lesson.id)}"${i === 0 ? ' open' : ''}><summary><span class="bc-lesson-number">${String(i + 1).padStart(2, '0')}</span><span class="bc-lesson-title"><small>${esc(lesson.level)} · 知识点 ${i + 1} / ${branch.lessons.length}</small><b>${esc(lesson.title)}</b>${keyPreview ? `<small class="bc-lesson-key-preview">重点：${esc(keyPreview)}</small>` : ''}</span><span class="bc-lesson-status">${progress[lesson.id]?.done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="bc-lesson-chevron" aria-hidden="true">＋</span></summary><div class="bc-lesson-body"><div class="bc-lesson-meta"><span class="bc-pill">关键词：${esc(glossary[0].split('·')[0].trim())}</span>${source}<span class="bc-pill">本课 3 道自测</span></div><div class="bc-concept-box"><span class="bc-section-label">先听懂 · 不只记答案</span><div class="bc-concept-text">${renderRichText(lesson.concept)}</div><div class="bc-language-row"><b>${esc(glossary[0].split('·')[0].trim())}</b><span>${esc(glossary[1])}</span></div></div>${formulaBox}${deepGuide}<div class="bc-path-box"><b>本分支通用的解题检查步骤</b><ol>${path.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></div><div class="bc-example-box"><span class="bc-section-label">老师示范 · 跟着线索一步步做</span><h4>${esc(lesson.example.q)}</h4>${exampleSteps}</div>${why}<div class="bc-trap"><strong>易错提醒</strong><span>${esc(pitfalls[lesson.id] || '每做完一步，都回到题目条件检查一次。')}</span></div><div class="bc-practice"><div class="bc-practice-top"><div><span class="bc-section-label">轮到你了 · 先想再检查</span><h4>三道自测：练方法，也讲理由</h4></div><span class="bc-practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${practice}</div><div class="bc-lesson-tools"><a href="#bc-lab" data-open-lab="${escapeId(lesson.id)}">去互动实验台试一试 →</a><a href="#bc-formulas">查本课速查卡 ↑</a></div></div></details>`;

@@ -451,3 +451,5 @@
 
 .book-prerequisite{margin:10px 0 8px;padding:8px 10px;border-left:3px solid #9ca879;border-radius:0 9px 9px 0;background:#f4f5eb;color:#526044;font-size:10px;line-height:1.75}.book-prerequisite b{color:#4d5f3f}
 @media(max-width:650px){.book-prerequisite{padding:8px 9px}}
+
+.book-level-badge{display:inline-flex;align-items:center;max-width:100%;padding:3px 6px;border-radius:99px;background:#edf1e7;color:#58664a;font-size:8px;font-weight:900;line-height:1.4;white-space:nowrap}.book-level-badge[data-level="进阶"]{background:#eef0df;color:#697348}.book-level-badge[data-level="拓展"]{background:#f4ebdf;color:#896b4a}

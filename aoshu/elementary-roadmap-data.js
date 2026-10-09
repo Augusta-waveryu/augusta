@@ -178,6 +178,30 @@
     logic: {4:['tables-logic'],5:['work-backward','contradiction','construction'],6:['invariant-parity','extremes-optimization']}
   };
 
+  const gradeFourGuidance = {
+    divisibility: {difficulty:'基础',prerequisite:'会读写个位、十位和百位；整除特征会在本课解释，不必先背口诀。'},
+    parity: {difficulty:'基础',prerequisite:'会整数加法和乘法；奇偶含义与 2k、2k+1 的写法会在本课说明。'},
+    primes: {difficulty:'基础',prerequisite:'会乘除并能找较小整数的因数对；1 和 2 的特殊情况会在本课检查。'},
+    'order-operations': {difficulty:'基础',prerequisite:'会整数四则运算；括号优先及同级从左向右会在本课回顾。'},
+    average: {difficulty:'基础',prerequisite:'会平均分以及乘除运算；平均数会从总量与份数关系讲起。'},
+    'sum-difference': {difficulty:'进阶',prerequisite:'会整数加减和平均分；线段图与和差公式会在本课示范。'},
+    planting: {difficulty:'进阶',prerequisite:'会按相同间距数位置；直线端点和首尾相接的情形会在本课区分。'},
+    angles: {difficulty:'拓展',prerequisite:'认识直角、平角和三角形；平行线与多边形角关系会从图示引入。'},
+    'perimeter-area': {difficulty:'基础',prerequisite:'认识长方形并会换算常见长度单位；三角形的高会在本课说明为垂直距离。'},
+    'grid-symmetry': {difficulty:'拓展',prerequisite:'会数方格并按横、纵方向定位；坐标与对称概念会在本课图示说明。'},
+    'systematic-counting': {difficulty:'进阶',prerequisite:'会列出少量可能情况；分类标准和不重不漏由本课示范。'},
+    'add-multiply-principle': {difficulty:'进阶',prerequisite:'会整数加法和乘法；“分情况相加”与“连续步骤相乘”会在本课区分。'},
+    probability: {difficulty:'拓展',prerequisite:'会读简单分数；先确认题目给出的结果等可能，再计算概率。'},
+    differences: {difficulty:'基础',prerequisite:'会整数加减并按顺序读数列；相邻差会在本课示范。'},
+    'geometric-sequences': {difficulty:'拓展',prerequisite:'会整数乘法；乘方会先解释为重复相乘，不要求预先掌握通项公式。'},
+    'figurate-numbers': {difficulty:'进阶',prerequisite:'会按层数点并做加法；三角数和平方数会用点阵图介绍。'},
+    'cyclic-patterns': {difficulty:'进阶',prerequisite:'会除法和余数；周期长度及余数对应的位置会从例题说明。'},
+    'sequence-detective': {difficulty:'进阶',prerequisite:'会整数四则运算；本课提醒有限几项可能有多种延伸规则。'},
+    equations: {difficulty:'进阶',prerequisite:'会用方框表示未知数并做基本四则；字母与等量关系会从例题引入。'},
+    'inverse-operations': {difficulty:'进阶',prerequisite:'会整数四则运算；每一步如何用相反运算还原会在例题中演示。'},
+    'tables-logic': {difficulty:'进阶',prerequisite:'会读简单条件并排除不可能安排；一一对应表由本课例题建立。'}
+  };
+
   const counters = {4:0,5:0,6:0};
   const advanced = [];
   (window.AOSHU_CURRICULUM || []).forEach((branch) => {
@@ -189,6 +213,7 @@
       const practice = lesson.practice?.[0] || {};
       const deepUnit = window.AOSHU_ELEMENTARY_DEEP_UNITS?.[`${grade}:${lesson.id}`] || null;
       const steps = (deep.steps || []).map((step) => [step.title,step.explanation].filter(Boolean).join('：'));
+      const guidance = grade === 4 ? gradeFourGuidance[lesson.id] : null;
       advanced.push({
         grade,
         n: ++counters[grade],
@@ -196,7 +221,11 @@
         title: deepUnit?.courseTitle || lesson.title,
         group: branch.title,
         status: deepUnit ? deepUnit.label : '路线概览 · 示例与自测',
-        source: `${grade}年级当前精选专题（${({4:21,5:18,6:17})[grade]}项）；外部教材/目录的版本、页码与逐讲对应未核实，不表示覆盖目录全课`,
+        suggestedDifficulty: guidance?.difficulty || '',
+        prerequisite: guidance?.prerequisite || '',
+        source: grade === 4
+          ? '四年级本站精选专题（21项）；序号为本站路线次序，非教材讲次，按主题编排而非难度递增；难度与先修提示为本站建议（非官方/原书分级）。教材版本、页码与逐讲对应未核实，不表示覆盖目录全课'
+          : `${grade}年级当前精选专题（${({4:21,5:18,6:17})[grade]}项）；外部教材/目录的版本、页码与逐讲对应未核实，不表示覆盖目录全课`,
         deepUnit,
         goal: deepUnit?.goal || lesson.concept,
         idea: deepUnit?.idea || deep.idea || lesson.example.solution,
@@ -217,7 +246,7 @@
     {grade:1,title:'一年级 · 看见数学',focus:'图形、数感、钟表、人民币、厘米测量与简单推理',source:'主题参照与教材版本/页码待核；本路线为奥数启蒙精选，例题与练习原创，不代表完整年级教材覆盖'},
     {grade:2,title:'二年级 · 关系与方法',focus:'钟面读时、经过时间、长度换算、购物找零与乘除',source:'主题参照与教材版本/页码待核；本路线为奥数衔接精选，例题与练习原创，不代表完整年级教材覆盖'},
     {grade:3,title:'三年级 · 规律与建模',focus:'数列、平均数、图形计数、应用题与数独',source:'《奥数教程三年级（第八版）》公开目录主题参照；28讲逐讲映射/页码待核，例题与练习原创'},
-    {grade:4,title:'四年级 · 建立模型',focus:'整数、数阵、行程、几何、数列与推理',source:'当前编入21个专题；原记录称公开目录可见11讲，目录版本/逐讲映射待核；其余为拓展/专题整合'},
+    {grade:4,title:'四年级 · 建立模型',focus:'整数、数阵、行程、几何、数列与推理',source:'本站当前编入21个专题；序号是按主题编排的站内路线顺序，不是教材讲次，也不代表难度递增。基础/进阶/拓展与先修提示均为站内建议，不代表官方或原书分级。原记录称公开目录可见11讲；目录版本和逐讲映射待核，其余为拓展/专题整合'},
     {grade:5,title:'五年级 · 组合与数量关系',focus:'分数、因数、面积、行程、计数与证明',source:'当前精选18讲；原记录列公开目录24讲，版本/覆盖映射待核；未核实部分不视为已覆盖'},
     {grade:6,title:'六年级 · 综合与挑战',focus:'数论、几何、计数、数列、整数方程与最值',source:'当前精选17讲；原记录列公开目录24讲，版本/覆盖映射待核；未核实部分不视为已覆盖'}
   ];

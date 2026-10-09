@@ -1,0 +1,47 @@
+.book-foundation-lab{border:1px solid #e0e7d4;background:linear-gradient(145deg,#f5f7eb,#fffefa)}
+.book-foundation-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:12px 0;color:#475742}
+.book-foundation-controls label{display:flex;align-items:center;gap:8px;min-height:44px;font-size:.875rem;font-weight:800}
+.book-foundation-controls select{min-height:44px;max-width:100%;padding:7px 10px;border:1px solid #d5dfc9;border-radius:9px;background:#fff;color:#364635;font:inherit;font-weight:700}
+.book-foundation-controls select:focus-visible,.book-foundation-controls input:focus-visible{outline:3px solid #c7d7a9;outline-offset:2px}
+.foundation-clock{display:block;width:min(100%,250px);height:auto;margin:12px auto 5px;overflow:visible}
+.clock-face-circle{fill:#fffefa;stroke:#d6dfc8;stroke-width:2.5}
+.clock-ticks line,.ruler-ticks line{stroke:#82916b;stroke-width:1.5}
+.clock-ticks line.is-major,.ruler-ticks line.is-major{stroke:#536648;stroke-width:2.5}
+.clock-numbers{fill:#475742;font:700 13px/1 system-ui,sans-serif;text-anchor:middle}
+.clock-hand{stroke-linecap:round}
+.clock-hour-hand{stroke:#586849;stroke-width:6}
+.clock-minute-hand{stroke:#a17746;stroke-width:4}
+.clock-hub{fill:#56674b;stroke:#fffefa;stroke-width:1.5}
+.foundation-range-label{width:min(100%,440px);justify-content:space-between!important;flex-wrap:wrap}
+.foundation-range-label input[type=range]{flex:1 1 210px;min-width:150px;accent-color:#74854f}
+.foundation-range-label output{min-width:5.5em;color:#4e6540;font-weight:900;text-align:right}
+.foundation-ruler,.foundation-length-bar,.foundation-timeline{display:block;width:min(100%,520px);height:auto;margin:8px auto 0;overflow:visible}
+.ruler-highlight{fill:#dfe9c9}
+.ruler-edge,.timeline-base{stroke:#74845f;stroke-width:2}
+.ruler-ticks text,.foundation-length-bar .ruler-ticks text,.foundation-timeline .ruler-ticks text{fill:#5b694f;font:700 10px system-ui,sans-serif;text-anchor:middle}
+.ruler-unit{fill:#67755c;font:700 10px system-ui,sans-serif;text-anchor:end}
+.length-bar-outline{fill:#fff;stroke:#8a9874;stroke-width:1.5}
+.length-bar-fill{fill:#c9d99e;opacity:.95}
+.timeline-base{stroke:#d4dcc7;stroke-width:8;stroke-linecap:round}
+.timeline-elapsed{stroke:#87975e;stroke-width:8;stroke-linecap:round}
+.timeline-caption{fill:#596b4c;font:700 10px system-ui,sans-serif;text-anchor:middle}
+.foundation-money-pieces{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-height:48px;margin:7px 0}
+.foundation-money-piece{display:inline-flex;align-items:center;justify-content:center;min-width:62px;min-height:38px;padding:5px 10px;border:1px solid #c9d5b3;border-radius:11px;background:#fffefa;color:#536543;font-size:.875rem;font-weight:900;box-shadow:0 2px 5px #46533b12}
+.foundation-money-piece:nth-child(even){border-radius:50%;min-width:44px;min-height:44px;background:#f8f2df;border-color:#e5d4a9;color:#806d43}
+.foundation-money-empty{color:#778273;font-size:.875rem}
+.foundation-change-equation{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:12px 0;padding:12px;border:1px solid #e6ebdd;border-radius:12px;background:#fffefa;color:#5d6956;font-size:.875rem;font-weight:800}
+.foundation-change-equation b{color:#9b8155;font-size:1.1rem}
+.foundation-change-equation strong{color:#4d6743}
+.book-foundation-lab .book-model-result{min-height:1.8em}
+@media(max-width:650px){
+  .book-foundation-controls{align-items:stretch;gap:8px;margin:10px 0}
+  .book-foundation-controls label{justify-content:space-between;flex:1 1 140px;min-height:48px;padding:0 2px;font-size:.95rem}
+  .book-foundation-controls select{min-height:46px;font-size:1rem}
+  .foundation-range-label input[type=range]{min-width:130px}
+  .foundation-clock{width:min(100%,230px)}
+  .foundation-change-equation{gap:6px;padding:10px 7px;font-size:.8125rem}
+  .foundation-money-piece{font-size:.95rem}
+}
+@media(prefers-reduced-motion:reduce){.book-foundation-lab *{scroll-behavior:auto!important;transition:none!important}}
+
+.book-empty[hidden]{display:none!important}

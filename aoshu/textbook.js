@@ -199,7 +199,7 @@
   function deepUnitMarkup(unit, key) {
     if (!unit) return '';
     const concepts = (unit.concepts || []).map((item) => `<article><b>${esc(item.title)}</b><p>${renderRichText(item.text)}</p></article>`).join('');
-    const model = unit.model ? `<section class="book-model-lab" data-book-model="${esc(unit.model.type)}" data-book-model-config="${esc(JSON.stringify(unit.model))}" aria-label="互动图示"><div class="book-model-heading"><b>动手试一试</b><span>${unit.model.type === 'fraction-bar' ? '拖动分子或改变分母，看“每一份”怎样变化' : '拖动数轴上的数，检查它是否同时满足两个余数条件'}</span></div>${unit.model.type === 'fraction-bar' ? `<div class="book-model-controls"><label>分母 <select data-fraction-denominator aria-label="分母">${Array.from({length:11},(_,i)=>i+2).map((d)=>`<option value="${d}"${d===unit.model.denominator?' selected':''}>${d}</option>`).join('')}</select></label><label>分子 <input type="range" min="1" max="${unit.model.denominator}" value="${unit.model.numerator}" data-fraction-numerator aria-label="分子"></label></div><div class="book-fraction-bar" data-fraction-pieces role="img"></div><p class="book-model-result" data-book-model-result aria-live="polite"></p>` : `<label class="book-number-control">试一个数 x <input type="range" min="${unit.model.min}" max="${unit.model.max}" value="${unit.model.start}" data-remainder-candidate aria-label="选择候选数 x"></label><p class="book-model-result" data-book-model-result aria-live="polite"></p><div class="book-remainder-strip" data-remainder-strip role="img" aria-label="0 到 59 的候选数，标记同时满足条件的数"></div><p class="book-model-caption">带圆点的数同时满足两个条件；它们每隔 15 重复一次。</p>`}</section>` : '';
+    const model = unit.model ? (window.AOSHU_FOUNDATION_WIDGETS?.supports(unit.model.type) ? window.AOSHU_FOUNDATION_WIDGETS.markup(unit.model) : `<section class="book-model-lab" data-book-model="${esc(unit.model.type)}" data-book-model-config="${esc(JSON.stringify(unit.model))}" aria-label="互动图示"><div class="book-model-heading"><b>动手试一试</b><span>${unit.model.type === 'fraction-bar' ? '拖动分子或改变分母，看“每一份”怎样变化' : '拖动数轴上的数，检查它是否同时满足两个余数条件'}</span></div>${unit.model.type === 'fraction-bar' ? `<div class="book-model-controls"><label>分母 <select data-fraction-denominator aria-label="分母">${Array.from({length:11},(_,i)=>i+2).map((d)=>`<option value="${d}"${d===unit.model.denominator?' selected':''}>${d}</option>`).join('')}</select></label><label>分子 <input type="range" min="1" max="${unit.model.denominator}" value="${unit.model.numerator}" data-fraction-numerator aria-label="分子"></label></div><div class="book-fraction-bar" data-fraction-pieces role="img"></div><p class="book-model-result" data-book-model-result aria-live="polite"></p>` : `<label class="book-number-control">试一个数 x <input type="range" min="${unit.model.min}" max="${unit.model.max}" value="${unit.model.start}" data-remainder-candidate aria-label="选择候选数 x"></label><p class="book-model-result" data-book-model-result aria-live="polite"></p><div class="book-remainder-strip" data-remainder-strip role="img" aria-label="0 到 59 的候选数，标记同时满足条件的数"></div><p class="book-model-caption">带圆点的数同时满足两个条件；它们每隔 15 重复一次。</p>`}</section>`) : '';
     const diagram = unit.diagram ? `<figure class="book-deep-diagram"><figcaption>${esc(unit.diagram.caption)}</figcaption><pre class="book-diagram">${esc(unit.diagram.text)}</pre></figure>` : '';
     const parityBoard = unit.parityBoard ? (() => {
       const visual = unit.parityBoard;
@@ -262,6 +262,7 @@
   }
 
   function updateInteractiveModel(root) {
+    if (window.AOSHU_FOUNDATION_WIDGETS?.update(root)) return;
     let config = {};
     try { config = JSON.parse(root.dataset.bookModelConfig || '{}'); } catch { config = {}; }
     const result = root.querySelector('[data-book-model-result]');
@@ -367,6 +368,21 @@
   }
 
   list.addEventListener('click', (event) => {
+    const link = event.target.closest('a.book-related[href^="#book-lesson-"]');
+    if (!link) return;
+    const key = link.getAttribute('href').match(/^#book-lesson-(g\d+-\d+)$/)?.[1];
+    if (!key || !lessons.some((lesson) => keyOf(lesson) === key)) return;
+    event.preventDefault();
+    search.value = '';
+    gradeFilter.value = 'all';
+    topicFilter.value = 'all';
+    onlyUnmastered.checked = false;
+    render();
+    history.replaceState(null, '', `#book-lesson-${key}`);
+    const target = document.getElementById(`book-lesson-${key}`);
+    if (target) { target.open = true; target.scrollIntoView({behavior:'smooth',block:'start'}); }
+  });
+  list.addEventListener('click', (event) => {
     const button = event.target.closest('[data-book-check]');
     if (button) checkAnswer(button);
   });
@@ -377,10 +393,11 @@
     }
   });
   list.addEventListener('input', (event) => {
+    if (event.target.matches('[data-foundation-model-control]')) updateInteractiveModel(event.target.closest('[data-book-model]'));
     if (event.target.matches('[data-fraction-numerator],[data-remainder-candidate]')) updateInteractiveModel(event.target.closest('[data-book-model]'));
   });
   list.addEventListener('change', (event) => {
-    if (event.target.matches('[data-fraction-denominator]')) updateInteractiveModel(event.target.closest('[data-book-model]'));
+    if (event.target.matches('[data-foundation-model-control],[data-fraction-denominator]')) updateInteractiveModel(event.target.closest('[data-book-model]'));
   });
   search.addEventListener('input', render);
   gradeFilter.addEventListener('change', render);

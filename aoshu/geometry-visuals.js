@@ -78,22 +78,28 @@
       drawing: `<path d="M40 140 100 90 160 140Z" fill="#f5e8cb" stroke="#c58a4c" stroke-width="3"/><path d="M205 140 235 90 355 90 325 140Z" fill="#e1efe0" stroke="#548366" stroke-width="3"/><path d="M100 90v50M235 90v50" stroke="#7c927d" stroke-width="1.8" stroke-dasharray="5 4"/><path d="M100 130h10v10M235 130h10v10" fill="none" stroke="#548366" stroke-width="2"/><text x="100" y="79" text-anchor="middle" class="g-label">三角形</text><text x="295" y="79" text-anchor="middle" class="g-label">平行四边形</text><text x="100" y="161" text-anchor="middle" class="g-label">底 12</text><text x="83" y="116" text-anchor="end" class="g-note">高 5</text><text x="295" y="161" text-anchor="middle" class="g-label">底 12</text><text x="218" y="116" text-anchor="end" class="g-note">高 5</text><text x="100" y="190" text-anchor="middle" class="g-formula">12 × 5 ÷ 2 = 30</text><text x="295" y="190" text-anchor="middle" class="g-formula">12 × 5 = 60</text>`
     },
     'grid-symmetry': {
-      caption: '对称点在轴两侧，离轴都是 1 格；交点是格点，格子才是单位面积。',
-      title: '方格与轴对称示意图',
-      desc: '四列三行的方格，中线为对称轴，两侧对应点距离相等。',
-      drawing: `<rect x="60" y="31" width="240" height="120" fill="#f7f8f1" stroke="#9aae98" stroke-width="1.5"/><path d="M120 31v120M180 31v120M240 31v120M60 71h240M60 111h240" stroke="#c8d6c5" stroke-width="1.5"/><path d="M180 23v137" stroke="#cf8c62" stroke-width="2.5" stroke-dasharray="5 4"/><circle cx="120" cy="91" r="7" fill="#628d69"/><circle cx="240" cy="91" r="7" fill="#628d69"/><path d="M128 91h42M232 91h-42" stroke="#d18d64" stroke-width="2" marker-end="url(#g-arrow)"/><text x="180" y="19" text-anchor="middle" class="g-label">对称轴</text><text x="120" y="133" text-anchor="middle" class="g-note">1 格</text><text x="240" y="133" text-anchor="middle" class="g-note">1 格</text><text x="180" y="179" text-anchor="middle" class="g-note">两点到对称轴的距离相等</text><defs><marker id="g-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7Z" fill="#d18d64"/></marker></defs>`
+      caption: '原点在左下；P=(1,1) 与 P′=(3,1) 关于竖直轴 x=2 对称，两点各离轴 1 格。',
+      title: '坐标格点与轴对称示意图',
+      desc: '四列三行坐标网格，点P和点P撇位于真实格点，竖直对称轴为x等于2，两点纵坐标同为1且横向距离相等。',
+      drawing: `<rect x="60" y="42" width="240" height="120" fill="#f7f8f1" stroke="#9aae98" stroke-width="1.5"/><path d="M120 42v120M180 42v120M240 42v120M60 82h240M60 122h240" stroke="#c8d6c5" stroke-width="1.5"/><path d="M180 32v138" stroke="#cf8c62" stroke-width="3" stroke-dasharray="6 4"/><path d="M60 162H311M60 162V30" stroke="#526f5a" stroke-width="1.7"/><circle cx="120" cy="122" r="6" fill="#628d69"/><circle cx="240" cy="122" r="6" fill="#6585a0"/><path d="M129 122h39M231 122h-39" stroke="#d18d64" stroke-width="2" marker-end="url(#g-arrow)"/><text x="180" y="27" text-anchor="middle" class="g-label">竖直对称轴 x=2</text><text x="120" y="145" text-anchor="middle" class="g-note">P(1,1)</text><text x="240" y="145" text-anchor="middle" class="g-note">P′(3,1)</text><text x="59" y="177" text-anchor="middle" class="g-note">0</text><text x="120" y="177" text-anchor="middle" class="g-note">1</text><text x="180" y="177" text-anchor="middle" class="g-note">2</text><text x="240" y="177" text-anchor="middle" class="g-note">3</text><text x="300" y="177" text-anchor="middle" class="g-note">4</text><text x="180" y="198" text-anchor="middle" class="g-note">x′=2×2−1=3；纵坐标仍为 1</text><defs><marker id="g-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7Z" fill="#d18d64"/></marker></defs>`
     },
     solids: {
-      caption: '棱长 3 cm 的正方体有 6 个相同的面：体积 27 cm³，表面积 54 cm²。',
-      title: '正方体表面积与体积示意图',
-      desc: '标记三条棱长均为3厘米的正方体，区分表面积平方厘米和体积立方厘米。',
-      drawing: `<path d="M93 70 178 35 258 73 173 110Z" fill="#f4e7c9" stroke="#9b805c" stroke-width="2.5"/><path d="M93 70 173 110V185L93 145Z" fill="#dcebdd" stroke="#64876a" stroke-width="2.5"/><path d="M173 110 258 73V148L173 185Z" fill="#b9d5bc" stroke="#64876a" stroke-width="2.5"/><path d="M93 70V145L173 185V110M173 110 258 73" fill="none" stroke="#64876a" stroke-width="2.5"/><text x="105" y="162" class="g-label">3 cm</text><text x="211" y="172" class="g-label">3 cm</text><text x="166" y="59" text-anchor="middle" class="g-label">3 cm</text><rect x="34" y="8" width="292" height="24" rx="12" fill="#f1f5eb"/><text x="180" y="25" text-anchor="middle" class="g-note">6 个面 × 3 × 3 = 54 cm²</text><text x="180" y="196" text-anchor="middle" class="g-note">3 × 3 × 3 = 27 cm³</text>`
+      caption: '长 5、宽 3、高 2 cm；每种长方形面都有一块相对面，体积与表面积分别用 cm³ 和 cm²。',
+      title: '长方体三对相对面示意图',
+      desc: '长5宽3高2厘米的长方体，三个可见面的面积分别为15、10、6平方厘米，各自还有一块相对面；体积为30立方厘米，表面积为62平方厘米。',
+      drawing: `<path d="M80 82 125 50 225 50 180 82Z" fill="#f4e7c9" stroke="#9b805c" stroke-width="2.5"/><path d="M80 82H180V142H80Z" fill="#dcebdd" stroke="#64876a" stroke-width="2.5"/><path d="M180 82 225 50V110L180 142Z" fill="#b9d5bc" stroke="#64876a" stroke-width="2.5"/><path d="M80 82 125 50M180 82H225M180 142 225 110M80 142H180V82" fill="none" stroke="#64876a" stroke-width="2.5"/><text x="130" y="111" text-anchor="middle" class="g-label">5×3=15</text><text x="151" y="71" text-anchor="middle" class="g-label">5×2=10</text><text x="202" y="109" text-anchor="middle" class="g-note">3×2=6</text><text x="130" y="157" text-anchor="middle" class="g-note">长 5 cm</text><text x="52" y="115" text-anchor="middle" class="g-note">高 3 cm</text><text x="231" y="58" class="g-note">宽 2 cm</text><rect x="32" y="8" width="296" height="24" rx="12" fill="#f1f5eb"/><text x="180" y="25" text-anchor="middle" class="g-note">三种可见面，各有一片相同的相对面</text><text x="180" y="190" text-anchor="middle" class="g-note">V=30 cm³；S=2×(15+10+6)=62 cm²</text>`
     },
     'geometric-counting': {
-      caption: '2 行、2 列的方格有 3 条横线和 3 条竖线；各选两条作边界，共 9 个矩形。',
-      title: '网格中数矩形示意图',
-      desc: '两行两列的方格中，用粗线高亮一个矩形；从三条横线和三条竖线中各选两条作为边界。',
-      drawing: `<rect x="78" y="36" width="204" height="112" fill="#f7f8f1" stroke="#a9b8a3" stroke-width="2"/><path d="M146 36v112M214 36v112M78 92h204" stroke="#a9b8a3" stroke-width="2"/><rect x="146" y="36" width="136" height="56" fill="#e4f0df" fill-opacity=".86" stroke="#548366" stroke-width="4"/><circle cx="78" cy="36" r="4" fill="#d18d64"/><circle cx="146" cy="36" r="4" fill="#d18d64"/><circle cx="214" cy="36" r="4" fill="#d18d64"/><circle cx="282" cy="36" r="4" fill="#d18d64"/><text x="180" y="174" text-anchor="middle" class="g-formula">C(3, 2) × C(3, 2) = 9</text><text x="180" y="193" text-anchor="middle" class="g-note">选两条横线，再选两条竖线，唯一确定一个矩形</text>`
+      caption: '与例题相同为 2 行、3 列：3 条横线、4 条竖线，各选两条，共 C(3,2)×C(4,2)=18 个长方形。',
+      title: '网格边界选线计数示意图',
+      desc: '两行三列的方格有三条横线和四条竖线，选两条横线和两条竖线即可唯一确定一个矩形；总数十八。',
+      drawing: `<rect x="70" y="40" width="240" height="105" fill="#f7f8f1" stroke="#a9b8a3" stroke-width="2"/><path d="M130 40v105M190 40v105M250 40v105M70 92.5h240" stroke="#a9b8a3" stroke-width="2"/><rect x="130" y="40" width="120" height="52.5" fill="#e4f0df" fill-opacity=".86" stroke="#548366" stroke-width="4"/><text x="180" y="171" text-anchor="middle" class="g-formula">C(3,2) × C(4,2) = 18</text><text x="180" y="193" text-anchor="middle" class="g-note">先选两条横线，再选两条竖线</text>`,
+      secondary: {
+        caption: '三组长方形的边长和都为 10 cm，周长都是 20 cm；正整数边长下，5×5 面积最大。',
+        title: '固定周长下的面积比较',
+        desc: '按相同比例绘制的1乘9、4乘6、5乘5三个长方形，周长均为20厘米，面积分别为9、24、25平方厘米。',
+        drawing: `<text x="180" y="23" text-anchor="middle" class="g-note">长+宽=10 cm（周长固定 20 cm）</text><text x="92" y="98" text-anchor="middle" class="g-label">1×9=9</text><rect x="20" y="104" width="144" height="16" fill="#f2e5c8" stroke="#bb8b57" stroke-width="2"/><text x="222" y="70" text-anchor="middle" class="g-label">4×6=24</text><rect x="174" y="76" width="96" height="64" fill="#e3eee0" stroke="#6c9474" stroke-width="2"/><text x="316" y="62" text-anchor="middle" class="g-label">5×5=25 最大</text><rect x="276" y="68" width="80" height="80" fill="#d2e5d0" stroke="#548366" stroke-width="2"/><text x="180" y="184" text-anchor="middle" class="g-note">三个矩形按相同比例绘制；面积单位：cm²</text>`
+      }
     }
   };
 
@@ -103,7 +109,53 @@
     const lesson = document.getElementById(`bc-topic-${id}`);
     const concept = lesson?.querySelector('.bc-concept-box');
     if (concept && !lesson.querySelector('.bc-geometry-figure')) concept.insertAdjacentHTML('afterend', makeFigure(item, id));
+    if (concept && item.secondary && !document.getElementById(`bc-figure-${id}-optimization`)) {
+      const primary = document.getElementById(`bc-figure-${id}`);
+      (primary || concept).insertAdjacentHTML('afterend', makeFigure(item.secondary, `${id}-optimization`));
+    }
   });
+
+  const symmetryLesson = document.getElementById('bc-topic-grid-symmetry');
+  const symmetryFigure = document.getElementById('bc-figure-grid-symmetry');
+  if (symmetryLesson && symmetryFigure && !document.getElementById('bc-symmetry-lab')) {
+    symmetryFigure.insertAdjacentHTML('afterend', `<section id="bc-symmetry-lab" class="bc-symmetry-lab" aria-labelledby="bc-symmetry-title"><div class="bc-symmetry-heading"><span class="bc-section-label">动手试一试 · 坐标镜像</span><h3 id="bc-symmetry-title">拖动坐标，看镜像点怎样移动</h3><p>对称轴固定为竖直线 x=2。滑动 P 的坐标，观察 P′ 如何保持等距。</p></div><div class="bc-symmetry-layout"><div class="bc-symmetry-controls"><div class="bc-symmetry-control-row"><label for="bc-symmetry-x">横坐标 x</label><input id="bc-symmetry-x" type="range" min="0" max="4" step="1" value="1"><output id="bc-symmetry-x-out" for="bc-symmetry-x">1</output></div><div class="bc-symmetry-control-row"><label for="bc-symmetry-y">纵坐标 y</label><input id="bc-symmetry-y" type="range" min="0" max="3" step="1" value="1"><output id="bc-symmetry-y-out" for="bc-symmetry-y">1</output></div><p id="bc-symmetry-result" class="bc-symmetry-result" aria-live="polite">P=(1,1) 关于 x=2 对称后，P′=(3,1)。</p></div><svg id="bc-symmetry-svg" viewBox="0 0 360 205" role="img" aria-label="坐标网格上 P 点与其关于竖直直线 x 等于 2 的镜像点 P 撇"><path d="M60 42V162M120 42V162M180 42V162M240 42V162M300 42V162M60 42H300M60 82H300M60 122H300M60 162H300" fill="none" stroke="#c8d6c5" stroke-width="1.5"/><path d="M180 32V170" stroke="#cf8c62" stroke-width="3" stroke-dasharray="6 4"/><path d="M60 162H311M60 162V30" fill="none" stroke="#526f5a" stroke-width="1.7"/><text x="180" y="26" text-anchor="middle" class="bc-symmetry-svg-note">x=2 对称轴</text><text x="60" y="179" text-anchor="middle" class="bc-symmetry-svg-note">0</text><text x="120" y="179" text-anchor="middle" class="bc-symmetry-svg-note">1</text><text x="180" y="179" text-anchor="middle" class="bc-symmetry-svg-note">2</text><text x="240" y="179" text-anchor="middle" class="bc-symmetry-svg-note">3</text><text x="300" y="179" text-anchor="middle" class="bc-symmetry-svg-note">4</text><line id="bc-symmetry-join" x1="120" y1="122" x2="240" y2="122" stroke="#d18d64" stroke-width="2" stroke-dasharray="4 4"/><circle id="bc-symmetry-point" cx="120" cy="122" r="6" fill="#628d69"/><circle id="bc-symmetry-image" cx="240" cy="122" r="6" fill="#6585a0"/><text id="bc-symmetry-point-label" x="120" y="109" text-anchor="middle" class="bc-symmetry-svg-label">P(1,1)</text><text id="bc-symmetry-image-label" x="240" y="109" text-anchor="middle" class="bc-symmetry-svg-label">P′(3,1)</text></svg></div></section>`);
+    const xInput = document.getElementById('bc-symmetry-x');
+    const yInput = document.getElementById('bc-symmetry-y');
+    const updateSymmetry = () => {
+      const x = Number(xInput.value);
+      const y = Number(yInput.value);
+      const mirroredX = 4 - x;
+      const pointX = 60 + x * 60;
+      const imageX = 60 + mirroredX * 60;
+      const pointY = 162 - y * 40;
+      const onAxis = x === 2;
+      document.getElementById('bc-symmetry-x-out').textContent = x;
+      document.getElementById('bc-symmetry-y-out').textContent = y;
+      const point = document.getElementById('bc-symmetry-point');
+      const image = document.getElementById('bc-symmetry-image');
+      const join = document.getElementById('bc-symmetry-join');
+      const pointLabel = document.getElementById('bc-symmetry-point-label');
+      const imageLabel = document.getElementById('bc-symmetry-image-label');
+      point.setAttribute('cx', pointX); point.setAttribute('cy', pointY);
+      image.setAttribute('cx', imageX); image.setAttribute('cy', pointY);
+      join.setAttribute('x1', pointX); join.setAttribute('y1', pointY);
+      join.setAttribute('x2', imageX); join.setAttribute('y2', pointY);
+      pointLabel.textContent = `P(${x},${y})`;
+      imageLabel.textContent = `P′(${mirroredX},${y})`;
+      pointLabel.setAttribute('x', onAxis ? pointX - 8 : pointX);
+      pointLabel.setAttribute('y', onAxis ? pointY - 12 : pointY - 12);
+      pointLabel.setAttribute('text-anchor', onAxis ? 'end' : 'middle');
+      imageLabel.setAttribute('x', onAxis ? imageX + 8 : imageX);
+      imageLabel.setAttribute('y', onAxis ? pointY + 22 : pointY - 12);
+      imageLabel.setAttribute('text-anchor', onAxis ? 'start' : 'middle');
+      document.getElementById('bc-symmetry-svg').setAttribute('aria-label', `点 P(${x},${y}) 关于竖直直线 x 等于 2 的镜像点为 P 撇(${mirroredX},${y})。`);
+      document.getElementById('bc-symmetry-result').textContent = onAxis
+        ? `P=(${x},${y}) 在对称轴 x=2 上，反射后与 P′ 重合；点到轴的距离为 0。`
+        : `P=(${x},${y}) 关于 x=2 对称后，P′=(2×2−${x},${y})=(${mirroredX},${y})；纵坐标不变，横坐标中点为 2。`;
+    };
+    xInput.addEventListener('input', updateSymmetry);
+    yInput.addEventListener('input', updateSymmetry);
+  }
 
   const title = document.getElementById('bc-lab-title');
   const lead = document.getElementById('bc-lab-lead');
@@ -114,7 +166,7 @@
   if (lead) lead.textContent = '转一转长方体，从不同方向看清长、宽、高；改变棱长，体积和表面积会即时重算。';
   if (kicker) kicker.textContent = '可拖动旋转 · 实时调整棱长';
 
-  card.innerHTML = `<div class="bc-solid-controls"><p><b>先观察，再计算：</b>长、宽、高是三个互相垂直的方向。拖动立体可以旋转；按住并拖动鼠标，或用手指滑动。</p><label class="bc-control-row" for="bc-solid-length">长 <input id="bc-solid-length" type="range" min="2" max="10" value="6"><output id="bc-solid-length-out">6</output></label><label class="bc-control-row" for="bc-solid-width">宽 <input id="bc-solid-width" type="range" min="2" max="8" value="4"><output id="bc-solid-width-out">4</output></label><label class="bc-control-row" for="bc-solid-height">高 <input id="bc-solid-height" type="range" min="2" max="7" value="3"><output id="bc-solid-height-out">3</output></label><div class="bc-solid-actions"><button class="bc-lab-button" type="button" id="bc-solid-cube">试试正方体</button><button class="bc-lab-button" type="button" id="bc-solid-reset">回到正面</button><button class="bc-lab-button" type="button" id="bc-solid-motion" aria-pressed="false">开始转动</button></div><p class="bc-lab-foot">键盘也能操作：先选中立体，再按方向键旋转；减少动态效果设置开启时，自动转动默认关闭。</p></div><div class="bc-lab-visual bc-solid-visual"><h3>长方体的三个方向</h3><canvas id="bc-solid-canvas" tabindex="0" role="img" aria-label="可交互的长方体三维示意图。用鼠标、手指拖动或方向键旋转。当前长6、宽4、高3。">你的浏览器暂不支持 Canvas 图形。</canvas><div class="bc-solid-legend"><span><i class="bc-legend-length"></i>长 <b id="bc-solid-legend-length">6</b></span><span><i class="bc-legend-width"></i>宽 <b id="bc-solid-legend-width">4</b></span><span><i class="bc-legend-height"></i>高 <b id="bc-solid-legend-height">3</b></span></div><div class="bc-live-result" id="bc-solid-result" aria-live="polite"></div></div>`;
+  card.innerHTML = `<div class="bc-solid-controls"><p><b>先观察，再计算：</b>长、宽、高是三个互相垂直的方向。拖动立体可以旋转；按住并拖动鼠标，或用手指滑动。</p><label class="bc-control-row" for="bc-solid-length">长 <input id="bc-solid-length" type="range" min="2" max="10" value="6"><output id="bc-solid-length-out">6</output></label><label class="bc-control-row" for="bc-solid-width">宽 <input id="bc-solid-width" type="range" min="2" max="8" value="4"><output id="bc-solid-width-out">4</output></label><label class="bc-control-row" for="bc-solid-height">高 <input id="bc-solid-height" type="range" min="2" max="7" value="3"><output id="bc-solid-height-out">3</output></label><div class="bc-solid-actions"><button class="bc-lab-button" type="button" id="bc-solid-cube">试试正方体</button><button class="bc-lab-button" type="button" id="bc-solid-reset">回到正面</button><button class="bc-lab-button" type="button" id="bc-solid-motion" aria-pressed="false">开始转动</button></div><p class="bc-lab-foot">键盘也能操作：先选中立体，再按方向键旋转；默认静止；点击“开始转动”可自动旋转，鼠标、手指或方向键手动旋转都会暂停自动转动。</p></div><div class="bc-lab-visual bc-solid-visual"><h3>长方体的三个方向</h3><canvas id="bc-solid-canvas" tabindex="0" role="img" aria-label="可交互的长方体三维示意图。用鼠标、手指拖动或方向键旋转。当前长6、宽4、高3。">你的浏览器暂不支持 Canvas 图形。</canvas><div class="bc-solid-legend"><span><i class="bc-legend-length"></i>长 <b id="bc-solid-legend-length">6</b></span><span><i class="bc-legend-width"></i>宽 <b id="bc-solid-legend-width">4</b></span><span><i class="bc-legend-height"></i>高 <b id="bc-solid-legend-height">3</b></span></div><div class="bc-live-result" id="bc-solid-result" aria-live="polite"></div></div>`;
 
   const canvas = document.getElementById('bc-solid-canvas');
   const ctx = canvas.getContext('2d');
@@ -122,14 +174,13 @@
   const length = document.getElementById('bc-solid-length');
   const width = document.getElementById('bc-solid-width');
   const height = document.getElementById('bc-solid-height');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let yaw = 0.72;
   let pitch = -0.3;
   let isDragging = false;
   let lastX = 0;
   let lastY = 0;
   let isVisible = false;
-  let spin = !reducedMotion;
+  let spin = false;
   let previousTime = 0;
   let frameId = 0;
 
@@ -170,7 +221,7 @@
     ctx.clearRect(0, 0, box.width, box.height);
     const dims = [Number(length.value), Number(height.value), Number(width.value)];
     const maxDim = Math.max(...dims);
-    const unitScale = Math.min(box.width * 0.25, box.height * 0.37) / maxDim;
+    const unitScale = Math.min(box.width * 0.46, box.height * 0.58) / maxDim;
     const vertices = [];
     for (let z = -1; z <= 1; z += 2) {
       for (let y = -1; y <= 1; y += 2) {
@@ -209,37 +260,18 @@
     });
 
     const axisEdges = [
-      { label: `长 ${length.value}`, pairs: [[0,1],[2,3],[4,5],[6,7]], color: '#bd794c' },
-      { label: `高 ${height.value}`, pairs: [[0,2],[1,3],[4,6],[5,7]], color: '#507a59' },
-      { label: `宽 ${width.value}`, pairs: [[0,4],[1,5],[2,6],[3,7]], color: '#6585a0' }
+      { pairs: [[0,1],[2,3],[4,5],[6,7]], color: '#bd794c' },
+      { pairs: [[0,2],[1,3],[4,6],[5,7]], color: '#507a59' },
+      { pairs: [[0,4],[1,5],[2,6],[3,7]], color: '#6585a0' }
     ];
     axisEdges.forEach((axis) => {
       const [a, b] = axis.pairs.map((pair) => pair.map((i) => vertices[i])).sort((p, q) => ((q[0].depth + q[1].depth) - (p[0].depth + p[1].depth)))[0];
-      const dx = b.x - a.x;
-      const dy = b.y - a.y;
-      const distance = Math.hypot(dx, dy) || 1;
-      const nx = -dy / distance;
-      const ny = dx / distance;
-      const mx = (a.x + b.x) / 2;
-      const my = (a.y + b.y) / 2;
       ctx.strokeStyle = axis.color;
-      ctx.lineWidth = 2.6;
+      ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
       ctx.stroke();
-      ctx.fillStyle = '#fffefa';
-      ctx.strokeStyle = axis.color;
-      ctx.lineWidth = 1.4;
-      ctx.beginPath();
-      ctx.arc(mx + nx * 13, my + ny * 13, 19, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.stroke();
-      ctx.fillStyle = '#344a3c';
-      ctx.font = '700 11px system-ui, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(axis.label, mx + nx * 13, my + ny * 13);
     });
   }
 
@@ -297,5 +329,4 @@
   observer.observe(canvas);
   new ResizeObserver(draw).observe(canvas);
   updateDimensions();
-  if (reducedMotion) setSpin(false);
 })();

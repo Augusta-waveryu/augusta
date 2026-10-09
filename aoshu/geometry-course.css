@@ -3,3 +3,59 @@
   .bc-geometry-figure svg .g-note { font-size: 12.5px !important; }
   .bc-geometry-figure svg .g-formula { font-size: 17px !important; }
 }
+
+.bc-symmetry-lab {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border: 1px solid #dfe8dc;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f4f8ef, #fffefa 78%);
+}
+.bc-symmetry-heading { margin-bottom: 10px; }
+.bc-symmetry-heading h3 { margin: 4px 0; color: #365b40; font-size: 15px; line-height: 1.55; }
+.bc-symmetry-heading p { margin: 0; color: #65736a; font-size: 11px; line-height: 1.7; }
+.bc-symmetry-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+  align-items: center;
+  gap: 12px;
+}
+.bc-symmetry-controls { display: grid; gap: 12px; min-width: 0; }
+.bc-symmetry-control-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 8px;
+  color: #52645a;
+  font-size: 11px;
+  font-weight: 800;
+}
+.bc-symmetry-control-row input[type="range"] { width: 100%; min-width: 0; height: 32px; accent-color: #5b8b62; }
+.bc-solid-controls .bc-control-row input[type="range"] { height: 32px; cursor: pointer; }
+.bc-symmetry-control-row output { color: #3d7655; text-align: right; font-variant-numeric: tabular-nums; }
+.bc-symmetry-control-row input:focus-visible { outline: 3px solid #bad7b9; outline-offset: 3px; }
+.bc-symmetry-result {
+  margin: 0;
+  padding: 9px 10px;
+  border-left: 3px solid #78a47b;
+  border-radius: 0 9px 9px 0;
+  background: #edf4e9;
+  color: #365b40;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+#bc-symmetry-svg { display: block; width: 100%; max-width: 430px; height: auto; justify-self: center; overflow: visible; }
+.bc-symmetry-svg-note { fill: #65766a; font: 600 11px system-ui, sans-serif; }
+.bc-symmetry-svg-label { fill: #355443; font: 700 12px system-ui, sans-serif; }
+@media (max-width: 650px) {
+  .bc-symmetry-lab { padding: 11px; }
+  .bc-symmetry-layout { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .bc-symmetry-controls { gap: 9px; }
+  .bc-symmetry-result { font-size: 12px; }
+  .bc-symmetry-control-row input[type="range"] { height: 36px; }
+  .bc-solid-controls .bc-control-row input[type="range"] { height: 36px; }
+  .bc-solid-actions .bc-lab-button { min-height: 40px; }
+  #bc-symmetry-svg { max-width: 420px; }
+}

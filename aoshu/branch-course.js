@@ -121,7 +121,7 @@
   const routes = {
     number:{title:'数与规律',count:11,url:'/aoshu/number-theory.html'},
     arithmetic:{title:'计算、分数与比例',count:6,url:'/aoshu/branch-course.html?branch=arithmetic'},
-    applications:{title:'经典数量关系',count:5,url:'/aoshu/branch-course.html?branch=applications'},
+    applications:{title:'经典数量关系',count:6,url:'/aoshu/branch-course.html?branch=applications'},
     geometry:{title:'几何与空间',count:8,url:'/aoshu/branch-course.html?branch=geometry'},
     counting:{title:'计数、组合与概率',count:7,url:'/aoshu/branch-course.html?branch=counting'},
     sequences:{title:'数列、周期与规律',count:8,url:'/aoshu/sequences.html'},
@@ -150,6 +150,7 @@
     average:['总量、份数、平均数 · 平均分之后每份一样多','总量不变时，平均数就是每份的大小。'],
     'speed-work':['路程、速度、时间 · 同一段路走了多久','单位先统一；工作问题把整件工作看成 1。'],
     'sum-difference':['和、差 · 两数合起来与相差多少','大数和小数的中间值是“和的一半”，再向两边分开。'],
+    'basic-application':['已知量、变化量与所求 · 从故事变成算式','先找开始时的数量，再逐次判断增加还是减少。'],
     'chicken-rabbit':['假设量、差量 · 把多出来的部分找出来','每替换一个对象，总量会改变多少？把单位差说清楚。'],
     'surplus-shortage':['盈、亏、差额 · 两种分法差在哪里','一边剩、一边不够时相加；两边都剩或都不够时相减。'],
     planting:['间隔、端点 · 先数间隔，再数端点上的树','直线两端都种比间隔多 1；围成圈则没有额外端点。'],
@@ -192,6 +193,7 @@
     'sum-difference':['大数=(和+差)÷2；小数=(和−差)÷2','先把大数多出来的“差”拿走，两份就相等。'],
     'chicken-rabbit':['另一类个数=(实际总量−假设总量)÷每次替换的差','求完后用对象总数、总量两次验算。'],
     'surplus-shortage':['人数/份数=总差额÷每份变化量','一盈一亏：差额相加；同盈或同亏：差额相减。'],
+    'basic-application':['结果量=起始量+增加量−减少量','关键词只能提示，必须先确认变化对象、方向和单位。'],
     planting:['直线两端都种：棵数=间隔数+1；只种一端/围一圈：棵数=间隔数','直线的段数、楼梯台阶、锯木次数都先找端点。'],
     ages:['年龄差=较大年龄−较小年龄（始终不变）','x 年后：每个人年龄都加 x；倍数关系要列等式。'],
     angles:['三角形内角和=180°；四边形内角和=360°；n 边形=(n−2)×180°','平角 180°，周角 360°；平行线对应角相等。'],
@@ -224,7 +226,7 @@
 
   const pitfalls = {
     'order-operations':'不能把乘除加减混在一起从左到右做；同级才从左往右。',fractions:'分数加减不能直接把分子和分母分别相加。',ratio:'比的顺序有意义；a:b 与 b:a 通常不同。',percent:'连续涨跌的基数在变化，不能简单把百分数相加。',average:'增加一个数后，要同时更新总量和份数。','speed-work':'速度、时间单位要一致；相遇和追及别用错合速度。',
-    'sum-difference':'和加差后必须除以 2，因为得到的是两个大数份数。','chicken-rabbit':'每替换一只带来的差量要先算准确，不能误除以总腿数。','surplus-shortage':'先判断是“一盈一亏”还是“两盈/两亏”，再决定差额相加或相减。',planting:'直线两端是否种树，决定要不要多加 1。',ages:'年龄差不变，但年龄和、倍数会随时间变化。',
+    'basic-application':'不要只凭“又、送、还剩”等词选运算；要按实际变化方向与时间顺序建式。','sum-difference':'和加差后必须除以 2，因为得到的是两个大数份数。','chicken-rabbit':'每替换一只带来的差量要先算准确，不能误除以总腿数。','surplus-shortage':'先判断是“一盈一亏”还是“两盈/两亏”，再决定差额相加或相减。',planting:'直线两端是否种树，决定要不要多加 1。',ages:'年龄差不变，但年龄和、倍数会随时间变化。',
     angles:'三角形内角和是 180°；平角和周角不是同一个量。','triangle-inequality':'第三边要严格大于两边差、严格小于两边和。','perimeter-area':'周长与面积单位不同，长和宽也不要漏乘 2。','composite-area':'补图后要减掉多出的部分，不要把挖空处算进去。','area-equivalence':'高必须是所选底边对应的垂直高度。','grid-symmetry':'数格点要数位置；数小格要数格子，两者相差边界。',solids:'面积和体积不能混用，单位指数也不同。','geometric-counting':'每个矩形由边界线确定；数边界而不是只数小格。',
     'systematic-counting':'分类标准不能重叠，否则会重复；也不能漏掉一类。','add-multiply-principle':'“任选其一”多用加法，“每一步都要完成”多用乘法。','permutations-selections':'职位有别时交换顺序算不同；组成小组通常不区分顺序。','path-counting':'只按题目允许的方向走，不能把无效路线加进去。',pigeonhole:'“至少保证”要按最不利分布算，不是平均分配。','inclusion-exclusion':'交集只能减一次；漏减就把同一对象算了两遍。',probability:'只有基本结果等可能时，才能直接用有利情况数除以总数。',
     equations:'不能只在等号一边加减；保持等式平衡。','inverse-operations':'逆推时先撤销最后一步，不是按原顺序倒着算。','assumption-method':'差额要除以“每换一个多多少”，分子分母单位要对应。','factorization-identities':'平方差要一减一加；完全平方的中间项有 2ab。','integer-equations':'把零、负数或重复的有序解误当成有效答案。','tables-logic':'已知条件不够时不要猜；保留多个可能直到新线索出现。','work-backward':'倒推的运算顺序与正向流程相反。',contradiction:'反例本身必须在原题允许范围里。','invariant-parity':'要证明“始终不可能”，必须说明每一步都保持同一性质。',construction:'找到一个例子只能证明“至少有一种”，不能证明全部情况。','extremes-optimization':'发现一个最大候选后，还要说明为什么其他选择不可能更大。'

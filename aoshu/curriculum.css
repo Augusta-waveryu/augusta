@@ -43,3 +43,32 @@
 .parity-example-formula strong{font-variant-numeric:lining-nums;overflow-wrap:anywhere}
 .parity-equation{margin-top:6px;background:#e5f1e6;font-size:16px}
 @media(max-width:380px){.parity-concept{padding:10px}.parity-definition{padding:8px}.parity-rule-grid{grid-template-columns:1fr}.parity-rule{padding:8px}.parity-rule strong{font-size:14px}.parity-example-formula{gap:7px;padding:8px 7px;font-size:14px}.parity-equation{font-size:14px}}
+
+/* Divisibility lesson: method choice, proof, and transfer */
+.divisibility-guide{margin-top:8px;min-width:0}
+.divisibility-definition{margin:0 0 10px;padding:10px 12px;border-left:4px solid #81965d;border-radius:0 10px 10px 0;background:#f1f5e9;color:#405044;font-size:11px;line-height:1.85;overflow-wrap:anywhere}
+.divisibility-section-title{margin:12px 0 7px;color:#425648;font-size:11px;line-height:1.6}
+.divisibility-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:12px}
+.divisibility-route article{min-width:0;padding:9px 10px;border:1px solid #e4eadf;border-radius:10px;background:#fbfcf8}
+.divisibility-route article b{color:#47745a;font-size:10px}
+.divisibility-route article p{margin:5px 0 0;color:#68756c;font-size:10px;line-height:1.7;overflow-wrap:anywhere}
+.divisibility-rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.divisibility-rule{min-width:0;padding:10px 11px;border:1px solid #e6eae1;border-radius:11px;background:#fffefa}
+.divisibility-rule header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+.divisibility-rule header h4{margin:0;color:#354b3c;font-size:11px}
+.divisibility-rule header span{flex:0 0 auto;padding:3px 7px;border-radius:99px;background:#edf3e8;color:#5a795c;font-size:9px;font-weight:900}
+.divisibility-rule p{margin:5px 0 0;color:#68746b;font-size:10px;line-height:1.7;overflow-wrap:anywhere}
+.divisibility-rule p b{color:#4b6250}
+.divisibility-rule-example{padding-top:5px;border-top:1px dashed #e8ece4}
+.divisibility-fold{margin-top:9px;padding:9px 10px;border:1px solid #e4e9df;border-radius:10px;background:#f8faf5;color:#5e6e62;font-size:10px;line-height:1.75}
+.divisibility-fold summary{color:#4f7558;font-weight:900;cursor:pointer}
+.divisibility-fold-content{display:grid;gap:7px;margin-top:8px}
+.divisibility-fold-content article{padding:8px 9px;border-radius:8px;background:#fffefa}
+.divisibility-fold-content article b{color:#425746;font-size:10px}
+.divisibility-fold-content article p{margin:4px 0 0;color:#66736a;font-size:10px;line-height:1.75;overflow-wrap:anywhere}
+.divisibility-pitfalls{margin-top:10px;padding:10px 12px;border:1px solid #efe8d9;border-radius:10px;background:#fffaf1}
+.divisibility-pitfalls h4{margin:0;color:#796541;font-size:10px}
+.divisibility-pitfalls ul{display:grid;gap:4px;margin:6px 0 0;padding-left:18px;color:#766d5d;font-size:10px;line-height:1.7}
+.divisibility-example-steps{display:grid;gap:6px;margin:7px 0 0;padding-left:22px;color:#5b6b60;font-size:10px;line-height:1.8}
+.divisibility-example-steps li{padding-left:2px;overflow-wrap:anywhere}
+@media(max-width:650px){.divisibility-route{grid-template-columns:1fr}.divisibility-rule-grid{grid-template-columns:1fr}.divisibility-rule{padding:10px}.divisibility-definition{font-size:11px}}

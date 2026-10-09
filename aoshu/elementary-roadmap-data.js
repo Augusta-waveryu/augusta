@@ -132,9 +132,14 @@
     'g3-28': '学过第27讲“数独（一）”并会用行列排除；本讲再加入2×2宫格。'
   };
   const gradeThreeExtendedLinkLevels = {'g3-3':'进阶','g3-4':'进阶'};
+  const gradeThreeDeepRoutes = {
+    'g3-25': {href:'/aoshu/branch-course.html?branch=applications#bc-topic-equal-groups-extra',link:'接着学：相同的几组，再加组外部分'},
+    'g3-26': {href:'/aoshu/branch-course.html?branch=applications#bc-topic-fixed-total-grouping',link:'接着学：固定总量下比较两种分组'}
+  };
   gradeThree.forEach((lesson) => {
     lesson.prerequisite = gradeThreePrerequisites[lesson.key] || '';
     if (lesson.key === 'g3-8') lesson.link = '接着学：分类枚举，不重不漏';
+    if (gradeThreeDeepRoutes[lesson.key]) Object.assign(lesson, gradeThreeDeepRoutes[lesson.key]);
     const branchId = (String(lesson.href || '').match(/[?&]branch=([^&#]+)/) || [])[1];
     const topicId = (String(lesson.href || '').match(/#bc-topic-([^&#]+)/) || [])[1];
     const linkedTopic = window.AOSHU_CURRICULUM?.find((branch) => branch.id === branchId)?.lessons?.find((topic) => topic.id === topicId);

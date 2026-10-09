@@ -121,7 +121,7 @@
   const routes = {
     number:{title:'数与规律',count:11,url:'/aoshu/number-theory.html'},
     arithmetic:{title:'计算、分数与比例',count:6,url:'/aoshu/branch-course.html?branch=arithmetic'},
-    applications:{title:'经典数量关系',count:6,url:'/aoshu/branch-course.html?branch=applications'},
+    applications:{title:'经典数量关系',count:8,url:'/aoshu/branch-course.html?branch=applications'},
     geometry:{title:'几何与空间',count:8,url:'/aoshu/branch-course.html?branch=geometry'},
     counting:{title:'计数、组合与概率',count:7,url:'/aoshu/branch-course.html?branch=counting'},
     sequences:{title:'数列、周期与规律',count:8,url:'/aoshu/sequences.html'},
@@ -158,6 +158,8 @@
       'sum-difference': ['确认同单位的和 S、差 D（大数减小数）', '要小数先算 S−D；要大数先算 S+D', '把对应的两份相等量除以 2', '回查和、差，并检查整数与非负边界'],
       'chicken-rabbit': ['头数固定，先假设全是腿少的一类', '用实有腿数减去假设腿数', '差额除以每次替换多出的腿数', '检查整数与只数范围，再回验头数和腿数'],
       'surplus-shortage': ['确认同一批物品、同一人数且每份数不同', '按盈亏方向求总差：一盈一亏相加，同向相减', '总差除以每人份额差，得到人数', '两种分配回算同一总量，并检查正整数人数'],
+      'equal-groups-extra': ['确认每组数量相同，额外量在组外且未被重复计算', '组内总数=组数×每组数量', '把组外额外量加上', '回查组内、组外两部分是否不重不漏且单位一致'],
+      'fixed-total-grouping': ['确认两种分法使用同一总量且每份数量相同', '总量÷每份数量，分别求两种组数/人数', '按题目所问比较两个结果', '检查整除、单位与每种分法是否还原同一总量'],
       planting: ['先辨直线或封闭圈，并标清端点种植情况', '总长 ÷ 间距求间隔数（等距且能整除）', '直线两端都种加 1；只种一端或围成一圈不加', '回验全程长度与首尾关系，不混用端点'],
       ages: ['设共同时间 t，两人年龄都加或减 t', '以同一时刻列出题目的倍数关系', '解 t，检查符合“几年前”或“几年后”的范围', '代回倍数条件，并核对年龄差不变']
     },
@@ -419,6 +421,18 @@
       const pathTitle = lessonRoutes[branch.id]?.[lesson.id] ? '本课解题路线' : '本分支通用的解题检查步骤';
       return `<details class="bc-lesson" id="${lessonId(lesson)}" data-lesson="${escapeId(lesson.id)}"${i === 0 ? ' open' : ''}><summary><span class="bc-lesson-number">${String(i + 1).padStart(2, '0')}</span><span class="bc-lesson-title"><small>${esc(lesson.level)} · 知识点 ${i + 1} / ${branch.lessons.length}</small><b>${esc(lesson.title)}</b>${keyPreview ? `<small class="bc-lesson-key-preview">重点：${esc(keyPreview)}</small>` : ''}</span><span class="bc-lesson-status">${progress[lesson.id]?.done ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="bc-lesson-chevron" aria-hidden="true">＋</span></summary><div class="bc-lesson-body"><div class="bc-lesson-meta"><span class="bc-pill">关键词：${esc(glossary[0].split('·')[0].trim())}</span>${source}<span class="bc-pill">本课 3 道自测</span></div><div class="bc-concept-box"><span class="bc-section-label">先听懂 · 不只记答案</span><div class="bc-concept-text">${renderRichText(lesson.concept)}</div><div class="bc-language-row"><b>${esc(glossary[0].split('·')[0].trim())}</b><span>${esc(glossary[1])}</span></div></div>${formulaBox}${deepGuide}<div class="bc-path-box${branch.id === 'counting' ? ' bc-counting-path-box' : ''}"><b>${pathTitle}</b><ol>${path.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></div><div class="bc-example-box"><span class="bc-section-label">老师示范 · 跟着线索一步步做</span><h4>${esc(lesson.example.q)}</h4>${exampleSteps}</div>${why}${deep?.transfer ? `<aside class="bc-transfer" aria-label="迁移练习"><b>换个情境再试一次</b><p>${esc(deep.transfer)}</p></aside>` : ''}<div class="bc-trap"><strong>易错提醒</strong><span>${esc(pitfalls[lesson.id] || '每做完一步，都回到题目条件检查一次。')}</span></div><div class="bc-practice"><div class="bc-practice-top"><div><span class="bc-section-label">轮到你了 · 先想再检查</span><h4>三道自测：练方法，也讲理由</h4></div><span class="bc-practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${practice}</div><div class="bc-lesson-tools"><a href="#bc-lab" data-open-lab="${escapeId(lesson.id)}">去互动实验台试一试 →</a><a href="#bc-formulas">查本课速查卡 ↑</a></div></div></details>`;
     }).join('');
+    branch.lessons.forEach((lesson) => {
+      const related = window.AOSHU_DEEP_LESSONS?.[lesson.id]?.related;
+      if (!related?.href || !related?.label) return;
+      const topic = document.getElementById(lessonId(lesson));
+      const tools = topic?.querySelector('.bc-lesson-tools');
+      if (!tools) return;
+      const link = document.createElement('a');
+      link.href = related.href;
+      link.textContent = related.label;
+      link.setAttribute('aria-label', related.label);
+      tools.prepend(link);
+    });
   }
   function renderFormulas() {
     document.getElementById('bc-formula-grid').innerHTML = branch.lessons.map((lesson, i) => {

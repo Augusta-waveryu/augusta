@@ -448,3 +448,6 @@
     max-width: 100%;
   }
 }
+
+.book-prerequisite{margin:10px 0 8px;padding:8px 10px;border-left:3px solid #9ca879;border-radius:0 9px 9px 0;background:#f4f5eb;color:#526044;font-size:10px;line-height:1.75}.book-prerequisite b{color:#4d5f3f}
+@media(max-width:650px){.book-prerequisite{padding:8px 9px}}

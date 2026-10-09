@@ -8,3 +8,5 @@
 @media(max-width:650px){.book-grade-overview{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.book-grade-tile{grid-template-columns:27px minmax(0,1fr) 10px;gap:7px;min-height:148px;padding:10px}.grade-tile-number{width:27px;height:27px;font-size:11px}.grade-tile-copy>b{font-size:10px}.grade-tile-copy>small{font-size:8px}.book-source-details{font-size:9px}.book-source-details ul{gap:7px}}
 
 .book-source-attribution{margin:0 0 12px;padding:8px 10px;border-left:2px solid #d7ddc8;border-radius:0 8px 8px 0;background:#f7f8f2;color:#72796d;font-size:10px;line-height:1.6}.book-source-attribution b{color:#536247}
+
+.textbook-page .book-prerequisite{font-size:var(--book-reading);line-height:var(--book-line)}

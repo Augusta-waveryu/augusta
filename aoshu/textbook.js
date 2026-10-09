@@ -246,17 +246,22 @@
     const moduleMarkup = deepUnitMarkup(lesson.deepUnit, key);
     const review = reviewMarkup(lesson.deepUnit);
     const sourceNote = `<p class="book-source-attribution"><b>课程来源/编排：</b>${esc(lesson.source || '待核；不宣称为教材原题。')}</p>`;
+    const prerequisiteMarkup = grade === 3 && lesson.prerequisite ? `<p class="book-prerequisite"><b>先会：</b>${renderRichText(lesson.prerequisite)}</p>` : '';
+    const baseRelatedLabel = String(lesson.link || '打开相关课程').replace(/^接着学[：:]\s*/, '');
+    const linkLevelLabel = grade === 3 && lesson.linkLevel && lesson.linkLevel !== '入门' ? `选学${lesson.linkLevel} · ` : '';
+    const relatedLabel = `${linkLevelLabel}${baseRelatedLabel}`;
     return `<details class="book-lesson${done ? ' is-done' : ''}" id="${esc(lessonId)}" data-book-id="${esc(key)}" data-grade="${grade}"${expanded ? ' open' : ''}>
       <summary><span class="book-number">${String(lesson.n).padStart(2,'0')}</span><span class="book-heading"><small class="book-grade-label">${esc(chapter)}</small><span class="book-badges"><small class="book-group-badge">${esc(lesson.group)}</small><small class="book-status">${esc(lesson.status)}</small></span><b>${esc(lesson.title)}</b></span><span class="book-state">${done ? '已完成' : '未完成'}</span><span class="book-fold" aria-hidden="true">＋</span></summary>
       <div class="book-body">
         ${sourceNote}
+        ${prerequisiteMarkup}
         <p class="book-goal"><b>这一讲要会：</b>${renderRichText(lesson.goal)}</p>
         <p class="book-idea"><b>关键想法：</b>${renderRichText(lesson.idea)}</p>
         <section class="book-example" aria-label="分步例题"><span class="book-example-label">老师示范 · 一步一步来</span><strong>${renderRichText(lesson.example)}</strong>${diagram}<ol>${steps}</ol></section>
         ${moduleMarkup}
         <section class="book-practice" aria-label="本讲自测"><div class="book-practice-top"><h3>${lesson.deepUnit ? '现在轮到你练习' : '轮到你试一题'}</h3><span class="book-count">${practiceCount}</span></div>${checks}</section>
         ${review}
-        <a class="book-related" href="${esc(lesson.href || '/aoshu/curriculum.html')}"><span>${esc(lesson.link || '打开相关课程')}</span><span aria-hidden="true">↗</span></a>
+        <a class="book-related" href="${esc(lesson.href || '/aoshu/curriculum.html')}"><span>${esc(relatedLabel)}</span><span aria-hidden="true">↗</span></a>
       </div>
     </details>`;
   }

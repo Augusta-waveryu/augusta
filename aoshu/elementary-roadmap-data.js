@@ -8,6 +8,11 @@
     'g2-1': { href: '#book-lesson-g2-18', link: '再练：先统一长度单位再比较' },
     'g2-15': { href: '#book-lesson-g2-16', link: '下一步：计算同一小时内经过的分钟' },
     'g2-16': { href: '#book-lesson-g2-19', link: '再练：把跨整点的时间分段计算' },
+    'g1-10': { href: '#book-lesson-g1-12', link: '下一步：把相同小组排成行和列' },
+    'g1-12': { href: '#book-lesson-g2-5', link: '继续学：读懂乘法算式里的两个数' },
+    'g2-5': { href: '#book-lesson-g2-7', link: '下一步：用行和列看乘法' },
+    'g2-7': { href: '#book-lesson-g2-12', link: '继续学：用乘法回查除法' },
+    'g2-12': { href: '#book-lesson-g2-13', link: '再学一步：分不尽时怎样记录余数' },
     'g2-17': { href: '#book-map', link: '回到年级路线，继续挑选练习' },
     'g2-18': { href: '#book-map', link: '回到年级路线，继续挑选练习' },
     'g2-19': { href: '#book-map', link: '回到年级路线，继续挑选练习' }
@@ -16,9 +21,19 @@
     const key = `g${grade}-${n}`;
     const deepUnit = window.AOSHU_ELEMENTARY_DEEP_UNITS?.[`roadmap:${key}`] || null;
     const route = roadmapLinks[key];
+    const firstPractice = deepUnit?.practices?.[0];
     return {
-      grade, n, key, title, group, goal, idea, example, steps, practice,
-      answers: Array.isArray(answers) ? answers : [String(answers)], hint, explanation,
+      grade, n, key,
+      title: deepUnit?.roadmapTitle || title,
+      group: deepUnit?.roadmapGroup || group,
+      goal: deepUnit?.goal || goal,
+      idea: deepUnit?.idea || idea,
+      example: deepUnit?.example?.question || example,
+      steps: deepUnit?.example?.steps || steps,
+      practice: firstPractice?.question || practice,
+      answers: firstPractice?.answers || (Array.isArray(answers) ? answers : [String(answers)]),
+      hint: firstPractice?.hint || hint,
+      explanation: firstPractice?.explanation || explanation,
       status: deepUnit?.label || status,
       source: grade <= 2 ? '主题参照（具体教材版本、目录讲次与页码待核）；例题与练习为本项目原创。本路线是奥数启蒙/衔接精选，不代表完整年级教材覆盖。' : source,
       deepUnit,

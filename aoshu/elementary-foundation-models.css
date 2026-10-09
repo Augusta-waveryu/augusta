@@ -45,3 +45,23 @@
 @media(prefers-reduced-motion:reduce){.book-foundation-lab *{scroll-behavior:auto!important;transition:none!important}}
 
 .book-empty[hidden]{display:none!important}
+
+.foundation-equal-groups-visual{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px;margin:12px 0}
+.foundation-equal-group,.foundation-division-group{display:flex;min-width:0;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:9px 6px;border:1px solid #dce4cf;border-radius:11px;background:#fffefa}
+.foundation-equal-group>span,.foundation-division-group>b,.foundation-division-leftover>b{color:#596a4e;font-size:.8125rem;font-weight:900;text-align:center}
+.foundation-equal-group>div,.foundation-division-group>span,.foundation-division-leftover>span{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;min-height:17px}
+.foundation-dot{display:inline-block;width:14px;height:14px;flex:0 0 14px;border:1px solid #75865a;border-radius:50%;background:linear-gradient(145deg,#bdce92,#e0e9c8);box-shadow:0 1px 2px #35452b1a}
+.foundation-array-visual{display:grid;grid-template-columns:repeat(var(--foundation-array-columns,4),minmax(18px,1fr));gap:7px;width:min(100%,360px);margin:14px auto;padding:12px;border:1px solid #dce4cf;border-radius:12px;background:#fffefa}
+.foundation-array-visual .foundation-dot{width:100%;height:auto;aspect-ratio:1;max-width:32px;justify-self:center}
+.foundation-division-visual{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:8px;margin:12px 0}
+.foundation-division-group{flex:1 1 84px;max-width:135px}
+.foundation-division-leftover{display:flex;min-width:80px;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:9px 7px;border:1px dashed #bb9a70;border-radius:11px;background:#fff9ef}
+.book-foundation-lab [data-foundation-division-divisor-label]{max-width:9em}
+@media(max-width:650px){
+  .foundation-equal-groups-visual{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .foundation-equal-group,.foundation-division-group{padding:9px 5px}
+  .foundation-array-visual{width:min(100%,300px);gap:6px;padding:10px}
+  .foundation-array-visual .foundation-dot{max-width:26px}
+  .foundation-division-visual{gap:6px}
+  .foundation-division-group{flex-basis:72px}
+}

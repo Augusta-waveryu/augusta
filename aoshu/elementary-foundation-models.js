@@ -1,5 +1,5 @@
 (() => {
-  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter']);
+  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups']);
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const moneyName = (jiao) => {
     const yuan = Math.floor(jiao / 10);
@@ -8,7 +8,7 @@
     if (yuan) return `${yuan} 元`;
     return `${rest} 角`;
   };
-  const options = (values, selected, label = (value) => String(value)) => values.map((value) => `<option value="${esc(value)}"${Number(value) === Number(selected) ? ' selected' : ''}>${esc(label(value))}</option>`).join('');
+  const options = (values, selected, label = (value) => String(value)) => values.map((value) => `<option value="${esc(value)}"${String(value) === String(selected) ? ' selected' : ''}>${esc(label(value))}</option>`).join('');
   const select = (name, label, values, selected, format = (value) => String(value)) => `<label>${label}<select data-foundation-model-control data-foundation-model-setting="${name}" aria-label="${label}">${options(values, selected, format)}</select></label>`;
   const minuteValues = Array.from({length:12}, (_, index) => index * 5);
   const wrapper = (type, title, instruction, controls, visual, caption = '') => `<section class="book-model-lab book-foundation-lab" data-book-model="${type}" data-book-model-config="${esc(JSON.stringify({}))}" aria-label="${esc(title)}"><div class="book-model-heading"><b>${esc(title)}</b><span>${esc(instruction)}</span></div><div class="book-foundation-controls">${controls}</div>${visual}<p class="book-model-result" data-book-model-result aria-live="polite"></p>${caption ? `<p class="book-model-caption">${esc(caption)}</p>` : ''}</section>`;
@@ -59,6 +59,24 @@
       controls = `<label class="foundation-range-label">长度 <input type="range" min="0" max="${max}" step="1" value="${Number(config.centimeters || 0)}" data-foundation-model-control data-foundation-model-setting="centimeters" aria-label="厘米长度"><output data-foundation-range-output>${Number(config.centimeters || 0)} 厘米</output></label>`;
       visual = '<svg class="foundation-length-bar" data-foundation-length-bar role="img" viewBox="0 0 360 82"></svg>';
       caption = '换单位只改变写法，不会改变实际长度。';
+    } else if (type === 'equal-groups') {
+      title = '拖动组数和每组数量';
+      instruction = '先数有几组，再看每组有几个；每组一样多时，才能用乘法快速数总数。';
+      controls = select('groupCount', '组数', [1,2,3,4,5,6], config.groupCount || 4, (value) => `${value} 组`) + select('itemsPerGroup', '每组数量', [1,2,3,4,5,6], config.itemsPerGroup || 3, (value) => `${value} 个`);
+      visual = '<div class="foundation-equal-groups-visual" data-foundation-equal-groups role="img"></div>';
+      caption = '每个圆点代表 1 个物品；组框数是组数，框中圆点数是每组数量。';
+    } else if (type === 'array-model') {
+      title = '拖动行数与每行个数';
+      instruction = '行横着数、列竖着数；按行和按列应得到同一批点的总数。';
+      controls = select('rows', '横行数', [1,2,3,4,5,6], config.rows || 3, (value) => `${value} 行`) + select('columns', '每行个数（列数）', [1,2,3,4,5,6], config.columns || 4, (value) => `${value} 个`);
+      visual = '<div class="foundation-array-visual" data-foundation-array role="img"></div>';
+      caption = '横向是一行，纵向是一列；例如 3 行、每行 4 个，也就是 4 列、每列 3 个。';
+    } else if (type === 'division-groups') {
+      title = '看一看：平均分还是每组装几个';
+      instruction = '选择问法，观察除数代表的意思；圆点若分不尽，会留在“剩下”处。';
+      controls = select('total', '物品总数', [6,8,10,12,15,18,20,24], config.total || 12, (value) => `${value} 个`) + select('mode', '问题问法', ['share','group'], config.mode || 'share', (value) => value === 'share' ? '平均分给几份' : '每几个装一组') + `<label><span data-foundation-division-divisor-label>${config.mode === 'group' ? '每组几个' : '分给几份'}</span><select data-foundation-model-control data-foundation-model-setting="divisor" aria-label="份数或每组数量">${options([2,3,4,5,6], config.divisor || 3, (value) => `${value}`)}</select></label>`;
+      visual = '<div class="foundation-division-visual" data-foundation-division role="img"></div>';
+      caption = '平均分：除数是份数；按几个一组：除数是每组数量。两种问法都可用乘法把结果乘回总数。';
     }
     let html = wrapper(type, title, instruction, controls, visual, caption);
     html = html.replace(`data-book-model-config="${esc(JSON.stringify({}))}"`, `data-book-model-config="${esc(JSON.stringify(config))}"`);
@@ -189,6 +207,43 @@
       root.querySelector('[data-foundation-length-bar]').setAttribute('aria-label', `${cm}厘米等于${m}米${rest}厘米`);
       root.querySelector('[data-foundation-range-output]').textContent = `${cm} 厘米`;
       result.textContent = `${cm} 厘米 = ${m} 米 ${rest} 厘米。${Math.floor(cm / 100)} 组 100 厘米是 ${m} 米，剩下 ${rest} 厘米。`;
+    } else if (root.dataset.bookModel === 'equal-groups') {
+      const groupCount = Math.max(1, Math.min(6, get('groupCount', config.groupCount || 4)));
+      const itemsPerGroup = Math.max(1, Math.min(6, get('itemsPerGroup', config.itemsPerGroup || 3)));
+      const total = groupCount * itemsPerGroup;
+      const dots = '<i class="foundation-dot" aria-hidden="true"></i>'.repeat(itemsPerGroup);
+      const visual = root.querySelector('[data-foundation-equal-groups]');
+      visual.innerHTML = Array.from({length:groupCount}, (_, index) => `<div class="foundation-equal-group" aria-hidden="true"><span>第 ${index + 1} 组</span><div>${dots}</div></div>`).join('');
+      visual.setAttribute('aria-label', `${groupCount} 组，每组 ${itemsPerGroup} 个，共 ${total} 个`);
+      const repeated = Array.from({length:groupCount}, () => String(itemsPerGroup)).join(' + ');
+      result.textContent = `${groupCount} 组，每组 ${itemsPerGroup} 个：${repeated} = ${total}；写成乘法：${groupCount} × ${itemsPerGroup} = ${total}（组数 × 每组个数）。`;
+    } else if (root.dataset.bookModel === 'array-model') {
+      const rows = Math.max(1, Math.min(6, get('rows', config.rows || 3)));
+      const columns = Math.max(1, Math.min(6, get('columns', config.columns || 4)));
+      const total = rows * columns;
+      const visual = root.querySelector('[data-foundation-array]');
+      visual.style.setProperty('--foundation-array-columns', columns);
+      visual.innerHTML = '<i class="foundation-dot" aria-hidden="true"></i>'.repeat(total);
+      visual.setAttribute('aria-label', `${rows} 行，每行 ${columns} 个；也就是 ${columns} 列，每列 ${rows} 个，共 ${total} 个点`);
+      result.textContent = `按行：${rows} 行 × 每行 ${columns} 个 = ${total}。按列：${columns} 列 × 每列 ${rows} 个 = ${total}。同一批点，没有增加或漏掉。`;
+    } else if (root.dataset.bookModel === 'division-groups') {
+      const total = Math.max(1, get('total', config.total || 12));
+      const mode = root.querySelector('[data-foundation-model-setting="mode"]')?.value || config.mode || 'share';
+      const divisor = Math.max(1, get('divisor', config.divisor || 3));
+      const share = mode === 'share';
+      const groupCount = share ? divisor : Math.floor(total / divisor);
+      const itemsPerGroup = share ? Math.floor(total / divisor) : divisor;
+      const remainder = total - groupCount * itemsPerGroup;
+      const visual = root.querySelector('[data-foundation-division]');
+      const groups = Array.from({length:groupCount}, (_, index) => `<div class="foundation-division-group" aria-hidden="true"><b>第 ${index + 1} 份</b><span>${'<i class="foundation-dot" aria-hidden="true"></i>'.repeat(itemsPerGroup)}</span></div>`).join('');
+      const left = remainder ? `<div class="foundation-division-leftover" aria-hidden="true"><b>剩下 ${remainder} 个</b><span>${'<i class="foundation-dot" aria-hidden="true"></i>'.repeat(remainder)}</span></div>` : '';
+      visual.innerHTML = groups + left;
+      visual.setAttribute('aria-label', share ? `${total} 个平均分给 ${divisor} 份，每份 ${itemsPerGroup} 个，剩下 ${remainder} 个` : `${total} 个每 ${divisor} 个一组，可分 ${groupCount} 组，剩下 ${remainder} 个`);
+      const label = root.querySelector('[data-foundation-division-divisor-label]');
+      if (label) label.textContent = share ? '分给几份' : '每组几个';
+      result.textContent = share
+        ? `${total} ÷ ${divisor} 份 = 每份 ${itemsPerGroup} 个${remainder ? `，余 ${remainder} 个` : ''}。乘法回查：${divisor} 份 × ${itemsPerGroup} 个/份${remainder ? ` + ${remainder} 个` : ''} = ${total} 个。`
+        : `${total} ÷ 每组 ${divisor} 个 = ${groupCount} 组${remainder ? `，余 ${remainder} 个` : ''}。乘法回查：${groupCount} 组 × ${divisor} 个/组${remainder ? ` + ${remainder} 个` : ''} = ${total} 个。`;
     }
     return true;
   }

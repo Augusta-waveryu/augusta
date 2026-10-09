@@ -10,18 +10,54 @@
     intro.insertAdjacentElement('afterend', promise);
   }
 
+  const svgNumber = (value) => Number(value.toFixed(2));
+  const angleArc = (vertex, radius, fromDegrees, toDegrees, color, width = 2.5) => {
+    let delta = (toDegrees - fromDegrees) % 360;
+    if (delta > 180) delta -= 360;
+    if (delta <= -180) delta += 360;
+    const point = (degrees) => {
+      const radians = degrees * Math.PI / 180;
+      return [svgNumber(vertex.x + radius * Math.cos(radians)), svgNumber(vertex.y + radius * Math.sin(radians))];
+    };
+    const [x1, y1] = point(fromDegrees);
+    const [x2, y2] = point(fromDegrees + delta);
+    return `<path d="M${x1} ${y1}A${radius} ${radius} 0 0 ${delta >= 0 ? 1 : 0} ${x2} ${y2}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round"/>`;
+  };
+  const angleLabel = (vertex, radius, fromDegrees, toDegrees, text, color) => {
+    let delta = (toDegrees - fromDegrees) % 360;
+    if (delta > 180) delta -= 360;
+    if (delta <= -180) delta += 360;
+    const radians = (fromDegrees + delta / 2) * Math.PI / 180;
+    const x = svgNumber(vertex.x + radius * Math.cos(radians));
+    const y = svgNumber(vertex.y + radius * Math.sin(radians));
+    return `<text x="${x}" y="${y}" text-anchor="middle" class="g-label" fill="${color}">${text}</text>`;
+  };
+  const angleSumDrawing = () => {
+    const baseY = 150, height = 112;
+    const leftRun = height / Math.tan(50 * Math.PI / 180);
+    const rightRun = height / Math.tan(60 * Math.PI / 180);
+    const A = { x: 180 - (leftRun + rightRun) / 2, y: baseY };
+    const B = { x: A.x + leftRun, y: baseY - height };
+    const C = { x: A.x + leftRun + rightRun, y: baseY };
+    const angleAB = Math.atan2(B.y - A.y, B.x - A.x) * 180 / Math.PI;
+    const angleBA = Math.atan2(A.y - B.y, A.x - B.x) * 180 / Math.PI;
+    const angleBC = Math.atan2(C.y - B.y, C.x - B.x) * 180 / Math.PI;
+    const angleCB = Math.atan2(B.y - C.y, B.x - C.x) * 180 / Math.PI;
+    return `<path d="M${svgNumber(B.x - 47)} ${B.y}H${svgNumber(B.x + 47)}" stroke="#91a591" stroke-width="1.7" stroke-dasharray="5 4"/><path d="M${svgNumber(A.x)} ${baseY}L${svgNumber(B.x)} ${B.y}L${svgNumber(C.x)} ${baseY}Z" fill="#e8f2e5" stroke="#548366" stroke-width="3" stroke-linejoin="round"/>${angleArc(A, 17, 0, angleAB, '#d48e63')}${angleArc(B, 12, 180, angleBA, '#d48e63', 2)}${angleArc(B, 21, angleBA, angleBC, '#6d86a0')}${angleArc(B, 12, angleBC, 0, '#bd805c', 2)}${angleArc(C, 17, 180, angleCB, '#bd805c')}${angleLabel(A, 36, 0, angleAB, '50°', '#a96542')}${angleLabel(B, 38, angleBA, angleBC, 'x', '#426e83')}${angleLabel(C, 36, 180, angleCB, '60°', '#426e83')}<text x="${svgNumber(B.x)}" y="22" text-anchor="middle" class="g-note">过顶点作底边平行线</text><rect x="67" y="168" width="226" height="24" rx="12" fill="#f6f2e8"/><text x="180" y="185" text-anchor="middle" class="g-note">50° + 60° + x = 180°</text>`;
+  };
+
   const illustrations = {
     angles: {
-      caption: '三角形三个内角合起来是 180°，所以 x = 180° − 50° − 60° = 70°。',
+      caption: '底角按 50°、60°绘制；顶点处的平行线把两底角移到平角两旁，因此 x = 70°。',
       title: '三角形内角和示意图',
-      desc: '一个三角形标出两个角50度和60度，第三个角标为x，旁边标注三角形内角和180度。',
-      drawing: `<path d="M54 151 151 31 267 151Z" fill="#e8f2e5" stroke="#548366" stroke-width="3" stroke-linejoin="round"/><path d="M78 151A24 24 0 0 0 69.09 132.34M243 151A24 24 0 0 1 250.32 133.74M138.43 46.55A20 20 0 0 0 164.9 45.38" fill="none" stroke="#d48e63" stroke-width="3"/><text x="83" y="137" class="g-label">50°</text><text x="213" y="137" class="g-label">60°</text><text x="144" y="78" class="g-label">x</text><rect x="57" y="164" width="205" height="24" rx="12" fill="#f6f2e8"/><text x="159" y="181" text-anchor="middle" class="g-note">50° + 60° + x = 180°</text>`
+      desc: '三角形两底角分别为50度与60度，顶角x为70度。通过顶点的水平线与底边平行，展示三个角拼成平角。',
+      drawing: angleSumDrawing()
     },
     'triangle-inequality': {
-      caption: '第三边 x 必须比两边的差更长、比两边的和更短：2 &lt; x &lt; 12。',
+      caption: '第三边 x 必须严格满足 2 &lt; x &lt; 12；若 x 是整数，可取 3 至 11，共 9 种。',
       title: '三角形三边关系示意图',
-      desc: '边长5和7已知，第三边x在2与12之间，端点不包括在内。',
-      drawing: `<path d="M46 144H310" stroke="#90a28f" stroke-width="4" stroke-linecap="round"/><path d="M86 144h182" stroke="#71a982" stroke-width="12" stroke-linecap="round"/><path d="M86 130v28M268 130v28" stroke="#d18d64" stroke-width="3"/><circle cx="86" cy="144" r="8" fill="#fffefa" stroke="#d18d64" stroke-width="3"/><circle cx="268" cy="144" r="8" fill="#fffefa" stroke="#d18d64" stroke-width="3"/><text x="86" y="119" text-anchor="middle" class="g-label">2（不取）</text><text x="268" y="119" text-anchor="middle" class="g-label">12（不取）</text><text x="177" y="130" text-anchor="middle" class="g-label">可行的 x</text><rect x="55" y="42" width="250" height="43" rx="12" fill="#f0f6ec"/><text x="180" y="69" text-anchor="middle" class="g-formula">|7 − 5| &lt; x &lt; 7 + 5</text><text x="180" y="181" text-anchor="middle" class="g-note">两边之差 &lt; 第三边 &lt; 两边之和</text>`
+      desc: '已知边长5和7，第三边的开区间是2到12；端点空心不取，区间中的整数3到11各用绿点表示。',
+      drawing: `<path d="M46 146H310" stroke="#a8b3a6" stroke-width="3" stroke-linecap="round"/><path d="M86 146h182" stroke="#71a982" stroke-width="7" stroke-linecap="round"/><path d="M86 131v30M268 131v30" stroke="#d18d64" stroke-width="2.5"/><circle cx="86" cy="146" r="8" fill="#fffefa" stroke="#d18d64" stroke-width="3"/><circle cx="268" cy="146" r="8" fill="#fffefa" stroke="#d18d64" stroke-width="3"/><circle cx="104.2" cy="146" r="4" fill="#477d58"/><circle cx="122.4" cy="146" r="4" fill="#477d58"/><circle cx="140.6" cy="146" r="4" fill="#477d58"/><circle cx="158.8" cy="146" r="4" fill="#477d58"/><circle cx="177" cy="146" r="4" fill="#477d58"/><circle cx="195.2" cy="146" r="4" fill="#477d58"/><circle cx="213.4" cy="146" r="4" fill="#477d58"/><circle cx="231.6" cy="146" r="4" fill="#477d58"/><circle cx="249.8" cy="146" r="4" fill="#477d58"/><text x="86" y="119" text-anchor="middle" class="g-label">2（不取）</text><text x="268" y="119" text-anchor="middle" class="g-label">12（不取）</text><rect x="55" y="42" width="250" height="43" rx="12" fill="#f0f6ec"/><text x="180" y="69" text-anchor="middle" class="g-formula">|7 − 5| &lt; x &lt; 7 + 5</text><text x="180" y="184" text-anchor="middle" class="g-note">整数候选：3 至 11（共 9 种）</text>`
     },
     'perimeter-area': {
       caption: '沿绿色边线走一圈是周长；浅绿色铺满的部分是面积。',
@@ -30,16 +66,16 @@
       drawing: `<rect x="80" y="38" width="200" height="125" rx="3" fill="#eaf2e6" stroke="#548366" stroke-width="5"/><path d="M105 38v125M130 38v125M155 38v125M180 38v125M205 38v125M230 38v125M255 38v125M80 63h200M80 88h200M80 113h200M80 138h200" stroke="#c9dcc6" stroke-width="1.2"/><path d="M80 28h200M80 23v10M280 23v10" stroke="#d38f64" stroke-width="2"/><text x="180" y="20" text-anchor="middle" class="g-label">长 8</text><path d="M296 38v125M291 38h10M291 163h10" stroke="#d38f64" stroke-width="2"/><text x="314" y="100.5" text-anchor="middle" class="g-label" transform="rotate(90 314 100.5)">宽 5</text><text x="180" y="105" text-anchor="middle" class="g-label">内部：8 × 5 = 40</text><text x="180" y="181" text-anchor="middle" class="g-note">周长 = 2 × (8 + 5) = 26；面积用平方单位</text>`
     },
     'composite-area': {
-      caption: '先补成 10 × 8 的大长方形，再扣掉右上角缺口 3 × 3：面积是 71。',
+      caption: '从 10 × 8 的完整长方形扣掉右上角 4 × 3 缺口：80 − 12 = 68 平方单位。',
       title: '组合图形补形求面积示意图',
-      desc: '一个挖去右上角的L形，外框长10宽8，缺口长3宽3。',
-      drawing: `<path d="M52 30H235V93H318V194H52Z" fill="#dfeee0" stroke="#548366" stroke-width="3" stroke-linejoin="round"/><rect x="235" y="30" width="83" height="63" fill="#fffefa" stroke="#d18d64" stroke-width="2.5" stroke-dasharray="6 5"/><path d="M52 20h266M52 16v9M318 16v9" stroke="#849882" stroke-width="1.5"/><text x="185" y="17" text-anchor="middle" class="g-label">总长 10</text><text x="276" y="66" text-anchor="middle" class="g-label">挖去 3 × 3</text><text x="185" y="125" text-anchor="middle" class="g-label">完整大图形 10 × 8</text><text x="185" y="177" text-anchor="middle" class="g-note">10 × 8 − 3 × 3 = 71（平方单位）</text>`
+      desc: '一个长10宽8的矩形挖去右上角长4宽3的小矩形，完整外框与缺口的边长按同一比例绘制。',
+      drawing: `<path d="M70 28H190V88H270V188H70Z" fill="#dfeee0" stroke="#548366" stroke-width="3" stroke-linejoin="round"/><rect x="190" y="28" width="80" height="60" fill="#fffefa" stroke="#d18d64" stroke-width="2.5" stroke-dasharray="6 5"/><path d="M70 22h200M70 18v8M270 18v8" stroke="#849882" stroke-width="1.5"/><text x="170" y="17" text-anchor="middle" class="g-label">外框长 10</text><text x="230" y="53" text-anchor="middle" class="g-label">缺口</text><text x="230" y="73" text-anchor="middle" class="g-label">4 × 3</text><text x="130" y="126" text-anchor="middle" class="g-label">保留区域</text><text x="170" y="184" text-anchor="middle" class="g-note">10 × 8 − 4 × 3 = 68（平方单位）</text>`
     },
     'area-equivalence': {
-      caption: '底和垂直高相同的平行四边形面积是 12 × 5；三角形是它的一半。',
+      caption: '两图都按底 12、高 5 成比例绘制；虚线是垂直高，不是斜边。平行四边形面积 60，三角形面积 30。',
       title: '三角形与平行四边形等积关系',
-      desc: '左侧三角形和右侧同底同高的平行四边形，虚线标出垂直高度。',
-      drawing: `<path d="M47 150 145 44 174 150Z" fill="#f5e8cb" stroke="#c58a4c" stroke-width="3"/><path d="M215 150 258 44 335 44 292 150Z" fill="#e1efe0" stroke="#548366" stroke-width="3"/><path d="M145 44v106M258 44v106" stroke="#7c927d" stroke-width="1.5" stroke-dasharray="5 4"/><path d="M145 141h9v9" fill="none" stroke="#548366" stroke-width="2"/><path d="M258 141h9v9" fill="none" stroke="#548366" stroke-width="2"/><text x="111" y="172" text-anchor="middle" class="g-label">底 12，高 5</text><text x="275" y="172" text-anchor="middle" class="g-label">底 12，高 5</text><text x="108" y="105" text-anchor="middle" class="g-note">三角形</text><text x="273" y="105" text-anchor="middle" class="g-note">平行四边形</text><text x="180" y="190" text-anchor="middle" class="g-formula">12 × 5 ÷ 2 = 30</text>`
+      desc: '左侧三角形与右侧平行四边形的底长和垂直高度按相同比例绘制；短横竖组成直角标记。',
+      drawing: `<path d="M40 140 100 90 160 140Z" fill="#f5e8cb" stroke="#c58a4c" stroke-width="3"/><path d="M205 140 235 90 355 90 325 140Z" fill="#e1efe0" stroke="#548366" stroke-width="3"/><path d="M100 90v50M235 90v50" stroke="#7c927d" stroke-width="1.8" stroke-dasharray="5 4"/><path d="M100 130h10v10M235 130h10v10" fill="none" stroke="#548366" stroke-width="2"/><text x="100" y="79" text-anchor="middle" class="g-label">三角形</text><text x="295" y="79" text-anchor="middle" class="g-label">平行四边形</text><text x="100" y="161" text-anchor="middle" class="g-label">底 12</text><text x="83" y="116" text-anchor="end" class="g-note">高 5</text><text x="295" y="161" text-anchor="middle" class="g-label">底 12</text><text x="218" y="116" text-anchor="end" class="g-note">高 5</text><text x="100" y="190" text-anchor="middle" class="g-formula">12 × 5 ÷ 2 = 30</text><text x="295" y="190" text-anchor="middle" class="g-formula">12 × 5 = 60</text>`
     },
     'grid-symmetry': {
       caption: '对称点在轴两侧，离轴都是 1 格；交点是格点，格子才是单位面积。',
@@ -61,12 +97,12 @@
     }
   };
 
-  const makeFigure = (item) => `<figure class="bc-geometry-figure"><svg viewBox="0 0 360 205" role="img" aria-label="${item.title}"><title>${item.title}</title><desc>${item.desc}</desc><style>.g-label{font:700 13px system-ui,sans-serif;fill:#355443}.g-note{font:600 11px system-ui,sans-serif;fill:#65766a}.g-formula{font:800 17px system-ui,sans-serif;fill:#315a43}</style>${item.drawing}</svg><figcaption>${item.caption}</figcaption></figure>`;
+  const makeFigure = (item, id) => `<figure id="bc-figure-${id}" class="bc-geometry-figure"><svg viewBox="0 0 360 205" role="img" aria-label="${item.title}"><title>${item.title}</title><desc>${item.desc}</desc><style>.g-label{font:700 13px system-ui,sans-serif;fill:#355443}.g-note{font:600 11px system-ui,sans-serif;fill:#65766a}.g-formula{font:800 17px system-ui,sans-serif;fill:#315a43}</style>${item.drawing}</svg><figcaption>${item.caption}</figcaption></figure>`;
 
   Object.entries(illustrations).forEach(([id, item]) => {
     const lesson = document.getElementById(`bc-topic-${id}`);
     const concept = lesson?.querySelector('.bc-concept-box');
-    if (concept && !lesson.querySelector('.bc-geometry-figure')) concept.insertAdjacentHTML('afterend', makeFigure(item));
+    if (concept && !lesson.querySelector('.bc-geometry-figure')) concept.insertAdjacentHTML('afterend', makeFigure(item, id));
   });
 
   const title = document.getElementById('bc-lab-title');

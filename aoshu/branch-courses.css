@@ -141,3 +141,6 @@
 .bc-transfer>b{display:block;margin:0 0 4px;color:#426d4e;font-size:10px}
 .bc-transfer>p{margin:0;color:#56665b;font-size:11px;line-height:1.8;overflow-wrap:anywhere}
 @media(max-width:650px){.bc-transfer{padding:11px}.bc-transfer>p{font-size:12px}}
+
+.bc-counting-path-box li{font-size:11px;line-height:1.65}
+@media(max-width:650px){.bc-counting-path-box li{font-size:12px}}

@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/aoshu",
+      "destination": "/siwei",
+      "permanent": true
+    },
+    {
+      "source": "/aoshu/:path*",
+      "destination": "/siwei/:path*",
+      "permanent": true
+    }
+  ]
+}

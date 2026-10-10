@@ -316,7 +316,7 @@
 
   async function init() {
     try {
-      const response = await fetch('/aoshu/question-bank-source.json');
+      const response = await fetch('/siwei/question-bank-source.json');
       if (!response.ok) throw new Error(`题库读取失败：HTTP ${response.status}`);
       state.data = await response.json();
       state.questions = state.data.questions || [];

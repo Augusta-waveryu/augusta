@@ -92,7 +92,7 @@
               "required": ["title", "href"],
               "properties": {
                 "title": { "type": "string" },
-                "href": { "type": "string", "pattern": "^/aoshu/.+#.+$" }
+                "href": { "type": "string", "pattern": "^/siwei/.+#.+$" }
               }
             }
           }

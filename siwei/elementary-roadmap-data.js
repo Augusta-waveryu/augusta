@@ -37,7 +37,7 @@
       status: deepUnit?.label || status,
       source: grade <= 2 ? '主题参照（具体教材版本、目录讲次与页码待核）；例题与练习为本项目原创。本路线是数学思维启蒙/衔接精选，不代表完整年级教材覆盖。' : source,
       deepUnit,
-      href: route?.href || `/aoshu/branch-course.html?branch=${branch}#bc-topic-${topic}`,
+      href: route?.href || `/siwei/branch-course.html?branch=${branch}#bc-topic-${topic}`,
       link: route?.link || (() => {
         const courseLesson = (window.AOSHU_CURRICULUM || []).find((item) => item.id === branch)?.lessons?.find((item) => item.id === topic);
         const targetTitle = courseLesson?.title || branchTitles[branch] || '完整专题';
@@ -133,8 +133,8 @@
   };
   const gradeThreeExtendedLinkLevels = {'g3-3':'进阶','g3-4':'进阶'};
   const gradeThreeDeepRoutes = {
-    'g3-25': {href:'/aoshu/branch-course.html?branch=applications#bc-topic-equal-groups-extra',link:'接着学：相同的几组，再加组外部分'},
-    'g3-26': {href:'/aoshu/branch-course.html?branch=applications#bc-topic-fixed-total-grouping',link:'接着学：固定总量下比较两种分组'}
+    'g3-25': {href:'/siwei/branch-course.html?branch=applications#bc-topic-equal-groups-extra',link:'接着学：相同的几组，再加组外部分'},
+    'g3-26': {href:'/siwei/branch-course.html?branch=applications#bc-topic-fixed-total-grouping',link:'接着学：固定总量下比较两种分组'}
   };
   gradeThree.forEach((lesson) => {
     lesson.prerequisite = gradeThreePrerequisites[lesson.key] || '';
@@ -235,7 +235,7 @@
         answers: deepUnit?.practices?.[0]?.answers || practice.a || [],
         hint: deepUnit?.practices?.[0]?.hint || practice.hint || '先回看例题中的关键关系，再把题目条件代入。',
         explanation: deepUnit?.practices?.[0]?.explanation || practice.why || lesson.example.solution,
-        href: `/aoshu/branch-course.html?branch=${branch.id}#bc-topic-${lesson.id}`,
+        href: `/siwei/branch-course.html?branch=${branch.id}#bc-topic-${lesson.id}`,
         link: `接着学：${branch.title}专题（含三道自测）`
       });
     });

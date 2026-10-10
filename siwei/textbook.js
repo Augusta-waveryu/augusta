@@ -262,7 +262,7 @@
         ${moduleMarkup}
         <section class="book-practice" aria-label="本讲自测"><div class="book-practice-top"><h3>${lesson.deepUnit ? '现在轮到你练习' : '轮到你试一题'}</h3><span class="book-count">${practiceCount}</span></div>${checks}</section>
         ${review}
-        <a class="book-related" href="${esc(lesson.href || '/aoshu/curriculum.html')}"><span>${esc(relatedLabel)}</span><span aria-hidden="true">↗</span></a>
+        <a class="book-related" href="${esc(lesson.href || '/siwei/curriculum.html')}"><span>${esc(relatedLabel)}</span><span aria-hidden="true">↗</span></a>
       </div>
     </details>`;
   }

@@ -117,16 +117,16 @@
   const curriculum = window.AOSHU_CURRICULUM || [];
   const id = new URLSearchParams(location.search).get('branch') || 'arithmetic';
   const branch = curriculum.find((item) => item.id === id);
-  const curriculumUrl = '/aoshu/curriculum.html';
+  const curriculumUrl = '/siwei/curriculum.html';
   const routes = {
-    number:{title:'数与规律',count:11,url:'/aoshu/number-theory.html'},
-    arithmetic:{title:'计算、分数与比例',count:6,url:'/aoshu/branch-course.html?branch=arithmetic'},
-    applications:{title:'经典数量关系',count:8,url:'/aoshu/branch-course.html?branch=applications'},
-    geometry:{title:'几何与空间',count:8,url:'/aoshu/branch-course.html?branch=geometry'},
-    counting:{title:'计数、组合与概率',count:7,url:'/aoshu/branch-course.html?branch=counting'},
-    sequences:{title:'数列、周期与规律',count:8,url:'/aoshu/sequences.html'},
-    algebra:{title:'代数思维与整数方程',count:5,url:'/aoshu/branch-course.html?branch=algebra'},
-    logic:{title:'逻辑推理与解题策略',count:6,url:'/aoshu/branch-course.html?branch=logic'}
+    number:{title:'数与规律',count:11,url:'/siwei/number-theory.html'},
+    arithmetic:{title:'计算、分数与比例',count:6,url:'/siwei/branch-course.html?branch=arithmetic'},
+    applications:{title:'经典数量关系',count:8,url:'/siwei/branch-course.html?branch=applications'},
+    geometry:{title:'几何与空间',count:8,url:'/siwei/branch-course.html?branch=geometry'},
+    counting:{title:'计数、组合与概率',count:7,url:'/siwei/branch-course.html?branch=counting'},
+    sequences:{title:'数列、周期与规律',count:8,url:'/siwei/sequences.html'},
+    algebra:{title:'代数思维与整数方程',count:5,url:'/siwei/branch-course.html?branch=algebra'},
+    logic:{title:'逻辑推理与解题策略',count:6,url:'/siwei/branch-course.html?branch=logic'}
   };
   if (!branch) {
     document.querySelector('.bc-main').innerHTML = `<section class="bc-not-found"><h1>没有找到这条课程分支</h1><p>可以回知识树挑选课程，或者打开数列、数论专题课。</p><a href="${curriculumUrl}">返回全部知识点</a></section>`;

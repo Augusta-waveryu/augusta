@@ -8,7 +8,7 @@
     try { const url = new URL(value); return ['https:', 'http:'].includes(url.protocol) ? url.href : ''; }
     catch { return ''; }
   };
-  const safeCourseHref = (value) => typeof value === 'string' && value.startsWith('/aoshu/') && value.includes('#') ? value : '';
+  const safeCourseHref = (value) => typeof value === 'string' && value.startsWith('/siwei/') && value.includes('#') ? value : '';
   const state = { data: null, archives: [], questions: [] };
   const statusInfo = {
     explicit_open_license: { label: '开放许可已核实', tone: 'is-cleared' },
@@ -157,7 +157,7 @@
 
   async function init() {
     try {
-      const response = await fetch('/aoshu/contest-practice-data.json', { cache: 'no-store' });
+      const response = await fetch('/siwei/contest-practice-data.json', { cache: 'no-store' });
       if (!response.ok) throw new Error(`题源目录读取失败：${response.status}`);
       const data = await response.json();
       if (!data || !Array.isArray(data.event_series) || !Array.isArray(data.archive_records) || !Array.isArray(data.questions)) throw new Error('题源目录结构不完整');

@@ -35,7 +35,7 @@
       hint: firstPractice?.hint || hint,
       explanation: firstPractice?.explanation || explanation,
       status: deepUnit?.label || status,
-      source: grade <= 2 ? '主题参照（具体教材版本、目录讲次与页码待核）；例题与练习为本项目原创。本路线是奥数启蒙/衔接精选，不代表完整年级教材覆盖。' : source,
+      source: grade <= 2 ? '主题参照（具体教材版本、目录讲次与页码待核）；例题与练习为本项目原创。本路线是数学思维启蒙/衔接精选，不代表完整年级教材覆盖。' : source,
       deepUnit,
       href: route?.href || `/aoshu/branch-course.html?branch=${branch}#bc-topic-${topic}`,
       link: route?.link || (() => {
@@ -96,7 +96,7 @@
     ...lesson,
     grade: 3,
     key: `g3-${lesson.n}`,
-    status: /目录只列讲名/.test(lesson.status || '') ? '目录只列讲名 · 原创迁移课' : '奥数教程主题 · 原创例题',
+    status: /目录只列讲名/.test(lesson.status || '') ? '目录只列讲名 · 原创迁移课' : '《奥数教程》主题 · 原创例题',
     source: '主题参照：《奥数教程三年级（第八版）》公开目录；逐讲映射/页码待核，例题与练习为本项目原创。'
   }));
 
@@ -243,8 +243,8 @@
 
   window.AOSHU_TEXTBOOK_LESSONS = [...gradeOne,...gradeTwo,...gradeThree,...advanced];
   window.AOSHU_GRADE_OVERVIEW = [
-    {grade:1,title:'一年级 · 看见数学',focus:'图形、数感、钟表、人民币、厘米测量与简单推理',source:'主题参照与教材版本/页码待核；本路线为奥数启蒙精选，例题与练习原创，不代表完整年级教材覆盖'},
-    {grade:2,title:'二年级 · 关系与方法',focus:'钟面读时、经过时间、长度换算、购物找零与乘除',source:'主题参照与教材版本/页码待核；本路线为奥数衔接精选，例题与练习原创，不代表完整年级教材覆盖'},
+    {grade:1,title:'一年级 · 看见数学',focus:'图形、数感、钟表、人民币、厘米测量与简单推理',source:'主题参照与教材版本/页码待核；本路线为数学思维启蒙精选，例题与练习原创，不代表完整年级教材覆盖'},
+    {grade:2,title:'二年级 · 关系与方法',focus:'钟面读时、经过时间、长度换算、购物找零与乘除',source:'主题参照与教材版本/页码待核；本路线为数学思维衔接精选，例题与练习原创，不代表完整年级教材覆盖'},
     {grade:3,title:'三年级 · 规律与建模',focus:'数列、平均数、图形计数、应用题与数独',source:'《奥数教程三年级（第八版）》公开目录主题参照；28讲逐讲映射/页码待核，例题与练习原创'},
     {grade:4,title:'四年级 · 建立模型',focus:'整数、数阵、行程、几何、数列与推理',source:'本站当前编入21个专题；序号是按主题编排的站内路线顺序，不是教材讲次，也不代表难度递增。基础/进阶/拓展与先修提示均为站内建议，不代表官方或原书分级。原记录称公开目录可见11讲；目录版本和逐讲映射待核，其余为拓展/专题整合'},
     {grade:5,title:'五年级 · 组合与数量关系',focus:'分数、因数、面积、行程、计数与证明',source:'当前精选18讲；原记录列公开目录24讲，版本/覆盖映射待核；未核实部分不视为已覆盖'},

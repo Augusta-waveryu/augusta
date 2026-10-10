@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="按赛事、年份、年级和轮次查找小学数学杯赛历年题源；仅展示明确获得转载许可且经独立核验的原题、答案、解析和课程链接。">
+  <title>历年杯赛原题练习｜思维树屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/aoshu/styles.css">
+  <link rel="stylesheet" href="/aoshu/contest-practice.css">
+  <script src="/aoshu/contest-practice.js" defer></script>
+</head>
+<body class="contest-page">
+  <a class="skip-link" href="#contest-main">跳到赛事练习</a>
+  <header class="topbar contest-topbar">
+    <a class="brand" href="/aoshu/index.html" aria-label="返回思维树屋首页"><span class="brand-mark" aria-hidden="true">学</span><span>思维树屋 <small>数学思维小课堂</small></span></a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="/aoshu/index.html">首页</a>
+      <a href="/aoshu/curriculum.html">全部课程</a>
+      <a href="/aoshu/number-theory-practice.html">192 道资料题</a>
+      <a class="is-current" href="/aoshu/contest-practice.html" aria-current="page">杯赛原题</a>
+    </nav>
+    <a class="nav-cta" href="#archive-section">找历年题源 <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="contest-main">
+    <section class="contest-hero page-width" aria-labelledby="contest-title">
+      <div class="contest-hero-copy">
+        <span class="contest-kicker"><i aria-hidden="true"></i> 小学数学 · 历年赛事题源</span>
+        <h1 id="contest-title">先找可靠题源，<br><em>再把每一步讲明白。</em></h1>
+        <p>按赛事、年份、年级和轮次浏览原题线索。题面只有在许可明确时才会收录；每道入库题还要经过独立验算、解析复核，并连回对应课程。</p>
+        <div class="contest-stats" aria-live="polite">
+          <span><b id="event-count">—</b> 项赛事</span>
+          <span><b id="archive-count">—</b> 条题源记录</span>
+          <span><b id="licensed-question-count">—</b> 道许可核实题</span>
+        </div>
+      </div>
+      <div class="contest-hero-note" aria-label="收录原则">
+        <span class="note-mark" aria-hidden="true">✓</span>
+        <b>公开可见<br>不等于可转载</b>
+        <small>授权不明时，只给来源入口，不复制整题或扫描件。</small>
+      </div>
+      <div class="contest-hero-doodle" aria-hidden="true"><span>题源</span><i>→</i><span>核算</span><i>→</i><span>学会</span></div>
+    </section>
+
+    <section class="contest-policy page-width" aria-label="题目收录规则">
+      <div class="policy-symbol" aria-hidden="true">i</div>
+      <div><b>每道站内原题都带有可追溯的赛事信息和许可依据。</b><p>来源公开但未找到明确转载许可的，保留赛事与年份索引、原始链接及授权待办，不在本站复刻题面。答案与解析由本站单独推导核验；知识点链接指向真实课程锚点。</p></div>
+      <a href="/aoshu/curriculum.html">先去知识树学习 <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="archive-section page-width" id="archive-section" aria-labelledby="archive-title">
+      <div class="section-heading contest-heading">
+        <div><span class="section-kicker">赛事目录 · 可追溯原始出处</span><h2 id="archive-title">先选赛事与年份</h2></div>
+        <p>目录只展示已核实到的年份、组别和轮次；缺少的信息会明确标为待核，不用推测填充。</p>
+      </div>
+      <div class="archive-workspace">
+        <aside class="archive-filters" aria-label="筛选赛事题源">
+          <label for="event-filter">赛事</label><select id="event-filter"><option value="all">全部赛事</option></select>
+          <label for="year-filter">年份</label><select id="year-filter"><option value="all">全部年份</option></select>
+          <label for="grade-filter">年级 / 组别</label><select id="grade-filter"><option value="all">全部年级 / 组别</option></select>
+          <label for="round-filter">轮次</label><select id="round-filter"><option value="all">全部轮次</option></select>
+          <label for="archive-search">搜索目录</label><input id="archive-search" type="search" placeholder="赛事名、年份或来源机构" autocomplete="off">
+          <button class="button button-quiet" id="clear-archive-filters" type="button">清除筛选</button>
+          <p class="filter-note">来源链接会在新标签页打开。若你知道某届题目的转载授权或权利人联系方式，可据此补全待办。</p>
+        </aside>
+        <div class="archive-results-column">
+          <div class="archive-result-bar"><p id="archive-result-count" aria-live="polite">正在载入题源目录…</p><span class="archive-result-dot" aria-hidden="true"></span><span>先看许可状态，再进入原始来源</span></div>
+          <div class="archive-grid" id="archive-results" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="licensed-practice page-width" id="practice" aria-labelledby="practice-title">
+      <div class="section-heading contest-heading">
+        <div><span class="section-kicker">已许可转载 · 已独立核算</span><h2 id="practice-title">本站可练的杯赛原题</h2></div>
+        <p>先自己作答，再核对独立解析；每道题都附可回去学习的课程知识点。</p>
+      </div>
+      <div class="licensed-result-bar"><p id="question-result-count" aria-live="polite">正在检查已授权题目…</p><span class="licensed-result-dot" aria-hidden="true"></span><span>仅显示许可与审校条件都齐全的记录</span></div>
+      <div class="contest-question-grid" id="licensed-question-results"></div>
+      <div class="no-licensed-questions" id="no-licensed-questions" hidden>
+        <span class="empty-mark" aria-hidden="true">↗</span>
+        <div><b>当前筛选下没有可在本站复刻的原题。</b><p>请从上方题源目录进入主办方或可信档案页面。本站不会把仅能公开浏览的题面当作可转载材料。</p></div>
+      </div>
+    </section>
+
+    <section class="contest-method page-width" aria-label="学习建议">
+      <div><span class="section-kicker">做完一题，不止记一个答案</span><h2>把赛题变成一条学习路线</h2><p>先辨认题目用了什么方法，再打开解析核验；遇到不熟的知识点，直接回课程补一小节，然后再挑战同类题。</p></div>
+      <div class="method-links"><a href="/aoshu/curriculum.html">浏览全部知识点 <span aria-hidden="true">→</span></a><a href="/aoshu/number-theory-practice.html">练习现有 192 道资料题 <span aria-hidden="true">→</span></a></div>
+    </section>
+  </main>
+
+  <footer class="contest-footer"><a class="brand" href="/aoshu/index.html"><span class="brand-mark" aria-hidden="true">学</span><span>思维树屋 <small>把线索连起来</small></span></a><span>题源可追溯，推理可复核。</span><a href="#contest-main">回到顶部 ↑</a></footer>
+  <noscript><p class="no-script">这页需要启用 JavaScript 才能载入赛事目录和练习题。</p></noscript>
+</body>
+</html>

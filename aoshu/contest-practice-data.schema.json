@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "思维树屋杯赛题源目录",
+  "type": "object",
+  "required": ["schema_version", "event_series", "archive_records", "questions"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "language": { "const": "zh-CN" },
+    "event_series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "organizer", "source_url"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "organizer": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri" },
+          "scope": { "type": "string" }
+        }
+      }
+    },
+    "archive_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "event_id", "source_url", "reuse_status"],
+        "properties": {
+          "id": { "type": "string" },
+          "event_id": { "type": "string" },
+          "year": { "type": ["integer", "null"] },
+          "season": { "type": "string" },
+          "grade_group": { "type": ["string", "null"] },
+          "round": { "type": ["string", "null"] },
+          "archive_title": { "type": "string" },
+          "organizer": { "type": "string" },
+          "source_type": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri" },
+          "license_url": { "type": ["string", "null"], "format": "uri" },
+          "reuse_status": {
+            "enum": ["explicit_open_license", "explicit_republication_permission", "permission_not_found", "permission_required", "source_index_only"]
+          },
+          "permission_evidence": { "type": "string" },
+          "permission_note": { "type": "string" },
+          "source_note": { "type": "string" }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "event_id", "year", "grade_group", "round", "problem", "source_url", "accepted_answers", "rights", "review", "knowledge_points"],
+        "properties": {
+          "id": { "type": "string" },
+          "event_id": { "type": "string" },
+          "year": { "type": "integer" },
+          "grade_group": { "type": "string" },
+          "round": { "type": "string" },
+          "question_label": { "type": "string" },
+          "problem": { "type": "string", "minLength": 1 },
+          "diagram_note": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri" },
+          "accepted_answers": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "rights": {
+            "type": "object",
+            "required": ["reuse_status", "may_republish", "permission_basis", "evidence_url"],
+            "properties": {
+              "reuse_status": { "enum": ["explicit_open_license", "explicit_republication_permission"] },
+              "may_republish": { "const": true },
+              "permission_basis": { "type": "string", "minLength": 1 },
+              "evidence_url": { "type": "string", "format": "uri" },
+              "license_name": { "type": "string" }
+            }
+          },
+          "review": {
+            "type": "object",
+            "required": ["answer_status", "solution_status", "verified_answer", "verified_solution"],
+            "properties": {
+              "answer_status": { "const": "independently_verified" },
+              "solution_status": { "const": "independently_checked" },
+              "verified_answer": { "type": "string", "minLength": 1 },
+              "verified_solution": { "type": "string", "minLength": 1 },
+              "check_note": { "type": "string" }
+            }
+          },
+          "knowledge_points": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["title", "href"],
+              "properties": {
+                "title": { "type": "string" },
+                "href": { "type": "string", "pattern": "^/aoshu/.+#.+$" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

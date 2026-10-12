@@ -246,7 +246,8 @@
     const moduleMarkup = deepUnitMarkup(lesson.deepUnit, key);
     const review = reviewMarkup(lesson.deepUnit);
     const sourceNote = `<p class="book-source-attribution"><b>课程来源/编排：</b>${esc(lesson.source || '待核；不宣称为教材原题。')}</p>`;
-    const prerequisiteMarkup = grade === 3 && lesson.prerequisite ? `<p class="book-prerequisite"><b>先会：</b>${renderRichText(lesson.prerequisite)}</p>` : grade === 4 && lesson.prerequisite ? `<p class="book-prerequisite"><b>学习前建议（本站）：</b>${renderRichText(lesson.prerequisite)}</p>` : '';
+    const prerequisiteLinksMarkup = (lesson.prerequisiteLinks || []).map((item) => `<a class="book-prerequisite-link" href="${esc(item.href)}">${esc(item.label)}</a>`).join('、');
+    const prerequisiteMarkup = grade === 3 && lesson.prerequisite ? `<p class="book-prerequisite"><b>先会：</b>${renderRichText(lesson.prerequisite)}${prerequisiteLinksMarkup ? `<br><b>可回看路线：</b>${prerequisiteLinksMarkup}` : ''}</p>` : grade === 4 && lesson.prerequisite ? `<p class="book-prerequisite"><b>学习前建议（本站）：</b>${renderRichText(lesson.prerequisite)}</p>` : '';
     const difficultyBadge = grade === 4 && lesson.suggestedDifficulty ? `<small class="book-level-badge" data-level="${esc(lesson.suggestedDifficulty)}">站内难度建议 · ${esc(lesson.suggestedDifficulty)}</small>` : '';
     const baseRelatedLabel = String(lesson.link || '打开相关课程').replace(/^接着学[：:]\s*/, '');
     const linkLevelLabel = grade === 3 && lesson.linkLevel && lesson.linkLevel !== '入门' ? `选学${lesson.linkLevel} · ` : '';
@@ -374,7 +375,7 @@
   }
 
   list.addEventListener('click', (event) => {
-    const link = event.target.closest('a.book-related[href^="#book-lesson-"]');
+    const link = event.target.closest('a.book-related[href^="#book-lesson-"], a.book-prerequisite-link[href^="#book-lesson-"]');
     if (!link) return;
     const key = link.getAttribute('href').match(/^#book-lesson-(g\d+-\d+)$/)?.[1];
     if (!key || !lessons.some((lesson) => keyOf(lesson) === key)) return;

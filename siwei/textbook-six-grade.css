@@ -10,3 +10,4 @@
 .book-source-attribution{margin:0 0 12px;padding:8px 10px;border-left:2px solid #d7ddc8;border-radius:0 8px 8px 0;background:#f7f8f2;color:#72796d;font-size:10px;line-height:1.6}.book-source-attribution b{color:#536247}
 
 .textbook-page .book-prerequisite{font-size:var(--book-reading);line-height:var(--book-line)}
+.textbook-page .book-prerequisite-link{color:#49653d;font-weight:800;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}.textbook-page .book-prerequisite-link:focus-visible{outline:3px solid #9eae71;outline-offset:2px;border-radius:3px}

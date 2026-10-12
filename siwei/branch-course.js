@@ -119,14 +119,14 @@
   const branch = curriculum.find((item) => item.id === id);
   const curriculumUrl = '/siwei/curriculum.html';
   const routes = {
-    number:{title:'数与规律',count:11,url:'/siwei/number-theory.html'},
-    arithmetic:{title:'计算、分数与比例',count:6,url:'/siwei/branch-course.html?branch=arithmetic'},
-    applications:{title:'经典数量关系',count:8,url:'/siwei/branch-course.html?branch=applications'},
-    geometry:{title:'几何与空间',count:8,url:'/siwei/branch-course.html?branch=geometry'},
-    counting:{title:'计数、组合与概率',count:7,url:'/siwei/branch-course.html?branch=counting'},
-    sequences:{title:'数列、周期与规律',count:8,url:'/siwei/sequences.html'},
-    algebra:{title:'代数思维与整数方程',count:5,url:'/siwei/branch-course.html?branch=algebra'},
-    logic:{title:'逻辑推理与解题策略',count:6,url:'/siwei/branch-course.html?branch=logic'}
+    number:{title:'数与规律',url:'/siwei/number-theory.html'},
+    arithmetic:{title:'计算、分数与比例',url:'/siwei/branch-course.html?branch=arithmetic'},
+    applications:{title:'经典数量关系',url:'/siwei/branch-course.html?branch=applications'},
+    geometry:{title:'几何与空间',url:'/siwei/branch-course.html?branch=geometry'},
+    counting:{title:'计数、组合与概率',url:'/siwei/branch-course.html?branch=counting'},
+    sequences:{title:'数列、周期与规律',url:'/siwei/sequences.html'},
+    algebra:{title:'代数思维与整数方程',url:'/siwei/branch-course.html?branch=algebra'},
+    logic:{title:'逻辑推理与解题策略',url:'/siwei/branch-course.html?branch=logic'}
   };
   if (!branch) {
     document.querySelector('.bc-main').innerHTML = `<section class="bc-not-found"><h1>没有找到这条课程分支</h1><p>可以回知识树挑选课程，或者打开数列、数论专题课。</p><a href="${curriculumUrl}">返回全部知识点</a></section>`;
@@ -309,7 +309,10 @@
   document.getElementById('bc-map-title').textContent = `${branch.title} · ${branch.lessons.length} 个知识点`;
   document.getElementById('bc-lessons-title').textContent = `${branch.lessons.length} 课讲清${branch.title}`;
   document.getElementById('bc-learning-steps').innerHTML = methodSteps.map((step, i) => `<li><i>${i + 1}</i><div><b>${esc(step[0])}</b><span>${esc(step[1])}</span></div></li>`).join('');
-  document.getElementById('bc-branch-links').innerHTML = Object.entries(routes).map(([key, item]) => `<a href="${item.url}"${key === branch.id ? ' aria-current="page"' : ''}>${esc(item.title)} · ${item.count}</a>`).join('');
+  document.getElementById('bc-branch-links').innerHTML = Object.entries(routes).map(([key, item]) => {
+    const count = curriculum.find((candidate) => candidate.id === key)?.lessons.length ?? 0;
+    return `<a href="${item.url}"${key === branch.id ? ' aria-current="page"' : ''}>${esc(item.title)} · ${count}</a>`;
+  }).join('');
   document.getElementById('bc-bottom-copy').textContent = branch.id === 'arithmetic' ? '分数与比例会在数量关系里再次出现；熟练后可以前往几何、计数或代数，看看同一条思路如何迁移。' : branch.id === 'applications' ? '和差、盈亏与鸡兔同笼会连接到代数方程和假设法；熟悉一种模型后，试着比较它们的共同结构。' : branch.id === 'geometry' ? '图形计数会连接到组合方法；面积关系也能借助代数表示。学会解释图上的关系，比单背公式更重要。' : branch.id === 'counting' ? '路线递推会连接数列；最坏情况与抽屉原理会连接逻辑策略。数论训练营讲义和原题仍整合在数与规律分支中。' : branch.id === 'algebra' ? '方程能把数量关系写成等式；假设法和数论中的因式分解，也会帮助缩小整数解范围。' : '列表、倒推、不变量、构造和最值可以互相配合；每种策略都要把理由和边界条件说清楚。';
 
   function lessonId(lesson) { return `bc-topic-${escapeId(lesson.id)}`; }

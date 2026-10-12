@@ -208,7 +208,7 @@
       </section>
 
       <section class="nt-lesson nt-tone-coral" id="nt-factors" aria-labelledby="nt-factors-title">
-        <div class="nt-lesson-heading"><div class="nt-step-number">05</div><div><span class="nt-kicker">原讲义第 2–4 讲 · 指数变成计数</span><h2 id="nt-factors-title">因数结构：从指数读出“有几个”</h2><p>若 N = p₁ᵉ¹p₂ᵉ²…，每个因数都能独立选择各质数的指数，所以正因数个数 τ(N) = (e₁+1)(e₂+1)…。</p></div><span class="nt-heading-symbol" aria-hidden="true">τ</span></div>
+        <div class="nt-lesson-heading"><div class="nt-step-number">05</div><div><span class="nt-kicker">原讲义第 2–4 讲 · 指数变成计数</span><h2 id="nt-factors-title">因数结构：从指数读出“有几个”</h2><p>更一般地，N 可写成若干个互不相同的质数幂相乘。每个因数都能独立选择各质数的指数，所以正因数个数等于各指数加 1 后的乘积。</p></div><span class="nt-heading-symbol" aria-hidden="true">τ</span></div>
         <div class="nt-two-column">
           <div class="nt-tool-card nt-divisor-tool">
             <div class="nt-card-topline"><span class="nt-card-label">互动 · 因数个数计算器</span><span class="nt-live-dot">含 1 与自身</span></div>
@@ -289,7 +289,7 @@
             <div><b>个位、末两位、末三位</b><p>除以 2 或 5，看个位；除以 4 或 25，看末两位；除以 8 或 125，看末三位。因为 10、100、1000 分别能被这些数整除，前面的位都贡献整倍数。</p></div>
             <div><b>数字和与分组和</b><p>10 ≡ 1 (mod 9)，所以各位数字和与原数除以 9 的余数相同，也能判 3。又 100 ≡ 1 (mod 99)、1000 ≡ 1 (mod 999)，按两位或三位一组相加，可分别检验 99 或 999。</p></div>
             <div><b>交错和与交错分组</b><p>10 ≡ −1 (mod 11)，逐位交替加减可判 11。类似地，100 ≡ −1 (mod 101)，1000 ≡ −1 (mod 1001)：按两位或三位分组后交替加减，分别检验 101 或 1001。</p></div>
-            <div><b>一个模 7 的分组例子</b><p>1000 ≡ −1 (mod 7)，所以五位数 abcde = ab×1000+cde ≡ cde−ab (mod 7)。算出 cde−ab 的余数，就知道原数除以 7 的余数。</p></div>
+            <div><b>7、13：三位一组交替相减</b><p>1000 除以 7 和 13 都余 −1，所以按右起每三位分组并交替加减，所得数与原数除以 7 或 13 的余数相同。例如 123456 按组得到 456−123=333；333 除以 7 余 4，除以 13 余 8，因此原数也分别余 4、余 8。7 也可用“去末位减去末位的 2 倍”；13 可用“去末位加上末位的 4 倍”。</p></div>
           </div>
           <div class="nt-insight"><b>为什么能“只看尾巴”？</b><span>若 10ᵏ 能被 m 整除，写成 N = 10ᵏq + r 后，第一项除以 m 余 0，所以 N 与末 k 位 r 同余。</span></div>
         </div>

@@ -1,0 +1,45 @@
+/* Small-screen navigation: keep labels intact and give the menu its own row. */
+@media (max-width: 650px) {
+  :root { scroll-padding-top: 128px; }
+
+  .topbar {
+    height: auto;
+    min-height: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    gap: 8px 12px;
+    padding: 10px 17px;
+  }
+
+  .topbar .brand { flex: 0 0 auto; }
+
+  .topbar .nav-cta {
+    order: 2;
+    flex: 0 0 auto;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  .topbar .topnav {
+    order: 3;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px 14px;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .topbar .topnav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow-wrap: normal;
+  }
+
+  .topbar .topnav a:last-child { display: inline-flex; }
+}

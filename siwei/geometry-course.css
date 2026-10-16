@@ -49,6 +49,83 @@
 #bc-symmetry-svg { display: block; width: 100%; max-width: 430px; height: auto; justify-self: center; overflow: visible; }
 .bc-symmetry-svg-note { fill: #65766a; font: 600 11px system-ui, sans-serif; }
 .bc-symmetry-svg-label { fill: #355443; font: 700 12px system-ui, sans-serif; }
+
+.bc-rectangle-lab,
+.bc-rectangle-lab * { box-sizing: border-box; }
+.bc-rectangle-lab {
+  min-width: 0;
+  margin: 14px 0 20px;
+  padding: 14px 16px;
+  border: 1px solid #dfe8dc;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f4f8ef, #fffefa 78%);
+}
+.bc-rectangle-heading { margin-bottom: 10px; }
+.bc-rectangle-heading h3 { margin: 4px 0; color: #365b40; font-size: 15px; line-height: 1.55; }
+.bc-rectangle-heading p { margin: 0; color: #65736a; font-size: 11px; line-height: 1.7; }
+.bc-rectangle-layout {
+  display: grid;
+  grid-template-columns: minmax(205px, .84fr) minmax(0, 1.16fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.bc-rectangle-controls { display: grid; gap: 10px; min-width: 0; }
+.bc-rectangle-control {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: #52645a;
+  font-size: 11px;
+  font-weight: 800;
+}
+.bc-rectangle-control input[type="range"] { width: 100%; min-width: 0; height: 36px; accent-color: #5b8b62; cursor: pointer; }
+.bc-rectangle-control input:focus-visible,
+.bc-rectangle-guide-button:focus-visible { outline: 3px solid #bad7b9; outline-offset: 3px; }
+.bc-rectangle-control output { color: #3d7655; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bc-rectangle-hint { margin: 0; color: #65736a; font-size: 10px; line-height: 1.7; }
+.bc-rectangle-result,
+.bc-rectangle-change {
+  margin: 0;
+  padding: 9px 10px;
+  border-left: 3px solid #78a47b;
+  border-radius: 0 9px 9px 0;
+  background: #edf4e9;
+  color: #365b40;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.bc-rectangle-change { border-left-color: #cf956d; background: #fbf2e8; color: #745039; }
+.bc-rectangle-svg { display: block; width: 100%; max-width: 470px; height: auto; justify-self: center; overflow: hidden; }
+.bc-rectangle-svg-label { fill: #355443; font: 700 13px system-ui, sans-serif; }
+.bc-rectangle-guide {
+  margin-top: 12px;
+  padding: 11px 12px;
+  border: 1px dashed #d5bf9e;
+  border-radius: 11px;
+  background: #fffaf1;
+}
+.bc-rectangle-guide h4 { margin: 0 0 4px; color: #70533b; font-size: 12px; line-height: 1.6; }
+.bc-rectangle-guide p { margin: 0; color: #675b4b; font-size: 11px; line-height: 1.75; overflow-wrap: anywhere; }
+.bc-rectangle-guide-button {
+  min-height: 38px;
+  margin-top: 9px;
+  padding: 7px 12px;
+  border: 1px solid #d4c09f;
+  border-radius: 9px;
+  background: #fffefa;
+  color: #72583e;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
 @media (max-width: 650px) {
   .bc-symmetry-lab { padding: 11px; }
   .bc-symmetry-layout { grid-template-columns: minmax(0, 1fr); gap: 10px; }
@@ -58,4 +135,14 @@
   .bc-solid-controls .bc-control-row input[type="range"] { height: 36px; }
   .bc-solid-actions .bc-lab-button { min-height: 40px; }
   #bc-symmetry-svg { max-width: 420px; }
+  .bc-rectangle-lab { padding: 11px; }
+  .bc-rectangle-layout { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .bc-rectangle-controls { gap: 8px; }
+  .bc-rectangle-control { grid-template-columns: 62px minmax(0, 1fr) 46px; gap: 6px; }
+  .bc-rectangle-control input[type="range"] { height: 40px; }
+  .bc-rectangle-result, .bc-rectangle-change { font-size: 12px; }
+  .bc-rectangle-svg { max-width: 430px; }
+  .bc-rectangle-guide { padding: 10px; }
+  .bc-rectangle-guide p { font-size: 12px; }
+  .bc-rectangle-guide-button { min-height: 42px; }
 }

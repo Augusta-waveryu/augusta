@@ -115,6 +115,66 @@
     }
   });
 
+  const rectangleLesson = document.getElementById('bc-topic-perimeter-area');
+  const rectangleFigure = document.getElementById('bc-figure-perimeter-area');
+  if (rectangleLesson && rectangleFigure && !document.getElementById('bc-rectangle-lab')) {
+    rectangleFigure.insertAdjacentHTML('afterend', `<section id="bc-rectangle-lab" class="bc-rectangle-lab" aria-labelledby="bc-rectangle-title"><div class="bc-rectangle-heading"><span class="bc-section-label">动手试一试 · 2D 长方形</span><h3 id="bc-rectangle-title">调一调边长，看看周长和面积怎么变</h3><p>每次只改一个边长，另一条边保持不变。键盘可用方向键；触屏可直接拖动滑杆。每个小格的边长是 1 cm。</p></div><div class="bc-rectangle-layout"><div class="bc-rectangle-controls"><label class="bc-rectangle-control" for="bc-rectangle-length"><span>长（cm）</span><input id="bc-rectangle-length" type="range" min="1" max="10" step="1" value="8" aria-describedby="bc-rectangle-hint"><output id="bc-rectangle-length-out" for="bc-rectangle-length">8 cm</output></label><label class="bc-rectangle-control" for="bc-rectangle-width"><span>宽（cm）</span><input id="bc-rectangle-width" type="range" min="1" max="8" step="1" value="3" aria-describedby="bc-rectangle-hint"><output id="bc-rectangle-width-out" for="bc-rectangle-width">3 cm</output></label><p id="bc-rectangle-hint" class="bc-rectangle-hint">浅绿色区域由 1 cm × 1 cm 的小格铺成；边框绕一圈是周长，格子铺开的大小是面积。</p><p id="bc-rectangle-result" class="bc-rectangle-result" aria-live="polite"></p><p id="bc-rectangle-change" class="bc-rectangle-change" aria-live="polite"></p></div><svg id="bc-rectangle-svg" class="bc-rectangle-svg" viewBox="0 0 460 280" role="img" aria-label="长8厘米、宽3厘米的长方形；周长22厘米，面积24平方厘米"></svg></div><aside class="bc-rectangle-guide" aria-label="宽度变化的带做比较"><h4>跟着比一比：只改宽，长不变</h4><p>固定长 <b>8 cm</b>，把宽从 <b>3 cm</b> 增加到 <b>5 cm</b>，所以 Δ=2 cm。周长从 22 cm 变成 26 cm，增加 <b>2×Δ=4 cm</b>；面积从 24 cm² 变成 40 cm²，增加 <b>长×Δ=8×2=16 cm²</b>。长保持 8 cm 不变。</p><button class="bc-rectangle-guide-button" type="button" id="bc-rectangle-guide-start">从长 8 cm、宽 3 cm 开始比较</button></aside></section>`);
+
+    const lengthInput = document.getElementById('bc-rectangle-length');
+    const widthInput = document.getElementById('bc-rectangle-width');
+    const rectangleSvg = document.getElementById('bc-rectangle-svg');
+    const result = document.getElementById('bc-rectangle-result');
+    const change = document.getElementById('bc-rectangle-change');
+    let previous = { length: 8, width: 3 };
+
+    const renderRectangle = (forcedMessage = '') => {
+      const length = Number(lengthInput.value);
+      const width = Number(widthInput.value);
+      const perimeter = 2 * (length + width);
+      const area = length * width;
+      const unit = 24;
+      const rectWidth = length * unit;
+      const rectHeight = width * unit;
+      const x = (460 - rectWidth) / 2;
+      const y = (280 - rectHeight) / 2;
+      const midY = y + rectHeight / 2;
+      const topMeasureY = y - 13;
+      const widthMeasureX = x - 12;
+
+      document.getElementById('bc-rectangle-length-out').textContent = `${length} cm`;
+      document.getElementById('bc-rectangle-width-out').textContent = `${width} cm`;
+      rectangleSvg.setAttribute('aria-label', `长${length}厘米、宽${width}厘米的长方形；周长${perimeter}厘米，面积${area}平方厘米。每个网格小格是1平方厘米。`);
+      rectangleSvg.innerHTML = `<title>长 ${length} cm、宽 ${width} cm 的长方形</title><desc>长边和宽边按同一比例绘制；内部每个小格是 1 cm 乘 1 cm。周长 ${perimeter} cm，面积 ${area} cm²。</desc><defs><pattern id="bc-rectangle-grid" width="${unit}" height="${unit}" patternUnits="userSpaceOnUse"><rect width="${unit}" height="${unit}" fill="#e8f1e5"/><path d="M${unit} 0H0V${unit}" fill="none" stroke="#c4d8c2" stroke-width="1"/></pattern></defs><path d="M${x} ${topMeasureY}H${x + rectWidth}M${x} ${topMeasureY - 4}V${topMeasureY + 4}M${x + rectWidth} ${topMeasureY - 4}V${topMeasureY + 4}" fill="none" stroke="#c47d55" stroke-width="1.7"/><text x="230" y="${y - 21}" text-anchor="middle" class="bc-rectangle-svg-label">长 ${length} cm</text><path d="M${widthMeasureX} ${y}V${y + rectHeight}M${widthMeasureX - 4} ${y}H${widthMeasureX + 4}M${widthMeasureX - 4} ${y + rectHeight}H${widthMeasureX + 4}" fill="none" stroke="#c47d55" stroke-width="1.7"/><text x="42" y="${midY}" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 42 ${midY})" class="bc-rectangle-svg-label">宽 ${width} cm</text><rect x="${x}" y="${y}" width="${rectWidth}" height="${rectHeight}" fill="url(#bc-rectangle-grid)" stroke="#548366" stroke-width="3" rx="2"/>`;
+      result.textContent = `周长：2 × (${length} + ${width}) = ${perimeter} cm。面积：${length} × ${width} = ${area} cm²。`;
+
+      if (forcedMessage) {
+        change.textContent = forcedMessage;
+      } else if (length === previous.length && width !== previous.width) {
+        const delta = Math.abs(width - previous.width);
+        const direction = width > previous.width ? '增加' : '减少';
+        change.textContent = `长保持 ${length} cm 不变；宽${direction} Δ=${delta} cm，所以周长${direction} 2×${delta}=${2 * delta} cm，面积${direction} ${length}×${delta}=${length * delta} cm²。`;
+      } else if (width === previous.width && length !== previous.length) {
+        const delta = Math.abs(length - previous.length);
+        const direction = length > previous.length ? '增加' : '减少';
+        change.textContent = `宽保持 ${width} cm 不变；长${direction} Δ=${delta} cm，所以周长${direction} 2×${delta}=${2 * delta} cm，面积${direction} ${width}×${delta}=${width * delta} cm²。`;
+      } else if (length !== previous.length || width !== previous.width) {
+        change.textContent = '长和宽都变了；比较面积或周长时，记得看清每一条边各改变了多少。';
+      } else {
+        change.textContent = '拖动一条边的滑杆；另一条边保持原值，观察周长和面积。';
+      }
+      previous = { length, width };
+    };
+
+    [lengthInput, widthInput].forEach((input) => input.addEventListener('input', () => renderRectangle()));
+    document.getElementById('bc-rectangle-guide-start').addEventListener('click', () => {
+      lengthInput.value = '8';
+      widthInput.value = '3';
+      previous = { length: 8, width: 3 };
+      renderRectangle('比较起点已设好：长 8 cm、宽 3 cm。现在只把“宽”调到 5 cm，看看变化。');
+    });
+    renderRectangle();
+  }
+
   const symmetryLesson = document.getElementById('bc-topic-grid-symmetry');
   const symmetryFigure = document.getElementById('bc-figure-grid-symmetry');
   if (symmetryLesson && symmetryFigure && !document.getElementById('bc-symmetry-lab')) {

@@ -92,13 +92,29 @@
     make(2,19,'跨过整点计算经过时间：分两段数','时间与测量','能把跨过一个整点的短时段拆成两段计算。','先数到下一个整点，再数到结束时刻，把两段分钟数相加。','从 3:50 到 4:10 经过了多少分钟？',['先数到 4:00：3:50 到 4:00 是 10 分钟。','再从 4:00 数到 4:10：是 10 分钟。','合起来 10 + 10 = 20 分钟。'],'从 5:45 到 6:15，经过了多少分钟？','30分钟','分别数整点前的 15 分钟和整点后的 15 分钟。','5:45 到 6:00 是 15 分钟；6:00 到 6:15 是 15 分钟，共 30 分钟。','sequences','cyclic-patterns','基础衔接 · 原创题','低年级跨整点时间原创课')
   ];
 
-  const gradeThree = (window.AOSHU_TEXTBOOK_LESSONS || []).map((lesson) => ({
-    ...lesson,
-    grade: 3,
-    key: `g3-${lesson.n}`,
-    status: /目录只列讲名/.test(lesson.status || '') ? '目录只列讲名 · 原创迁移课' : '《奥数教程》主题 · 原创例题',
-    source: '主题参照：《奥数教程三年级（第八版）》公开目录；逐讲映射/页码待核，例题与练习为本项目原创。'
-  }));
+  const gradeThree = (window.AOSHU_TEXTBOOK_LESSONS || []).map((lesson) => {
+    const key = `g3-${lesson.n}`;
+    const deepUnit = window.AOSHU_ELEMENTARY_DEEP_UNITS?.[`roadmap:${key}`] || null;
+    const firstPractice = deepUnit?.practices?.[0];
+    return {
+      ...lesson,
+      grade: 3,
+      key,
+      title: deepUnit?.roadmapTitle || lesson.title,
+      group: deepUnit?.roadmapGroup || lesson.group,
+      status: deepUnit?.label || (/目录只列讲名/.test(lesson.status || '') ? '目录只列讲名 · 原创迁移课' : '《奥数教程》主题 · 原创例题'),
+      source: '主题参照：《奥数教程三年级（第八版）》公开目录；逐讲映射/页码待核，例题与练习为本项目原创。',
+      deepUnit,
+      goal: deepUnit?.goal || lesson.goal,
+      idea: deepUnit?.idea || lesson.idea,
+      example: deepUnit?.example?.question || lesson.example,
+      steps: deepUnit?.example?.steps || lesson.steps,
+      practice: firstPractice?.question || lesson.practice,
+      answers: firstPractice?.answers || lesson.answers,
+      hint: firstPractice?.hint || lesson.hint,
+      explanation: firstPractice?.explanation || lesson.explanation
+    };
+  });
 
   // Make the smallest useful prerequisite explicit on every Grade 3 route card.
   const gradeThreePrerequisites = {

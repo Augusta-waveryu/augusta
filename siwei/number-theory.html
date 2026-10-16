@@ -222,10 +222,33 @@
             <label class="nt-field-label" for="nt-run-input">把一个数拆成连续正整数之和</label>
             <div class="nt-input-button"><input id="nt-run-input" type="number" min="2" max="5000" value="24" inputmode="numeric"><button type="button" id="nt-run-button">找找看</button></div>
             <div id="nt-run-output" class="nt-run-output" aria-live="polite"></div>
+            <div class="nt-run-reverse">
+              <p><b>反向检查一个指定长度：</b>沿用上方总和 N，输入项数 k；页面会检验条件，并在可行时构造首项。</p>
+              <div class="nt-run-reverse-row"><label for="nt-run-length">项数 k（至少 2）</label><input id="nt-run-length" type="number" min="2" max="1000" value="3" inputmode="numeric"><button type="button" id="nt-run-length-button">检查并构造</button></div>
+              <div id="nt-run-length-result" class="nt-rem-output" aria-live="polite"></div>
+            </div>
             <div class="nt-insight"><b>和因数个数的联系：</b><span>若 N = 2ᵏm（m 为奇数），N 写成两个或更多连续正整数之和的种数为 τ(m)−1。若把 N 自己也算作一项，再加 1。</span></div>
             <p class="nt-formula-small">等长为 ℓ、首项为 s：N = ℓ(2s + ℓ − 1) ÷ 2。</p>
           </div>
         </div>
+        <section class="nt-depth-module" id="nt-divisor-sum-guide" aria-labelledby="nt-divisor-sum-title">
+          <div class="nt-depth-heading"><span class="nt-depth-tag">思维拓展 · 年级/课标对应待核</span><h3 id="nt-divisor-sum-title">因数和公式：为什么各组几何和要相乘？</h3></div>
+          <div class="nt-depth-grid">
+            <article class="nt-depth-block"><h4>先修与选法</h4><p>先把 N 分解为互不相同的质数幂：N=p₁<sup>a₁</sup>×…×pₜ<sup>aₜ</sup>。问正因数个数时数每个指数的选法；问正因数总和时，把每个质数幂的所有可能值分别相加，再把这些和相乘。</p><p class="nt-depth-formula">σ(N)=∑<sub>d∣N, d&gt;0</sub>d=∏<sub>i=1</sub><sup>t</sup>(1+pᵢ+…+pᵢ<sup>aᵢ</sup>)=∏<sub>i=1</sub><sup>t</sup>(pᵢ<sup>aᵢ+1</sup>−1)/(pᵢ−1)</p></article>
+            <article class="nt-depth-block"><h4>直觉与理由：每个因数恰好一次</h4><p>每个正因数都能且只能写成 d=p₁<sup>e₁</sup>…pₜ<sup>eₜ</sup>，其中 0≤eᵢ≤aᵢ。把上面的乘积展开，就等于从每个括号各选一项；每一组选择正好给出一个指数向量。质因数分解唯一，所以不会重复，也不会漏掉任何正因数。这就是“先求各组幂和、再相乘”恰好把所有正因数各加一次的原因。</p></article>
+            <article class="nt-depth-block"><h4>例题：360 的正因数和</h4><p>360=2³×3²×5。于是 σ(360)=(1+2+4+8)(1+3+9)(1+5)=15×13×6=<strong>1170</strong>。例如选 2²、3¹、5⁰ 就得到因数 12；每一种指数选择都按同一规则出现一次。</p><p class="nt-depth-return"><b>回查：</b>把列出的因数相加应得 1170；也可检查乘积各括号的指数上限是否分别到 3、2、1。</p></article>
+            <article class="nt-depth-block nt-depth-boundary"><h4>边界：N=1</h4><p>1 没有质因数；它唯一的正因数是 1，所以 σ(1)=1。公式把“没有括号的乘积”按空乘积约定为 1。这里求的是正因数和，不把负因数也加进去。</p></article>
+          </div>
+        </section>
+        <section class="nt-depth-module" id="nt-consecutive-guide" aria-labelledby="nt-consecutive-title">
+          <div class="nt-depth-heading"><span class="nt-depth-tag">思维拓展 · 年级/课标对应待核</span><h3 id="nt-consecutive-title">连续正整数和：判定长度，再反向构造</h3></div>
+          <div class="nt-depth-grid">
+            <article class="nt-depth-block"><h4>先修与选法</h4><p>先会把连续数写成 a,a+1,…,a+k−1；若只问给定 N、k 是否可行，就用长度判据；若要列出所有表示，按 k=2 到最大可能长度逐个检验。k=1 的单项 N 不算“至少两项”。</p><p class="nt-depth-formula">N=k(2a+k−1)/2；a=[2N/k−k+1]/2，且必须是正整数。</p><p>正项给出最大长度：2≤k≤⌊(√(8N+1)−1)/2⌋。这是因为最小的 k 项正整数和为 k(k+1)/2。</p></article>
+            <article class="nt-depth-block"><h4>必要且充分条件：奇数 k 与偶数 k</h4><ul><li><b>k 为奇数：</b>必须 k∣N；再取 a=N/k−(k−1)/2，且 a≥1（等价于 N≥k(k+1)/2）。</li><li><b>k 为偶数：</b>q=2N/k 必须是奇整数且 q≥k+1；此时 a=(q−k+1)/2 是正整数。只检查 k∣2N 还不够，商必须为奇数。</li></ul><p>通过判据后，首项 a 唯一；因此从 a 开始写出 k 项，就是反向构造。</p></article>
+            <article class="nt-depth-block"><h4>为什么判据成立？例题怎样回代？</h4><p>首尾配对：首项与末项的和都是 2a+k−1；若 k 为奇数，正中间还有一个中项，所以平均数 N/k 必须是整数；若 k 为偶数，平均数是半整数，等价于 2N/k 为奇数。</p><p>例：N=42、k=4。q=84/4=21，是奇数且不小于 5；a=(21−4+1)/2=9，构造 9+10+11+12=42，回代通过。</p><p class="nt-depth-return"><b>回查：</b>项数为 4、首项为正，和为 42；要保证列全，再检查所有 2≤k≤⌊(√337−1)/2⌋。</p></article>
+            <article class="nt-depth-block nt-depth-boundary"><h4>反例与计数结论的来由</h4><p>N=20、k=4 时，最小和 10 不超 20，但 q=40/4=10 是偶数，所以不存在；N=3、k=3 虽然 3 能被 3 整除，反求首项却是 0，仍不是正整数。</p><details class="nt-depth-proof-fold"><summary>为什么“至少两项”的种数等于奇因数个数减 1？</summary><p>长度 k、首项 a 的表示等价于 2N=k·h，其中 h=2a+k−1&gt;k，且 k、h 奇偶相反。两者中恰有一个是奇数 d；由 2N=k·h 可知 d∣N。反过来，对每个正奇因数 d∣N，令 h=2N/d，取 k=min(d,h)、H=max(d,h)，再令 a=(H−k+1)/2，就得到唯一一组连续正整数和；因为 k、H 奇偶相反且 H&gt;k，a 是正整数。两种构造互逆，所以表示与正奇因数一一对应。奇因数 1 对应单项 N；要求至少两项时去掉它，种数为 τ(N 的奇数部分)−1。</p></details></article>
+          </div>
+        </section>
         <div class="nt-divisor-functions" id="nt-原讲义第 3 讲-divisor-functions">
           <div class="nt-card-label">原讲义第 3 讲 补充 · 从因数个数继续数</div>
           <p class="nt-divisor-functions-lead">以 2024 = 2³×11×23、τ(2024)=16 为例。页面原有因数个数公式和第4天的最小 18 因数问题保留在上方；这里补上笔记中尚未出现的因数和、因数乘积与互质分子问题。</p>
@@ -411,6 +434,15 @@
             <div class="nt-answer-ribbon"><b>最小正解 n=157</b><span>令 2n+1=315(1+2k)，得到 n=157+315k，k=0、1、2、…。</span></div>
           </div>
         </div>
+        <section class="nt-depth-module nt-crt-depth" id="nt-crt-guide" aria-labelledby="nt-crt-depth-title">
+          <div class="nt-depth-heading"><span class="nt-depth-tag">思维拓展 · 年级/课标对应待核</span><h3 id="nt-crt-depth-title">中国剩余定理：先查兼容，再合并成完整解类</h3></div>
+          <div class="nt-depth-grid">
+            <article class="nt-depth-block"><h4>先修与方法选择</h4><p>先把每条条件写成标准余数 0≤r&lt;m，并会求 gcd、lcm。模数两两互质时，普通 CRT 保证模数乘积周期内恰有一个解类；模数不互质时仍可能有解，但要先查兼容，不能直接把周期相乘。模数小也可枚举，但要完整检查一个 lcm 周期。</p></article>
+            <article class="nt-depth-block"><h4>兼容的必要且充分条件</h4><p>任意两条 n≡rᵢ (mod mᵢ)、n≡rⱼ (mod mⱼ) 有共同整数，当且仅当 rᵢ−rⱼ 能被 gcd(mᵢ,mⱼ) 整除。对多条条件，先检查每一对；全部通过后再逐条合并。</p><p><b>反例：</b>n≡1 (mod 4)、n≡2 (mod 6) 中 gcd=2，但 1−2=−1 不是 2 的倍数，因此无解。</p></article>
+            <article class="nt-depth-block"><h4>合并步骤：需要逆元时再用扩展欧几里得</h4><p>已有 n≡R (mod M)，要并入 n≡r (mod m)，令 n=R+Mt、g=gcd(M,m)。先查 g∣(r−R)，再约化为 (M/g)t≡(r−R)/g (mod m/g)。约化后的两个系数互质；用扩展欧几里得求 M/g 的模 m/g 逆元，就能唯一确定 t (mod m/g)。</p><p>所以新周期为 M(m/g)=lcm(M,m)。若 m/g=1，旧条件已包含新条件，不必求逆元。</p></article>
+            <article class="nt-depth-block"><h4>非互质例题：完整解而不只报一个数</h4><p>拼 n≡2 (mod 6)、n≡8 (mod 10)。g=2，差 6 可被 2 整除。令 n=2+6t，得 3t≡3 (mod 5)；扩展欧几里得给出 3⁻¹≡2 (mod 5)，所以 t≡1 (mod 5)，即 <b>n≡8 (mod 30)</b>。</p><p>代回：8 除以 6 余 2，除以 10 余 8。完整整数解为 n=8+30z（z∈ℤ）；最小正整数解是 8。</p></article>
+          </div>
+        </section>
         <div class="nt-tool-card nt-crt-tool">
           <div class="nt-card-topline"><span class="nt-card-label">互动 · 自己拼三条余数线索</span><span class="nt-live-dot">也检查模数不互质的情况</span></div>
           <div class="nt-crt-inputs">

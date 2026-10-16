@@ -73,3 +73,33 @@
 .nt-learning-route{padding:30px 0 8px;scroll-margin-top:92px}.nt-route-heading{align-items:flex-end;margin-bottom:17px}.nt-route-heading h2{margin:6px 0 0;font-size:29px;letter-spacing:-.04em}.nt-route-heading>p{max-width:410px;line-height:1.8}.nt-route-howto{display:flex;gap:12px;align-items:flex-start;margin:0 0 14px;padding:12px 15px;border:1px solid #dfe8dd;border-radius:13px;background:#eef4eb;color:#52655b;font-size:11px;line-height:1.8}.nt-route-howto b{flex:0 0 auto;color:#315b4c}.nt-route-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.nt-route-card{display:flex;flex-direction:column;min-width:0;padding:16px 15px 14px;border:1px solid #e4e8df;border-radius:17px;background:#fffefa;box-shadow:0 9px 24px rgba(41,64,54,.055)}.nt-route-card-top{display:flex;align-items:center;justify-content:space-between}.nt-route-card-top>span{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#e8f1e7;color:#467c61;font-size:13px;font-weight:900}.nt-route-card-top small{color:#8a9890;font-size:9px;font-weight:900;letter-spacing:.1em}.route-build .nt-route-card-top>span{background:#edf0fb;color:#686eaa}.route-connect .nt-route-card-top>span{background:#fbf0df;color:#a77a36}.route-finish .nt-route-card-top>span{background:#f5eaf0;color:#a56781}.nt-route-card h3{margin:12px 0 6px;color:#263d36;font-size:15px;line-height:1.5}.nt-route-card>p{min-height:68px;margin:0;color:#718078;font-size:10px;line-height:1.8}.nt-route-lessons{display:grid;gap:6px;padding:11px 0;border-top:1px dashed #e3e8df}.nt-route-lessons a{display:flex;align-items:center;justify-content:space-between;gap:5px;color:#3f7562;font-size:10px;font-weight:800;line-height:1.5}.nt-route-lessons a:hover{text-decoration:underline}.nt-route-lessons i{flex:0 0 auto;color:#9baa9c;font-size:12px;font-style:normal}.nt-route-practice{display:flex;align-items:center;justify-content:space-between;gap:5px;margin-top:auto;padding:9px 10px;border-radius:9px;background:#f1f5ef;color:#3b725d;font-size:10px;font-weight:900}.nt-route-practice:hover{background:#e3efe3}.nt-route-footnote{margin:12px 0 0;color:#738079;font-size:10px;line-height:1.7}.nt-map{scroll-margin-top:92px}
 @media(max-width:980px){.nt-route-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nt-route-card>p{min-height:0}}
 @media(max-width:600px){.nt-learning-route{padding-top:22px}.nt-route-heading{align-items:flex-start}.nt-route-heading h2{font-size:23px}.nt-route-heading>p{font-size:10px}.nt-route-howto{display:grid;gap:3px;font-size:10px}.nt-route-grid{grid-template-columns:1fr;gap:8px}.nt-route-card{padding:14px;border-radius:14px}.nt-route-card h3{font-size:14px}.nt-route-card>p{font-size:10px}.nt-route-lessons{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 10px}.nt-route-practice{margin-top:5px}.nt-route-footnote{font-size:9px}}
+
+
+/* Number-theory extensions: explanatory proofs, criteria, and compact controls. */
+.nt-depth-module{min-width:0;margin:18px 0 0;padding:clamp(14px,2.5vw,22px);border:1px solid #e3e8de;border-radius:18px;background:#fffefa;box-shadow:0 8px 24px rgba(41,64,54,.045)}
+.nt-depth-heading{display:grid;gap:8px;margin-bottom:14px}
+.nt-depth-heading h3{margin:0;color:#294338;font-size:clamp(17px,2.2vw,22px);line-height:1.5;overflow-wrap:anywhere}
+.nt-depth-tag{justify-self:start;padding:5px 9px;border-radius:999px;background:#f1ecf5;color:#76557c;font-size:10px;font-weight:900;line-height:1.5}
+.nt-depth-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.nt-depth-block{min-width:0;padding:13px;border:1px solid #e7ebe4;border-radius:13px;background:#fff}
+.nt-depth-block h4{margin:0 0 7px;color:#385e4d;font-size:13px;line-height:1.55}
+.nt-depth-block p,.nt-depth-block li{color:#64746b;font-size:11px;line-height:1.85;overflow-wrap:anywhere}
+.nt-depth-block p{margin:6px 0}
+.nt-depth-block ul{margin:6px 0;padding-left:20px}
+.nt-depth-block strong,.nt-depth-block b{color:#335846}
+.nt-depth-formula{padding:9px 10px;border-radius:9px;background:#f1f5ef;color:#355e4d!important;font-weight:850;overflow-wrap:anywhere;word-break:normal}
+.nt-depth-return{padding:8px 10px;border-left:3px solid #8db493;border-radius:5px;background:#f3f7f0}
+.nt-depth-boundary{background:#fcfaf7}
+.nt-depth-proof-fold{margin-top:9px;padding:9px 10px;border:1px solid #ebe6dc;border-radius:9px;background:#faf8f3}
+.nt-depth-proof-fold summary{color:#6c5b43;font-size:11px;font-weight:850;line-height:1.7;cursor:pointer}
+.nt-depth-proof-fold p{margin-bottom:0}
+.nt-run-reverse{display:grid;gap:8px;margin-top:12px;padding:11px;border:1px solid #e4e9df;border-radius:11px;background:#f9fbf7}
+.nt-run-reverse>p{margin:0;color:#68766e;font-size:10px;line-height:1.8}
+.nt-run-reverse-row{display:grid;grid-template-columns:minmax(0,1fr) 76px auto;gap:7px;align-items:end}
+.nt-run-reverse-row label{min-width:0;color:#52675b;font-size:10px;font-weight:800;line-height:1.6}
+.nt-run-reverse-row input{box-sizing:border-box;width:100%;min-width:0;padding:8px;border:1px solid #dce4da;border-radius:8px;background:#fff;color:#34483d;font:inherit}
+.nt-run-reverse-row button{min-width:0;padding:8px 10px;border:0;border-radius:8px;background:#477a61;color:#fff;font-size:10px;font-weight:850;white-space:nowrap;cursor:pointer}
+.nt-run-reverse-row button:hover{background:#37684f}
+.nt-run-reverse .nt-rem-output{min-width:0}
+@media(max-width:700px){.nt-depth-grid{grid-template-columns:1fr}.nt-depth-module{border-radius:14px}.nt-depth-block{padding:12px}}
+@media(max-width:380px){.nt-run-reverse-row{grid-template-columns:minmax(0,1fr) 68px}.nt-run-reverse-row button{grid-column:1/-1;width:100%}.nt-depth-module{padding:12px}.nt-depth-heading h3{font-size:17px}.nt-depth-block p,.nt-depth-block li{font-size:10px}.nt-depth-formula{font-size:10px}}

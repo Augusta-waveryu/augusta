@@ -187,11 +187,68 @@
     });
     [
       ['remainders', '/siwei/number-theory.html#nt-原讲义第 6 讲'],
-      ['congruences', '/siwei/number-theory.html#nt-原讲义第 7 讲'],
+      ['congruences', '/siwei/number-theory.html#nt-原讲义第 8 讲-remainders'],
       ['digits-bases', '/siwei/number-theory.html#nt-原讲义第 9 讲-number-base'],
       ['squares', '/siwei/number-theory.html#nt-原讲义第 10 讲-squares'],
       ['factor-identities', '/siwei/number-theory.html#nt-identities']
     ].forEach(([id, link]) => Object.assign(numberLesson(id), { link }));
+    const divisorLesson = numberLesson('divisor-structure');
+    Object.assign(divisorLesson, {
+      level: '思维拓展',
+      methodGuide: {
+        prerequisites: '先会把大于 1 的正整数唯一分解成质数幂，并知道正因数里的质数指数可以从 0 选到原指数。连续和部分还要会把等差数列首尾配对；本页不宣称对应某个官方年级。',
+        when: '问“所有正因数之和”时，把各质数幂的可能值分别相加，再相乘；给定 N 和项数 k 时，用连续和公式作必要且充分检验；要列出所有长度时，只检查不超过正数最小和边界的 k。',
+        route: [
+          { title: '① 分解并先定对象', text: '写 N=∏pᵢᵃⁱ，pᵢ 是互不相同的质数、aᵢ≥1；本公式求的是正因数。N=1 单独按空乘积处理。' },
+          { title: '② 每个指数独立选择', text: '每个正因数唯一写成 d=∏pᵢᵉⁱ，0≤eᵢ≤aᵢ。计数为 τ(N)=∏(aᵢ+1)；求和为 σ(N)=∏(1+pᵢ+…+pᵢᵃⁱ)=∏(pᵢᵃⁱ⁺¹−1)/(pᵢ−1)。' },
+          { title: '③ 题目给定连续项数 k 时', text: '先写 N=k(2a+k−1)/2，其中 a 是首项且 a≥1。k 为奇数：必须 k∣N，且 a=N/k−(k−1)/2≥1。k 为偶数：q=2N/k 必须是奇整数且 q≥k+1，再取 a=(q−k+1)/2。' },
+          { title: '④ 要找所有表示时，先限长度', text: 'k 项正整数的最小和为 k(k+1)/2，所以只需检查 2≤k≤⌊(√(8N+1)−1)/2⌋。每个通过的 k 由上式唯一反求 a；再写出 a,…,a+k−1。' },
+          { title: '⑤ 只问种数时再用奇因数结论', text: '写 N=2ᵛu，u 为奇数。所有正长度表示（含单项 N）与 u 的正因数一一对应；若要求至少两项，种数为 τ(u)−1。这个计数结论不替代逐个长度构造。' }
+        ],
+        why: '展开 (1+p₁+…+p₁ᵃ¹)…(1+pₜ+…+pₜᵃᵗ)，每一项恰好从每个括号各选一个 pᵢᵉⁱ，形成一个因数。质因数分解唯一，所以不同指数向量不会重复得到同一个因数，且每个正因数都出现一次；因此乘积展开后正好把所有因数各加一次。连续和的公式来自首尾配对：a+(a+1)+…+(a+k−1)=k(2a+k−1)/2；给定 N、k 后首项被唯一确定，奇偶判据只是把“首项为正整数”拆开检查。',
+        pitfall: '因数和不是把各因数幂的底数相乘，而是先把每组幂相加再相乘；指数 0 对应因数 1。连续和中 k=1 是单项 N，不属于“至少两项”；偶数 k 不能只检查 k∣2N，还必须要求 2N/k 为奇数；无论奇偶都要检查首项 a≥1。',
+        transfer: '例如 15=2⁰×15 的奇因数有 1、3、5、15，所以所有正长度表示有 4 种；去掉单项 15 后是 3 种。若要列出它们，再分别反求长度：1+2+3+4+5、4+5+6、7+8。',
+        returnCheck: '每次反求首项后，检查 a 是正整数、项数确为 k，并把 a+(a+1)+…+(a+k−1) 算回 N。要声称“全部”，还要说明已经检查到 k(k+1)/2≤N 的最大长度；要声称“种数”，再核对是否把单项 N 排除。'
+      },
+      practice: [
+        ...divisorLesson.practice,
+        { q: '【基础·因数和】360=2³×3²×5，所有正因数之和 σ(360) 是多少？', a: ['1170'], hint: '分别计算 1+2+4+8、1+3+9、1+5，再把三个和相乘。', why: 'σ(360)=(1+2+4+8)(1+3+9)(1+5)=15×13×6=1170。展开时每个质数指数各选一次，唯一分解保证每个正因数恰好出现一次。' },
+        { q: '【奇数项数·反向构造】45 能写成 5 个连续正整数之和吗？若能，首项是多少？', a: ['7'], hint: 'k=5 为奇数，先查 5∣45，再算 a=45/5−(5−1)/2。', why: '5∣45，且 a=9−2=7≥1，所以构造为 7+8+9+10+11=45；回代通过。' },
+        { q: '【偶数项数·反向构造】42 能写成 4 个连续正整数之和吗？若能，首项是多少？', a: ['9'], hint: '算 q=2N/k；k 为偶数时 q 必须是奇整数，并且 q≥k+1。', why: 'q=2×42/4=21，是奇整数且 21≥5。首项 a=(21−4+1)/2=9；回代 9+10+11+12=42。' },
+        { q: '【边界反例】20 能写成 4 个连续正整数之和吗？能填 1，不能填 0。', a: ['0'], hint: '最小和 1+2+3+4=10 虽不超 20，但还要检查 q=2×20/4 是否为奇数。', why: 'q=10 是偶数，不满足偶数项数判据；首项会是 (10−4+1)/2=3.5，不是整数，所以不能构造。' },
+        { q: '【正项边界】3 能写成 3 个连续正整数之和吗？能填 1，不能填 0。', a: ['0'], hint: '先和 1+2+3 的最小可能和比较，再检查首项是否至少为 1。', why: '3 项正整数最小和是 1+2+3=6，大于 3。虽然 3 能被 3 整除，但反求首项为 3/3−1=0，不是正整数，因此不成立。' }
+      ]
+    });
+    const congruenceLesson = numberLesson('congruences');
+    Object.assign(congruenceLesson, {
+      level: '思维拓展',
+      source: '主题参照原讲义第 6–8 讲；CRT 合并、非互质情形与扩展欧几里得为项目整理补充，版本/页码待核',
+      methodGuide: {
+        prerequisites: '先会写标准余数 0≤r<m，会求最大公因数与最小公倍数；互质拼合还要理解“模 m 的逆元”。扩展欧几里得用于求逆元，不代表课程已核定官方年级。',
+        when: '一个整数要同时满足多个余数条件时用余数拼合。模数两两互质，可用通常的中国剩余定理；模数不互质时不能直接套“周期等于乘积”，先查每一对余数在模 gcd 下是否一致。小模数也可枚举，但必须检查完整的一个 lcm 周期。',
+        route: [
+          { title: '① 统一成标准余数', text: '把每条写成 n≡rᵢ (mod mᵢ)，其中 mᵢ>0 且 0≤rᵢ<mᵢ。先把题目问的是一个解、最小正解还是全部整数解说清。' },
+          { title: '② 先作 gcd 兼容检验', text: '对每一对 i,j，必须有 rᵢ−rⱼ 能被 gcd(mᵢ,mⱼ) 整除；任一对不通过就无解。全部通过时可逐条合并。' },
+          { title: '③ 把两条合成一条', text: '若已有 n≡R (mod M)，再合并 n≡r (mod m)，令 n=R+Mt、g=gcd(M,m)。先检查 g∣(r−R)，再解 (M/g)t≡(r−R)/g (mod m/g)。' },
+          { title: '④ 只在约化后求逆元', text: 'M/g 与 m/g 互质。若 m/g>1，用扩展欧几里得求 M/g 在模 m/g 下的逆元；若 m/g=1，新条件已被旧周期包含，无需求逆元。' },
+          { title: '⑤ 写全解并逐条代回', text: '每次合并后的周期是 lcm(M,m)，最后得到 n≡R (mod lcm(m₁,…,mₜ))，即 n=R+Lk（k∈ℤ）。若只要最小正解，余数为 0 时取 L；最后代回所有原余数条件。' }
+        ],
+        why: '若 n=R+Mt，代入第二条得到 Mt≡r−R (mod m)。这有解当且仅当 g=gcd(M,m) 整除 r−R；除以 g 后，两边模数变为互质的 M/g 与 m/g，故前者有逆元，t 在模 m/g 下唯一确定。于是 n 在模 M(m/g)=lcm(M,m) 下恰有一个解类；其他整数都相差这个最小公倍数。对多条条件逐步合并即可。',
+        pitfall: '模数不互质不等于一定无解，也不能把周期写成模数乘积；要先用 gcd 检查兼容。只有约化后的系数与新模数互质时才能求逆元。一个特解不是完整答案，完整解集要写到模 lcm 的同余类，并区分余数 0 的最小正解。',
+        transfer: '可用 n≡1 (mod 3)、n≡2 (mod 5) 练互质拼合，得到 n≡7 (mod 15)。再试非互质组：n≡2 (mod 6)、n≡8 (mod 10)，gcd=2 且余数差 6 可被 2 整除，得到 n≡8 (mod 30)。反例 n≡1 (mod 4)、n≡2 (mod 6) 的余数差 1 不能被 gcd=2 整除，因此无解。',
+        returnCheck: '把最后的代表元 R 分别除以每个原模数，确认余数完全吻合；再检查 L 确实是所有模数的最小公倍数。若题目限定正整数，另外核对所报最小正解；若余数代表元是 0，最小正解为 L。'
+      },
+      example: {
+        q: '拼合 n≡2 (mod 6)、n≡8 (mod 10)，写出全部整数解。',
+        solution: 'gcd(6,10)=2，8−2=6 可被 2 整除，所以兼容。令 n=2+6t：6t≡6 (mod 10)，约去公因数 2 后得 3t≡3 (mod 5)。扩展欧几里得给出 1=2×3−1×5，所以 3 在模 5 下的逆元是 2；t≡6≡1 (mod 5)。因此 n≡8 (mod 30)，即 n=8+30k（k∈ℤ）。回代：8 除以 6 余 2，除以 10 余 8；周期 lcm(6,10)=30。'
+      },
+      practice: [
+        ...congruenceLesson.practice,
+        { q: '【非互质·有解】n≡2 (mod 6)、n≡8 (mod 10)，最小正整数解是多少？', a: ['8'], hint: '先查 gcd(6,10) 是否整除 8−2；再从 2、8、14、… 中找满足第二条的数。', why: 'gcd(6,10)=2 且 8−2=6 可被 2 整除。8 同时满足两条；两模数组合周期为 lcm(6,10)=30，所以完整解集是 n≡8 (mod 30)，最小正解为 8。' },
+        { q: '【边界·无解】n≡1 (mod 4)、n≡2 (mod 6) 能拼出整数吗？能填 1，不能填 0。', a: ['0'], hint: '算 gcd(4,6)，再检查 1−2 能否被它整除。', why: 'gcd(4,6)=2，但 1−2=−1 不能被 2 整除；任何同时满足两条的 n 都应让这个差是 2 的倍数，矛盾，因此无解。' },
+        { q: '【完整解集】n≡2 (mod 6)、n≡8 (mod 10) 的全部解写成 n≡8 (mod ___)，空格填什么？', a: ['30'], hint: '逐步合并后的解每隔 lcm(6,10) 重复。', why: '周期是 lcm(6,10)=30。8 是一个共同解，因此所有整数解为 n≡8 (mod 30)，也就是 n=8+30k（k∈ℤ）；代回两条条件均通过。' }
+      ]
+    });
   }
 
   window.AOSHU_CURRICULUM = curriculum;
@@ -362,7 +419,7 @@
       ? '当前浏览器不能保存学习进度；练习可以继续，刷新后可能清零。'
       : progressReadIssue
         ? '发现无法读取的旧进度；答题时会尝试先备份旧记录，再保存新进度。'
-        : mastered ? `已完成 ${mastered} 个知识点的全部自测，其余可以继续探索。` : '完成任一知识点的三道自测，就会在这台设备上留下学习进度。';
+        : mastered ? `已完成 ${mastered} 个知识点的全部自测，其余可以继续探索。` : '完成任一知识点的全部自测题，就会在这台设备上留下学习进度。';
   }
 
   function saveProgress() {
@@ -405,7 +462,8 @@
     const mastered = progress[lesson.id]?.done === true;
     const refer = lesson.source ? `<span class="source-tag">${escapeHtml(lesson.source)} · 已归入本课程</span>` : '';
     const link = lesson.link ? `<a class="deeper-link" href="${escapeHtml(lesson.link)}">去看互动讲解与原题 <span>↗</span></a>` : '';
-    return `<article class="lesson-unit${mastered ? ' is-mastered' : ''}" id="lesson-${escapeHtml(lesson.id)}"><details class="lesson-fold"><summary><span class="lesson-symbol">${escapeHtml(branch.icon)}</span><span class="lesson-name"><small>${escapeHtml(lesson.level)}${refer}</small><b>${escapeHtml(lesson.title)}</b></span><span class="lesson-state">${mastered ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="fold-mark" aria-hidden="true">＋</span></summary><div class="lesson-body"><div class="learn-block"><h3>这一关要学会</h3>${renderConcept(lesson)}</div><div class="example-block"><span class="block-label">老师示范</span><h3>${escapeHtml(lesson.example.q)}</h3>${renderExampleSolution(lesson)}</div><div class="practice-block"><div class="practice-title"><div><span class="block-label">轮到你了</span><h3>${lesson.id === 'divisibility' ? '循序练习：基础判断 → 选方法 → 综合应用' : '三道自测：先做，再看推理'}</h3></div><span class="practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${lesson.practice.map((q,index)=>renderQuestion(q,lesson.id,index,passed.has(index))).join('')}</div>${link}<p class="mastery-note">做对本课全部 ${lesson.practice.length} 道题，就算这一关掌握了；答案与讲解可以随时展开复盘。</p></div></details></article>`;
+    const practiceTitle = lesson.id === 'divisibility' ? '循序练习：基础判断 → 选方法 → 综合应用' : `${lesson.practice.length} 道自测：先做，再看推理`;
+    return `<article class="lesson-unit${mastered ? ' is-mastered' : ''}" id="lesson-${escapeHtml(lesson.id)}"><details class="lesson-fold"><summary><span class="lesson-symbol">${escapeHtml(branch.icon)}</span><span class="lesson-name"><small>${escapeHtml(lesson.level)}${refer}</small><b>${escapeHtml(lesson.title)}</b></span><span class="lesson-state">${mastered ? '已掌握' : `${passed.size}/${lesson.practice.length} 自测`}</span><span class="fold-mark" aria-hidden="true">＋</span></summary><div class="lesson-body"><div class="learn-block"><h3>这一关要学会</h3>${renderConcept(lesson)}</div><div class="example-block"><span class="block-label">老师示范</span><h3>${escapeHtml(lesson.example.q)}</h3>${renderExampleSolution(lesson)}</div><div class="practice-block"><div class="practice-title"><div><span class="block-label">轮到你了</span><h3>${practiceTitle}</h3></div><span class="practice-count">${passed.size}/${lesson.practice.length} 完成</span></div>${lesson.practice.map((q,index)=>renderQuestion(q,lesson.id,index,passed.has(index))).join('')}</div>${link}<p class="mastery-note">做对本课全部 ${lesson.practice.length} 道题，就算这一关掌握了；答案与讲解可以随时展开复盘。</p></div></details></article>`;
   }
 
   function renderConcept(lesson) {
@@ -418,7 +476,9 @@
   function renderMethodGuide(lesson) {
     const guide = lesson.methodGuide;
     const route = guide.route.map((item) => `<li><b>${escapeHtml(item.title)}</b><span>${escapeHtml(item.text)}</span></li>`).join('');
-    return `<div class="lesson-method-guide"><p class="method-guide-concept">${escapeHtml(lesson.concept)}</p><p><b>什么时候用：</b>${escapeHtml(guide.when)}</p><h4>解题路线：每一步都说清理由</h4><ol class="method-guide-route">${route}</ol><p><b>为什么有效：</b>${escapeHtml(guide.why)}</p><p><b>易错提醒：</b>${escapeHtml(guide.pitfall)}</p><p><b>迁移一步：</b>${escapeHtml(guide.transfer)}</p></div>`;
+    const prerequisites = guide.prerequisites ? `<p><b>开始前先会：</b>${escapeHtml(guide.prerequisites)}</p>` : '';
+    const returnCheck = guide.returnCheck ? `<p><b>回代检查：</b>${escapeHtml(guide.returnCheck)}</p>` : '';
+    return `<div class="lesson-method-guide"><p class="method-guide-concept">${escapeHtml(lesson.concept)}</p>${prerequisites}<p><b>什么时候用：</b>${escapeHtml(guide.when)}</p><h4>解题路线：每一步都说清理由</h4><ol class="method-guide-route">${route}</ol><p><b>为什么有效：</b>${escapeHtml(guide.why)}</p><p><b>易错提醒：</b>${escapeHtml(guide.pitfall)}</p>${returnCheck}<p><b>迁移一步：</b>${escapeHtml(guide.transfer)}</p></div>`;
   }
 
   function renderDivisibilityGuide(lesson) {

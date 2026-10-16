@@ -187,9 +187,11 @@
     const factors = factorInteger(n);
     const count = divisorCount(factors);
     const { shown } = divisorList(factors);
+    const sum = factors.reduce((product, [prime, exponent]) => product * ((prime ** (exponent + 1) - 1) / (prime - 1)), 1);
+    const sumFactors = factors.map(([prime, exponent]) => `(${Array.from({ length: exponent + 1 }, (_, power) => power === 0 ? '1' : `${prime}${power === 1 ? '' : `^${power}`}`).join('+')})`).join(' × ') || '1';
     const listText = shown.join('、');
     const suffix = count > shown.length ? ' …（完整列表较长，已省略后续项）' : '';
-    output.innerHTML = `<b>${n} = ${formatFactors(factors)}</b><span>τ(${n}) = ${factors.map(([, exponent]) => `(${exponent}+1)`).join(' × ')} = ${count} 个正因数</span><small>因数：${listText}${suffix}</small>`;
+    output.innerHTML = `<b>${n} = ${formatFactors(factors)}</b><span>τ(${n}) = ${factors.map(([, exponent]) => `(${exponent}+1)`).join(' × ')} = ${count} 个正因数</span><span>σ(${n}) = ${sumFactors} = ${sum}</span><small>因数：${listText}${suffix}</small>`;
   });
   byId('nt-divisor-input').addEventListener('keydown', (event) => { if (event.key === 'Enter') byId('nt-divisor-button').click(); });
   byId('nt-divisor-button').click();
@@ -230,8 +232,52 @@
     }
   }
   byId('nt-run-button').addEventListener('click', updateRuns);
-  byId('nt-run-input').addEventListener('keydown', (event) => { if (event.key === 'Enter') updateRuns(); });
+  byId('nt-run-input').addEventListener('keydown', (event) => { if (event.key === 'Enter') byId('nt-run-button').click(); });
   updateRuns();
+  function updateRunLength() {
+    const n = wholeNumber('nt-run-input', 2, 5000);
+    const k = wholeNumber('nt-run-length', 2, 1000);
+    const output = byId('nt-run-length-result');
+    if (n === null || k === null) {
+      output.innerHTML = '<b>请先输入 2 到 5,000 的总和 N，以及至少为 2 的整数项数 k。</b>';
+      return;
+    }
+    const minimum = k * (k + 1) / 2;
+    if (n < minimum) {
+      output.innerHTML = `<b>不可行：最小正和已超过 N。</b><span>${k} 项正整数至少是 1+2+…+${k}=${minimum}，大于 N=${n}，所以首项不可能为正。</span>`;
+      return;
+    }
+    let start;
+    if (k % 2 === 1) {
+      if (n % k !== 0) {
+        output.innerHTML = `<b>不可行：奇数项数的整除条件不成立。</b><span>k=${k} 为奇数，但 N=${n} 不能被 k 整除。</span>`;
+        return;
+      }
+      start = n / k - (k - 1) / 2;
+    } else {
+      if ((2 * n) % k !== 0) {
+        output.innerHTML = `<b>不可行：2N/k 不是整数。</b><span>k=${k} 为偶数，但 2N=${2 * n} 不能被 k 整除。</span>`;
+        return;
+      }
+      const quotient = (2 * n) / k;
+      if (quotient % 2 !== 1) {
+        output.innerHTML = `<b>不可行：偶数项数要求 2N/k 为奇数。</b><span>这里 2N/k=${quotient} 是偶数，因此反求首项不会是整数。</span>`;
+        return;
+      }
+      start = (quotient - k + 1) / 2;
+    }
+    if (!Number.isInteger(start) || start < 1) {
+      output.innerHTML = `<b>不可行：反求首项不是正整数。</b><span>公式得到首项 a=${start}，必须满足 a≥1。</span>`;
+      return;
+    }
+    const terms = Array.from({ length: k }, (_, index) => start + index);
+    const checkedSum = terms.reduce((sum, term) => sum + term, 0);
+    output.innerHTML = `<b>可行：首项 a=${start}</b><span>${terms.join(' + ')} = ${checkedSum}；项数 ${k}，回代总和 ${checkedSum}${checkedSum === n ? '，核对通过。' : '，核对失败，请检查。'}</span>`;
+  }
+  byId('nt-run-length-button').addEventListener('click', updateRunLength);
+  byId('nt-run-length').addEventListener('keydown', (event) => { if (event.key === 'Enter') updateRunLength(); });
+  byId('nt-run-input').addEventListener('change', updateRunLength);
+  updateRunLength();
 
   // Day 5: enumerate only factor pairs that satisfy each original variable's bounds.
   function updateFactorPairs(mode = 'ab') {
@@ -365,7 +411,24 @@
   bindEnter(['nt-linear-a', 'nt-linear-b', 'nt-linear-m'], updateLinearCongruence);
   updateLinearCongruence();
 
-  // Day 8: check compatibility first, then search one least-common-multiple period.
+  function extendedGcd(a, b) {
+    let oldR = a;
+    let r = b;
+    let oldS = 1;
+    let s = 0;
+    while (r !== 0) {
+      const quotient = Math.floor(oldR / r);
+      [oldR, r] = [r, oldR - quotient * r];
+      [oldS, s] = [s, oldS - quotient * s];
+    }
+    return { gcd: oldR, coefficient: oldS };
+  }
+  function modularInverse(value, modulus) {
+    if (modulus === 1) return 0;
+    const { gcd: common, coefficient } = extendedGcd(positiveMod(value, modulus), modulus);
+    return common === 1 ? positiveMod(coefficient, modulus) : null;
+  }
+  // Day 8: test generalized-CRT compatibility, then combine with extended Euclid.
   function updateRemainderSystem() {
     const entries = [1, 2, 3].map((i) => ({
       r: wholeNumber(`nt-crt-r${i}`, 0, 9999),
@@ -389,21 +452,44 @@
         }
       }
     }
-    const period = entries.reduce((value, item) => lcm(value, item.m), 1);
-    let first = -1;
-    for (let n = 0; n < period; n += 1) {
-      if (entries.every(({ r, m }) => n % m === r)) {
-        first = n;
-        break;
+    let combinedRemainder = entries[0].r;
+    let combinedModulus = entries[0].m;
+    const mergeNotes = [];
+    for (const { r, m } of entries.slice(1)) {
+      const common = gcd(combinedModulus, m);
+      const difference = r - combinedRemainder;
+      if (difference % common !== 0) {
+        output.innerHTML = `<b>这几条线索拼不起来</b><span>当前解类与模 ${m} 余 ${r} 在 gcd(${combinedModulus}, ${m})=${common} 下不兼容，因此没有共同整数。</span>`;
+        return;
       }
+      const oldRemainder = combinedRemainder;
+      const oldModulus = combinedModulus;
+      const reducedOldModulus = oldModulus / common;
+      const reducedModulus = m / common;
+      let step = 0;
+      let inverse = null;
+      if (reducedModulus > 1) {
+        inverse = modularInverse(reducedOldModulus, reducedModulus);
+        if (inverse === null) {
+          output.innerHTML = '<b>合并时未能求出逆元</b><span>请检查模数输入；约化后的模数理应互质。</span>';
+          return;
+        }
+        step = positiveMod((difference / common) * inverse, reducedModulus);
+      }
+      combinedModulus = oldModulus * reducedModulus;
+      combinedRemainder = positiveMod(oldRemainder + oldModulus * step, combinedModulus);
+      mergeNotes.push(reducedModulus === 1
+        ? `g=${common}，新条件已包含在旧周期内`
+        : `g=${common}，约化系数逆元=${inverse}，t≡${step} (mod ${reducedModulus})`);
     }
-    if (first < 0) {
-      output.innerHTML = '<b>没有找到共同余数</b><span>请重新检查输入。</span>';
+    const period = entries.reduce((value, item) => lcm(value, item.m), 1);
+    if (combinedModulus !== period) {
+      output.innerHTML = '<b>周期核对失败</b><span>逐步合并得到的模数与全部模数的最小公倍数不一致，请检查条件。</span>';
       return;
     }
-    const leastPositive = first === 0 ? period : first;
-    const check = entries.map(({ r, m }) => `${first}÷${m} 余 ${r}`).join('；');
-    output.innerHTML = `<b>全部整数解：n ≡ ${first} (mod ${period})</b><span>最小正整数解是 ${leastPositive}；${check}。每隔 ${period} 就会再出现一个解。</span>`;
+    const leastPositive = combinedRemainder === 0 ? period : combinedRemainder;
+    const check = entries.map(({ r, m }) => `${combinedRemainder} mod ${m} = ${positiveMod(combinedRemainder, m)}（目标余数 ${r}）`).join('；');
+    output.innerHTML = `<b>全部整数解：n ≡ ${combinedRemainder} (mod ${period})</b><span>最小正整数解是 ${leastPositive}。合并：${mergeNotes.join('；')}。回代检查：${check}。因此 n=${combinedRemainder}+${period}k（k∈ℤ）。</span>`;
   }
   byId('nt-crt-button').addEventListener('click', updateRemainderSystem);
   bindEnter(['nt-crt-r1', 'nt-crt-m1', 'nt-crt-r2', 'nt-crt-m2', 'nt-crt-r3', 'nt-crt-m3'], updateRemainderSystem);

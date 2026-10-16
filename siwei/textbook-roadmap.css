@@ -453,3 +453,16 @@
 @media(max-width:650px){.book-prerequisite{padding:8px 9px}}
 
 .book-level-badge{display:inline-flex;align-items:center;max-width:100%;padding:3px 6px;border-radius:99px;background:#edf1e7;color:#58664a;font-size:8px;font-weight:900;line-height:1.4;white-space:nowrap}.book-level-badge[data-level="进阶"]{background:#eef0df;color:#697348}.book-level-badge[data-level="拓展"]{background:#f4ebdf;color:#896b4a}
+
+
+/* G2 深讲方法卡与练习层级 */
+.textbook-page .book-method-card{margin:12px 0;padding:14px;border:1px solid #dfe6cb;border-radius:13px;background:linear-gradient(135deg,#f1f4e4,#fffefa)}
+.textbook-page .book-method-card>span{display:inline-block;padding:4px 8px;border-radius:99px;background:#e2eacb;color:#50643f;font-size:.75rem;font-weight:900}
+.textbook-page .book-method-card h4{margin:7px 0;color:#34483a;font-size:1rem;line-height:1.5}
+.textbook-page .book-method-formula{display:block;padding:10px 12px;border-radius:9px;background:#fff;color:#34483a;font-size:1.05rem;line-height:1.75;overflow-wrap:anywhere}
+.textbook-page .book-method-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:8px}
+.textbook-page .book-method-card-grid p{margin:0;padding:9px;border:1px solid #e7eadb;border-radius:9px;background:#fff;color:#626e62;font-size:.82rem;line-height:1.75;overflow-wrap:anywhere}
+.textbook-page .book-method-card-grid p b{color:#596744}
+.textbook-page .book-deep-diagram figcaption{margin:8px 0 4px;color:#68734f;font-size:.8rem;font-weight:800;line-height:1.65}
+.textbook-page .book-practice-item .book-question>b{display:inline-block;margin-right:2px;color:#68794d;font-size:.84rem}
+@media(max-width:850px){.textbook-page .book-method-card-grid{grid-template-columns:1fr}}

@@ -203,6 +203,41 @@
   function learningVisualMarkup(visual) {
     if (!visual || typeof visual !== 'object') return '';
     const cap = (value, max) => Number.isFinite(Number(value)) ? Math.max(0, Math.min(max, Math.floor(Number(value)))) : 0;
+    if (visual.type === 'quantity-count') {
+      const count = cap(visual.count, 10);
+      const symbol = esc(visual.symbol || '●');
+      const items = Array.from({length:count}, (_, index) => `<span class="book-count-item"><i aria-hidden="true">${symbol}</i><b>${index + 1}</b></span>`).join('');
+      return `<figure class="book-learning-visual book-quantity-count" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-count-model" role="img" aria-label="${count} 件物品逐个对应数词 1 到 ${count}">${items}</div><p class="book-visual-check">${esc(visual.totalLabel || `最后一个数词表示总量：${count}`)}</p><div class="book-zero-model"><b>0</b><span>空盒里没有物品，数量是 0。</span></div></figure>`;
+    }
+    if (visual.type === 'quantity-compare') {
+      const leftCount = cap(visual.left?.count, 20);
+      const rightCount = cap(visual.right?.count, 20);
+      const pairCount = Math.min(leftCount, rightCount);
+      const cells = Math.max(leftCount, rightCount);
+      const row = (count) => Array.from({length:cells}, (_, index) => `<span class="book-compare-cell${index < pairCount ? ' is-paired' : index < count ? ' is-extra' : ''}" aria-hidden="true">${index < count ? '●' : ''}</span>`).join('');
+      const scaleMax = Math.max(10, cap(visual.max, 20));
+      const ticks = Array.from({length:scaleMax + 1}, (_, value) => `<span class="${value === leftCount ? 'is-left-value' : ''}${value === rightCount ? ' is-right-value' : ''}">${value}</span>`).join('');
+      return `<figure class="book-learning-visual book-quantity-compare" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-compare-row"><b>${esc(visual.left?.label || '左边')}</b><div class="book-compare-items" style="--pair-count:${cells}" role="img" aria-label="${esc(visual.left?.label || '左边')} ${leftCount} 件：${pairCount} 件配对，${Math.max(0,leftCount-pairCount)} 件未配对">${row(leftCount)}</div><strong>${leftCount}</strong></div><div class="book-compare-row"><b>${esc(visual.right?.label || '右边')}</b><div class="book-compare-items" style="--pair-count:${cells}" role="img" aria-label="${esc(visual.right?.label || '右边')} ${rightCount} 件：${pairCount} 件配对，${Math.max(0,rightCount-pairCount)} 件未配对">${row(rightCount)}</div><strong>${rightCount}</strong></div><div class="book-compare-scale" role="img" aria-label="数轴上 ${leftCount} 和 ${rightCount} 的位置">${ticks}</div><p class="book-visual-check">${esc(visual.check || '')}</p></figure>`;
+    }
+    if (visual.type === 'operation-number-line') {
+      const maximum = Math.max(1, cap(visual.max, 20));
+      const models = (visual.models || []).map((model) => {
+        const start = cap(model.start, maximum);
+        const change = cap(model.change, maximum);
+        const end = cap(model.end, maximum);
+        const isAddition = model.operation === 'add';
+        const movement = isAddition ? '→' : '←';
+        const dots = (count, removed = 0) => Array.from({length:count}, (_, index) => `<i class="${index >= count - removed ? 'is-removed' : ''}" aria-hidden="true">${index >= count - removed ? '×' : '●'}</i>`).join('');
+        const groups = isAddition
+          ? `<span>${dots(start)}</span><b aria-hidden="true">+</b><span>${dots(change)}</span><b aria-hidden="true">=</b><span>${dots(end)}</span>`
+          : `<span>${dots(start, change)}</span><b aria-hidden="true">−</b><span>${dots(change)}</span><b aria-hidden="true">=</b><span>${dots(end)}</span>`;
+        const ticks = Array.from({length:maximum + 1}, (_, value) => `<span class="book-operation-tick${value === start ? ' is-start' : ''}${value === end ? ' is-end' : ''}">${value}</span>`).join('');
+        const left = Math.min(start, end) / maximum * 100;
+        const width = Math.abs(end - start) / maximum * 100;
+        return `<article class="book-operation-model"><h4>${esc(model.equation)}</h4><p>${esc(model.label)}</p><div class="book-operation-counters" role="img" aria-label="${esc(model.equation)} 的圆片表示">${groups}</div><div class="book-operation-line" role="img" aria-label="${esc(model.label)}，${start} 移动 ${change} 步到 ${end}"><span class="book-operation-arrow" style="left:${left}%;width:${width}%">${movement}</span><div class="book-operation-ticks">${ticks}</div></div></article>`;
+      }).join('');
+      return `<figure class="book-learning-visual book-operation-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-operation-grid">${models}</div><p class="book-visual-check">加法向右、减法向左；数轴上的每一步都是相邻两个数之间的一个间隔。</p></figure>`;
+    }
     if (visual.type === 'part-whole') {
       const models = (visual.models || []).map((item) => `<article class="book-part-whole-model"><h4>${esc(item.label)}</h4><p class="book-visual-equation">${renderRichText(item.equation)}</p><div class="book-whole-box"><span>${esc(item.wholeLabel)}</span><strong>${esc(item.whole)}</strong></div><div class="book-part-boxes">${(item.parts || []).map((part) => `<div class="book-part-box"><span>${esc(part.label)}</span><strong>${esc(part.value)}</strong></div>`).join('')}</div><p class="book-visual-check">${renderRichText(item.check)}</p></article>`).join('');
       return `<figure class="book-learning-visual book-part-whole-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-part-whole-grid">${models}</div></figure>`;
@@ -267,7 +302,8 @@
     const solved = new Set(solvedFor(lesson));
     const legacyDone = legacyDoneFor(lesson);
     const expanded = openId ? key === openId : index === 0;
-    const chapter = grade === 3 ? `三年级 · 第 ${lesson.n} 讲` : grade === 4 ? `四年级精选路线 · 第 ${lesson.n} 项` : `小学${grade}年级 · 第 ${lesson.n} 讲`;
+    const chapter = lesson.chapterLabel || (grade === 3 ? `三年级 · 第 ${lesson.n} 讲` : grade === 4 ? `四年级精选路线 · 第 ${lesson.n} 项` : `小学${grade}年级 · 第 ${lesson.n} 讲`);
+    const displayNumber = lesson.displayNumber || String(lesson.n).padStart(2,'0');
     const steps = (lesson.steps || []).map((step) => `<li>${renderRichText(step)}</li>`).join('');
     const diagram = lesson.diagram ? `<pre class="book-diagram" aria-label="题目示意图">${esc(lesson.diagram)}</pre>` : '';
     const lessonId = `book-lesson-${key.replace(/[^a-zA-Z0-9_-]/g,'-')}`;
@@ -289,7 +325,7 @@
     const linkLevelLabel = grade === 3 && lesson.linkLevel && lesson.linkLevel !== '入门' ? `选学${lesson.linkLevel} · ` : '';
     const relatedLabel = `${linkLevelLabel}${baseRelatedLabel}`;
     return `<details class="book-lesson${done ? ' is-done' : ''}" id="${esc(lessonId)}" data-book-id="${esc(key)}" data-grade="${grade}"${expanded ? ' open' : ''}>
-      <summary><span class="book-number">${String(lesson.n).padStart(2,'0')}</span><span class="book-heading"><small class="book-grade-label">${esc(chapter)}</small><span class="book-badges"><small class="book-group-badge">${esc(lesson.group)}</small><small class="book-status">${esc(lesson.status)}</small>${difficultyBadge}</span><b>${esc(lesson.title)}</b></span><span class="book-state">${done ? '已完成' : legacyDone ? '旧版自测已过' : '未完成'}</span><span class="book-fold" aria-hidden="true">＋</span></summary>
+      <summary><span class="book-number">${esc(displayNumber)}</span><span class="book-heading"><small class="book-grade-label">${esc(chapter)}</small><span class="book-badges"><small class="book-group-badge">${esc(lesson.group)}</small><small class="book-status">${esc(lesson.status)}</small>${difficultyBadge}</span><b>${esc(lesson.title)}</b></span><span class="book-state">${done ? '已完成' : legacyDone ? '旧版自测已过' : '未完成'}</span><span class="book-fold" aria-hidden="true">＋</span></summary>
       <div class="book-body">
         ${sourceNote}${legacyNote}
         ${prerequisiteMarkup}
@@ -366,7 +402,7 @@
       const matchesTopic = selectedTopic === 'all' || lesson.group === selectedTopic;
       const matchesProgress = !onlyUnmastered.checked || !isDone(lesson);
       return matchesSearch && matchesGrade && matchesTopic && matchesProgress;
-    }).sort((a,b) => (Number(a.grade||3)-Number(b.grade||3)) || (Number(a.n)-Number(b.n)));
+    }).sort((a,b) => (Number(a.grade||3)-Number(b.grade||3)) || (Number(a.routeOrder ?? a.n)-Number(b.routeOrder ?? b.n)));
     list.innerHTML = visible.map((lesson,index) => lessonCard(lesson,index,openId)).join('');
     visibleCount.textContent = `显示 ${visible.length} / ${lessons.length} 讲`;
     empty.hidden = visible.length !== 0;
@@ -415,7 +451,7 @@
   list.addEventListener('click', (event) => {
     const link = event.target.closest('a.book-related[href^="#book-lesson-"], a.book-prerequisite-link[href^="#book-lesson-"]');
     if (!link) return;
-    const key = link.getAttribute('href').match(/^#book-lesson-(g\d+-\d+)$/)?.[1];
+    const key = link.getAttribute('href').match(/^#book-lesson-([a-zA-Z0-9_-]+)$/)?.[1];
     if (!key || !lessons.some((lesson) => keyOf(lesson) === key)) return;
     event.preventDefault();
     search.value = '';

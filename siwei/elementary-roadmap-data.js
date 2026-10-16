@@ -47,7 +47,34 @@
     };
   };
 
+  const g1FoundationSpecs = [
+    { id: 'count', order: 0.1, chapterLabel: '一年级基础先修 · 1/3', displayNumber: '先1', nextId: 'compare', nextTitle: '比较数量：先配对，再看数轴左右' },
+    { id: 'compare', order: 0.2, chapterLabel: '一年级基础先修 · 2/3', displayNumber: '先2', nextId: 'operations', nextTitle: '加减法起步：合起来、拿走与数轴移动' },
+    { id: 'operations', order: 0.3, chapterLabel: '一年级基础先修 · 3/3', displayNumber: '先3', nextId: 'g1-1', nextTitle: '图形排队找规律' }
+  ];
+  const g1FoundationSource = '本站原创基础先修课；按当前一年级路线中的先修缺口设计，不对应特定教材讲次；本课示范、例题与练习均为原创，不是教材原题。';
+  const gradeOneFoundation = g1FoundationSpecs.map((spec) => {
+    const unit = window.AOSHU_ELEMENTARY_DEEP_UNITS?.[`foundation:g1-${spec.id}`];
+    if (!unit) return null;
+    const key = `g1-foundation-${spec.id}`;
+    return {
+      grade: 1, n: spec.order, routeOrder: spec.order, key,
+      chapterLabel: spec.chapterLabel, displayNumber: spec.displayNumber,
+      title: unit.roadmapTitle, group: unit.roadmapGroup,
+      goal: unit.goal, idea: unit.idea,
+      example: unit.example.question, steps: unit.example.steps,
+      practice: unit.practices[0]?.question,
+      answers: unit.practices[0]?.answers || [],
+      hint: unit.practices[0]?.hint || '',
+      explanation: unit.practices[0]?.explanation || '',
+      status: unit.label, source: g1FoundationSource, deepUnit: unit,
+      href: `#book-lesson-${spec.nextId.startsWith('g1-') ? spec.nextId : `g1-foundation-${spec.nextId}`}`,
+      link: `接着学：${spec.nextTitle}`
+    };
+  }).filter(Boolean);
+
   const gradeOne = [
+    ...gradeOneFoundation,
     make(1,1,'图形排队找规律','图形与规律','观察图形重复的形状和次序，再说明空格为什么填它。','先圈出最短的重复小组，不要只凭最后两幅猜。','○、△、△、○、△、△、○，下一幅是什么？',['重复小组是“○、△、△”。','最后的 ○ 是新一组的开头，后面应接 △。'],'□、○、○、□、○、○、□，下一幅是什么？',['○','圆形'],'每三幅图是一组，第一幅是方形。','循环是“□、○、○”，最后一个 □ 后面接 ○。','sequences','sequence-detective','启蒙练习 · 原创题','高思竞赛数学课本一年级下册主题'),
     make(1,2,'搭配不重不漏','搭配与计数','数出两类物品配成一组时有几种选择。','可以画表格：每一件上衣都和每一条裤子配一次。','小兔有红、蓝两顶帽子和黄、绿、白三条围巾，有几种帽子与围巾的搭配？',['红帽配 3 条围巾，有 3 种。','蓝帽也配 3 条围巾，共 3+3=6 种。'],'有 2 种饮料和 4 种杯子，每次选一种饮料和一个杯子，有几种搭配？','8','先固定一种饮料，数一遍杯子，再数另一种。','每种饮料都有 4 种搭配，2×4=8 种。','counting','add-multiply-principle','启蒙练习 · 原创题','高思竞赛数学课本一年级下册主题'),
     make(1,3,'加法数字谜','数字谜与推理','根据算式条件检查每一位数字，必要时从个位开始倒推。','个位相加超过 9 时，10 个一换成 1 个十；再把这 1 个十加到十位。','37□+2□5=621，两个空格从左到右填几？',['个位：□+5 在 5 到 14 之间，个位是 1 时只能是 11，所以 □=6；11 个一换成 1 个十和 1 个一，向十位进 1。','十位：7+□+1 在 8 到 17 之间，个位是 2 时只能是 12，所以 □=4；再向百位进 1。','百位 3+2+1=6，得到 376+245=621。'],'26□+1□8=394，两个空格从左到右填几？',['6，2','62'],'先看个位，再把进位带到十位。','个位填 6，6+8=14，个位写 4、向十位进 1；十位 6+□+1 的个位要是 9，所以填 2；百位 2+1+1=4，得到 266+128=394。','algebra','equations','启蒙练习 · 原创题','高思竞赛数学课本一年级下册主题'),
@@ -276,7 +303,7 @@
 
   window.AOSHU_TEXTBOOK_LESSONS = [...gradeOne,...gradeTwo,...gradeThree,...advanced];
   window.AOSHU_GRADE_OVERVIEW = [
-    {grade:1,title:'一年级 · 看见数学',focus:'图形、数感、钟表、人民币、厘米测量与简单推理',source:'主题参照与教材版本/页码待核；本路线为数学思维启蒙精选，例题与练习原创，不代表完整年级教材覆盖'},
+    {grade:1,title:'一年级 · 看见数学',focus:'数量、比较、加减、图形、钟表与生活中的数学',source:'教材版本/讲次映射待核；路线另含3讲本站原创基础先修课，非教材讲次；例题与练习原创，不代表完整年级教材覆盖'},
     {grade:2,title:'二年级 · 关系与方法',focus:'钟面读时、经过时间、长度换算、购物找零与乘除',source:'主题参照与教材版本/页码待核；本路线为数学思维衔接精选，例题与练习原创，不代表完整年级教材覆盖'},
     {grade:3,title:'三年级 · 规律与建模',focus:'数列、平均数、图形计数、应用题与数独',source:'《奥数教程三年级（第八版）》公开目录主题参照；28讲逐讲映射/页码待核，例题与练习原创'},
     {grade:4,title:'四年级 · 建立模型',focus:'整数、数阵、行程、几何、数列与推理',source:'本站当前编入21个专题；序号是按主题编排的站内路线顺序，不是教材讲次，也不代表难度递增。基础/进阶/拓展与先修提示均为站内建议，不代表官方或原书分级。原记录称公开目录可见11讲；目录版本和逐讲映射待核，其余为拓展/专题整合'},

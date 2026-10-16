@@ -527,3 +527,51 @@
   .textbook-page .book-number-point{font-size:.72rem}
   .textbook-page .book-part-boxes{grid-template-columns:1fr}
 }
+
+/* 一年级原创基础先修图示：点数、配对比较与数轴加减。 */
+.textbook-page .book-learning-visual{min-width:0;margin:12px 0 0;padding:12px;border:1px solid #e7eadc;border-radius:12px;background:#f8f9f2}
+.textbook-page .book-learning-visual figcaption{margin-bottom:9px;color:#56684b;font-size:.95rem;font-weight:900;line-height:1.6}
+.textbook-page .book-quantity-count .book-count-model{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;max-width:420px}
+.textbook-page .book-count-item{display:grid;min-height:46px;place-items:center;border:1px solid #e1e6d6;border-radius:9px;background:#fff}
+.textbook-page .book-count-item i{color:#72834c;font-size:1.1rem;font-style:normal;line-height:1}
+.textbook-page .book-count-item b{color:#48563e;font-size:.78rem;line-height:1.3}
+.textbook-page .book-zero-model{display:flex;align-items:center;gap:9px;margin-top:8px;color:#69756b;font-size:.84rem}
+.textbook-page .book-zero-model b{display:grid;width:28px;height:28px;place-items:center;border:1px dashed #aab596;border-radius:50%;color:#5d6e49}
+.textbook-page .book-visual-check{margin:8px 0 0;color:#59684e;font-size:.88rem;line-height:1.75}
+.textbook-page .book-compare-row{display:grid;grid-template-columns:minmax(64px,auto) minmax(0,1fr) 28px;align-items:center;gap:8px;margin:7px 0;color:#536348;font-size:.84rem}
+.textbook-page .book-compare-row>b{overflow-wrap:anywhere}
+.textbook-page .book-compare-row>strong{text-align:right}
+.textbook-page .book-compare-items{display:grid;grid-template-columns:repeat(var(--pair-count),minmax(0,1fr));gap:3px;min-width:0}
+.textbook-page .book-compare-cell{display:grid;min-width:0;min-height:24px;place-items:center;border:1px solid transparent;border-radius:5px;color:transparent;font-size:.75rem}
+.textbook-page .book-compare-cell.is-paired{border-color:#d7dfc8;background:#edf2e3;color:#75834d}
+.textbook-page .book-compare-cell.is-extra{border-color:#d3ad7c;background:#fbf0df;color:#a76e32;font-weight:900}
+.textbook-page .book-compare-scale{display:grid;grid-template-columns:repeat(21,minmax(0,1fr));margin:12px 0 4px;color:#798477;font-size:.64rem;text-align:center}
+.textbook-page .book-compare-scale>span{position:relative;padding-top:7px;border-top:2px solid #cbd6b6}
+.textbook-page .book-compare-scale>span::before{position:absolute;top:-4px;left:50%;width:5px;height:5px;border-radius:50%;background:#bbc7a4;content:"";transform:translateX(-50%)}
+.textbook-page .book-compare-scale>span.is-left-value::before,.textbook-page .book-compare-scale>span.is-right-value::before{width:9px;height:9px;top:-6px;background:#71824d;box-shadow:0 0 0 2px #fff}
+.textbook-page .book-compare-scale>span.is-right-value::before{background:#c1844d}
+.textbook-page .book-operation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.textbook-page .book-operation-model{min-width:0;padding:10px;border:1px solid #e4e9d8;border-radius:10px;background:#fff}
+.textbook-page .book-operation-model h4{margin:0;color:#40533c;font-size:1rem}
+.textbook-page .book-operation-model>p{margin:4px 0 8px;color:#6b7669;font-size:.8rem;line-height:1.6}
+.textbook-page .book-operation-counters{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;min-height:34px;margin-bottom:13px}
+.textbook-page .book-operation-counters>span{display:flex;flex-wrap:wrap;gap:2px;max-width:100%;padding:3px 5px;border-radius:6px;background:#f1f4e8}
+.textbook-page .book-operation-counters>span i{color:#71834b;font-size:.76rem;font-style:normal;line-height:1}
+.textbook-page .book-operation-counters>span i.is-removed{color:#ae845e}
+.textbook-page .book-operation-counters>b{color:#7b866b;font-size:.8rem}
+.textbook-page .book-operation-line{position:relative;min-width:0;padding-top:17px}
+.textbook-page .book-operation-arrow{position:absolute;top:8px;height:2px;border-top:2px solid #91a270;color:#607344;font-size:.75rem;font-weight:900;line-height:1}
+.textbook-page .book-operation-arrow{text-align:right}
+.textbook-page .book-operation-ticks{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));color:#748072;font-size:.65rem;text-align:center}
+.textbook-page .book-operation-tick{position:relative;padding-top:6px}
+.textbook-page .book-operation-tick::before{position:absolute;top:0;left:50%;height:4px;border-left:1px solid #c4cfb3;content:""}
+.textbook-page .book-operation-tick.is-start,.textbook-page .book-operation-tick.is-end{color:#405c34;font-weight:900}
+.textbook-page .book-operation-tick.is-start::before,.textbook-page .book-operation-tick.is-end::before{height:7px;border-color:#71824d;border-left-width:2px}
+@media(max-width:650px){
+  .textbook-page .book-learning-visual{padding:10px}
+  .textbook-page .book-compare-row{grid-template-columns:minmax(52px,auto) minmax(0,1fr) 24px;gap:5px;font-size:.78rem}
+  .textbook-page .book-compare-items{gap:2px}
+  .textbook-page .book-compare-cell{min-height:20px;font-size:.68rem}
+  .textbook-page .book-compare-scale{font-size:.55rem}
+  .textbook-page .book-operation-grid{grid-template-columns:1fr}
+}

@@ -144,3 +144,20 @@
 
 .bc-counting-path-box li{font-size:11px;line-height:1.65}
 @media(max-width:650px){.bc-counting-path-box li{font-size:12px}}
+
+
+/* Applicability and mathematical boundary examples */
+.bc-boundary-guide{margin:12px 0;padding:14px;border:1px solid #e4e9df;border-radius:14px;background:#f8faf5}
+.bc-boundary-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:9px}
+.bc-boundary-heading h4{margin:0;color:#3d5745;font-size:12px;line-height:1.6}
+.bc-boundary-heading>span{color:#778579;font-size:9px;line-height:1.5}
+.bc-boundary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.bc-boundary-case{min-width:0;padding:11px 12px;border:1px solid #e5e9e1;border-radius:11px;background:#fffefa;overflow-wrap:anywhere}
+.bc-boundary-case.is-applicable{border-color:#d9e8d5;background:#fcfefb}
+.bc-boundary-case.is-boundary{border-color:#eee2d4;background:#fffdf9}
+.bc-boundary-tag{display:inline-block;margin-bottom:5px;padding:3px 7px;border-radius:99px;background:#edf4e9;color:#4c7655;font-size:9px;font-weight:900}
+.bc-boundary-case.is-boundary .bc-boundary-tag{background:#f7efe3;color:#8c704b}
+.bc-boundary-case h4{margin:0 0 7px;color:#34483a;font-size:10px;line-height:1.7}
+.bc-boundary-case p{margin:5px 0 0;color:#66736a;font-size:10px;line-height:1.8;overflow-wrap:anywhere}
+.bc-boundary-case p b{color:#4e6f54}
+@media(max-width:650px){.bc-boundary-guide{padding:11px}.bc-boundary-heading{align-items:flex-start;flex-direction:column;gap:2px}.bc-boundary-grid{grid-template-columns:1fr}.bc-boundary-case{padding:10px}.bc-boundary-case h4{font-size:11px}.bc-boundary-case p{font-size:10px}}

@@ -575,3 +575,38 @@
   .textbook-page .book-compare-scale{font-size:.55rem}
   .textbook-page .book-operation-grid{grid-template-columns:1fr}
 }
+
+
+/* G1 count-once models: combination table, overlap regions, and object pairs. */
+.textbook-page .book-counting-visual{min-width:0}
+.textbook-page .book-combination-table-wrap{min-width:0;overflow-x:auto}
+.textbook-page .book-combination-table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:4px;color:#445341;font-size:.86rem}
+.textbook-page .book-combination-table caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%)}
+.textbook-page .book-combination-table th,.textbook-page .book-combination-table td{min-width:0;padding:7px 5px;border:1px solid #e2e7d6;border-radius:8px;overflow-wrap:anywhere;text-align:center;line-height:1.6}
+.textbook-page .book-combination-table thead th{background:#f0f3e7;color:#566747;font-weight:900}
+.textbook-page .book-combination-table thead th:first-child,.textbook-page .book-combination-table tbody th{width:23%}
+.textbook-page .book-combination-table tbody th{background:#fafaf4;color:#5f6c53}
+.textbook-page .book-combination-table td{background:#fff;color:#485544}
+.textbook-page .book-overlap-regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 0 8px}
+.textbook-page .book-overlap-region{display:flex;min-width:0;min-height:66px;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:7px 5px;border:1px solid #dfe6d3;border-radius:10px;background:#f5f7ee;color:#536349;text-align:center}
+.textbook-page .book-overlap-region span{font-size:.8rem;line-height:1.45;overflow-wrap:anywhere}
+.textbook-page .book-overlap-region strong{font-size:1.05rem;color:#3f5838}
+.textbook-page .book-overlap-region.is-shared{border-color:#d9c79e;background:#fbf4e5;color:#82683e}
+.textbook-page .book-overlap-region.is-shared strong{color:#8c6532}
+.textbook-page .book-overlap-equation{margin:8px 0 0;color:#46553f;font-size:1rem;font-weight:900;text-align:center}
+.textbook-page .book-pair-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(76px,1fr));gap:7px;margin:10px 0 8px}
+.textbook-page .book-pair-group,.textbook-page .book-pair-remainder{display:flex;min-width:0;min-height:62px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:7px 4px;border:1px solid #dfe6d3;border-radius:10px;background:#f5f7ee;color:#5c704a}
+.textbook-page .book-pair-group>b{font-size:1.08rem;letter-spacing:.08em;white-space:nowrap}
+.textbook-page .book-pair-group small,.textbook-page .book-pair-remainder small{font-size:.75rem;line-height:1.35;text-align:center}
+.textbook-page .book-pair-remainder{border-color:#d8b783;background:#fbf2e2;color:#956d38}
+.textbook-page .book-pair-remainder>b{font-size:1.15rem}
+.textbook-page .book-pair-remainder.is-empty{border-color:#dfe6d3;background:#f8f9f3;color:#65735c}
+@media(max-width:650px){
+  .textbook-page .book-combination-table{border-spacing:3px;font-size:.78rem}
+  .textbook-page .book-combination-table th,.textbook-page .book-combination-table td{padding:6px 3px}
+  .textbook-page .book-overlap-regions{gap:4px}
+  .textbook-page .book-overlap-region{min-height:60px;padding:6px 3px}
+  .textbook-page .book-overlap-region span{font-size:.72rem}
+  .textbook-page .book-pair-groups{grid-template-columns:repeat(auto-fit,minmax(64px,1fr));gap:5px}
+  .textbook-page .book-pair-group,.textbook-page .book-pair-remainder{min-height:56px}
+}

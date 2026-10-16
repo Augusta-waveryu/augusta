@@ -261,6 +261,41 @@
       const storyStep = (label, value, count, extra = '') => `<div class="book-story-step ${extra}"><span>${esc(label)}</span><strong>${esc(value)} <small>${esc(visual.unit)}</small></strong><div class="book-story-dots" aria-hidden="true">${dots(count)}</div></div>`;
       return `<figure class="book-learning-visual book-story-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-story-model">${storyStep(visual.startLabel, visual.start, visual.start)}<span class="book-story-operator" aria-hidden="true">→</span>${storyStep(visual.changeLabel, `+${visual.change}`, visual.change, 'is-change')}<span class="book-story-operator" aria-hidden="true">→</span>${storyStep(visual.endLabel, visual.end, visual.end, 'is-result')}</div><p class="book-visual-equation">${renderRichText(visual.formula)}</p><p class="book-visual-check"><b>故事核对：</b>${esc(visual.check)}</p></figure>`;
     }
+    if (visual.type === 'counting-model') {
+      if (visual.kind === 'combinations') {
+        const first = (Array.isArray(visual.firstOptions) ? visual.firstOptions : []).slice(0, 5);
+        const second = (Array.isArray(visual.secondOptions) ? visual.secondOptions : []).slice(0, 5);
+        const firstLabel = visual.firstLabel || '第一类';
+        const secondLabel = visual.secondLabel || '第二类';
+        const pairCount = first.length * second.length;
+        const headers = second.map((item) => `<th scope="col">${esc(item)}</th>`).join('');
+        const rows = first.map((item) => `<tr><th scope="row">${esc(item)}</th>${second.map((partner) => `<td>${esc(item)} <span aria-hidden="true">+</span> ${esc(partner)}</td>`).join('')}</tr>`).join('');
+        return `<figure class="book-learning-visual book-counting-visual book-combination-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-combination-table-wrap"><table class="book-combination-table" aria-label="${esc(firstLabel)}与${esc(secondLabel)}的完整搭配，共${pairCount}种"><caption>${esc(firstLabel)}与${esc(secondLabel)}的所有搭配</caption><thead><tr><th scope="col">${esc(firstLabel)}＼${esc(secondLabel)}</th>${headers}</tr></thead><tbody>${rows}</tbody></table></div><p class="book-visual-check">${esc(visual.check || `逐格点数，共 ${pairCount} 种搭配。`)}</p></figure>`;
+      }
+      if (visual.kind === 'overlap') {
+        const firstCount = cap(visual.firstCount, 20);
+        const secondCount = cap(visual.secondCount, 20);
+        const sharedCount = cap(visual.sharedCount, Math.min(firstCount, secondCount));
+        const firstOnly = firstCount - sharedCount;
+        const secondOnly = secondCount - sharedCount;
+        const total = firstOnly + sharedCount + secondOnly;
+        const firstLabel = visual.firstLabel || '第一类';
+        const secondLabel = visual.secondLabel || '第二类';
+        const sharedLabel = visual.sharedLabel || '两类都属于';
+        const ariaLabel = `${visual.title}：${firstLabel}共 ${firstCount} 人，${secondLabel}共 ${secondCount} 人，共同 ${sharedCount} 人；只在第一类 ${firstOnly} 人、共同 ${sharedCount} 人、只在第二类 ${secondOnly} 人，至少一类共 ${total} 人。`;
+        return `<figure class="book-learning-visual book-counting-visual book-overlap-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-overlap-regions" role="img" aria-label="${esc(ariaLabel)}"><div class="book-overlap-region"><span>只${esc(firstLabel.replace(/^喜欢/u, '喜欢'))}</span><strong>${firstOnly} 人</strong></div><div class="book-overlap-region is-shared"><span>${esc(sharedLabel)}</span><strong>${sharedCount} 人</strong></div><div class="book-overlap-region"><span>只${esc(secondLabel.replace(/^喜欢/u, '喜欢'))}</span><strong>${secondOnly} 人</strong></div></div><p class="book-overlap-equation">${renderRichText(`${firstCount} + ${secondCount} − ${sharedCount} = ${total}`)} <span>人</span></p><p class="book-visual-check">${esc(visual.check || `两类人数相加后减去重复的一份，共 ${total} 人。`)}</p></figure>`;
+      }
+      if (visual.kind === 'pairs') {
+        const total = cap(visual.count, 20);
+        const pairGroups = Math.floor(total / 2);
+        const leftover = total % 2;
+        const itemLabel = visual.itemLabel || '物品';
+        const pairs = Array.from({length:pairGroups}, (_, index) => `<span class="book-pair-group"><b aria-hidden="true">● ●</b><small>第 ${index + 1} 对</small></span>`).join('');
+        const remainder = leftover ? '<span class="book-pair-remainder"><b aria-hidden="true">●</b><small>剩 1 个</small></span>' : '<span class="book-pair-remainder is-empty"><b>没有剩下</b></span>';
+        const ariaLabel = `${total} ${itemLabel}分成 ${pairGroups} 对，剩 ${leftover} 个。`;
+        return `<figure class="book-learning-visual book-counting-visual book-pairing-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-pair-groups" role="img" aria-label="${esc(ariaLabel)}">${pairs}${remainder}</div><p class="book-visual-check">${esc(visual.check || ariaLabel)}</p></figure>`;
+      }
+    }
     return '';
   }
 

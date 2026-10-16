@@ -110,7 +110,10 @@
     fibonacci: {name:'斐波那契数列', term:n=>{const a=[1,1];for(let i=2;i<n;i++)a.push(a[i-1]+a[i-2]);return a[n-1]}, label:'前两项相加', formula:'F₁=F₂=1；Fₙ=Fₙ₋₁+Fₙ₋₂', explain:'从第 3 项开始，每项等于前两项之和：1+1=2、1+2=3、2+3=5。要找新项时，向前看两项。'},
     triangular: {name:'三角数', term:n=>n*(n+1)/2, label:'依次加 2、3、4……', formula:'Tₙ=n(n+1)÷2', explain:'每层多一行点：1、1+2=3、3+3=6、6+4=10。第 n 个三角数是 1 到 n 的和，也可用 n(n+1)÷2。'},
     square: {name:'平方数', term:n=>n*n, label:'1×1、2×2、3×3……', formula:'Qₙ=n²', explain:'第 n 个平方数是 n 行、每行 n 个点，所以是 n×n。相邻差是 3、5、7、9……每次多 2。'},
-    alternating: {name:'交错数列', term:n=>n%2===1?n+1:n+3, label:'奇数位和偶数位分开', formula:'奇数位：2、4、6…；偶数位：5、7、9…', explain:'奇数位是 2、4、6……，偶数位是 5、7、9……。两条各自每次加 2；第 n 项要先判断它落在哪一队。'}
+    alternating: {name:'交错数列', term:n=>n%2===1?n+1:n+3, label:'奇数位和偶数位分开', formula:'奇数位：2、4、6…；偶数位：5、7、9…', explain:'奇数位是 2、4、6……，偶数位是 5、7、9……。两条各自每次加 2；第 n 项要先判断它落在哪一队。'},
+    secondDifference: {name:'二阶差分数列', term:n=>n*n+1, label:'一阶差每次增加 2', formula:'aₙ=n²+1', explain:'原数列是 2、5、10、17……；一阶差是 3、5、7……，二阶差恒为 2。按这条规则继续，下一差是 9。'},
+    periodicPrefix: {name:'带前导项的周期数列', term:n=>n===1?4:n===2?9:((n-3)%2===0?2:5), label:'前两项后，2、5 循环', formula:'4，9；从第 3 项起循环 2、5', explain:'前两项 4、9 不属于循环；周期从第 3 项开始，长度为 2。求第 n 项时先算 q=n−2，再用 q 除以 2 的余数定位；余数 0 表示周期最后一项。'},
+    recursive: {name:'递推：翻倍再加 1', term:n=>{let value=2;for(let i=2;i<=n;i++)value=value*2+1;return value}, label:'前一项乘 2 再加 1', formula:'a₁=2；aₙ=2aₙ₋₁+1（n≥2）', explain:'从起点 a₁=2 开始，每一步用“前一项×2+1”：2、5、11、23……递推规则必须配上起始项。'}
   };
   function renderPattern() {
     const key = patternSelect.value;
@@ -167,7 +170,7 @@
   shapeSize.addEventListener('input', renderShape);
   renderShape();
 
-  const answers = ['17','48','13','21','8','黄'];
+  const answers = ['17','48','13','21','8','黄','26','5','不唯一','48'];
   const reviewKey = 'siwei-sequences-review-v1';
   let reviewRaw = null;
   let reviewStorageAvailable = true;
@@ -187,7 +190,11 @@
     '斐波那契数列从第 3 项起，每项等于前两项之和。',
     '三角数可以逐次加下一层，也可以套 Tₙ=n(n+1)÷2。',
     '第 7 项在奇数位，先把两队分开。',
-    '用 14 除以周期 3，看余数落在哪个颜色位置。'
+    '用 14 除以周期 3，看余数落在哪个颜色位置。',
+    '先算第一层差 3、5、7，再看这些差每次增加多少。',
+    '前两项不循环；从第 3 项开始重复 2、5。先扣掉前导项。',
+    '同一组 1、2、4 可以用不同规则接下去；试着写出两种。',
+    '从 3 到 −6 是乘 −2；负公比会让正负号交替。'
   ];
   function updateReview() {
     $('#review-progress').textContent = !reviewStorageAvailable
@@ -219,7 +226,8 @@
     feedback.classList.remove('good');
     if (!value) { feedback.textContent = `先写一个答案；卡住了可以看提示：${hints[index]}`; input.focus(); return; }
     const expected = answers[index].toLowerCase();
-    const correct = value === expected || (index === 5 && value === '黄色');
+    const accepted = {5:['黄色'],8:['不能','否','不一定','无法唯一确定','不能唯一确定']};
+    const correct = value === expected || (accepted[index] ?? []).includes(value);
     if (correct) {
       passed.add(index);
       feedback.textContent = '答对了！试着用一句话说出你用的规律。';

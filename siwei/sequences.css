@@ -13,3 +13,46 @@
 .sequences-page .formula-chip code,.sequences-page .formula-grid code{font-size:clamp(1rem,1.8vw,1.16rem);line-height:1.8;overflow-wrap:anywhere}
 .sequences-page .lab-reason .sequence-rich-math{font-size:1.05rem}
 @media(max-width:650px){.sequences-page .sequence-rich-math{font-size:1.05rem;line-height:1.85;padding:.3em .52em}.sequences-page .sequence-formula-card>strong{font-size:1.18rem}.sequences-page .shape-count{align-items:flex-start}.sequences-page #shape-formula .sequence-rich-math{font-size:1.08rem}}
+
+/* Method-selection and boundary examples added to the sequence learning chain. */
+.method-choice-section,.sequence-source-note{margin:0 0 45px;scroll-margin-top:85px}
+.method-choice-section{padding:23px;border:1px solid #e3e9df;border-radius:20px;background:linear-gradient(125deg,#f1f6ed,#fffefa 70%)}
+.method-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.method-choice-card{min-width:0;padding:13px;border:1px solid #e4eae0;border-radius:12px;background:#fffefa}
+.method-step{display:inline-flex;padding:4px 7px;border-radius:999px;background:#edf3e9;color:#588063;font-size:8px;font-weight:900}
+.method-choice-card h3,.finite-terms-example h3{margin:8px 0 6px;color:#35483a;font-size:12px;line-height:1.55}
+.method-choice-card p,.finite-terms-example>div>p{margin:0;color:#5f6e63;font-size:10px;line-height:1.85}
+.method-choice-card code,.finite-terms-example code,.boundary-note code,.difference-recovery code,.cycle-phase-demo code{color:#355b41;font-family:inherit;font-size:1em;font-weight:900;overflow-wrap:anywhere}
+.method-choice-card small{display:block;margin-top:7px;color:#7b877e;font-size:9px;line-height:1.65}
+.finite-terms-example{display:grid;grid-template-columns:.9fr 1.1fr;gap:10px 15px;margin-top:12px;padding:14px;border:1px solid #eadfc8;border-radius:13px;background:#fff9ec}
+.finite-terms-example .course-kicker{color:#9a7a43;font-size:8px}
+.finite-terms-example h3{margin-top:5px}
+.finite-rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.finite-rule-grid>div{display:flex;flex-direction:column;gap:6px;padding:10px;border:1px solid #eee4d1;border-radius:10px;background:#fffefa}
+.finite-rule-grid b{color:#6d5a35;font-size:9px;line-height:1.55}
+.finite-rule-grid span{color:#5e665b;font-size:10px;line-height:1.6}
+.finite-rule-grid strong{color:#31704a}
+.finite-terms-takeaway{grid-column:1/-1;margin:0;color:#786a51;font-size:9px;line-height:1.75}
+.boundary-note,.difference-recovery,.cycle-phase-demo{margin:11px 0;padding:12px 14px;border:1px solid #e5eadf;border-radius:11px;background:#f7f9f3}
+.boundary-note>b,.difference-recovery>b,.cycle-phase-demo>b{display:block;margin-bottom:5px;color:#466e4e;font-size:10px}
+.boundary-note p,.difference-recovery p,.cycle-phase-demo p{margin:4px 0;color:#5e6c61;font-size:10px;line-height:1.8}
+.difference-recovery{border-color:#e3e9dc;background:#f4f8f0}
+.difference-recovery small,.cycle-phase-demo small{display:block;margin-top:6px;color:#78857b;font-size:9px;line-height:1.65}
+.recovery-steps{display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:6px;margin:9px 0}
+.recovery-steps span{display:grid;min-width:31px;height:31px;place-items:center;padding:0 5px;border-radius:9px;background:#fff;color:#3c6548;font-size:10px;font-weight:900}
+.recovery-steps i{color:#6c9273;font-size:9px;font-style:normal;font-weight:900}
+.cycle-phase-demo{border-color:#e6e8da;background:#faf9f1}
+.cycle-phase-demo strong{color:#4d7152}
+.sequence-source-note{margin-top:-25px;color:#849087;font-size:9px;line-height:1.7}
+@media(max-width:700px){
+  .method-choice-section{padding:17px}
+  .method-choice-grid{grid-template-columns:1fr}
+  .finite-terms-example{grid-template-columns:1fr}
+  .finite-rule-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:380px){
+  .method-choice-section{padding:13px}
+  .finite-rule-grid{grid-template-columns:1fr}
+  .recovery-steps{gap:4px}
+  .recovery-steps span{min-width:27px;padding:0 3px}
+}

@@ -115,6 +115,138 @@
     }
   });
 
+  const solidLesson = document.getElementById('bc-topic-solids');
+  const solidFigure = document.getElementById('bc-figure-solids');
+  if (solidLesson && solidFigure && !document.getElementById('bc-solid-net-lab')) {
+    // A connected six-face net: the front has four neighbors, and the back is attached to the top flap.
+    const solidNetFaces = [
+      { id: 'back', name: '后面', net: [[2, -2], [7, -2], [7, 1], [2, 1]], world: [[0, 2, 0], [5, 2, 0], [5, 2, 3], [0, 2, 3]], color: 'is-long-tall', dimensions: '5 cm × 3 cm', area: 15 },
+      { id: 'bottom', name: '下面', net: [[2, 6], [7, 6], [7, 8], [2, 8]], world: [[0, 0, 0], [5, 0, 0], [5, 2, 0], [0, 2, 0]], color: 'is-long-wide', dimensions: '5 cm × 2 cm', area: 10 },
+      { id: 'left', name: '左面', net: [[0, 3], [2, 3], [2, 6], [0, 6]], world: [[0, 2, 3], [0, 0, 3], [0, 0, 0], [0, 2, 0]], color: 'is-side', dimensions: '3 cm × 2 cm', area: 6 },
+      { id: 'top', name: '上面', net: [[2, 1], [7, 1], [7, 3], [2, 3]], world: [[0, 2, 3], [5, 2, 3], [5, 0, 3], [0, 0, 3]], color: 'is-long-wide', dimensions: '5 cm × 2 cm', area: 10 },
+      { id: 'right', name: '右面', net: [[7, 3], [9, 3], [9, 6], [7, 6]], world: [[5, 0, 3], [5, 2, 3], [5, 2, 0], [5, 0, 0]], color: 'is-side', dimensions: '3 cm × 2 cm', area: 6 },
+      { id: 'front', name: '前面', net: [[2, 3], [7, 3], [7, 6], [2, 6]], world: [[0, 0, 3], [5, 0, 3], [5, 0, 0], [0, 0, 0]], color: 'is-long-tall', dimensions: '5 cm × 3 cm', area: 15 }
+    ];
+    const netHinges = [
+      { net: [[2, 3], [7, 3]], world: [[0, 0, 3], [5, 0, 3]] },
+      { net: [[2, 1], [7, 1]], world: [[0, 2, 3], [5, 2, 3]] },
+      { net: [[2, 6], [7, 6]], world: [[0, 0, 0], [5, 0, 0]] },
+      { net: [[2, 3], [2, 6]], world: [[0, 0, 3], [0, 0, 0]] },
+      { net: [[7, 3], [7, 6]], world: [[5, 0, 3], [5, 0, 0]] }
+    ];
+    const unit = 26;
+    const netPoint = ([x, y]) => [63 + x * unit, 25 + (y + 2) * unit];
+    const project = ([x, y, z]) => [180 + 22 * x + 14 * y, 156 + 6.5 * x - 6.5 * y - 22 * z];
+    const midpoint = (points) => points.reduce((sum, point) => [sum[0] + point[0] / points.length, sum[1] + point[1] / points.length], [0, 0]);
+    const pointText = (point) => point.map((value) => Number(value.toFixed(2))).join(',');
+    const facesMarkup = solidNetFaces.map((face) => {
+      const flatPoints = face.net.map(netPoint);
+      const center = midpoint(flatPoints);
+      const points = flatPoints.map(pointText).join(' ');
+      const faceLabel = face.name;
+      const dimensionLabel = face.color === 'is-side' ? '3 × 2' : face.dimensions;
+      return `<polygon class="bc-solid-net-face ${face.color}" data-solid-net-face="${face.id}" points="${points}"/><text class="bc-solid-net-face-label${face.color === 'is-side' ? ' is-narrow' : ''}" data-solid-net-label="${face.id}" x="${center[0]}" y="${center[1]}" text-anchor="middle" dominant-baseline="middle"><tspan x="${center[0]}" dy="-9">${faceLabel}</tspan><tspan x="${center[0]}" dy="12">${dimensionLabel}</tspan><tspan x="${center[0]}" dy="12">${face.area} cm²</tspan></text>`;
+    }).join('');
+    const hingesMarkup = netHinges.map((hinge, index) => {
+      const [start, end] = hinge.net.map(netPoint);
+      return `<line class="bc-solid-net-hinge" data-solid-net-hinge="${index}" x1="${start[0]}" y1="${start[1]}" x2="${end[0]}" y2="${end[1]}"/>`;
+    }).join('');
+
+    solidFigure.insertAdjacentHTML('afterend', `<section id="bc-solid-net-lab" class="bc-solid-net-lab" aria-labelledby="bc-solid-net-title"><div class="bc-solid-net-heading"><span class="bc-section-label">动手试一试 · 剪开纸盒再折回</span><h3 id="bc-solid-net-title">六个面怎样拼成长方体？</h3><p>先看展开图：六块纸板沿虚线相连。拖动滑杆或按按钮，观察它们怎样合成一个盒子。本例长 5 cm、宽 2 cm、高 3 cm。</p></div><div class="bc-solid-net-layout"><figure class="bc-solid-net-figure"><svg id="bc-solid-net-svg" viewBox="0 0 360 310" role="img" aria-label="长方体的六面展开图，长5厘米、宽2厘米、高3厘米；各面面积为15、10、6平方厘米各两片"><title>5 cm × 2 cm × 3 cm 长方体展开图</title><desc>中间是前面，左右和下方各接一个侧面，上方接上面，再在上面外侧接后面；六面各出现一次。虚线表示折痕。</desc>${facesMarkup}<g class="bc-solid-net-hinges" aria-hidden="true">${hingesMarkup}</g></svg><figcaption>虚线是折痕；每块面都只出现一次。折好后，前后、上下、左右分别成为三对相对面。</figcaption></figure><div class="bc-solid-net-controls"><div class="bc-solid-net-slider-row"><label for="bc-solid-net-fold">折叠程度</label><output id="bc-solid-net-fold-out" for="bc-solid-net-fold">0%</output><input id="bc-solid-net-fold" type="range" min="0" max="100" step="1" value="0" aria-label="折叠程度；0%是展开图，100%是折成盒子"><small>按方向键逐步调节；触屏可拖动滑杆。</small></div><div class="bc-solid-net-actions" role="group" aria-label="展开图折叠控制"><button type="button" id="bc-solid-net-unfold">完全展开</button><button type="button" id="bc-solid-net-fold-button">折成盒子</button></div><p id="bc-solid-net-status" class="bc-solid-net-status" aria-live="polite">展开图：六个面各一次；沿虚线折起后，边要对接、面不能重叠。</p><div class="bc-solid-net-areas" aria-label="六个面的尺寸和面积"><p><b>前、后面各 1 片：</b>5 cm × 3 cm = 15 cm² / 片</p><p><b>上、下面各 1 片：</b>5 cm × 2 cm = 10 cm² / 片</p><p><b>左、右面各 1 片：</b>3 cm × 2 cm = 6 cm² / 片</p><strong>表面积：15 + 15 + 10 + 10 + 6 + 6 = 62 cm²</strong></div></div></div><aside class="bc-solid-net-misconception"><b>别把“相对面相等”误读成“六面都相等”</b><span>本例长方体的相对面面积相同，但三组面积分别是 15、10、6 cm²。只有长、宽、高都相等时才是正方体；正方体六个面才都是同样大的正方形。</span></aside><div class="bc-solid-net-check"><h4>小检查：本例中，面积为 15 cm² 的面有几块？</h4><div class="bc-solid-net-answers" role="group" aria-label="选择15平方厘米面的数量"><button type="button" data-solid-net-answer="1" aria-pressed="false">1 块</button><button type="button" data-solid-net-answer="2" aria-pressed="false">2 块</button><button type="button" data-solid-net-answer="3" aria-pressed="false">3 块</button></div><p id="bc-solid-net-check-feedback" aria-live="polite"></p></div><p class="bc-solid-net-source-note">课程当前标为“进阶”；逐课年级与教材页码尚未核定。本图是原创尺寸示意，不对应未核实的教材页。</p></section>`);
+
+    const svg = document.getElementById('bc-solid-net-svg');
+    const foldRange = document.getElementById('bc-solid-net-fold');
+    const foldOutput = document.getElementById('bc-solid-net-fold-out');
+    const status = document.getElementById('bc-solid-net-status');
+    const faceElements = new Map([...svg.querySelectorAll('[data-solid-net-face]')].map((element) => [element.dataset.solidNetFace, element]));
+    const labelElements = new Map([...svg.querySelectorAll('[data-solid-net-label]')].map((element) => [element.dataset.solidNetLabel, element]));
+    const hingeElements = [...svg.querySelectorAll('[data-solid-net-hinge]')];
+    const mixPoint = (flat, folded, amount) => [flat[0] + (folded[0] - flat[0]) * amount, flat[1] + (folded[1] - flat[1]) * amount];
+    const centroid = (points) => midpoint(points);
+    let animationFrame = 0;
+
+    const updateNet = () => {
+      const fold = Number(foldRange.value) / 100;
+      const percent = Math.round(fold * 100);
+      foldOutput.textContent = `${percent}%`;
+      solidNetFaces.forEach((face) => {
+        const flat = face.net.map(netPoint);
+        const folded = face.world.map(project);
+        const points = flat.map((point, index) => pointText(mixPoint(point, folded[index], fold))).join(' ');
+        faceElements.get(face.id).setAttribute('points', points);
+        const label = labelElements.get(face.id);
+        const flatCenter = centroid(flat);
+        const foldedCenter = centroid(folded);
+        const labelCenter = mixPoint(flatCenter, foldedCenter, fold);
+        label.setAttribute('x', labelCenter[0]);
+        label.setAttribute('y', labelCenter[1]);
+        label.querySelectorAll('tspan').forEach((span) => span.setAttribute('x', labelCenter[0]));
+        label.style.opacity = String(Math.max(0, 1 - fold * 1.2));
+      });
+      hingeElements.forEach((line, index) => {
+        const hinge = netHinges[index];
+        const flat = hinge.net.map(netPoint);
+        const folded = hinge.world.map(project);
+        const [start, end] = flat.map((point, i) => mixPoint(point, folded[i], fold));
+        line.setAttribute('x1', start[0]); line.setAttribute('y1', start[1]);
+        line.setAttribute('x2', end[0]); line.setAttribute('y2', end[1]);
+        line.style.opacity = String(1 - fold);
+      });
+      svg.setAttribute('aria-label', `折叠程度 ${percent}%。长5厘米、宽2厘米、高3厘米的长方体；六个面的面积是15、15、10、10、6、6平方厘米，总表面积62平方厘米。`);
+      status.textContent = percent === 0
+        ? '展开图：六个面各一次；沿虚线折起后，边要对接、面不能重叠。'
+        : percent === 100
+          ? '折好了：六个面围成一个长方体，三对相对面的面积分别为 15、10、6 cm²。'
+          : `折叠示意：${percent}%。六片纸板沿相连的边合拢；到 100% 时成为长方体。`;
+    };
+
+    const cancelFoldAnimation = () => {
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+      animationFrame = 0;
+    };
+    const animateFoldTo = (target) => {
+      cancelFoldAnimation();
+      const start = Number(foldRange.value) / 100;
+      if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches || start === target) {
+        foldRange.value = String(target * 100);
+        updateNet();
+        return;
+      }
+      const duration = 520 * Math.abs(target - start);
+      let startedAt = 0;
+      const frame = (now) => {
+        if (!startedAt) startedAt = now;
+        const progress = Math.min(1, (now - startedAt) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        foldRange.value = String(Math.round((start + (target - start) * eased) * 100));
+        updateNet();
+        if (progress < 1) animationFrame = requestAnimationFrame(frame);
+        else animationFrame = 0;
+      };
+      animationFrame = requestAnimationFrame(frame);
+    };
+
+    foldRange.addEventListener('input', () => { cancelFoldAnimation(); updateNet(); });
+    document.getElementById('bc-solid-net-unfold').addEventListener('click', () => animateFoldTo(0));
+    document.getElementById('bc-solid-net-fold-button').addEventListener('click', () => animateFoldTo(1));
+    const answerButtons = [...solidLesson.querySelectorAll('[data-solid-net-answer]')];
+    const answerFeedback = document.getElementById('bc-solid-net-check-feedback');
+    answerButtons.forEach((button) => button.addEventListener('click', () => {
+      answerButtons.forEach((item) => {
+        item.setAttribute('aria-pressed', String(item === button));
+        item.classList.remove('is-correct', 'is-wrong');
+      });
+      if (Number(button.dataset.solidNetAnswer) === 2) {
+        button.classList.add('is-correct');
+        answerFeedback.textContent = '答对了！5 cm × 3 cm = 15 cm²；前面和后面各一块，所以共有 2 块，共计 30 cm²。';
+      } else {
+        button.classList.add('is-wrong');
+        answerFeedback.textContent = '再看这对相对面：前面和后面尺寸都是 5 cm × 3 cm。每块 15 cm²，一共有两块。';
+      }
+    }));
+    updateNet();
+  }
+
   const rectangleLesson = document.getElementById('bc-topic-perimeter-area');
   const rectangleFigure = document.getElementById('bc-figure-perimeter-area');
   if (rectangleLesson && rectangleFigure && !document.getElementById('bc-rectangle-lab')) {

@@ -148,7 +148,7 @@
     arithmetic: {
       'order-operations': ['先按括号和运算规则确定顺序：先括号、再乘除、后加减；同级从左向右', '只有同级加法或乘法可交换、结合来凑整；减法和除法不随意重排', '按允许的顺序计算，或在不改变原值时先配出整十、整百', '用运算顺序复核；凑整变形可按原顺序重算核对'],
       fractions: ['确认分数表示同一个整体；分母与除法的除数都不能为 0', '分清求和差、求一个量的几分之几，还是数里面有几个分数单位', '加减先通分；乘法按分数相乘；除以非零分数改乘它的倒数', '约分或化带分数，再用大小关系或“商 × 除数 = 被除数”检查'],
-      ratio: ['标清两量的前后顺序和单位，判断是在求等值比还是按比分配', '等值比先同除公因数约简或按对应位置列比例（后项非 0）；分配题先求总份数', '按比分配用总量 ÷ 总份数求一份，再分别乘各自份数', '回查总量与比的顺序；不可拆的物品还要检查分得整数'],
+      ratio: ['先说清比表示商、比例，还是分配份数；标明前后顺序并统一单位', '作为商时后项非 0；比例的两个后项都非 0 后，才可交叉相乘；分配时检查 a、b≥0 且总份数 a+b>0', '用正总量除以总份数求一份，再分别乘各自权重；零权重的一边分得 0', '回查总量与顺序；非负份数不能为负，不可拆物品还须得到整数'],
       percent: ['为每个百分数圈出它对应的基数；折扣先认清保留比例', '判断求部分、反求原量还是求变化后量：部分乘百分率，反求基数用除法', '每一步按当时的基数计算；连续涨跌要先更新基数再算下一步', '检查涨跌方向和数量级，再把结果代回基数与变化过程'],
       average: ['圈出同单位的总量、份数，并确认题目要平均数还是总量', '已知总量求平均数用总量 ÷ 份数；已知平均数求总量用平均数 × 份数', '若新增或拿走数据，先更新总量和份数，再重新求平均数', '把平均数乘回份数核验总量；新增数据题要逐项回查'],
       'speed-work': ['统一距离和时间单位；辨清求路程、速度、时间，还是工作量与效率', '单人行程用路程 = 速度 × 时间及其变式；工作先把整项任务看作 1', '相遇用速度和、追及用速度差；合作工作用效率和', '带上单位代回关系检查：路程、时间或总工作量是否符合题意']
@@ -230,7 +230,7 @@
   const formulas = {
     'order-operations':['括号 → 乘除 → 加减；同级从左向右','先定顺序，再把可凑整的加数或乘数放在一起。'],
     fractions:['同分母：a/b ± c/b = (a ± c)/b；异分母：a/b ± c/d = (ad ± bc)/bd；乘：(a/b)×(c/d)=ac/bd；除：(a/b)÷(c/d)=(a/b)×(d/c)','分母不能为 0；除数也不能为 0。加减先统一单位份，乘法表示“求几分之几”，最后再约分。'],
-    ratio:['a:b=c:d ⇔ ad=bc（b、d≠0）；按 a:b 分总量 T：第一份=T×a/(a+b)','先对齐比的顺序并统一单位。不可拆物品按比分配后，还要检查数量是否为整数。'],
+    ratio:['a:b=c:d ⇔ ad=bc（作商时 b、d≠0）；按 a:b 分正总量 T：第一份=T×a/(a+b)，a、b≥0 且 a+b>0','分清商、比例和份数权重：0:5 可作零比值，0:0 无定义；负数不是非负物品的份数。连续量可分数化，不可拆物品须检查整数。'],
     percent:['x%=x/100；部分量=基数×百分率；基数=部分量÷百分率；涨 p%：×(1+p/100)；降 p%：×(1−p/100)','每个百分数都要对应一个基数；连续涨跌逐步更新基数。打八折表示保留原量的 80%。'],
     average:['平均数=总量÷份数；总量=平均数×份数','新增或拿走数据后，总量和份数都要更新。'],
     'speed-work':['路程=速度×时间；工作量=效率×时间','相遇速度相加；追及速度相减；合作效率相加。'],
@@ -367,7 +367,7 @@
     const answerValues = Array.isArray(q.a) ? q.a : [q.a];
     const decimalOnly = answerValues.length > 0 && answerValues.every((answer) => /^[+−-]?(?:\d+(?:\.\d*)?|\.\d+)$/u.test(String(answer ?? '').trim()));
     const placeholder = answerValues.some((answer) => String(answer ?? '').includes('/')) ? '例如 5/8' : '填答案';
-    return `<div class="bc-question"><label for="${inputId}"><i>${index + 1}</i><span class="bc-question-copy">${renderRichText(q.q)}</span></label><div class="bc-answer-row"><input id="${inputId}" type="text" inputmode="${decimalOnly ? 'decimal' : 'text'}" autocomplete="off" placeholder="${placeholder}"><button type="button" data-bc-check="${safeId}" data-index="${index}">检查</button></div><p class="bc-answer-feedback${passed ? ' good' : ''}" aria-live="polite">${feedback}</p><details class="bc-solution"><summary>看提示与完整推理</summary><p><b>提示：</b>${renderRichText(q.hint)}</p><p><b>讲解：</b>${renderRichText(q.why)}</p></details></div>`;
+    return `<div class="bc-question"><label for="${inputId}"><i>${index + 1}</i><span class="bc-question-copy">${q.level ? `<b class="bc-question-level">${esc(q.level)} · </b>` : ''}${renderRichText(q.q)}</span></label><div class="bc-answer-row"><input id="${inputId}" type="text" inputmode="${decimalOnly ? 'decimal' : 'text'}" autocomplete="off" placeholder="${placeholder}"><button type="button" data-bc-check="${safeId}" data-index="${index}">检查</button></div><p class="bc-answer-feedback${passed ? ' good' : ''}" aria-live="polite">${feedback}</p><details class="bc-solution"><summary>看提示与完整推理</summary><p><b>提示：</b>${renderRichText(q.hint)}</p><p><b>讲解：</b>${renderRichText(q.why)}</p></details></div>`;
   }
   function renderTopicTable(table) {
     if (!table || !Array.isArray(table.headers) || !Array.isArray(table.rows)) return '';
@@ -503,7 +503,7 @@
   function renderLab() {
     const card = document.getElementById('bc-lab-card');
     const labs = {
-      arithmetic: {lead:'把总量和两种份数调一调，观察按比例分配怎样变化。',html:`<div class="bc-lab-controls"><p><b>比例分配实验：</b>把总量切成两种份数。每一格代表相同大小的一份。</p><label class="bc-control-row" for="bc-ratio-total">总量 <input id="bc-ratio-total" type="range" min="24" max="120" step="6" value="72"><output id="bc-ratio-total-out">72</output></label><label class="bc-control-row" for="bc-ratio-a">第一份数 <input id="bc-ratio-a" type="range" min="1" max="6" value="2"><output id="bc-ratio-a-out">2</output></label><label class="bc-control-row" for="bc-ratio-b">第二份数 <input id="bc-ratio-b" type="range" min="1" max="6" value="3"><output id="bc-ratio-b-out">3</output></label><div class="bc-lab-foot">可以试着保持总份数不变，只增加其中一边，看看分到的量会怎样变化。</div></div><div class="bc-lab-visual"><h3>把总量想成一条可分的长带</h3><div class="bc-ratio-bars"><div class="bc-ratio-track" id="bc-ratio-track"></div></div><p id="bc-ratio-explain"></p><div class="bc-live-result" id="bc-ratio-result" aria-live="polite"></div></div>`},
+      arithmetic: {lead:'把总量和两种份数调一调，观察按比例分配怎样变化。',html:`<div class="bc-lab-controls"><p><b>比例分配实验：</b>把正总量 T 按两种非负份数分配；每一格代表相同大小的一份。</p><label class="bc-control-row" for="bc-ratio-total">总量 <input id="bc-ratio-total" type="range" min="0" max="120" step="6" value="72"><output id="bc-ratio-total-out">72</output></label><label class="bc-control-row" for="bc-ratio-a">第一份数 <input id="bc-ratio-a" type="range" min="0" max="6" value="2"><output id="bc-ratio-a-out">2</output></label><label class="bc-control-row" for="bc-ratio-b">第二份数 <input id="bc-ratio-b" type="range" min="0" max="6" value="3"><output id="bc-ratio-b-out">3</output></label><div class="bc-lab-foot">本图允许连续数量得到分数；份数可为 0 但不能同时为 0，负数不是物品份数。总量为 0 时没有可分的资源；不可拆物品还要另查结果是否为整数。</div></div><div class="bc-lab-visual"><h3>把总量想成一条可分的长带</h3><div class="bc-ratio-bars"><div class="bc-ratio-track" id="bc-ratio-track"></div></div><p id="bc-ratio-explain"></p><div class="bc-live-result" id="bc-ratio-result" aria-live="polite"></div></div>`},
       applications:{lead:'拖动“兔子”的数量，看相同头数下腿数如何增加；这就是假设法里的差量。',html:`<div class="bc-lab-controls"><p><b>鸡兔同笼实验：</b>先把所有动物假设成鸡，每多换一只兔，就多 2 条腿。</p><label class="bc-control-row" for="bc-heads">动物总数 <input id="bc-heads" type="range" min="3" max="12" value="8"><output id="bc-heads-out">8</output></label><label class="bc-control-row" for="bc-rabbits">兔子数量 <input id="bc-rabbits" type="range" min="0" max="8" value="3"><output id="bc-rabbits-out">3</output></label><div class="bc-lab-foot">每把一只鸡换成兔：头数不变，腿数增加 2。你可以试试全是鸡、全是兔和中间值。</div></div><div class="bc-lab-visual"><h3>头数固定，腿数跟着兔子数变化</h3><div class="bc-animal-row" id="bc-animal-row" aria-live="polite"></div><p id="bc-animal-explain"></p><div class="bc-live-result" id="bc-animal-result"></div></div>`},
       geometry:{lead:'调整长方形的长和宽，让面积和周长同时显示；观察边长改变时，两个量如何不同。',html:`<div class="bc-lab-controls"><p><b>周长与面积实验：</b>长是横边，宽是竖边。周长绕一圈，面积铺满里面。</p><label class="bc-control-row" for="bc-rect-length">长 <input id="bc-rect-length" type="range" min="3" max="15" value="9"><output id="bc-rect-length-out">9</output></label><label class="bc-control-row" for="bc-rect-width">宽 <input id="bc-rect-width" type="range" min="2" max="10" value="5"><output id="bc-rect-width-out">5</output></label><div class="bc-lab-foot">可以让长和宽互换：面积一样，但图形方向会转过来。</div></div><div class="bc-lab-visual"><h3>矩形的边与内部</h3><svg class="bc-rect-svg" viewBox="0 0 320 190" role="img" aria-label="长方形的长宽示意图"><rect id="bc-rect-shape" x="42" y="28" width="220" height="110" rx="8" fill="#dfeede" stroke="#6e9a76" stroke-width="3"/><text id="bc-rect-label-x" x="152" y="164" text-anchor="middle" fill="#4f7357" font-size="13">长 9</text><text id="bc-rect-label-y" x="287" y="90" text-anchor="middle" fill="#4f7357" font-size="13">宽 5</text><text id="bc-rect-center" x="152" y="91" text-anchor="middle" fill="#4b7353" font-size="15">铺满里面</text></svg><div class="bc-live-result" id="bc-rect-result"></div></div>`},
       counting:{lead:'改变网格的横步和竖步，表格里的数字按“从左边来 + 从下边来”累加。',html:`<div class="bc-lab-controls"><p><b>最短路线实验：</b>只能向右或向上。到一个格点的走法数，等于它前面两个方向的走法数相加。</p><label class="bc-control-row" for="bc-path-right">向右几步 <input id="bc-path-right" type="range" min="1" max="5" value="3"><output id="bc-path-right-out">3</output></label><label class="bc-control-row" for="bc-path-up">向上几步 <input id="bc-path-up" type="range" min="1" max="5" value="2"><output id="bc-path-up-out">2</output></label><div class="bc-lab-foot">从起点出发，先在边缘标 1，再把里面的格点按两边相加填满。</div></div><div class="bc-lab-visual"><h3>格点路线数（数字越大，走法越多）</h3><div id="bc-path-table" class="bc-path-table" aria-live="polite"></div><div class="bc-live-result" id="bc-path-result"></div></div>`},
@@ -520,13 +520,23 @@
       const exactFraction = (n, d) => { const common = gcd(n, d); const numerator = n / common; const denominator = d / common; return denominator === 1 ? String(numerator) : `${numerator}/${denominator}`; };
       const draw = () => {
         const t = Number(total.value), x = Number(a.value), y = Number(b.value), parts = x + y;
-        const unit = exactFraction(t, parts), first = exactFraction(t * x, parts), second = exactFraction(t * y, parts);
         document.getElementById('bc-ratio-total-out').textContent = t;
         document.getElementById('bc-ratio-a-out').textContent = x;
         document.getElementById('bc-ratio-b-out').textContent = y;
-        document.getElementById('bc-ratio-track').innerHTML = `<span style="width:${x / parts * 100}%">${first}</span><span style="width:${y / parts * 100}%">${second}</span>`;
-        document.getElementById('bc-ratio-explain').textContent = `${t} 按 ${x}:${y} 分，一共 ${parts} 份；每份 ${unit}（最简分数表示）。`;
-        setRichText(document.getElementById('bc-ratio-result'), `第一份 ${first}，第二份 ${second}。验算：${first} + ${second} = ${t}。`);
+        const track = document.getElementById('bc-ratio-track');
+        const explanation = document.getElementById('bc-ratio-explain');
+        const feedback = document.getElementById('bc-ratio-result');
+        if (parts === 0) {
+          track.replaceChildren();
+          explanation.textContent = '总份数 0+0=0，不能求每一份；请至少把一边调到 1。';
+          setRichText(feedback, '无效分配：a+b=0，除数为 0，无法确定每份数量。');
+          return;
+        }
+        const unit = exactFraction(t, parts), first = exactFraction(t * x, parts), second = exactFraction(t * y, parts);
+        track.innerHTML = `<span style="width:${x / parts * 100}%">${first}</span><span style="width:${y / parts * 100}%">${second}</span>`;
+        explanation.textContent = `${t} 按 ${x}:${y} 分，一共 ${parts} 份；每份 ${unit}（最简分数表示）。`;
+        const note = t === 0 ? '总量为 0，输出只能是 0 和 0，不能用来观察非零分配的比。' : x === 0 || y === 0 ? '一边的权重为 0，所以该边分得 0，另一边得到全部总量。' : '两边权重都为正。若物品不可拆，还需另验数量是否为整数。';
+        setRichText(feedback, `第一份 ${first}，第二份 ${second}。验算：${first} + ${second} = ${t}。${note}`);
       };
       [total,a,b].forEach((el)=>el.addEventListener('input',draw)); draw();
     } else if (branch.id === 'applications') {

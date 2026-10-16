@@ -105,6 +105,7 @@
 .bc-concept-text .bc-rich-math{font-size:clamp(15px,1.8vw,19px)}
 .bc-question-copy{display:block;flex:1;min-width:0}
 .bc-question-copy .bc-rich-math{font-size:14px}
+.bc-question-level{color:#57714f;font-size:.82em;font-weight:900}
 .bc-example-solution{display:grid;gap:3px;margin:8px 0 0;padding:9px 10px;border-left:3px solid #78a47b;border-radius:0 9px 9px 0;background:#f1f6ed;color:#53645a;font-size:11px;line-height:1.8}
 .bc-example-solution>b{color:#426e50}
 .bc-formula-card code{font-size:16px;line-height:1.8;overflow-wrap:anywhere;word-break:normal;font-variant-numeric:lining-nums tabular-nums}

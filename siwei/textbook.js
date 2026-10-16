@@ -279,17 +279,19 @@
       const numerator = root.querySelector('[data-fraction-numerator]');
       if (!denominator || !numerator || !result) return;
       const d = Number(denominator.value);
+      numerator.min = '0';
       numerator.max = String(d);
       if (Number(numerator.value) > d) numerator.value = String(d);
       const n = Number(numerator.value);
       const gcd = (a,b) => b ? gcd(b,a%b) : a;
       const divisor = gcd(n,d);
-      const simplified = `${n/divisor}/${d/divisor}`;
+      const simplifiedDenominator = d / divisor;
+      const simplified = simplifiedDenominator === 1 ? String(n / divisor) : `${n/divisor}/${simplifiedDenominator}`;
       const pieces = root.querySelector('[data-fraction-pieces]');
       pieces.style.setProperty('--fraction-denominator', d);
       pieces.innerHTML = Array.from({length:d},(_,i)=>`<span class="${i<n?'is-shaded':''}" aria-hidden="true"></span>`).join('');
       pieces.setAttribute('aria-label', `${d} 等份中涂色 ${n} 份，表示 ${n}/${d}，约分后是 ${simplified}`);
-      result.innerHTML = renderRichText(`${n}/${d} 表示 ${d} 个同样大小的份中取 ${n} 份；约分后是 ${simplified}。`);
+      result.innerHTML = renderRichText(`${n}/${d} 表示 ${d} 个同样大小的份中取 ${n} 份；约分后是 ${simplified}。${config.caption ? ` ${config.caption}` : ''}`);
       return;
     }
     if (root.dataset.bookModel === 'remainder-line') {

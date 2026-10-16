@@ -65,3 +65,22 @@
   .foundation-division-visual{gap:6px}
   .foundation-division-group{flex-basis:72px}
 }
+
+.foundation-fraction-wholes{display:grid;gap:10px;margin:12px 0}
+.foundation-fraction-unit{display:grid;grid-template-columns:5.5em minmax(0,1fr);align-items:center;gap:9px;min-width:0}
+.foundation-fraction-unit>b{color:#596a4e;font-size:.8125rem;text-align:right}
+.foundation-fraction-pieces{display:grid;grid-template-columns:repeat(var(--fraction-parts,4),minmax(0,1fr));gap:3px;min-width:0}
+.foundation-fraction-pieces span{height:28px;min-width:0;border:1px solid #cfd8bf;border-radius:4px;background:#fffefa}
+.foundation-fraction-pieces span.is-shaded{border-color:#82965a;background:linear-gradient(135deg,#aebe80,#d5dfaa)}
+.foundation-fraction-area{display:grid;place-items:center;margin:12px 0}
+.foundation-fraction-area-grid{display:grid;grid-template-columns:repeat(var(--fraction-area-columns,3),minmax(0,1fr));grid-template-rows:repeat(var(--fraction-area-rows,4),minmax(24px,1fr));gap:2px;width:min(100%,340px);aspect-ratio:3/2;padding:4px;border:1px solid #bfcbb0;border-radius:10px;background:#fffefa}
+.foundation-area-cell{min-width:0;border:1px solid #e0e6d7;border-radius:3px;background:#fffefa}
+.foundation-area-cell.is-first-factor{background:#dce8c5}
+.foundation-area-cell.is-second-factor{background:#f3e6bf}
+.foundation-area-cell.is-overlap{border-color:#71834e;background:linear-gradient(135deg,#9eaf70,#c9d99e)}
+@media(max-width:650px){
+  .foundation-fraction-unit{grid-template-columns:4.5em minmax(0,1fr);gap:6px}
+  .foundation-fraction-unit>b{font-size:.75rem}
+  .foundation-fraction-pieces span{height:26px}
+  .foundation-fraction-area-grid{width:min(100%,300px);aspect-ratio:4/3}
+}

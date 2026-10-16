@@ -1,5 +1,5 @@
 (() => {
-  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups']);
+  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product']);
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const moneyName = (jiao) => {
     const yuan = Math.floor(jiao / 10);
@@ -10,6 +10,17 @@
   };
   const options = (values, selected, label = (value) => String(value)) => values.map((value) => `<option value="${esc(value)}"${String(value) === String(selected) ? ' selected' : ''}>${esc(label(value))}</option>`).join('');
   const select = (name, label, values, selected, format = (value) => String(value)) => `<label>${label}<select data-foundation-model-control data-foundation-model-setting="${name}" aria-label="${label}">${options(values, selected, format)}</select></label>`;
+  const fractionChoices = ['1/4', '1/3', '1/2', '2/3', '3/4'];
+  const parseFraction = (value) => {
+    const match = String(value ?? '').match(/^(\d+)\/(\d+)$/);
+    return match ? {n:Number(match[1]), d:Number(match[2])} : {n:0, d:1};
+  };
+  const gcd = (a, b) => b ? gcd(b, a % b) : a;
+  const fractionName = (n, d) => {
+    const divisor = gcd(Math.abs(n), d) || 1;
+    const numerator = n / divisor, denominator = d / divisor;
+    return denominator === 1 ? String(numerator) : `${numerator}/${denominator}`;
+  };
   const minuteValues = Array.from({length:12}, (_, index) => index * 5);
   const wrapper = (type, title, instruction, controls, visual, caption = '') => `<section class="book-model-lab book-foundation-lab" data-book-model="${type}" data-book-model-config="${esc(JSON.stringify({}))}" aria-label="${esc(title)}"><div class="book-model-heading"><b>${esc(title)}</b><span>${esc(instruction)}</span></div><div class="book-foundation-controls">${controls}</div>${visual}<p class="book-model-result" data-book-model-result aria-live="polite"></p>${caption ? `<p class="book-model-caption">${esc(caption)}</p>` : ''}</section>`;
   function markup(config) {
@@ -77,6 +88,20 @@
       controls = select('total', '物品总数', [6,8,10,12,15,18,20,24], config.total || 12, (value) => `${value} 个`) + select('mode', '问题问法', ['share','group'], config.mode || 'share', (value) => value === 'share' ? '平均分给几份' : '每几个装一组') + `<label><span data-foundation-division-divisor-label>${config.mode === 'group' ? '每组几个' : '分给几份'}</span><select data-foundation-model-control data-foundation-model-setting="divisor" aria-label="份数或每组数量">${options([2,3,4,5,6], config.divisor || 3, (value) => `${value}`)}</select></label>`;
       visual = '<div class="foundation-division-visual" data-foundation-division role="img"></div>';
       caption = '平均分：除数是份数；按几个一组：除数是每组数量。两种问法都可用乘法把结果乘回总数。';
+    } else if (type === 'fraction-whole-parts') {
+      const denominator = Math.max(2, Number(config.denominator || 4));
+      const numerator = Math.max(0, Number(config.numerator || 0));
+      title = '把单位份继续涂下去';
+      instruction = '每个长框都是一个完整整体；改变分母和涂色份数，观察分数怎样超过 1。';
+      controls = select('denominator', '每个整体平均分成', [2,3,4,5,6,8], denominator, (value) => `${value} 份`) + `<label class="foundation-range-label">涂色的单位份数 <input type="range" min="0" max="${denominator * 3}" step="1" value="${Math.min(numerator, denominator * 3)}" data-foundation-model-control data-foundation-model-setting="numerator" aria-label="涂色的单位份数"><output data-foundation-range-output>${Math.min(numerator, denominator * 3)} 份</output></label>`;
+      visual = '<div class="foundation-fraction-wholes" data-foundation-wholes role="img"></div>';
+      caption = '每条长框代表同一个完整整体，每一格都是同样大小的单位份。超过一个长框时，先数完整整体，再读剩下的份数。';
+    } else if (type === 'fraction-area-product') {
+      title = '用面积看“一个分数的几分之几”';
+      instruction = '先选横向分数，再选纵向分数；交叠涂色的小格就是乘积。';
+      controls = select('factorA', '横向取', fractionChoices, config.factorA || '3/4') + select('factorB', '纵向取', fractionChoices, config.factorB || '2/3');
+      visual = '<div class="foundation-fraction-area"><div class="foundation-fraction-area-grid" data-foundation-area-grid role="img"></div></div>';
+      caption = '横向分割表示第一个真分数，纵向分割表示第二个真分数；同时被两次选中的交叠区域表示乘积。这个图只展示 0 到 1 之间的正分数因数。';
     }
     let html = wrapper(type, title, instruction, controls, visual, caption);
     html = html.replace(`data-book-model-config="${esc(JSON.stringify({}))}"`, `data-book-model-config="${esc(JSON.stringify(config))}"`);
@@ -244,6 +269,44 @@
       result.textContent = share
         ? `${total} ÷ ${divisor} 份 = 每份 ${itemsPerGroup} 个${remainder ? `，余 ${remainder} 个` : ''}。乘法回查：${divisor} 份 × ${itemsPerGroup} 个/份${remainder ? ` + ${remainder} 个` : ''} = ${total} 个。`
         : `${total} ÷ 每组 ${divisor} 个 = ${groupCount} 组${remainder ? `，余 ${remainder} 个` : ''}。乘法回查：${groupCount} 组 × ${divisor} 个/组${remainder ? ` + ${remainder} 个` : ''} = ${total} 个。`;
+    } else if (root.dataset.bookModel === 'fraction-whole-parts') {
+      const denominator = Math.max(2, get('denominator', config.denominator || 4));
+      const numeratorControl = root.querySelector('[data-foundation-model-setting="numerator"]');
+      const max = denominator * 3;
+      numeratorControl.max = String(max);
+      const numerator = Math.max(0, Math.min(max, get('numerator', config.numerator || 0)));
+      numeratorControl.value = String(numerator);
+      root.querySelector('[data-foundation-range-output]').textContent = `${numerator} 份`;
+      const wholeCount = Math.max(1, Math.ceil(numerator / denominator));
+      const visual = root.querySelector('[data-foundation-wholes]');
+      visual.innerHTML = Array.from({length:wholeCount}, (_, wholeIndex) => {
+        const pieces = Array.from({length:denominator}, (_, pieceIndex) => {
+          const globalIndex = wholeIndex * denominator + pieceIndex;
+          return `<span class="${globalIndex < numerator ? 'is-shaded' : ''}" aria-hidden="true"></span>`;
+        }).join('');
+        return `<div class="foundation-fraction-unit"><b>整体 ${wholeIndex + 1}</b><div class="foundation-fraction-pieces" style="--fraction-parts:${denominator}">${pieces}</div></div>`;
+      }).join('');
+      const complete = Math.floor(numerator / denominator), remainder = numerator % denominator;
+      const mixed = numerator === 0 ? '0' : complete ? (remainder ? `${complete}又${remainder}/${denominator}` : String(complete)) : `${remainder}/${denominator}`;
+      visual.setAttribute('aria-label', `${numerator}/${denominator}：涂色 ${numerator} 个单位份，表示 ${mixed}；每个长框代表一个完整整体`);
+      result.textContent = `${numerator}/${denominator} = ${mixed}；${complete} 个完整整体${remainder ? `，再加 ${remainder}/${denominator}` : ''}。`;
+    } else if (root.dataset.bookModel === 'fraction-area-product') {
+      const first = parseFraction(root.querySelector('[data-foundation-model-setting="factorA"]')?.value || config.factorA || '3/4');
+      const second = parseFraction(root.querySelector('[data-foundation-model-setting="factorB"]')?.value || config.factorB || '2/3');
+      const visual = root.querySelector('[data-foundation-area-grid]');
+      visual.style.setProperty('--fraction-area-columns', first.d);
+      visual.style.setProperty('--fraction-area-rows', second.d);
+      visual.innerHTML = Array.from({length:second.d}, (_, row) => Array.from({length:first.d}, (_, column) => {
+        const inFirst = column < first.n, inSecond = row < second.n;
+        const classes = [inFirst ? 'is-first-factor' : '', inSecond ? 'is-second-factor' : '', inFirst && inSecond ? 'is-overlap' : ''].filter(Boolean).join(' ');
+        return `<span class="foundation-area-cell ${classes}" aria-hidden="true"></span>`;
+      }).join('')).join('');
+      const productNumerator = first.n * second.n, productDenominator = first.d * second.d;
+      const divisor = gcd(productNumerator, productDenominator) || 1;
+      const product = fractionName(productNumerator, productDenominator);
+      const unsimplified = `${productNumerator}/${productDenominator}`;
+      visual.setAttribute('aria-label', `横向 ${first.n}/${first.d}、纵向 ${second.n}/${second.d}；${productNumerator} 个交叠格，占总计 ${productDenominator} 格，乘积为 ${product}`);
+      result.textContent = `${first.n}/${first.d} × ${second.n}/${second.d} = ${unsimplified}${unsimplified === product ? '' : ` = ${product}`}。共 ${productDenominator} 个同样大小的小格，交叠涂色 ${productNumerator} 格。${divisor > 1 ? `约分时分子、分母同除以 ${divisor}。` : ''}`;
     }
     return true;
   }

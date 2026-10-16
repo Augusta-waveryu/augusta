@@ -189,7 +189,7 @@
     arithmetic: {
       4:['order-operations','average'],
       5:['fractions','ratio'],
-      6:['percent','speed-work']
+      6:['fraction-operations','percent','speed-work']
     },
     applications: {4:['sum-difference','planting'],5:['chicken-rabbit','surplus-shortage','ages']},
     geometry: {
@@ -258,7 +258,7 @@
         prerequisite: guidance?.prerequisite || '',
         source: grade === 4
           ? '四年级本站精选专题（21项）；序号为本站路线次序，非教材讲次，按主题编排而非难度递增；难度与先修提示为本站建议（非官方/原书分级）。教材版本、页码与逐讲对应未核实，不表示覆盖目录全课'
-          : `${grade}年级当前精选专题（${({4:21,5:18,6:17})[grade]}项）；外部教材/目录的版本、页码与逐讲对应未核实，不表示覆盖目录全课`,
+          : `${grade}年级当前精选专题（${({4:21,5:18,6:18})[grade]}项）；外部教材/目录的版本、页码与逐讲对应未核实，不表示覆盖目录全课`,
         deepUnit,
         goal: deepUnit?.goal || lesson.concept,
         idea: deepUnit?.idea || deep.idea || lesson.example.solution,
@@ -281,6 +281,6 @@
     {grade:3,title:'三年级 · 规律与建模',focus:'数列、平均数、图形计数、应用题与数独',source:'《奥数教程三年级（第八版）》公开目录主题参照；28讲逐讲映射/页码待核，例题与练习原创'},
     {grade:4,title:'四年级 · 建立模型',focus:'整数、数阵、行程、几何、数列与推理',source:'本站当前编入21个专题；序号是按主题编排的站内路线顺序，不是教材讲次，也不代表难度递增。基础/进阶/拓展与先修提示均为站内建议，不代表官方或原书分级。原记录称公开目录可见11讲；目录版本和逐讲映射待核，其余为拓展/专题整合'},
     {grade:5,title:'五年级 · 组合与数量关系',focus:'分数、因数、面积、行程、计数与证明',source:'当前精选18讲；原记录列公开目录24讲，版本/覆盖映射待核；未核实部分不视为已覆盖'},
-    {grade:6,title:'六年级 · 综合与挑战',focus:'数论、几何、计数、数列、整数方程与最值',source:'当前精选17讲；原记录列公开目录24讲，版本/覆盖映射待核；未核实部分不视为已覆盖'}
+    {grade:6,title:'六年级 · 综合与挑战',focus:'分数计算、数论、几何、计数、数列、整数方程与最值',source:'当前精选18讲；原记录列公开目录24讲，版本/覆盖映射待核；未核实部分不视为已覆盖'}
   ];
 })();

@@ -469,3 +469,61 @@
 
 /* Keep the route title from leaving a single trailing character on narrow phones. */
 @media(max-width:380px){.textbook-page .book-hero h1{font-size:clamp(1.65rem,8.5vw,2rem);line-height:1.22}}
+
+
+/* G1 深讲图示：整体—部分、凑十对比与故事数量变化。 */
+.textbook-page .book-learning-visual{min-width:0;margin:12px 0;padding:12px;border:1px solid #e3e8d6;border-radius:12px;background:linear-gradient(145deg,#f7f8ef,#fffefa);color:#445341}
+.textbook-page .book-learning-visual>figcaption{margin:0 0 10px;color:#46573c;font-size:1rem;font-weight:900;line-height:1.55}
+.textbook-page .book-learning-visual h4{margin:0 0 6px;color:#58684a;font-size:.9rem;line-height:1.5}
+.textbook-page .book-part-whole-grid,.textbook-page .book-strategy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-width:0}
+.textbook-page .book-part-whole-model,.textbook-page .book-strategy-panel{min-width:0;padding:10px;border:1px solid #e8ebdf;border-radius:10px;background:#fff}
+.textbook-page .book-part-whole-model>p,.textbook-page .book-strategy-panel>p{margin:6px 0;color:#58665b;font-size:.875rem;line-height:1.7;overflow-wrap:anywhere}
+.textbook-page .book-visual-equation{margin:5px 0;color:#3f503f;font-weight:900;overflow-wrap:anywhere}
+.textbook-page .book-whole-box{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0;padding:8px 10px;border:1px solid #d8e1c8;border-radius:9px;background:#f2f6e9}
+.textbook-page .book-whole-box span,.textbook-page .book-part-box span{color:#68745e;font-size:.78rem;font-weight:800;line-height:1.5;overflow-wrap:anywhere}
+.textbook-page .book-whole-box strong,.textbook-page .book-part-box strong{color:#394d38;font-size:1.15rem;font-weight:900}
+.textbook-page .book-part-boxes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.textbook-page .book-part-box{display:flex;min-width:0;flex-direction:column;gap:3px;padding:8px;border:1px solid #e8eadf;border-radius:8px;background:#fcfcf8}
+.textbook-page .book-part-box:first-child{border-color:#eadfbe;background:#fcf7e9}
+.textbook-page .book-visual-check{margin:8px 0 0;padding:8px 9px;border-radius:8px;background:#f1f5e9;color:#4c6046;font-size:.875rem;font-weight:700;line-height:1.7;overflow-wrap:anywhere}
+.textbook-page .book-ten-frame{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;width:min(100%,230px);margin:8px auto;padding:5px;border:2px solid #a7b58b;border-radius:9px;background:#fbfcf7}
+.textbook-page .book-ten-cell{display:grid;min-width:0;aspect-ratio:1;place-items:center;border:1px solid #d5ddc9;border-radius:4px;background:#fff;color:#86927a;font-size:1.1rem;font-weight:900}
+.textbook-page .book-ten-cell.is-filled{border-color:#94a678;background:#e4edcf;color:#536a41}
+.textbook-page .book-ten-cell.is-completing{border-color:#d5bd7a;background:#fbf0ce;color:#8b7136}
+.textbook-page .book-number-line{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:0;width:100%;margin:12px 0 8px}
+.textbook-page .book-number-point{position:relative;z-index:0;display:grid;min-width:0;min-height:2rem;place-items:center;color:#46583e;font-size:.8rem;font-weight:900}
+.textbook-page .book-number-point::before{position:absolute;z-index:-1;top:50%;right:0;left:0;height:2px;background:#cbd6b6;content:""}
+.textbook-page .book-number-point:first-child::before{left:50%}
+.textbook-page .book-number-point:last-child::before{right:50%}
+.textbook-page .book-number-point::after{position:absolute;z-index:-1;inset:2px auto 2px 50%;width:1.55rem;border:1px solid #d8e2c7;border-radius:50%;background:#fff;content:"";transform:translateX(-50%)}
+.textbook-page .book-story-model{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);align-items:center;gap:3px;min-width:0}
+.textbook-page .book-story-step{display:flex;min-width:0;min-height:92px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:7px 4px;border:1px solid #e1e7d6;border-radius:9px;background:#fff;text-align:center}
+.textbook-page .book-story-step>span{color:#68745e;font-size:.75rem;font-weight:800;line-height:1.45;overflow-wrap:anywhere}
+.textbook-page .book-story-step>strong{color:#3f583d;font-size:1rem;line-height:1.4;overflow-wrap:anywhere}
+.textbook-page .book-story-step>strong small{display:block;color:#72806d;font-size:.7rem;font-weight:700}
+.textbook-page .book-story-step.is-change{border-color:#e4d7ad;background:#fcf8ed}
+.textbook-page .book-story-step.is-result{border-color:#cddbb8;background:#f4f8ec}
+.textbook-page .book-story-dots{display:flex;min-height:12px;flex-wrap:wrap;justify-content:center;gap:2px;max-width:100%}
+.textbook-page .book-story-dots span{width:8px;height:8px;flex:0 0 8px;border:1px solid #8da071;border-radius:50%;background:#dbe7c7}
+.textbook-page .book-story-step.is-change .book-story-dots span{border-color:#b59a5c;background:#f0e0b2}
+.textbook-page .book-story-operator{color:#74825c;font-size:.9rem;font-weight:900;text-align:center}
+@media(max-width:650px){
+  .textbook-page .book-learning-visual{padding:9px}
+  .textbook-page .book-learning-visual>figcaption{font-size:.95rem}
+  .textbook-page .book-part-whole-grid,.textbook-page .book-strategy-grid{grid-template-columns:1fr;gap:7px}
+  .textbook-page .book-part-whole-model,.textbook-page .book-strategy-panel{padding:9px}
+  .textbook-page .book-part-box{padding:7px}
+  .textbook-page .book-story-model{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr);gap:2px}
+  .textbook-page .book-story-step{min-height:86px;padding:6px 2px}
+  .textbook-page .book-story-step>span{font-size:.7rem}
+  .textbook-page .book-story-step>strong{font-size:.9rem}
+  .textbook-page .book-story-step>strong small{font-size:.65rem}
+  .textbook-page .book-story-dots{gap:2px}
+  .textbook-page .book-story-dots span{width:7px;height:7px;flex-basis:7px}
+}
+@media(max-width:340px){
+  .textbook-page .book-story-model{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)}
+  .textbook-page .book-story-operator{font-size:.8rem}
+  .textbook-page .book-number-point{font-size:.72rem}
+  .textbook-page .book-part-boxes{grid-template-columns:1fr}
+}

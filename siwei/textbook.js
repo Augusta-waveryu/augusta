@@ -145,6 +145,10 @@
     if (lesson.deepUnit) return Array.isArray(saved?.solved) ? saved.solved : [];
     return saved?.done ? [0] : [];
   };
+  const legacyDoneFor = (lesson) => {
+    const saved = progress[keyOf(lesson)];
+    return Boolean(lesson.deepUnit && (saved?.legacyDone === true || (saved?.done === true && !Array.isArray(saved?.solved))));
+  };
   const isDone = (lesson) => solvedFor(lesson).length >= practiceList(lesson).length;
 
   const grades = [...new Set(lessons.map((lesson) => Number(lesson.grade || 3)))].sort((a,b) => a-b);
@@ -196,11 +200,40 @@
     }
   }
 
+  function learningVisualMarkup(visual) {
+    if (!visual || typeof visual !== 'object') return '';
+    const cap = (value, max) => Number.isFinite(Number(value)) ? Math.max(0, Math.min(max, Math.floor(Number(value)))) : 0;
+    if (visual.type === 'part-whole') {
+      const models = (visual.models || []).map((item) => `<article class="book-part-whole-model"><h4>${esc(item.label)}</h4><p class="book-visual-equation">${renderRichText(item.equation)}</p><div class="book-whole-box"><span>${esc(item.wholeLabel)}</span><strong>${esc(item.whole)}</strong></div><div class="book-part-boxes">${(item.parts || []).map((part) => `<div class="book-part-box"><span>${esc(part.label)}</span><strong>${esc(part.value)}</strong></div>`).join('')}</div><p class="book-visual-check">${renderRichText(item.check)}</p></article>`).join('');
+      return `<figure class="book-learning-visual book-part-whole-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-part-whole-grid">${models}</div></figure>`;
+    }
+    if (visual.type === 'ten-strategies') {
+      const start = cap(visual.start, 10);
+      const completing = Math.min(10 - start, cap(visual.completing, 10));
+      const addend = cap(visual.addend, 20);
+      const remainder = cap(visual.remainder, 20);
+      const total = cap(visual.total, 20);
+      const cells = Array.from({length: 10}, (_, index) => {
+        const kind = index < start ? 'is-filled' : index < start + completing ? 'is-completing' : '';
+        return `<span class="book-ten-cell ${kind}" aria-hidden="true">${index < start ? '●' : index < start + completing ? '+' : ''}</span>`;
+      }).join('');
+      const sequence = (Array.isArray(visual.countOn) ? visual.countOn : []).map(Number).filter(Number.isFinite);
+      const points = sequence.map((value) => `<span class="book-number-point">${esc(value)}</span>`).join('');
+      return `<figure class="book-learning-visual book-ten-strategies" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-strategy-grid"><section class="book-strategy-panel"><h4>办法一：凑十</h4><p>十格框里先有 ${esc(start)} 个，再补 ${esc(completing)} 个。</p><div class="book-ten-frame" role="img" aria-label="十格框：${esc(start)} 个已有，补入 ${esc(completing)} 个后凑成 10">${cells}</div><p>从 ${esc(addend)} 里拆出 ${esc(completing)} 补到 ${esc(start)}，剩下 ${esc(remainder)}。</p><strong>${renderRichText(String(start) + ' + ' + addend + ' = ' + start + ' + ' + completing + ' + ' + remainder + ' = 10 + ' + remainder + ' = ' + total)}</strong></section><section class="book-strategy-panel"><h4>办法二：接着数</h4><p>从 ${esc(start)} 开始，再数 ${Math.max(0, sequence.length - 1)} 个数：</p><div class="book-number-line" role="img" aria-label="接着数：${esc(sequence.join('、'))}；从起点后再数 ${Math.max(0, sequence.length - 1)} 步">${points}</div><p>起点 ${esc(start)} 不算新数；数到 ${esc(total)} 正好走了 ${Math.max(0, sequence.length - 1)} 步。</p><strong>${renderRichText(String(start) + ' + ' + addend + ' = ' + total)}</strong></section></div><p class="book-visual-check">两种办法只是路线不同，都在数同一批数量，所以结果相同：${esc(total)}。</p></figure>`;
+    }
+    if (visual.type === 'story-change') {
+      const dots = (count) => Array.from({length: cap(count, 20)}, () => '<span aria-hidden="true"></span>').join('');
+      const storyStep = (label, value, count, extra = '') => `<div class="book-story-step ${extra}"><span>${esc(label)}</span><strong>${esc(value)} <small>${esc(visual.unit)}</small></strong><div class="book-story-dots" aria-hidden="true">${dots(count)}</div></div>`;
+      return `<figure class="book-learning-visual book-story-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-story-model">${storyStep(visual.startLabel, visual.start, visual.start)}<span class="book-story-operator" aria-hidden="true">→</span>${storyStep(visual.changeLabel, `+${visual.change}`, visual.change, 'is-change')}<span class="book-story-operator" aria-hidden="true">→</span>${storyStep(visual.endLabel, visual.end, visual.end, 'is-result')}</div><p class="book-visual-equation">${renderRichText(visual.formula)}</p><p class="book-visual-check"><b>故事核对：</b>${esc(visual.check)}</p></figure>`;
+    }
+    return '';
+  }
+
   function deepUnitMarkup(unit, key) {
     if (!unit) return '';
     const concepts = (unit.concepts || []).map((item) => `<article><b>${esc(item.title)}</b><p>${renderRichText(item.text)}</p></article>`).join('');
     const model = unit.model ? (window.AOSHU_FOUNDATION_WIDGETS?.supports(unit.model.type) ? window.AOSHU_FOUNDATION_WIDGETS.markup(unit.model) : `<section class="book-model-lab" data-book-model="${esc(unit.model.type)}" data-book-model-config="${esc(JSON.stringify(unit.model))}" aria-label="互动图示"><div class="book-model-heading"><b>动手试一试</b><span>${unit.model.type === 'fraction-bar' ? '拖动分子或改变分母，看“每一份”怎样变化' : '拖动数轴上的数，检查它是否同时满足两个余数条件'}</span></div>${unit.model.type === 'fraction-bar' ? `<div class="book-model-controls"><label>分母 <select data-fraction-denominator aria-label="分母">${Array.from({length:11},(_,i)=>i+2).map((d)=>`<option value="${d}"${d===unit.model.denominator?' selected':''}>${d}</option>`).join('')}</select></label><label>分子 <input type="range" min="1" max="${unit.model.denominator}" value="${unit.model.numerator}" data-fraction-numerator aria-label="分子"></label></div><div class="book-fraction-bar" data-fraction-pieces role="img"></div><p class="book-model-result" data-book-model-result aria-live="polite"></p>` : `<label class="book-number-control">试一个数 x <input type="range" min="${unit.model.min}" max="${unit.model.max}" value="${unit.model.start}" data-remainder-candidate aria-label="选择候选数 x"></label><p class="book-model-result" data-book-model-result aria-live="polite"></p><div class="book-remainder-strip" data-remainder-strip role="img" aria-label="0 到 59 的候选数，标记同时满足条件的数"></div><p class="book-model-caption">带圆点的数同时满足两个条件；它们每隔 15 重复一次。</p>`}</section>`) : '';
-    const diagram = unit.diagram ? `<figure class="book-deep-diagram"><figcaption>${esc(unit.diagram.caption)}</figcaption><pre class="book-diagram">${esc(unit.diagram.text)}</pre></figure>` : '';
+    const diagram = unit.diagram ? (unit.diagram.type ? learningVisualMarkup(unit.diagram) : `<figure class="book-deep-diagram"><figcaption>${esc(unit.diagram.caption)}</figcaption><pre class="book-diagram">${esc(unit.diagram.text)}</pre></figure>`) : '';
     const method = unit.methodCard ? `<section class="book-method-card" aria-label="方法卡"><span>小方法卡</span><h4>${esc(unit.methodCard.title)}</h4><strong class="book-method-formula">${renderRichText(unit.methodCard.formula)}</strong><div class="book-method-card-grid"><p><b>什么时候用：</b>${renderRichText(unit.methodCard.when)}</p><p><b>怎样做：</b>${renderRichText((unit.methodCard.steps || []).join(' → '))}</p><p><b>检查：</b>${renderRichText(unit.methodCard.check)}</p></div></section>` : '';
     const parityBoard = unit.parityBoard ? (() => {
       const visual = unit.parityBoard;
@@ -232,6 +265,7 @@
     const done = isDone(lesson);
     const practices = practiceList(lesson);
     const solved = new Set(solvedFor(lesson));
+    const legacyDone = legacyDoneFor(lesson);
     const expanded = openId ? key === openId : index === 0;
     const chapter = grade === 3 ? `三年级 · 第 ${lesson.n} 讲` : grade === 4 ? `四年级精选路线 · 第 ${lesson.n} 项` : `小学${grade}年级 · 第 ${lesson.n} 讲`;
     const steps = (lesson.steps || []).map((step) => `<li>${renderRichText(step)}</li>`).join('');
@@ -247,6 +281,7 @@
     const moduleMarkup = deepUnitMarkup(lesson.deepUnit, key);
     const review = reviewMarkup(lesson.deepUnit);
     const sourceNote = `<p class="book-source-attribution"><b>课程来源/编排：</b>${esc(lesson.source || '待核；不宣称为教材原题。')}</p>`;
+    const legacyNote = legacyDone && !done ? '<p class="book-progress-compat-note">已保留你完成旧版自测的记录；本讲现有 3 道新练习，旧记录不会被误算成新内容已完成。</p>' : '';
     const prerequisiteLinksMarkup = (lesson.prerequisiteLinks || []).map((item) => `<a class="book-prerequisite-link" href="${esc(item.href)}">${esc(item.label)}</a>`).join('、');
     const prerequisiteMarkup = grade === 3 && lesson.prerequisite ? `<p class="book-prerequisite"><b>先会：</b>${renderRichText(lesson.prerequisite)}${prerequisiteLinksMarkup ? `<br><b>可回看路线：</b>${prerequisiteLinksMarkup}` : ''}</p>` : grade === 4 && lesson.prerequisite ? `<p class="book-prerequisite"><b>学习前建议（本站）：</b>${renderRichText(lesson.prerequisite)}</p>` : '';
     const difficultyBadge = grade === 4 && lesson.suggestedDifficulty ? `<small class="book-level-badge" data-level="${esc(lesson.suggestedDifficulty)}">站内难度建议 · ${esc(lesson.suggestedDifficulty)}</small>` : '';
@@ -254,9 +289,9 @@
     const linkLevelLabel = grade === 3 && lesson.linkLevel && lesson.linkLevel !== '入门' ? `选学${lesson.linkLevel} · ` : '';
     const relatedLabel = `${linkLevelLabel}${baseRelatedLabel}`;
     return `<details class="book-lesson${done ? ' is-done' : ''}" id="${esc(lessonId)}" data-book-id="${esc(key)}" data-grade="${grade}"${expanded ? ' open' : ''}>
-      <summary><span class="book-number">${String(lesson.n).padStart(2,'0')}</span><span class="book-heading"><small class="book-grade-label">${esc(chapter)}</small><span class="book-badges"><small class="book-group-badge">${esc(lesson.group)}</small><small class="book-status">${esc(lesson.status)}</small>${difficultyBadge}</span><b>${esc(lesson.title)}</b></span><span class="book-state">${done ? '已完成' : '未完成'}</span><span class="book-fold" aria-hidden="true">＋</span></summary>
+      <summary><span class="book-number">${String(lesson.n).padStart(2,'0')}</span><span class="book-heading"><small class="book-grade-label">${esc(chapter)}</small><span class="book-badges"><small class="book-group-badge">${esc(lesson.group)}</small><small class="book-status">${esc(lesson.status)}</small>${difficultyBadge}</span><b>${esc(lesson.title)}</b></span><span class="book-state">${done ? '已完成' : legacyDone ? '旧版自测已过' : '未完成'}</span><span class="book-fold" aria-hidden="true">＋</span></summary>
       <div class="book-body">
-        ${sourceNote}
+        ${sourceNote}${legacyNote}
         ${prerequisiteMarkup}
         <p class="book-goal"><b>这一讲要会：</b>${renderRichText(lesson.goal)}</p>
         <p class="book-idea"><b>关键想法：</b>${renderRichText(lesson.idea)}</p>
@@ -360,9 +395,9 @@
       const solved = new Set(solvedFor(lesson));
       solved.add(index);
       const done = solved.size >= practiceList(lesson).length;
-      progress[key] = lesson.deepUnit ? {done,solved:[...solved]} : {done:true};
+      progress[key] = lesson.deepUnit ? {done,solved:[...solved],...(legacyDoneFor(lesson) ? {legacyDone:true} : {})} : {done:true};
       saveProgress();
-      feedback.textContent = '答对了！打开解法核对步骤，再用自己的话讲讲为什么。';
+      feedback.textContent = practice.correctFeedback || '答对了！打开解法核对步骤，再用自己的话讲讲为什么。';
       feedback.classList.add('good');
       card.querySelector(`[data-book-practice-item="${index}"]`)?.classList.add('is-correct');
       card.classList.toggle('is-done', done);
@@ -370,7 +405,7 @@
       card.querySelector('.book-count').textContent = done ? '本讲已完成' : `${solved.size} / ${practiceList(lesson).length} 题答对`;
       updateProgress();
     } else {
-      feedback.textContent = '再想一想：答案放回题目后，条件都满足吗？提示已经打开，找到不合的地方再试一次。';
+      feedback.textContent = practice.wrongFeedback || '再想一想：答案放回题目后，条件都满足吗？提示已经打开，找到不合的地方再试一次。';
       feedback.classList.remove('good');
       const hint = card.querySelectorAll('.book-practice-item')[index]?.querySelector('.book-hint');
       if (hint) hint.open = true;

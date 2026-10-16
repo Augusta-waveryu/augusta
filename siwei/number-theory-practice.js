@@ -1,24 +1,7 @@
 (() => {
   const $ = (selector) => document.querySelector(selector);
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const superscriptDigits = (value) => String(value).replace(/[0-9]/g, (digit) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[Number(digit)]);
-  const mathPattern = /(?:[=≠<>≤≥≡∣×÷√²³⁴⁵⁶⁷⁸⁹⁰ⁿ₀-₉^+−±≈∈∉∪∩∑∏∞°]|\b\d+\s*\/\s*\d+\b)/u;
-  const standardizeMathSymbols = (value) => {
-    const protectedParts = [];
-    const protectedText = String(value ?? '').replace(/\b(?:\d{4}-\d{2}-\d{2}|[A-Za-z]+\d+-[A-Za-z]+\d+)\b/g, (match) => {
-      const token = `\uE000${protectedParts.length}\uE001`;
-      protectedParts.push(match);
-      return token;
-    });
-    return protectedText.replace(/<=/g,'≤').replace(/>=/g,'≥').replace(/!=/g,'≠').replace(/\*/g,'×')
-      .replace(/\^(\d+)/g, (_, digits) => superscriptDigits(digits)).replace(/\^n\b/gi,'ⁿ')
-      .replace(/([\p{L}\p{N})\]])\s*[·⋅]\s*([\p{L}\p{N}(])/gu,'$1 × $2')
-      .replace(/([\p{L}\p{N})\]])\s*-\s*([\p{L}\p{N}(])/gu,'$1 − $2')
-      .replace(/(^|[\s([{])-(?=\d)/g,'$1−')
-      .replace(/([^\s+×÷=<>≤≥≠−±≈∈∉∪∩])\s*([+×÷=<>≤≥≠−±≈∈∉∪∩])\s*([^\s+×÷=<>≤≥≠−±≈∈∉∪∩])/gu,'$1 $2 $3')
-      .replace(/\uE000(\d+)\uE001/g, (_, index) => protectedParts[Number(index)]);
-  };
-  const renderMathText = (value) => String(value ?? '').split(/(?<=[。；：\n])/u).filter(Boolean).map((part) => { const text = standardizeMathSymbols(part); const math = mathPattern.test(text); return `<span class="qbank-rich-line ${math ? 'qbank-rich-math' : 'qbank-rich-prose'}"${math ? ' role="math"' : ''}>${escapeHtml(text)}</span>`; }).join('');
+  const { renderMathText, renderTooltipMathText, renderCompactMathText, truncateMathPreview } = window.QuestionBankMath;
   const clean = (value) => String(value ?? '').trim();
   const answerLabels = {
     verified: '答案已核过', verified_from_solution: '从资料解析核对', verified_with_caveat: '按说明理解',
@@ -138,7 +121,7 @@
     }
     list.innerHTML = state.filtered.map((q) => `
       <button type="button" data-question-id="${escapeHtml(q.id)}" class="${q.id === state.currentId ? 'is-current' : ''}" aria-current="${q.id === state.currentId ? 'true' : 'false'}">
-        <small>${escapeHtml(q.source_id)} · ${escapeHtml(q.source_question_label)}</small><b>${escapeHtml(q.id)} · ${escapeHtml(standardizeMathSymbols((q.problem || '').replace(/\s+/g, ' ').slice(0, 43)))}${(q.problem || '').length > 43 ? '…' : ''}</b>
+        <small>${escapeHtml(q.source_id)} · ${escapeHtml(q.source_question_label)}</small><b>${escapeHtml(q.id)} · ${renderCompactMathText(truncateMathPreview((q.problem || '').replace(/\s+/g, ' '), 43))}</b>
       </button>`).join('');
     list.querySelectorAll('[data-question-id]').forEach((button) => button.addEventListener('click', () => selectQuestion(button.dataset.questionId)));
   }
@@ -201,7 +184,7 @@
       return targets.map((id) => {
         const target = state.questions.find((item) => item.id === id);
         if (!target) return '';
-        return `<button type="button" data-related-id="${escapeHtml(id)}" title="${escapeHtml(ref.note || ref.relationship)}">${escapeHtml(id)} · ${escapeHtml(target.source_question_label)}</button>`;
+        return `<button type="button" data-related-id="${escapeHtml(id)}" title="${escapeHtml(renderTooltipMathText(ref.note || ref.relationship))}">${escapeHtml(id)} · ${escapeHtml(target.source_question_label)}</button>`;
       }).join('');
     }).join('');
     links.querySelectorAll('[data-related-id]').forEach((button) => button.addEventListener('click', () => selectQuestion(button.dataset.relatedId)));

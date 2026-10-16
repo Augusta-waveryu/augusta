@@ -20,3 +20,14 @@
 .answer-block p .qbank-rich-math{background:#f3f8f0}
 @media(max-width:650px){.question-text .qbank-rich-math,.answer-block p .qbank-rich-math,.review-body .qbank-rich-math{font-size:1.02rem;line-height:1.85;padding:.3em .52em}}
 .review-details .qbank-rich-math,.review-details li .qbank-rich-math{font-size:1.02rem;line-height:1.8}
+
+
+/* Safe, child-readable math notation rendered from allowlisted source forms. */
+.qbank-overline{display:inline-block;padding-top:.04em;white-space:nowrap;text-decoration-line:overline;text-decoration-thickness:.09em;text-decoration-skip-ink:none;text-decoration-color:currentColor}
+.qbank-fraction{display:inline-grid;grid-template-rows:auto 2px auto;place-items:center;max-width:100%;margin-inline:.12em;padding:.06em .1em;vertical-align:middle;line-height:1.15;white-space:nowrap;font-size:.9em;font-variant-numeric:lining-nums tabular-nums}
+.qbank-fraction-part{max-width:100%;padding-inline:.1em;text-align:center;line-height:1.15;white-space:nowrap}
+.qbank-fraction-bar{width:100%;min-width:1.25em;border-top:1px solid currentColor}
+.qbank-subscript{font-size:.72em;line-height:0;vertical-align:sub}
+.qbank-indexed-power>sup{font-size:.76em;line-height:0;vertical-align:super}
+.qbank-math-note{display:block;max-width:100%;margin:.3em 0 .1em;padding:.42em .62em;border-left:2px solid #99bca0;border-radius:0 7px 7px 0;background:#f5f8ee;color:#617665;font-size:.76em;font-weight:700;line-height:1.65;overflow-wrap:anywhere}
+@media(max-width:400px){.qbank-math-note{padding:.38em .54em;font-size:.71em}.qbank-fraction{margin-inline:.06em}}

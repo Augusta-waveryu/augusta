@@ -177,7 +177,8 @@
   const gradeThreeExtendedLinkLevels = {'g3-3':'进阶','g3-4':'进阶'};
   const gradeThreeDeepRoutes = {
     'g3-25': {href:'/siwei/branch-course.html?branch=applications#bc-topic-equal-groups-extra',link:'接着学：相同的几组，再加组外部分'},
-    'g3-26': {href:'/siwei/branch-course.html?branch=applications#bc-topic-fixed-total-grouping',link:'接着学：固定总量下比较两种分组'}
+    'g3-26': {href:'/siwei/branch-course.html?branch=applications#bc-topic-fixed-total-grouping',link:'接着学：固定总量下比较两种分组'},
+    'g3-8': {href:'#book-lesson-g3-27',link:'相关练习：把横竖交叉检查用到数独'}
   };
   const gradeThreePrerequisiteRoutes = {
     'g3-3':['g3-2'],

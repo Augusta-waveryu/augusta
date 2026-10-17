@@ -143,7 +143,7 @@ function verifyFullSudoku(grid) {
 }
 
 test('新增专题沿用三年级原讲次键，且各自包含三道带反馈的递进练习', () => {
-  assert.deepEqual(Object.keys(units).sort(), ['roadmap:g3-27', 'roadmap:g3-28', 'roadmap:g3-7']);
+  assert.deepEqual(Object.keys(units).sort(), ['roadmap:g3-27', 'roadmap:g3-28', 'roadmap:g3-7', 'roadmap:g3-8']);
   for (const key of Object.keys(units)) {
     assert.equal(units[key].practices.length, 3, key);
     for (const practice of units[key].practices) {
@@ -170,6 +170,31 @@ test('G3-7 底行线索唯一确定标准三阶幻方；中心和对格关系成
   assert.equal(magicSolutions(lastPractice.puzzle).length, 1);
   assert.equal(lastPractice.puzzle[lastPractice.target[0]][lastPractice.target[1]], 0);
   assert.equal(lastPractice.answers.includes(String(solution[lastPractice.target[0]][lastPractice.target[1]])), true);
+});
+
+test('G3-8 数阵答案由横向与纵向步长独立推出且相互吻合', () => {
+  const unit = units['roadmap:g3-8'];
+  const solvedExample = unit.example.solution;
+  assert.deepEqual(solvedExample, [[1, 4, 7], [3, 6, 9], [5, 8, 11]]);
+  assert.deepEqual(unit.diagrams[0].cells, unit.example.puzzle);
+  for (const row of solvedExample) {
+    assert.deepEqual([row[1] - row[0], row[2] - row[1]], [3, 3]);
+  }
+  for (let column = 0; column < 3; column += 1) {
+    assert.deepEqual([solvedExample[1][column] - solvedExample[0][column], solvedExample[2][column] - solvedExample[1][column]], [2, 2]);
+  }
+  for (const practice of unit.practices) {
+    const [row, column] = practice.target;
+    const grid = practice.puzzle;
+    const horizontalStep = grid[0][1] - grid[0][0];
+    const verticalStep = grid[1][0] - grid[0][0];
+    const fromRow = grid[row][column - 1] + horizontalStep;
+    const fromColumn = grid[row - 1][column] + verticalStep;
+    assert.equal(fromRow, fromColumn, `${practice.level}: two routes must agree`);
+    assert.equal(Number(practice.answers[0]), fromRow, `${practice.level}: answer must match both routes`);
+    if (practice.level.includes('找出写错')) assert.notEqual(grid[row][column], fromRow);
+    else assert.equal(grid[row][column], 0, `${practice.level}: target begins blank`);
+  }
 });
 
 test('G3-27 和 G3-28 的每盘数独都无矛盾且只有一个解', () => {

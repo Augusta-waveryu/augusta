@@ -109,6 +109,26 @@
     }
   ];
 
+  const integerEquationLesson = curriculum.find((branch) => branch.id === 'algebra')?.lessons.find((lesson) => lesson.id === 'integer-equations');
+  if (integerEquationLesson) {
+    Object.assign(integerEquationLesson, {
+      level: '思维拓展',
+      source: '项目原创拓展内容；不对应具体教材版本或已核定年级',
+      concept: '不定方程可能有零个、一个或多个整数解。先区分整数解、非负整数解和正整数解；d=gcd(a,b) 不整除 c 时，ax+by=c 无整数解。若已找到一组特解 (x₀,y₀)，全部整数解可写成 x=x₀+(b/d)k、y=y₀−(a/d)k（这里 a、b 为正整数，k∈ℤ）；再由非负、正数或上下界求出允许的 k，证明列全且不重复。',
+      example: {
+        q: '整数 x、y 满足 6x+9y=30。先写出全部整数解，再找出非负整数解。',
+        solution: 'gcd(6,9)=3 且 3|30；(2,2) 是一组特解。两边除以 3 得 2x+3y=10。减去特解后，2(x−2)+3(y−2)=0；因 2、3 互质，x−2=3k、y−2=−2k（k∈ℤ）。因此全部整数解是 x=2+3k、y=2−2k。若 x、y≥0，则 k≥0 且 k≤1；整数 k 只能取 0、1，所以非负整数解恰为 (2,2)、(5,0)。'
+      }
+    });
+    integerEquationLesson.practice.push(
+      { level: '拓展 1 · 整除筛查', q: '整数 x、y 能否满足 4x+6y=15？能填 1，不能填 0。', a: ['0'], hint: '先求 gcd(4,6)，再问 15 能不能被这个最大公因数整除。', why: 'gcd(4,6)=2。2 分别整除 4x 和 6y，所以也整除它们的和；但 15 不是 2 的倍数。因此没有整数解，填 0。' },
+      { level: '拓展 2 · 写出通解', q: '6x+9y=30 的一组解是 (2,2)。全部整数解中 x=2+□k，空格填什么？', a: ['3'], hint: '先把方程除以 gcd(6,9)=3，得到互质系数 2 和 3。', why: '约化后是 2x+3y=10。与特解 (2,2) 相减，2(x−2)+3(y−2)=0；因 2、3 互质，可写 x−2=3k、y−2=−2k。因此 x=2+3k、y=2−2k（k 为任意整数），填 3。' },
+      { level: '拓展 3 · 非负边界', q: '6x+9y=30 有几组非负整数解？', a: ['2'], hint: '使用 x=2+3k、y=2−2k，并同时要求 x≥0、y≥0。', why: 'x≥0 给出 k≥−2/3，所以整数 k≥0；y≥0 给出 k≤1。故 k 只能是 0、1，对应 (2,2)、(5,0)，共 2 组。其他整数 k 会使 x 或 y 为负，因此已列全。' },
+      { level: '拓展 4 · 有界穷尽', q: '整数 x、y 满足 3x+4y=24，且 0≤x≤6、0≤y≤6。有几组有序解？', a: ['2'], hint: '先用特解 (8,0) 写成 x=8+4k、y=−3k，再把四个上下界都化成 k 的范围。', why: 'x=8+4k、y=−3k。条件给出 x≥0 时 k≥−2，x≤6 时整数 k≤−1，y≥0 时 k≤0，y≤6 时 k≥−2；合起来 k=−2、−1。分别得到 (0,6)、(4,3)，共 2 组。不同 k 的 x 相差 4，不会重复；所有符合范围的 k 已逐个检查，所以没有遗漏。' },
+      { level: '拓展 5 · 回到题意核验', q: '点 (8,−2) 满足 6x+9y=30。若题目要求非负整数解，它合法吗？合法填 1，不合法填 0。', a: ['0'], hint: '先代回等式，再单独检查 y 是否满足非负条件。', why: '代入得 6×8+9×(−2)=48−18=30，所以它确实是整数解；但 y=−2<0，不是非负整数。因此在非负整数解的题目里不合法，填 0。' }
+    );
+  }
+
   // Deepen the connected number-theory core while keeping source-derived notes intact.
   const numberBranch = curriculum.find((branch) => branch.id === 'number');
   if (numberBranch) {
@@ -411,8 +431,13 @@
 
   curriculum.forEach((branch) => select.add(new Option(`${branch.title} · ${branch.lessons.length} 个知识点`, branch.id)));
 
+  function isMastered(lesson) {
+    const record = progress[lesson.id];
+    return record?.done === true && Array.isArray(record.passed) && new Set(record.passed).size === lesson.practice.length;
+  }
+
   function updateProgress() {
-    const mastered = Object.keys(progress).filter((id) => progress[id]?.done).length;
+    const mastered = curriculum.reduce((count, branch) => count + branch.lessons.filter(isMastered).length, 0);
     document.getElementById('mastery-count').textContent = `${mastered} / ${totalLessons}`;
     document.getElementById('mastery-fill').style.width = `${totalLessons ? mastered / totalLessons * 100 : 0}%`;
     document.getElementById('mastery-caption').textContent = !progressStorageAvailable
@@ -444,7 +469,7 @@
     root.innerHTML = branches.map((branch) => {
       const lessons = branch.lessons.filter((lesson) => {
         const hay = `${branch.title} ${branch.intro} ${lesson.title} ${lesson.level} ${lesson.concept} ${lesson.methodGuide ? JSON.stringify(lesson.methodGuide) : ''} ${lesson.source || ''}`.toLocaleLowerCase('zh-CN');
-        return (!showOpen.checked || !progress[lesson.id]?.done) && (!term || hay.includes(term));
+        return (!showOpen.checked || !isMastered(lesson)) && (!term || hay.includes(term));
       });
       if (!lessons.length) return '';
       visibleLessons += lessons.length;
@@ -459,7 +484,7 @@
 
   function renderLesson(lesson, branch) {
     const passed = new Set(progress[lesson.id]?.passed || []);
-    const mastered = progress[lesson.id]?.done === true;
+    const mastered = isMastered(lesson);
     const refer = lesson.source ? `<span class="source-tag">${escapeHtml(lesson.source)} · 已归入本课程</span>` : '';
     const link = lesson.link ? `<a class="deeper-link" href="${escapeHtml(lesson.link)}">去看互动讲解与原题 <span>↗</span></a>` : '';
     const practiceTitle = lesson.id === 'divisibility' ? '循序练习：基础判断 → 选方法 → 综合应用' : `${lesson.practice.length} 道自测：先做，再看推理`;

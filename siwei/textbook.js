@@ -425,7 +425,7 @@
     const moduleMarkup = deepUnitMarkup(lesson.deepUnit, key);
     const review = reviewMarkup(lesson.deepUnit);
     const sourceNote = `<p class="book-source-attribution"><b>课程来源/编排：</b>${esc(lesson.source || '待核；不宣称为教材原题。')}</p>`;
-    const legacyNote = legacyDone && !done ? '<p class="book-progress-compat-note">已保留你完成旧版自测的记录；本讲现有 3 道新练习，旧记录不会被误算成新内容已完成。</p>' : '';
+    const legacyNote = legacyDone && !done ? `<p class="book-progress-compat-note">已保留你完成旧版自测的记录；本讲现有 ${practices.length} 道新练习，旧记录不会被误算成新内容已完成。</p>` : '';
     const prerequisiteLinksMarkup = (lesson.prerequisiteLinks || []).map((item) => `<a class="book-prerequisite-link" href="${esc(item.href)}">${esc(item.label)}</a>`).join('、');
     const prerequisiteMarkup = grade === 3 && lesson.prerequisite ? `<p class="book-prerequisite"><b>先会：</b>${renderRichText(lesson.prerequisite)}${prerequisiteLinksMarkup ? `<br><b>可回看路线：</b>${prerequisiteLinksMarkup}` : ''}</p>` : grade === 4 && lesson.prerequisite ? `<p class="book-prerequisite"><b>学习前建议（本站）：</b>${renderRichText(lesson.prerequisite)}</p>` : '';
     const difficultyBadge = grade === 4 && lesson.suggestedDifficulty ? `<small class="book-level-badge" data-level="${esc(lesson.suggestedDifficulty)}">站内难度建议 · ${esc(lesson.suggestedDifficulty)}</small>` : '';

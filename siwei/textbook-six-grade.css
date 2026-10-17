@@ -11,3 +11,10 @@
 
 .textbook-page .book-prerequisite{font-size:var(--book-reading);line-height:var(--book-line)}
 .textbook-page .book-prerequisite-link{color:#49653d;font-weight:800;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}.textbook-page .book-prerequisite-link:focus-visible{outline:3px solid #9eae71;outline-offset:2px;border-radius:3px}
+
+/* 等可能卡片：每张卡同样大小，以文字和颜色共同区分事件。 */
+.book-probability-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;list-style:none;margin:18px 0;padding:0}
+.book-probability-card{display:flex;min-width:0;min-height:92px;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px 6px;border:2px solid #6681a4;border-radius:12px;background:#edf3fa;color:#29486d;text-align:center;overflow-wrap:anywhere}
+.book-probability-card.is-favorable{border-color:#b35f5a;background:#fff0ec;color:#853a35}
+.book-probability-card b{font-size:18px}.book-probability-card span{font-size:13px}
+@media(max-width:650px){.book-probability-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.book-probability-card b{font-size:17px}}

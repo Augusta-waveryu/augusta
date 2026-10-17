@@ -204,6 +204,13 @@
   function learningVisualMarkup(visual) {
     if (!visual || typeof visual !== 'object') return '';
     const cap = (value, max) => Number.isFinite(Number(value)) ? Math.max(0, Math.min(max, Math.floor(Number(value)))) : 0;
+    if (visual.type === 'probability-outcomes') {
+      const outcomes = (Array.isArray(visual.outcomes) ? visual.outcomes : []).slice(0, 12);
+      if (!outcomes.length) return '';
+      const favorable = outcomes.filter((item) => item.favorable === true).length;
+      const cards = outcomes.map((item) => `<li class="book-probability-card${item.favorable === true ? ' is-favorable' : ''}"><b>${esc(item.label)}</b><span>${item.favorable === true ? '符合：红色' : '不符合：蓝色'}</span></li>`).join('');
+      return `<figure class="book-learning-visual book-probability-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><p>${esc(visual.caption)}</p><ul class="book-probability-cards" aria-label="${outcomes.length} 张等可能卡片，${favorable} 张符合红色条件">${cards}</ul><p class="book-visual-check">${renderRichText(visual.check)}</p></figure>`;
+    }
     if (visual.type === 'puzzle-grid') {
       const rows = (Array.isArray(visual.cells) ? visual.cells : []).slice(0, 6).map((row) => Array.isArray(row) ? row.slice(0, 6) : []);
       const columns = Math.max(0, ...rows.map((row) => row.length));
@@ -602,5 +609,21 @@
   gradeFilter.addEventListener('change', render);
   topicFilter.addEventListener('change', render);
   onlyUnmastered.addEventListener('change', render);
+  function openLinkedLesson() {
+    const key = location.hash.match(/^#book-lesson-([a-zA-Z0-9_-]+)$/)?.[1];
+    if (!key || !lessons.some((lesson) => keyOf(lesson) === key)) return;
+    let target = document.getElementById(`book-lesson-${key}`);
+    if (!target) {
+      search.value = '';
+      gradeFilter.value = 'all';
+      topicFilter.value = 'all';
+      onlyUnmastered.checked = false;
+      render();
+      target = document.getElementById(`book-lesson-${key}`);
+    }
+    if (target) { target.open = true; target.scrollIntoView({block:'start'}); }
+  }
   render();
+  openLinkedLesson();
+  window.addEventListener('hashchange', openLinkedLesson);
 })();

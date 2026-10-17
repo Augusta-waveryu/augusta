@@ -611,6 +611,29 @@
   .textbook-page .book-pair-group,.textbook-page .book-pair-remainder{min-height:56px}
 }
 
+/* G3-11 logic lesson: compact, accessible candidate-elimination table. */
+.textbook-page .book-logic-elimination{min-width:0}
+.textbook-page .book-logic-table-wrap{width:100%;min-width:0}
+.textbook-page .book-logic-table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:3px;color:#445341;font-size:.86rem}
+.textbook-page .book-logic-table caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%)}
+.textbook-page .book-logic-table th,.textbook-page .book-logic-table td{min-width:0;padding:7px 4px;border:1px solid #e2e7d6;border-radius:9px;overflow-wrap:anywhere;text-align:center;line-height:1.45}
+.textbook-page .book-logic-table thead th{background:#f0f3e7;color:#566747;font-weight:900}
+.textbook-page .book-logic-table thead th:first-child,.textbook-page .book-logic-table tbody th{width:24%}
+.textbook-page .book-logic-table tbody th{background:#fafaf4;color:#5f6c53}
+.textbook-page .book-logic-table td{background:#fff;color:#8a7567}
+.textbook-page .book-logic-table td.is-confirmed{border-color:#bfd0ac;background:#e7f0dc;color:#355b34}
+.textbook-page .book-logic-mark{display:inline-flex;min-width:1.5rem;min-height:1.5rem;align-items:center;justify-content:center;font-size:1.1rem;font-weight:900}
+.textbook-page .book-logic-legend{display:flex;flex-wrap:wrap;gap:6px 12px;margin:8px 0 4px;color:#5d6955;font-size:.78rem}
+.textbook-page .book-logic-legend span{display:inline-flex;align-items:center;gap:4px}
+.textbook-page .book-logic-legend b{display:inline-flex;width:1.25rem;height:1.25rem;align-items:center;justify-content:center;border:1px solid #e2e7d6;border-radius:6px;background:#fff;font-size:.88rem}
+.textbook-page .book-logic-legend b.is-confirmed{border-color:#bfd0ac;background:#e7f0dc;color:#355b34}
+@media(max-width:650px){
+  .textbook-page .book-logic-table{border-spacing:2px;font-size:.76rem}
+  .textbook-page .book-logic-table th,.textbook-page .book-logic-table td{padding:6px 2px}
+  .textbook-page .book-logic-mark{min-width:1.3rem;min-height:1.3rem}
+  .textbook-page .book-logic-legend{gap:5px 8px;font-size:.72rem}
+}
+
 
 /* G3-16 和差线段图：短条与长条左端对齐，突出“共同部分 + 多出的差”。 */
 .textbook-page .book-sum-difference{min-width:0}

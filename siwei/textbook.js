@@ -225,6 +225,20 @@
       }).join('')}</div>`).join('');
       return `<figure class="book-learning-visual book-puzzle-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-puzzle-grid" role="grid" aria-label="${esc(visual.title)}，${rows.length}行，每行${columns}格" aria-rowcount="${rows.length}" aria-colcount="${columns}" style="--puzzle-columns:${columns}">${cells}</div>${visual.note ? `<p class="book-visual-check">${esc(visual.note)}</p>` : ''}</figure>`;
     }
+    if (visual.type === 'logic-elimination-grid') {
+      const people = (Array.isArray(visual.people) ? visual.people : []).slice(0, 6);
+      const positions = (Array.isArray(visual.positions) ? visual.positions : []).slice(0, 6);
+      if (!people.length || !positions.length) return '';
+      const states = Array.isArray(visual.states) ? visual.states : [];
+      const stateNames = { eliminated: '已排除', confirmed: '确定', possible: '仍可能' };
+      const symbols = { eliminated: '×', confirmed: '✓', possible: '?' };
+      const header = positions.map((position) => `<th scope="col">${esc(position)}</th>`).join('');
+      const rows = people.map((person, rowIndex) => `<tr><th scope="row">${esc(person)}</th>${positions.map((position, columnIndex) => {
+        const state = stateNames[states[rowIndex]?.[columnIndex]] ? states[rowIndex][columnIndex] : 'possible';
+        return `<td class="is-${state}" aria-label="${esc(`${person}，${position}：${stateNames[state]}`)}"><span class="book-logic-mark" aria-hidden="true">${symbols[state]}</span></td>`;
+      }).join('')}</tr>`).join('');
+      return `<figure class="book-learning-visual book-logic-elimination" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-logic-table-wrap"><table class="book-logic-table" aria-label="${esc(visual.title)}"><caption>${esc(visual.rowLabel || '人物')}与楼层候选表</caption><thead><tr><th scope="col">${esc(visual.rowLabel || '人物')}＼楼层</th>${header}</tr></thead><tbody>${rows}</tbody></table></div><div class="book-logic-legend" aria-label="符号说明"><span><b class="is-eliminated" aria-hidden="true">×</b>已排除</span><span><b class="is-confirmed" aria-hidden="true">✓</b>由线索确定</span><span><b class="is-possible" aria-hidden="true">?</b>仍可能</span></div>${visual.note ? `<p class="book-visual-check">${esc(visual.note)}</p>` : ''}</figure>`;
+    }
     if (visual.type === 'quantity-count') {
       const count = cap(visual.count, 10);
       const symbol = esc(visual.symbol || '●');

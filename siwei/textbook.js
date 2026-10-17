@@ -264,6 +264,27 @@
       const models = (visual.models || []).map((item) => `<article class="book-part-whole-model"><h4>${esc(item.label)}</h4><p class="book-visual-equation">${renderRichText(item.equation)}</p><div class="book-whole-box"><span>${esc(item.wholeLabel)}</span><strong>${esc(item.whole)}</strong></div><div class="book-part-boxes">${(item.parts || []).map((part) => `<div class="book-part-box"><span>${esc(part.label)}</span><strong>${esc(part.value)}</strong></div>`).join('')}</div><p class="book-visual-check">${renderRichText(item.check)}</p></article>`).join('');
       return `<figure class="book-learning-visual book-part-whole-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-part-whole-grid">${models}</div></figure>`;
     }
+    if (visual.type === 'sum-difference-bars') {
+      const sum = Number(visual.sum);
+      const difference = Number(visual.difference);
+      if (!Number.isSafeInteger(sum) || !Number.isSafeInteger(difference) || sum < difference || difference < 0 || (sum - difference) % 2 !== 0) return '';
+      const small = (sum - difference) / 2;
+      const big = small + difference;
+      if (big <= 0) return '';
+      const equalWidth = Math.max(0, Math.min(100, small / big * 100));
+      const extraWidth = 100 - equalWidth;
+      const smallLabel = visual.smallLabel || '较小数';
+      const bigLabel = visual.bigLabel || '较大数';
+      const shortBar = `<div class="book-sum-difference-track"><div class="book-sum-difference-bar" style="width:${equalWidth.toFixed(2)}%" role="img" aria-label="${esc(smallLabel)} ${small}，表示相同的一份"><span class="book-sum-difference-segment is-equal" style="width:100%">${small}</span></div></div>`;
+      const longBar = `<div class="book-sum-difference-track"><div class="book-sum-difference-bar" style="width:100%" role="img" aria-label="${esc(bigLabel)} ${big}，由相同的一份 ${small} 和多出的 ${difference} 组成"><span class="book-sum-difference-segment is-equal" style="width:${equalWidth.toFixed(2)}%">${small}</span><span class="book-sum-difference-segment is-extra" style="width:${extraWidth.toFixed(2)}%">${difference}</span></div></div>`;
+      const steps = [
+        {title:'先拿走多出的差',equation:`${sum} − ${difference} = ${sum - difference}`,note:'剩下两段一样长'},
+        {title:'平均分成两份',equation:`${sum - difference} ÷ 2 = ${small}`,note:`这就是${smallLabel}`},
+        {title:'把差加回去',equation:`${small} + ${difference} = ${big}`,note:`这就是${bigLabel}`}
+      ].map((item, index) => `<article class="book-sum-difference-step"><b>${index + 1}. ${esc(item.title)}</b><strong>${esc(item.equation)}</strong><span>${esc(item.note)}</span></article>`).join('');
+      const ariaLabel = `${visual.title}。总和 ${sum}，差 ${difference}；${smallLabel} ${small}，${bigLabel} ${big}。`;
+      return `<figure class="book-learning-visual book-sum-difference" aria-label="${esc(ariaLabel)}"><figcaption>${esc(visual.title)}</figcaption><p class="book-sum-difference-intro">两条线段左端对齐；下面长出的那一段就是差。</p><div class="book-sum-difference-bars" role="group" aria-label="较短与较长线段对比"><div class="book-sum-difference-row"><b>${esc(smallLabel)}</b>${shortBar}<strong>${small}</strong></div><div class="book-sum-difference-row"><b>${esc(bigLabel)}</b>${longBar}<strong>${big}</strong></div></div><div class="book-sum-difference-steps">${steps}</div><p class="book-visual-check">${esc(visual.check || `回查：${small}+${big}=${sum}，${big}−${small}=${difference}。`)}</p></figure>`;
+    }
     if (visual.type === 'ten-strategies') {
       const start = cap(visual.start, 10);
       const completing = Math.min(10 - start, cap(visual.completing, 10));

@@ -69,6 +69,34 @@ function verifyCase(item, label) {
   }
 }
 
+function solveIntegerSumDifference(sum, difference) {
+  if (!Number.isSafeInteger(sum) || !Number.isSafeInteger(difference) || sum < difference || difference < 0 || (sum - difference) % 2 !== 0) return null;
+  return {small:(sum - difference) / 2,big:(sum + difference) / 2};
+}
+
+function verifySumDifferenceCase(item, label) {
+  const check = item.verification;
+  assert.ok(check, `${label}: recorded inputs for an independent check`);
+  const solution = solveIntegerSumDifference(check.sum,check.difference);
+  if (check.mode === 'sum-difference-integer-existence') {
+    assert.equal(solution !== null,check.expected,`${label}: integer solution exists exactly when the remainder can be split evenly`);
+    assert.deepEqual(Array.from(item.answers),[check.expected ? '存在' : '不存在'],`${label}: one unambiguous accepted response`);
+    assert.ok(item.question.includes(String(check.sum)) && item.question.includes(String(check.difference)));
+    assert.match(item.explanation,/不能分成两份整数/u);
+    return;
+  }
+  assert.equal(check.mode,'sum-difference');
+  assert.ok(solution,`${label}: a nonnegative integer pair exists`);
+  assert.equal(solution.small + solution.big,check.sum,`${label}: numbers return to the stated sum`);
+  assert.equal(solution.big - solution.small,check.difference,`${label}: numbers return to the stated difference`);
+  const expected = check.target === 'big' ? solution.big : solution.small;
+  assert.equal(check.expected,expected,`${label}: independently computed requested number`);
+  if (item.answers) assert.deepEqual(Array.from(item.answers),[String(expected)],`${label}: one unique accepted numeric answer`);
+  else assert.ok((item.steps || []).join(' ').includes(String(expected)),`${label}: worked example shows the independently computed answer`);
+  assert.ok(item.question.includes(String(check.sum)) && item.question.includes(String(check.difference)));
+  assert.ok((item.steps || []).join(' ').includes(String(expected)) || (item.explanation || '').includes(String(expected)),`${label}: worked reasoning names the answer`);
+}
+
 test('G3-25/26 preserve route IDs, source note, existing links, and old deep-unit data', () => {
   assert.strictEqual(units['roadmap:g3-2'], sentinel, 'Object.assign must preserve existing units');
   for (const [key,title] of [
@@ -132,6 +160,54 @@ test('G3-26 both groupings divide evenly and all comparison answers are independ
   for (const [index,practice] of lesson.practices.entries()) verifyCase(practice,`G3-26 practice ${index + 1}`);
   assert.deepEqual(Array.from(lesson.practices,({verification}) => verification.expected),[2,1,6]);
   assert.equal(new Set(Array.from(lesson.practices,({verification}) => verification.expected)).size,3);
+});
+
+test('G3-16 preserves its route, source note, existing sum-difference link, and first self-test', () => {
+  const current = route('g3-16');
+  const lesson = unit('g3-16');
+  assert.equal(current?.key,'g3-16','route/progress ID stays stable');
+  assert.equal(current?.title,'图能帮忙');
+  assert.equal(current?.href,'/siwei/branch-course.html?branch=applications#bc-topic-sum-difference');
+  assert.equal(current?.link,'接着学：和差线段图');
+  assert.match(current.source,/公开目录/u);
+  assert.match(current.source,/逐讲映射\/页码待核/u);
+  assert.match(current.source,/例题与练习为本项目原创/u);
+  assert.equal(lesson.example.question,'两数和为 36，差为 8，较大数是多少？');
+  assert.equal(lesson.practices[0].question,'两数的和是 44，差是 12，较大数是多少？');
+  assert.equal(current.deepUnit?.title,lesson.title);
+  assert.equal(current.practice,lesson.practices[0].question);
+  assert.equal(lesson.practices.length,3);
+  assert.equal(lesson.diagram.type,'sum-difference-bars');
+  assert.equal(lesson.diagram.sum,36);
+  assert.equal(lesson.diagram.difference,8);
+  assert.ok(lesson.methodCard && lesson.concepts.length >= 4);
+  assert.equal(lesson.review.length,3);
+  for (const practice of lesson.practices) {
+    assert.ok(practice.level && practice.hint && practice.wrongFeedback && practice.correctFeedback && practice.explanation);
+  }
+});
+
+test('G3-16 worked example, visual, progressive exercises, and integer edge case are independently verified', () => {
+  const lesson = unit('g3-16');
+  verifySumDifferenceCase(lesson.example,'G3-16 worked example');
+  const diagramSolution = solveIntegerSumDifference(lesson.diagram.sum,lesson.diagram.difference);
+  assert.ok(diagramSolution);
+  assert.equal(diagramSolution.small,14);
+  assert.equal(diagramSolution.big,22);
+  for (const [index,practice] of lesson.practices.entries()) verifySumDifferenceCase(practice,`G3-16 practice ${index + 1}`);
+  assert.deepEqual(Array.from(lesson.practices,({verification}) => verification.expected),[28,12,false]);
+  assert.equal(solveIntegerSumDifference(25,6),null,'25−6 is odd, so it cannot be split into two equal integers');
+  assert.equal(new Set(Array.from(lesson.practices,({answers}) => answers[0])).size,3,'each exercise has a distinct unambiguous answer');
+});
+
+test('G3-16 visual fills its shared segment and includes narrow-screen layout rules', () => {
+  const renderer = fs.readFileSync(path.join(root,'textbook.js'),'utf8');
+  const styles = fs.readFileSync(path.join(root,'textbook-roadmap.css'),'utf8');
+  assert.ok(renderer.includes("if (visual.type === 'sum-difference-bars')"));
+  assert.ok(renderer.includes('class="book-sum-difference-segment is-equal" style="width:100%"'));
+  assert.ok(renderer.includes('style="width:${equalWidth.toFixed(2)}%"'));
+  assert.ok(styles.includes('.book-sum-difference-row'));
+  assert.ok(styles.includes('@media(max-width:650px)') && styles.includes('@media(max-width:340px)'));
 });
 
 test('new application-unit script runs after existing content modules and before route rendering', () => {

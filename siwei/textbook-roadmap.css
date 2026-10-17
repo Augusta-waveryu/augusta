@@ -610,3 +610,32 @@
   .textbook-page .book-pair-groups{grid-template-columns:repeat(auto-fit,minmax(64px,1fr));gap:5px}
   .textbook-page .book-pair-group,.textbook-page .book-pair-remainder{min-height:56px}
 }
+
+
+/* G3-16 和差线段图：短条与长条左端对齐，突出“共同部分 + 多出的差”。 */
+.textbook-page .book-sum-difference{min-width:0}
+.textbook-page .book-sum-difference-intro{margin:0;color:#68745e;font-size:.875rem;line-height:1.7;overflow-wrap:anywhere}
+.textbook-page .book-sum-difference-bars{display:grid;gap:9px;min-width:0;margin:10px 0}
+.textbook-page .book-sum-difference-row{display:grid;grid-template-columns:minmax(3.5rem,4.2rem) minmax(0,1fr) 2rem;align-items:center;gap:8px;min-width:0;color:#536348;font-size:.875rem}
+.textbook-page .book-sum-difference-row>b{overflow-wrap:anywhere}
+.textbook-page .book-sum-difference-row>strong{text-align:right;color:#40553a}
+.textbook-page .book-sum-difference-track{min-width:0}
+.textbook-page .book-sum-difference-bar{display:flex;min-width:0;max-width:100%;height:34px;overflow:hidden;box-sizing:border-box;border:1px solid #cfd9bf;border-radius:8px;background:#fff}
+.textbook-page .book-sum-difference-segment{display:grid;min-width:0;flex:0 0 auto;place-items:center;padding:0 4px;box-sizing:border-box;color:#40553a;font-size:.9rem;font-weight:900;line-height:1.2}
+.textbook-page .book-sum-difference-segment.is-equal{border-right:2px solid #fff;background:#e4edcf}
+.textbook-page .book-sum-difference-segment.is-extra{background:#f8e9c9;color:#89653b}
+.textbook-page .book-sum-difference-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;min-width:0;margin-top:10px}
+.textbook-page .book-sum-difference-step{display:flex;min-width:0;flex-direction:column;gap:5px;padding:9px;border:1px solid #e5e9da;border-radius:9px;background:#fff}
+.textbook-page .book-sum-difference-step>b{color:#596a47;font-size:.8rem;line-height:1.5;overflow-wrap:anywhere}
+.textbook-page .book-sum-difference-step>strong{color:#3f523d;font-size:.95rem;line-height:1.5;overflow-wrap:anywhere}
+.textbook-page .book-sum-difference-step>span{color:#68745e;font-size:.78rem;line-height:1.55;overflow-wrap:anywhere}
+@media(max-width:650px){
+  .textbook-page .book-sum-difference-row{grid-template-columns:minmax(3.25rem,3.75rem) minmax(0,1fr) 1.75rem;gap:6px;font-size:.8rem}
+  .textbook-page .book-sum-difference-bar{height:32px}
+  .textbook-page .book-sum-difference-steps{grid-template-columns:1fr;gap:6px}
+  .textbook-page .book-sum-difference-step{padding:8px}
+}
+@media(max-width:340px){
+  .textbook-page .book-sum-difference-row{grid-template-columns:3rem minmax(0,1fr) 1.5rem;gap:5px;font-size:.75rem}
+  .textbook-page .book-sum-difference-segment{padding:0 2px;font-size:.8rem}
+}

@@ -203,6 +203,28 @@
   function learningVisualMarkup(visual) {
     if (!visual || typeof visual !== 'object') return '';
     const cap = (value, max) => Number.isFinite(Number(value)) ? Math.max(0, Math.min(max, Math.floor(Number(value)))) : 0;
+    if (visual.type === 'puzzle-grid') {
+      const rows = (Array.isArray(visual.cells) ? visual.cells : []).slice(0, 6).map((row) => Array.isArray(row) ? row.slice(0, 6) : []);
+      const columns = Math.max(0, ...rows.map((row) => row.length));
+      if (!rows.length || !columns) return '';
+      const boxSize = cap(visual.boxSize, Math.max(rows.length, columns));
+      const focusRow = Array.isArray(visual.focus) ? Number(visual.focus[0]) : -1;
+      const focusColumn = Array.isArray(visual.focus) ? Number(visual.focus[1]) : -1;
+      const cells = rows.map((row, rowIndex) => `<div class="book-puzzle-row" role="row">${Array.from({length:columns}, (_, columnIndex) => {
+        const value = row[columnIndex];
+        const isEmpty = value === undefined || value === null || value === '' || value === 0;
+        const classes = ['book-puzzle-cell'];
+        if (isEmpty) classes.push('is-empty');
+        if (rowIndex === focusRow && columnIndex === focusColumn) classes.push('is-focus');
+        if (columnIndex === columns - 1) classes.push('is-last-column');
+        if (rowIndex === rows.length - 1) classes.push('is-last-row');
+        if (boxSize > 0 && (columnIndex + 1) % boxSize === 0 && columnIndex < columns - 1) classes.push('is-box-right');
+        if (boxSize > 0 && (rowIndex + 1) % boxSize === 0 && rowIndex < rows.length - 1) classes.push('is-box-bottom');
+        const label = `第${rowIndex + 1}行第${columnIndex + 1}格，${isEmpty ? '待填' : `数字${value}`}`;
+        return `<span class="${classes.join(' ')}" role="gridcell" aria-label="${esc(label)}">${isEmpty ? '□' : esc(value)}</span>`;
+      }).join('')}</div>`).join('');
+      return `<figure class="book-learning-visual book-puzzle-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-puzzle-grid" role="grid" aria-label="${esc(visual.title)}，${rows.length}行，每行${columns}格" aria-rowcount="${rows.length}" aria-colcount="${columns}" style="--puzzle-columns:${columns}">${cells}</div>${visual.note ? `<p class="book-visual-check">${esc(visual.note)}</p>` : ''}</figure>`;
+    }
     if (visual.type === 'quantity-count') {
       const count = cap(visual.count, 10);
       const symbol = esc(visual.symbol || '●');
@@ -303,7 +325,8 @@
     if (!unit) return '';
     const concepts = (unit.concepts || []).map((item) => `<article><b>${esc(item.title)}</b><p>${renderRichText(item.text)}</p></article>`).join('');
     const model = unit.model ? (window.AOSHU_FOUNDATION_WIDGETS?.supports(unit.model.type) ? window.AOSHU_FOUNDATION_WIDGETS.markup(unit.model) : `<section class="book-model-lab" data-book-model="${esc(unit.model.type)}" data-book-model-config="${esc(JSON.stringify(unit.model))}" aria-label="互动图示"><div class="book-model-heading"><b>动手试一试</b><span>${unit.model.type === 'fraction-bar' ? '拖动分子或改变分母，看“每一份”怎样变化' : '拖动数轴上的数，检查它是否同时满足两个余数条件'}</span></div>${unit.model.type === 'fraction-bar' ? `<div class="book-model-controls"><label>分母 <select data-fraction-denominator aria-label="分母">${Array.from({length:11},(_,i)=>i+2).map((d)=>`<option value="${d}"${d===unit.model.denominator?' selected':''}>${d}</option>`).join('')}</select></label><label>分子 <input type="range" min="1" max="${unit.model.denominator}" value="${unit.model.numerator}" data-fraction-numerator aria-label="分子"></label></div><div class="book-fraction-bar" data-fraction-pieces role="img"></div><p class="book-model-result" data-book-model-result aria-live="polite"></p>` : `<label class="book-number-control">试一个数 x <input type="range" min="${unit.model.min}" max="${unit.model.max}" value="${unit.model.start}" data-remainder-candidate aria-label="选择候选数 x"></label><p class="book-model-result" data-book-model-result aria-live="polite"></p><div class="book-remainder-strip" data-remainder-strip role="img" aria-label="0 到 59 的候选数，标记同时满足条件的数"></div><p class="book-model-caption">带圆点的数同时满足两个条件；它们每隔 15 重复一次。</p>`}</section>`) : '';
-    const diagram = unit.diagram ? (unit.diagram.type ? learningVisualMarkup(unit.diagram) : `<figure class="book-deep-diagram"><figcaption>${esc(unit.diagram.caption)}</figcaption><pre class="book-diagram">${esc(unit.diagram.text)}</pre></figure>`) : '';
+    const renderDeepDiagram = (visual) => visual?.type ? learningVisualMarkup(visual) : visual ? `<figure class="book-deep-diagram"><figcaption>${esc(visual.caption)}</figcaption><pre class="book-diagram">${esc(visual.text)}</pre></figure>` : '';
+    const diagram = Array.isArray(unit.diagrams) ? unit.diagrams.map(renderDeepDiagram).join('') : renderDeepDiagram(unit.diagram);
     const method = unit.methodCard ? `<section class="book-method-card" aria-label="方法卡"><span>小方法卡</span><h4>${esc(unit.methodCard.title)}</h4><strong class="book-method-formula">${renderRichText(unit.methodCard.formula)}</strong><div class="book-method-card-grid"><p><b>什么时候用：</b>${renderRichText(unit.methodCard.when)}</p><p><b>怎样做：</b>${renderRichText((unit.methodCard.steps || []).join(' → '))}</p><p><b>检查：</b>${renderRichText(unit.methodCard.check)}</p></div></section>` : '';
     const parityBoard = unit.parityBoard ? (() => {
       const visual = unit.parityBoard;
@@ -346,7 +369,7 @@
     const checks = practices.map((item, itemIndex) => {
       const itemDone = solved.has(itemIndex);
       const answers = JSON.stringify(item.answers || []);
-      return `<div class="book-practice-item${itemDone ? ' is-correct' : ''}" data-book-practice-item="${itemIndex}"><p class="book-question">${lesson.deepUnit ? `<b>练习 ${itemIndex + 1}${item.level ? ` · ${esc(item.level)}` : ''}</b> · ` : ''}${renderRichText(item.question || lesson.practice)}</p><div class="book-answer-row"><input id="${esc(answerId)}-${itemIndex}" type="text" inputmode="text" autocomplete="off" aria-label="${esc(chapter)}第${itemIndex + 1}题答案" placeholder="写下你的答案" data-book-answer="${esc(key)}" data-book-index="${itemIndex}" data-answer-options="${esc(answers)}"><button type="button" data-book-check="${esc(key)}" data-book-index="${itemIndex}">检查答案</button></div><p class="book-feedback${itemDone ? ' good' : ''}" aria-live="polite" data-book-feedback="${esc(key)}" data-book-index="${itemIndex}">${itemDone ? '这道练习已经答对；可以再用自己的话讲讲理由。' : '先独立完成；卡住时打开提示，再试一次。'}</p><details class="book-hint"><summary>卡住了？先看提示</summary><p>${renderRichText(item.hint || lesson.hint)}</p></details><details class="book-solution"><summary>看完整解法与核对</summary><p>${renderRichText(item.explanation || lesson.explanation)}</p></details></div>`;
+      return `<div class="book-practice-item${itemDone ? ' is-correct' : ''}" data-book-practice-item="${itemIndex}"><p class="book-question">${lesson.deepUnit ? `<b>练习 ${itemIndex + 1}${item.level ? ` · ${esc(item.level)}` : ''}</b> · ` : ''}${renderRichText(item.question || lesson.practice)}</p><div class="book-answer-row"><input id="${esc(answerId)}-${itemIndex}" type="text" inputmode="text" autocomplete="off" aria-label="${esc(chapter)}第${itemIndex + 1}题答案" placeholder="写下你的答案" data-book-answer="${esc(key)}" data-book-index="${itemIndex}" data-answer-options="${esc(answers)}"><button type="button" data-book-check="${esc(key)}" data-book-index="${itemIndex}" aria-label="${esc(chapter)}第${itemIndex + 1}题检查答案">检查答案</button></div><p class="book-feedback${itemDone ? ' good' : ''}" aria-live="polite" data-book-feedback="${esc(key)}" data-book-index="${itemIndex}">${itemDone ? '这道练习已经答对；可以再用自己的话讲讲理由。' : '先独立完成；卡住时打开提示，再试一次。'}</p><details class="book-hint"><summary>卡住了？先看提示</summary><p>${renderRichText(item.hint || lesson.hint)}</p></details><details class="book-solution"><summary>看完整解法与核对</summary><p>${renderRichText(item.explanation || lesson.explanation)}</p></details></div>`;
     }).join('');
     const practiceCount = done ? '本讲已完成' : lesson.deepUnit ? `${solved.size} / ${practices.length} 题答对` : '自测 1 题';
     const moduleMarkup = deepUnitMarkup(lesson.deepUnit, key);
@@ -439,6 +462,15 @@
       return matchesSearch && matchesGrade && matchesTopic && matchesProgress;
     }).sort((a,b) => (Number(a.grade||3)-Number(b.grade||3)) || (Number(a.routeOrder ?? a.n)-Number(b.routeOrder ?? b.n)));
     list.innerHTML = visible.map((lesson,index) => lessonCard(lesson,index,openId)).join('');
+    list.querySelectorAll('.book-lesson').forEach((card) => {
+      const lesson = visible.find((item) => keyOf(item) === card.dataset.bookId);
+      if (!lesson) return;
+      practiceList(lesson).forEach((practice, index) => {
+        if (!practice.diagram) return;
+        const question = card.querySelector(`[data-book-practice-item="${index}"] .book-question`);
+        if (question) question.insertAdjacentHTML('afterend', learningVisualMarkup(practice.diagram));
+      });
+    });
     visibleCount.textContent = `显示 ${visible.length} / ${lessons.length} 讲`;
     empty.hidden = visible.length !== 0;
     list.querySelectorAll('[data-book-model]').forEach(updateInteractiveModel);

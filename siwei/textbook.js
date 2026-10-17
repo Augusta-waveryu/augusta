@@ -239,6 +239,21 @@
       }).join('')}</tr>`).join('');
       return `<figure class="book-learning-visual book-logic-elimination" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><div class="book-logic-table-wrap"><table class="book-logic-table" aria-label="${esc(visual.title)}"><caption>${esc(visual.rowLabel || '人物')}与楼层候选表</caption><thead><tr><th scope="col">${esc(visual.rowLabel || '人物')}＼楼层</th>${header}</tr></thead><tbody>${rows}</tbody></table></div><div class="book-logic-legend" aria-label="符号说明"><span><b class="is-eliminated" aria-hidden="true">×</b>已排除</span><span><b class="is-confirmed" aria-hidden="true">✓</b>由线索确定</span><span><b class="is-possible" aria-hidden="true">?</b>仍可能</span></div>${visual.note ? `<p class="book-visual-check">${esc(visual.note)}</p>` : ''}</figure>`;
     }
+    if (visual.type === 'guess-check-steps') {
+      const steps = (Array.isArray(visual.steps) ? visual.steps : []).slice(0, 6);
+      if (!steps.length) return '';
+      const items = steps.map((step, index) => `<li><span class="book-guess-check-index">${index + 1}</span><div class="book-guess-check-content"><strong>${esc(step.title || '')}</strong><b>${esc(step.equation || '')}</b><span>${esc(step.result || '')}</span></div></li>`).join('');
+      return `<figure class="book-learning-visual book-guess-check-visual" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><ol class="book-guess-check-steps">${items}</ol>${visual.note ? `<p class="book-visual-check">${esc(visual.note)}</p>` : ''}</figure>`;
+    }
+    if (visual.type === 'reverse-operation-flow') {
+      const renderFlow = (label, tokens) => {
+        const items = (Array.isArray(tokens) ? tokens : []).slice(0, 9);
+        if (!items.length) return '';
+        const content = items.map((token, index) => `<li class="is-${token.kind === 'operation' ? 'operation' : 'number'}"><span class="book-reverse-token">${esc(token.text || '')}</span>${index < items.length - 1 ? '<span class="book-reverse-arrow" aria-hidden="true">→</span>' : ''}</li>`).join('');
+        return `<section class="book-reverse-flow-row"><h4>${esc(label)}</h4><ol class="book-reverse-flow-track" aria-label="${esc(label)}">${content}</ol></section>`;
+      };
+      return `<figure class="book-learning-visual book-reverse-flow" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption>${renderFlow(visual.forwardLabel || '正着计算', visual.forward)}${renderFlow(visual.backwardLabel || '倒着还原', visual.backward)}${visual.note ? `<p class="book-visual-check">${esc(visual.note)}</p>` : ''}</figure>`;
+    }
     if (visual.type === 'quantity-count') {
       const count = cap(visual.count, 10);
       const symbol = esc(visual.symbol || '●');

@@ -662,3 +662,26 @@
   .textbook-page .book-sum-difference-row{grid-template-columns:3rem minmax(0,1fr) 1.5rem;gap:5px;font-size:.75rem}
   .textbook-page .book-sum-difference-segment{padding:0 2px;font-size:.8rem}
 }
+
+/* G3-17 assumption and G3-18 reverse-operation visuals. */
+.textbook-page .book-guess-check-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;min-width:0;margin:10px 0;padding:0;list-style:none}
+.textbook-page .book-guess-check-steps>li{display:grid;grid-template-columns:1.5rem minmax(0,1fr);gap:8px;min-width:0;padding:9px;border:1px solid #e5e9da;border-radius:10px;background:#fff}
+.textbook-page .book-guess-check-index{display:flex;width:1.5rem;height:1.5rem;align-items:center;justify-content:center;border-radius:50%;background:#e9efd9;color:#536747;font-size:.8rem;font-weight:900}
+.textbook-page .book-guess-check-content{display:flex;min-width:0;flex-direction:column;gap:4px}
+.textbook-page .book-guess-check-content strong{color:#596a47;font-size:.8rem;line-height:1.45;overflow-wrap:anywhere}
+.textbook-page .book-guess-check-content>b{color:#344d3d;font-size:.95rem;line-height:1.45;overflow-wrap:anywhere}
+.textbook-page .book-guess-check-content>span{color:#89653b;font-size:.84rem;font-weight:800;line-height:1.45;overflow-wrap:anywhere}
+.textbook-page .book-reverse-flow{display:grid;gap:10px;min-width:0}
+.textbook-page .book-reverse-flow-row{display:grid;gap:6px;min-width:0;padding:9px;border:1px solid #e5e9da;border-radius:10px;background:#fff}
+.textbook-page .book-reverse-flow-row h4{margin:0;color:#596a47;font-size:.8rem;line-height:1.45}
+.textbook-page .book-reverse-flow-track{display:flex;flex-wrap:wrap;align-items:center;gap:6px 4px;min-width:0;margin:0;padding:0;list-style:none}
+.textbook-page .book-reverse-flow-track>li{display:inline-flex;flex:0 0 auto;align-items:center;gap:4px;min-width:0}
+.textbook-page .book-reverse-token{display:inline-flex;min-width:2.1rem;min-height:2rem;align-items:center;justify-content:center;padding:3px 7px;border:1px solid #dfe6d3;border-radius:8px;background:#f6f8ef;color:#40553a;font-size:.9rem;font-weight:900;line-height:1.35}
+.textbook-page .book-reverse-flow-track>li.is-operation .book-reverse-token{border-color:#ead9b5;background:#fbf2e2;color:#89653b}
+.textbook-page .book-reverse-arrow{color:#839170;font-size:.85rem;font-weight:900}
+@media(max-width:650px){
+  .textbook-page .book-guess-check-steps{grid-template-columns:1fr;gap:6px}
+  .textbook-page .book-guess-check-steps>li{padding:8px}
+  .textbook-page .book-reverse-flow-row{padding:8px}
+  .textbook-page .book-reverse-flow-track{gap:5px 3px}
+}

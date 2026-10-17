@@ -104,11 +104,12 @@
     return /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:(?:\s+|又)\d+\/[+-]?\d+|\/[+-]?\d+)?$/.test(text);
   };
   const answersMatch = (expected, actual) => {
+    if (normalize(expected) === normalize(actual)) return true;
     const a = parseRational(expected);
     const b = parseRational(actual);
     if (a || b) return Boolean(a && b && a.n * b.d === b.n * a.d);
     if (looksNumeric(expected) || looksNumeric(actual)) return false;
-    return normalize(expected) === normalize(actual);
+    return false;
   };
   const searchableText = (value) => {
     if (Array.isArray(value)) return value.map(searchableText).join(' ');

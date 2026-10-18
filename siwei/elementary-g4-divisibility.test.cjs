@@ -9,7 +9,9 @@ const plain = x => JSON.parse(JSON.stringify(x));
 function load(baseline) {
   const context = {window:{},document:{getElementById:()=>null}};
   vm.createContext(context);
-  const html = baseline ? cp.execFileSync('git',['show','ea29dde:siwei/textbook.html'],{cwd:dir,encoding:'utf8'}) : fs.readFileSync(path.join(dir,'textbook.html'),'utf8');
+  // Use the same current module list on both sides. Only the divisibility
+  // content module is replaced by its pre-enrichment version for comparison.
+  const html = fs.readFileSync(path.join(dir,'textbook.html'),'utf8');
   for(const match of html.matchAll(/<script src="\/siwei\/([^"]+)"/g)) {
     const file = match[1];
     if(['textbook.js','textbook-overview.js'].includes(file)) continue;

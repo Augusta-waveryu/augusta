@@ -1,0 +1,12 @@
+.book-average-lab,.book-average-chart,.book-average-row{min-width:0;max-width:100%}
+.book-average-lab .book-foundation-controls label{min-width:0;max-width:100%;flex-wrap:wrap}
+.book-average-lab select{min-width:0;width:100%;max-width:100%;font-size:13px}
+.book-average-chart{display:grid;gap:12px;margin:16px 0;padding:12px;border:1px solid #c9d3b5;border-radius:12px;background:#fffefa}
+.book-average-line-label{font-size:13px;margin:0;color:#455d34}
+.book-average-row{display:grid;gap:6px}
+.book-average-row>b{font-size:14px}
+.book-average-row>small{font-size:12px;color:#596451}
+.book-average-track{position:relative;height:24px;border:1px solid #c9d3b5;border-radius:4px;background:#f1f3ea;margin-right:3px}
+.book-average-fill{display:block;height:100%;background:#8ca871;border-radius:3px}
+.book-average-marker{position:absolute;top:-4px;bottom:-4px;border-left:2px dashed #694b2d;transform:translateX(-1px)}
+@media(max-width:480px){.book-average-lab .book-foundation-controls{display:grid;grid-template-columns:minmax(0,1fr)}.book-average-chart{padding:10px}.book-average-lab select{display:block}}

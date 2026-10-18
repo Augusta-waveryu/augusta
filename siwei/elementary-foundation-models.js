@@ -1,5 +1,5 @@
 (() => {
-  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product', 'pigeonhole-bins', 'counterexample-check']);
+  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product', 'pigeonhole-bins', 'counterexample-check', 'paired-removal']);
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const moneyName = (jiao) => {
     const yuan = Math.floor(jiao / 10);
@@ -114,6 +114,13 @@
       controls = select('claim', '待检验的全称命题', ['even-four','multiple-three'], 'even-four', (value) => value === 'even-four' ? '所有正偶数都能被4整除' : '所有大于10的3倍数都是偶数') + select('candidate', '候选整数', [-2,0,2,3,4,6,8,9,10,12,15,18,20,21,24], 2);
       visual = '<div class="foundation-proof-gates" data-proof-gates></div><div class="foundation-proof-groups" data-proof-groups role="img"></div>';
       caption = '每个圆点表示1个正整数单位；分组检验整除。有限候选只用于比较证据，不能靠“没找到”证明无限范围内没有反例；操作不会计入答题进度。';
+    } else if (type === 'paired-removal') {
+      title = '取珠检验台：差没变，目标就一定能到吗？';
+      instruction = '先用6红6蓝比较目标3红0蓝、3红3蓝和7红7蓝；再选取走次数，核对每一颗珠子。';
+      const counts = Array.from({length:9}, (_, n) => n);
+      controls = select('red', '起始红珠', counts, 6) + select('blue', '起始蓝珠', counts, 6) + select('steps', '尝试取走次数', counts, 0) + select('target', '从起点想达到的目标', ['3,0','3,3','0,0','7,7','4,2','1,0'], '3,0', (v) => { const [r,b] = v.split(','); return `${r}红${b}蓝`; });
+      visual = '<div class="foundation-removal-rows" data-removal-beads role="img"></div><div class="foundation-proof-gates" data-removal-checks></div>';
+      caption = '实心圆是剩下的珠子，虚线圆是已取走的珠子；同时写出红/蓝文字，不只靠颜色区分。取走次数只模拟过程，目标检查始终从所选起点出发，两者分开。操作不计入答题进度。';
     }
     let html = wrapper(type, title, instruction, controls, visual, caption);
     html = html.replace(`data-book-model-config="${esc(JSON.stringify({}))}"`, `data-book-model-config="${esc(JSON.stringify(config))}"`);
@@ -353,6 +360,26 @@
       const verdict = !premise ? '不是有效反例：不满足全部前提；无论结论如何，都不能用它反驳这句话。' : !conclusion ? '是有效反例：前提全真、结论失败，足以推翻这句“所有”。' : '只是一个正例：这一例符合结论，却不能证明范围内所有对象都成立。';
       result.textContent = `候选${n}：${verdict}`;
       root.dataset.proofVerdict = !premise ? 'outside' : !conclusion ? 'counterexample' : 'support';
+    } else if (root.dataset.bookModel === 'paired-removal') {
+      const bounded = (name, fallback) => Math.min(8, Math.max(0, Math.trunc(get(name, fallback))));
+      const red = bounded('red', 6), blue = bounded('blue', 6), steps = bounded('steps', 0);
+      const rawTarget = root.querySelector('[data-foundation-model-setting="target"]')?.value || '3,0';
+      const allowedTargets = ['3,0','3,3','0,0','7,7','4,2','1,0'];
+      const [targetRed,targetBlue] = (allowedTargets.includes(rawTarget) ? rawTarget : '3,0').split(',').map(Number);
+      const legal = steps <= Math.min(red, blue), shownSteps = legal ? steps : 0;
+      const visual = root.querySelector('[data-removal-beads]');
+      visual.innerHTML = [[red,'red','红珠'],[blue,'blue','蓝珠']].map(([count,color,label]) => `<div class="foundation-removal-row"><b>${label}：${count - shownSteps}颗</b><div>${Array.from({length:count}, (_, i) => `<i class="foundation-bead is-${color}${i >= count - shownSteps ? ' is-removed' : ''}" aria-hidden="true"></i>`).join('') || '<small>没有珠子</small>'}</div></div>`).join('');
+      visual.setAttribute('aria-label', legal ? `取${steps}次后，剩${red - steps}红${blue - steps}蓝，已取${steps}红${steps}蓝` : `尝试取${steps}次不合法；仍显示起点${red}红${blue}蓝，未执行取走`);
+      const difference = red - blue, targetDifference = targetRed - targetBlue;
+      const needed = red - targetRed;
+      const sameDifference = difference === targetDifference;
+      const reachable = sameDifference && needed >= 0 && needed <= Math.min(red, blue);
+      const verdict = !sameDifference ? 'difference' : !reachable ? 'stock' : 'reachable';
+      root.dataset.removalLegal = String(legal);
+      root.dataset.removalVerdict = verdict;
+      root.querySelector('[data-removal-checks]').innerHTML = `<div><b>① 差的检查</b><span>起点：${red}−${blue}=${difference}</span><span>目标：${targetRed}−${targetBlue}=${targetDifference}</span><strong>${sameDifference ? '差相同：尚未排除' : '差不同：不可能'}</strong></div><div><b>② 操作与库存</b><span>红珠要求取${needed}次，蓝珠要求取${blue - targetBlue}次</span><strong>${reachable ? `同取${needed}次，合法可达` : sameDifference ? '差相同，但只取不能增加' : '两色所需次数不同'}</strong><small>目标检查从起点计算，不取决于上方正在尝试的次数。</small></div>`;
+      const process = legal ? `尝试取${steps}次：剩${red - steps}红${blue - steps}蓝；差仍为${difference}，总数从${red + blue}变${red + blue - 2 * steps}，总数奇偶不变。` : `尝试取${steps}次不合法：最多只能取${Math.min(red, blue)}次，一色用完就必须停。图保留起点，未执行，不出现负数珠子。`;
+      result.textContent = process + (!sameDifference ? `目标${targetRed}红${targetBlue}蓝的差为${targetDifference}，不同于起始差${difference}，不可能。` : !reachable ? `目标虽同差，却需要取${needed}次；次数为负，只取走不能增加珠子，所以仍不可能。` : `目标可达：从起点同时各取${needed}颗，即取${needed}次，得到${targetRed}红${targetBlue}蓝；次数为合法非负整数，库存足够。`);
     }
     return true;
   }

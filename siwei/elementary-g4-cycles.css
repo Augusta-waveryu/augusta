@@ -1,0 +1,11 @@
+.book-cycles-lab .book-foundation-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.book-cycles-lab .book-foundation-controls label { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 8px; min-width: 0; }
+.book-cycles-lab select, .book-cycles-lab input { box-sizing: border-box; width: 100%; min-width: 0; max-width: 100%; min-height: 44px; font: inherit; border: 1px solid #a5b7ac; border-radius: 8px; padding: 9px; background: #fff; color: #244238; }
+.book-cycle-cells { display: grid; grid-template-columns: repeat(auto-fit, minmax(88px, 1fr)); gap: 8px; list-style: none; margin: 16px 0; padding: 0; }
+.book-cycle-cells li { display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; border: 2px solid #c4d2c7; border-radius: 10px; background: #fff; padding: 12px 6px; text-align: center; }
+.book-cycle-cells strong { font-size: 1.4rem; color: #29483b; }
+.book-cycle-cells small, .book-cycle-cells span { font-size: .78rem; }
+.book-cycle-cells .is-cycle-target { border: 3px solid #376b49; padding: 11px 5px; background: #e4f2da; }
+.book-cycle-cells .is-cycle-target span { font-weight: 800; color: #244b32; }
+.book-cycles-lab [data-cycle-origin], .book-cycles-lab [data-book-model-result] { overflow-wrap: anywhere; }
+@media (max-width: 600px) { .book-cycles-lab .book-foundation-controls { grid-template-columns: minmax(0, 1fr); } .book-cycle-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

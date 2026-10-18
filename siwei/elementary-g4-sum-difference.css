@@ -1,0 +1,10 @@
+.book-sumdiff-lab { min-width: 0; }
+.book-sumdiff-lab .book-foundation-controls label { min-width: 0; max-width: 100%; }
+.book-sumdiff-lab select { max-width: 100%; }
+.book-sumdiff-chart { display: grid; gap: 1rem; padding: 1rem 0; }
+.book-sumdiff-row { display: grid; gap: .45rem; min-width: 0; }
+.book-sumdiff-row b { font-size: .9rem; overflow-wrap: anywhere; }
+.book-sumdiff-track { display: flex; width: 100%; height: 1.3rem; border-bottom: 1px solid #68726c; }
+.book-sumdiff-base { display: block; background: #477b66; height: 100%; }
+.book-sumdiff-extra { display: block; height: 100%; background: repeating-linear-gradient(135deg,#e7b761 0 4px,#fff1cd 4px 8px); border: 1px solid #98630e; box-sizing: border-box; }
+@media(max-width: 420px) { .book-sumdiff-lab .book-foundation-controls { display: grid; grid-template-columns: minmax(0,1fr); } .book-sumdiff-lab select { width: 100%; } }

@@ -1,0 +1,6 @@
+.book-equation-lab { min-width: 0; }
+.book-equation-lab .book-foundation-controls { display: grid; grid-template-columns: minmax(0,1fr); }
+.book-equation-lab .book-foundation-controls label { display: grid; grid-template-columns: minmax(0,1fr); gap: .4rem; min-width: 0; max-width: 100%; }
+.book-equation-lab select { width: 100%; max-width: 100%; }
+.book-equation-lab svg { display: block; width: 100%; max-width: 420px; height: auto; margin: 1rem auto; }
+.book-equation-lab .book-model-result { overflow-wrap: anywhere; }

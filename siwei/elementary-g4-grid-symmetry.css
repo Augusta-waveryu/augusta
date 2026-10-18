@@ -1,0 +1,9 @@
+.book-grid-mirror [data-mirror-plot] { max-width: 27rem; margin: 1rem auto; }
+.book-grid-mirror svg { display: block; width: 100%; height: auto; overflow: visible; background: #fff; border-radius: 12px; }
+.book-grid-mirror .book-foundation-controls { display: flex; flex-wrap: wrap; gap: .7rem; }
+.book-grid-mirror .book-foundation-controls label { flex: 1 1 10rem; min-width: 0; }
+.book-grid-mirror select { width: 100%; max-width: 100%; min-width: 0; }
+.book-grid-mirror .book-model-result, .book-grid-mirror .book-model-caption { overflow-wrap: anywhere; }
+@media (max-width: 420px) {
+  .book-grid-mirror .book-foundation-controls label { flex-basis: 100%; }
+}

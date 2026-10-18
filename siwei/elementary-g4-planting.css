@@ -1,0 +1,14 @@
+.book-planting-lab { min-width: 0; }
+.book-planting-lab .book-foundation-controls label { min-width: 0; max-width: 100%; }
+.book-planting-lab select { max-width: 100%; }
+.book-planting-chart { width: 100%; max-width: 420px; margin: .8rem auto; }
+.book-planting-chart svg { display: block; width: 100%; height: auto; }
+.book-planting-chart line { stroke: #607568; stroke-width: 2; }
+.book-planting-chart circle { stroke: #294d3b; stroke-width: 2; }
+.book-planting-chart .is-planted { fill: #36694e; }
+.book-planting-chart .is-empty { fill: #fff; stroke-dasharray: 2 2; }
+.book-planting-chart text { font-size: 9px; text-anchor: middle; fill: #233f31; }
+@media (max-width: 420px) {
+  .book-planting-lab .book-foundation-controls { display: grid; grid-template-columns: minmax(0,1fr); }
+  .book-planting-lab select { width: 100%; }
+}

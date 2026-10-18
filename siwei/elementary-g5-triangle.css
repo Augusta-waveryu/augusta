@@ -1,0 +1,5 @@
+.book-triangle-lab [data-triangle-drawing] { max-width: 440px; margin: 12px auto; }
+.book-triangle-lab svg { display: block; width: 100%; height: auto; overflow: visible; }
+.book-triangle-lab svg text { font: 13px sans-serif; fill: #354139; }
+.book-triangle-lab input { width: 100%; max-width: 150px; min-width: 0; box-sizing: border-box; }
+.book-triangle-lab .book-number-control { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }

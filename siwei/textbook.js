@@ -204,6 +204,17 @@
   function learningVisualMarkup(visual) {
     if (!visual || typeof visual !== 'object') return '';
     const cap = (value, max) => Number.isFinite(Number(value)) ? Math.max(0, Math.min(max, Math.floor(Number(value)))) : 0;
+    if (visual.type === 'counting-choice-grid') {
+      const rows = (Array.isArray(visual.rows) ? visual.rows : []).slice(0, 8).map((row) => ({
+        label: String(row.label || ''),
+        choices: (Array.isArray(row.choices) ? row.choices : []).slice(0, 8)
+      }));
+      if (!rows.length) return '';
+      const total = rows.reduce((sum, row) => sum + row.choices.length, 0);
+      const branches = rows.map((row) => `<details class="book-choice-branch"><summary>先选${esc(row.label)}：展开合法搭配</summary><ul>${row.choices.map((choice) => `<li><b>${esc(row.label)}</b><span aria-hidden="true">＋</span><b>${esc(choice)}</b></li>`).join('')}</ul><p>这一枝有 ${row.choices.length} 种完整方案。</p></details>`).join('');
+      const equation = `${rows.map((row) => row.choices.length).join(' + ')} = ${total}`;
+      return `<figure class="book-learning-visual book-choice-grid" aria-label="${esc(visual.title)}"><figcaption>${esc(visual.title)}</figcaption><p>${esc(visual.caption)}</p><p class="book-choice-instruction">先在纸上列出方案，再逐枝展开；每一格是一种完整搭配，不是一个单独物品。</p><div class="book-choice-branches">${branches}</div><details class="book-choice-total"><summary>我数好了，展开总数与回查</summary><p><strong>${esc(equation)} 种</strong></p><p>${renderRichText(visual.check)}</p></details></figure>`;
+    }
     if (visual.type === 'probability-outcomes') {
       const outcomes = (Array.isArray(visual.outcomes) ? visual.outcomes : []).slice(0, 12);
       if (!outcomes.length) return '';

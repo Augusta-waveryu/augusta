@@ -18,3 +18,14 @@
 .book-probability-card.is-favorable{border-color:#b35f5a;background:#fff0ec;color:#853a35}
 .book-probability-card b{font-size:18px}.book-probability-card span{font-size:13px}
 @media(max-width:650px){.book-probability-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.book-probability-card b{font-size:17px}}
+
+/* 加乘计数：每格为一种完整方案；原生展开控件支持键盘和触屏。 */
+.book-choice-grid .book-choice-instruction{color:#52654d;font-weight:700}
+.book-choice-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.book-choice-branch{min-width:0;padding:12px;border:1px solid #b9cbb3;border-radius:12px;background:#f4f8ef;overflow-wrap:anywhere}
+.book-choice-branch>summary,.book-choice-total>summary{min-height:44px;padding:8px 0;color:#34513c;font-weight:800;cursor:pointer;line-height:1.7}
+.book-choice-branch>summary:focus-visible,.book-choice-total>summary:focus-visible{outline:3px solid #718e64;outline-offset:3px;border-radius:4px}
+.book-choice-branch ul{display:grid;gap:10px;list-style:none;margin:12px 0;padding:0}
+.book-choice-branch li{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;padding:10px 6px;border:1px solid #c6d4bd;border-radius:8px;background:white;text-align:center}
+.book-choice-branch p{margin-bottom:0}.book-choice-total{padding:8px 14px;border:2px solid #afbd97;border-radius:12px;background:#fcfcf3;overflow-wrap:anywhere}
+@media(max-width:650px){.book-choice-branches{grid-template-columns:1fr;gap:10px}.book-choice-branch{padding:10px 12px}}

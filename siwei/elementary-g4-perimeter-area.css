@@ -1,0 +1,37 @@
+.book-perimeter-area-lab,
+.book-perimeter-area-lab *{box-sizing:border-box;min-width:0;max-width:100%}
+.book-perimeter-area-lab{width:100%;overflow:hidden}
+.book-perimeter-area-lab .book-model-heading{display:grid;gap:4px}
+.book-perimeter-area-lab .book-model-heading span{font-size:13px;line-height:1.55;color:#53634d}
+.book-perimeter-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.book-perimeter-controls label{display:grid;gap:5px;min-width:0;font-size:13px;font-weight:700;color:#34452f}
+.book-perimeter-controls select{width:100%;min-width:0;max-width:100%;padding:8px 9px;border:1px solid #bac8aa;border-radius:8px;background:#fffef8;color:#263423;font:inherit;font-size:13px}
+.book-perimeter-svg{width:100%;margin:10px 0;padding:10px;border:1px solid #c9d3b5;border-radius:12px;background:#fffefa;overflow:hidden}
+.book-perimeter-svg svg{display:block;width:100%;height:auto;max-height:285px}
+.book-perimeter-grid-lines{stroke:#cad8ba;stroke-width:1}
+.book-perimeter-shape{fill:#e4f0d8;stroke:#4d7347;stroke-width:3}
+.book-perimeter-triangle{fill:#e4f0d8;stroke:#4d7347;stroke-width:3;stroke-linejoin:round}
+.book-perimeter-copy{fill:#fff0c9;stroke:#9c7a35;stroke-width:2;stroke-dasharray:5 4}
+.book-perimeter-height{stroke:#b44b43;stroke-width:2;stroke-dasharray:5 4}
+.book-perimeter-right{fill:none;stroke:#b44b43;stroke-width:1.5}
+.book-perimeter-svg text{fill:#34452f;font-size:13px;font-family:inherit}
+.book-perimeter-svg .book-perimeter-note{font-size:11px;fill:#53634d}
+.book-perimeter-area-lab .book-model-result{margin:10px 0 0;padding:9px 10px;border-radius:8px;background:#f2f6ec;color:#34452f;font-size:14px;line-height:1.6}
+.book-perimeter-area-lab .book-model-caption{margin:8px 0 0;color:#65725f;font-size:12px;line-height:1.55}
+.book-perimeter-svg[data-view="boundary"] .book-perimeter-grid-lines{opacity:.18}
+.book-perimeter-svg[data-view="boundary"] .book-perimeter-shape{fill:#fffefa}
+.book-perimeter-svg[data-view="boundary"] .book-perimeter-copy{opacity:.2}
+.book-perimeter-svg[data-view="boundary"] .book-perimeter-triangle{fill:#fffefa}
+.book-perimeter-svg[data-view="area"] .book-perimeter-shape{stroke:#8ca871;stroke-width:1.5}
+.book-perimeter-svg[data-view="area"] .book-perimeter-grid-lines{stroke:#70935e;stroke-width:1.25}
+@media(max-width:480px){
+  .book-perimeter-controls{grid-template-columns:minmax(0,1fr);gap:8px}
+  .book-perimeter-svg{padding:6px}
+  .book-perimeter-svg text{font-size:12px}
+  .book-perimeter-svg .book-perimeter-note{font-size:10px}
+}
+@media(max-width:340px){
+  .book-perimeter-area-lab .book-model-heading span{font-size:12px}
+  .book-perimeter-controls select{font-size:12px}
+  .book-perimeter-svg{margin-left:0;margin-right:0}
+}

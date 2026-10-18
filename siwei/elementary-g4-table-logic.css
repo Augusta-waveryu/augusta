@@ -1,0 +1,11 @@
+.book-table-logic-lab { min-width: 0; }
+.book-table-logic-lab select { max-width: 100%; min-width: 0; }
+.book-table-logic-grid { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 1rem 0; text-align: center; }
+.book-table-logic-grid caption { text-align: left; font-weight: 800; margin-bottom: .5rem; }
+.book-table-logic-grid th, .book-table-logic-grid td { border: 1px solid #b8cbc0; padding: .65rem .15rem; overflow-wrap: anywhere; }
+.book-table-logic-grid th { background: #edf5ee; }
+.book-table-logic-grid td { font-weight: 800; font-size: 1.15rem; }
+.book-table-logic-grid [data-table-cell="v"] { color: #16663d; background: #e5f4e9; }
+.book-table-logic-grid [data-table-cell="x"] { color: #8a3434; background: #fff1ed; }
+.book-table-logic-lab .book-foundation-controls label { min-width: 0; width: 100%; flex: 1 1 100%; flex-direction: column; align-items: stretch; }
+.book-table-logic-lab .book-foundation-controls select { width: 100%; min-width: 0; box-sizing: border-box; }

@@ -1,0 +1,19 @@
+.book-inclusion-lab .book-foundation-controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.book-inclusion-lab .book-foundation-controls label { display: flex; flex-direction: column; align-items: stretch; gap: 6px; min-width: 0; overflow-wrap: anywhere; }
+.book-inclusion-lab input { width: 100%; min-width: 0; box-sizing: border-box; }
+.book-inclusion-universe { margin-top: 18px; padding: 12px; border: 2px solid #527661; border-radius: 12px; }
+.book-inclusion-regions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 12px; }
+.book-inclusion-region { min-width: 0; padding: 12px; border: 1px solid #afc7b6; border-radius: 9px; background: #edf5ef; overflow-wrap: anywhere; }
+.book-inclusion-region h5 { margin: 0 0 6px; font: inherit; font-weight: 700; }
+.book-inclusion-region strong { font-size: 1.45rem; }
+.book-inclusion-region.region-1 { background: #fff3d4; border-color: #baa46d; }
+.book-inclusion-region.region-2 { background: #eaf1fa; border-color: #9eb2ce; }
+.book-inclusion-region.region-3 { background: #f3f1ec; border-style: dashed; }
+.book-inclusion-dots { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
+.book-inclusion-dots i { display: block; width: 9px; height: 9px; border-radius: 50%; background: #41694f; }
+.region-1 .book-inclusion-dots i { background: #866311; }
+.region-2 .book-inclusion-dots i { background: #466e9c; }
+.region-3 .book-inclusion-dots i { background: #706b61; }
+@media (max-width: 600px) {
+  .book-inclusion-lab .book-foundation-controls, .book-inclusion-regions { grid-template-columns: minmax(0,1fr); }
+}

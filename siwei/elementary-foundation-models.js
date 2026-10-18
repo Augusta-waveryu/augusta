@@ -1,5 +1,5 @@
 (() => {
-  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product']);
+  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product', 'pigeonhole-bins']);
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const moneyName = (jiao) => {
     const yuan = Math.floor(jiao / 10);
@@ -102,6 +102,12 @@
       controls = select('factorA', '横向取', fractionChoices, config.factorA || '3/4') + select('factorB', '纵向取', fractionChoices, config.factorB || '2/3');
       visual = '<div class="foundation-fraction-area"><div class="foundation-fraction-area-grid" data-foundation-area-grid role="img"></div></div>';
       caption = '横向分割表示第一个真分数，纵向分割表示第二个真分数；同时被两次选中的交叠区域表示乘积。这个图只展示 0 到 1 之间的正分数因数。';
+    } else if (type === 'pigeonhole-bins') {
+      title = '把对象尽量分散，再和集中放比较';
+      instruction = '先选12个、4篮，再改成13个。预测保证数会不会增加；切换放法看实际最多与保证下限的区别。';
+      controls = select('objects', '对象总数', Array.from({length:17}, (_, n) => n), config.objects ?? 13) + select('bins', '篮子个数', [1,2,3,4,5,6], config.bins ?? 4) + select('placement', '示范放法', ['spread','together'], 'spread', (value) => value === 'spread' ? '尽量分散' : '全放第一篮');
+      visual = '<div class="foundation-pigeonhole-bins" data-pigeonhole-bins role="img"></div>';
+      caption = '图只展示一种合法放法，不代替必然性证明。篮子无容量上限、允许空篮；每个对象只放入一篮。改变模型不会代替答题，也不会记为课程完成。';
     }
     let html = wrapper(type, title, instruction, controls, visual, caption);
     html = html.replace(`data-book-model-config="${esc(JSON.stringify({}))}"`, `data-book-model-config="${esc(JSON.stringify(config))}"`);
@@ -307,6 +313,18 @@
       const unsimplified = `${productNumerator}/${productDenominator}`;
       visual.setAttribute('aria-label', `横向 ${first.n}/${first.d}、纵向 ${second.n}/${second.d}；${productNumerator} 个交叠格，占总计 ${productDenominator} 格，乘积为 ${product}`);
       result.textContent = `${first.n}/${first.d} × ${second.n}/${second.d} = ${unsimplified}${unsimplified === product ? '' : ` = ${product}`}。共 ${productDenominator} 个同样大小的小格，交叠涂色 ${productNumerator} 格。${divisor > 1 ? `约分时分子、分母同除以 ${divisor}。` : ''}`;
+    } else if (root.dataset.bookModel === 'pigeonhole-bins') {
+      const objects = Math.min(16, Math.max(0, Math.floor(get('objects', config.objects ?? 13))));
+      const bins = Math.min(6, Math.max(1, Math.floor(get('bins', config.bins ?? 4))));
+      const together = root.querySelector('[data-foundation-model-setting="placement"]')?.value === 'together';
+      const quotient = Math.floor(objects / bins), remainder = objects % bins;
+      const guarantee = quotient + (remainder ? 1 : 0);
+      const counts = Array.from({length:bins}, (_, index) => together ? (index === 0 ? objects : 0) : quotient + (index < remainder ? 1 : 0));
+      const visual = root.querySelector('[data-pigeonhole-bins]');
+      visual.innerHTML = counts.map((count, index) => `<div class="foundation-pigeonhole-bin"><b>篮${index + 1} · ${count}个</b><div class="foundation-pigeonhole-dots">${count ? '<span aria-hidden="true">●</span>'.repeat(count) : '<small>空篮</small>'}</div></div>`).join('');
+      visual.setAttribute('aria-label', `${together ? '集中' : '尽量分散'}放法：${counts.join('、')}；本次最多一篮有${Math.max(...counts)}个，保证下限${guarantee}个`);
+      const proof = objects === 0 ? '没有对象，保证下限为0，不能凭空出现1个。' : `若每篮至多${guarantee - 1}个，总数至多${bins}×${guarantee - 1}=${bins * (guarantee - 1)}，装不下${objects}个，所以某篮至少${guarantee}个。`;
+      result.textContent = `${objects}÷${bins}=${quotient}${remainder ? `余${remainder}，有余数，商加1` : '，恰好整除，不加1'}。保证下限是${guarantee}个；本次图中最多一篮有${Math.max(...counts)}个。${proof}${together ? '集中放可改变实际最多数，但不会提高适用于所有放法的保证下限。' : `这种分散放法没有一篮超过${guarantee}个，说明不能保证${guarantee + 1}个。`}`;
     }
     return true;
   }

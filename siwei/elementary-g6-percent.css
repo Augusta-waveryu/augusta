@@ -1,0 +1,10 @@
+.book-percent-lab .book-foundation-controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.book-percent-lab label, .book-percent-lab select, .book-percent-lab input { min-width: 0; width: 100%; max-width: 100%; }
+.book-percent-stations { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; padding: 0; list-style: none; }
+.book-percent-stations li { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 12px; border: 1px solid #bed2c0; border-radius: 12px; background: #fff; overflow-wrap: anywhere; }
+.book-percent-stations strong { font-size: 1.6rem; color: #315d3c; }
+.book-percent-track { width: 100%; height: 14px; border: 1px solid #9ab99f; background: #edf3ed; border-radius: 4px; overflow: hidden; }
+.book-percent-track span { display: block; height: 100%; background: #55805c; }
+@media (max-width: 600px) {
+  .book-percent-lab .book-foundation-controls, .book-percent-stations { grid-template-columns: minmax(0,1fr); }
+}

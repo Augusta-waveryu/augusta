@@ -1,0 +1,14 @@
+.book-differences-lab .book-foundation-controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.book-differences-lab .book-foundation-controls label { min-width: 0; }
+.book-differences-lab select { width: 100%; min-width: 0; max-width: 100%; }
+.book-difference-stations { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; padding: 0; list-style: none; }
+.book-difference-stations li { display: flex; flex-direction: column; gap: 6px; padding: 12px; min-width: 0; border: 1px solid #bed2c0; border-radius: 12px; background: #fff; }
+.book-difference-stations strong { font-size: 1.7rem; color: #315d3c; }
+.book-difference-stations small { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .book-differences-lab .book-foundation-controls { grid-template-columns: minmax(0,1fr); }
+  .book-difference-stations { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 350px) {
+  .book-difference-stations { grid-template-columns: minmax(0,1fr); }
+}

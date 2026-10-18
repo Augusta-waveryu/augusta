@@ -1,0 +1,11 @@
+.book-inverse-lab{min-width:0}
+.book-inverse-lab .book-foundation-controls{display:flex;flex-wrap:wrap;gap:12px}
+.book-inverse-lab .book-foundation-controls label{display:flex;flex-direction:column;align-items:stretch;gap:6px;flex:1 1 190px;min-width:0}
+.book-inverse-lab select{width:100%;max-width:100%;min-width:0}
+.book-inverse-forward{overflow-wrap:anywhere;line-height:1.8}
+.book-inverse-path{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:14px 0}
+.book-inverse-node{display:flex;flex-direction:column;align-items:center;min-width:62px;padding:10px;border:2px solid #698571;border-radius:12px;background:#f1f5e9;color:#294b37}
+.book-inverse-node small{font-size:12px}
+.book-inverse-node b{font-size:25px}
+.book-inverse-arrow{font-weight:800;color:#526e40;white-space:nowrap}
+@media(max-width:390px){.book-inverse-path{gap:6px}.book-inverse-node{min-width:47px;padding:7px}.book-inverse-arrow{font-size:13px}}

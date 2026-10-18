@@ -1,5 +1,5 @@
 (() => {
-  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product', 'pigeonhole-bins']);
+  const types = new Set(['clock-face', 'elapsed-same-hour', 'elapsed-next-hour', 'money-count', 'money-change', 'ruler-cm', 'length-converter', 'equal-groups', 'array-model', 'division-groups', 'fraction-whole-parts', 'fraction-area-product', 'pigeonhole-bins', 'counterexample-check']);
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const moneyName = (jiao) => {
     const yuan = Math.floor(jiao / 10);
@@ -108,6 +108,12 @@
       controls = select('objects', '对象总数', Array.from({length:17}, (_, n) => n), config.objects ?? 13) + select('bins', '篮子个数', [1,2,3,4,5,6], config.bins ?? 4) + select('placement', '示范放法', ['spread','together'], 'spread', (value) => value === 'spread' ? '尽量分散' : '全放第一篮');
       visual = '<div class="foundation-pigeonhole-bins" data-pigeonhole-bins role="img"></div>';
       caption = '图只展示一种合法放法，不代替必然性证明。篮子无容量上限、允许空篮；每个对象只放入一篮。改变模型不会代替答题，也不会记为课程完成。';
+    } else if (type === 'counterexample-check') {
+      title = '反例检验台：先过前提门，再查结论';
+      instruction = '先预测2、4、0、3各属于哪一类，再选择核验；换一句话时，旧反例还能用吗？';
+      controls = select('claim', '待检验的全称命题', ['even-four','multiple-three'], 'even-four', (value) => value === 'even-four' ? '所有正偶数都能被4整除' : '所有大于10的3倍数都是偶数') + select('candidate', '候选整数', [-2,0,2,3,4,6,8,9,10,12,15,18,20,21,24], 2);
+      visual = '<div class="foundation-proof-gates" data-proof-gates></div><div class="foundation-proof-groups" data-proof-groups role="img"></div>';
+      caption = '每个圆点表示1个正整数单位；分组检验整除。有限候选只用于比较证据，不能靠“没找到”证明无限范围内没有反例；操作不会计入答题进度。';
     }
     let html = wrapper(type, title, instruction, controls, visual, caption);
     html = html.replace(`data-book-model-config="${esc(JSON.stringify({}))}"`, `data-book-model-config="${esc(JSON.stringify(config))}"`);
@@ -325,6 +331,28 @@
       visual.setAttribute('aria-label', `${together ? '集中' : '尽量分散'}放法：${counts.join('、')}；本次最多一篮有${Math.max(...counts)}个，保证下限${guarantee}个`);
       const proof = objects === 0 ? '没有对象，保证下限为0，不能凭空出现1个。' : `若每篮至多${guarantee - 1}个，总数至多${bins}×${guarantee - 1}=${bins * (guarantee - 1)}，装不下${objects}个，所以某篮至少${guarantee}个。`;
       result.textContent = `${objects}÷${bins}=${quotient}${remainder ? `余${remainder}，有余数，商加1` : '，恰好整除，不加1'}。保证下限是${guarantee}个；本次图中最多一篮有${Math.max(...counts)}个。${proof}${together ? '集中放可改变实际最多数，但不会提高适用于所有放法的保证下限。' : `这种分散放法没有一篮超过${guarantee}个，说明不能保证${guarantee + 1}个。`}`;
+    } else if (root.dataset.bookModel === 'counterexample-check') {
+      const n = Math.min(24, Math.max(-2, Math.trunc(get('candidate', 2))));
+      const firstClaim = root.querySelector('[data-foundation-model-setting="claim"]')?.value !== 'multiple-three';
+      const premise = firstClaim ? n > 0 && n % 2 === 0 : n > 10 && n % 3 === 0;
+      const conclusion = firstClaim ? n % 4 === 0 : n % 2 === 0;
+      const divisor = firstClaim ? 4 : 2;
+      const gates = root.querySelector('[data-proof-gates]');
+      const rangeCheck = firstClaim ? `${n}>0：${n > 0 ? '是' : '否'}` : `${n}>10：${n > 10 ? '是' : '否'}`;
+      const propertyCheck = `${n}能被${firstClaim ? 2 : 3}整除：${n % (firstClaim ? 2 : 3) === 0 ? '是' : '否'}`;
+      gates.innerHTML = `<div><b>① 全部前提</b><span>${rangeCheck}</span><span>${propertyCheck}</span><strong>${premise ? '全部满足' : '前提不全满足'}</strong></div><div><b>② 结论</b><span>${firstClaim ? '能被4整除' : '是偶数'}</span><strong>${conclusion ? '成立' : '失败'}</strong><small>下方圆点每${divisor}个一组，只检验这一结论。</small></div>`;
+      const visual = root.querySelector('[data-proof-groups]');
+      if (n > 0) {
+        const full = Math.floor(n / divisor), rest = n % divisor;
+        visual.innerHTML = Array.from({length:full}, () => `<span class="foundation-proof-group">${'<i aria-hidden="true">●</i>'.repeat(divisor)}</span>`).join('') + (rest ? `<span class="foundation-proof-group is-remainder">${'<i aria-hidden="true">●</i>'.repeat(rest)}<small>余${rest}</small></span>` : '');
+        visual.setAttribute('aria-label', `${n}个单位，每${divisor}个一组，有${full}个完整组，剩${rest}个`);
+      } else {
+        visual.textContent = `${n}不在这两个命题的正数范围内，不用正圆点表示；0和负数也要先检查前提。`;
+        visual.setAttribute('aria-label', visual.textContent);
+      }
+      const verdict = !premise ? '不是有效反例：不满足全部前提；无论结论如何，都不能用它反驳这句话。' : !conclusion ? '是有效反例：前提全真、结论失败，足以推翻这句“所有”。' : '只是一个正例：这一例符合结论，却不能证明范围内所有对象都成立。';
+      result.textContent = `候选${n}：${verdict}`;
+      root.dataset.proofVerdict = !premise ? 'outside' : !conclusion ? 'counterexample' : 'support';
     }
     return true;
   }

@@ -93,7 +93,7 @@
       caption: '与例题相同为 2 行、3 列：3 条横线、4 条竖线，各选两条，共 C(3,2)×C(4,2)=18 个长方形。',
       title: '网格边界选线计数示意图',
       desc: '两行三列的方格有三条横线和四条竖线，选两条横线和两条竖线即可唯一确定一个矩形；总数十八。',
-      drawing: `<rect x="70" y="40" width="240" height="105" fill="#f7f8f1" stroke="#a9b8a3" stroke-width="2"/><path d="M130 40v105M190 40v105M250 40v105M70 92.5h240" stroke="#a9b8a3" stroke-width="2"/><rect x="130" y="40" width="120" height="52.5" fill="#e4f0df" fill-opacity=".86" stroke="#548366" stroke-width="4"/><text x="180" y="171" text-anchor="middle" class="g-formula">C(3,2) × C(4,2) = 18</text><text x="180" y="193" text-anchor="middle" class="g-note">先选两条横线，再选两条竖线</text>`,
+      drawing: `<rect x="90" y="20" width="180" height="120" fill="#f7f8f1" stroke="#a9b8a3" stroke-width="2"/><path d="M150 20v120M210 20v120M90 80h180" stroke="#a9b8a3" stroke-width="2"/><rect x="150" y="20" width="120" height="60" fill="#e4f0df" fill-opacity=".86" stroke="#548366" stroke-width="4"/><text x="180" y="171" text-anchor="middle" class="g-formula">C(3,2) × C(4,2) = 18</text><text x="180" y="193" text-anchor="middle" class="g-note">先选两条横线，再选两条竖线</text>`,
       secondary: {
         caption: '三组长方形的边长和都为 10 cm，周长都是 20 cm；正整数边长下，5×5 面积最大。',
         title: '固定周长下的面积比较',
@@ -114,6 +114,13 @@
       (primary || concept).insertAdjacentHTML('afterend', makeFigure(item.secondary, `${id}-optimization`));
     }
   });
+  // The shared geometry lab is a 3D solid, not a grid-counting/optimization activity.
+  const countingToolsLink = document.querySelector('#bc-topic-geometric-counting .bc-lesson-tools a');
+  if (countingToolsLink) {
+    countingToolsLink.href = '#bc-figure-geometric-counting';
+    countingToolsLink.textContent = '回看本课选边界示意图（静态） ↑';
+    countingToolsLink.removeAttribute('data-open-lab');
+  }
 
   const solidLesson = document.getElementById('bc-topic-solids');
   const solidFigure = document.getElementById('bc-figure-solids');

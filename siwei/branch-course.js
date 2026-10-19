@@ -437,6 +437,9 @@
     branch.lessons.forEach((lesson) => {
       const activity = window.AOSHU_DEEP_LESSONS?.[lesson.id]?.activity;
       const activityLink = document.getElementById(lessonId(lesson))?.querySelector('.bc-lesson-tools a[data-open-lab]');
+      if (branch.id === 'arithmetic' && lesson.id === 'speed-work' && activityLink) {
+        activityLink.textContent = '选做：本分支共用的按比分配实验（非行程模拟） →';
+      }
       if (activity?.href && activity?.label && activityLink) {
         activityLink.setAttribute('href', activity.href);
         activityLink.textContent = activity.label;

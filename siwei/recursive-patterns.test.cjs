@@ -83,3 +83,61 @@ test('real renderer: blank/wrong/right, exact IDs, partial/full test progress, r
   for (const a of topic.querySelectorAll('a[href^="#"]')) assert.ok(doc.getElementById(a.hash.slice(1)), a.hash);
   for (const d of [dom, refresh, partial, oldFull]) d.window.close();
 });
+
+test('recurrence CTA selects the real sequence lab, not ratio fallback', () => {
+  const dom = page(), doc = dom.window.document;
+  const topic = doc.getElementById('bc-topic-recursive-patterns');
+  const cta = [...topic.querySelectorAll('.bc-lesson-tools a')].find(a => a.textContent.includes('去互动实验台'));
+  assert.equal(cta.getAttribute('href'), '/siwei/sequences.html?pattern=fibonacci#sequence-lab');
+  assert.equal(cta.hasAttribute('data-open-lab'), false);
+  for (const a of doc.querySelectorAll('[data-open-lab]')) assert.equal(a.hash, '#bc-lab');
+  dom.window.close();
+});
+function sequencePage(query = '') {
+  const h = fs.readFileSync(path.join(__dirname, 'sequences.html'), 'utf8');
+  const dom = new JSDOM(h, {runScripts:'outside-only', url:'http://localhost/siwei/sequences.html' + query});
+  dom.window.eval(fs.readFileSync(path.join(__dirname, 'sequences.js'), 'utf8'));
+  return dom;
+}
+test('preselected recurrence is useful, labelled and mathematically correct at every target', () => {
+  const dom = sequencePage('?pattern=fibonacci#sequence-lab'), w = dom.window, d = w.document;
+  const select = d.getElementById('pattern-choice'), range = d.getElementById('target-term');
+  assert.equal(select.value, 'fibonacci');
+  assert.equal(d.getElementById('lab-reason').hidden, false);
+  assert.equal(d.getElementById('lab-reveal').getAttribute('aria-expanded'), 'true');
+  assert.match(d.getElementById('lab-reason').textContent, /第 1、2 项分别是 1、1/);
+  assert.match(d.getElementById('sequence-lab').textContent, /延伸规则不一定唯一/);
+  assert.ok(d.querySelector('label[for="pattern-choice"]'));
+  assert.ok(d.querySelector('label[for="target-term"]'));
+  const fib = [1,1]; while (fib.length < 12) fib.push(fib.at(-1)+fib.at(-2));
+  const variants = {fibonacci:fib, recursive:Array.from({length:12},(_,i)=>3*2**i-1)};
+  for (const [key, expected] of Object.entries(variants)) {
+    select.value = key; select.dispatchEvent(new w.Event('change'));
+    for (let n = 4; n <= 12; n++) {
+      range.value = n; range.dispatchEvent(new w.Event('input'));
+      assert.deepEqual([...d.querySelectorAll('#term-strip span')].map(x=>Number(x.textContent)), expected.slice(0,n));
+      assert.equal(d.querySelector('#term-strip .target').getAttribute('aria-label'), `第 ${n} 项 ${expected[n-1]}`);
+      assert.match(d.getElementById('lab-reason').textContent, new RegExp(String(expected[n-1])));
+    }
+  }
+  d.getElementById('lab-reveal').click();
+  assert.equal(d.getElementById('lab-reason').hidden, true);
+  assert.equal(d.getElementById('lab-reveal').getAttribute('aria-expanded'), 'false');
+  d.getElementById('lab-reveal').click();
+  assert.equal(d.getElementById('lab-reason').hidden, false);
+  for (const a of d.querySelectorAll('a[href^="#"]')) assert.ok(d.getElementById(a.hash.slice(1)), a.hash);
+  dom.window.close();
+});
+test('normal and invalid URLs keep safe defaults; reload preserves linked activity', () => {
+  for (const q of ['', '?pattern=unknown', '?pattern=__proto__', '?pattern=constructor']) {
+    const dom=sequencePage(q), d=dom.window.document;
+    assert.equal(d.getElementById('pattern-choice').value, 'arithmetic');
+    assert.equal(d.getElementById('lab-reason').hidden, true);
+    dom.window.close();
+  }
+  for (let i=0; i<2; i++) {
+    const dom=sequencePage('?pattern=fibonacci#sequence-lab');
+    assert.equal(dom.window.document.querySelector('#term-strip .target').textContent, '21');
+    dom.window.close();
+  }
+});

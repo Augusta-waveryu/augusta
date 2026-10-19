@@ -98,6 +98,7 @@
           </select>
           <label for="target-term">要找第几项？ <output id="term-output" for="target-term">8</output></label>
           <input id="target-term" type="range" min="4" max="12" value="8">
+          <p class="gentle-warning">本互动按给定起点和规则计算，只展示第 4—12 项的目标，方便逐项核对；不表示数列到第 12 项就结束。只看到有限几项时，延伸规则不一定唯一。</p>
           <div class="lab-sequence-label">前几项</div><div class="term-strip" id="term-strip" aria-live="polite"></div>
           <button class="lab-reveal" id="lab-reveal" type="button" aria-expanded="false">显示线索与推理</button>
           <div class="lab-reason" id="lab-reason" hidden aria-live="polite"></div>

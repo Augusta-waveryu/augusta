@@ -107,7 +107,7 @@
   const patterns = {
     arithmetic: {name:'等差数列', term:n=>2+3*(n-1), label:'每次加 3', formula:'aₙ=2+3(n−1)', explain:'看相邻差：5−2=3、8−5=3、11−8=3，都是 3。公差固定，所以第 n 项可用 2+3×(n−1)。'},
     geometric: {name:'等比数列', term:n=>3*2**(n-1), label:'每次乘 2', formula:'aₙ=3×2ⁿ⁻¹', explain:'看相邻项的倍数：6÷3=2、12÷6=2、24÷12=2，都是 2。公比固定，所以每向后一项就乘 2。'},
-    fibonacci: {name:'斐波那契数列', term:n=>{const a=[1,1];for(let i=2;i<n;i++)a.push(a[i-1]+a[i-2]);return a[n-1]}, label:'前两项相加', formula:'F₁=F₂=1；Fₙ=Fₙ₋₁+Fₙ₋₂', explain:'从第 3 项开始，每项等于前两项之和：1+1=2、1+2=3、2+3=5。要找新项时，向前看两项。'},
+    fibonacci: {name:'斐波那契数列', term:n=>{const a=[1,1];for(let i=2;i<n;i++)a.push(a[i-1]+a[i-2]);return a[n-1]}, label:'前两项相加', formula:'F₁=F₂=1；Fₙ=Fₙ₋₁+Fₙ₋₂（n≥3）', explain:'起始的第 1、2 项分别是 1、1。从第 3 项开始，每项等于前两项之和：1+1=2、1+2=3、2+3=5。要找新项时，向前看两项。'},
     triangular: {name:'三角数', term:n=>n*(n+1)/2, label:'依次加 2、3、4……', formula:'Tₙ=n(n+1)÷2', explain:'每层多一行点：1、1+2=3、3+3=6、6+4=10。第 n 个三角数是 1 到 n 的和，也可用 n(n+1)÷2。'},
     square: {name:'平方数', term:n=>n*n, label:'1×1、2×2、3×3……', formula:'Qₙ=n²', explain:'第 n 个平方数是 n 行、每行 n 个点，所以是 n×n。相邻差是 3、5、7、9……每次多 2。'},
     alternating: {name:'交错数列', term:n=>n%2===1?n+1:n+3, label:'奇数位和偶数位分开', formula:'奇数位：2、4、6…；偶数位：5、7、9…', explain:'奇数位是 2、4、6……，偶数位是 5、7、9……。两条各自每次加 2；第 n 项要先判断它落在哪一队。'},
@@ -115,6 +115,12 @@
     periodicPrefix: {name:'带前导项的周期数列', term:n=>n===1?4:n===2?9:((n-3)%2===0?2:5), label:'前两项后，2、5 循环', formula:'4，9；从第 3 项起循环 2、5', explain:'前两项 4、9 不属于循环；周期从第 3 项开始，长度为 2。求第 n 项时先算 q=n−2，再用 q 除以 2 的余数定位；余数 0 表示周期最后一项。'},
     recursive: {name:'递推：翻倍再加 1', term:n=>{let value=2;for(let i=2;i<=n;i++)value=value*2+1;return value}, label:'前一项乘 2 再加 1', formula:'a₁=2；aₙ=2aₙ₋₁+1（n≥2）', explain:'从起点 a₁=2 开始，每一步用“前一项×2+1”：2、5、11、23……递推规则必须配上起始项。'}
   };
+  // Only known patterns may select an activity; other URLs keep the normal default.
+  const requestedPattern = new URLSearchParams(location.search).get('pattern');
+  if (Object.hasOwn(patterns, requestedPattern)) {
+    patternSelect.value = requestedPattern;
+    $('#lab-reason').hidden = false;
+  }
   function renderPattern() {
     const key = patternSelect.value;
     const item = patterns[key];

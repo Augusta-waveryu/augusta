@@ -440,6 +440,11 @@
       if (branch.id === 'arithmetic' && lesson.id === 'speed-work' && activityLink) {
         activityLink.textContent = '选做：本分支共用的按比分配实验（非行程模拟） →';
       }
+      if (branch.id === 'number' && lesson.id === 'divisor-structure' && activityLink) {
+        activityLink.setAttribute('href', '/siwei/number-theory.html#nt-factors');
+        activityLink.textContent = '试一试：因数个数与连续正整数和 →';
+        activityLink.removeAttribute('data-open-lab');
+      }
       if (activity?.href && activity?.label && activityLink) {
         activityLink.setAttribute('href', activity.href);
         activityLink.textContent = activity.label;

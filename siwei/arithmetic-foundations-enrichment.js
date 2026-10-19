@@ -1,5 +1,5 @@
 (() => {
-  if (new URLSearchParams(location.search).get('branch') !== 'arithmetic') return;
+  if ((new URLSearchParams(location.search).get('branch') || 'arithmetic') !== 'arithmetic') return;
   const branch = window.AOSHU_CURRICULUM?.find((item) => item.id === 'arithmetic');
   if (!branch || !window.AOSHU_DEEP_LESSONS) return;
 

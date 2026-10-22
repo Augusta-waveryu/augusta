@@ -297,7 +297,7 @@
         hint: deepUnit?.practices?.[0]?.hint || practice.hint || '先回看例题中的关键关系，再把题目条件代入。',
         explanation: deepUnit?.practices?.[0]?.explanation || practice.why || lesson.example.solution,
         href: `/siwei/branch-course.html?branch=${branch.id}#bc-topic-${lesson.id}`,
-        link: `接着学：${branch.title}专题（含三道自测）`
+        link: grade === 6 && lesson.id === 'invariant-parity' ? `接着学：${branch.title}专题` : `接着学：${branch.title}专题（含三道自测）`
       });
     });
   });

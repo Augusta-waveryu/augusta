@@ -75,6 +75,8 @@ test('textbook VM baseline: only g6-17 becomes deep and original fields remain',
   assert.equal(unit.practices[0].question, oldLesson.practice);
   assert.deepEqual(plain(lesson.answers), plain(oldLesson.answers));
   assert.deepEqual(plain(unit.practices.map(p => p.answers)), [['0'], ['3'], ['0'], ['4'], ['0'], ['1'], ['0'], ['4']]);
+  assert.equal(lesson.link, '接着学：逻辑推理与解题策略专题');
+  assert.equal(lesson.href, '/siwei/branch-course.html?branch=logic#bc-topic-invariant-parity');
   for (const oldLessonItem of oldLessons) {
     if (oldLessonItem.key === 'g6-17') continue;
     const next = newLessons.find(item => item.key === oldLessonItem.key);

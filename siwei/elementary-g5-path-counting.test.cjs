@@ -40,14 +40,16 @@ function countRecurrence(rows,cols,blocked=[]){
  return ways[rows][cols];
 }
 
-test('independently enumerate the six answers by DFS and recurrence',()=>{
+test('independently enumerate all answers by DFS and recurrence, preserving the six original indexes',()=>{
  const cases=[
    [1,3,[],4],
    [2,2,[],6],
    [2,2,[[1,1]],2],
    [2,3,[],10],
    [2,3,[[1,1]],4],
-   [2,2,[[1,0],[0,1]],0]
+   [2,2,[[1,0],[0,1]],0],
+   [2,2,[[1,0]],3],
+   [2,2,[[2,2]],0]
  ];
  const expected=cases.map(([rows,cols,blocked,want])=>{
    assert.equal(countDFS(rows,cols,blocked),want);
@@ -58,7 +60,28 @@ test('independently enumerate the six answers by DFS and recurrence',()=>{
 });
 
 test('path-counting teaching loop contains concepts, diagrams, feedback and review',()=>{
- assert.equal(unit.practices.length,6);assert.ok(unit.concepts.length>=5);assert.ok(unit.diagrams.length>=3);
+ assert.equal(unit.practices.length,8);assert.ok(unit.concepts.length>=5);assert.ok(unit.diagrams.length>=4);
  assert.ok(unit.review.length>=4);assert.match(unit.scope,/本站原创/);assert.match(unit.scope,/待核/);
  for(const p of unit.practices)for(const f of ['level','question','hint','wrongFeedback','correctFeedback','explanation'])assert.ok(p[f]);
+});
+
+test('boundary diagram matches the complete DP grid and its three enumerated paths',()=>{
+ const routes=['↑↑→→','↑→↑→','↑→→↑'];
+ for(const route of routes){
+   let x=0,y=0;
+   for(const step of route){if(step==='↑')y++;else x++;assert.notDeepEqual([x,y],[1,0]);}
+   assert.deepEqual([x,y],[2,2]);
+   assert.ok(unit.practices[6].explanation.includes(route));
+ }
+ const diagram=unit.diagrams[3];
+ assert.equal(diagram.text.split('\n').slice(0,5).join('\n'),'1──2──3（终点）\n│  │  │\n1──1──1\n│  │  │\nS──×──0');
+ assert.match(unit.practices[7].explanation,/必须记0/);
+});
+
+test('DFS agrees with recurrence for every subset of forbidden points in a two-by-two grid',()=>{
+ const points=Array.from({length:9},(_,i)=>[i%3,Math.floor(i/3)]);
+ for(let mask=0;mask<512;mask++){
+   const blocked=points.filter((_,i)=>mask&(1<<i));
+   assert.equal(countDFS(2,2,blocked),countRecurrence(2,2,blocked),`mask ${mask}`);
+ }
 });

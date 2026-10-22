@@ -159,6 +159,25 @@
     option.textContent = `${['','一年级','二年级','三年级','四年级','五年级','六年级'][grade] || `${grade}年级`}`;
     gradeFilter.append(option);
   });
+  const lessonByKey = new Map(lessons.map((lesson) => [keyOf(lesson), lesson]));
+  const routeUrl = () => { try { return new URL(location.href); } catch { return null; } };
+  const initialUrl = routeUrl();
+  const requestedLesson = initialUrl?.searchParams.get('lesson') || '';
+  const requestedGrade = initialUrl?.searchParams.get('grade') || '';
+  const knownLesson = lessonByKey.get(requestedLesson);
+  let focusKey = knownLesson ? requestedLesson : null;
+  let routeNotice = requestedLesson && !knownLesson ? '找不到指定课程，已回到课程路线。' : '';
+  const validGrade = (value) => /^[1-6]$/.test(String(value));
+  const updateRoute = ({removeLesson = false, removeGrade = false, grade = null, removeBookHash = false} = {}) => {
+    const url = routeUrl();
+    if (!url || !window.history?.replaceState) return;
+    if (removeLesson) url.searchParams.delete('lesson');
+    if (removeGrade) url.searchParams.delete('grade');
+    if (grade && validGrade(grade)) url.searchParams.set('grade', String(grade));
+    if (removeBookHash && /^#book-lesson-[a-zA-Z0-9_-]+$/.test(url.hash)) url.hash = '';
+    history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+  };
+
   const topics = [...new Set(lessons.map((lesson) => lesson.group))];
   topics.forEach((topic) => {
     const option = document.createElement('option');
@@ -453,9 +472,11 @@
     const baseRelatedLabel = String(lesson.link || '打开相关课程').replace(/^接着学[：:]\s*/, '');
     const linkLevelLabel = grade === 3 && lesson.linkLevel && lesson.linkLevel !== '入门' ? `选学${lesson.linkLevel} · ` : '';
     const relatedLabel = `${linkLevelLabel}${baseRelatedLabel}`;
+    const standaloneLink = `<a class="book-standalone-link" href="/siwei/textbook.html?lesson=${encodeURIComponent(key)}#book-lesson-${encodeURIComponent(key)}">单独打开这一课</a>`;
     return `<details class="book-lesson${done ? ' is-done' : ''}" id="${esc(lessonId)}" data-book-id="${esc(key)}" data-grade="${grade}"${expanded ? ' open' : ''}>
       <summary><span class="book-number">${esc(displayNumber)}</span><span class="book-heading"><small class="book-grade-label">${esc(chapter)}</small><span class="book-badges"><small class="book-group-badge">${esc(lesson.group)}</small><small class="book-status">${esc(lesson.status)}</small>${difficultyBadge}</span><b>${esc(lesson.title)}</b></span><span class="book-state">${done ? '已完成' : legacyDone ? '旧版自测已过' : '未完成'}</span><span class="book-fold" aria-hidden="true">＋</span></summary>
       <div class="book-body">
+        <p class="book-lesson-open-link">${standaloneLink}</p>
         ${sourceNote}${legacyNote}
         ${prerequisiteMarkup}
         <p class="book-goal"><b>这一讲要会：</b>${renderRichText(lesson.goal)}</p>
@@ -519,7 +540,7 @@
       visibleCount.textContent = '课程内容正在整理';
       return;
     }
-    const openId = document.querySelector('.book-lesson[open]')?.dataset.bookId || '';
+    const openId = focusKey || document.querySelector('.book-lesson[open]')?.dataset.bookId || '';
     const term = searchKey(search.value);
     const selectedGrade = gradeFilter.value;
     const selectedTopic = topicFilter.value;
@@ -527,12 +548,16 @@
       const grade = String(lesson.grade || 3);
       const searchCorpus = searchKey([lesson.title, lesson.group, lesson.goal, lesson.idea, lesson.example, lesson.practice, lesson.status, lesson.grade, searchableText(lesson.deepUnit)].join(' '));
       const matchesSearch = !term || searchCorpus.includes(term);
-      const matchesGrade = selectedGrade === 'all' || grade === selectedGrade;
+      const matchesGrade = focusKey ? keyOf(lesson) === focusKey : (selectedGrade === 'all' || grade === selectedGrade);
       const matchesTopic = selectedTopic === 'all' || lesson.group === selectedTopic;
       const matchesProgress = !onlyUnmastered.checked || !isDone(lesson);
       return matchesSearch && matchesGrade && matchesTopic && matchesProgress;
     }).sort((a,b) => (Number(a.grade||3)-Number(b.grade||3)) || (Number(a.routeOrder ?? a.n)-Number(b.routeOrder ?? b.n)));
-    list.innerHTML = visible.map((lesson,index) => lessonCard(lesson,index,openId)).join('');
+    const prompt = focusKey
+      ? `<div class="book-focus-prompt" role="status"><b>单课模式</b><span>现在只显示这一课，完成后可返回本年级路线继续学习。</span><a href="/siwei/textbook.html?grade=${esc(String(lessonByKey.get(focusKey)?.grade || 3))}#book-map">返回本年级路线</a></div>`
+      : (routeNotice ? `<div class="book-focus-prompt" role="status"><b>${esc(routeNotice)}</b></div>` : '');
+    list.innerHTML = prompt + visible.map((lesson,index) => lessonCard(lesson,index,openId)).join('');
+    routeNotice = '';
     list.querySelectorAll('.book-lesson').forEach((card) => {
       const lesson = visible.find((item) => keyOf(item) === card.dataset.bookId);
       if (!lesson) return;
@@ -593,11 +618,14 @@
     if (!key || !lessons.some((lesson) => keyOf(lesson) === key)) return;
     event.preventDefault();
     search.value = '';
-    gradeFilter.value = 'all';
+    focusKey = null;
+    const targetLesson = lessonByKey.get(key);
+    gradeFilter.value = String(targetLesson.grade || 3);
     topicFilter.value = 'all';
     onlyUnmastered.checked = false;
+    updateRoute({removeLesson: true, grade: gradeFilter.value});
     render();
-    history.replaceState(null, '', `#book-lesson-${key}`);
+    history.replaceState(null, '', `${location.pathname}${location.search}#book-lesson-${key}`);
     const target = document.getElementById(`book-lesson-${key}`);
     if (target) { target.open = true; target.scrollIntoView({behavior:'smooth',block:'start'}); }
   });
@@ -618,17 +646,27 @@
   list.addEventListener('change', (event) => {
     if (event.target.matches('[data-foundation-model-control],[data-fraction-denominator]')) updateInteractiveModel(event.target.closest('[data-book-model]'));
   });
-  search.addEventListener('input', render);
-  gradeFilter.addEventListener('change', render);
-  topicFilter.addEventListener('change', render);
-  onlyUnmastered.addEventListener('change', render);
+  const leaveFocusAndRender = () => {
+    focusKey = null;
+    const grade = gradeFilter.value;
+    updateRoute({removeLesson: true, ...(grade === 'all' ? {removeGrade: true} : {grade}), removeBookHash: true});
+    render();
+  };
+  search.addEventListener('input', leaveFocusAndRender);
+  gradeFilter.addEventListener('change', leaveFocusAndRender);
+  topicFilter.addEventListener('change', leaveFocusAndRender);
+  onlyUnmastered.addEventListener('change', leaveFocusAndRender);
   function openLinkedLesson() {
     const key = location.hash.match(/^#book-lesson-([a-zA-Z0-9_-]+)$/)?.[1];
-    if (!key || !lessons.some((lesson) => keyOf(lesson) === key)) return;
+    const targetLesson = key && lessonByKey.get(key);
+    if (!targetLesson) return;
+    const targetGrade = String(targetLesson.grade || 3);
+    const gradeChanged = gradeFilter.value !== targetGrade;
+    gradeFilter.value = targetGrade;
+    if (focusKey && focusKey !== key) { focusKey = null; updateRoute({removeLesson: true, grade: targetLesson.grade || 3}); }
     let target = document.getElementById(`book-lesson-${key}`);
-    if (!target) {
+    if (!target || gradeChanged) {
       search.value = '';
-      gradeFilter.value = 'all';
       topicFilter.value = 'all';
       onlyUnmastered.checked = false;
       render();
@@ -636,6 +674,17 @@
     }
     if (target) { target.open = true; target.scrollIntoView({block:'start'}); }
   }
+  // Apply route state before the first render, so a legacy deep link never builds the full site DOM.
+  if (focusKey) {
+    gradeFilter.value = String(knownLesson.grade || 3);
+  } else if (validGrade(requestedGrade)) {
+    gradeFilter.value = requestedGrade;
+  } else {
+    const hashKey = initialUrl?.hash.match(/^#book-lesson-([a-zA-Z0-9_-]+)$/)?.[1];
+    const hashLesson = hashKey && lessonByKey.get(hashKey);
+    if (hashLesson) gradeFilter.value = String(hashLesson.grade || 3);
+  }
+  if (requestedLesson && !knownLesson) updateRoute({removeLesson: true});
   render();
   openLinkedLesson();
   window.addEventListener('hashchange', openLinkedLesson);

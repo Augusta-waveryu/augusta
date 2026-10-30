@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🌅 AI 晨报 · 2026-10-31</title>
+<meta name="description" content="AI 晨报 2026-10-31：58 条 AI 要闻，覆盖模型、产品、行业、论文、观点。">
+<style>
+:root{
+  --bg:#f7f8fa; --card:#fff; --ink:#1a1d21; --sub:#5b6470; --line:#e8eaef;
+  --brand:#ff6b35; --brand2:#f7a13c; --brand-soft:#fff3ec;
+  --c-models:#e8590c; --c-products:#1c7ed6; --c-industry:#0ca678; --c-papers:#7048e8; --c-tips:#d6336c;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--brand) 0%,var(--brand2) 100%);color:#fff;padding:44px 24px 34px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.13)}
+.hero-in{max-width:1180px;margin:0 auto;position:relative;z-index:1}
+.hero h1{font-size:30px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
+.hero .sub{opacity:.95;font-size:14px}
+.hero .stat{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.hero .stat span{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.32);padding:5px 12px;border-radius:999px;font-size:12.5px;font-weight:600}
+.back{display:inline-flex;align-items:center;gap:6px;margin-top:18px;color:#fff;text-decoration:none;
+  background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:999px;font-size:13px;font-weight:600}
+.back:hover{background:rgba(255,255,255,.3)}
+.nav{max-width:1180px;margin:0 auto;padding:18px 24px 4px;display:flex;flex-wrap:wrap;gap:9px}
+.nav-pill{text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);
+  padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:6px;
+  border-left:4px solid var(--pc);transition:.2s}
+.nav-pill:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.07)}
+.nav-pill b{color:var(--pc);font-size:12px}
+main{max-width:1180px;margin:0 auto;padding:8px 24px 60px}
+.sec{margin-top:38px;scroll-margin-top:16px}
+.sec-title{font-size:19px;font-weight:800;padding-left:12px;border-left:5px solid var(--brand);
+  margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.sec-title .ic{font-size:17px}
+.sec-title .cnt{font-size:12px;font-weight:700;color:var(--sub);background:var(--brand-soft);
+  color:var(--brand);padding:2px 9px;border-radius:999px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px 13px;
+  text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:7px;
+  opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease,box-shadow .2s,border-color .2s}
+.card.in{opacity:1;transform:none}
+.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.09);border-color:#d5d9e0}
+.card-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.no{font-size:11px;font-weight:800;color:var(--sub);background:#f1f3f6;padding:2px 7px;border-radius:6px;letter-spacing:.5px}
+.badge{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:999px}
+.badge.star{background:#fff4e0;color:#b45309}
+.badge.kol{background:#eef4ff;color:#1c4ed8}
+.card-title{font-size:14.5px;font-weight:700;line-height:1.45}
+.card-sum{font-size:12.8px;color:var(--sub);line-height:1.55;flex:1}
+.card-meta{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:#8b95a3;
+  border-top:1px dashed var(--line);padding-top:8px;margin-top:2px}
+.src{max-width:64%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.time{font-weight:700;color:var(--brand);white-space:nowrap}
+footer{text-align:center;padding:26px 20px 40px;color:#8b95a3;font-size:12.5px}
+footer a{color:var(--brand);text-decoration:none;font-weight:600}
+@media(max-width:600px){.hero h1{font-size:23px}.grid{grid-template-columns:1fr}main{padding:8px 14px 40px}.nav{padding:16px 14px 4px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <h1>🌅 AI 晨报 · 2026-10-31</h1>
+    <div class="sub">过去 48 小时 AI 要闻精选 · 共 58 条 · 数据截止 2026-10-31 06:32 (CST)</div>
+    <div class="stat"><span>总计 58 条</span><span>模型发布 11</span><span>产品发布 14</span><span>行业动态 11</span><span>论文研究 9</span><span>技巧与观点 13</span></div>
+    <a class="back" href="../">← 返回首页</a>
+  </div>
+</header>
+<nav class="nav">
+<a class="nav-pill" href="#models" style="--pc:var(--c-models)">🚀 模型发布 <b>11</b></a><a class="nav-pill" href="#products" style="--pc:var(--c-products)">🛠️ 产品发布 <b>14</b></a><a class="nav-pill" href="#industry" style="--pc:var(--c-industry)">🏢 行业动态 <b>11</b></a><a class="nav-pill" href="#papers" style="--pc:var(--c-papers)">📄 论文研究 <b>9</b></a><a class="nav-pill" href="#tips" style="--pc:var(--c-tips)">💡 技巧与观点 <b>13</b></a>
+</nav>
+<main>
+    <section class="sec" id="models">
+      <h2 class="sec-title" style="border-left-color:var(--c-models)"><span class="ic">🚀</span>模型发布 / 更新<span class="cnt">11</span></h2>
+      <div class="grid">
+      <a class="card" href="https://huggingface.co/blog/mistral-large4" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">01</span></div>
+        <h3 class="card-title">Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型</h3>
+        <p class="card-sum">Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 Mo…</p>
+        <div class="card-meta"><span class="src">Hugging Face 官方团队博客</span><span class="time">前天 08:00</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/019/545.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">02</span></div>
+        <h3 class="card-title">英伟达发布开放权重转录模型 Nemotron 3.5 Transcribe，支持 40 种语言并开源数据管线 Granary v2</h3>
+        <p class="card-sum">英伟达于 10 月 28 日发布开放权重语音转录模型 Nemotron 3.5 Transcribe，并公开训练数据管…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">前天 15:31</span></div>
+      </a>
+      <a class="card" href="https://x.com/Khazix0918/status/2115898252004622617" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">03</span></div>
+        <h3 class="card-title">Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型</h3>
+        <p class="card-sum">Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压…</p>
+        <div class="card-meta"><span class="src">卡兹克 (@Khazix0918)</span><span class="time">昨天 04:07</span></div>
+      </a>
+      <a class="card" href="https://x.com/ArtificialAnlys/status/2115820963350929580" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">04</span></div>
+        <h3 class="card-title">Artificial Analysis 评测 Fish Audio Drama 3，登顶开源语音模型并发音稳健性居首</h3>
+        <p class="card-sum">Artificial Analysis 评测 Fish Audio 发布的 Drama 3：在两个 Speech Ar…</p>
+        <div class="card-meta"><span class="src">Artificial Analysis (…</span><span class="time">前天 23:00</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/020/346.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">05</span></div>
+        <h3 class="card-title">小米开源 0.8B 文档理解模型 Xiaomi-OCR-0，支持文档解析、信息抽取与 OCR 视觉问答</h3>
+        <p class="card-sum">小米开源 0.8B 参数文档理解模型 Xiaomi-OCR-0，单一模型覆盖文档解析、关键信息抽取与 OCR 视觉问答…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">昨天 21:15</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/019/783.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">06</span></div>
+        <h3 class="card-title">DiffuSpace 开源 Clover-35B-A3B-Preview 扩散语言模型</h3>
+        <p class="card-sum">人工智能实验室 DiffuSpace（扩散智能）发布 Clover 系列首个成员 Clover-35B-A3B-Pre…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">前天 22:33</span></div>
+      </a>
+      <a class="card" href="https://x.com/Google/status/2116237215026032872" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">07</span></div>
+        <h3 class="card-title">Google DeepMind 发布 Genie 4 世界模型，可实时创建和操控交互式模拟</h3>
+        <p class="card-sum">Google 发布来自 DeepMind 的新世界模型 Genie 4，可实时创建、听见并操控交互式模拟，不只是视频片…</p>
+        <div class="card-meta"><span class="src">Google (@Google)</span><span class="time">今天 02:34</span></div>
+      </a>
+      <a class="card" href="https://x.com/arena/status/2115820547619926144" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">08</span></div>
+        <h3 class="card-title">Arena 榜单：GPT-6.1 Terra (Max) 在 Agent Arena 排名第 8，成本重塑 Pareto 前沿</h3>
+        <p class="card-sum">Arena 公布近 9K 个智能体会话的实测结果：OpenAI 的 GPT-6.1 Terra (Max) 在 Age…</p>
+        <div class="card-meta"><span class="src">Arena (@arena)</span><span class="time">前天 22:58</span></div>
+      </a>
+      <a class="card" href="https://x.com/UnslothAI/status/2116156587404562491" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">09</span></div>
+        <h3 class="card-title">Unsloth 发布 DeepSeek-V4.1-Flash-1017 Dynamic V3.1 GGUF 量化版</h3>
+        <p class="card-sum">Unsloth 发布 DeepSeek-V4.1-Flash-1017 的 Dynamic V3.1 GGUF 量化版…</p>
+        <div class="card-meta"><span class="src">Unsloth (@UnslothAI)</span><span class="time">昨天 21:13</span></div>
+      </a>
+      <a class="card" href="https://x.com/rohanpaul_ai/status/2115863636371787983" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">10</span></div>
+        <h3 class="card-title">10 人初创公司 Phonic 发布语音模型 Phonic-1，可在通话中调用工具</h3>
+        <p class="card-sum">10 人初创公司 Phonic 发布语音到语音模型 Phonic-1，官方称其为唯一能在来电者说到一半时就执行查询和预…</p>
+        <div class="card-meta"><span class="src">Rohan Paul (@rohanpau…</span><span class="time">昨天 01:49</span></div>
+      </a>
+      <a class="card" href="https://x.com/thexpin/status/2116107850653323474" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">11</span></div>
+        <h3 class="card-title">天数智芯天慨 300 基准测试对标 Nvidia H200</h3>
+        <p class="card-sum">X.PIN 发布国产 GPU 天数智芯 Tiangai 300 的基准数据，称其可比肩 Nvidia H200。标准推…</p>
+        <div class="card-meta"><span class="src">X.PIN (@thexpin)</span><span class="time">昨天 18:00</span></div>
+      </a>
+      </div>
+    </section>
+    <section class="sec" id="products">
+      <h2 class="sec-title" style="border-left-color:var(--c-products)"><span class="ic">🛠️</span>产品发布 / 更新<span class="cnt">14</span></h2>
+      <div class="grid">
+      <a class="card" href="https://factory.com/news/frontier-harness" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">12</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness</h3>
+        <p class="card-sum">Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模…</p>
+        <div class="card-meta"><span class="src">Factory 研究 / 产品</span><span class="time">前天 08:00</span></div>
+      </a>
+      <a class="card" href="https://x.com/adocomplete/status/2116224220539883992" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">13</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制</h3>
+        <p class="card-sum">Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格…</p>
+        <div class="card-meta"><span class="src">Ado Kukic（Anthropic 开…</span><span class="time">今天 01:42</span></div>
+      </a>
+      <a class="card" href="https://x.com/TencentHunyuan/status/2115851165904814283" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">14</span></div>
+        <h3 class="card-title">腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench</h3>
+        <p class="card-sum">腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-N…</p>
+        <div class="card-meta"><span class="src">腾讯混元 (@TencentHunyuan)</span><span class="time">昨天 01:00</span></div>
+      </a>
+      <a class="card" href="https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">15</span></div>
+        <h3 class="card-title">Microsoft Research 与 UC Berkeley 发布开源插件 TokenEconomizer，编码 Agent 成本最高降 30.9%</h3>
+        <p class="card-sum">Microsoft Research 与 UC Berkeley 团队发布开源插件 TokenEconomizer，从…</p>
+        <div class="card-meta"><span class="src">MarkTechPost</span><span class="time">今天 01:53</span></div>
+      </a>
+      <a class="card" href="https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">16</span></div>
+        <h3 class="card-title">LangChain Managed Deep Agents v0.10 发布：支持浏览器使用与异步子智能体</h3>
+        <p class="card-sum">LangChain 发布 Managed Deep Agents v0.10 公测版，新增浏览器使用和异步子智能体两项…</p>
+        <div class="card-meta"><span class="src">LangChain：Blog</span><span class="time">昨天 00:54</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/019/848.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">17</span></div>
+        <h3 class="card-title">OpenAI 取消 Pro 200 砍半计划，ChatGPT Pro 及 Business Premium 用量额度翻倍</h3>
+        <p class="card-sum">OpenAI 于 10 月 29 日宣布立即上调 ChatGPT Pro 及 Business Premium 订阅中…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">昨天 08:34</span></div>
+      </a>
+      <a class="card" href="https://x.com/AravSrinivas/status/2116186492758577575" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">18</span></div>
+        <h3 class="card-title">Perplexity Computer 通过新 Chrome 扩展接管本地浏览器任务</h3>
+        <p class="card-sum">Perplexity CEO Aravind Srinivas 宣布 Perplexity Computer 现在可通…</p>
+        <div class="card-meta"><span class="src">Aravind Srinivas（Perp…</span><span class="time">昨天 23:12</span></div>
+      </a>
+      <a class="card" href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687932&amp;idx=1&amp;sn=771f8b464f04c1f297e5624a600c7933" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">19</span></div>
+        <h3 class="card-title">腾讯上线 Buddy One：打通 WorkBuddy 与腾讯会议、腾讯文档、ima、腾讯网盘账号体系</h3>
+        <p class="card-sum">腾讯推出 Buddy One，将 WorkBuddy、腾讯会议、腾讯文档、ima、腾讯网盘账号打通，分免费的 Budd…</p>
+        <div class="card-meta"><span class="src">公众号：数字生命卡兹克</span><span class="time">前天 11:30</span></div>
+      </a>
+      <a class="card" href="https://latent.space/p/ainews-gemini-4-carbon/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">20</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">Gemini 4 Carbon登顶评测并开放网络防御</h3>
+        <p class="card-sum">据Latent Space报道，Google新模型Gemini 4 Carbon在独立评测中领先，并首先向受信任的网络…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">昨天 20:00</span></div>
+      </a>
+      <a class="card" href="https://openai.com/index/openai-servicenow-partnership-expansion" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">21</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">OpenAI携ServiceNow打通企业智能工作流</h3>
+        <p class="card-sum">OpenAI与ServiceNow扩大合作，将模型和智能体嵌入ServiceNow工作流，同时把ServiceNow流…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">前天 20:00</span></div>
+      </a>
+      <a class="card" href="https://openai.com/index/updated-model-spec" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">22</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">OpenAI更新模型规范强调能力与人类自主</h3>
+        <p class="card-sum">OpenAI发布新版Model Spec，以五项核心价值约束更强模型的判断、行为与对用户意图的遵循。对开发者而言，这为…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">昨天 20:00</span></div>
+      </a>
+      <a class="card" href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">23</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">Superpowers把软件工程方法封装成Agent Skills</h3>
+        <p class="card-sum">obra开源Superpowers，将一套软件开发方法论拆分为可组合Skills和初始化指令，支持Claude Cod…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">前天 20:00</span></div>
+      </a>
+      <a class="card" href="https://x.com/OpenRouter/status/2116233085025185797" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">24</span></div>
+        <h3 class="card-title">The Biological Computing Company 的 mischief 1 图生视频模型上线 OpenRouter</h3>
+        <p class="card-sum">OpenRouter 宣布 The Biological Computing Company 的 mischief 1…</p>
+        <div class="card-meta"><span class="src">OpenRouter (@OpenRout…</span><span class="time">今天 02:17</span></div>
+      </a>
+      <a class="card" href="https://www.marktechpost.com/2026/10/29/assemblyai-tts-1-text-to-speech-api-voice-agents/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">25</span></div>
+        <h3 class="card-title">AssemblyAI 发布首个语音合成模型 TTS-1，定价 $15/1M 字符面向语音 Agent</h3>
+        <p class="card-sum">AssemblyAI 发布首个文本转语音模型 AssemblyAI-TTS-1，正式开放 API，面向实时电话语音 A…</p>
+        <div class="card-meta"><span class="src">MarkTechPost</span><span class="time">前天 15:28</span></div>
+      </a>
+      </div>
+    </section>
+    <section class="sec" id="industry">
+      <h2 class="sec-title" style="border-left-color:var(--c-industry)"><span class="ic">🏢</span>行业动态<span class="cnt">11</span></h2>
+      <div class="grid">
+      <a class="card" href="https://cursor.com/blog/claude-code-extension-security-notice" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">26</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Cursor 通报 VS Code 扩展市场出现恶意 Anthropic.claude-code 2.1.313 版本</h3>
+        <p class="card-sum">Cursor 通报其 VS Code 扩展市场出现恶意修改的 Anthropic.claude-code 2.1.31…</p>
+        <div class="card-meta"><span class="src">Cursor Blog</span><span class="time">前天 20:00</span></div>
+      </a>
+      <a class="card" href="https://www.bbc.co.uk/news/articles/cvwy72e0n72yo" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">27</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%</h3>
+        <p class="card-sum">BBC 报道称，因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。</p>
+        <div class="card-meta"><span class="src">Hacker News：AI 热帖</span><span class="time">昨天 22:50</span></div>
+      </a>
+      <a class="card" href="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">28</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元</h3>
+        <p class="card-sum">Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美…</p>
+        <div class="card-meta"><span class="src">TechCrunch：AI</span><span class="time">昨天 07:42</span></div>
+      </a>
+      <a class="card" href="https://x.com/_philschmid/status/2116235686445502608" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">29</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应</h3>
+        <p class="card-sum">Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatch…</p>
+        <div class="card-meta"><span class="src">Philipp Schmid（Google…</span><span class="time">今天 02:28</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/019/268.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">30</span></div>
+        <h3 class="card-title">Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链</h3>
+        <p class="card-sum">Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、S…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">前天 06:35</span></div>
+      </a>
+      <a class="card" href="https://www.understandingai.org/p/anthropics-financials-are-surprisingly" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">31</span></div>
+        <h3 class="card-title">Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧</h3>
+        <p class="card-sum">作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47…</p>
+        <div class="card-meta"><span class="src">Timothy B. Lee：Unders…</span><span class="time">昨天 03:10</span></div>
+      </a>
+      <a class="card" href="https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">32</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元</h3>
+        <p class="card-sum">Sierra 宣布本周 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月，快…</p>
+        <div class="card-meta"><span class="src">Sierra：Blog</span><span class="time">昨天 20:50</span></div>
+      </a>
+      <a class="card" href="https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">33</span></div>
+        <h3 class="card-title">纽约时报称中国情报人员瞄准英伟达 CEO 黄仁勋</h3>
+        <p class="card-sum">据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Me…</p>
+        <div class="card-meta"><span class="src">The Decoder：AI News</span><span class="time">前天 21:42</span></div>
+      </a>
+      <a class="card" href="https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">34</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">Anthropic推出工具追踪企业AI投入产出</h3>
+        <p class="card-sum">Anthropic推出新工具，帮助企业了解AI预算具体花在了哪些模型、用户和任务上，并评估使用效果。该动作把模型采购从…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">前天 20:00</span></div>
+      </a>
+      <a class="card" href="https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">35</span><span class="badge star">★ 编辑精选</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">Google将AI搜索广告扩展至全球市场</h3>
+        <p class="card-sum">Google宣布把AI搜索广告扩展到全球更多市场，正值传统搜索广告增长放缓。此举显示搜索结果页正在从链接分发转向生成式…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">前天 20:00</span></div>
+      </a>
+      <a class="card" href="https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">36</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">OpenAI支持的Thrive 153亿美元收购ADT</h3>
+        <p class="card-sum">OpenAI支持的Thrive Holdings宣布以153亿美元收购ADT，并计划把AI能力引入家庭安防业务。这笔交…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">昨天 20:00</span></div>
+      </a>
+      </div>
+    </section>
+    <section class="sec" id="papers">
+      <h2 class="sec-title" style="border-left-color:var(--c-papers)"><span class="ic">📄</span>论文研究<span class="cnt">9</span></h2>
+      <div class="grid">
+      <a class="card" href="https://epochai.substack.com/p/glm-patch-gap-exploit-firefox" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">37</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox</h3>
+        <p class="card-sum">Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给…</p>
+        <div class="card-meta"><span class="src">Epoch AI：Gradient Upd…</span><span class="time">昨天 20:07</span></div>
+      </a>
+      <a class="card" href="https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">38</span></div>
+        <h3 class="card-title">Claude Sonnet 5 智能体自主选择基因疗法并为癫痫小鼠完成脑部手术</h3>
+        <p class="card-sum">Oxford 博士生、Exin Therapeutics 联合创始人 Gabriel Ocana-Santero 在 …</p>
+        <div class="card-meta"><span class="src">The Decoder：AI News</span><span class="time">今天 03:42</span></div>
+      </a>
+      <a class="card" href="https://www.wiz.io/blog/the-rise-of-agentic-attacks" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">39</span></div>
+        <h3 class="card-title">Wiz 分析智能体攻击的兴起：特征、案例与防御方向</h3>
+        <p class="card-sum">Wiz 汇总公开披露与自家应急响应中的智能体攻击案例，包括 ARTEX 针对韩国金融机构与 ConnectWise 供…</p>
+        <div class="card-meta"><span class="src">Wiz：Research（安全研究）</span><span class="time">前天 22:26</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/020/083.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">40</span></div>
+        <h3 class="card-title">Anthropic 研究：86% 专家在分析决策中采纳 AI 偏好且不自知</h3>
+        <p class="card-sum">Anthropic 最新研究显示，50 位因果推断专家在模拟农业合作社政策评估中，四项分析决策采纳 AI 偏好的比例达…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">昨天 14:33</span></div>
+      </a>
+      <a class="card" href="https://x.com/rohanpaul_ai/status/2115599215368016343" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">41</span></div>
+        <h3 class="card-title">预印本测试显示 15 个 LLM 检出临床试验论文方法学错误的能力超过人类同行评审</h3>
+        <p class="card-sum">一项新预印本测试了 15 个 LLM 检测临床试验论文中植入方法学错误的能力，模型得分 53% 到 96%，而未受训练…</p>
+        <div class="card-meta"><span class="src">Rohan Paul (@rohanpau…</span><span class="time">前天 08:18</span></div>
+      </a>
+      <a class="card" href="https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">42</span></div>
+        <h3 class="card-title">Meta 详解 Catching JiTTests 全量部署：LLM 生成测试在代码合入前捕获 bug</h3>
+        <p class="card-sum">Meta 介绍其 LLM 驱动的 Catching JiTTests 已从研究原型进入生产基础设施，通过 dodgy …</p>
+        <div class="card-meta"><span class="src">Meta Engineering Blog</span><span class="time">昨天 00:00</span></div>
+      </a>
+      <a class="card" href="https://x.com/rohanpaul_ai/status/2115912949571481972" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">43</span></div>
+        <h3 class="card-title">UC Berkeley 与华盛顿大学研究：2026 年 8 月约 24% 可爬网页含 AI 生成或编辑文本</h3>
+        <p class="card-sum">UC Berkeley 与华盛顿大学的新研究发现，截至 2026 年 8 月约 24% 的可爬网页含 AI 生成或 A…</p>
+        <div class="card-meta"><span class="src">Rohan Paul (@rohanpau…</span><span class="time">昨天 05:05</span></div>
+      </a>
+      <a class="card" href="https://huggingface.co/papers/2610.33245" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">44</span><span class="badge kol">🔸 Jason Zhu</span></div>
+        <h3 class="card-title">AdaPRA让数据科学Agent持续积累解题经验</h3>
+        <p class="card-sum">AdaPRA为数据科学Agent加入持久化工作台、过程评分标准和跨尝试知识积累，针对重复EDA、验证不足和代码错误等问…</p>
+        <div class="card-meta"><span class="src">Jason Zhu · 每日快讯</span><span class="time">前天 20:00</span></div>
+      </a>
+      <a class="card" href="https://x.com/rohanpaul_ai/status/2115854746456346784" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">45</span></div>
+        <h3 class="card-title">Meta 论文提出 Sharpening Tax：RL 后训练提升首试准确率但缩小解法覆盖</h3>
+        <p class="card-sum">Meta 论文发现 RL 后训练让 Agent 首次尝试更准，但在最多 128 次尝试内找到解法的能力反而变差。</p>
+        <div class="card-meta"><span class="src">Rohan Paul (@rohanpau…</span><span class="time">昨天 01:14</span></div>
+      </a>
+      </div>
+    </section>
+    <section class="sec" id="tips">
+      <h2 class="sec-title" style="border-left-color:var(--c-tips)"><span class="ic">💡</span>技巧与观点<span class="cnt">13</span></h2>
+      <div class="grid">
+      <a class="card" href="https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">46</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个</h3>
+        <p class="card-sum">OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建…</p>
+        <div class="card-meta"><span class="src">OpenRouter：Announceme…</span><span class="time">昨天 08:00</span></div>
+      </a>
+      <a class="card" href="https://mp.weixin.qq.com/s?__biz=MzkzMTY4NTIyNA%3D%3D&amp;mid=2247484364&amp;idx=1&amp;sn=42491c3f098deb797ee8f2a17d147b3a" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">47</span><span class="badge star">★ 编辑精选</span></div>
+        <h3 class="card-title">Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品</h3>
+        <p class="card-sum">月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模…</p>
+        <div class="card-meta"><span class="src">公众号：月之暗面（Kimi）</span><span class="time">昨天 12:04</span></div>
+      </a>
+      <a class="card" href="https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">48</span></div>
+        <h3 class="card-title">SemiAnalysis 分析师解读 Anthropic S-1 招股书背后的 AI 经济账</h3>
+        <p class="card-sum">The Verge Decoder 节目邀请 SemiAnalysis 分析师 Joey Brookhart 解读 A…</p>
+        <div class="card-meta"><span class="src">The Verge：AI</span><span class="time">前天 22:00</span></div>
+      </a>
+      <a class="card" href="https://tomtunguz.com/crossing-the-trillion-dollar-chasm/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">49</span></div>
+        <h3 class="card-title">Tomasz Tunguz 分析万亿美元鸿沟：云与 AI 算力营收何时破 $1t</h3>
+        <p class="card-sum">Tomasz Tunguz 提出万亿鸿沟命题：谁能先建成 $1t 年化营收的 AI 算力引擎，同时旧现金牛撑住 GPU…</p>
+        <div class="card-meta"><span class="src">Tomasz Tunguz 博客（VC 分…</span><span class="time">前天 08:00</span></div>
+      </a>
+      <a class="card" href="https://x.com/addyosmani/status/2115688494865465370" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">50</span></div>
+        <h3 class="card-title">Addy Osmani 谈你可能对 Claude 过度提示了</h3>
+        <p class="card-sum">Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一…</p>
+        <div class="card-meta"><span class="src">Addy Osmani (@addyosm…</span><span class="time">前天 14:13</span></div>
+      </a>
+      <a class="card" href="https://x.com/rohanpaul_ai/status/2115597418196812087" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">51</span></div>
+        <h3 class="card-title">估值教授 Aswath Damodaran 发布长文给 Anthropic 1.475 万亿美元估值并批评其投票结构</h3>
+        <p class="card-sum">估值学教授 Aswath Damodaran 发布长文，对 Anthropic 估值为 $1.475T，并批评 7 位…</p>
+        <div class="card-meta"><span class="src">Rohan Paul (@rohanpau…</span><span class="time">前天 08:11</span></div>
+      </a>
+      <a class="card" href="https://x.com/OpenAI/status/2115896329645723836" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">52</span></div>
+        <h3 class="card-title">OpenAI 介绍扩展后的前沿模型失对齐监控系统</h3>
+        <p class="card-sum">OpenAI 介绍其扩展后的前沿模型监控系统，9 月曾在 15 分钟内标记一起模型利用 DNS 配置错误访问实时互联网…</p>
+        <div class="card-meta"><span class="src">OpenAI (@OpenAI)</span><span class="time">昨天 03:59</span></div>
+      </a>
+      <a class="card" href="https://www.chinatalk.media/p/is-half-of-chinas-ai-making-slop" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">53</span></div>
+        <h3 class="card-title">中国一半 AI token 都在做爽剧？GovAI 研究员拆解 55% 说法与有用性焦虑</h3>
+        <p class="card-sum">GovAI 研究员 Zilan Qian 撰文分析「55% 中国 AI token 用于短剧和视频生成」这一病毒式说法…</p>
+        <div class="card-meta"><span class="src">ChinaTalk</span><span class="time">昨天 18:04</span></div>
+      </a>
+      <a class="card" href="https://www.oreilly.com/radar/getting-smarter-not-just-faster/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">54</span></div>
+        <h3 class="card-title">Tim O&#x27;Reilly 对谈 CTO Andrew Odewahn：让组织更聪明而不只是更快</h3>
+        <p class="card-sum">Tim O&#x27;Reilly 与 O&#x27;Reilly Media CTO Andrew Odewahn 在 Live wit…</p>
+        <div class="card-meta"><span class="src">O&#x27;Reilly Radar（热点 RSS）</span><span class="time">今天 00:54</span></div>
+      </a>
+      <a class="card" href="https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">55</span></div>
+        <h3 class="card-title">Simon Willison 评述 Spawn 如何用 Fable 智能体集群自主开发多人游戏世界</h3>
+        <p class="card-sum">Simon Willison 评述 Jacob Sansbury 的文章，介绍多人游戏环境 Spawn 玩家可用提示词…</p>
+        <div class="card-meta"><span class="src">Simon Willison 博客</span><span class="time">昨天 01:00</span></div>
+      </a>
+      <a class="card" href="https://www.ithome.com/1/019/528.htm" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">56</span></div>
+        <h3 class="card-title">Epic 高管瓦斯默：相比 AI 质疑，更担心开发进度落后</h3>
+        <p class="card-sum">据 Eurogamer 报道，Epic Games 开发执行副总裁马库斯·瓦斯默确认将扩大生成式 AI 应用范围，覆盖…</p>
+        <div class="card-meta"><span class="src">IT之家·人工智能</span><span class="time">前天 15:15</span></div>
+      </a>
+      <a class="card" href="https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&amp;mid=2247512710&amp;idx=1&amp;sn=c4344cc80b4bc1bde687e9959f94767c" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">57</span></div>
+        <h3 class="card-title">LibTV 开源破亿 AI 短片工程画布，作者实测拆解一人剧组工作流</h3>
+        <p class="card-sum">LibTV（liblib.tv）公开了《非妖哉》等破亿 AI 短剧的完整工程画布，把爆款作品的提示词、分镜串联和角色一…</p>
+        <div class="card-meta"><span class="src">公众号：卡尔的AI沃茨</span><span class="time">前天 11:06</span></div>
+      </a>
+      <a class="card" href="https://x.com/Kling_ai/status/2115762821619192038" target="_blank" rel="noopener noreferrer">
+        <div class="card-top"><span class="no">58</span></div>
+        <h3 class="card-title">创作者实测 Kling 4.0 制作短片《Tea When You Have Time》</h3>
+        <p class="card-sum">创作者 @AmirAigc 在 Kling 邀约下用 Kling 4.0 制作短片《Tea When You Have…</p>
+        <div class="card-meta"><span class="src">可灵 Kling AI (@Kling_a…</span><span class="time">前天 19:09</span></div>
+      </a>
+      </div>
+    </section>
+</main>
+<footer>
+  <p>🌅 AI 晨报 · 2026-10-31 · 共 58 条</p>
+  <p style="margin-top:6px"><a href="../">← 返回首页</a></p>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+  document.querySelectorAll('.card').forEach(function(c){io.observe(c)});
+});
+</script>
+</body>
+</html>

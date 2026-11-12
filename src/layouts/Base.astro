@@ -1,0 +1,62 @@
+---
+import '../styles/global.css';
+import { SITE } from '../site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: 'website' | 'article';
+  jsonld?: Record<string, unknown>;
+  wide?: boolean;
+}
+const { title, description = SITE.description, type = 'website', jsonld, wide = false } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} · ${SITE.tagline}`;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE.name} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary" />
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">{SITE.name}</a>
+        <nav class="nav" aria-label="主导航">
+          {SITE.nav.map((n) => (
+            <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    {wide ? <main class="wide"><slot /></main> : <main><div class="wrap"><slot /></div></main>}
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>© {new Date().getFullYear()} {SITE.name} · {SITE.tagline}</span>
+        <nav aria-label="页脚">
+          <a href="/rss.xml">RSS</a>
+          <a href="/llms.txt">llms.txt</a>
+          <a href={SITE.github} rel="me noopener">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../site';
+import { getPosts, fmtDate } from '../../posts';
+
+export async function getStaticPaths() {
+  return (await getPosts()).map((post) => ({ params: { id: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.summary,
+  datePublished: post.data.date.toISOString(),
+  inLanguage: 'zh-CN',
+  keywords: post.data.tags.join(', '),
+  author: { '@type': 'Person', name: SITE.name, url: `${SITE.url}/about/` },
+  mainEntityOfPage: `${SITE.url}/posts/${post.id}/`,
+};
+---
+<Base title={post.data.title} description={post.data.summary} type="article" jsonld={jsonld}>
+  <article>
+    <h1 class="page-title">{post.data.title}</h1>
+    <p class="page-meta">
+      <time datetime={post.data.date.toISOString()}>{fmtDate(post.data.date)}</time>
+      {post.data.tags.length > 0 && ` · ${post.data.tags.join(' / ')}`}
+    </p>
+    <div class="prose"><Content /></div>
+  </article>
+</Base>

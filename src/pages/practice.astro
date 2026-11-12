@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { PRACTICE } from '../site';
+---
+<Base title="实践" description="企业 AI 落地的实践：FDE 能力体系与 WorkBuddy 实战笔记。">
+  <h1 class="page-title">实践</h1>
+  <p class="page-lead">工作里做过、验证过的东西。</p>
+  <ul class="rows" style="margin-top:28px">
+    {PRACTICE.map((l) => (
+      <li>
+        <a href={l.href}>
+          <span class="t">{l.title}</span>
+          <span class="d">{l.desc}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>

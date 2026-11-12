@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, fmtDate } from '../../posts';
+const posts = await getPosts();
+---
+<Base title="文章" description="Augusta 的文章：我的观察、思考与学习。">
+  <h1 class="page-title">文章</h1>
+  <p class="page-lead">我的观察、思考与学习。</p>
+  <div class="prose" style="margin-top:28px">
+    {posts.length === 0 ? (
+      <p class="empty">第一篇还在写。</p>
+    ) : (
+      <ul class="rows">
+        {posts.map((p) => (
+          <li>
+            <a href={`/posts/${p.id}/`} style="border:0;color:inherit">
+              <span class="t">{p.data.title}</span>
+              <span class="m">{fmtDate(p.data.date)}</span>
+              <span class="d">{p.data.summary}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</Base>

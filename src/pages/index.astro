@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, LEARNING, PRACTICE } from '../site';
+import { getPosts, fmtDate } from '../posts';
+
+const posts = (await getPosts()).slice(0, 5);
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  alternateName: SITE.handle,
+  url: SITE.url,
+  description: SITE.description,
+  inLanguage: 'zh-CN',
+  author: {
+    '@type': 'Person',
+    name: SITE.name,
+    alternateName: SITE.handle,
+    url: `${SITE.url}/about/`,
+    sameAs: [SITE.github],
+  },
+};
+---
+<Base jsonld={jsonld}>
+  <section class="home-hero">
+    <h1>{SITE.tagline}</h1>
+    <p>我是 Augusta，网名 waveryu，在广州，做企业 AI 落地服务。</p>
+    <p>这里只放我自己的东西：我的观察、思考和学习，陪孩子学习时攒下的知识地图，还有工作里的实践。</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-no">01</span>
+      <h2>文章</h2>
+      <a class="more" href="/posts/">全部 →</a>
+    </div>
+    {posts.length === 0 ? (
+      <p class="empty">第一篇还在写。</p>
+    ) : (
+      <ul class="rows">
+        {posts.map((p) => (
+          <li>
+            <a href={`/posts/${p.id}/`}>
+              <span class="t">{p.data.title}</span>
+              <span class="m">{fmtDate(p.data.date)}</span>
+              <span class="d">{p.data.summary}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-no">02</span>
+      <h2>孩子的学习</h2>
+      <a class="more" href="/learning/">全部 →</a>
+    </div>
+    <ul class="rows">
+      {LEARNING.filter((l) => l.href).map((l) => (
+        <li>
+          <a href={l.href}>
+            <span class="t">{l.title}</span>
+            <span class="m">{l.status}</span>
+            <span class="d">{l.desc}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-no">03</span>
+      <h2>实践</h2>
+      <a class="more" href="/practice/">全部 →</a>
+    </div>
+    <ul class="rows">
+      {PRACTICE.map((l) => (
+        <li>
+          <a href={l.href}>
+            <span class="t">{l.title}</span>
+            <span class="d">{l.desc}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>

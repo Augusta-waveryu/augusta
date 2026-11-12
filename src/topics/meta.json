@@ -1,0 +1,47 @@
+{
+  "fde": {
+    "title": "FDE 能力体系",
+    "description": "FDE 能力体系与课程设计：从客户问题到可采用的解决方案。",
+    "shell": "page-shell"
+  },
+  "fde/course-design": {
+    "title": "FDE 课程设计理念",
+    "description": "FDE 课程设计理念、能力图谱、学生线与行业线、WorkBuddy 平台适配和训练评价。",
+    "shell": "article-shell"
+  },
+  "fde/articles": {
+    "title": "FDE 文章",
+    "description": "",
+    "shell": "page-shell"
+  },
+  "workbuddy/first-task": {
+    "title": "第一次用 WorkBuddy，从会议纪要到任务清单",
+    "description": "一个低风险的 WorkBuddy 入门练习：把会议纪要变成可检查的任务清单。",
+    "shell": ""
+  },
+  "workbuddy": {
+    "title": "WorkBuddy 实战笔记",
+    "description": "从完整业务案例出发，记录 WorkBuddy 的资料准备、分阶段执行、人工验收与团队沉淀。",
+    "shell": "page-shell"
+  },
+  "workbuddy/customer-requirements-to-proposal": {
+    "title": "别让 WorkBuddy 直接写方案：客户需求到方案提纲的四轮任务脚本",
+    "description": "用三份脱敏教学材料，拆解客户需求到方案提纲的四轮任务脚本、人工验收方法和适用边界。",
+    "shell": ""
+  },
+  "workbuddy/what-workbuddy-is-for": {
+    "title": "先别问它能做什么：从一项任务看懂 WorkBuddy",
+    "description": "用任务、过程、产物和验收四个问题理解 WorkBuddy 的适用范围。",
+    "shell": ""
+  },
+  "workbuddy/from-task-to-team": {
+    "title": "当一个任务做对三次，才值得把它带进团队",
+    "description": "从个人任务到团队项目：什么时候该沉淀工作流，以及企业需要保留哪些学习资产。",
+    "shell": ""
+  },
+  "workbuddy/why-workbuddy": {
+    "title": "把一件工作交代清楚：为什么开设 WorkBuddy 专栏",
+    "description": "WorkBuddy 专栏开篇：从真实工作中的资料、步骤、验收和沉淀开始练习 AI 能力。",
+    "shell": ""
+  }
+}

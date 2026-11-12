@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { LEARNING } from '../site';
+---
+<Base title="孩子的学习" description="陪孩子学习时攒下的知识地图：数学思维，以及筹备中的 AI、历史、地理。">
+  <h1 class="page-title">孩子的学习</h1>
+  <p class="page-lead">不只是奥数。数学、AI、历史、地理，凡是有趣的都往这里放。</p>
+  <ul class="rows" style="margin-top:28px">
+    {LEARNING.map((l) => (
+      <li>
+        {l.href ? (
+          <a href={l.href}>
+            <span class="t">{l.title}</span>
+            <span class="m">{l.status}</span>
+            {l.desc && <span class="d">{l.desc}</span>}
+          </a>
+        ) : (
+          <div class="row">
+            <span class="t">{l.title}</span>
+            <span class="m">{l.status}</span>
+            {l.desc && <span class="d">{l.desc}</span>}
+          </div>
+        )}
+      </li>
+    ))}
+  </ul>
+</Base>

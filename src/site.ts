@@ -1,6 +1,6 @@
 // 全站只在这里改：域名买好后把 url 换成 https://waveryu.com
 export const SITE = {
-  url: 'https://augusta-ai.vercel.app',
+  url: 'https://waveryu.com',
   name: 'Augusta',
   handle: 'waveryu',
   tagline: '让 AI 读懂我的墓志铭',

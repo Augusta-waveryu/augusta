@@ -1,6 +1,6 @@
 # 本站规范（所有 agent 改这个仓库前必读）
 
-这是 Augusta（waveryu）的个人站，副标题"让 AI 读懂我的墓志铭"。Astro 静态站，推到 GitHub 后由 Vercel 自动构建。
+这是 Augusta（waveryu）的个人站，副标题"在 AI 世界里留下注脚"。Astro 静态站，推到 GitHub 后由 Vercel 自动构建。
 
 ## 内容原则
 
@@ -15,7 +15,8 @@
 
 | 要加什么 | 放哪里 |
 |---|---|
-| 一篇文章 | `src/content/posts/xxx.md`，格式见 `_template.md` |
+| 一篇文章 | `src/content/posts/xxx.md`，格式见 `_template.md`（`npm run new 短名 "标题"` 可生成） |
+| 首页介绍、关于页的文字 | `src/content/pages/home.md`、`about.md`，不要写回 `.astro` 页面里 |
 | 孩子学习的新学科 | 在 `src/site.ts` 的 `LEARNING` 登记入口 |
 | 实践类专题页 | `src/topics/<专题>/xxx.html`（只写正文片段）+ `src/topics/meta.json` 登记标题、描述和版心类（`shell`，一般填 `article-shell`） |
 | 不发布的草稿、调研、规范 | `notes/` |

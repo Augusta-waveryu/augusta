@@ -2,6 +2,9 @@
 import Base from '../layouts/Base.astro';
 import { SITE, LEARNING, PRACTICE } from '../site';
 import { getPosts, fmtDate } from '../posts';
+import { getEntry, render } from 'astro:content';
+
+const { Content: Intro } = await render(await getEntry('pages', 'home'));
 
 const posts = (await getPosts()).slice(0, 5);
 const jsonld = {
@@ -24,8 +27,7 @@ const jsonld = {
 <Base jsonld={jsonld}>
   <section class="home-hero">
     <h1>{SITE.tagline}</h1>
-    <p>我是 Augusta，网名 waveryu，在广州，做企业 AI 落地服务。</p>
-    <p>这里只放我自己的东西：我的观察、思考和学习，陪孩子学习时攒下的知识地图，还有工作里的实践。</p>
+    <Intro />
   </section>
 
   <section class="section">

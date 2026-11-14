@@ -13,4 +13,13 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { posts };
+// 首页、关于页的正文文字，方便直接改
+const pages = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/pages' }),
+  schema: z.object({
+    description: z.string().optional(),
+    note: z.string().optional(),
+  }),
+});
+
+export const collections = { posts, pages };

@@ -3,7 +3,7 @@ export const SITE = {
   url: 'https://waveryu.com',
   name: 'Augusta',
   handle: 'waveryu',
-  tagline: '让 AI 读懂我的墓志铭',
+  tagline: '在 AI 世界里留下注脚',
   description:
     'Augusta（waveryu）的个人站：我的观察、思考与学习，孩子的学习地图，以及企业 AI 落地的实践。',
   github: 'https://github.com/Augusta-waveryu',

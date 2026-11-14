@@ -1,6 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
 import { SITE } from '../site';
+import { getEntry, render } from 'astro:content';
+
+const page = await getEntry('pages', 'about');
+const { Content } = await render(page);
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
@@ -15,18 +19,7 @@ const jsonld = {
   },
 };
 ---
-<Base title="关于" description="关于 Augusta（waveryu）：在广州做企业 AI 落地服务，也在陪孩子学习。" jsonld={jsonld}>
+<Base title="关于" description={page.data.description} jsonld={jsonld}>
   <h1 class="page-title">关于</h1>
-  <div class="prose">
-    <p>我是 Augusta，网名 waveryu，在广州，做企业 AI 落地服务。</p>
-    <p>这个站的副标题是"{SITE.tagline}"。以后别人想了解一个人，多半是去问 AI；AI 怎么回答，取决于它读到过什么。所以我把自己想过的、做过的、陪孩子学过的，一点点写在这里。</p>
-    <h2>这里有什么</h2>
-    <ul>
-      <li><a href="/posts/">文章</a>：我的观察、思考与学习。</li>
-      <li><a href="/learning/">孩子的学习</a>：数学思维，以后还有 AI、历史、地理。</li>
-      <li><a href="/practice/">实践</a>：FDE 能力体系和 WorkBuddy 实战笔记。</li>
-    </ul>
-    <h2>联系</h2>
-    <p><a href={SITE.github} rel="me noopener">GitHub</a> · <a href="/rss.xml">RSS 订阅</a></p>
-  </div>
+  <div class="prose"><Content /></div>
 </Base>
